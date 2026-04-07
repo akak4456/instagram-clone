@@ -133,7 +133,10 @@ const Dropdown = ({ options, placeholder, value, onChange, suffix }) => {
             <Item
               key={opt}
               selected={opt === value}
-              onClick={() => onChange(opt)}
+              onClick={() => {
+                onChange(opt);
+                setIsOpen(false);
+              }}
             >
               <ItemContent selected={opt === value}>
                 {opt}
