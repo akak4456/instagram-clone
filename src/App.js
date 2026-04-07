@@ -1,4 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { AppProvider } from "./contexts";
+import PrivateRoute from "./routes/PrivateRoute";
 import Layout from "./components/layout/Layout";
 
 import Home from "./pages/Home";
@@ -9,39 +11,47 @@ import Story from "./pages/Story";
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <Routes>
-        {/* Layout이 필요한 페이지 */}
-        <Route
-          path="/"
-          element={
-            <Layout>
-              <Home />
-            </Layout>
-          }
-        />
-        <Route
-          path="/profile/:id"
-          element={
-            <Layout>
-              <Profile />
-            </Layout>
-          }
-        />
-        <Route
-          path="/story"
-          element={
-            <Layout>
-              <Story />
-            </Layout>
-          }
-        />
+    <AppProvider>
+      <BrowserRouter>
+        <Routes>
+          {/* Layout이 필요한 페이지 */}
+          <Route
+            path="/"
+            element={
+              <PrivateRoute>
+                <Layout>
+                  <Home />
+                </Layout>
+              </PrivateRoute>
+            }
+          />
+          <Route
+            path="/profile/:id"
+            element={
+              <PrivateRoute>
+                <Layout>
+                  <Profile />
+                </Layout>
+              </PrivateRoute>
+            }
+          />
+          <Route
+            path="/story"
+            element={
+              <PrivateRoute>
+                <Layout>
+                  <Story />
+                </Layout>
+              </PrivateRoute>
+            }
+          />
 
-        {/* Layout이 필요 없는 페이지 */}
-        <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<Signup />} />
-      </Routes>
-    </BrowserRouter>
+          {/* Layout이 필요 없는 페이지 */}
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
+        </Routes>
+      </BrowserRouter>
+    </AppProvider>
   );
 };
 
