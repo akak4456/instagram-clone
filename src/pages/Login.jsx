@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import LoginForm from "../features/auth/LoginForm";
 import { useCallback } from "react";
 import arrowLeft from "../assets/arrow-left.png";
+import Button from "../components/button/Button";
 
 const LoginImgDiv = styled.div`
   display: flex;
@@ -33,6 +34,15 @@ const LoginImg = styled.img`
   height: 80px;
 `;
 
+const LoginBottomDiv = styled.div`
+  width: 500px;
+  margin: auto;
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+`;
+
 const Login = () => {
   const { login } = useAuth();
   const navigate = useNavigate();
@@ -60,6 +70,10 @@ const Login = () => {
         <span>Instagram으로 로그인</span>
       </LoginToInsta>
       <LoginForm handleLogin={handleLogin} />
+      <LoginBottomDiv>
+        <Button variant="transparent">비밀번호를 잊으셨나요?</Button>
+        <Button variant="secondary">새 계정 만들기</Button>
+      </LoginBottomDiv>
     </>
   );
 };
