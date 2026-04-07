@@ -3,7 +3,7 @@ import { posts } from "./posts";
 
 const getFeedPosts = () => {
   return posts.map((post) => {
-    const user = users.find((u) => u.id === post.userId);
+    const user = users.find((u) => u.username === post.username);
 
     return {
       ...post,
