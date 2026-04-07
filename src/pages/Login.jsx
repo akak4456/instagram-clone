@@ -98,7 +98,9 @@ const Login = () => {
       <LoginForm handleLogin={handleLogin} />
       <LoginBottomDiv>
         <Button variant="transparent">비밀번호를 잊으셨나요?</Button>
-        <Button variant="secondary">새 계정 만들기</Button>
+        <Button variant="secondary" onClick={() => navigate("/signup")}>
+          새 계정 만들기
+        </Button>
       </LoginBottomDiv>
     </>
   );
