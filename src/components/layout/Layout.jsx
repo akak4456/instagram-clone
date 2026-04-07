@@ -2,8 +2,7 @@ import styled from "styled-components";
 import Navigation from "./Navigation";
 
 const Container = styled.div`
-  max-width: 600px;
-  margin: 0 auto;
+  display: flex;
 `;
 
 const Main = styled.main`

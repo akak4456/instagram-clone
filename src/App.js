@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Profile from "./pages/Profile";
-import Search from "./pages/Search";
+import Story from "./pages/Story";
 
 const App = () => {
   return (
@@ -29,10 +29,10 @@ const App = () => {
           }
         />
         <Route
-          path="/search"
+          path="/story"
           element={
             <Layout>
-              <Search />
+              <Story />
             </Layout>
           }
         />
