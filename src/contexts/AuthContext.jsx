@@ -6,8 +6,7 @@ const AuthContext = createContext();
 export const AuthProvider = ({ children }) => {
   const [users, setUsers] = useState([]);
   const [user, setUser] = useState(null);
-
-  console.log(users);
+  const [loading, setLoading] = useState(true);
 
   // 로그인
   const login = (formData) => {
@@ -54,6 +53,7 @@ export const AuthProvider = ({ children }) => {
     if (savedUser) {
       setUser(JSON.parse(savedUser));
     }
+    setLoading(false);
   }, []);
 
   return (
@@ -61,6 +61,7 @@ export const AuthProvider = ({ children }) => {
       value={{
         user,
         isLogin: !!user,
+        loading: loading,
         login,
         logout,
       }}
