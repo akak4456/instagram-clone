@@ -1,0 +1,82 @@
+import { useState } from "react";
+import styled from "styled-components";
+import Input from "../../components/input/Input";
+import Dropdown from "../../components/dropdown/Drodown";
+
+const SignupWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+const SignupFormLabel = styled.span`
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 18px;
+`;
+
+const BirthWrapper = styled.div`
+  display: flex;
+  gap: 10px;
+`;
+
+const getDays = (year, month) => {
+  if (!year || !month) return Array.from({ length: 31 }, (_, i) => i + 1);
+
+  const lastDay = new Date(year, month, 0).getDate();
+  return Array.from({ length: lastDay }, (_, i) => i + 1);
+};
+const SignupForm = () => {
+  const [form, setForm] = useState({
+    username: "",
+    password: "",
+  });
+
+  const currentYear = new Date().getFullYear();
+  const years = Array.from({ length: 100 }, (_, i) => currentYear - i);
+  const months = Array.from({ length: 12 }, (_, i) => i + 1);
+  const days = getDays(form.year, form.month);
+  return (
+    <SignupWrapper>
+      <SignupFormLabel>휴대폰 번호 또는 이메일 주소</SignupFormLabel>
+      <Input
+        label="휴대폰 번호 또는 이메일 주소"
+        value={form.username}
+        onChange={(e) => setForm({ ...form, username: e.target.value })}
+      />
+      <SignupFormLabel>비밀번호</SignupFormLabel>
+      <Input
+        type="password"
+        label="비밀번호"
+        value={form.password}
+        onChange={(e) => setForm({ ...form, password: e.target.value })}
+      />
+      <SignupFormLabel>생년월일</SignupFormLabel>
+      <BirthWrapper>
+        <Dropdown
+          placeholder="연도"
+          options={years}
+          value={form.year}
+          suffix="년"
+          onChange={(v) => setForm({ ...form, year: v })}
+        />
+        <Dropdown
+          placeholder="월"
+          options={months}
+          value={form.month}
+          suffix="월"
+          onChange={(v) => setForm({ ...form, month: v })}
+        />
+        <Dropdown
+          placeholder="일"
+          options={days}
+          value={form.day}
+          suffix="일"
+          onChange={(v) => setForm({ ...form, day: v })}
+        />
+      </BirthWrapper>
+    </SignupWrapper>
+  );
+};
+
+export default SignupForm;
