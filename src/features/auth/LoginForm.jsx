@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+import { useAuth } from "../../hooks/useAuth";
 import Input from "../../components/input/Input";
 import Button from "../../components/button/Button";
 const LoginForm = ({ handleLogin }) => {
+  const { loading } = useAuth();
   const [form, setForm] = useState({
     userId: "",
     password: "",
@@ -25,7 +27,11 @@ const LoginForm = ({ handleLogin }) => {
       </div>
 
       <div style={{ marginTop: "16px" }}>
-        <Button onClick={() => handleLogin(form)} disabled={!isValid}>
+        <Button
+          onClick={() => handleLogin(form)}
+          disabled={!isValid}
+          loading={loading}
+        >
           로그인
         </Button>
       </div>

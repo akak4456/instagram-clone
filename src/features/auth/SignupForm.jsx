@@ -65,7 +65,7 @@ const getDays = (year, month) => {
 };
 const SignupForm = () => {
   const [open, setOpen] = useState(false);
-  const { users, addUser } = useAuth();
+  const { users, addUser, loading } = useAuth();
   const navigate = useNavigate();
   const [form, setForm] = useState({
     userId: "",
@@ -84,7 +84,7 @@ const SignupForm = () => {
     usernameError: "",
   });
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     const userIdError = validateUserId(form.userId, users);
     const passwordError = validatePassword(form.password);
     const birthdayError = validateBirthday(form.year, form.month, form.day);
@@ -103,7 +103,7 @@ const SignupForm = () => {
     const hasError = Object.values(newErrors).some((e) => e);
     if (hasError) return;
 
-    const result = addUser(form);
+    const result = await addUser(form);
 
     setOpen(true);
   };
@@ -208,7 +208,9 @@ const SignupForm = () => {
         <b>더 알아보기</b>
       </DescriptionDiv>
       <ButtonWrapper>
-        <Button onClick={handleSubmit}>제출</Button>
+        <Button onClick={handleSubmit} loading={loading}>
+          제출
+        </Button>
       </ButtonWrapper>
       <ButtonWrapper>
         <Button variant="secondary-default">이미 계정이 있습니다</Button>

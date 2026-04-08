@@ -4,6 +4,9 @@ const StyledButton = styled.button`
   height: 44px;
   border-radius: 22px;
   border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: ${({ variant, disabled }) => {
     if (variant === "primary") {
       return disabled ? "#b2dffc" : "#0064e0";
@@ -54,10 +57,35 @@ const StyledButton = styled.button`
     background: rgba(0, 0, 0, 0.05);
   }
 `;
-const Button = ({ children, onClick, disabled, variant = "primary" }) => {
+
+const Spinner = styled.div`
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top: 2px solid white;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+`;
+const Button = ({
+  children,
+  onClick,
+  disabled,
+  loading,
+  variant = "primary",
+}) => {
   return (
-    <StyledButton onClick={onClick} disabled={disabled} variant={variant}>
-      {children}
+    <StyledButton
+      onClick={onClick}
+      disabled={disabled || loading}
+      variant={variant}
+    >
+      {loading ? <Spinner /> : children}
     </StyledButton>
   );
 };

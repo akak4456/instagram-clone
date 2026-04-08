@@ -71,8 +71,8 @@ const Login = () => {
   const { login } = useAuth();
   const navigate = useNavigate();
 
-  const handleLogin = (form) => {
-    const res = login(form);
+  const handleLogin = async (form) => {
+    const res = await login(form);
     if (res.success) {
       navigate("/");
     } else {

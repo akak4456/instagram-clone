@@ -1,5 +1,6 @@
 import { createContext, useContext, useEffect, useState } from "react";
 import { users as initialUsers } from "../mocks/users";
+import { loginApi, addUserApi, fetchUsersApi } from "../mocks/api";
 
 export const AuthContext = createContext();
 
@@ -9,71 +10,29 @@ export const AuthProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
 
   // 로그인
-  const login = (formData) => {
-    const { userId, password } = formData;
+  const login = async (formData) => {
+    setLoading(true);
+    const result = await loginApi(formData);
+    setLoading(false);
 
-    // 1. 유저 찾기
-    const foundUser = users.find((user) => user.userId === userId);
+    if (!result.success) return result;
 
-    // 2. 유저 없음
-    if (!foundUser) {
-      return {
-        success: false,
-        message: "입력하신 로그인 정보가 잘못되었습니다.",
-      };
-    }
-
-    // 3. 비밀번호 불일치
-    if (foundUser.password !== password) {
-      return {
-        success: false,
-        message: "입력하신 로그인 정보가 잘못되었습니다.",
-      };
-    }
-
-    // 4. 로그인 성공 (비밀번호 제거)
-    const { password: _, ...userWithoutPassword } = foundUser;
-
-    setUser(userWithoutPassword);
-    localStorage.setItem("user", JSON.stringify(userWithoutPassword));
+    setUser(result.user);
+    localStorage.setItem("user", JSON.stringify(result.user));
 
     return { success: true };
   };
 
-  const addUser = (newUser) => {
-    const { userId, username } = newUser;
+  const addUser = async (formData) => {
+    setLoading(true);
+    const result = await addUserApi(formData);
+    setLoading(false);
 
-    // 1️⃣ userId 중복 체크
-    const existsUserId = users.some((u) => u.userId === userId);
-    if (existsUserId) {
-      return {
-        success: false,
-        message: "이미 사용 중인 휴대폰 번호 또는 이메일입니다.",
-      };
-    }
+    if (!result.success) return result;
 
-    // 2️⃣ username 중복 체크 (선택 but 보통 필요)
-    const existsUsername = users.some((u) => u.username === username);
-    if (existsUsername) {
-      return {
-        success: false,
-        message: "이미 사용 중인 사용자 이름입니다.",
-      };
-    }
+    setUsers((prev) => [...prev, result.user]);
 
-    // 3️⃣ 유저 추가
-    const newUserData = {
-      ...newUser,
-      profileImage: "",
-      bio: "",
-    };
-
-    setUsers((prev) => [...prev, newUserData]);
-
-    return {
-      success: true,
-      user: newUserData,
-    };
+    return result;
   };
 
   // 로그아웃
@@ -84,12 +43,19 @@ export const AuthProvider = ({ children }) => {
 
   // 앱 시작 시 로그인 유지
   useEffect(() => {
-    setUsers(initialUsers);
-    const savedUser = localStorage.getItem("user");
-    if (savedUser) {
-      setUser(JSON.parse(savedUser));
-    }
-    setLoading(false);
+    const init = async () => {
+      const usersData = await fetchUsersApi(); // 🔥 API 사용
+      setUsers(usersData);
+
+      const savedUser = localStorage.getItem("user");
+      if (savedUser) {
+        setUser(JSON.parse(savedUser));
+      }
+
+      setLoading(false);
+    };
+
+    init();
   }, []);
 
   return (
