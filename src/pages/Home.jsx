@@ -1,13 +1,10 @@
-import { usePost } from "../hooks/usePost";
+import HomeTopProfiles from "../features/home/HomeTopProfiles";
 
 const Home = () => {
-  const { posts, loading, toggleLike } = usePost();
-
-  if (loading) return <div>로딩중...</div>;
-
   return (
-    <div>
-      {posts.map((post) => (
+    <>
+      <HomeTopProfiles />
+      {/* {posts.map((post) => (
         <div key={post.id}>
           <img src={post.images[0]} alt="" />
           <p>{post.caption}</p>
@@ -18,8 +15,8 @@ const Home = () => {
 
           <span>{post.likeCount} likes</span>
         </div>
-      ))}
-    </div>
+      ))} */}
+    </>
   );
 };
 

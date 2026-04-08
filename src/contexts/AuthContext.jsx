@@ -1,6 +1,11 @@
 import { createContext, useContext, useEffect, useState } from "react";
 import { users as initialUsers } from "../mocks/users";
-import { loginApi, addUserApi, fetchUsersApi } from "../mocks/api";
+import {
+  loginApi,
+  addUserApi,
+  fetchUsersApi,
+  fetchFollowingUsersApi,
+} from "../mocks/api";
 
 export const AuthContext = createContext();
 
@@ -8,6 +13,7 @@ export const AuthProvider = ({ children }) => {
   const [users, setUsers] = useState([]);
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [followingUsers, setFollowingUsers] = useState([]);
 
   // 로그인
   const login = async (formData) => {
@@ -41,6 +47,18 @@ export const AuthProvider = ({ children }) => {
     localStorage.removeItem("user");
   };
 
+  // following user 얻기
+  const fetchFollowingUsers = async () => {
+    if (!user) return;
+    // setLoading(true);
+    const result = await fetchFollowingUsersApi(user.userId);
+    // setLoading(false);
+
+    if (!result.success) return;
+
+    setFollowingUsers(result.users);
+  };
+
   // 앱 시작 시 로그인 유지
   useEffect(() => {
     const init = async () => {
@@ -49,7 +67,7 @@ export const AuthProvider = ({ children }) => {
 
       const savedUser = localStorage.getItem("user");
       if (savedUser) {
-        setUser(savedUser);
+        setUser(JSON.parse(savedUser));
       }
 
       setLoading(false);
@@ -65,9 +83,11 @@ export const AuthProvider = ({ children }) => {
         users: users,
         isLogin: !!user,
         loading: loading,
+        followingUsers,
         login,
         logout,
         addUser,
+        fetchFollowingUsers,
       }}
     >
       {children}

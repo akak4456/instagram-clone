@@ -70,6 +70,31 @@ export const addUserApi = (newUser) => {
   });
 };
 
+export const fetchFollowingUsersApi = (userId) => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      const currentUser = users.find((u) => u.userId === userId);
+
+      if (!currentUser) {
+        resolve({
+          success: false,
+          message: "유저를 찾을 수 없습니다.",
+        });
+        return;
+      }
+
+      const followingUsers = users.filter((u) =>
+        currentUser.following.includes(u.userId),
+      );
+
+      resolve({
+        success: true,
+        users: followingUsers,
+      });
+    }, 300);
+  });
+};
+
 const getFeedPosts = () => {
   return posts.map((post) => {
     const user = users.find((u) => u.userId === post.userId);
