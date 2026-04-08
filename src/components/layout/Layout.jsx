@@ -6,7 +6,9 @@ const Container = styled.div`
 `;
 
 const Main = styled.main`
-  padding-top: 60px;
+  position: absolute;
+  width: 100%;
+  padding-top: 30px;
   padding-bottom: 60px;
 `;
 
