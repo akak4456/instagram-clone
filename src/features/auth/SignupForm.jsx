@@ -8,6 +8,7 @@ import Button from "../../components/button/Button";
 const SignupWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  padding-bottom: 40px;
 `;
 
 const SignupFormLabel = styled.span`
@@ -37,6 +38,13 @@ const ErrorWrapper = styled.div`
 
 const ButtonWrapper = styled.div`
   margin-top: 16px;
+`;
+
+const DescriptionDiv = styled.div`
+  margin-top: 8px;
+  b {
+    color: #0064e0;
+  }
 `;
 
 const getDays = (year, month) => {
@@ -82,6 +90,10 @@ const SignupForm = () => {
           <span>{error.userIdError}</span>
         </ErrorWrapper>
       )}
+      <DescriptionDiv>
+        저희가 회원님에게 보내는 알림을 수신할 수 있습니다.{" "}
+        <b>회원님의 연락처 정보가 필요한 이유를 알아보세요</b>
+      </DescriptionDiv>
       <SignupFormLabel>비밀번호</SignupFormLabel>
       <Input
         type="password"
@@ -148,8 +160,21 @@ const SignupForm = () => {
           <span>{error.usernameError}</span>
         </ErrorWrapper>
       )}
+      <DescriptionDiv>
+        저희 서비스를 이용하는 사람이 회원님의 연락처 정보를 Instagram에
+        업로드했을 수도 있습니다.
+        <b>더 알아보기</b>
+      </DescriptionDiv>
+      <DescriptionDiv>
+        회원님은 저희가 보내는 SMS를 받을 수 있으며 언제든지 이를 수신 거부할 수
+        있습니다.
+        <b>더 알아보기</b>
+      </DescriptionDiv>
       <ButtonWrapper>
         <Button>제출</Button>
+      </ButtonWrapper>
+      <ButtonWrapper>
+        <Button variant="secondary-default">이미 계정이 있습니다</Button>
       </ButtonWrapper>
     </SignupWrapper>
   );

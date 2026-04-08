@@ -11,6 +11,9 @@ const StyledButton = styled.button`
     if (variant === "secondary") {
       return "transparent";
     }
+    if (variant === "secondary-default") {
+      return "transparent";
+    }
     if (variant === "transparent") {
       return "transparent";
     }
@@ -20,11 +23,15 @@ const StyledButton = styled.button`
     if (variant === "secondary") {
       return "1px solid #0064e0";
     }
+    if (variant === "secondary-default") {
+      return "1px solid #ccc";
+    }
     return "none";
   }};
 
   color: ${({ variant }) => {
     if (variant === "secondary") return "#0064e0";
+    if (variant === "secondary-default") return "#000";
     if (variant === "transparent") return "#000";
     return "white";
   }};
