@@ -1,7 +1,7 @@
 export const posts = [
   {
     id: 1,
-    username: "akak4456",
+    userId: "akak4456",
     images: ["/images/post1.jpg", "/images/post2.jpg"],
     caption: "오늘 날씨 좋다 ☀️",
     likeCount: 12,

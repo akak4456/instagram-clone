@@ -3,16 +3,16 @@ import Input from "../../components/input/Input";
 import Button from "../../components/button/Button";
 const LoginForm = ({ handleLogin }) => {
   const [form, setForm] = useState({
-    username: "",
+    userId: "",
     password: "",
   });
-  const isValid = form.username && form.password;
+  const isValid = form.userId && form.password;
   return (
     <div style={{ width: "500px", margin: "0 auto" }}>
       <Input
         label="휴대폰 번호, 사용자 이름 또는 이메일 주소"
-        value={form.username}
-        onChange={(e) => setForm({ ...form, username: e.target.value })}
+        value={form.userId}
+        onChange={(e) => setForm({ ...form, userId: e.target.value })}
       />
 
       <div style={{ marginTop: "8px" }}>

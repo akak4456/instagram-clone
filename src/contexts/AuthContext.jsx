@@ -10,10 +10,10 @@ export const AuthProvider = ({ children }) => {
 
   // 로그인
   const login = (formData) => {
-    const { username, password } = formData;
+    const { userId, password } = formData;
 
     // 1. 유저 찾기
-    const foundUser = users.find((user) => user.username === username);
+    const foundUser = users.find((user) => user.userId === userId);
 
     // 2. 유저 없음
     if (!foundUser) {

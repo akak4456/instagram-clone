@@ -1,6 +1,6 @@
 export const users = [
   {
-    username: "akak4456",
+    userId: "akak4456",
     password: "1234",
     profileImage: "/images/user1.jpg",
     bio: "Hello world",
