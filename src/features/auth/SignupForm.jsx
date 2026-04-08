@@ -13,6 +13,7 @@ import Input from "../../components/input/Input";
 import Dropdown from "../../components/dropdown/Drodown";
 import errorMark from "../../assets/error-mark.png";
 import Button from "../../components/button/Button";
+import Modal from "../../components/modal/Modal";
 
 const SignupWrapper = styled.div`
   display: flex;
@@ -63,6 +64,7 @@ const getDays = (year, month) => {
   return Array.from({ length: lastDay }, (_, i) => i + 1);
 };
 const SignupForm = () => {
+  const [open, setOpen] = useState(false);
   const { users, addUser } = useAuth();
   const navigate = useNavigate();
   const [form, setForm] = useState({
@@ -102,7 +104,8 @@ const SignupForm = () => {
     if (hasError) return;
 
     const result = addUser(form);
-    navigate("/login");
+
+    setOpen(true);
   };
 
   const currentYear = new Date().getFullYear();
@@ -210,6 +213,16 @@ const SignupForm = () => {
       <ButtonWrapper>
         <Button variant="secondary-default">이미 계정이 있습니다</Button>
       </ButtonWrapper>
+      <Modal
+        open={open}
+        onClose={() => {
+          setOpen(false);
+          navigate("/login");
+        }}
+        title="회원가입 성공"
+        subtext="회원가입이 성공하였습니다."
+        buttontext="로그인 하러 가기"
+      />
     </SignupWrapper>
   );
 };
