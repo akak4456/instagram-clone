@@ -4,7 +4,7 @@ import { likes as initialLikes } from "./likes";
 import { comments as initialComments } from "./comments";
 
 let users = [...initialUsers];
-let posts = [...initialPosts];
+let posts = Array(100).fill(initialPosts).flat();
 let likes = [...initialLikes];
 let comments = [...initialComments];
 
@@ -115,10 +115,20 @@ const getFeedPosts = () => {
   });
 };
 
-export const fetchFeed = () => {
+export const fetchFeed = (page = 1, limit = 10) => {
   return new Promise((resolve) => {
     setTimeout(() => {
-      resolve(getFeedPosts());
+      const allPosts = getFeedPosts();
+
+      const start = (page - 1) * limit;
+      const end = start + limit;
+
+      const pagedPosts = allPosts.slice(start, end);
+
+      resolve({
+        posts: pagedPosts,
+        hasMore: end < allPosts.length,
+      });
     }, 500);
   });
 };
