@@ -9,6 +9,16 @@ export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
 
+  const updateUser = (user) => {
+    setUser(user);
+    localStorage.setItem("user", JSON.stringify(user));
+  };
+
+  const removeUser = () => {
+    setUser(null);
+    localStorage.removeItem("user");
+  };
+
   // 로그인
   const login = async (formData) => {
     setLoading(true);
@@ -17,8 +27,7 @@ export const AuthProvider = ({ children }) => {
 
     if (!result.success) return result;
 
-    setUser(result.user);
-    localStorage.setItem("user", JSON.stringify(result.user));
+    updateUser(result.user);
 
     return { success: true };
   };
@@ -37,8 +46,7 @@ export const AuthProvider = ({ children }) => {
 
   // 로그아웃
   const logout = () => {
-    setUser(null);
-    localStorage.removeItem("user");
+    removeUser();
   };
 
   // 앱 시작 시 로그인 유지
@@ -49,7 +57,7 @@ export const AuthProvider = ({ children }) => {
 
       const savedUser = localStorage.getItem("user");
       if (savedUser) {
-        setUser(JSON.parse(savedUser));
+        updateUser(savedUser);
       }
 
       setLoading(false);
