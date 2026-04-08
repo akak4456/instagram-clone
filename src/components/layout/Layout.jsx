@@ -7,7 +7,8 @@ const Container = styled.div`
 
 const Main = styled.main`
   position: absolute;
-  width: 100%;
+  left: 80px; /* Navigation width */
+  width: calc(100% - 80px);
   padding-top: 30px;
   padding-bottom: 60px;
 `;
