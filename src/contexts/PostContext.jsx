@@ -1,5 +1,5 @@
 import { createContext, useContext, useEffect, useState } from "react";
-import { fetchFeed } from "../mocks/api";
+import { fetchFeed, toggleLikeApi } from "../mocks/api";
 
 export const PostContext = createContext();
 
@@ -24,6 +24,26 @@ export const PostProvider = ({ children }) => {
     setPostLoading(false);
   };
 
+  const toggleLike = async (postId, userId) => {
+    await toggleLikeApi({ postId, userId });
+
+    // 🔥 UI 즉시 반영 (optimistic update)
+    setPosts((prev) =>
+      prev.map((post) => {
+        if (post.id !== postId) return post;
+
+        const isLiked = post.likes.some((l) => l.userId === userId);
+
+        return {
+          ...post,
+          likes: isLiked
+            ? post.likes.filter((l) => l.userId !== userId)
+            : [...post.likes, { userId }],
+        };
+      }),
+    );
+  };
+
   useEffect(() => {
     loadPosts(); // 첫 로딩
   }, []);
@@ -34,6 +54,7 @@ export const PostProvider = ({ children }) => {
         posts,
         postLoading,
         loadPosts, // 🔥 추가
+        toggleLike,
         hasMore,
       }}
     >

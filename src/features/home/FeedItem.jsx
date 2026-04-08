@@ -1,5 +1,6 @@
-import { useState } from "react";
-import styled from "styled-components";
+import { useState, useEffect, useRef } from "react";
+import { usePost } from "../../hooks/usePost";
+import styled, { keyframes, css } from "styled-components";
 import profileArrowLeft from "../../assets/profile-arrow-left.png";
 import profileArrowRight from "../../assets/profile-arrow-right.png";
 import postLike from "../../assets/post-like.png";
@@ -7,6 +8,22 @@ import postComment from "../../assets/post-comment.png";
 import postRepost from "../../assets/post-repost.png";
 import postSend from "../../assets/post-send.png";
 import postBookmark from "../../assets/post-bookmark.png";
+import postLikeFill from "../../assets/post-like-fill.png";
+
+const likeAnimation = keyframes`
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.4);
+  }
+  60% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+`;
 
 const Wrapper = styled.div`
   width: 470px;
@@ -160,9 +177,21 @@ const Caption = styled.div`
   font-size: 14px;
 `;
 
+const LikeIcon = styled.img`
+  ${({ animate }) =>
+    animate &&
+    css`
+      animation: ${likeAnimation} 0.3s ease;
+    `}
+`;
+
 const FeedItem = ({ post }) => {
-  console.log(post);
+  const { toggleLike } = usePost();
+
+  const userId = post.user.userId;
+  const isLiked = post.likes.some((l) => l.userId === userId);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [animateLike, setAnimateLike] = useState(false);
 
   const total = post.images.length;
 
@@ -185,6 +214,24 @@ const FeedItem = ({ post }) => {
     if (diff < 604800) return `${Math.floor(diff / 86400)}일`;
 
     return `${Math.floor(diff / 604800)}주`;
+  };
+
+  const firstRender = useRef(true);
+
+  useEffect(() => {
+    if (firstRender.current) {
+      // 첫 렌더링일 때는 애니메이션 실행하지 않음
+      firstRender.current = false;
+      return;
+    }
+    setAnimateLike(true);
+    const timer = setTimeout(() => setAnimateLike(false), 300);
+
+    return () => clearTimeout(timer);
+  }, [isLiked]);
+
+  const handleLike = () => {
+    toggleLike(post.id, post.user.userId);
   };
   return (
     <Wrapper>
@@ -235,8 +282,12 @@ const FeedItem = ({ post }) => {
       {/* Actions */}
       <Actions>
         <ActionLeft>
-          <ActionItem>
-            <img src={postLike} alt="post-like" />
+          <ActionItem onClick={handleLike}>
+            <LikeIcon
+              src={isLiked ? postLikeFill : postLike}
+              alt="post-like"
+              animate={animateLike}
+            />
             <span>{post.likes.length}</span>
           </ActionItem>
           <ActionItem>

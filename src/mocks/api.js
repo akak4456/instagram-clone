@@ -4,7 +4,13 @@ import { likes as initialLikes } from "./likes";
 import { comments as initialComments } from "./comments";
 
 let users = [...initialUsers];
-let posts = Array(100).fill(initialPosts).flat();
+let posts = Array(100)
+  .fill(initialPosts)
+  .flat()
+  .map((post, idx) => ({
+    ...post,
+    id: idx + 1, // 🔥 고유 id
+  }));
 let likes = [...initialLikes];
 let comments = [...initialComments];
 
@@ -130,5 +136,33 @@ export const fetchFeed = (page = 1, limit = 10) => {
         hasMore: end < allPosts.length,
       });
     }, 500);
+  });
+};
+
+export const toggleLikeApi = ({ postId, userId }) => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      const existing = likes.find(
+        (l) => l.postId === postId && l.userId === userId,
+      );
+
+      if (existing) {
+        // 🔥 좋아요 취소
+        likes = likes.filter(
+          (l) => !(l.postId === postId && l.userId === userId),
+        );
+      } else {
+        // 🔥 좋아요 추가
+        likes.push({
+          id: Date.now(),
+          postId,
+          userId,
+        });
+      }
+
+      resolve({
+        success: true,
+      });
+    }, 200);
   });
 };
