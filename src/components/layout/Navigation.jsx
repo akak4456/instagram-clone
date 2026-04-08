@@ -11,6 +11,7 @@ import upload from "../../assets/upload.png";
 import hamburger from "../../assets/hamburger.png";
 
 const NavContainer = styled.nav`
+  position: fixed; /* 🔥 핵심 */
   width: ${({ $expanded }) => ($expanded ? "220px" : "80px")};
   height: 100vh;
   display: flex;
