@@ -1,8 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { usePost } from "../../hooks/usePost";
 import styled, { keyframes, css } from "styled-components";
-import profileArrowLeft from "../../assets/profile-arrow-left.png";
-import profileArrowRight from "../../assets/profile-arrow-right.png";
 import postLike from "../../assets/post-like.png";
 import postComment from "../../assets/post-comment.png";
 import postRepost from "../../assets/post-repost.png";
@@ -11,6 +9,7 @@ import postBookmark from "../../assets/post-bookmark.png";
 import postLikeFill from "../../assets/post-like-fill.png";
 import ReplyModal from "../../components/modal/ReplyModal";
 import useModalScrollLock from "../../hooks/useModalScrollLock";
+import PostImage from "../../components/postImage/PostImage";
 
 const likeAnimation = keyframes`
   0% {
@@ -94,64 +93,6 @@ const More = styled.div`
   cursor: pointer;
 `;
 
-const ImageContainer = styled.div`
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  border-radius: 8px;
-`;
-
-const Slider = styled.div`
-  display: flex;
-  transform: translateX(${(p) => `-${p.index * 100}%`});
-  transition: transform 0.3s ease;
-`;
-
-const Slide = styled.img`
-  min-width: 100%;
-  height: auto;
-  object-fit: cover;
-`;
-
-const Arrow = styled.button`
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  ${({ left }) => (left ? "left: 10px;" : "right: 10px;")}
-
-  width: 32px;
-  height: 32px;
-
-  background: white;
-  border: none;
-  border-radius: 50%;
-
-  display: flex; /* 🔥 추가 */
-  align-items: center; /* 🔥 세로 중앙 */
-  justify-content: center; /* 🔥 가로 중앙 */
-
-  z-index: 10;
-
-  cursor: pointer;
-  opacity: 0.7;
-`;
-
-const Dots = styled.div`
-  position: absolute;
-  bottom: 16px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  gap: 6px;
-`;
-
-const Dot = styled.div`
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: ${({ active }) => (active ? "white" : "#ccc")};
-`;
-
 const Actions = styled.div`
   display: flex;
   justify-content: space-between;
@@ -193,19 +134,9 @@ const FeedItem = ({ post }) => {
 
   const userId = post.user.userId;
   const isLiked = post.likes.some((l) => l.userId === userId);
-  const [currentIndex, setCurrentIndex] = useState(0);
   const [animateLike, setAnimateLike] = useState(false);
   const [replyModalOpen, setReplyModalOpen] = useState(false);
 
-  const total = post.images.length;
-
-  const prev = () => {
-    setCurrentIndex((prev) => (prev === 0 ? prev : prev - 1));
-  };
-
-  const next = () => {
-    setCurrentIndex((prev) => (prev === total - 1 ? prev : prev + 1));
-  };
   const getTimeDiff = (createdAt) => {
     const now = new Date();
     const created = new Date(createdAt);
@@ -274,34 +205,7 @@ const FeedItem = ({ post }) => {
       </Header>
 
       {/* Image */}
-      <ImageContainer>
-        <Slider index={currentIndex}>
-          {post.images.map((img, idx) => (
-            <Slide key={idx} src={img} />
-          ))}
-        </Slider>
-
-        {/* 좌우 버튼 */}
-        {currentIndex > 0 && (
-          <Arrow left onClick={prev}>
-            <img src={profileArrowLeft} alt="profile-arrow-left" />
-          </Arrow>
-        )}
-        {currentIndex < total - 1 && (
-          <Arrow onClick={next}>
-            <img src={profileArrowRight} alt="profile-arrow-right" />
-          </Arrow>
-        )}
-
-        {/* Dot */}
-        {total > 1 && (
-          <Dots>
-            {post.images.map((_, idx) => (
-              <Dot key={idx} active={idx === currentIndex} />
-            ))}
-          </Dots>
-        )}
-      </ImageContainer>
+      <PostImage images={post.images} />
 
       {/* Actions */}
       <Actions>
