@@ -59,6 +59,7 @@ export const addUserApi = (newUser) => {
         ...newUser,
         profileImage: "",
         bio: "",
+        following: [],
       };
 
       users.push(newUserData);
