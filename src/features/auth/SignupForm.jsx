@@ -1,4 +1,12 @@
 import { useState } from "react";
+import { useAuth } from "../../hooks/useAuth";
+import {
+  validateUserId,
+  validatePassword,
+  validateBirthday,
+  validateUsername,
+} from "../../utils/validation";
+
 import styled from "styled-components";
 import Input from "../../components/input/Input";
 import Dropdown from "../../components/dropdown/Drodown";
@@ -54,6 +62,7 @@ const getDays = (year, month) => {
   return Array.from({ length: lastDay }, (_, i) => i + 1);
 };
 const SignupForm = () => {
+  const { users } = useAuth();
   const [form, setForm] = useState({
     userId: "",
     password: "",
@@ -67,9 +76,32 @@ const SignupForm = () => {
   const [error, setError] = useState({
     userIdError: "",
     passwordError: "",
-    birthdayError: "aa",
+    birthdayError: "",
     usernameError: "",
   });
+
+  const handleSubmit = () => {
+    const userIdError = validateUserId(form.userId, users);
+    const passwordError = validatePassword(form.password);
+    const birthdayError = validateBirthday(form.year, form.month, form.day);
+    const usernameError = validateUsername(form.username);
+
+    const newErrors = {
+      userIdError,
+      passwordError,
+      birthdayError,
+      usernameError,
+    };
+
+    setError(newErrors);
+
+    // 하나라도 에러 있으면 종료
+    const hasError = Object.values(newErrors).some((e) => e);
+    if (hasError) return;
+
+    // 👉 여기서 회원가입 진행
+    console.log("회원가입 성공", form);
+  };
 
   const currentYear = new Date().getFullYear();
   const years = Array.from({ length: 100 }, (_, i) => currentYear - i);
@@ -171,7 +203,7 @@ const SignupForm = () => {
         <b>더 알아보기</b>
       </DescriptionDiv>
       <ButtonWrapper>
-        <Button>제출</Button>
+        <Button onClick={handleSubmit}>제출</Button>
       </ButtonWrapper>
       <ButtonWrapper>
         <Button variant="secondary-default">이미 계정이 있습니다</Button>
