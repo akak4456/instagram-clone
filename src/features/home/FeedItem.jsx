@@ -9,6 +9,8 @@ import postRepost from "../../assets/post-repost.png";
 import postSend from "../../assets/post-send.png";
 import postBookmark from "../../assets/post-bookmark.png";
 import postLikeFill from "../../assets/post-like-fill.png";
+import ReplyModal from "../../components/modal/ReplyModal";
+import useModalScrollLock from "../../hooks/useModalScrollLock";
 
 const likeAnimation = keyframes`
   0% {
@@ -193,6 +195,7 @@ const FeedItem = ({ post }) => {
   const isLiked = post.likes.some((l) => l.userId === userId);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [animateLike, setAnimateLike] = useState(false);
+  const [replyModalOpen, setReplyModalOpen] = useState(false);
 
   const total = post.images.length;
 
@@ -230,6 +233,26 @@ const FeedItem = ({ post }) => {
 
     return () => clearTimeout(timer);
   }, [isLiked]);
+
+  useEffect(() => {
+    const scrollBarWidth =
+      window.innerWidth - document.documentElement.clientWidth;
+
+    if (replyModalOpen) {
+      document.body.style.overflow = "hidden";
+      document.body.style.paddingRight = `${scrollBarWidth}px`; // 스크롤바 공간 확보
+    } else {
+      document.body.style.overflow = "";
+      document.body.style.paddingRight = "";
+    }
+
+    return () => {
+      document.body.style.overflow = "";
+      document.body.style.paddingRight = "";
+    };
+  }, [replyModalOpen]);
+
+  useModalScrollLock(replyModalOpen);
 
   const handleLike = () => {
     toggleLike(post.id, post.user.userId);
@@ -291,7 +314,7 @@ const FeedItem = ({ post }) => {
             />
             <span>{post.likes.length}</span>
           </ActionItem>
-          <ActionItem>
+          <ActionItem onClick={() => setReplyModalOpen(true)}>
             <img src={postComment} alt="post-comment" />
             <span>{post.comments.length}</span>
           </ActionItem>
@@ -312,6 +335,12 @@ const FeedItem = ({ post }) => {
       <Caption>
         <b>{post.user.username}</b> {post.caption}
       </Caption>
+      <ReplyModal
+        open={replyModalOpen}
+        onClose={() => {
+          setReplyModalOpen(false);
+        }}
+      />
     </Wrapper>
   );
 };
