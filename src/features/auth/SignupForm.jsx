@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useAuth } from "../../hooks/useAuth";
+import { useNavigate } from "react-router-dom";
 import {
   validateUserId,
   validatePassword,
@@ -62,7 +63,8 @@ const getDays = (year, month) => {
   return Array.from({ length: lastDay }, (_, i) => i + 1);
 };
 const SignupForm = () => {
-  const { users } = useAuth();
+  const { users, addUser } = useAuth();
+  const navigate = useNavigate();
   const [form, setForm] = useState({
     userId: "",
     password: "",
@@ -99,8 +101,8 @@ const SignupForm = () => {
     const hasError = Object.values(newErrors).some((e) => e);
     if (hasError) return;
 
-    // 👉 여기서 회원가입 진행
-    console.log("회원가입 성공", form);
+    const result = addUser(form);
+    navigate("/login");
   };
 
   const currentYear = new Date().getFullYear();

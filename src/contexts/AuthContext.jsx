@@ -40,6 +40,42 @@ export const AuthProvider = ({ children }) => {
     return { success: true };
   };
 
+  const addUser = (newUser) => {
+    const { userId, username } = newUser;
+
+    // 1️⃣ userId 중복 체크
+    const existsUserId = users.some((u) => u.userId === userId);
+    if (existsUserId) {
+      return {
+        success: false,
+        message: "이미 사용 중인 휴대폰 번호 또는 이메일입니다.",
+      };
+    }
+
+    // 2️⃣ username 중복 체크 (선택 but 보통 필요)
+    const existsUsername = users.some((u) => u.username === username);
+    if (existsUsername) {
+      return {
+        success: false,
+        message: "이미 사용 중인 사용자 이름입니다.",
+      };
+    }
+
+    // 3️⃣ 유저 추가
+    const newUserData = {
+      ...newUser,
+      profileImage: "",
+      bio: "",
+    };
+
+    setUsers((prev) => [...prev, newUserData]);
+
+    return {
+      success: true,
+      user: newUserData,
+    };
+  };
+
   // 로그아웃
   const logout = () => {
     setUser(null);
@@ -65,6 +101,7 @@ export const AuthProvider = ({ children }) => {
         loading: loading,
         login,
         logout,
+        addUser,
       }}
     >
       {children}
