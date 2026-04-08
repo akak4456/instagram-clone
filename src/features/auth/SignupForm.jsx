@@ -28,8 +28,13 @@ const getDays = (year, month) => {
 };
 const SignupForm = () => {
   const [form, setForm] = useState({
-    username: "",
+    userId: "",
     password: "",
+    year: "",
+    month: "",
+    day: "",
+    name: "",
+    username: "",
   });
 
   const currentYear = new Date().getFullYear();
@@ -41,8 +46,9 @@ const SignupForm = () => {
       <SignupFormLabel>휴대폰 번호 또는 이메일 주소</SignupFormLabel>
       <Input
         label="휴대폰 번호 또는 이메일 주소"
-        value={form.username}
-        onChange={(e) => setForm({ ...form, username: e.target.value })}
+        value={form.userId}
+        onChange={(e) => setForm({ ...form, userId: e.target.value })}
+        error={true}
       />
       <SignupFormLabel>비밀번호</SignupFormLabel>
       <Input
@@ -59,6 +65,7 @@ const SignupForm = () => {
           value={form.year}
           suffix="년"
           onChange={(v) => setForm({ ...form, year: v })}
+          error={true}
         />
         <Dropdown
           placeholder="월"
@@ -75,6 +82,18 @@ const SignupForm = () => {
           onChange={(v) => setForm({ ...form, day: v })}
         />
       </BirthWrapper>
+      <SignupFormLabel>이름</SignupFormLabel>
+      <Input
+        label="성명"
+        value={form.name}
+        onChange={(e) => setForm({ ...form, name: e.target.value })}
+      />
+      <SignupFormLabel>사용자 이름</SignupFormLabel>
+      <Input
+        label="사용자 이름"
+        value={form.username}
+        onChange={(e) => setForm({ ...form, username: e.target.value })}
+      />
     </SignupWrapper>
   );
 };

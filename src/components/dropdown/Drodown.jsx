@@ -12,7 +12,8 @@ const Label = styled.span`
   top: ${({ active }) => (active ? "6px" : "50%")};
   transform: translateY(${({ active }) => (active ? "0" : "-50%")});
   font-size: ${({ active }) => (active ? "11px" : "14px")};
-  color: ${({ active }) => (active ? "#666" : "#999")};
+  color: ${({ active, error }) =>
+    error ? "#ed4956" : active ? "#666" : "#999"};
   transition: all 0.2s ease;
   pointer-events: none;
   background: white;
@@ -23,7 +24,7 @@ const Header = styled.div`
   height: 48px; /* 🔥 고정 높이 */
   padding: 0 12px;
   border-radius: 8px;
-  border: 1px solid #ccc;
+  border: 1px solid ${({ error }) => (error ? "#ed4956" : "#ccc")};
   cursor: pointer;
   background: white;
 
@@ -32,7 +33,7 @@ const Header = styled.div`
   justify-content: space-between;
 
   &:hover {
-    border-color: black;
+    border-color: ${({ error }) => (error ? "#ed4956" : "black")};
   }
 
   ${({ isOpen }) =>
@@ -103,7 +104,7 @@ const ItemContent = styled.div`
   transition: all 0.2s;
 `;
 
-const Dropdown = ({ options, placeholder, value, onChange, suffix }) => {
+const Dropdown = ({ options, placeholder, value, onChange, suffix, error }) => {
   const [isOpen, setIsOpen] = useState(false);
   const ref = useRef();
 
@@ -120,8 +121,10 @@ const Dropdown = ({ options, placeholder, value, onChange, suffix }) => {
 
   return (
     <Wrapper ref={ref}>
-      <Header isOpen={isOpen} onClick={() => setIsOpen(!isOpen)}>
-        <Label active={isOpen || value}>{placeholder}</Label>
+      <Header isOpen={isOpen} onClick={() => setIsOpen(!isOpen)} error={error}>
+        <Label active={isOpen || value} error={error}>
+          {placeholder}
+        </Label>
 
         <Value>{value ? `${value}${suffix ? ` ${suffix}` : ""}` : ""}</Value>
         <img src={arrowDown} alt="arrow-down" />

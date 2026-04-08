@@ -10,14 +10,14 @@ const StyledInput = styled.input`
   width: 100%;
   padding: 20px 12px 6px;
   border-radius: 8px;
-  border: 1px solid #dbdbdb;
+  border: 1px solid ${({ error }) => (error ? "#ed4956" : "#dbdbdb")};
   background: #ffffff;
   font-size: 18px;
   box-sizing: border-box;
 
   &:focus {
     outline: none;
-    border-color: #0064e0;
+    border-color: ${({ error }) => (error ? "#ed4956" : "#0064e0")};
   }
 `;
 
@@ -28,12 +28,12 @@ const StyledLabel = styled.label`
   transform: ${({ isActive }) =>
     isActive ? "translateY(0)" : "translateY(-50%)"};
   font-size: ${({ isActive }) => (isActive ? "11px" : "14px")};
-  color: #8e8e8e;
+  color: ${({ error }) => (error ? "#ed4956" : "#8e8e8e")};
   pointer-events: none;
   transition: all 0.2s ease;
 `;
 
-const Input = ({ label, value, onChange, type = "text" }) => {
+const Input = ({ label, value, onChange, type = "text", error }) => {
   const [isFocused, setIsFocused] = useState(false);
 
   return (
@@ -44,8 +44,11 @@ const Input = ({ label, value, onChange, type = "text" }) => {
         onChange={onChange}
         onFocus={() => setIsFocused(true)}
         onBlur={() => setIsFocused(false)}
+        error={error}
       />
-      <StyledLabel isActive={isFocused || value}>{label}</StyledLabel>
+      <StyledLabel isActive={isFocused || value} error={error}>
+        {label}
+      </StyledLabel>
     </Wrapper>
   );
 };
