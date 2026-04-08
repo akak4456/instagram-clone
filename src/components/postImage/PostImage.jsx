@@ -1,24 +1,27 @@
+// PostImage.jsx
 import { useState } from "react";
-import styled, { keyframes, css } from "styled-components";
+import styled from "styled-components";
 import profileArrowLeft from "../../assets/profile-arrow-left.png";
 import profileArrowRight from "../../assets/profile-arrow-right.png";
 
 const ImageContainer = styled.div`
   position: relative;
   width: 100%;
+  height: ${({ replyModal }) => (replyModal ? "100%" : "auto")};
   overflow: hidden;
-  border-radius: 8px;
+  border-radius: ${({ replyModal }) => (replyModal ? "0" : "8px")};
 `;
 
 const Slider = styled.div`
   display: flex;
   transform: translateX(${(p) => `-${p.index * 100}%`});
   transition: transform 0.3s ease;
+  height: 100%; // 항상 부모 높이에 맞춤
 `;
 
 const Slide = styled.img`
   min-width: 100%;
-  height: auto;
+  height: ${({ replyModal }) => (replyModal ? "100%" : "auto")};
   object-fit: cover;
 `;
 
@@ -35,9 +38,9 @@ const Arrow = styled.button`
   border: none;
   border-radius: 50%;
 
-  display: flex; /* 🔥 추가 */
-  align-items: center; /* 🔥 세로 중앙 */
-  justify-content: center; /* 🔥 가로 중앙 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   z-index: 10;
 
@@ -60,38 +63,34 @@ const Dot = styled.div`
   border-radius: 50%;
   background: ${({ active }) => (active ? "white" : "#ccc")};
 `;
-const PostImage = ({ images }) => {
+
+const PostImage = ({ images, replyModal = false }) => {
   const total = images.length;
-
-  const prev = () => {
-    setCurrentIndex((prev) => (prev === 0 ? prev : prev - 1));
-  };
-
-  const next = () => {
-    setCurrentIndex((prev) => (prev === total - 1 ? prev : prev + 1));
-  };
   const [currentIndex, setCurrentIndex] = useState(0);
+
+  const prev = () => setCurrentIndex((prev) => (prev === 0 ? prev : prev - 1));
+  const next = () =>
+    setCurrentIndex((prev) => (prev === total - 1 ? prev : prev + 1));
+
   return (
-    <ImageContainer>
+    <ImageContainer replyModal={replyModal}>
       <Slider index={currentIndex}>
         {images.map((img, idx) => (
-          <Slide key={idx} src={img} />
+          <Slide replyModal={replyModal} key={idx} src={img} />
         ))}
       </Slider>
 
-      {/* 좌우 버튼 */}
       {currentIndex > 0 && (
         <Arrow left onClick={prev}>
-          <img src={profileArrowLeft} alt="profile-arrow-left" />
+          <img src={profileArrowLeft} alt="left-arrow" />
         </Arrow>
       )}
       {currentIndex < total - 1 && (
         <Arrow onClick={next}>
-          <img src={profileArrowRight} alt="profile-arrow-right" />
+          <img src={profileArrowRight} alt="right-arrow" />
         </Arrow>
       )}
 
-      {/* Dot */}
       {total > 1 && (
         <Dots>
           {images.map((_, idx) => (

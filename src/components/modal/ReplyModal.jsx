@@ -1,6 +1,7 @@
 import { createPortal } from "react-dom";
 import styled from "styled-components";
 import replyModalX from "../../assets/reply-modal-x.png";
+import PostImage from "../postImage/PostImage";
 
 const Overlay = styled.div`
   position: fixed;
@@ -29,9 +30,14 @@ const ModalBox = styled.div`
   width: 60%;
   height: 95%;
   background-color: white;
+  display: flex;
 `;
 
-const ReplyModal = ({ open, onClose }) => {
+const PostImageWrapper = styled.div`
+  width: 50%;
+`;
+
+const ReplyModal = ({ open, onClose, images }) => {
   if (!open) return null;
 
   return createPortal(
@@ -39,7 +45,11 @@ const ReplyModal = ({ open, onClose }) => {
       <ReplyModalXDiv>
         <img src={replyModalX} alt="reply-modal-x" />
       </ReplyModalXDiv>
-      <ModalBox onClick={(e) => e.stopPropagation()}></ModalBox>
+      <ModalBox onClick={(e) => e.stopPropagation()}>
+        <PostImageWrapper>
+          <PostImage images={images} replyModal={true} />
+        </PostImageWrapper>
+      </ModalBox>
     </Overlay>,
     document.getElementById("modal-root"),
   );

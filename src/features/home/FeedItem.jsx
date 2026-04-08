@@ -244,6 +244,7 @@ const FeedItem = ({ post }) => {
         onClose={() => {
           setReplyModalOpen(false);
         }}
+        images={post.images}
       />
     </Wrapper>
   );
