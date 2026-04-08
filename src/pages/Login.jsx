@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styled from "styled-components";
-import { useAuth } from "../contexts/AuthContext";
+import { useAuth } from "../hooks/useAuth";
 import { useNavigate } from "react-router-dom";
 import LoginForm from "../features/auth/LoginForm";
 import arrowLeft from "../assets/arrow-left.png";

@@ -1,7 +1,7 @@
 import { createContext, useContext, useEffect, useState } from "react";
 import { users as initialUsers } from "../mocks/users";
 
-const AuthContext = createContext();
+export const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
   const [users, setUsers] = useState([]);
@@ -70,5 +70,3 @@ export const AuthProvider = ({ children }) => {
     </AuthContext.Provider>
   );
 };
-
-export const useAuth = () => useContext(AuthContext);

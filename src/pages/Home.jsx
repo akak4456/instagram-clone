@@ -1,4 +1,4 @@
-import { usePost } from "../contexts/PostContext";
+import { usePost } from "../hooks/usePost";
 
 const Home = () => {
   const { posts, loading, toggleLike } = usePost();

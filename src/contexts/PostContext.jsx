@@ -1,7 +1,7 @@
 import { createContext, useContext, useEffect, useState } from "react";
 import { fetchFeed } from "../mocks/api";
 
-const PostContext = createContext();
+export const PostContext = createContext();
 
 export const PostProvider = ({ children }) => {
   const [posts, setPosts] = useState([]);
@@ -46,6 +46,3 @@ export const PostProvider = ({ children }) => {
     </PostContext.Provider>
   );
 };
-
-// 커스텀 훅
-export const usePost = () => useContext(PostContext);
