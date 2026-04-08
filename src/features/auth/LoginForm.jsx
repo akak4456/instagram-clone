@@ -3,7 +3,7 @@ import { useAuth } from "../../hooks/useAuth";
 import Input from "../../components/input/Input";
 import Button from "../../components/button/Button";
 const LoginForm = ({ handleLogin }) => {
-  const { loading } = useAuth();
+  const { authLoading } = useAuth();
   const [form, setForm] = useState({
     userId: "",
     password: "",
@@ -30,7 +30,7 @@ const LoginForm = ({ handleLogin }) => {
         <Button
           onClick={() => handleLogin(form)}
           disabled={!isValid}
-          loading={loading}
+          loading={authLoading}
         >
           로그인
         </Button>

@@ -1,8 +1,8 @@
 import { useEffect } from "react";
-import { useAuth } from "../../hooks/useAuth";
+import { useFollow } from "../../hooks/useFollow";
 
 const HomeTopProfiles = () => {
-  const { followingUsers, fetchFollowingUsers } = useAuth();
+  const { followingUsers, fetchFollowingUsers } = useFollow();
   console.log("HomeTopProfiles");
   useEffect(() => {
     fetchFollowingUsers();

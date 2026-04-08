@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useAuth } from "../../hooks/useAuth";
+import { useUser } from "../../hooks/useUser";
 import { useNavigate } from "react-router-dom";
 import {
   validateUserId,
@@ -65,7 +65,7 @@ const getDays = (year, month) => {
 };
 const SignupForm = () => {
   const [open, setOpen] = useState(false);
-  const { users, addUser, loading } = useAuth();
+  const { users, addUser, userLoading } = useUser();
   const navigate = useNavigate();
   const [form, setForm] = useState({
     userId: "",
@@ -208,7 +208,7 @@ const SignupForm = () => {
         <b>더 알아보기</b>
       </DescriptionDiv>
       <ButtonWrapper>
-        <Button onClick={handleSubmit} loading={loading}>
+        <Button onClick={handleSubmit} loading={userLoading}>
           제출
         </Button>
       </ButtonWrapper>
