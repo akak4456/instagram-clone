@@ -2,6 +2,8 @@ import { useState } from "react";
 import styled from "styled-components";
 import Input from "../../components/input/Input";
 import Dropdown from "../../components/dropdown/Drodown";
+import errorMark from "../../assets/error-mark.png";
+import Button from "../../components/button/Button";
 
 const SignupWrapper = styled.div`
   display: flex;
@@ -18,6 +20,23 @@ const SignupFormLabel = styled.span`
 const BirthWrapper = styled.div`
   display: flex;
   gap: 10px;
+`;
+
+const ErrorWrapper = styled.div`
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 5px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  span {
+    font-size: 13px;
+    color: #ed4956;
+  }
+`;
+
+const ButtonWrapper = styled.div`
+  margin-top: 16px;
 `;
 
 const getDays = (year, month) => {
@@ -37,6 +56,13 @@ const SignupForm = () => {
     username: "",
   });
 
+  const [error, setError] = useState({
+    userIdError: "",
+    passwordError: "",
+    birthdayError: "aa",
+    usernameError: "",
+  });
+
   const currentYear = new Date().getFullYear();
   const years = Array.from({ length: 100 }, (_, i) => currentYear - i);
   const months = Array.from({ length: 12 }, (_, i) => i + 1);
@@ -48,15 +74,28 @@ const SignupForm = () => {
         label="휴대폰 번호 또는 이메일 주소"
         value={form.userId}
         onChange={(e) => setForm({ ...form, userId: e.target.value })}
-        error={true}
+        error={!!error.userIdError}
       />
+      {error.userIdError && (
+        <ErrorWrapper>
+          <img src={errorMark} alt="error-mark" />
+          <span>{error.userIdError}</span>
+        </ErrorWrapper>
+      )}
       <SignupFormLabel>비밀번호</SignupFormLabel>
       <Input
         type="password"
         label="비밀번호"
         value={form.password}
         onChange={(e) => setForm({ ...form, password: e.target.value })}
+        error={!!error.passwordError}
       />
+      {error.passwordError && (
+        <ErrorWrapper>
+          <img src={errorMark} alt="error-mark" />
+          <span>{error.passwordError}</span>
+        </ErrorWrapper>
+      )}
       <SignupFormLabel>생년월일</SignupFormLabel>
       <BirthWrapper>
         <Dropdown
@@ -65,7 +104,7 @@ const SignupForm = () => {
           value={form.year}
           suffix="년"
           onChange={(v) => setForm({ ...form, year: v })}
-          error={true}
+          error={!!error.birthdayError}
         />
         <Dropdown
           placeholder="월"
@@ -73,6 +112,7 @@ const SignupForm = () => {
           value={form.month}
           suffix="월"
           onChange={(v) => setForm({ ...form, month: v })}
+          error={!!error.birthdayError}
         />
         <Dropdown
           placeholder="일"
@@ -80,8 +120,15 @@ const SignupForm = () => {
           value={form.day}
           suffix="일"
           onChange={(v) => setForm({ ...form, day: v })}
+          error={!!error.birthdayError}
         />
       </BirthWrapper>
+      {error.birthdayError && (
+        <ErrorWrapper>
+          <img src={errorMark} alt="error-mark" />
+          <span>{error.birthdayError}</span>
+        </ErrorWrapper>
+      )}
       <SignupFormLabel>이름</SignupFormLabel>
       <Input
         label="성명"
@@ -93,7 +140,17 @@ const SignupForm = () => {
         label="사용자 이름"
         value={form.username}
         onChange={(e) => setForm({ ...form, username: e.target.value })}
+        error={!!error.usernameError}
       />
+      {error.usernameError && (
+        <ErrorWrapper>
+          <img src={errorMark} alt="error-mark" />
+          <span>{error.usernameError}</span>
+        </ErrorWrapper>
+      )}
+      <ButtonWrapper>
+        <Button>제출</Button>
+      </ButtonWrapper>
     </SignupWrapper>
   );
 };

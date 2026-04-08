@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import styled from "styled-components";
 import arrowDown from "../../assets/arrow-down.png";
+import arrowDownError from "../../assets/arrow-down-error.png";
 
 const Wrapper = styled.div`
   position: relative;
@@ -127,7 +128,7 @@ const Dropdown = ({ options, placeholder, value, onChange, suffix, error }) => {
         </Label>
 
         <Value>{value ? `${value}${suffix ? ` ${suffix}` : ""}` : ""}</Value>
-        <img src={arrowDown} alt="arrow-down" />
+        <img src={error ? arrowDownError : arrowDown} alt="arrow-down" />
       </Header>
 
       {isOpen && (
