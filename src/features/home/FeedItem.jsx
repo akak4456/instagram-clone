@@ -2,6 +2,11 @@ import { useState } from "react";
 import styled from "styled-components";
 import profileArrowLeft from "../../assets/profile-arrow-left.png";
 import profileArrowRight from "../../assets/profile-arrow-right.png";
+import postLike from "../../assets/post-like.png";
+import postComment from "../../assets/post-comment.png";
+import postRepost from "../../assets/post-repost.png";
+import postSend from "../../assets/post-send.png";
+import postBookmark from "../../assets/post-bookmark.png";
 
 const Wrapper = styled.div`
   width: 470px;
@@ -136,30 +141,23 @@ const Actions = styled.div`
 
 const ActionLeft = styled.div`
   display: flex;
-  gap: 12px;
+  gap: 20px;
 `;
 
-const Icon = styled.div`
-  cursor: pointer;
-  font-size: 18px;
-`;
-
-const Likes = styled.div`
-  padding: 0 12px;
-  font-weight: 600;
-  font-size: 14px;
+const ActionItem = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  span {
+    margin-left: 8px;
+    font-weight: 500;
+    font-size: 14px;
+  }
 `;
 
 const Caption = styled.div`
   padding: 4px 12px;
   font-size: 14px;
-`;
-
-const Comments = styled.div`
-  padding: 4px 12px;
-  font-size: 14px;
-  color: #8e8e8e;
-  cursor: pointer;
 `;
 
 const FeedItem = ({ post }) => {
@@ -237,23 +235,31 @@ const FeedItem = ({ post }) => {
       {/* Actions */}
       <Actions>
         <ActionLeft>
-          <Icon>❤️</Icon>
-          <Icon>💬</Icon>
-          <Icon>📤</Icon>
+          <ActionItem>
+            <img src={postLike} alt="post-like" />
+            <span>{post.likes.length}</span>
+          </ActionItem>
+          <ActionItem>
+            <img src={postComment} alt="post-comment" />
+            <span>{post.comments.length}</span>
+          </ActionItem>
+          <ActionItem>
+            <img src={postRepost} alt="post-repost" />
+            <span>100</span>
+          </ActionItem>
+          <ActionItem>
+            <img src={postSend} alt="post-send" />
+          </ActionItem>
         </ActionLeft>
-        <Icon>🔖</Icon>
+        <ActionItem>
+          <img src={postBookmark} alt="post-bookmark" />
+        </ActionItem>
       </Actions>
-
-      {/* Likes */}
-      <Likes>좋아요 {post.likeCount}개</Likes>
 
       {/* Caption */}
       <Caption>
-        <b>{post.username}</b> {post.caption}
+        <b>{post.user.username}</b> {post.caption}
       </Caption>
-
-      {/* Comments Preview */}
-      <Comments>댓글 {post.commentCount}개 모두 보기</Comments>
     </Wrapper>
   );
 };

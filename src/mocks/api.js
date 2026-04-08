@@ -1,7 +1,12 @@
-import { posts } from "./posts";
+import { posts as initialPosts } from "./posts";
 import { users as initialUsers } from "./users";
+import { likes as initialLikes } from "./likes";
+import { comments as initialComments } from "./comments";
 
 let users = [...initialUsers];
+let posts = [...initialPosts];
+let likes = [...initialLikes];
+let comments = [...initialComments];
 
 export const fetchUsersApi = () => {
   return new Promise((resolve) => {
@@ -98,10 +103,14 @@ export const fetchFollowingUsersApi = (userId) => {
 const getFeedPosts = () => {
   return posts.map((post) => {
     const user = users.find((u) => u.userId === post.userId);
+    const likesFiltered = likes.filter((l) => l.postId === post.id);
+    const commentFiltered = comments.filter((c) => c.postId === post.id);
 
     return {
       ...post,
       user,
+      likes: likesFiltered,
+      comments: commentFiltered,
     };
   });
 };
