@@ -2,8 +2,8 @@ import { Navigate } from "react-router-dom";
 import { useAuth } from "../hooks/useAuth";
 
 const PrivateRoute = ({ children }) => {
-  const { isLogin, loading } = useAuth();
-  if (loading) return null; // 또는 로딩 스피너
+  const { isLogin, authLoading } = useAuth();
+  if (authLoading) return null; // 또는 로딩 스피너
 
   return isLogin ? children : <Navigate to="/login" />;
 };
