@@ -24,11 +24,9 @@ export const loginApi = ({ userId, password }) => {
         return;
       }
 
-      const { password: _, ...userWithoutPassword } = foundUser;
-
       resolve({
         success: true,
-        user: userWithoutPassword,
+        user: { userId: foundUser.userId },
       });
     }, 500);
   });
