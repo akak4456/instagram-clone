@@ -1,7 +1,9 @@
+import { useEffect } from "react";
 import { createPortal } from "react-dom";
 import styled from "styled-components";
 import replyModalX from "../../assets/reply-modal-x.png";
 import PostImage from "../postImage/PostImage";
+import { useReply } from "../../hooks/useReply";
 
 const Overlay = styled.div`
   position: fixed;
@@ -107,7 +109,16 @@ const More = styled.div`
   cursor: pointer;
 `;
 
-const ReplyModal = ({ open, onClose, images, postUser }) => {
+const ReplyModal = ({ open, onClose, post }) => {
+  const { initComments, loadComments } = useReply();
+  const postId = post.id;
+  useEffect(() => {
+    if (!postId) return;
+
+    // 🔥 post 바뀔 때마다 초기화 + 첫 로딩
+    initComments(postId);
+    loadComments();
+  }, [postId]);
   if (!open) return null;
 
   return createPortal(
@@ -117,17 +128,17 @@ const ReplyModal = ({ open, onClose, images, postUser }) => {
       </ReplyModalXDiv>
       <ModalBox onClick={(e) => e.stopPropagation()}>
         <PostImageWrapper>
-          <PostImage images={images} replyModal={true} />
+          <PostImage images={post.images} replyModal={true} />
         </PostImageWrapper>
         <ReplyWrapper>
           <ReplyTopDiv>
             <ReplyTopLeft>
               <Ring>
                 <Inner>
-                  <Profile src={postUser.profileImage} />
+                  <Profile src={post.user.profileImage} />
                 </Inner>
               </Ring>
-              <Username>{postUser.username}</Username>
+              <Username>{post.user.username}</Username>
               <Username>•</Username>
               <Follow>팔로우</Follow>
             </ReplyTopLeft>

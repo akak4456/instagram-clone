@@ -12,7 +12,13 @@ let posts = Array(100)
     id: idx + 1, // 🔥 고유 id
   }));
 let likes = [...initialLikes];
-let comments = [...initialComments];
+let comments = Array(100)
+  .fill(initialComments)
+  .flat()
+  .map((comment, idx) => ({
+    ...comment,
+    id: idx + 1,
+  }));
 
 export const fetchUsersApi = () => {
   return new Promise((resolve) => {
@@ -164,5 +170,30 @@ export const toggleLikeApi = ({ postId, userId }) => {
         success: true,
       });
     }, 200);
+  });
+};
+
+export const fetchCommentsApi = (postId, page = 1, limit = 10) => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      // 🔥 해당 post의 댓글만 필터링
+      const filtered = comments.filter((c) => c.postId === postId);
+
+      // 🔥 최신순 정렬 (선택)
+      const sorted = [...filtered].sort(
+        (a, b) => new Date(b.createdAt) - new Date(a.createdAt),
+      );
+
+      const start = (page - 1) * limit;
+      const end = start + limit;
+
+      const pagedComments = sorted.slice(start, end);
+
+      resolve({
+        success: true,
+        comments: pagedComments,
+        hasMore: end < sorted.length,
+      });
+    }, 300);
   });
 };
