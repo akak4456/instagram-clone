@@ -280,7 +280,7 @@ const ReplyModal = ({ open, onClose, post }) => {
           </ReplyTopDiv>
           <ReplyMiddleDiv>
             {comments.map((comment) => (
-              <ReplyItem comment={comment} key={comment.id} />
+              <ReplyItem postId={post.id} comment={comment} key={comment.id} />
             ))}
             <ReplyModalPlusDiv>
               {replyLoading ? (

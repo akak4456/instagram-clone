@@ -209,3 +209,31 @@ export const fetchCommentsApi = (postId, page = 1, limit = 10) => {
     }, 300);
   });
 };
+
+export const toggleCommentLikeApi = ({ commentId, userId }) => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      const existing = commentsLikes.find(
+        (cl) => cl.commentId === commentId && cl.userId === userId,
+      );
+
+      if (existing) {
+        // 🔥 좋아요 취소
+        commentsLikes = commentsLikes.filter(
+          (cl) => !(cl.commentId === commentId && cl.userId === userId),
+        );
+      } else {
+        // 🔥 좋아요 추가
+        commentsLikes.push({
+          id: Date.now(),
+          commentId,
+          userId,
+        });
+      }
+
+      resolve({
+        success: true,
+      });
+    }, 200);
+  });
+};

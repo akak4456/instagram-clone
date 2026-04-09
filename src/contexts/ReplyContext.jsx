@@ -1,6 +1,5 @@
 import { createContext, useState } from "react";
-import { fetchCommentsApi } from "../mocks/api";
-
+import { fetchCommentsApi, toggleCommentLikeApi } from "../mocks/api";
 export const ReplyContext = createContext();
 
 export const ReplyProvider = ({ children }) => {
@@ -99,6 +98,32 @@ export const ReplyProvider = ({ children }) => {
     }));
   };
 
+  const toggleReplyLike = async (postId, commentId, userId) => {
+    // 🔥 optimistic update
+    setCommentsMap((prev) => {
+      const updated = prev[postId].map((comment) => {
+        if (comment.id !== commentId) return comment;
+
+        const alreadyLiked = comment.likes.some((l) => l.userId === userId);
+
+        return {
+          ...comment,
+          likes: alreadyLiked
+            ? comment.likes.filter((l) => l.userId !== userId)
+            : [...comment.likes, { userId }],
+        };
+      });
+
+      return {
+        ...prev,
+        [postId]: updated,
+      };
+    });
+
+    // 🔥 서버 반영
+    await toggleCommentLikeApi({ commentId, userId });
+  };
+
   return (
     <ReplyContext.Provider
       value={{
@@ -108,6 +133,7 @@ export const ReplyProvider = ({ children }) => {
         loadingMap,
         loadComments,
         initComments,
+        toggleReplyLike,
       }}
     >
       {children}

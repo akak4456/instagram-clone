@@ -1,6 +1,25 @@
-import styled from "styled-components";
-import likeIcon from "../../assets/post-like.png";
+import { useState, useRef, useEffect } from "react";
+import styled, { keyframes, css } from "styled-components";
+import postLike from "../../assets/post-like.png";
+import postLikeFill from "../../assets/post-like-fill.png";
 import { getTimeDiff } from "../../utils/timeUtils";
+import { useAuth } from "../../hooks/useAuth";
+import { useReply } from "../../hooks/useReply";
+
+const likeAnimation = keyframes`
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.4);
+  }
+  60% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+`;
 
 const Wrapper = styled.div`
   display: flex;
@@ -87,8 +106,38 @@ const Profile = styled.div`
   background: url(${(p) => p.src}) center/cover;
 `;
 
-const ReplyItem = ({ comment }) => {
+const LikeIcon = styled.img`
+  width: 14px;
+  ${({ animate }) =>
+    animate &&
+    css`
+      animation: ${likeAnimation} 0.3s ease;
+    `}
+`;
+
+const ReplyItem = ({ postId, comment }) => {
+  const { user: currentUser } = useAuth();
+  const { toggleReplyLike } = useReply(postId);
   const { user, content, createdAt } = comment;
+  const userId = currentUser.userId;
+
+  const [animateLike, setAnimateLike] = useState(false);
+
+  const firstRender = useRef(true);
+
+  const isLiked = comment.likes.some((l) => l.userId === userId);
+
+  useEffect(() => {
+    if (firstRender.current) {
+      // 첫 렌더링일 때는 애니메이션 실행하지 않음
+      firstRender.current = false;
+      return;
+    }
+    setAnimateLike(true);
+    const timer = setTimeout(() => setAnimateLike(false), 300);
+
+    return () => clearTimeout(timer);
+  }, [isLiked]);
 
   return (
     <Wrapper>
@@ -119,7 +168,12 @@ const ReplyItem = ({ comment }) => {
 
       {/* 좋아요 아이콘 */}
       <Right>
-        <img src={likeIcon} alt="like" width={14} />
+        <LikeIcon
+          src={isLiked ? postLikeFill : postLike}
+          alt="post-like"
+          animate={animateLike}
+          onClick={() => toggleReplyLike(postId, comment.id, userId)}
+        />
       </Right>
     </Wrapper>
   );

@@ -2,8 +2,14 @@ import { useContext } from "react";
 import { ReplyContext } from "../contexts/ReplyContext";
 
 export const useReply = (postId) => {
-  const { commentsMap, hasMoreMap, loadingMap, loadComments, initComments } =
-    useContext(ReplyContext);
+  const {
+    commentsMap,
+    hasMoreMap,
+    loadingMap,
+    loadComments,
+    initComments,
+    toggleReplyLike,
+  } = useContext(ReplyContext);
 
   return {
     comments: commentsMap[postId] || [],
@@ -11,5 +17,6 @@ export const useReply = (postId) => {
     replyLoading: loadingMap[postId] ?? false,
     loadComments,
     initComments,
+    toggleReplyLike,
   };
 };
