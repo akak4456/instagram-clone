@@ -34,10 +34,80 @@ const ModalBox = styled.div`
 `;
 
 const PostImageWrapper = styled.div`
-  width: 50%;
+  width: 55%;
+`;
+const ReplyWrapper = styled.div`
+  width: 45%;
 `;
 
-const ReplyModal = ({ open, onClose, images }) => {
+const ReplyTopDiv = styled.div`
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #efefef;
+`;
+
+const ReplyTopLeft = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 8px;
+`;
+
+const Ring = styled.div`
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  padding: 2px;
+  background: linear-gradient(
+    45deg,
+    #feda75,
+    #fa7e1e,
+    #d62976,
+    #962fbf,
+    #4f5bd5
+  );
+`;
+
+const Inner = styled.div`
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+const Profile = styled.div`
+  width: calc(100% - 4px); /* 🔥 핵심 */
+  height: calc(100% - 4px);
+  border-radius: 50%;
+  background: url(${(p) => p.src}) center/cover;
+`;
+
+const Username = styled.div`
+  font-weight: 600;
+  font-size: 14px;
+`;
+
+const Follow = styled.div`
+  font-weight: 600;
+  font-size: 14px;
+  color: #515ff8;
+
+  &:hover {
+    cursor: pointer;
+    color: #4251d6;
+  }
+`;
+
+const More = styled.div`
+  cursor: pointer;
+`;
+
+const ReplyModal = ({ open, onClose, images, postUser }) => {
   if (!open) return null;
 
   return createPortal(
@@ -49,6 +119,21 @@ const ReplyModal = ({ open, onClose, images }) => {
         <PostImageWrapper>
           <PostImage images={images} replyModal={true} />
         </PostImageWrapper>
+        <ReplyWrapper>
+          <ReplyTopDiv>
+            <ReplyTopLeft>
+              <Ring>
+                <Inner>
+                  <Profile src={postUser.profileImage} />
+                </Inner>
+              </Ring>
+              <Username>{postUser.username}</Username>
+              <Username>•</Username>
+              <Follow>팔로우</Follow>
+            </ReplyTopLeft>
+            <More>•••</More>
+          </ReplyTopDiv>
+        </ReplyWrapper>
       </ModalBox>
     </Overlay>,
     document.getElementById("modal-root"),

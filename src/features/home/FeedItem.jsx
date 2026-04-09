@@ -245,6 +245,7 @@ const FeedItem = ({ post }) => {
           setReplyModalOpen(false);
         }}
         images={post.images}
+        postUser={post.user}
       />
     </Wrapper>
   );
