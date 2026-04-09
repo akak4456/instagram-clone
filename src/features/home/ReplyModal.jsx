@@ -14,6 +14,7 @@ import postRepost from "../../assets/post-repost.png";
 import postBookmark from "../../assets/post-bookmark.png";
 import postSend from "../../assets/post-send.png";
 import { usePost } from "../../hooks/usePost";
+import { useAuth } from "../../hooks/useAuth";
 
 const likeAnimation = keyframes`
   0% {
@@ -196,7 +197,8 @@ const LikeIcon = styled.img`
 
 const ReplyModal = ({ open, onClose, post }) => {
   const postId = post.id;
-  const userId = post.user.userId;
+  const { user } = useAuth();
+  const userId = user.userId;
   const [animateLike, setAnimateLike] = useState(false);
   const firstRender = useRef(true);
   const isLiked = post.likes.some((l) => l.userId === userId);
@@ -224,7 +226,7 @@ const ReplyModal = ({ open, onClose, post }) => {
   if (!open) return null;
 
   const handleLike = () => {
-    toggleLike(post.id, post.user.userId);
+    toggleLike(post.id, userId);
   };
 
   return createPortal(
