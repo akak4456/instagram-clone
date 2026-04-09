@@ -111,6 +111,24 @@ const Navigation = () => {
     window.addEventListener("click", handleClick);
     return () => window.removeEventListener("click", handleClick);
   }, []);
+
+  useEffect(() => {
+    const scrollBarWidth =
+      window.innerWidth - document.documentElement.clientWidth;
+
+    if (uploadModalOpen) {
+      document.body.style.overflow = "hidden";
+      document.body.style.paddingRight = `${scrollBarWidth}px`; // 스크롤바 공간 확보
+    } else {
+      document.body.style.overflow = "";
+      document.body.style.paddingRight = "";
+    }
+
+    return () => {
+      document.body.style.overflow = "";
+      document.body.style.paddingRight = "";
+    };
+  }, [uploadModalOpen]);
   return (
     <NavContainer
       $expanded={isHovered || isMoreOpen} // 🔥 핵심
