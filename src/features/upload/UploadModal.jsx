@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { createPortal } from "react-dom";
 import styled from "styled-components";
-import replyModalX from "../../assets/reply-modal-x.png";
+import { useAuth } from "../../hooks/useAuth";
 import uploadImages from "../../assets/upload-images.png";
 import ConfirmModal from "../../components/modal/ConfirmModal";
 
@@ -152,9 +152,71 @@ const ShareBtn = styled.div`
   }
 `;
 
+const RightTitle = styled.div`
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+`;
+
+const Ring = styled.div`
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  padding: 2px;
+  background: linear-gradient(
+    45deg,
+    #feda75,
+    #fa7e1e,
+    #d62976,
+    #962fbf,
+    #4f5bd5
+  );
+`;
+
+const Inner = styled.div`
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+const Profile = styled.div`
+  width: calc(100% - 4px); /* 🔥 핵심 */
+  height: calc(100% - 4px);
+  border-radius: 50%;
+  background: url(${(p) => p.src}) center/cover;
+`;
+
+const Username = styled.div`
+  font-weight: 600;
+  font-size: 14px;
+`;
+
+const Caption = styled.textarea`
+  margin: 0 16px;
+  padding: 12px;
+  border: none;
+  outline: none;
+  resize: none;
+
+  font-size: 14px;
+  line-height: 1.5;
+
+  /* 🔥 핵심 */
+  height: 120px; /* 5줄 고정 */
+  overflow-y: auto; /* 넘치면 스크롤 */
+`;
+
 const UploadModal = ({ open, onClose }) => {
+  const { user } = useAuth();
   const [confirmOpen, setConfirmOpen] = useState(false);
   const [files, setFiles] = useState([]);
+  const [caption, setCaption] = useState("");
   const inputRef = useRef();
   useEffect(() => {
     if (!open) {
@@ -261,7 +323,21 @@ const UploadModal = ({ open, onClose }) => {
                     )}
                   </PreviewGrid>
                 </Left>
-                <Right>username</Right>
+                <Right>
+                  <RightTitle>
+                    <Ring>
+                      <Inner>
+                        <Profile src={user.profileImage} />
+                      </Inner>
+                    </Ring>
+                    <Username>{user.username}</Username>
+                  </RightTitle>
+                  <Caption
+                    value={caption}
+                    onChange={(e) => setCaption(e.target.value)}
+                    placeholder="문구를 입력하세요..."
+                  />
+                </Right>
               </>
             ) : (
               <DropZone onClick={() => inputRef.current.click()}>

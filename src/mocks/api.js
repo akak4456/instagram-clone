@@ -48,6 +48,7 @@ export const loginApi = ({ userId, password }) => {
         user: {
           userId: foundUser.userId,
           profileImage: foundUser.profileImage,
+          username: foundUser.username,
         },
       });
     }, 500);
