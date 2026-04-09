@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import likeIcon from "../../assets/post-like.png";
-import { getTimeDiff } from "../../utils/getTimeDiff";
+import { getTimeDiff } from "../../utils/timeUtils";
 
 const Wrapper = styled.div`
   display: flex;

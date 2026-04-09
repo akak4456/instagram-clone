@@ -9,7 +9,7 @@ import postBookmark from "../../assets/post-bookmark.png";
 import postLikeFill from "../../assets/post-like-fill.png";
 import ReplyModal from "./ReplyModal";
 import PostImage from "../../components/postImage/PostImage";
-import { getTimeDiff } from "../../utils/getTimeDiff";
+import { getTimeDiff } from "../../utils/timeUtils";
 import { useAuth } from "../../hooks/useAuth";
 
 const likeAnimation = keyframes`

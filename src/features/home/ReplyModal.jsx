@@ -15,6 +15,8 @@ import postBookmark from "../../assets/post-bookmark.png";
 import postSend from "../../assets/post-send.png";
 import { usePost } from "../../hooks/usePost";
 import { useAuth } from "../../hooks/useAuth";
+import { formatDate } from "../../utils/timeUtils";
+import CommentInput from "./CommentInput";
 
 const likeAnimation = keyframes`
   0% {
@@ -195,6 +197,22 @@ const LikeIcon = styled.img`
     `}
 `;
 
+const LikeCount = styled.div`
+  font-weight: 500;
+  font-size: 14px;
+  padding: 5px 10px;
+`;
+
+const Meta = styled.div`
+  margin-top: 4px;
+  font-size: 12px;
+  color: #8e8e8e;
+  display: flex;
+  gap: 12px;
+  padding-left: 10px;
+  padding-bottom: 8px;
+`;
+
 const ReplyModal = ({ open, onClose, post }) => {
   const postId = post.id;
   const { user } = useAuth();
@@ -222,6 +240,14 @@ const ReplyModal = ({ open, onClose, post }) => {
 
     return () => clearTimeout(timer);
   }, [isLiked]);
+
+  const textareaRef = useRef(null);
+
+  const handleInput = (e) => {
+    const el = textareaRef.current;
+    el.style.height = "auto"; // 🔥 초기화
+    el.style.height = el.scrollHeight + "px"; // 🔥 내용만큼 늘림
+  };
 
   if (!open) return null;
 
@@ -292,6 +318,11 @@ const ReplyModal = ({ open, onClose, post }) => {
                 <img src={postBookmark} alt="post-bookmark" />
               </ActionItem>
             </Actions>
+            <LikeCount>좋아요 {post.likes.length}개</LikeCount>
+            <Meta>
+              <span>{formatDate(post.createdAt)}</span>
+            </Meta>
+            <CommentInput />
           </ReplyBottomDiv>
         </ReplyWrapper>
       </ModalBox>
