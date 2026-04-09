@@ -1,5 +1,10 @@
 import { createContext, useEffect, useState } from "react";
-import { fetchFeed, toggleLikeApi, toggleBookmarkApi } from "../mocks/api";
+import {
+  fetchFeed,
+  toggleLikeApi,
+  toggleBookmarkApi,
+  addPostApi,
+} from "../mocks/api";
 
 export const PostContext = createContext();
 
@@ -68,6 +73,27 @@ export const PostProvider = ({ children }) => {
     await toggleBookmarkApi({ postId });
   };
 
+  const addPost = async ({ user, images, caption }) => {
+    const userId = user.userId;
+    // 우선 UI에 바로 추가 (임시 id)
+    const tempPost = {
+      id: Date.now(),
+      userId,
+      images,
+      caption,
+      commentCount: 0,
+      createdAt: new Date().toISOString(),
+      user,
+      likes: [],
+      isBookmarked: false,
+    };
+    console.log(tempPost);
+    setPosts((prev) => [tempPost, ...prev]);
+
+    // 서버 호출
+    const res = await addPostApi({ userId, images, caption });
+  };
+
   useEffect(() => {
     loadPosts(); // 첫 로딩
   }, []);
@@ -82,6 +108,7 @@ export const PostProvider = ({ children }) => {
         hasMore,
         increaseCommentCount,
         toggleBookmark,
+        addPost,
       }}
     >
       {children}

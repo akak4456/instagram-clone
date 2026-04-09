@@ -278,3 +278,21 @@ export const toggleBookmarkApi = ({ postId }) => {
     }, 200);
   });
 };
+
+export const addPostApi = ({ userId, images, caption }) => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      const newPost = {
+        id: Date.now(), // 고유 id
+        userId,
+        images,
+        caption,
+        commentCount: 0,
+        createdAt: new Date().toISOString(),
+        isBookmarked: false,
+      };
+      posts.unshift(newPost); // 최신순 기준 앞에 추가
+      resolve({ success: true, post: newPost });
+    }, 500);
+  });
+};

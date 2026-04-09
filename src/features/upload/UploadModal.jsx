@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { useAuth } from "../../hooks/useAuth";
 import uploadImages from "../../assets/upload-images.png";
 import ConfirmModal from "../../components/modal/ConfirmModal";
+import { usePost } from "../../hooks/usePost";
 
 const MAX_FILES = 10;
 
@@ -214,6 +215,7 @@ const Caption = styled.textarea`
 
 const UploadModal = ({ open, onClose }) => {
   const { user } = useAuth();
+  const { addPost } = usePost();
   const [confirmOpen, setConfirmOpen] = useState(false);
   const [files, setFiles] = useState([]);
   const [caption, setCaption] = useState("");
@@ -272,6 +274,13 @@ const UploadModal = ({ open, onClose }) => {
     });
   };
 
+  const handleShare = async () => {
+    if (files.length === 0) return;
+    const images = files.map((f) => f.preview); // 실제 업로드 대신 preview 사용
+    await addPost({ user, images, caption });
+    onClose(); // 모달 닫기
+  };
+
   return createPortal(
     <>
       <Overlay
@@ -290,14 +299,7 @@ const UploadModal = ({ open, onClose }) => {
           <Header>
             새 게시물 만들기
             {files.length > 0 && (
-              <ShareBtn
-                onClick={() => {
-                  console.log("공유하기 클릭");
-                  // 👉 여기서 업로드 API 호출
-                }}
-              >
-                공유하기
-              </ShareBtn>
+              <ShareBtn onClick={handleShare}>공유하기</ShareBtn>
             )}
           </Header>
 
