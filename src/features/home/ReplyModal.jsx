@@ -2,8 +2,9 @@ import { useEffect } from "react";
 import { createPortal } from "react-dom";
 import styled from "styled-components";
 import replyModalX from "../../assets/reply-modal-x.png";
-import PostImage from "../postImage/PostImage";
+import PostImage from "../../components/postImage/PostImage";
 import { useReply } from "../../hooks/useReply";
+import ReplyItem from "./ReplyItem";
 
 const Overlay = styled.div`
   position: fixed;
@@ -40,6 +41,8 @@ const PostImageWrapper = styled.div`
 `;
 const ReplyWrapper = styled.div`
   width: 45%;
+  display: flex;
+  flex-direction: column;
 `;
 
 const ReplyTopDiv = styled.div`
@@ -109,15 +112,21 @@ const More = styled.div`
   cursor: pointer;
 `;
 
+const ReplyMiddleDiv = styled.div`
+  flex: 1; /* 🔥 남은 영역 전부 차지 */
+  overflow-y: auto; /* 🔥 댓글 많을 때 스크롤 */
+`;
+
+const ReplyBottomDiv = styled.div``;
+
 const ReplyModal = ({ open, onClose, post }) => {
-  const { initComments, loadComments } = useReply();
   const postId = post.id;
+  const { comments, initComments, loadComments } = useReply(postId);
+
   useEffect(() => {
     if (!postId) return;
-
-    // 🔥 post 바뀔 때마다 초기화 + 첫 로딩
+    console.log(postId);
     initComments(postId);
-    loadComments();
   }, [postId]);
   if (!open) return null;
 
@@ -144,6 +153,12 @@ const ReplyModal = ({ open, onClose, post }) => {
             </ReplyTopLeft>
             <More>•••</More>
           </ReplyTopDiv>
+          <ReplyMiddleDiv>
+            {comments.map((comment) => (
+              <ReplyItem comment={comment} key={comment.id} />
+            ))}
+          </ReplyMiddleDiv>
+          <ReplyBottomDiv>Reply Bottom</ReplyBottomDiv>
         </ReplyWrapper>
       </ModalBox>
     </Overlay>,

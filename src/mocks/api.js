@@ -2,6 +2,7 @@ import { posts as initialPosts } from "./posts";
 import { users as initialUsers } from "./users";
 import { likes as initialLikes } from "./likes";
 import { comments as initialComments } from "./comments";
+import { commentsLikes as initialCommentsLikes } from "./commentsLikes";
 
 let users = [...initialUsers];
 let posts = Array(100)
@@ -19,6 +20,7 @@ let comments = Array(100)
     ...comment,
     id: idx + 1,
   }));
+let commentsLikes = [...initialCommentsLikes];
 
 export const fetchUsersApi = () => {
   return new Promise((resolve) => {
@@ -187,7 +189,17 @@ export const fetchCommentsApi = (postId, page = 1, limit = 10) => {
       const start = (page - 1) * limit;
       const end = start + limit;
 
-      const pagedComments = sorted.slice(start, end);
+      const pagedComments = sorted.slice(start, end).map((comment) => {
+        const commentsLikesFilter = commentsLikes.filter(
+          (cl) => cl.commentId === comment.id,
+        );
+        const user = users.find((u) => u.userId === comment.userId);
+        return {
+          ...comment,
+          user: user,
+          likes: commentsLikesFilter,
+        };
+      });
 
       resolve({
         success: true,

@@ -4,42 +4,110 @@ import { fetchCommentsApi } from "../mocks/api";
 export const ReplyContext = createContext();
 
 export const ReplyProvider = ({ children }) => {
-  const [comments, setComments] = useState([]);
-  const [replyLoading, setReplyLoading] = useState(false);
-  const [page, setPage] = useState(1);
-  const [hasMore, setHasMore] = useState(true);
-  const [currentPostId, setCurrentPostId] = useState(null);
+  const [commentsMap, setCommentsMap] = useState({});
+  const [pageMap, setPageMap] = useState({});
+  const [hasMoreMap, setHasMoreMap] = useState({});
+  const [loadingMap, setLoadingMap] = useState({});
 
-  // 🔥 특정 post 댓글 초기화
-  const initComments = (postId) => {
-    setComments([]);
-    setPage(1);
-    setHasMore(true);
-    setCurrentPostId(postId);
+  // 🔥 댓글 초기화 (postId 기준)
+  const initComments = async (postId) => {
+    const page = pageMap[postId] || 1;
+    if (page === 1) {
+      // 상태 초기화
+      setCommentsMap((prev) => ({
+        ...prev,
+        [postId]: [],
+      }));
+
+      setPageMap((prev) => ({
+        ...prev,
+        [postId]: 1,
+      }));
+
+      setHasMoreMap((prev) => ({
+        ...prev,
+        [postId]: true,
+      }));
+
+      setLoadingMap((prev) => ({
+        ...prev,
+        [postId]: true,
+      }));
+
+      // 🔥 바로 첫 페이지 로딩
+      const data = await fetchCommentsApi(postId, 1, 10);
+
+      setCommentsMap((prev) => ({
+        ...prev,
+        [postId]: data.comments,
+      }));
+
+      setHasMoreMap((prev) => ({
+        ...prev,
+        [postId]: data.hasMore,
+      }));
+
+      setPageMap((prev) => ({
+        ...prev,
+        [postId]: 2,
+      }));
+
+      setLoadingMap((prev) => ({
+        ...prev,
+        [postId]: false,
+      }));
+    }
   };
 
-  const loadComments = async () => {
-    if (!currentPostId || replyLoading || !hasMore) return;
+  const loadComments = async (postId) => {
+    const page = pageMap[postId] || 1;
+    const hasMore = hasMoreMap[postId] ?? true;
+    const loading = loadingMap[postId] ?? false;
 
-    setReplyLoading(true);
+    if (loading || !hasMore) return;
 
-    const data = await fetchCommentsApi(currentPostId, page, 10);
+    // 🔥 로딩 상태 설정
+    setLoadingMap((prev) => ({
+      ...prev,
+      [postId]: true,
+    }));
 
-    setComments((prev) => [...prev, ...data.comments]);
-    setHasMore(data.hasMore);
-    setPage((prev) => prev + 1);
+    const data = await fetchCommentsApi(postId, page, 10);
 
-    setReplyLoading(false);
+    // 🔥 댓글 추가
+    setCommentsMap((prev) => ({
+      ...prev,
+      [postId]: [...(prev[postId] || []), ...data.comments],
+    }));
+
+    // 🔥 hasMore 갱신
+    setHasMoreMap((prev) => ({
+      ...prev,
+      [postId]: data.hasMore,
+    }));
+
+    // 🔥 page 증가
+    setPageMap((prev) => ({
+      ...prev,
+      [postId]: page + 1,
+    }));
+
+    // 🔥 로딩 해제
+    setLoadingMap((prev) => ({
+      ...prev,
+      [postId]: false,
+    }));
   };
 
   return (
     <ReplyContext.Provider
       value={{
-        comments,
-        replyLoading,
-        hasMore,
+        commentsMap,
+        pageMap,
+        hasMoreMap,
+        loadingMap,
         loadComments,
-        initComments, // 🔥 핵심
+        initComments,
       }}
     >
       {children}

@@ -7,7 +7,7 @@ import postRepost from "../../assets/post-repost.png";
 import postSend from "../../assets/post-send.png";
 import postBookmark from "../../assets/post-bookmark.png";
 import postLikeFill from "../../assets/post-like-fill.png";
-import ReplyModal from "../../components/modal/ReplyModal";
+import ReplyModal from "./ReplyModal";
 import useModalScrollLock from "../../hooks/useModalScrollLock";
 import PostImage from "../../components/postImage/PostImage";
 
@@ -239,13 +239,16 @@ const FeedItem = ({ post }) => {
       <Caption>
         <b>{post.user.username}</b> {post.caption}
       </Caption>
-      <ReplyModal
-        open={replyModalOpen}
-        onClose={() => {
-          setReplyModalOpen(false);
-        }}
-        post={post}
-      />
+      {replyModalOpen && (
+        <ReplyModal
+          key={post.id}
+          open={replyModalOpen}
+          onClose={() => {
+            setReplyModalOpen(false);
+          }}
+          post={post}
+        />
+      )}
     </Wrapper>
   );
 };

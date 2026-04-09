@@ -1,6 +1,15 @@
 import { useContext } from "react";
 import { ReplyContext } from "../contexts/ReplyContext";
 
-export const useReply = () => {
-  return useContext(ReplyContext);
+export const useReply = (postId) => {
+  const { commentsMap, hasMoreMap, loadingMap, loadComments, initComments } =
+    useContext(ReplyContext);
+
+  return {
+    comments: commentsMap[postId] || [],
+    hasMore: hasMoreMap[postId] ?? true,
+    replyLoading: loadingMap[postId] ?? false,
+    loadComments,
+    initComments,
+  };
 };
