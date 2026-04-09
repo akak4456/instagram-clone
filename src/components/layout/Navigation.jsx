@@ -9,6 +9,7 @@ import storyOff from "../../assets/story-off.png";
 import search from "../../assets/search.png";
 import upload from "../../assets/upload.png";
 import hamburger from "../../assets/hamburger.png";
+import UploadModal from "../../features/upload/UploadModal";
 
 const NavContainer = styled.nav`
   position: fixed; /* 🔥 핵심 */
@@ -103,6 +104,7 @@ const Navigation = () => {
   const pathname = location.pathname;
   const [isHovered, setIsHovered] = useState(false);
   const [isMoreOpen, setIsMoreOpen] = useState(false);
+  const [uploadModalOpen, setUploadModalOpen] = useState(false);
 
   useEffect(() => {
     const handleClick = () => setIsMoreOpen(false);
@@ -135,7 +137,7 @@ const Navigation = () => {
           <img src={search} alt="search" />
           <Label $expanded={isHovered || isMoreOpen}>검색</Label>
         </NavItem>
-        <NavItem>
+        <NavItem onClick={() => setUploadModalOpen(true)}>
           <img src={upload} alt="upload" />
           <Label $expanded={isHovered || isMoreOpen}>만들기</Label>
         </NavItem>
@@ -171,6 +173,12 @@ const Navigation = () => {
           </Label>
         </NavItem>
       </Bottom>
+      {uploadModalOpen && (
+        <UploadModal
+          open={uploadModalOpen}
+          onClose={() => setUploadModalOpen(false)}
+        />
+      )}
     </NavContainer>
   );
 };
