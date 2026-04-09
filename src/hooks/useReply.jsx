@@ -9,6 +9,7 @@ export const useReply = (postId) => {
     loadComments,
     initComments,
     toggleReplyLike,
+    addComment,
   } = useContext(ReplyContext);
 
   return {
@@ -18,5 +19,6 @@ export const useReply = (postId) => {
     loadComments,
     initComments,
     toggleReplyLike,
+    addComment,
   };
 };

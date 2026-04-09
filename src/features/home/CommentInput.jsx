@@ -1,6 +1,8 @@
 import { useRef, useState } from "react";
 import styled from "styled-components";
 import emoji from "../../assets/emoji.png";
+import { useReply } from "../../hooks/useReply";
+import { useAuth } from "../../hooks/useAuth";
 
 const Wrapper = styled.div`
   display: flex;
@@ -46,9 +48,11 @@ const Submit = styled.button`
   cursor: ${({ disabled }) => (disabled ? "default" : "pointer")};
 `;
 
-const CommentInput = () => {
+const CommentInput = ({ postId }) => {
   const [text, setText] = useState("");
   const textareaRef = useRef(null);
+  const { user } = useAuth();
+  const { addComment } = useReply(postId);
 
   const handleInput = (e) => {
     setText(e.target.value);
@@ -60,6 +64,7 @@ const CommentInput = () => {
 
   const handleSubmit = () => {
     if (!text.trim()) return;
+    addComment(postId, user.userId, text);
     setText("");
 
     // 높이 초기화

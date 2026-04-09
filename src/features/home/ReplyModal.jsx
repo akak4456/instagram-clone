@@ -322,7 +322,7 @@ const ReplyModal = ({ open, onClose, post }) => {
             <Meta>
               <span>{formatDate(post.createdAt)}</span>
             </Meta>
-            <CommentInput />
+            <CommentInput postId={post.id} />
           </ReplyBottomDiv>
         </ReplyWrapper>
       </ModalBox>

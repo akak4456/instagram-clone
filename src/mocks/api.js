@@ -237,3 +237,24 @@ export const toggleCommentLikeApi = ({ commentId, userId }) => {
     }, 200);
   });
 };
+
+export const addCommentApi = ({ postId, userId, content }) => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      const newComment = {
+        id: Date.now(),
+        postId,
+        userId,
+        content,
+        createdAt: new Date().toISOString(),
+      };
+
+      comments.unshift(newComment); // 🔥 최신순 기준이면 앞에 추가
+
+      resolve({
+        success: true,
+        comment: newComment,
+      });
+    }, 200);
+  });
+};

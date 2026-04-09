@@ -52,6 +52,7 @@ const Username = styled.span`
 const Caption = styled.span`
   font-size: 14px;
   word-break: break-word;
+  white-space: pre-wrap;
 `;
 
 const Right = styled.div`

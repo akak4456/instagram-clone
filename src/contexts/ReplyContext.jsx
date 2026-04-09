@@ -1,8 +1,14 @@
 import { createContext, useState } from "react";
-import { fetchCommentsApi, toggleCommentLikeApi } from "../mocks/api";
+import {
+  fetchCommentsApi,
+  toggleCommentLikeApi,
+  addCommentApi,
+} from "../mocks/api";
+import { useUser } from "../hooks/useUser";
 export const ReplyContext = createContext();
 
 export const ReplyProvider = ({ children }) => {
+  const { users } = useUser();
   const [commentsMap, setCommentsMap] = useState({});
   const [pageMap, setPageMap] = useState({});
   const [hasMoreMap, setHasMoreMap] = useState({});
@@ -124,6 +130,44 @@ export const ReplyProvider = ({ children }) => {
     await toggleCommentLikeApi({ commentId, userId });
   };
 
+  const addComment = async (postId, userId, content) => {
+    const tempComment = {
+      id: Date.now(),
+      postId,
+      userId,
+      content,
+      createdAt: new Date().toISOString(),
+      user: users.find((u) => u.userId === userId), // ⚠️ 필요 시
+      likes: [],
+    };
+
+    // 🔥 optimistic update (UI 먼저 반영)
+    setCommentsMap((prev) => ({
+      ...prev,
+      [postId]: [tempComment, ...(prev[postId] || [])],
+    }));
+
+    try {
+      const res = await addCommentApi({ postId, userId, content });
+
+      // 🔥 서버 응답으로 교체 (선택)
+      setCommentsMap((prev) => ({
+        ...prev,
+        [postId]: prev[postId].map((c) =>
+          c.id === tempComment.id
+            ? { ...res.comment, user: tempComment.user, likes: [] }
+            : c,
+        ),
+      }));
+    } catch (e) {
+      // 🔥 실패 시 롤백
+      setCommentsMap((prev) => ({
+        ...prev,
+        [postId]: prev[postId].filter((c) => c.id !== tempComment.id),
+      }));
+    }
+  };
+
   return (
     <ReplyContext.Provider
       value={{
@@ -134,6 +178,7 @@ export const ReplyProvider = ({ children }) => {
         loadComments,
         initComments,
         toggleReplyLike,
+        addComment,
       }}
     >
       {children}
