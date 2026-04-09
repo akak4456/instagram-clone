@@ -17,6 +17,7 @@ import { usePost } from "../../hooks/usePost";
 import { useAuth } from "../../hooks/useAuth";
 import { formatDate } from "../../utils/timeUtils";
 import CommentInput from "./CommentInput";
+import postBookmarkFill from "../../assets/post-bookmark-fill.png";
 
 const likeAnimation = keyframes`
   0% {
@@ -220,7 +221,7 @@ const ReplyModal = ({ open, onClose, post }) => {
   const [animateLike, setAnimateLike] = useState(false);
   const firstRender = useRef(true);
   const isLiked = post.likes.some((l) => l.userId === userId);
-  const { toggleLike } = usePost();
+  const { toggleLike, toggleBookmark } = usePost();
   const { comments, initComments, loadComments, replyLoading } =
     useReply(postId);
 
@@ -314,8 +315,11 @@ const ReplyModal = ({ open, onClose, post }) => {
                   <img src={postSend} alt="post-send" />
                 </ActionItem>
               </ActionLeft>
-              <ActionItem>
-                <img src={postBookmark} alt="post-bookmark" />
+              <ActionItem onClick={() => toggleBookmark(post.id)}>
+                <img
+                  src={post.isBookmarked ? postBookmarkFill : postBookmark}
+                  alt="post-bookmark"
+                />
               </ActionItem>
             </Actions>
             <LikeCount>좋아요 {post.likes.length}개</LikeCount>

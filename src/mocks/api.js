@@ -258,3 +258,19 @@ export const addCommentApi = ({ postId, userId, content }) => {
     }, 200);
   });
 };
+
+export const toggleBookmarkApi = ({ postId }) => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      posts = posts.map((post) =>
+        post.id === postId
+          ? { ...post, isBookmarked: !post.isBookmarked }
+          : post,
+      );
+
+      resolve({
+        success: true,
+      });
+    }, 200);
+  });
+};

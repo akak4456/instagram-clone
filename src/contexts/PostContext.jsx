@@ -1,5 +1,5 @@
-import { createContext, useContext, useEffect, useState } from "react";
-import { fetchFeed, toggleLikeApi } from "../mocks/api";
+import { createContext, useEffect, useState } from "react";
+import { fetchFeed, toggleLikeApi, toggleBookmarkApi } from "../mocks/api";
 
 export const PostContext = createContext();
 
@@ -54,6 +54,20 @@ export const PostProvider = ({ children }) => {
     );
   };
 
+  const toggleBookmark = async (postId) => {
+    // 🔥 optimistic update
+    setPosts((prev) =>
+      prev.map((post) =>
+        post.id === postId
+          ? { ...post, isBookmarked: !post.isBookmarked }
+          : post,
+      ),
+    );
+
+    // 🔥 서버 반영
+    await toggleBookmarkApi({ postId });
+  };
+
   useEffect(() => {
     loadPosts(); // 첫 로딩
   }, []);
@@ -67,6 +81,7 @@ export const PostProvider = ({ children }) => {
         toggleLike,
         hasMore,
         increaseCommentCount,
+        toggleBookmark,
       }}
     >
       {children}

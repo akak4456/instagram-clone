@@ -11,6 +11,7 @@ import ReplyModal from "./ReplyModal";
 import PostImage from "../../components/postImage/PostImage";
 import { getTimeDiff } from "../../utils/timeUtils";
 import { useAuth } from "../../hooks/useAuth";
+import postBookmarkFill from "../../assets/post-bookmark-fill.png";
 
 const likeAnimation = keyframes`
   0% {
@@ -131,7 +132,7 @@ const LikeIcon = styled.img`
 `;
 
 const FeedItem = ({ post }) => {
-  const { toggleLike } = usePost();
+  const { toggleLike, toggleBookmark } = usePost();
   const { user } = useAuth();
 
   const userId = user.userId;
@@ -216,8 +217,11 @@ const FeedItem = ({ post }) => {
             <img src={postSend} alt="post-send" />
           </ActionItem>
         </ActionLeft>
-        <ActionItem>
-          <img src={postBookmark} alt="post-bookmark" />
+        <ActionItem onClick={() => toggleBookmark(post.id)}>
+          <img
+            src={post.isBookmarked ? postBookmarkFill : postBookmark}
+            alt="post-bookmark"
+          />
         </ActionItem>
       </Actions>
 
