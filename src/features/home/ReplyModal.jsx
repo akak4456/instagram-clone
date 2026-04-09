@@ -1,12 +1,34 @@
-import { useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { createPortal } from "react-dom";
-import styled from "styled-components";
+import styled, { keyframes, css } from "styled-components";
 import replyModalX from "../../assets/reply-modal-x.png";
 import PostImage from "../../components/postImage/PostImage";
 import { useReply } from "../../hooks/useReply";
 import ReplyItem from "./ReplyItem";
 import replyModalPlus from "../../assets/reply-modal-plus.png";
 import Spinner from "../../components/spinner/Spinner";
+import postLike from "../../assets/post-like.png";
+import postLikeFill from "../../assets/post-like-fill.png";
+import postComment from "../../assets/post-comment.png";
+import postRepost from "../../assets/post-repost.png";
+import postBookmark from "../../assets/post-bookmark.png";
+import postSend from "../../assets/post-send.png";
+import { usePost } from "../../hooks/usePost";
+
+const likeAnimation = keyframes`
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.4);
+  }
+  60% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+`;
 
 const Overlay = styled.div`
   position: fixed;
@@ -141,8 +163,44 @@ const ReplyModalPlusDiv = styled.div`
 
 const ReplyBottomDiv = styled.div``;
 
+const Actions = styled.div`
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 12px;
+`;
+
+const ActionLeft = styled.div`
+  display: flex;
+  gap: 20px;
+`;
+
+const ActionItem = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  span {
+    margin-left: 8px;
+    font-weight: 500;
+    font-size: 14px;
+  }
+`;
+
+const LikeIcon = styled.img`
+  ${({ animate }) =>
+    animate &&
+    css`
+      animation: ${likeAnimation} 0.3s ease;
+    `}
+`;
+
 const ReplyModal = ({ open, onClose, post }) => {
   const postId = post.id;
+  const userId = post.user.userId;
+  const [animateLike, setAnimateLike] = useState(false);
+  const firstRender = useRef(true);
+  const isLiked = post.likes.some((l) => l.userId === userId);
+  const { toggleLike } = usePost();
   const { comments, initComments, loadComments, replyLoading } =
     useReply(postId);
 
@@ -150,7 +208,24 @@ const ReplyModal = ({ open, onClose, post }) => {
     if (!postId) return;
     initComments(postId);
   }, [postId]);
+
+  useEffect(() => {
+    if (firstRender.current) {
+      // 첫 렌더링일 때는 애니메이션 실행하지 않음
+      firstRender.current = false;
+      return;
+    }
+    setAnimateLike(true);
+    const timer = setTimeout(() => setAnimateLike(false), 300);
+
+    return () => clearTimeout(timer);
+  }, [isLiked]);
+
   if (!open) return null;
+
+  const handleLike = () => {
+    toggleLike(post.id, post.user.userId);
+  };
 
   return createPortal(
     <Overlay onClick={onClose}>
@@ -191,7 +266,31 @@ const ReplyModal = ({ open, onClose, post }) => {
               )}
             </ReplyModalPlusDiv>
           </ReplyMiddleDiv>
-          <ReplyBottomDiv>Reply Bottom</ReplyBottomDiv>
+          <ReplyBottomDiv>
+            <Actions>
+              <ActionLeft>
+                <ActionItem onClick={handleLike}>
+                  <LikeIcon
+                    src={isLiked ? postLikeFill : postLike}
+                    alt="post-like"
+                    animate={animateLike}
+                  />
+                </ActionItem>
+                <ActionItem>
+                  <img src={postComment} alt="post-comment" />
+                </ActionItem>
+                <ActionItem>
+                  <img src={postRepost} alt="post-repost" />
+                </ActionItem>
+                <ActionItem>
+                  <img src={postSend} alt="post-send" />
+                </ActionItem>
+              </ActionLeft>
+              <ActionItem>
+                <img src={postBookmark} alt="post-bookmark" />
+              </ActionItem>
+            </Actions>
+          </ReplyBottomDiv>
         </ReplyWrapper>
       </ModalBox>
     </Overlay>,
