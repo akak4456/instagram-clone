@@ -1,9 +1,11 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { createPortal } from "react-dom";
 import styled from "styled-components";
 import replyModalX from "../../assets/reply-modal-x.png";
 import uploadImages from "../../assets/upload-images.png";
 import ConfirmModal from "../../components/modal/ConfirmModal";
+
+const MAX_FILES = 10;
 
 const Overlay = styled.div`
   position: fixed;
@@ -15,7 +17,6 @@ const Overlay = styled.div`
   z-index: 999;
 `;
 
-/* 🔥 핵심: 모달 박스 */
 const ModalBox = styled.div`
   width: 40%;
   height: 80vh;
@@ -26,7 +27,6 @@ const ModalBox = styled.div`
   overflow: hidden;
 `;
 
-/* 상단 헤더 */
 const Header = styled.div`
   height: 50px;
   display: flex;
@@ -37,7 +37,6 @@ const Header = styled.div`
   position: relative;
 `;
 
-/* 닫기 버튼 */
 const CloseBtn = styled.img`
   position: absolute;
   right: 16px;
@@ -45,76 +44,201 @@ const CloseBtn = styled.img`
   cursor: pointer;
 `;
 
-/* 콘텐츠 영역 */
 const Content = styled.div`
   flex: 1;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 `;
 
-/* 드롭존 */
+/* 🔥 드롭존 */
 const DropZone = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 12px;
+  cursor: pointer;
 `;
 
-/* 아이콘 */
 const Icon = styled.div`
-  font-size: 48px;
+  img {
+    width: 80px;
+  }
 `;
 
-/* 텍스트 */
 const Text = styled.div`
   font-size: 20px;
 `;
 
-/* 버튼 */
 const Button = styled.button`
   background-color: #4a5cff;
   color: white;
   border: none;
   padding: 10px 18px;
   border-radius: 8px;
-  font-weight: 500;
   cursor: pointer;
+`;
 
-  &:hover {
-    background-color: #3a4be0;
-  }
+/* 🔥 preview grid */
+const PreviewGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  width: 100%;
+  padding: 16px;
+`;
+
+const PreviewItemWrapper = styled.div`
+  position: relative;
+`;
+
+const PreviewItem = styled.img`
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+`;
+
+const RemoveBtn = styled.div`
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+`;
+
+const AddMoreBox = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  height: 120px;
+  cursor: pointer;
 `;
 
 const UploadModal = ({ open, onClose }) => {
   const [confirmOpen, setConfirmOpen] = useState(false);
+  const [files, setFiles] = useState([]);
+  const inputRef = useRef();
+  useEffect(() => {
+    if (!open) {
+      files.forEach((f) => URL.revokeObjectURL(f.preview));
+      setFiles([]);
+    }
+  }, [open]);
 
   if (!open) return null;
 
+  // 🔥 파일 처리
+  const handleFiles = (fileList) => {
+    let newFiles = Array.from(fileList);
+
+    // 타입 필터
+    newFiles = newFiles.filter(
+      (file) =>
+        file.type.startsWith("image/") || file.type.startsWith("video/"),
+    );
+
+    // 최대 개수 제한
+    if (files.length + newFiles.length > MAX_FILES) {
+      alert(`최대 ${MAX_FILES}개까지 업로드 가능합니다.`);
+      return;
+    }
+
+    const mapped = newFiles.map((file) => ({
+      file,
+      preview: URL.createObjectURL(file),
+    }));
+
+    setFiles((prev) => [...prev, ...mapped]);
+  };
+
+  const handleChange = (e) => {
+    handleFiles(e.target.files);
+  };
+
+  const handleDrop = (e) => {
+    e.preventDefault();
+    handleFiles(e.dataTransfer.files);
+  };
+
+  const handleDragOver = (e) => e.preventDefault();
+
+  // 🔥 삭제
+  const removeFile = (index) => {
+    setFiles((prev) => {
+      URL.revokeObjectURL(prev[index].preview);
+      return prev.filter((_, i) => i !== index);
+    });
+  };
+
   return createPortal(
     <>
-      <Overlay>
+      <Overlay
+        onClick={() => {
+          if (files.length > 0) {
+            setConfirmOpen(true);
+          } else {
+            onClose();
+          }
+        }}
+      >
         <ModalBox onClick={(e) => e.stopPropagation()}>
-          {/* 🔥 Header */}
           <Header>
             새 게시물 만들기
             <CloseBtn src={replyModalX} onClick={() => setConfirmOpen(true)} />
           </Header>
 
-          {/* 🔥 Content */}
-          <Content>
-            <DropZone>
-              <Icon>
-                <img src={uploadImages} alt="upload-images" />
-              </Icon>
-              <Text>사진과 동영상을 여기에 끌어다 놓으세요</Text>
-              <Button>컴퓨터에서 선택</Button>
-            </DropZone>
+          <Content onDragOver={handleDragOver} onDrop={handleDrop}>
+            {files.length > 0 ? (
+              <PreviewGrid>
+                {files.map((item, index) => (
+                  <PreviewItemWrapper key={index}>
+                    <PreviewItem src={item.preview} />
+                    <RemoveBtn onClick={() => removeFile(index)}>✕</RemoveBtn>
+                  </PreviewItemWrapper>
+                ))}
+
+                {/* 추가 버튼 */}
+                {files.length < MAX_FILES && (
+                  <AddMoreBox onClick={() => inputRef.current.click()}>
+                    +
+                  </AddMoreBox>
+                )}
+              </PreviewGrid>
+            ) : (
+              <DropZone onClick={() => inputRef.current.click()}>
+                <Icon>
+                  <img src={uploadImages} alt="upload-images" />
+                </Icon>
+                <Text>사진과 동영상을 여기에 끌어다 놓으세요</Text>
+                <Button>컴퓨터에서 선택</Button>
+              </DropZone>
+            )}
           </Content>
         </ModalBox>
       </Overlay>
 
-      {/* 🔥 Confirm Modal */}
+      {/* input */}
+      <input
+        type="file"
+        ref={inputRef}
+        hidden
+        multiple
+        accept="image/*,video/*"
+        onChange={handleChange}
+      />
+
+      {/* Confirm */}
       {confirmOpen && (
         <ConfirmModal
           open={confirmOpen}
