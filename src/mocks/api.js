@@ -45,7 +45,10 @@ export const loginApi = ({ userId, password }) => {
 
       resolve({
         success: true,
-        user: { userId: foundUser.userId },
+        user: {
+          userId: foundUser.userId,
+          profileImage: foundUser.profileImage,
+        },
       });
     }, 500);
   });
