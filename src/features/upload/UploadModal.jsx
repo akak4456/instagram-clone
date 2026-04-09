@@ -1,6 +1,8 @@
+import { useState } from "react";
 import { createPortal } from "react-dom";
 import styled from "styled-components";
 import replyModalX from "../../assets/reply-modal-x.png";
+import ConfirmModal from "../../components/modal/ConfirmModal";
 
 const Overlay = styled.div`
   position: fixed;
@@ -32,15 +34,28 @@ const ModalBox = styled.div`
 `;
 
 const UploadModal = ({ open, onClose }) => {
+  const [confirmOpen, setConfirmOpen] = useState(false);
   if (!open) return null;
 
   return createPortal(
-    <Overlay onClick={onClose}>
-      <ReplyModalXDiv>
-        <img src={replyModalX} alt="reply-modal-x" />
-      </ReplyModalXDiv>
-      <ModalBox onClick={(e) => e.stopPropagation()}></ModalBox>
-    </Overlay>,
+    <>
+      <Overlay onClick={() => setConfirmOpen(true)}>
+        <ReplyModalXDiv>
+          <img src={replyModalX} alt="reply-modal-x" />
+        </ReplyModalXDiv>
+        <ModalBox onClick={(e) => e.stopPropagation()}></ModalBox>
+      </Overlay>
+      {confirmOpen && (
+        <ConfirmModal
+          open={confirmOpen}
+          onClose={() => setConfirmOpen(false)}
+          onConfirm={() => {
+            setConfirmOpen(false);
+            onClose(); // UploadModal 닫기
+          }}
+        />
+      )}
+    </>,
     document.getElementById("modal-root"),
   );
 };
