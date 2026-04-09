@@ -5,6 +5,8 @@ import replyModalX from "../../assets/reply-modal-x.png";
 import PostImage from "../../components/postImage/PostImage";
 import { useReply } from "../../hooks/useReply";
 import ReplyItem from "./ReplyItem";
+import replyModalPlus from "../../assets/reply-modal-plus.png";
+import Spinner from "../../components/spinner/Spinner";
 
 const Overlay = styled.div`
   position: fixed;
@@ -16,7 +18,6 @@ const Overlay = styled.div`
   z-index: 999;
 `;
 const ReplyModalXDiv = styled.div`
-  position: fixed;
   width: 100vw;
   height: 100vh;
   position: relative;
@@ -31,7 +32,7 @@ const ReplyModalXDiv = styled.div`
 const ModalBox = styled.div`
   position: fixed;
   width: 60%;
-  height: 95%;
+  height: 95vh;
   background-color: white;
   display: flex;
 `;
@@ -42,7 +43,9 @@ const PostImageWrapper = styled.div`
 const ReplyWrapper = styled.div`
   width: 45%;
   display: flex;
+  min-height: 0;
   flex-direction: column;
+  height: 100%;
 `;
 
 const ReplyTopDiv = styled.div`
@@ -114,18 +117,37 @@ const More = styled.div`
 
 const ReplyMiddleDiv = styled.div`
   flex: 1; /* 🔥 남은 영역 전부 차지 */
+  min-height: 0;
   overflow-y: auto; /* 🔥 댓글 많을 때 스크롤 */
+  /* 🔥 스크롤바 숨기기 */
+  -ms-overflow-style: none; /* IE, Edge */
+  scrollbar-width: none; /* Firefox */
+
+  &::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+  }
+`;
+
+const ReplyModalPlusDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  img {
+    cursor: pointer;
+  }
 `;
 
 const ReplyBottomDiv = styled.div``;
 
 const ReplyModal = ({ open, onClose, post }) => {
   const postId = post.id;
-  const { comments, initComments, loadComments } = useReply(postId);
+  const { comments, initComments, loadComments, replyLoading } =
+    useReply(postId);
 
   useEffect(() => {
     if (!postId) return;
-    console.log(postId);
     initComments(postId);
   }, [postId]);
   if (!open) return null;
@@ -157,6 +179,17 @@ const ReplyModal = ({ open, onClose, post }) => {
             {comments.map((comment) => (
               <ReplyItem comment={comment} key={comment.id} />
             ))}
+            <ReplyModalPlusDiv>
+              {replyLoading ? (
+                <Spinner />
+              ) : (
+                <img
+                  src={replyModalPlus}
+                  alt="reply-modal-plus"
+                  onClick={() => loadComments(postId)}
+                />
+              )}
+            </ReplyModalPlusDiv>
           </ReplyMiddleDiv>
           <ReplyBottomDiv>Reply Bottom</ReplyBottomDiv>
         </ReplyWrapper>

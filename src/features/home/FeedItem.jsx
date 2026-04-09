@@ -8,7 +8,6 @@ import postSend from "../../assets/post-send.png";
 import postBookmark from "../../assets/post-bookmark.png";
 import postLikeFill from "../../assets/post-like-fill.png";
 import ReplyModal from "./ReplyModal";
-import useModalScrollLock from "../../hooks/useModalScrollLock";
 import PostImage from "../../components/postImage/PostImage";
 import { getTimeDiff } from "../../utils/getTimeDiff";
 
@@ -169,8 +168,6 @@ const FeedItem = ({ post }) => {
       document.body.style.paddingRight = "";
     };
   }, [replyModalOpen]);
-
-  useModalScrollLock(replyModalOpen);
 
   const handleLike = () => {
     toggleLike(post.id, post.user.userId);
