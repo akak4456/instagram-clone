@@ -25,6 +25,7 @@ const ModalBox = styled.div`
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  transition: width 0.3s ease;
 `;
 
 const Header = styled.div`
@@ -139,6 +140,18 @@ const Right = styled.div`
   flex-direction: column;
 `;
 
+const ShareBtn = styled.div`
+  position: absolute;
+  right: 24px; /* X 버튼보다 왼쪽 */
+  color: #3752e5;
+  font-weight: 600;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+  }
+`;
+
 const UploadModal = ({ open, onClose }) => {
   const [confirmOpen, setConfirmOpen] = useState(false);
   const [files, setFiles] = useState([]);
@@ -214,7 +227,16 @@ const UploadModal = ({ open, onClose }) => {
         >
           <Header>
             새 게시물 만들기
-            <CloseBtn src={replyModalX} onClick={() => setConfirmOpen(true)} />
+            {files.length > 0 && (
+              <ShareBtn
+                onClick={() => {
+                  console.log("공유하기 클릭");
+                  // 👉 여기서 업로드 API 호출
+                }}
+              >
+                공유하기
+              </ShareBtn>
+            )}
           </Header>
 
           <Content onDragOver={handleDragOver} onDrop={handleDrop}>
