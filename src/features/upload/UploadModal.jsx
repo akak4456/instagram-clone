@@ -164,6 +164,8 @@ const UploadModal = ({ open, onClose }) => {
 
   const handleChange = (e) => {
     handleFiles(e.target.files);
+
+    e.target.value = "";
   };
 
   const handleDrop = (e) => {
