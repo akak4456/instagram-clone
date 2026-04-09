@@ -10,6 +10,7 @@ import postLikeFill from "../../assets/post-like-fill.png";
 import ReplyModal from "./ReplyModal";
 import PostImage from "../../components/postImage/PostImage";
 import { getTimeDiff } from "../../utils/getTimeDiff";
+import { useAuth } from "../../hooks/useAuth";
 
 const likeAnimation = keyframes`
   0% {
@@ -131,8 +132,9 @@ const LikeIcon = styled.img`
 
 const FeedItem = ({ post }) => {
   const { toggleLike } = usePost();
+  const { user } = useAuth();
 
-  const userId = post.user.userId;
+  const userId = user.userId;
   const isLiked = post.likes.some((l) => l.userId === userId);
   const [animateLike, setAnimateLike] = useState(false);
   const [replyModalOpen, setReplyModalOpen] = useState(false);
@@ -170,7 +172,7 @@ const FeedItem = ({ post }) => {
   }, [replyModalOpen]);
 
   const handleLike = () => {
-    toggleLike(post.id, post.user.userId);
+    toggleLike(post.id, userId);
   };
   return (
     <Wrapper>
