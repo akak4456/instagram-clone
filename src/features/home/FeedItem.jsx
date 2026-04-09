@@ -206,7 +206,7 @@ const FeedItem = ({ post }) => {
           </ActionItem>
           <ActionItem onClick={() => setReplyModalOpen(true)}>
             <img src={postComment} alt="post-comment" />
-            <span>{post.comments.length}</span>
+            <span>{post.commentCount}</span>
           </ActionItem>
           <ActionItem>
             <img src={postRepost} alt="post-repost" />

@@ -3,6 +3,7 @@ import styled from "styled-components";
 import emoji from "../../assets/emoji.png";
 import { useReply } from "../../hooks/useReply";
 import { useAuth } from "../../hooks/useAuth";
+import { usePost } from "../../hooks/usePost";
 
 const Wrapper = styled.div`
   display: flex;
@@ -53,6 +54,7 @@ const CommentInput = ({ postId }) => {
   const textareaRef = useRef(null);
   const { user } = useAuth();
   const { addComment } = useReply(postId);
+  const { increaseCommentCount } = usePost();
 
   const handleInput = (e) => {
     setText(e.target.value);
@@ -65,6 +67,7 @@ const CommentInput = ({ postId }) => {
   const handleSubmit = () => {
     if (!text.trim()) return;
     addComment(postId, user.userId, text);
+    increaseCommentCount(postId);
     setText("");
 
     // 높이 초기화

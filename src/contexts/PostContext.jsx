@@ -44,6 +44,16 @@ export const PostProvider = ({ children }) => {
     );
   };
 
+  const increaseCommentCount = (postId) => {
+    setPosts((prev) =>
+      prev.map((post) =>
+        post.id === postId
+          ? { ...post, commentCount: post.commentCount + 1 }
+          : post,
+      ),
+    );
+  };
+
   useEffect(() => {
     loadPosts(); // 첫 로딩
   }, []);
@@ -56,6 +66,7 @@ export const PostProvider = ({ children }) => {
         loadPosts, // 🔥 추가
         toggleLike,
         hasMore,
+        increaseCommentCount,
       }}
     >
       {children}

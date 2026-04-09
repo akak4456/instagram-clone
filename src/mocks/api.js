@@ -124,7 +124,7 @@ const getFeedPosts = () => {
       ...post,
       user,
       likes: likesFiltered,
-      comments: commentFiltered,
+      commentCount: commentFiltered.length,
     };
   });
 };
