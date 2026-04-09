@@ -18,7 +18,7 @@ const Overlay = styled.div`
 `;
 
 const ModalBox = styled.div`
-  width: 40%;
+  width: ${({ hasFiles }) => (hasFiles ? "55%" : "40%")};
   height: 80vh;
   background-color: white;
   border-radius: 16px;
@@ -125,6 +125,20 @@ const AddMoreBox = styled.div`
   cursor: pointer;
 `;
 
+const Left = styled.div`
+  flex: 7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+const Right = styled.div`
+  flex: 3;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+`;
+
 const UploadModal = ({ open, onClose }) => {
   const [confirmOpen, setConfirmOpen] = useState(false);
   const [files, setFiles] = useState([]);
@@ -194,7 +208,10 @@ const UploadModal = ({ open, onClose }) => {
           }
         }}
       >
-        <ModalBox onClick={(e) => e.stopPropagation()}>
+        <ModalBox
+          hasFiles={files.length > 0}
+          onClick={(e) => e.stopPropagation()}
+        >
           <Header>
             새 게시물 만들기
             <CloseBtn src={replyModalX} onClick={() => setConfirmOpen(true)} />
@@ -202,21 +219,28 @@ const UploadModal = ({ open, onClose }) => {
 
           <Content onDragOver={handleDragOver} onDrop={handleDrop}>
             {files.length > 0 ? (
-              <PreviewGrid>
-                {files.map((item, index) => (
-                  <PreviewItemWrapper key={index}>
-                    <PreviewItem src={item.preview} />
-                    <RemoveBtn onClick={() => removeFile(index)}>✕</RemoveBtn>
-                  </PreviewItemWrapper>
-                ))}
+              <>
+                <Left>
+                  <PreviewGrid>
+                    {files.map((item, index) => (
+                      <PreviewItemWrapper key={index}>
+                        <PreviewItem src={item.preview} />
+                        <RemoveBtn onClick={() => removeFile(index)}>
+                          ✕
+                        </RemoveBtn>
+                      </PreviewItemWrapper>
+                    ))}
 
-                {/* 추가 버튼 */}
-                {files.length < MAX_FILES && (
-                  <AddMoreBox onClick={() => inputRef.current.click()}>
-                    +
-                  </AddMoreBox>
-                )}
-              </PreviewGrid>
+                    {/* 추가 버튼 */}
+                    {files.length < MAX_FILES && (
+                      <AddMoreBox onClick={() => inputRef.current.click()}>
+                        +
+                      </AddMoreBox>
+                    )}
+                  </PreviewGrid>
+                </Left>
+                <Right>username</Right>
+              </>
             ) : (
               <DropZone onClick={() => inputRef.current.click()}>
                 <Icon>
