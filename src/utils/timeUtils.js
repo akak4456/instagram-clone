@@ -1,6 +1,7 @@
 export const getTimeDiff = (createdAt) => {
   const now = new Date();
   const created = new Date(createdAt);
+  console.log(created);
 
   const diff = Math.floor((now - created) / 1000); // 초 단위
 
