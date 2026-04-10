@@ -94,9 +94,11 @@ export const fetchFollowingUsersApi = (userId) => {
         return;
       }
 
-      const followingUsers = users.filter((u) =>
-        currentUser.following.includes(u.userId),
-      );
+      const followingUsers = currentUser.following
+        .map((followingUserId) =>
+          users.find((u) => u.userId === followingUserId),
+        )
+        .filter(Boolean);
 
       resolve({
         success: true,
