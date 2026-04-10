@@ -5,6 +5,8 @@ import profileArrowLeft from "../../assets/profile-arrow-left.png";
 import profileArrowRight from "../../assets/profile-arrow-right.png";
 import StoryModal from "../story/StoryModal";
 import useScrollLock from "../../hooks/useScrollLock";
+import { useStory } from "../../contexts/StoryContext";
+import { useAuth } from "../../hooks/useAuth";
 
 const Wrapper = styled.div`
   display: flex;
@@ -99,13 +101,14 @@ const HomeTopProfiles = () => {
   } = useFollow();
   const offset = (ITEM_WIDTH + GAP) * PAGE_SIZE * page;
 
-  const [storyModalOpen, setStoryModalOpen] = useState(false);
+  const { isStoryOpen, openStory } = useStory();
+  const { user: currentUser } = useAuth();
 
   useEffect(() => {
     fetchFollowingUsers();
   }, []);
 
-  useScrollLock(storyModalOpen);
+  useScrollLock(isStoryOpen);
   return (
     <Wrapper>
       <Arrow visible={page > 0} onClick={prevPage}>
@@ -117,7 +120,12 @@ const HomeTopProfiles = () => {
           {allFollowingUsers.map((user, index) => (
             <StoryItem
               key={`${user.userId}-${index}`}
-              onClick={() => setStoryModalOpen(true)}
+              onClick={() =>
+                openStory({
+                  currentUserId: currentUser.userId,
+                  clickedUserId: user.userId,
+                })
+              }
             >
               <Ring>
                 <Inner>
@@ -133,12 +141,7 @@ const HomeTopProfiles = () => {
       <Arrow visible={page + 1 < maxPage} onClick={nextPage}>
         <img src={profileArrowRight} alt="profile-arrow-right" />
       </Arrow>
-      {storyModalOpen && (
-        <StoryModal
-          open={storyModalOpen}
-          onClose={() => setStoryModalOpen(false)}
-        />
-      )}
+      {isStoryOpen && <StoryModal />}
     </Wrapper>
   );
 };
