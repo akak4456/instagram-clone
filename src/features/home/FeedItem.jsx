@@ -7,7 +7,7 @@ import postRepost from "../../assets/post-repost.png";
 import postSend from "../../assets/post-send.png";
 import postBookmark from "../../assets/post-bookmark.png";
 import postLikeFill from "../../assets/post-like-fill.png";
-import ReplyModal from "./ReplyModal";
+import ReplyModal from "../reply/ReplyModal";
 import PostImage from "../../components/postImage/PostImage";
 import { getTimeDiff } from "../../utils/timeUtils";
 import { useAuth } from "../../hooks/useAuth";
