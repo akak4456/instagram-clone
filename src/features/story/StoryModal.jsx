@@ -4,8 +4,8 @@ import styled from "styled-components";
 import { useStory } from "../../contexts/StoryContext";
 import storyModalX from "../../assets/story-modal-x.png";
 import storyInstagramLogo from "../../assets/story-instagram-logo.png";
-import arrowLeft from "../../assets/profile-arrow-left.png";
-import arrowRight from "../../assets/profile-arrow-right.png";
+import arrowLeft from "../../assets/left-arrow.png";
+import arrowRight from "../../assets/right-arrow.png";
 import { getTimeDiff } from "../../utils/timeUtils";
 
 /* =======================
@@ -15,6 +15,9 @@ const ACTIVE_CARD_HEIGHT = "90vh";
 const ACTIVE_CARD_WIDTH = "calc(90vh * 9 / 16)";
 const CARD_RATIO = "9 / 16";
 const CARD_SPACING = "48px";
+
+const NAV_GAP = "8px";
+const NAV_SIZE = "24px";
 
 /* =======================
    Styled Components
@@ -158,33 +161,41 @@ const CenterNameRow = styled.div`
   margin-top: 14px;
 `;
 
+const NavButtonsWrapper = styled.div`
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+
+  &:hover button {
+    background: white;
+  }
+`;
+
 const NavButton = styled.button`
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   background: rgba(120, 120, 120, 0.35);
   border: none;
-  width: 42px;
-  height: 42px;
+  width: ${NAV_SIZE};
+  height: ${NAV_SIZE};
   border-radius: 50%;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 120;
+  pointer-events: auto;
+  transition: background 0.2s ease;
 
   ${({ direction }) =>
     direction === "left"
-      ? "left: calc(50% - 32vw);"
-      : "right: calc(50% - 32vw);"}
+      ? `left: calc(50% - (${ACTIVE_CARD_WIDTH} / 2) - ${NAV_SIZE} - ${NAV_GAP});`
+      : `left: calc(50% + (${ACTIVE_CARD_WIDTH} / 2) + ${NAV_GAP});`}
 
   img {
-    width: 18px;
-    height: 18px;
-  }
-
-  &:hover {
-    background: rgba(120, 120, 120, 0.55);
+    width: 10px;
+    height: 10px;
   }
 `;
 
@@ -315,17 +326,19 @@ const StoryModal = () => {
           );
         })}
 
-        {hasPrev && (
-          <NavButton direction="left" onClick={prevStory}>
-            <img src={arrowLeft} alt="previous" />
-          </NavButton>
-        )}
+        <NavButtonsWrapper>
+          {hasPrev && (
+            <NavButton direction="left" onClick={prevStory}>
+              <img src={arrowLeft} alt="previous" />
+            </NavButton>
+          )}
 
-        {hasNext && (
-          <NavButton direction="right" onClick={nextStory}>
-            <img src={arrowRight} alt="next" />
-          </NavButton>
-        )}
+          {hasNext && (
+            <NavButton direction="right" onClick={nextStory}>
+              <img src={arrowRight} alt="next" />
+            </NavButton>
+          )}
+        </NavButtonsWrapper>
       </StoryViewport>
     </Overlay>,
     document.getElementById("modal-root"),
