@@ -10,6 +10,7 @@ import search from "../../assets/search.png";
 import upload from "../../assets/upload.png";
 import hamburger from "../../assets/hamburger.png";
 import UploadModal from "../../features/upload/UploadModal";
+import useScrollLock from "../../hooks/useScrollLock";
 
 const NavContainer = styled.nav`
   position: fixed; /* 🔥 핵심 */
@@ -112,23 +113,8 @@ const Navigation = () => {
     return () => window.removeEventListener("click", handleClick);
   }, []);
 
-  useEffect(() => {
-    const scrollBarWidth =
-      window.innerWidth - document.documentElement.clientWidth;
+  useScrollLock(uploadModalOpen);
 
-    if (uploadModalOpen) {
-      document.body.style.overflow = "hidden";
-      document.body.style.paddingRight = `${scrollBarWidth}px`; // 스크롤바 공간 확보
-    } else {
-      document.body.style.overflow = "";
-      document.body.style.paddingRight = "";
-    }
-
-    return () => {
-      document.body.style.overflow = "";
-      document.body.style.paddingRight = "";
-    };
-  }, [uploadModalOpen]);
   return (
     <NavContainer
       $expanded={isHovered || isMoreOpen} // 🔥 핵심

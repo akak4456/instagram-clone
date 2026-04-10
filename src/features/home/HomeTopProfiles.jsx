@@ -4,6 +4,7 @@ import styled from "styled-components";
 import profileArrowLeft from "../../assets/profile-arrow-left.png";
 import profileArrowRight from "../../assets/profile-arrow-right.png";
 import StoryModal from "../story/StoryModal";
+import useScrollLock from "../../hooks/useScrollLock";
 
 const Wrapper = styled.div`
   display: flex;
@@ -104,7 +105,7 @@ const HomeTopProfiles = () => {
     fetchFollowingUsers();
   }, []);
 
-  console.log(page, maxPage);
+  useScrollLock(storyModalOpen);
   return (
     <Wrapper>
       <Arrow visible={page > 0} onClick={prevPage}>

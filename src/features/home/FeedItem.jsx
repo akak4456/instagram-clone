@@ -12,6 +12,7 @@ import PostImage from "../../components/postImage/PostImage";
 import { getTimeDiff } from "../../utils/timeUtils";
 import { useAuth } from "../../hooks/useAuth";
 import postBookmarkFill from "../../assets/post-bookmark-fill.png";
+import useScrollLock from "../../hooks/useScrollLock";
 
 const likeAnimation = keyframes`
   0% {
@@ -154,23 +155,7 @@ const FeedItem = ({ post }) => {
     return () => clearTimeout(timer);
   }, [isLiked]);
 
-  useEffect(() => {
-    const scrollBarWidth =
-      window.innerWidth - document.documentElement.clientWidth;
-
-    if (replyModalOpen) {
-      document.body.style.overflow = "hidden";
-      document.body.style.paddingRight = `${scrollBarWidth}px`; // 스크롤바 공간 확보
-    } else {
-      document.body.style.overflow = "";
-      document.body.style.paddingRight = "";
-    }
-
-    return () => {
-      document.body.style.overflow = "";
-      document.body.style.paddingRight = "";
-    };
-  }, [replyModalOpen]);
+  useScrollLock(replyModalOpen);
 
   const handleLike = () => {
     toggleLike(post.id, userId);
