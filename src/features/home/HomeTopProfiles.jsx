@@ -1,8 +1,9 @@
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useFollow } from "../../hooks/useFollow";
 import styled from "styled-components";
 import profileArrowLeft from "../../assets/profile-arrow-left.png";
 import profileArrowRight from "../../assets/profile-arrow-right.png";
+import StoryModal from "../story/StoryModal";
 
 const Wrapper = styled.div`
   display: flex;
@@ -29,6 +30,7 @@ const StoryItem = styled.div`
   flex-shrink: 0;
   text-align: center;
   font-size: 12px;
+  cursor: pointer;
 `;
 
 const Ring = styled.div`
@@ -96,6 +98,8 @@ const HomeTopProfiles = () => {
   } = useFollow();
   const offset = (ITEM_WIDTH + GAP) * PAGE_SIZE * page;
 
+  const [storyModalOpen, setStoryModalOpen] = useState(false);
+
   useEffect(() => {
     fetchFollowingUsers();
   }, []);
@@ -110,7 +114,10 @@ const HomeTopProfiles = () => {
       <Viewport>
         <Track page={page} offset={offset}>
           {allFollowingUsers.map((user, index) => (
-            <StoryItem key={`${user.userId}-${index}`}>
+            <StoryItem
+              key={`${user.userId}-${index}`}
+              onClick={() => setStoryModalOpen(true)}
+            >
               <Ring>
                 <Inner>
                   <Profile src={user.profileImage} />
@@ -125,6 +132,12 @@ const HomeTopProfiles = () => {
       <Arrow visible={page + 1 < maxPage} onClick={nextPage}>
         <img src={profileArrowRight} alt="profile-arrow-right" />
       </Arrow>
+      {storyModalOpen && (
+        <StoryModal
+          open={storyModalOpen}
+          onClose={() => setStoryModalOpen(false)}
+        />
+      )}
     </Wrapper>
   );
 };
