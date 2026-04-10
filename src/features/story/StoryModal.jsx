@@ -1,5 +1,12 @@
 import { createPortal } from "react-dom";
-import { Fragment } from "react";
+import {
+  Fragment,
+  useCallback,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+} from "react";
 import styled from "styled-components";
 import { useStory } from "../../contexts/StoryContext";
 import storyModalX from "../../assets/story-modal-x.png";
@@ -18,6 +25,9 @@ const CARD_SPACING = "48px";
 
 const NAV_GAP = "8px";
 const NAV_SIZE = "24px";
+
+const STORY_DURATION = 15000;
+const PROGRESS_INTERVAL = 50;
 
 /* =======================
    Styled Components
@@ -199,6 +209,32 @@ const NavButton = styled.button`
   }
 `;
 
+const ProgressBarRow = styled.div`
+  position: absolute;
+  top: 10px;
+  left: 16px;
+  right: 16px;
+  display: flex;
+  gap: 6px;
+  z-index: 30;
+`;
+
+const ProgressTrack = styled.div`
+  flex: 1;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.35);
+  border-radius: 999px;
+  overflow: hidden;
+`;
+
+const ProgressFill = styled.div`
+  height: 100%;
+  background: white;
+  border-radius: 999px;
+  width: ${({ $width }) => `${$width}%`};
+  transition: width 50ms linear;
+`;
+
 /* =======================
    Helper Functions
 ======================= */
@@ -250,6 +286,101 @@ const StoryModal = () => {
     hasNext,
   } = useStory();
 
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [progressPercent, setProgressPercent] = useState(0);
+
+  const intervalRef = useRef(null);
+
+  const activeStory = useMemo(() => {
+    if (
+      !stories.length ||
+      activeLocalIndex < 0 ||
+      activeLocalIndex >= stories.length
+    ) {
+      return null;
+    }
+    return stories[activeLocalIndex];
+  }, [stories, activeLocalIndex]);
+
+  const activeImages = activeStory?.post?.images ?? [];
+  const activeImageSrc =
+    activeImages[currentImageIndex] ?? activeImages[0] ?? "";
+
+  const clearProgressInterval = () => {
+    if (intervalRef.current) {
+      clearInterval(intervalRef.current);
+      intervalRef.current = null;
+    }
+  };
+
+  const resetCurrentImageProgress = () => {
+    setProgressPercent(0);
+  };
+
+  const handleNext = useCallback(async () => {
+    if (!activeStory) return;
+
+    const imagesLength = activeImages.length;
+
+    if (currentImageIndex < imagesLength - 1) {
+      setCurrentImageIndex((prev) => prev + 1);
+      setProgressPercent(0);
+      return;
+    }
+
+    if (hasNext) {
+      await nextStory();
+    }
+  }, [activeStory, activeImages.length, currentImageIndex, hasNext, nextStory]);
+
+  const handlePrev = useCallback(async () => {
+    if (!activeStory) return;
+
+    if (currentImageIndex > 0) {
+      setCurrentImageIndex((prev) => prev - 1);
+      setProgressPercent(0);
+      return;
+    }
+
+    if (hasPrev) {
+      await prevStory();
+    }
+  }, [activeStory, currentImageIndex, hasPrev, prevStory]);
+
+  useEffect(() => {
+    setCurrentImageIndex(0);
+    setProgressPercent(0);
+  }, [activeStory?.post?.id]);
+
+  useEffect(() => {
+    if (!isStoryOpen || !activeStory) {
+      clearProgressInterval();
+      return;
+    }
+
+    clearProgressInterval();
+
+    intervalRef.current = setInterval(() => {
+      setProgressPercent((prev) => {
+        const nextValue = prev + (PROGRESS_INTERVAL / STORY_DURATION) * 100;
+
+        if (nextValue >= 100) {
+          clearProgressInterval();
+          handleNext();
+          return 100;
+        }
+
+        return nextValue;
+      });
+    }, PROGRESS_INTERVAL);
+
+    return () => clearProgressInterval();
+  }, [isStoryOpen, activeStory?.post?.id, currentImageIndex, handleNext]);
+
+  useEffect(() => {
+    return () => clearProgressInterval();
+  }, []);
+
   if (!isStoryOpen) return null;
 
   const maxLeftVisible = Math.min(currentIndex, 2);
@@ -262,7 +393,14 @@ const StoryModal = () => {
       </StoryInstagramLogoDiv>
 
       <ModalXDiv>
-        <img src={storyModalX} alt="close" onClick={closeStory} />
+        <img
+          src={storyModalX}
+          alt="close"
+          onClick={() => {
+            clearProgressInterval();
+            closeStory();
+          }}
+        />
       </ModalXDiv>
 
       <StoryViewport>
@@ -276,6 +414,9 @@ const StoryModal = () => {
           if (!shouldRender) return null;
 
           const timeLabel = getTimeDiff(story.post.createdAt);
+          const previewImage = isActive
+            ? activeImageSrc
+            : (story.post.images?.[0] ?? "");
 
           return (
             <Fragment key={story.post.id}>
@@ -286,22 +427,42 @@ const StoryModal = () => {
                 zIndex={getZIndex(offset)}
               >
                 <StoryImage
-                  src={story.post.images[0]}
+                  src={previewImage}
                   alt={story.user.username}
                   $isActive={isActive}
                 />
 
                 {isActive && (
-                  <ActiveHeader>
-                    <ActiveHeaderLeft>
-                      <ProfileImage
-                        src={story.user.profileImage}
-                        alt={story.user.username}
-                      />
-                      <Username>{story.user.username}</Username>
-                      <StoryTime>{timeLabel}</StoryTime>
-                    </ActiveHeaderLeft>
-                  </ActiveHeader>
+                  <>
+                    <ProgressBarRow>
+                      {(story.post.images ?? []).map((_, imageIndex) => {
+                        let width = 0;
+
+                        if (imageIndex < currentImageIndex) {
+                          width = 100;
+                        } else if (imageIndex === currentImageIndex) {
+                          width = progressPercent;
+                        }
+
+                        return (
+                          <ProgressTrack key={`${story.post.id}-${imageIndex}`}>
+                            <ProgressFill $width={width} />
+                          </ProgressTrack>
+                        );
+                      })}
+                    </ProgressBarRow>
+
+                    <ActiveHeader>
+                      <ActiveHeaderLeft>
+                        <ProfileImage
+                          src={story.user.profileImage}
+                          alt={story.user.username}
+                        />
+                        <Username>{story.user.username}</Username>
+                        <StoryTime>{timeLabel}</StoryTime>
+                      </ActiveHeaderLeft>
+                    </ActiveHeader>
+                  </>
                 )}
               </StoryCard>
 
@@ -328,13 +489,25 @@ const StoryModal = () => {
 
         <NavButtonsWrapper>
           {hasPrev && (
-            <NavButton direction="left" onClick={prevStory}>
+            <NavButton
+              direction="left"
+              onClick={async () => {
+                await handlePrev();
+                resetCurrentImageProgress();
+              }}
+            >
               <img src={arrowLeft} alt="previous" />
             </NavButton>
           )}
 
           {hasNext && (
-            <NavButton direction="right" onClick={nextStory}>
+            <NavButton
+              direction="right"
+              onClick={async () => {
+                await handleNext();
+                resetCurrentImageProgress();
+              }}
+            >
               <img src={arrowRight} alt="next" />
             </NavButton>
           )}
