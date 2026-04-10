@@ -1,11 +1,20 @@
-import { useEffect } from "react";
 import { createPortal } from "react-dom";
+import { Fragment } from "react";
 import styled from "styled-components";
 import { useStory } from "../../contexts/StoryContext";
 import storyModalX from "../../assets/story-modal-x.png";
 import storyInstagramLogo from "../../assets/story-instagram-logo.png";
 import arrowLeft from "../../assets/profile-arrow-left.png";
 import arrowRight from "../../assets/profile-arrow-right.png";
+import { getTimeDiff } from "../../utils/timeUtils";
+
+/* =======================
+   Constants
+======================= */
+const ACTIVE_CARD_HEIGHT = "90vh";
+const ACTIVE_CARD_WIDTH = "calc(90vh * 9 / 16)";
+const CARD_RATIO = "9 / 16";
+const CARD_SPACING = "48px";
 
 /* =======================
    Styled Components
@@ -24,111 +33,194 @@ const Overlay = styled.div`
 const ModalXDiv = styled.div`
   position: absolute;
   inset: 0;
+
   img {
     position: absolute;
     top: 24px;
     right: 24px;
     cursor: pointer;
+    z-index: 100;
   }
 `;
 
 const StoryInstagramLogoDiv = styled.div`
   position: absolute;
   inset: 0;
+
   img {
     position: absolute;
     top: 24px;
     left: 24px;
+    z-index: 100;
   }
 `;
 
 const StoryViewport = styled.div`
   position: relative;
-  width: 420px;
-  height: 720px;
+  width: 100vw;
+  height: 100vh;
   overflow: visible;
-`;
-
-const StoryTrack = styled.div`
-  position: relative;
-  width: 100%;
-  height: 100%;
 `;
 
 const StoryCard = styled.div`
   position: absolute;
-  top: 0;
+  top: 50%;
   left: 50%;
-  width: 420px;
-  height: 720px;
+  height: ${ACTIVE_CARD_HEIGHT};
+  aspect-ratio: ${CARD_RATIO};
   border-radius: 16px;
   overflow: hidden;
   background: #000;
-  transform: translateX(${({ offset }) => offset * 340 - 210}px)
-    scale(${({ active }) => (active ? 1 : 0.8)});
-  opacity: ${({ active }) => (active ? 1 : 0.4)};
-  z-index: ${({ active }) => (active ? 10 : 1)};
+  transform: translate(calc(-50% + ${({ translateX }) => translateX}), -50%)
+    scale(${({ scale }) => scale});
+  z-index: ${({ zIndex }) => zIndex};
   transition:
     transform 0.35s ease,
-    opacity 0.35s ease;
+    box-shadow 0.35s ease;
   box-shadow: ${({ active }) =>
-    active ? "0 20px 60px rgba(0,0,0,0.6)" : "none"};
+    active ? "0 20px 60px rgba(0, 0, 0, 0.6)" : "none"};
 `;
 
 const StoryImage = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
+  filter: ${({ $isActive }) =>
+    $isActive ? "none" : "brightness(0.5) blur(2.5px)"};
+  transition: filter 0.35s ease;
 `;
 
-const NavButton = styled.button`
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.4);
-  border: none;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  ${({ direction }) =>
-    direction === "left" ? "left: -70px;" : "right: -70px;"}
-
-  img {
-    width: 20px;
-    height: 20px;
-  }
-
-  &:hover {
-    background: rgba(0, 0, 0, 0.6);
-  }
-`;
-
-const StoryHeader = styled.div`
+const ActiveHeader = styled.div`
   position: absolute;
   top: 16px;
   left: 16px;
+  right: 16px;
   display: flex;
   align-items: center;
   color: white;
   z-index: 20;
 `;
 
+const ActiveHeaderLeft = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
 const ProfileImage = styled.img`
-  width: 32px;
-  height: 32px;
+  width: ${({ $large }) => ($large ? "60px" : "32px")};
+  height: ${({ $large }) => ($large ? "60px" : "32px")};
   border-radius: 50%;
-  margin-right: 8px;
+  margin-right: ${({ $large }) => ($large ? "0" : "8px")};
+  border: 2px solid white;
+  object-fit: cover;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.45);
 `;
 
 const Username = styled.span`
   font-weight: 600;
-  font-size: 14px;
+  font-size: ${({ $center }) => ($center ? "26px" : "14px")};
+  line-height: 1.2;
+  color: white;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
 `;
+
+const StoryTime = styled.span`
+  margin-left: ${({ $center }) => ($center ? "0" : "8px")};
+  margin-top: ${({ $center }) => ($center ? "8px" : "0")};
+  font-size: ${({ $center }) => ($center ? "22px" : "14px")};
+  font-weight: ${({ $center }) => ($center ? "700" : "400")};
+  color: rgba(255, 255, 255, 0.95);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+`;
+
+const SideCardOverlay = styled.div`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: ${ACTIVE_CARD_HEIGHT};
+  aspect-ratio: ${CARD_RATIO};
+  transform: translate(calc(-50% + ${({ translateX }) => translateX}), -50%)
+    scale(${({ scale }) => scale});
+  z-index: ${({ zIndex }) => zIndex};
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+`;
+
+const CenterNameRow = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 14px;
+`;
+
+const NavButton = styled.button`
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(120, 120, 120, 0.35);
+  border: none;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 120;
+
+  ${({ direction }) =>
+    direction === "left"
+      ? "left: calc(50% - 32vw);"
+      : "right: calc(50% - 32vw);"}
+
+  img {
+    width: 18px;
+    height: 18px;
+  }
+
+  &:hover {
+    background: rgba(120, 120, 120, 0.55);
+  }
+`;
+
+/* =======================
+   Helper Functions
+======================= */
+
+const getScale = (offset) => {
+  if (offset === 0) return 1;
+  return 0.5;
+};
+
+const getTranslateX = (offset) => {
+  if (offset === 0) return "0px";
+
+  const centerScale = getScale(0);
+  const sideScale = getScale(1);
+
+  const level1 = `calc((${ACTIVE_CARD_WIDTH} * ${centerScale}) / 2 + ${CARD_SPACING} + (${ACTIVE_CARD_WIDTH} * ${sideScale}) / 2)`;
+  const level2 = `calc((${ACTIVE_CARD_WIDTH} * ${sideScale}) / 2 + ${CARD_SPACING} + (${ACTIVE_CARD_WIDTH} * ${sideScale}) / 2)`;
+
+  if (offset === 1) return level1;
+  if (offset === -1) return `calc(-1 * ${level1})`;
+
+  if (offset === 2) return `calc(${level1} + ${level2})`;
+  if (offset === -2) return `calc(-1 * (${level1} + ${level2}))`;
+
+  return "0px";
+};
+
+const getZIndex = (offset) => {
+  if (offset === 0) return 10;
+  if (Math.abs(offset) === 1) return 6;
+  if (Math.abs(offset) === 2) return 4;
+  return 1;
+};
 
 /* =======================
    Component
@@ -149,61 +241,88 @@ const StoryModal = () => {
 
   if (!isStoryOpen) return null;
 
+  const maxLeftVisible = Math.min(currentIndex, 2);
+  const maxRightVisible = 2;
+
   return createPortal(
     <Overlay>
-      {/* Instagram Logo */}
       <StoryInstagramLogoDiv>
         <img src={storyInstagramLogo} alt="story-instagram-logo" />
       </StoryInstagramLogoDiv>
 
-      {/* Close Button */}
       <ModalXDiv>
         <img src={storyModalX} alt="close" onClick={closeStory} />
       </ModalXDiv>
 
-      {/* Story Viewport */}
       <StoryViewport>
-        <StoryTrack>
-          {stories.map((story, index) => {
-            const offset = index - activeLocalIndex;
-            const isActive = index === activeLocalIndex;
+        {stories.map((story, index) => {
+          const offset = index - activeLocalIndex;
+          const isActive = index === activeLocalIndex;
 
-            const maxLeftVisible = Math.min(currentIndex, 2); // 첫 번째면 0, 두 번째 이상이면 1
-            const maxRightVisible = 2; // 오른쪽은 최대 2개까지
+          const shouldRender =
+            offset >= -maxLeftVisible && offset <= maxRightVisible;
 
-            const shouldRender =
-              offset >= -maxLeftVisible && offset <= maxRightVisible;
+          if (!shouldRender) return null;
 
-            if (!shouldRender) return null;
+          const timeLabel = getTimeDiff(story.post.createdAt);
 
-            return (
-              <StoryCard key={story.post.id} offset={offset} active={isActive}>
+          return (
+            <Fragment key={story.post.id}>
+              <StoryCard
+                active={isActive}
+                translateX={getTranslateX(offset)}
+                scale={getScale(offset)}
+                zIndex={getZIndex(offset)}
+              >
                 <StoryImage
                   src={story.post.images[0]}
                   alt={story.user.username}
+                  $isActive={isActive}
                 />
 
-                {/* Header */}
-                <StoryHeader>
+                {isActive && (
+                  <ActiveHeader>
+                    <ActiveHeaderLeft>
+                      <ProfileImage
+                        src={story.user.profileImage}
+                        alt={story.user.username}
+                      />
+                      <Username>{story.user.username}</Username>
+                      <StoryTime>{timeLabel}</StoryTime>
+                    </ActiveHeaderLeft>
+                  </ActiveHeader>
+                )}
+              </StoryCard>
+
+              {!isActive && (
+                <SideCardOverlay
+                  translateX={getTranslateX(offset)}
+                  scale={getScale(offset)}
+                  zIndex={getZIndex(offset) + 1}
+                >
                   <ProfileImage
                     src={story.user.profileImage}
                     alt={story.user.username}
+                    $large
                   />
-                  <Username>{story.user.username}</Username>
-                </StoryHeader>
-              </StoryCard>
-            );
-          })}
-        </StoryTrack>
+                  <CenterNameRow>
+                    <Username $center>{story.user.username}</Username>
+                  </CenterNameRow>
+                  <StoryTime $center>{timeLabel}</StoryTime>
+                </SideCardOverlay>
+              )}
+            </Fragment>
+          );
+        })}
 
-        {/* Navigation Buttons */}
         {hasPrev && (
-          <NavButton direction="left" onClick={() => prevStory()}>
+          <NavButton direction="left" onClick={prevStory}>
             <img src={arrowLeft} alt="previous" />
           </NavButton>
         )}
+
         {hasNext && (
-          <NavButton direction="right" onClick={() => nextStory()}>
+          <NavButton direction="right" onClick={nextStory}>
             <img src={arrowRight} alt="next" />
           </NavButton>
         )}
