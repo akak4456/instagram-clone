@@ -5,21 +5,9 @@ import { comments as initialComments } from "./comments";
 import { commentsLikes as initialCommentsLikes } from "./commentsLikes";
 
 let users = [...initialUsers];
-let posts = Array(100)
-  .fill(initialPosts)
-  .flat()
-  .map((post, idx) => ({
-    ...post,
-    id: idx + 1, // 🔥 고유 id
-  }));
+let posts = [...initialPosts];
 let likes = [...initialLikes];
-let comments = Array(100)
-  .fill(initialComments)
-  .flat()
-  .map((comment, idx) => ({
-    ...comment,
-    id: idx + 1,
-  }));
+let comments = [...initialComments];
 let commentsLikes = [...initialCommentsLikes];
 
 export const fetchUsersApi = () => {

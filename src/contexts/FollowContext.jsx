@@ -26,10 +26,7 @@ export const FollowProvider = ({ children }) => {
 
     if (!result.success) return;
 
-    // 테스트용: 데이터 확장
-    const expanded = Array(50).fill(result.users).flat();
-
-    setAllFollowingUsers(expanded);
+    setAllFollowingUsers(result.users);
     setPage(0);
   };
 
