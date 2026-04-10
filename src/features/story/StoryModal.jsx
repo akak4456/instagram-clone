@@ -139,24 +139,13 @@ const StoryModal = () => {
     isStoryOpen,
     stories,
     activeLocalIndex,
+    currentIndex,
     nextStory,
     prevStory,
     closeStory,
     hasPrev,
     hasNext,
   } = useStory();
-
-  // ESC 키로 닫기
-  useEffect(() => {
-    const handleKeyDown = (e) => {
-      if (e.key === "Escape") closeStory();
-      if (e.key === "ArrowRight") nextStory();
-      if (e.key === "ArrowLeft") prevStory();
-    };
-
-    window.addEventListener("keydown", handleKeyDown);
-    return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [nextStory, prevStory, closeStory]);
 
   if (!isStoryOpen) return null;
 
@@ -178,6 +167,14 @@ const StoryModal = () => {
           {stories.map((story, index) => {
             const offset = index - activeLocalIndex;
             const isActive = index === activeLocalIndex;
+
+            const maxLeftVisible = Math.min(currentIndex, 2); // 첫 번째면 0, 두 번째 이상이면 1
+            const maxRightVisible = 2; // 오른쪽은 최대 2개까지
+
+            const shouldRender =
+              offset >= -maxLeftVisible && offset <= maxRightVisible;
+
+            if (!shouldRender) return null;
 
             return (
               <StoryCard key={story.post.id} offset={offset} active={isActive}>
