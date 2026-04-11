@@ -1,6 +1,6 @@
 // contexts/UserContext.js
 import { createContext, useEffect, useState } from "react";
-import { fetchUsersApi, addUserApi } from "../mocks/api";
+import { fetchUsersApi, addUserApi, searchUsersApi } from "../mocks/api";
 
 export const UserContext = createContext();
 
@@ -26,6 +26,13 @@ export const UserProvider = ({ children }) => {
     return result;
   };
 
+  const searchUsers = async (keyword) => {
+    setUserLoading(true);
+    const result = await searchUsersApi(keyword);
+    setUserLoading(false);
+    return result;
+  };
+
   useEffect(() => {
     fetchUsers();
   }, []);
@@ -37,6 +44,7 @@ export const UserProvider = ({ children }) => {
         userLoading,
         addUser,
         fetchUsers,
+        searchUsers,
       }}
     >
       {children}

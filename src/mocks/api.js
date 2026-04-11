@@ -542,3 +542,25 @@ export const fetchStoriesPaginationApi = ({
     }, 300);
   });
 };
+
+export const searchUsersApi = (keyword) => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      const trimmed = keyword.trim().toLowerCase();
+
+      if (!trimmed) {
+        resolve([]);
+        return;
+      }
+
+      const filtered = users.filter((user) => {
+        const userId = user.userId?.toLowerCase() || "";
+        const username = user.username?.toLowerCase() || "";
+
+        return userId.includes(trimmed) || username.includes(trimmed);
+      });
+
+      resolve(filtered);
+    }, 300);
+  });
+};
