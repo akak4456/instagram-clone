@@ -1,6 +1,5 @@
-// components/navigation/Navigation.jsx
 import { useState, useEffect } from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../../assets/instagram-logo.png";
 import homeOn from "../../assets/home-on.png";
@@ -14,6 +13,17 @@ import UploadModal from "../../features/upload/UploadModal";
 import SearchPanel from "../../features/search/SearchPanel";
 import useScrollLock from "../../hooks/useScrollLock";
 
+const slideInLeft = keyframes`
+  from {
+    opacity: 0;
+    transform: translateX(-28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+`;
+
 const NavWrapper = styled.div`
   position: relative;
   z-index: 100;
@@ -21,6 +31,8 @@ const NavWrapper = styled.div`
 
 const NavContainer = styled.nav`
   position: fixed;
+  top: 0;
+  left: 0;
   width: ${({ $expanded }) => ($expanded ? "220px" : "80px")};
   height: 100vh;
   display: flex;
@@ -30,8 +42,18 @@ const NavContainer = styled.nav`
   transition: width 0.3s ease;
   box-sizing: border-box;
   background: white;
-  border-right: 1px solid #dbdbdb;
   z-index: 100;
+`;
+
+const SearchPanelContainer = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 110;
+  background: white;
+  border-right: 1px solid #dbdbdb;
+  animation: ${slideInLeft} 0.28s ease;
 `;
 
 const Top = styled.div`
@@ -143,14 +165,26 @@ const Navigation = () => {
           </Top>
 
           <Middle>
-            <NavItem as={Link} to="/">
+            <NavItem
+              as={Link}
+              to="/"
+              onClick={() => {
+                setIsMoreOpen(false);
+              }}
+            >
               <img src={pathname === "/" ? homeOn : homeOff} alt="home" />
               <Label $expanded={isExpanded} $active={pathname === "/"}>
                 홈
               </Label>
             </NavItem>
 
-            <NavItem as={Link} to="/story">
+            <NavItem
+              as={Link}
+              to="/story"
+              onClick={() => {
+                setIsMoreOpen(false);
+              }}
+            >
               <img
                 src={pathname === "/story" ? storyOn : storyOff}
                 alt="story"
@@ -162,12 +196,13 @@ const Navigation = () => {
 
             <NavItem
               onClick={() => {
-                setIsSearchOpen((prev) => !prev);
+                setIsSearchOpen(true);
                 setIsMoreOpen(false);
+                setIsHovered(false);
               }}
             >
               <img src={search} alt="search" />
-              <Label $expanded={isExpanded} $active={isSearchOpen}>
+              <Label $expanded={isExpanded} $active={false}>
                 검색
               </Label>
             </NavItem>
@@ -175,7 +210,7 @@ const Navigation = () => {
             <NavItem
               onClick={() => {
                 setUploadModalOpen(true);
-                setIsSearchOpen(false);
+                setIsMoreOpen(false);
               }}
             >
               <img src={upload} alt="upload" />
@@ -201,7 +236,6 @@ const Navigation = () => {
               onClick={(e) => {
                 e.stopPropagation();
                 setIsMoreOpen((prev) => !prev);
-                setIsSearchOpen(false);
               }}
             >
               <img src={hamburger} alt="hamburger" />
@@ -221,14 +255,16 @@ const Navigation = () => {
       )}
 
       {isSearchOpen && (
-        <SearchPanel
-          open={isSearchOpen}
-          onClose={() => {
-            setIsHovered(false);
-            setIsMoreOpen(false);
-            setIsSearchOpen(false);
-          }}
-        />
+        <SearchPanelContainer>
+          <SearchPanel
+            open={isSearchOpen}
+            onClose={() => {
+              setIsSearchOpen(false);
+              setIsMoreOpen(false);
+              setIsHovered(false);
+            }}
+          />
+        </SearchPanelContainer>
       )}
     </NavWrapper>
   );
