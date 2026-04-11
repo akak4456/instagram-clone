@@ -4,6 +4,8 @@ import styled from "styled-components";
 import { useUser } from "../../hooks/useUser";
 import useDebounce from "../../hooks/useDebounce";
 
+const RECENT_SEARCH_USERS_KEY = "recentSearchUsers";
+
 const Panel = styled.div`
   position: fixed;
   top: 0;
@@ -79,7 +81,7 @@ const SearchInput = styled.input`
   }
 `;
 
-const ClearButton = styled.button`
+const InputClearButton = styled.button`
   position: absolute;
   top: 50%;
   right: 12px;
@@ -99,12 +101,33 @@ const ClearButton = styled.button`
   padding: 0;
 `;
 
+const SectionHeader = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+  flex-shrink: 0;
+`;
+
 const SectionTitle = styled.div`
   font-size: 16px;
   font-weight: 700;
   color: #000;
-  margin-bottom: 18px;
-  flex-shrink: 0;
+`;
+
+const ClearAllButton = styled.button`
+  border: none;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #3b49ff;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+  }
 `;
 
 const ResultArea = styled.div`
@@ -132,8 +155,17 @@ const SearchResultList = styled.div`
 const SearchItemRow = styled.div`
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 12px;
   padding: 8px 0;
+`;
+
+const SearchItemMain = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  flex: 1;
   cursor: pointer;
 `;
 
@@ -150,6 +182,14 @@ const UserInfo = styled.div`
   display: flex;
   flex-direction: column;
   min-width: 0;
+  flex: 1;
+`;
+
+const UsernameRow = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  min-width: 0;
 `;
 
 const Username = styled.div`
@@ -161,7 +201,13 @@ const Username = styled.div`
   text-overflow: ellipsis;
 `;
 
-const UserId = styled.div`
+const VerifiedBadge = styled.span`
+  font-size: 14px;
+  color: #0095f6;
+  flex-shrink: 0;
+`;
+
+const UserMeta = styled.div`
   font-size: 14px;
   color: #8e8e8e;
   white-space: nowrap;
@@ -170,11 +216,25 @@ const UserId = styled.div`
   margin-top: 2px;
 `;
 
-const RecentItem = styled.div`
-  padding: 10px 0;
-  font-size: 14px;
-  color: #262626;
+const RemoveButton = styled.button`
+  border: none;
+  background: transparent;
+  padding: 0;
+  margin: 0 4px 0 8px;
+  width: 24px;
+  height: 24px;
+  font-size: 28px;
+  line-height: 1;
+  color: #737373;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  &:hover {
+    opacity: 0.65;
+  }
 `;
 
 const SearchPanel = ({ open, onClose }) => {
@@ -182,15 +242,15 @@ const SearchPanel = ({ open, onClose }) => {
 
   const [keyword, setKeyword] = useState("");
   const [results, setResults] = useState([]);
-  const [recentKeywords, setRecentKeywords] = useState([]);
+  const [recentUsers, setRecentUsers] = useState([]);
 
   const debouncedKeyword = useDebounce(keyword, 300);
 
   useEffect(() => {
     const saved = JSON.parse(
-      localStorage.getItem("recentSearchKeywords") || "[]",
+      localStorage.getItem(RECENT_SEARCH_USERS_KEY) || "[]",
     );
-    setRecentKeywords(saved);
+    setRecentUsers(saved);
   }, []);
 
   useEffect(() => {
@@ -207,31 +267,50 @@ const SearchPanel = ({ open, onClose }) => {
     runSearch();
   }, [debouncedKeyword, searchUsers]);
 
-  const handleClear = () => {
+  const saveRecentUsersToStorage = (nextUsers) => {
+    setRecentUsers(nextUsers);
+    localStorage.setItem(RECENT_SEARCH_USERS_KEY, JSON.stringify(nextUsers));
+  };
+
+  const handleInputClear = () => {
     setKeyword("");
     setResults([]);
   };
 
-  const handleRecentClick = (value) => {
-    setKeyword(value);
-  };
+  const handleSaveRecentUser = (user) => {
+    const recentUser = {
+      userId: user.userId,
+      username: user.username,
+      profileImage: user.profileImage,
+      isVerified: user.isVerified || false,
+      meta: user.meta || user.bio || user.name || "",
+    };
 
-  const handleSaveRecentKeyword = (value) => {
-    const trimmed = value.trim();
-    if (!trimmed) return;
-
-    const next = [
-      trimmed,
-      ...recentKeywords.filter((item) => item !== trimmed),
+    const nextUsers = [
+      recentUser,
+      ...recentUsers.filter((item) => item.userId !== recentUser.userId),
     ].slice(0, 10);
 
-    setRecentKeywords(next);
-    localStorage.setItem("recentSearchKeywords", JSON.stringify(next));
+    saveRecentUsersToStorage(nextUsers);
   };
 
-  const handleClickUser = (user) => {
-    handleSaveRecentKeyword(keyword);
+  const handleClickSearchUser = (user) => {
+    handleSaveRecentUser(user);
     console.log("선택한 유저:", user);
+  };
+
+  const handleClickRecentUser = (user) => {
+    handleSaveRecentUser(user);
+    console.log("최근 검색 유저 클릭:", user);
+  };
+
+  const handleRemoveRecentUser = (userId) => {
+    const nextUsers = recentUsers.filter((item) => item.userId !== userId);
+    saveRecentUsersToStorage(nextUsers);
+  };
+
+  const handleClearAllRecentUsers = () => {
+    saveRecentUsersToStorage([]);
   };
 
   if (!open) return null;
@@ -252,31 +331,56 @@ const SearchPanel = ({ open, onClose }) => {
           value={keyword}
           onChange={(e) => setKeyword(e.target.value)}
         />
-        <ClearButton
+        <InputClearButton
           type="button"
           $visible={keyword.length > 0}
-          onClick={handleClear}
+          onClick={handleInputClear}
         >
           ×
-        </ClearButton>
+        </InputClearButton>
       </SearchInputWrapper>
 
       {!keyword.trim() ? (
         <>
-          <SectionTitle>최근 검색 항목</SectionTitle>
+          <SectionHeader>
+            <SectionTitle>최근 검색 항목</SectionTitle>
+            {recentUsers.length > 0 && (
+              <ClearAllButton type="button" onClick={handleClearAllRecentUsers}>
+                모두 지우기
+              </ClearAllButton>
+            )}
+          </SectionHeader>
 
           <ResultArea>
-            {recentKeywords.length === 0 ? (
+            {recentUsers.length === 0 ? (
               <EmptyBox>최근 검색 내역 없음.</EmptyBox>
             ) : (
               <SearchResultList>
-                {recentKeywords.map((item, idx) => (
-                  <RecentItem
-                    key={`${item}-${idx}`}
-                    onClick={() => handleRecentClick(item)}
-                  >
-                    {item}
-                  </RecentItem>
+                {recentUsers.map((user) => (
+                  <SearchItemRow key={user.userId}>
+                    <SearchItemMain onClick={() => handleClickRecentUser(user)}>
+                      <ProfileImage
+                        src={user.profileImage}
+                        alt={user.username}
+                      />
+
+                      <UserInfo>
+                        <UsernameRow>
+                          <Username>{user.userId}</Username>
+                          {user.isVerified && <VerifiedBadge>✔</VerifiedBadge>}
+                        </UsernameRow>
+
+                        <UserMeta>{user.meta || user.username}</UserMeta>
+                      </UserInfo>
+                    </SearchItemMain>
+
+                    <RemoveButton
+                      type="button"
+                      onClick={() => handleRemoveRecentUser(user.userId)}
+                    >
+                      ×
+                    </RemoveButton>
+                  </SearchItemRow>
                 ))}
               </SearchResultList>
             )}
@@ -286,15 +390,21 @@ const SearchPanel = ({ open, onClose }) => {
         <ResultArea>
           <SearchResultList>
             {results.map((user) => (
-              <SearchItemRow
-                key={user.userId}
-                onClick={() => handleClickUser(user)}
-              >
-                <ProfileImage src={user.profileImage} alt={user.username} />
-                <UserInfo>
-                  <Username>{user.userId}</Username>
-                  <UserId>{user.username}</UserId>
-                </UserInfo>
+              <SearchItemRow key={user.userId}>
+                <SearchItemMain onClick={() => handleClickSearchUser(user)}>
+                  <ProfileImage src={user.profileImage} alt={user.username} />
+
+                  <UserInfo>
+                    <UsernameRow>
+                      <Username>{user.userId}</Username>
+                      {user.isVerified && <VerifiedBadge>✔</VerifiedBadge>}
+                    </UsernameRow>
+
+                    <UserMeta>
+                      {user.meta || user.bio || user.username}
+                    </UserMeta>
+                  </UserInfo>
+                </SearchItemMain>
               </SearchItemRow>
             ))}
 
