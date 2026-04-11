@@ -110,6 +110,7 @@ const ActiveHeader = styled.div`
   right: 16px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   color: white;
   z-index: 20;
 `;
@@ -117,6 +118,63 @@ const ActiveHeader = styled.div`
 const ActiveHeaderLeft = styled.div`
   display: flex;
   align-items: center;
+  min-width: 0;
+`;
+
+const ActiveHeaderRight = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 8px;
+`;
+
+const HeaderIconButton = styled.button`
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.16);
+  }
+`;
+
+const MoreMenu = styled.div`
+  position: absolute;
+  top: 42px;
+  right: 0;
+  min-width: 140px;
+  background: rgba(28, 28, 28, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+`;
+
+const MoreMenuItem = styled.button`
+  width: 100%;
+  border: none;
+  background: transparent;
+  color: white;
+  text-align: left;
+  padding: 12px 14px;
+  cursor: pointer;
+  font-size: 14px;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.08);
+  }
+`;
+
+const MoreMenuWrap = styled.div`
+  position: relative;
 `;
 
 const ProfileImage = styled.img`
@@ -288,6 +346,8 @@ const StoryModal = () => {
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [progressPercent, setProgressPercent] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
+  const [isMoreOpen, setIsMoreOpen] = useState(false);
 
   const intervalRef = useRef(null);
 
@@ -350,10 +410,12 @@ const StoryModal = () => {
   useEffect(() => {
     setCurrentImageIndex(0);
     setProgressPercent(0);
+    setIsPaused(false);
+    setIsMoreOpen(false);
   }, [activeStory?.post?.id]);
 
   useEffect(() => {
-    if (!isStoryOpen || !activeStory) {
+    if (!isStoryOpen || !activeStory || isPaused) {
       clearProgressInterval();
       return;
     }
@@ -375,7 +437,13 @@ const StoryModal = () => {
     }, PROGRESS_INTERVAL);
 
     return () => clearProgressInterval();
-  }, [isStoryOpen, activeStory?.post?.id, currentImageIndex, handleNext]);
+  }, [
+    isStoryOpen,
+    activeStory?.post?.id,
+    currentImageIndex,
+    handleNext,
+    isPaused,
+  ]);
 
   useEffect(() => {
     return () => clearProgressInterval();
@@ -461,6 +529,34 @@ const StoryModal = () => {
                         <Username>{story.user.username}</Username>
                         <StoryTime>{timeLabel}</StoryTime>
                       </ActiveHeaderLeft>
+
+                      <ActiveHeaderRight>
+                        <HeaderIconButton
+                          type="button"
+                          onClick={() => setIsPaused((prev) => !prev)}
+                          aria-label={isPaused ? "재생" : "일시정지"}
+                        >
+                          {isPaused ? "▶" : "❚❚"}
+                        </HeaderIconButton>
+
+                        <MoreMenuWrap>
+                          <HeaderIconButton
+                            type="button"
+                            onClick={() => setIsMoreOpen((prev) => !prev)}
+                            aria-label="더보기"
+                          >
+                            ⋯
+                          </HeaderIconButton>
+
+                          {isMoreOpen && (
+                            <MoreMenu>
+                              <MoreMenuItem type="button">신고</MoreMenuItem>
+                              <MoreMenuItem type="button">공유</MoreMenuItem>
+                              <MoreMenuItem type="button">취소</MoreMenuItem>
+                            </MoreMenu>
+                          )}
+                        </MoreMenuWrap>
+                      </ActiveHeaderRight>
                     </ActiveHeader>
                   </>
                 )}
