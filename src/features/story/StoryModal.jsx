@@ -488,7 +488,7 @@ const StoryModal = () => {
         })}
 
         <NavButtonsWrapper>
-          {hasPrev && (
+          {(hasPrev || currentImageIndex > 0) && (
             <NavButton
               direction="left"
               onClick={async () => {
