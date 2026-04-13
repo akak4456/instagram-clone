@@ -16,7 +16,7 @@ import { useAuth } from "../../hooks/useAuth";
 import { formatDate } from "../../utils/timeUtils";
 import CommentInput from "../../components/CommentInput";
 import postBookmarkFill from "../../assets/post-bookmark-fill.png";
-import ProfileImage from "../../components/profileImage/ProfileImage";
+import ProfileImage from "../../components/ProfileImage";
 import LikeIcon from "../../components/LikeIcon";
 
 const Overlay = styled.div`

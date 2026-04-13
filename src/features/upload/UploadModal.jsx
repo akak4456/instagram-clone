@@ -5,7 +5,7 @@ import { useAuth } from "../../hooks/useAuth";
 import uploadImages from "../../assets/upload-images.png";
 import ConfirmModal from "../../components/ConfirmModal";
 import { usePost } from "../../hooks/usePost";
-import ProfileImage from "../../components/profileImage/ProfileImage";
+import ProfileImage from "../../components/ProfileImage";
 
 const MAX_FILES = 10;
 

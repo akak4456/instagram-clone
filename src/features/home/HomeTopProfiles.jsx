@@ -7,7 +7,7 @@ import StoryModal from "../story/StoryModal";
 import useScrollLock from "../../hooks/useScrollLock";
 import { useStory } from "../../contexts/StoryContext";
 import { useAuth } from "../../hooks/useAuth";
-import ProfileImage from "../../components/profileImage/ProfileImage";
+import ProfileImage from "../../components/ProfileImage";
 
 const Wrapper = styled.div`
   display: flex;

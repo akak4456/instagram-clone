@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { getTimeDiff } from "../../utils/timeUtils";
 import { useAuth } from "../../hooks/useAuth";
 import { useReply } from "../../hooks/useReply";
-import ProfileImage from "../../components/profileImage/ProfileImage";
+import ProfileImage from "../../components/ProfileImage";
 import LikeIcon from "../../components/LikeIcon";
 
 const Wrapper = styled.div`
