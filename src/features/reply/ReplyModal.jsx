@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { createPortal } from "react-dom";
 import styled from "styled-components";
 import replyModalX from "../../assets/reply-modal-x.png";
-import PostImage from "../../components/postImage/PostImage";
+import PostImage from "../../components/PostImage";
 import { useReply } from "../../hooks/useReply";
 import ReplyItem from "./ReplyItem";
 import replyModalPlus from "../../assets/reply-modal-plus.png";
