@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { createPortal } from "react-dom";
-import styled, { keyframes, css } from "styled-components";
+import styled from "styled-components";
 import replyModalX from "../../assets/reply-modal-x.png";
 import PostImage from "../../components/postImage/PostImage";
 import { useReply } from "../../hooks/useReply";
@@ -19,21 +19,7 @@ import { formatDate } from "../../utils/timeUtils";
 import CommentInput from "../../components/commentInput/CommentInput";
 import postBookmarkFill from "../../assets/post-bookmark-fill.png";
 import ProfileImage from "../../components/profileImage/ProfileImage";
-
-const likeAnimation = keyframes`
-  0% {
-    transform: scale(1);
-  }
-  30% {
-    transform: scale(1.4);
-  }
-  60% {
-    transform: scale(0.9);
-  }
-  100% {
-    transform: scale(1);
-  }
-`;
+import LikeIcon from "../../components/likeIcon/LikeIcon";
 
 const Overlay = styled.div`
   position: fixed;
@@ -158,14 +144,6 @@ const ActionItem = styled.div`
   }
 `;
 
-const LikeIcon = styled.img`
-  ${({ animate }) =>
-    animate &&
-    css`
-      animation: ${likeAnimation} 0.3s ease;
-    `}
-`;
-
 const LikeCount = styled.div`
   font-weight: 500;
   font-size: 14px;
@@ -186,8 +164,6 @@ const ReplyModal = ({ open, onClose, post }) => {
   const postId = post.id;
   const { user } = useAuth();
   const userId = user.userId;
-  const [animateLike, setAnimateLike] = useState(false);
-  const firstRender = useRef(true);
   const isLiked = post.likes.some((l) => l.userId === userId);
   const { toggleLike, toggleBookmark } = usePost();
   const { comments, initComments, loadComments, replyLoading } =
@@ -197,18 +173,6 @@ const ReplyModal = ({ open, onClose, post }) => {
     if (!postId) return;
     initComments(postId);
   }, [postId]);
-
-  useEffect(() => {
-    if (firstRender.current) {
-      // 첫 렌더링일 때는 애니메이션 실행하지 않음
-      firstRender.current = false;
-      return;
-    }
-    setAnimateLike(true);
-    const timer = setTimeout(() => setAnimateLike(false), 300);
-
-    return () => clearTimeout(timer);
-  }, [isLiked]);
 
   if (!open) return null;
 
@@ -255,11 +219,7 @@ const ReplyModal = ({ open, onClose, post }) => {
             <Actions>
               <ActionLeft>
                 <ActionItem onClick={handleLike}>
-                  <LikeIcon
-                    src={isLiked ? postLikeFill : postLike}
-                    alt="post-like"
-                    animate={animateLike}
-                  />
+                  <LikeIcon isLiked={isLiked} />
                 </ActionItem>
                 <ActionItem>
                   <img src={postComment} alt="post-comment" />

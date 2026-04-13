@@ -1,26 +1,9 @@
-import { useState, useRef, useEffect } from "react";
-import styled, { keyframes, css } from "styled-components";
-import postLike from "../../assets/post-like.png";
-import postLikeFill from "../../assets/post-like-fill.png";
+import styled from "styled-components";
 import { getTimeDiff } from "../../utils/timeUtils";
 import { useAuth } from "../../hooks/useAuth";
 import { useReply } from "../../hooks/useReply";
 import ProfileImage from "../../components/profileImage/ProfileImage";
-
-const likeAnimation = keyframes`
-  0% {
-    transform: scale(1);
-  }
-  30% {
-    transform: scale(1.4);
-  }
-  60% {
-    transform: scale(0.9);
-  }
-  100% {
-    transform: scale(1);
-  }
-`;
+import LikeIcon from "../../components/likeIcon/LikeIcon";
 
 const Wrapper = styled.div`
   display: flex;
@@ -75,38 +58,13 @@ const Like = styled.span`
   font-weight: 500;
 `;
 
-const LikeIcon = styled.img`
-  width: 14px;
-  ${({ animate }) =>
-    animate &&
-    css`
-      animation: ${likeAnimation} 0.3s ease;
-    `}
-`;
-
 const ReplyItem = ({ postId, comment }) => {
   const { user: currentUser } = useAuth();
   const { toggleReplyLike } = useReply(postId);
   const { user, content, createdAt } = comment;
   const userId = currentUser.userId;
 
-  const [animateLike, setAnimateLike] = useState(false);
-
-  const firstRender = useRef(true);
-
   const isLiked = comment.likes.some((l) => l.userId === userId);
-
-  useEffect(() => {
-    if (firstRender.current) {
-      // 첫 렌더링일 때는 애니메이션 실행하지 않음
-      firstRender.current = false;
-      return;
-    }
-    setAnimateLike(true);
-    const timer = setTimeout(() => setAnimateLike(false), 300);
-
-    return () => clearTimeout(timer);
-  }, [isLiked]);
 
   return (
     <Wrapper>
@@ -134,10 +92,9 @@ const ReplyItem = ({ postId, comment }) => {
       {/* 좋아요 아이콘 */}
       <Right>
         <LikeIcon
-          src={isLiked ? postLikeFill : postLike}
-          alt="post-like"
-          animate={animateLike}
+          isLiked={isLiked}
           onClick={() => toggleReplyLike(postId, comment.id, userId)}
+          width="14px"
         />
       </Right>
     </Wrapper>

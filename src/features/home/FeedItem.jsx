@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { usePost } from "../../hooks/usePost";
-import styled, { keyframes, css } from "styled-components";
+import styled from "styled-components";
 import postLike from "../../assets/post-like.png";
 import postComment from "../../assets/post-comment.png";
 import postRepost from "../../assets/post-repost.png";
@@ -14,21 +14,7 @@ import { useAuth } from "../../hooks/useAuth";
 import postBookmarkFill from "../../assets/post-bookmark-fill.png";
 import useScrollLock from "../../hooks/useScrollLock";
 import ProfileImage from "../../components/profileImage/ProfileImage";
-
-const likeAnimation = keyframes`
-  0% {
-    transform: scale(1);
-  }
-  30% {
-    transform: scale(1.4);
-  }
-  60% {
-    transform: scale(0.9);
-  }
-  100% {
-    transform: scale(1);
-  }
-`;
+import LikeIcon from "../../components/likeIcon/LikeIcon";
 
 const Wrapper = styled.div`
   width: 470px;
@@ -92,36 +78,13 @@ const Caption = styled.div`
   font-size: 14px;
 `;
 
-const LikeIcon = styled.img`
-  ${({ animate }) =>
-    animate &&
-    css`
-      animation: ${likeAnimation} 0.3s ease;
-    `}
-`;
-
 const FeedItem = ({ post }) => {
   const { toggleLike, toggleBookmark } = usePost();
   const { user } = useAuth();
 
   const userId = user.userId;
   const isLiked = post.likes.some((l) => l.userId === userId);
-  const [animateLike, setAnimateLike] = useState(false);
   const [replyModalOpen, setReplyModalOpen] = useState(false);
-
-  const firstRender = useRef(true);
-
-  useEffect(() => {
-    if (firstRender.current) {
-      // 첫 렌더링일 때는 애니메이션 실행하지 않음
-      firstRender.current = false;
-      return;
-    }
-    setAnimateLike(true);
-    const timer = setTimeout(() => setAnimateLike(false), 300);
-
-    return () => clearTimeout(timer);
-  }, [isLiked]);
 
   useScrollLock(replyModalOpen);
 
@@ -147,11 +110,7 @@ const FeedItem = ({ post }) => {
       <Actions>
         <ActionLeft>
           <ActionItem onClick={handleLike}>
-            <LikeIcon
-              src={isLiked ? postLikeFill : postLike}
-              alt="post-like"
-              animate={animateLike}
-            />
+            <LikeIcon isLiked={isLiked} />
             <span>{post.likes.length}</span>
           </ActionItem>
           <ActionItem onClick={() => setReplyModalOpen(true)}>
