@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useEffect } from "react";
 import { createPortal } from "react-dom";
 import styled from "styled-components";
 import replyModalX from "../../assets/reply-modal-x.png";
@@ -7,8 +7,6 @@ import { useReply } from "../../hooks/useReply";
 import ReplyItem from "./ReplyItem";
 import replyModalPlus from "../../assets/reply-modal-plus.png";
 import Spinner from "../../components/spinner/Spinner";
-import postLike from "../../assets/post-like.png";
-import postLikeFill from "../../assets/post-like-fill.png";
 import postComment from "../../assets/post-comment.png";
 import postRepost from "../../assets/post-repost.png";
 import postBookmark from "../../assets/post-bookmark.png";

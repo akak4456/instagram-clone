@@ -1,12 +1,10 @@
 import { useState, useEffect, useRef } from "react";
 import { usePost } from "../../hooks/usePost";
 import styled from "styled-components";
-import postLike from "../../assets/post-like.png";
 import postComment from "../../assets/post-comment.png";
 import postRepost from "../../assets/post-repost.png";
 import postSend from "../../assets/post-send.png";
 import postBookmark from "../../assets/post-bookmark.png";
-import postLikeFill from "../../assets/post-like-fill.png";
 import ReplyModal from "../reply/ReplyModal";
 import PostImage from "../../components/postImage/PostImage";
 import { getTimeDiff } from "../../utils/timeUtils";
