@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useUser } from "../../hooks/useUser";
 import useDebounce from "../../hooks/useDebounce";
 import { Panel, TopBar, CloseButton, Title } from "../../styles/search.styles";
-import { RECENT_SEARCH_USERS_KEY } from "./constants";
+import { RECENT_SEARCH_USERS_KEY } from "../../utils/searchUtils";
 import {
   loadRecentUsers,
   saveRecentUsers,

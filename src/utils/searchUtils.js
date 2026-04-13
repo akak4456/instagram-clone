@@ -1,3 +1,4 @@
+export const RECENT_SEARCH_USERS_KEY = "recentSearchUsers";
 const MAX_RECENT_USERS = 10;
 
 export const loadRecentUsers = (storageKey) => {
