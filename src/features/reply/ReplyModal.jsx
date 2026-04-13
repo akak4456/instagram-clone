@@ -242,14 +242,6 @@ const ReplyModal = ({ open, onClose, post }) => {
     return () => clearTimeout(timer);
   }, [isLiked]);
 
-  const textareaRef = useRef(null);
-
-  const handleInput = (e) => {
-    const el = textareaRef.current;
-    el.style.height = "auto"; // 🔥 초기화
-    el.style.height = el.scrollHeight + "px"; // 🔥 내용만큼 늘림
-  };
-
   if (!open) return null;
 
   const handleLike = () => {
