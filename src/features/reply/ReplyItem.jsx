@@ -5,6 +5,7 @@ import postLikeFill from "../../assets/post-like-fill.png";
 import { getTimeDiff } from "../../utils/timeUtils";
 import { useAuth } from "../../hooks/useAuth";
 import { useReply } from "../../hooks/useReply";
+import ProfileImage from "../../components/profileImage/ProfileImage";
 
 const likeAnimation = keyframes`
   0% {
@@ -74,39 +75,6 @@ const Like = styled.span`
   font-weight: 500;
 `;
 
-const Ring = styled.div`
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  padding: 2px;
-  background: linear-gradient(
-    45deg,
-    #feda75,
-    #fa7e1e,
-    #d62976,
-    #962fbf,
-    #4f5bd5
-  );
-`;
-
-const Inner = styled.div`
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background: white;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
-
-const Profile = styled.div`
-  width: calc(100% - 4px); /* 🔥 핵심 */
-  height: calc(100% - 4px);
-  border-radius: 50%;
-  background: url(${(p) => p.src}) center/cover;
-`;
-
 const LikeIcon = styled.img`
   width: 14px;
   ${({ animate }) =>
@@ -144,11 +112,7 @@ const ReplyItem = ({ postId, comment }) => {
     <Wrapper>
       {/* 프로필 */}
       <Left>
-        <Ring>
-          <Inner>
-            <Profile src={user.profileImage} />
-          </Inner>
-        </Ring>
+        <ProfileImage user={user} />
       </Left>
 
       {/* 본문 */}

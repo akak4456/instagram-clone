@@ -7,6 +7,7 @@ import StoryModal from "../story/StoryModal";
 import useScrollLock from "../../hooks/useScrollLock";
 import { useStory } from "../../contexts/StoryContext";
 import { useAuth } from "../../hooks/useAuth";
+import ProfileImage from "../../components/profileImage/ProfileImage";
 
 const Wrapper = styled.div`
   display: flex;
@@ -34,40 +35,6 @@ const StoryItem = styled.div`
   text-align: center;
   font-size: 12px;
   cursor: pointer;
-`;
-
-const Ring = styled.div`
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  padding: 3px;
-  background: linear-gradient(
-    45deg,
-    #feda75,
-    #fa7e1e,
-    #d62976,
-    #962fbf,
-    #4f5bd5
-  );
-`;
-
-const Inner = styled.div`
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background: white;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
-
-const Profile = styled.div`
-  width: calc(100% - 6px); /* 🔥 핵심 */
-  height: calc(100% - 6px);
-  border-radius: 50%;
-
-  background: url(${(p) => p.src}) center/cover;
 `;
 
 const Arrow = styled.button`
@@ -127,11 +94,7 @@ const HomeTopProfiles = () => {
                 })
               }
             >
-              <Ring>
-                <Inner>
-                  <Profile src={user.profileImage} />
-                </Inner>
-              </Ring>
+              <ProfileImage user={user} type="big" />
               <div>{user.username}</div>
             </StoryItem>
           ))}
