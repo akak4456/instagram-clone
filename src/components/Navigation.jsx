@@ -75,16 +75,16 @@ const Navigation = () => {
 
             <NavItem
               as={Link}
-              to="/story"
+              to="/reels"
               onClick={() => {
                 setIsMoreOpen(false);
               }}
             >
               <img
-                src={pathname === "/story" ? storyOn : storyOff}
+                src={pathname === "/reels" ? storyOn : storyOff}
                 alt="story"
               />
-              <Label $expanded={isExpanded} $active={pathname === "/story"}>
+              <Label $expanded={isExpanded} $active={pathname === "/reels"}>
                 릴스
               </Label>
             </NavItem>

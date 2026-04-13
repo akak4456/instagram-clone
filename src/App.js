@@ -7,7 +7,7 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Profile from "./pages/Profile";
-import Story from "./pages/Story";
+import Reels from "./pages/Reels";
 
 const App = () => {
   return (
@@ -36,11 +36,11 @@ const App = () => {
             }
           />
           <Route
-            path="/story"
+            path="/reels"
             element={
               <PrivateRoute>
                 <Layout>
-                  <Story />
+                  <Reels />
                 </Layout>
               </PrivateRoute>
             }
