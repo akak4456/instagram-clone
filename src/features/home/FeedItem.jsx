@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef } from "react";
 import { usePost } from "../../hooks/usePost";
-import styled from "styled-components";
 import postComment from "../../assets/post-comment.png";
 import postRepost from "../../assets/post-repost.png";
 import postSend from "../../assets/post-send.png";
@@ -13,68 +12,18 @@ import postBookmarkFill from "../../assets/post-bookmark-fill.png";
 import useScrollLock from "../../hooks/useScrollLock";
 import ProfileImage from "../../components/ProfileImage";
 import LikeIcon from "../../components/LikeIcon";
-
-const Wrapper = styled.div`
-  width: 470px;
-  border-radius: 8px;
-  background: white;
-  margin: 20px auto;
-`;
-
-const Header = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 12px;
-`;
-
-const Left = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 8px;
-`;
-
-const Username = styled.div`
-  font-weight: 600;
-  font-size: 14px;
-`;
-
-const Time = styled.div`
-  color: #858b92;
-  font-size: 14px;
-`;
-
-const More = styled.div`
-  cursor: pointer;
-`;
-
-const Actions = styled.div`
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 12px;
-`;
-
-const ActionLeft = styled.div`
-  display: flex;
-  gap: 20px;
-`;
-
-const ActionItem = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  span {
-    margin-left: 8px;
-    font-weight: 500;
-    font-size: 14px;
-  }
-`;
-
-const Caption = styled.div`
-  padding: 4px 12px;
-  font-size: 14px;
-`;
+import {
+  Wrapper,
+  Header,
+  Left,
+  Username,
+  Time,
+  More,
+  Actions,
+  ActionLeft,
+  ActionItem,
+  Caption,
+} from "../../styles/FeedItem.styles";
 
 const FeedItem = ({ post }) => {
   const { toggleLike, toggleBookmark } = usePost();
