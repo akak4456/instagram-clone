@@ -1,4 +1,4 @@
-import { StyledButton, Spinner } from "../../styles/Button.styles";
+import { StyledButton, Spinner } from "../styles/Button.styles";
 const Button = ({
   children,
   onClick,

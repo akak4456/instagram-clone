@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { AppProvider } from "./contexts";
-import PrivateRoute from "./routes/PrivateRoute";
-import Layout from "./components/layout/Layout";
+import PrivateRoute from "./routes/PrivateRoute.jsx";
+import Layout from "./components/Layout.jsx";
 
 import Home from "./pages/Home";
 import Login from "./pages/Login";

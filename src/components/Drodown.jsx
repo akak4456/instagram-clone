@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
-import arrowDown from "../../assets/arrow-down.png";
-import arrowDownError from "../../assets/arrow-down-error.png";
+import arrowDown from "../assets/arrow-down.png";
+import arrowDownError from "../assets/arrow-down-error.png";
 import {
   Wrapper,
   Header,
@@ -9,7 +9,7 @@ import {
   List,
   Item,
   ItemContent,
-} from "../../styles/Dropdown.styles";
+} from "../styles/Dropdown.styles";
 
 const Dropdown = ({ options, placeholder, value, onChange, suffix, error }) => {
   const [isOpen, setIsOpen] = useState(false);

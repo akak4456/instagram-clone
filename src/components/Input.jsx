@@ -1,6 +1,5 @@
-import styled from "styled-components";
 import { useState } from "react";
-import { Wrapper, StyledInput, StyledLabel } from "../../styles/Input.styles";
+import { Wrapper, StyledInput, StyledLabel } from "../styles/Input.styles";
 
 const Input = ({ label, value, onChange, type = "text", error }) => {
   const [isFocused, setIsFocused] = useState(false);

@@ -9,10 +9,10 @@ import {
 } from "../../utils/validation";
 
 import styled from "styled-components";
-import Input from "../../components/input/Input";
-import Dropdown from "../../components/dropdown/Drodown";
+import Input from "../../components/Input";
+import Dropdown from "../../components/Drodown";
 import errorMark from "../../assets/error-mark.png";
-import Button from "../../components/button/Button";
+import Button from "../../components/Button";
 import Modal from "../../components/modal/Modal";
 
 const SignupWrapper = styled.div`

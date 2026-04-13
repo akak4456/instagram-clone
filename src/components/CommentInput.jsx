@@ -1,14 +1,9 @@
 import { useRef, useState } from "react";
-import {
-  Wrapper,
-  Emoji,
-  Input,
-  Submit,
-} from "../../styles/CommentInput.styles";
-import emoji from "../../assets/emoji.png";
-import { useReply } from "../../hooks/useReply";
-import { useAuth } from "../../hooks/useAuth";
-import { usePost } from "../../hooks/usePost";
+import { Wrapper, Emoji, Input, Submit } from "../styles/CommentInput.styles";
+import emoji from "../assets/emoji.png";
+import { useReply } from "../hooks/useReply";
+import { useAuth } from "../hooks/useAuth";
+import { usePost } from "../hooks/usePost";
 
 const CommentInput = ({ postId }) => {
   const [text, setText] = useState("");
