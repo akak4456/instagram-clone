@@ -1,61 +1,25 @@
 import { useState } from "react";
-import { useUser } from "../../hooks/useUser";
+import { useUser } from "../../../hooks/useUser";
 import { useNavigate } from "react-router-dom";
 import {
   validateUserId,
   validatePassword,
   validateBirthday,
   validateUsername,
-} from "../../utils/validation";
-
-import styled from "styled-components";
-import Input from "../../components/Input";
-import Dropdown from "../../components/Drodown";
-import errorMark from "../../assets/error-mark.png";
-import Button from "../../components/Button";
-import Modal from "../../components/Modal";
-
-const SignupWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 40px;
-`;
-
-const SignupFormLabel = styled.span`
-  margin-top: 8px;
-  margin-bottom: 8px;
-  font-weight: bold;
-  font-size: 18px;
-`;
-
-const BirthWrapper = styled.div`
-  display: flex;
-  gap: 10px;
-`;
-
-const ErrorWrapper = styled.div`
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  gap: 5px;
-  margin-top: 4px;
-  margin-bottom: 4px;
-  span {
-    font-size: 13px;
-    color: #ed4956;
-  }
-`;
-
-const ButtonWrapper = styled.div`
-  margin-top: 16px;
-`;
-
-const DescriptionDiv = styled.div`
-  margin-top: 8px;
-  b {
-    color: #0064e0;
-  }
-`;
+} from "../../../utils/validation";
+import Input from "../../../components/Input";
+import Dropdown from "../../../components/Drodown";
+import errorMark from "../../../assets/error-mark.png";
+import Button from "../../../components/Button";
+import Modal from "../../../components/Modal";
+import {
+  SignupWrapper,
+  SignupFormLabel,
+  ErrorWrapper,
+  DescriptionDiv,
+  BirthWrapper,
+  ButtonWrapper,
+} from "../../../styles/SignupForm.styles";
 
 const getDays = (year, month) => {
   if (!year || !month) return Array.from({ length: 31 }, (_, i) => i + 1);
