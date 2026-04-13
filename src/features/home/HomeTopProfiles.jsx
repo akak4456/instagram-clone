@@ -8,12 +8,12 @@ import { useStory } from "../../contexts/StoryContext";
 import { useAuth } from "../../hooks/useAuth";
 import ProfileImage from "../../components/ProfileImage";
 import {
-  Wrapper,
+  HomeTopProfileWrapper,
   Arrow,
   Viewport,
   Track,
   StoryItem,
-} from "../../styles/HomeTopProfiles.styles";
+} from "../../styles/features/home.styles";
 
 const HomeTopProfiles = () => {
   const ITEM_WIDTH = 80;
@@ -38,7 +38,7 @@ const HomeTopProfiles = () => {
 
   useScrollLock(isStoryOpen);
   return (
-    <Wrapper>
+    <HomeTopProfileWrapper>
       <Arrow visible={page > 0} onClick={prevPage}>
         <img src={profileArrowLeft} alt="profile-arrow-left" />
       </Arrow>
@@ -66,7 +66,7 @@ const HomeTopProfiles = () => {
         <img src={profileArrowRight} alt="profile-arrow-right" />
       </Arrow>
       {isStoryOpen && <StoryModal />}
-    </Wrapper>
+    </HomeTopProfileWrapper>
   );
 };
 

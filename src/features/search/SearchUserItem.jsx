@@ -8,7 +8,7 @@ import {
   VerifiedBadge,
   UserMeta,
   RemoveButton,
-} from "../../styles/search.styles";
+} from "../../styles/features/search.styles";
 
 const SearchUserItem = ({
   user,

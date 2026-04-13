@@ -3,7 +3,7 @@ import {
   ResultArea,
   EmptyBox,
   SearchResultList,
-} from "../../styles/search.styles";
+} from "../../styles/features/search.styles";
 
 const RecentSearchList = ({ users, onClickUser, onRemoveUser }) => {
   return (

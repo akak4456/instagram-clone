@@ -19,7 +19,7 @@ import {
   DescriptionDiv,
   BirthWrapper,
   ButtonWrapper,
-} from "../../styles/SignupForm.styles";
+} from "../../styles/features/signup.styles";
 
 const getDays = (year, month) => {
   if (!year || !month) return Array.from({ length: 31 }, (_, i) => i + 1);

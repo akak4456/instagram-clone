@@ -2,7 +2,7 @@ import {
   SectionHeader,
   SectionTitle,
   ClearAllButton,
-} from "../../styles/search.styles";
+} from "../../styles/features/search.styles";
 
 const SearchSectionHeader = ({ title, showClearAll, onClearAll }) => {
   return (

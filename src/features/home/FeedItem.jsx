@@ -23,7 +23,7 @@ import {
   ActionLeft,
   ActionItem,
   Caption,
-} from "../../styles/FeedItem.styles";
+} from "../../styles/features/home.styles";
 
 const FeedItem = ({ post }) => {
   const { toggleLike, toggleBookmark } = usePost();
