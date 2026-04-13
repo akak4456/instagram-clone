@@ -41,3 +41,42 @@ export const DescriptionDiv = styled.div`
     color: #0064e0;
   }
 `;
+
+export const SignupPageWrapper = styled.div`
+  width: 600px;
+  margin: auto;
+`;
+export const SignupTopDiv = styled.div`
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+`;
+export const SignupTopArrowBack = styled.img`
+  padding: 10px 13px;
+  border-radius: 100px;
+  box-sizing: border-box;
+
+  &:hover {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.05);
+  }
+`;
+export const SignupTopMetaLogo = styled.img`
+  margin-left: 10px;
+`;
+
+export const SignupTopTitle = styled.span`
+  font-weight: bold;
+  font-size: 25px;
+  margin-left: 10px;
+`;
+
+export const SignupTopContent = styled.span`
+  margin-left: 10px;
+`;
+
+export const SignupMiddleDiv = styled.div`
+  margin-left: 10px;
+`;
