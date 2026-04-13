@@ -16,7 +16,7 @@ import postSend from "../../assets/post-send.png";
 import { usePost } from "../../hooks/usePost";
 import { useAuth } from "../../hooks/useAuth";
 import { formatDate } from "../../utils/timeUtils";
-import CommentInput from "../home/CommentInput";
+import CommentInput from "../../components/commentInput/CommentInput";
 import postBookmarkFill from "../../assets/post-bookmark-fill.png";
 
 const likeAnimation = keyframes`
