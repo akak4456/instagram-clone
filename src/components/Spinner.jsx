@@ -1,4 +1,4 @@
-import { SpinnerWrapper, Bar } from "../styles/Spinner.styles";
+import { SpinnerWrapper, Bar } from "../styles/components/Spinner.styles";
 
 const Spinner = () => {
   return (

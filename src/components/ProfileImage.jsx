@@ -1,4 +1,4 @@
-import { Ring, Inner, Profile } from "../styles/ProfileImage.styles";
+import { Ring, Inner, Profile } from "../styles/components/ProfileImage.styles";
 
 const ProfileImage = ({ user, type = "small" }) => {
   return (

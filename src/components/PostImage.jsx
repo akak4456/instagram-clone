@@ -7,7 +7,7 @@ import {
   Arrow,
   Dots,
   Dot,
-} from "../styles/PostImage.styles";
+} from "../styles/components/PostImage.styles";
 import profileArrowLeft from "../assets/profile-arrow-left.png";
 import profileArrowRight from "../assets/profile-arrow-right.png";
 

@@ -7,7 +7,7 @@ import {
   SubText,
   Divider,
   Button,
-} from "../styles/Modal.styles";
+} from "../styles/components/Modal.styles";
 const Modal = ({ open, onClose, title, subtext, buttontext }) => {
   if (!open) return null;
 

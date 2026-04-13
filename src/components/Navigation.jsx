@@ -24,7 +24,7 @@ import {
   PopupItem,
   Divider,
   SearchPanelContainer,
-} from "../styles/Navigation.styles";
+} from "../styles/components/Navigation.styles";
 
 const Navigation = () => {
   const location = useLocation();

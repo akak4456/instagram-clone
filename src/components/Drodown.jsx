@@ -9,7 +9,7 @@ import {
   List,
   Item,
   ItemContent,
-} from "../styles/Dropdown.styles";
+} from "../styles/components/Dropdown.styles";
 
 const Dropdown = ({ options, placeholder, value, onChange, suffix, error }) => {
   const [isOpen, setIsOpen] = useState(false);

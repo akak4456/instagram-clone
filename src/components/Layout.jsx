@@ -1,5 +1,5 @@
 import Navigation from "./Navigation";
-import { Container, Main } from "../styles/Layout.styles";
+import { Container, Main } from "../styles/components/Layout.styles";
 
 const Layout = ({ children }) => {
   return (

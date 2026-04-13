@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import postLikeFill from "../assets/post-like-fill.png";
 import postLike from "../assets/post-like.png";
-import { LikeIconImg } from "../styles/LikeIcon.styles";
+import { LikeIconImg } from "../styles/components/LikeIcon.styles";
 
 const LikeIcon = ({ isLiked, onClick, width }) => {
   const [animateLike, setAnimateLike] = useState(false);

@@ -6,7 +6,7 @@ import {
   Description,
   Divider,
   Button,
-} from "../styles/ConfirmModal.styles";
+} from "../styles/components/ConfirmModal.styles";
 
 const ConfirmModal = ({ open, onClose, onConfirm }) => {
   if (!open) return null;
