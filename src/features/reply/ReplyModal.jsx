@@ -18,6 +18,7 @@ import { useAuth } from "../../hooks/useAuth";
 import { formatDate } from "../../utils/timeUtils";
 import CommentInput from "../../components/commentInput/CommentInput";
 import postBookmarkFill from "../../assets/post-bookmark-fill.png";
+import ProfileImage from "../../components/profileImage/ProfileImage";
 
 const likeAnimation = keyframes`
   0% {
@@ -86,39 +87,6 @@ const ReplyTopLeft = styled.div`
   display: flex;
   align-items: center;
   gap: 8px;
-`;
-
-const Ring = styled.div`
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  padding: 2px;
-  background: linear-gradient(
-    45deg,
-    #feda75,
-    #fa7e1e,
-    #d62976,
-    #962fbf,
-    #4f5bd5
-  );
-`;
-
-const Inner = styled.div`
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background: white;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
-
-const Profile = styled.div`
-  width: calc(100% - 4px); /* 🔥 핵심 */
-  height: calc(100% - 4px);
-  border-radius: 50%;
-  background: url(${(p) => p.src}) center/cover;
 `;
 
 const Username = styled.div`
@@ -260,11 +228,7 @@ const ReplyModal = ({ open, onClose, post }) => {
         <ReplyWrapper>
           <ReplyTopDiv>
             <ReplyTopLeft>
-              <Ring>
-                <Inner>
-                  <Profile src={post.user.profileImage} />
-                </Inner>
-              </Ring>
+              <ProfileImage user={post.user} />
               <Username>{post.user.username}</Username>
               <Username>•</Username>
               <Follow>팔로우</Follow>
