@@ -3,12 +3,92 @@ import { users as initialUsers } from "./users";
 import { likes as initialLikes } from "./likes";
 import { comments as initialComments } from "./comments";
 import { commentsLikes as initialCommentsLikes } from "./commentsLikes";
+import { bookmarks as initialBookmarks } from "./bookmarks";
 
-let users = [...initialUsers];
-let posts = [...initialPosts];
-let likes = [...initialLikes];
-let comments = [...initialComments];
-let commentsLikes = [...initialCommentsLikes];
+/**
+ * localStorage key
+ */
+const STORAGE_KEYS = {
+  users: "mock_users",
+  posts: "mock_posts",
+  likes: "mock_likes",
+  comments: "mock_comments",
+  commentsLikes: "mock_comments_likes",
+  bookmarks: "mock_bookmarks",
+};
+
+/**
+ * localStorage 에서 데이터 읽기
+ * - 저장된 값이 있으면 그것을 사용
+ * - 없으면 initial 데이터를 사용
+ */
+const getStorageData = (key, initialValue) => {
+  try {
+    const stored = localStorage.getItem(key);
+    if (!stored) return [...initialValue];
+    return JSON.parse(stored);
+  } catch (error) {
+    console.error(`${key} 읽기 실패`, error);
+    return [...initialValue];
+  }
+};
+
+/**
+ * localStorage 에 데이터 저장
+ */
+const setStorageData = (key, value) => {
+  try {
+    localStorage.setItem(key, JSON.stringify(value));
+  } catch (error) {
+    console.error(`${key} 저장 실패`, error);
+  }
+};
+
+/**
+ * 현재 메모리 데이터
+ * - 앱이 다시 로드되어도 localStorage 에 저장된 값을 다시 읽어오므로
+ *   기존처럼 쉽게 초기화되지 않음
+ */
+let users = getStorageData(STORAGE_KEYS.users, initialUsers);
+let posts = getStorageData(STORAGE_KEYS.posts, initialPosts);
+let likes = getStorageData(STORAGE_KEYS.likes, initialLikes);
+let comments = getStorageData(STORAGE_KEYS.comments, initialComments);
+let commentsLikes = getStorageData(
+  STORAGE_KEYS.commentsLikes,
+  initialCommentsLikes,
+);
+let bookmarks = getStorageData(STORAGE_KEYS.bookmarks, initialBookmarks);
+
+/**
+ * 각 데이터 변경 후 localStorage 동기화
+ */
+const syncUsers = () => setStorageData(STORAGE_KEYS.users, users);
+const syncPosts = () => setStorageData(STORAGE_KEYS.posts, posts);
+const syncLikes = () => setStorageData(STORAGE_KEYS.likes, likes);
+const syncComments = () => setStorageData(STORAGE_KEYS.comments, comments);
+const syncCommentsLikes = () =>
+  setStorageData(STORAGE_KEYS.commentsLikes, commentsLikes);
+const syncBookmarks = () => setStorageData(STORAGE_KEYS.bookmarks, bookmarks);
+
+/**
+ * 개발용: mock 데이터 전체 초기화
+ * 필요할 때 콘솔이나 버튼에서 호출해서 사용
+ */
+export const resetMockData = () => {
+  users = [...initialUsers];
+  posts = [...initialPosts];
+  likes = [...initialLikes];
+  comments = [...initialComments];
+  commentsLikes = [...initialCommentsLikes];
+  bookmarks = [...initialBookmarks];
+
+  syncUsers();
+  syncPosts();
+  syncLikes();
+  syncComments();
+  syncCommentsLikes();
+  syncBookmarks();
+};
 
 export const fetchUsersApi = () => {
   return new Promise((resolve) => {
@@ -72,6 +152,7 @@ export const addUserApi = (newUser) => {
       };
 
       users.push(newUserData);
+      syncUsers();
 
       resolve({
         success: true,
@@ -108,25 +189,30 @@ export const fetchFollowingUsersApi = (userId) => {
   });
 };
 
-const getFeedPosts = () => {
+const getFeedPosts = (currentUserId) => {
   return posts.map((post) => {
     const user = users.find((u) => u.userId === post.userId);
     const likesFiltered = likes.filter((l) => l.postId === post.id);
     const commentFiltered = comments.filter((c) => c.postId === post.id);
+    const isBookmarked = bookmarks.some(
+      (bookmark) =>
+        bookmark.postId === post.id && bookmark.userId === currentUserId,
+    );
 
     return {
       ...post,
       user,
       likes: likesFiltered,
       commentCount: commentFiltered.length,
+      isBookmarked,
     };
   });
 };
 
-export const fetchFeed = (page = 1, limit = 10) => {
+export const fetchFeed = (currentUserId, page = 1, limit = 10) => {
   return new Promise((resolve) => {
     setTimeout(() => {
-      const allPosts = getFeedPosts();
+      const allPosts = getFeedPosts(currentUserId);
 
       const start = (page - 1) * limit;
       const end = start + limit;
@@ -149,18 +235,18 @@ export const toggleLikeApi = ({ postId, userId }) => {
       );
 
       if (existing) {
-        // 🔥 좋아요 취소
         likes = likes.filter(
           (l) => !(l.postId === postId && l.userId === userId),
         );
       } else {
-        // 🔥 좋아요 추가
         likes.push({
           id: Date.now(),
           postId,
           userId,
         });
       }
+
+      syncLikes();
 
       resolve({
         success: true,
@@ -172,10 +258,8 @@ export const toggleLikeApi = ({ postId, userId }) => {
 export const fetchCommentsApi = (postId, page = 1, limit = 10) => {
   return new Promise((resolve) => {
     setTimeout(() => {
-      // 🔥 해당 post의 댓글만 필터링
       const filtered = comments.filter((c) => c.postId === postId);
 
-      // 🔥 최신순 정렬 (선택)
       const sorted = [...filtered].sort(
         (a, b) => new Date(b.createdAt) - new Date(a.createdAt),
       );
@@ -188,9 +272,10 @@ export const fetchCommentsApi = (postId, page = 1, limit = 10) => {
           (cl) => cl.commentId === comment.id,
         );
         const user = users.find((u) => u.userId === comment.userId);
+
         return {
           ...comment,
-          user: user,
+          user,
           likes: commentsLikesFilter,
         };
       });
@@ -212,18 +297,18 @@ export const toggleCommentLikeApi = ({ commentId, userId }) => {
       );
 
       if (existing) {
-        // 🔥 좋아요 취소
         commentsLikes = commentsLikes.filter(
           (cl) => !(cl.commentId === commentId && cl.userId === userId),
         );
       } else {
-        // 🔥 좋아요 추가
         commentsLikes.push({
           id: Date.now(),
           commentId,
           userId,
         });
       }
+
+      syncCommentsLikes();
 
       resolve({
         success: true,
@@ -243,7 +328,8 @@ export const addCommentApi = ({ postId, userId, content }) => {
         createdAt: new Date().toISOString(),
       };
 
-      comments.unshift(newComment); // 🔥 최신순 기준이면 앞에 추가
+      comments.unshift(newComment);
+      syncComments();
 
       resolve({
         success: true,
@@ -253,14 +339,27 @@ export const addCommentApi = ({ postId, userId, content }) => {
   });
 };
 
-export const toggleBookmarkApi = ({ postId }) => {
+export const toggleBookmarkApi = ({ postId, userId }) => {
   return new Promise((resolve) => {
     setTimeout(() => {
-      posts = posts.map((post) =>
-        post.id === postId
-          ? { ...post, isBookmarked: !post.isBookmarked }
-          : post,
+      const existing = bookmarks.find(
+        (bookmark) => bookmark.postId === postId && bookmark.userId === userId,
       );
+
+      if (existing) {
+        bookmarks = bookmarks.filter(
+          (bookmark) =>
+            !(bookmark.postId === postId && bookmark.userId === userId),
+        );
+      } else {
+        bookmarks.push({
+          id: Date.now(),
+          postId,
+          userId,
+        });
+      }
+
+      syncBookmarks();
 
       resolve({
         success: true,
@@ -273,16 +372,21 @@ export const addPostApi = ({ userId, images, caption }) => {
   return new Promise((resolve) => {
     setTimeout(() => {
       const newPost = {
-        id: Date.now(), // 고유 id
+        id: Date.now(),
         userId,
         images,
         caption,
         commentCount: 0,
         createdAt: new Date().toISOString(),
-        isBookmarked: false,
       };
-      posts.unshift(newPost); // 최신순 기준 앞에 추가
-      resolve({ success: true, post: newPost });
+
+      posts.unshift(newPost);
+      syncPosts();
+
+      resolve({
+        success: true,
+        post: newPost,
+      });
     }, 500);
   });
 };
@@ -297,7 +401,6 @@ const getFollowingUsersInOrder = (currentUserId) => {
     .filter(Boolean);
 };
 
-// 특정 유저의 최신 post 1개 반환
 const getLatestPostByUserId = (userId) => {
   const userPosts = posts
     .filter((post) => post.userId === userId)
@@ -306,7 +409,6 @@ const getLatestPostByUserId = (userId) => {
   return userPosts[0] || null;
 };
 
-// following 유저들의 최신 post를 following 순서대로 story 목록으로 변환
 const getStoriesByFollowing = (currentUserId) => {
   const followingUsers = getFollowingUsersInOrder(currentUserId);
 
@@ -328,7 +430,6 @@ const getStoriesByFollowing = (currentUserId) => {
     .filter(Boolean);
 };
 
-// centerIndex 기준으로 window 범위 계산
 const getStoryWindowRange = (totalCount, centerIndex, windowSize = 5) => {
   const safeWindowSize = Math.max(1, windowSize);
   const safeCenterIndex = Math.max(0, Math.min(centerIndex, totalCount - 1));
@@ -337,13 +438,11 @@ const getStoryWindowRange = (totalCount, centerIndex, windowSize = 5) => {
   let startIndex = safeCenterIndex - sideCount;
   let endIndex = safeCenterIndex + sideCount + 1;
 
-  // 왼쪽 부족분 보정
   if (startIndex < 0) {
     endIndex += -startIndex;
     startIndex = 0;
   }
 
-  // 오른쪽 부족분 보정
   if (endIndex > totalCount) {
     const overflow = endIndex - totalCount;
     startIndex = Math.max(0, startIndex - overflow);
@@ -357,7 +456,6 @@ const getStoryWindowRange = (totalCount, centerIndex, windowSize = 5) => {
   };
 };
 
-// 클릭한 유저 기준으로 가운데 정렬된 story window 반환
 export const fetchStoryWindowApi = ({
   currentUserId,
   clickedUserId,
@@ -420,8 +518,6 @@ export const fetchStoryWindowApi = ({
   });
 };
 
-// 전체 story index 기준으로 window 반환
-// prev / next 이동 시 사용
 export const fetchStoryWindowByIndexApi = ({
   currentUserId,
   currentIndex,
@@ -483,8 +579,6 @@ export const fetchStoryWindowByIndexApi = ({
   });
 };
 
-// 일반적인 pagination 형태가 필요할 때 사용하는 API
-// clickedUserId부터 오른쪽으로 limit개씩 잘라서 가져옴
 export const fetchStoriesPaginationApi = ({
   currentUserId,
   page = 1,

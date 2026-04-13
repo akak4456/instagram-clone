@@ -12,7 +12,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 6,
     createdAt: "2026-04-10T10:49:17",
-    isBookmarked: false,
   },
   {
     id: 2,
@@ -24,7 +23,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 6,
     createdAt: "2026-04-10T08:26:50",
-    isBookmarked: false,
   },
   {
     id: 3,
@@ -37,7 +35,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 10,
     createdAt: "2026-04-10T07:33:00",
-    isBookmarked: false,
   },
   {
     id: 4,
@@ -46,7 +43,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 1,
     createdAt: "2026-04-10T06:16:48",
-    isBookmarked: false,
   },
   {
     id: 5,
@@ -61,7 +57,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 1,
     createdAt: "2026-04-10T05:58:15",
-    isBookmarked: false,
   },
   {
     id: 6,
@@ -76,7 +71,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 9,
     createdAt: "2026-04-10T03:50:08",
-    isBookmarked: false,
   },
   {
     id: 7,
@@ -90,7 +84,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 0,
     createdAt: "2026-04-10T02:01:03",
-    isBookmarked: false,
   },
   {
     id: 8,
@@ -102,7 +95,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 3,
     createdAt: "2026-04-10T02:00:54",
-    isBookmarked: false,
   },
   {
     id: 9,
@@ -114,7 +106,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 6,
     createdAt: "2026-04-10T01:57:35",
-    isBookmarked: false,
   },
   {
     id: 10,
@@ -126,7 +117,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 0,
     createdAt: "2026-04-09T21:24:33",
-    isBookmarked: true,
   },
   {
     id: 11,
@@ -140,7 +130,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 8,
     createdAt: "2026-04-09T20:44:56",
-    isBookmarked: false,
   },
   {
     id: 12,
@@ -154,7 +143,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 9,
     createdAt: "2026-04-09T19:14:21",
-    isBookmarked: false,
   },
   {
     id: 13,
@@ -167,7 +155,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 3,
     createdAt: "2026-04-09T18:47:49",
-    isBookmarked: false,
   },
   {
     id: 14,
@@ -176,7 +163,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 0,
     createdAt: "2026-04-09T17:39:31",
-    isBookmarked: false,
   },
   {
     id: 15,
@@ -189,7 +175,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 5,
     createdAt: "2026-04-09T17:27:01",
-    isBookmarked: true,
   },
   {
     id: 16,
@@ -201,7 +186,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 7,
     createdAt: "2026-04-09T16:26:24",
-    isBookmarked: false,
   },
   {
     id: 17,
@@ -216,7 +200,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 0,
     createdAt: "2026-04-09T15:27:26",
-    isBookmarked: false,
   },
   {
     id: 18,
@@ -230,7 +213,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 1,
     createdAt: "2026-04-09T13:11:45",
-    isBookmarked: false,
   },
   {
     id: 19,
@@ -239,7 +221,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 1,
     createdAt: "2026-04-09T10:37:51",
-    isBookmarked: false,
   },
   {
     id: 20,
@@ -248,7 +229,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 8,
     createdAt: "2026-04-09T08:16:53",
-    isBookmarked: false,
   },
   {
     id: 21,
@@ -257,7 +237,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 5,
     createdAt: "2026-04-09T06:54:10",
-    isBookmarked: false,
   },
   {
     id: 22,
@@ -272,7 +251,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 3,
     createdAt: "2026-04-09T04:05:11",
-    isBookmarked: false,
   },
   {
     id: 23,
@@ -284,7 +262,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 8,
     createdAt: "2026-04-09T03:42:15",
-    isBookmarked: false,
   },
   {
     id: 24,
@@ -297,7 +274,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 5,
     createdAt: "2026-04-09T01:02:03",
-    isBookmarked: false,
   },
   {
     id: 25,
@@ -310,7 +286,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 12,
     createdAt: "2026-04-08T21:46:41",
-    isBookmarked: false,
   },
   {
     id: 26,
@@ -325,7 +300,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 4,
     createdAt: "2026-04-08T19:10:02",
-    isBookmarked: false,
   },
   {
     id: 27,
@@ -334,7 +308,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 6,
     createdAt: "2026-04-08T18:54:38",
-    isBookmarked: false,
   },
   {
     id: 28,
@@ -346,7 +319,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 7,
     createdAt: "2026-04-08T16:40:53",
-    isBookmarked: true,
   },
   {
     id: 29,
@@ -360,7 +332,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 7,
     createdAt: "2026-04-08T14:28:52",
-    isBookmarked: true,
   },
   {
     id: 30,
@@ -369,7 +340,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 6,
     createdAt: "2026-04-08T12:26:53",
-    isBookmarked: false,
   },
   {
     id: 31,
@@ -383,7 +353,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 2,
     createdAt: "2026-04-08T11:24:44",
-    isBookmarked: false,
   },
   {
     id: 32,
@@ -398,7 +367,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 1,
     createdAt: "2026-04-08T09:49:38",
-    isBookmarked: false,
   },
   {
     id: 33,
@@ -411,7 +379,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 0,
     createdAt: "2026-04-08T08:49:27",
-    isBookmarked: true,
   },
   {
     id: 34,
@@ -426,7 +393,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 5,
     createdAt: "2026-04-08T07:53:00",
-    isBookmarked: false,
   },
   {
     id: 35,
@@ -435,7 +401,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 0,
     createdAt: "2026-04-08T06:04:39",
-    isBookmarked: false,
   },
   {
     id: 36,
@@ -444,7 +409,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 6,
     createdAt: "2026-04-08T05:45:36",
-    isBookmarked: false,
   },
   {
     id: 37,
@@ -453,7 +417,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 4,
     createdAt: "2026-04-08T03:25:41",
-    isBookmarked: false,
   },
   {
     id: 38,
@@ -462,7 +425,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 5,
     createdAt: "2026-04-08T02:31:00",
-    isBookmarked: true,
   },
   {
     id: 39,
@@ -471,7 +433,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 13,
     createdAt: "2026-04-08T01:10:57",
-    isBookmarked: false,
   },
   {
     id: 40,
@@ -483,7 +444,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 8,
     createdAt: "2026-04-08T00:20:29",
-    isBookmarked: false,
   },
   {
     id: 41,
@@ -496,7 +456,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 3,
     createdAt: "2026-04-08T00:05:53",
-    isBookmarked: false,
   },
   {
     id: 42,
@@ -505,7 +464,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 5,
     createdAt: "2026-04-07T22:49:38",
-    isBookmarked: false,
   },
   {
     id: 43,
@@ -520,7 +478,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 13,
     createdAt: "2026-04-07T21:25:13",
-    isBookmarked: false,
   },
   {
     id: 44,
@@ -534,7 +491,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 8,
     createdAt: "2026-04-07T20:52:05",
-    isBookmarked: false,
   },
   {
     id: 45,
@@ -547,7 +503,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 2,
     createdAt: "2026-04-07T20:13:38",
-    isBookmarked: false,
   },
   {
     id: 46,
@@ -560,7 +515,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 4,
     createdAt: "2026-04-07T15:08:19",
-    isBookmarked: false,
   },
   {
     id: 47,
@@ -575,7 +529,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 9,
     createdAt: "2026-04-07T13:52:58",
-    isBookmarked: false,
   },
   {
     id: 48,
@@ -589,7 +542,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 2,
     createdAt: "2026-04-07T09:15:41",
-    isBookmarked: false,
   },
   {
     id: 49,
@@ -598,7 +550,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 1,
     createdAt: "2026-04-07T07:28:46",
-    isBookmarked: false,
   },
   {
     id: 50,
@@ -613,7 +564,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 5,
     createdAt: "2026-04-07T06:48:29",
-    isBookmarked: false,
   },
   {
     id: 51,
@@ -628,7 +578,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 0,
     createdAt: "2026-04-07T05:23:27",
-    isBookmarked: false,
   },
   {
     id: 52,
@@ -642,7 +591,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 8,
     createdAt: "2026-04-07T01:49:47",
-    isBookmarked: false,
   },
   {
     id: 53,
@@ -656,7 +604,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 6,
     createdAt: "2026-04-06T23:26:26",
-    isBookmarked: false,
   },
   {
     id: 54,
@@ -665,7 +612,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 2,
     createdAt: "2026-04-06T21:50:22",
-    isBookmarked: false,
   },
   {
     id: 55,
@@ -677,7 +623,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 1,
     createdAt: "2026-04-06T17:18:30",
-    isBookmarked: false,
   },
   {
     id: 56,
@@ -691,7 +636,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 7,
     createdAt: "2026-04-06T17:03:10",
-    isBookmarked: false,
   },
   {
     id: 57,
@@ -700,7 +644,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 6,
     createdAt: "2026-04-06T15:17:05",
-    isBookmarked: true,
   },
   {
     id: 58,
@@ -713,7 +656,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 0,
     createdAt: "2026-04-06T13:46:33",
-    isBookmarked: false,
   },
   {
     id: 59,
@@ -722,7 +664,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 5,
     createdAt: "2026-04-06T10:14:42",
-    isBookmarked: false,
   },
   {
     id: 60,
@@ -736,7 +677,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 8,
     createdAt: "2026-04-06T09:11:00",
-    isBookmarked: true,
   },
   {
     id: 61,
@@ -751,7 +691,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 5,
     createdAt: "2026-04-06T09:09:38",
-    isBookmarked: false,
   },
   {
     id: 62,
@@ -763,7 +702,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 2,
     createdAt: "2026-04-06T06:52:09",
-    isBookmarked: false,
   },
   {
     id: 63,
@@ -772,7 +710,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 7,
     createdAt: "2026-04-06T06:09:05",
-    isBookmarked: false,
   },
   {
     id: 64,
@@ -784,7 +721,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 6,
     createdAt: "2026-04-06T06:03:09",
-    isBookmarked: false,
   },
   {
     id: 65,
@@ -793,7 +729,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 0,
     createdAt: "2026-04-06T05:21:10",
-    isBookmarked: true,
   },
   {
     id: 66,
@@ -802,7 +737,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 4,
     createdAt: "2026-04-05T23:06:09",
-    isBookmarked: true,
   },
   {
     id: 67,
@@ -811,7 +745,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 3,
     createdAt: "2026-04-05T22:33:39",
-    isBookmarked: false,
   },
   {
     id: 68,
@@ -824,7 +757,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 6,
     createdAt: "2026-04-05T20:17:49",
-    isBookmarked: false,
   },
   {
     id: 69,
@@ -836,7 +768,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 8,
     createdAt: "2026-04-05T19:22:42",
-    isBookmarked: false,
   },
   {
     id: 70,
@@ -848,7 +779,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 2,
     createdAt: "2026-04-05T18:10:29",
-    isBookmarked: false,
   },
   {
     id: 71,
@@ -863,7 +793,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 3,
     createdAt: "2026-04-05T17:23:06",
-    isBookmarked: false,
   },
   {
     id: 72,
@@ -877,7 +806,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 0,
     createdAt: "2026-04-05T17:02:46",
-    isBookmarked: false,
   },
   {
     id: 73,
@@ -889,7 +817,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 12,
     createdAt: "2026-04-05T14:51:06",
-    isBookmarked: false,
   },
   {
     id: 74,
@@ -904,7 +831,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 3,
     createdAt: "2026-04-05T14:04:38",
-    isBookmarked: false,
   },
   {
     id: 75,
@@ -913,7 +839,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 6,
     createdAt: "2026-04-05T12:32:00",
-    isBookmarked: false,
   },
   {
     id: 76,
@@ -922,7 +847,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 7,
     createdAt: "2026-04-05T10:24:17",
-    isBookmarked: false,
   },
   {
     id: 77,
@@ -936,7 +860,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 7,
     createdAt: "2026-04-05T09:16:30",
-    isBookmarked: false,
   },
   {
     id: 78,
@@ -948,7 +871,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 10,
     createdAt: "2026-04-05T07:17:25",
-    isBookmarked: true,
   },
   {
     id: 79,
@@ -960,7 +882,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 3,
     createdAt: "2026-04-05T05:52:54",
-    isBookmarked: false,
   },
   {
     id: 80,
@@ -974,7 +895,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 6,
     createdAt: "2026-04-05T02:40:14",
-    isBookmarked: true,
   },
   {
     id: 81,
@@ -986,7 +906,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 16,
     createdAt: "2026-04-05T02:02:00",
-    isBookmarked: true,
   },
   {
     id: 82,
@@ -995,7 +914,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 3,
     createdAt: "2026-04-04T22:12:46",
-    isBookmarked: false,
   },
   {
     id: 83,
@@ -1004,7 +922,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 6,
     createdAt: "2026-04-04T21:53:01",
-    isBookmarked: true,
   },
   {
     id: 84,
@@ -1013,7 +930,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 3,
     createdAt: "2026-04-04T21:03:32",
-    isBookmarked: false,
   },
   {
     id: 85,
@@ -1026,7 +942,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 1,
     createdAt: "2026-04-04T19:24:57",
-    isBookmarked: false,
   },
   {
     id: 86,
@@ -1038,7 +953,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 3,
     createdAt: "2026-04-04T16:09:57",
-    isBookmarked: false,
   },
   {
     id: 87,
@@ -1053,7 +967,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 2,
     createdAt: "2026-04-04T13:49:19",
-    isBookmarked: false,
   },
   {
     id: 88,
@@ -1066,7 +979,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 6,
     createdAt: "2026-04-04T13:22:14",
-    isBookmarked: false,
   },
   {
     id: 89,
@@ -1075,7 +987,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 7,
     createdAt: "2026-04-04T09:59:11",
-    isBookmarked: false,
   },
   {
     id: 90,
@@ -1089,7 +1000,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 0,
     createdAt: "2026-04-04T08:03:41",
-    isBookmarked: false,
   },
   {
     id: 91,
@@ -1104,7 +1014,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 8,
     createdAt: "2026-04-04T07:26:06",
-    isBookmarked: false,
   },
   {
     id: 92,
@@ -1119,7 +1028,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 6,
     createdAt: "2026-04-04T05:38:47",
-    isBookmarked: false,
   },
   {
     id: 93,
@@ -1128,7 +1036,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 5,
     createdAt: "2026-04-04T05:11:32",
-    isBookmarked: true,
   },
   {
     id: 94,
@@ -1141,7 +1048,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 6,
     createdAt: "2026-04-04T03:41:21",
-    isBookmarked: false,
   },
   {
     id: 95,
@@ -1155,7 +1061,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 4,
     createdAt: "2026-04-04T01:10:47",
-    isBookmarked: true,
   },
   {
     id: 96,
@@ -1170,7 +1075,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 5,
     createdAt: "2026-04-03T23:38:49",
-    isBookmarked: false,
   },
   {
     id: 97,
@@ -1182,7 +1086,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 6,
     createdAt: "2026-04-03T21:56:03",
-    isBookmarked: false,
   },
   {
     id: 98,
@@ -1197,7 +1100,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 4,
     createdAt: "2026-04-03T21:05:07",
-    isBookmarked: false,
   },
   {
     id: 99,
@@ -1210,7 +1112,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 5,
     createdAt: "2026-04-03T21:02:16",
-    isBookmarked: false,
   },
   {
     id: 100,
@@ -1224,7 +1125,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 5,
     createdAt: "2026-04-03T20:03:12",
-    isBookmarked: false,
   },
   {
     id: 101,
@@ -1233,7 +1133,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 6,
     createdAt: "2026-04-03T18:24:21",
-    isBookmarked: false,
   },
   {
     id: 102,
@@ -1246,7 +1145,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 8,
     createdAt: "2026-04-03T14:06:05",
-    isBookmarked: false,
   },
   {
     id: 103,
@@ -1261,7 +1159,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 2,
     createdAt: "2026-04-03T12:37:14",
-    isBookmarked: false,
   },
   {
     id: 104,
@@ -1274,7 +1171,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 5,
     createdAt: "2026-04-03T12:33:12",
-    isBookmarked: true,
   },
   {
     id: 105,
@@ -1286,7 +1182,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 4,
     createdAt: "2026-04-03T11:44:57",
-    isBookmarked: false,
   },
   {
     id: 106,
@@ -1298,7 +1193,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 8,
     createdAt: "2026-04-03T09:47:19",
-    isBookmarked: false,
   },
   {
     id: 107,
@@ -1307,7 +1201,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 4,
     createdAt: "2026-04-03T09:39:20",
-    isBookmarked: true,
   },
   {
     id: 108,
@@ -1316,7 +1209,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 5,
     createdAt: "2026-04-03T08:13:13",
-    isBookmarked: true,
   },
   {
     id: 109,
@@ -1328,7 +1220,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 1,
     createdAt: "2026-04-03T07:14:33",
-    isBookmarked: false,
   },
   {
     id: 110,
@@ -1342,7 +1233,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 5,
     createdAt: "2026-04-03T03:50:26",
-    isBookmarked: false,
   },
   {
     id: 111,
@@ -1351,7 +1241,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 0,
     createdAt: "2026-04-03T01:30:56",
-    isBookmarked: false,
   },
   {
     id: 112,
@@ -1363,7 +1252,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 4,
     createdAt: "2026-04-02T23:06:05",
-    isBookmarked: true,
   },
   {
     id: 113,
@@ -1376,7 +1264,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 4,
     createdAt: "2026-04-02T21:41:22",
-    isBookmarked: false,
   },
   {
     id: 114,
@@ -1388,7 +1275,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 7,
     createdAt: "2026-04-02T15:49:24",
-    isBookmarked: false,
   },
   {
     id: 115,
@@ -1403,7 +1289,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 5,
     createdAt: "2026-04-02T13:36:42",
-    isBookmarked: false,
   },
   {
     id: 116,
@@ -1416,7 +1301,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 2,
     createdAt: "2026-04-02T12:44:03",
-    isBookmarked: false,
   },
   {
     id: 117,
@@ -1429,7 +1313,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 5,
     createdAt: "2026-04-02T12:36:08",
-    isBookmarked: false,
   },
   {
     id: 118,
@@ -1441,7 +1324,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 6,
     createdAt: "2026-04-02T07:50:49",
-    isBookmarked: false,
   },
   {
     id: 119,
@@ -1453,7 +1335,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 2,
     createdAt: "2026-04-02T06:12:54",
-    isBookmarked: false,
   },
   {
     id: 120,
@@ -1466,7 +1347,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 11,
     createdAt: "2026-04-02T05:32:09",
-    isBookmarked: false,
   },
   {
     id: 121,
@@ -1475,7 +1355,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 6,
     createdAt: "2026-04-02T05:01:59",
-    isBookmarked: false,
   },
   {
     id: 122,
@@ -1490,7 +1369,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 15,
     createdAt: "2026-04-02T04:42:32",
-    isBookmarked: false,
   },
   {
     id: 123,
@@ -1503,7 +1381,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 2,
     createdAt: "2026-04-02T03:11:47",
-    isBookmarked: false,
   },
   {
     id: 124,
@@ -1517,7 +1394,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 0,
     createdAt: "2026-04-02T00:27:21",
-    isBookmarked: false,
   },
   {
     id: 125,
@@ -1529,7 +1405,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 7,
     createdAt: "2026-04-01T23:29:47",
-    isBookmarked: false,
   },
   {
     id: 126,
@@ -1544,7 +1419,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 14,
     createdAt: "2026-04-01T20:56:28",
-    isBookmarked: false,
   },
   {
     id: 127,
@@ -1558,7 +1432,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 7,
     createdAt: "2026-04-01T20:56:22",
-    isBookmarked: true,
   },
   {
     id: 128,
@@ -1571,7 +1444,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 3,
     createdAt: "2026-04-01T20:40:32",
-    isBookmarked: false,
   },
   {
     id: 129,
@@ -1585,7 +1457,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 4,
     createdAt: "2026-04-01T16:14:21",
-    isBookmarked: false,
   },
   {
     id: 130,
@@ -1599,7 +1470,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 7,
     createdAt: "2026-04-01T12:38:02",
-    isBookmarked: false,
   },
   {
     id: 131,
@@ -1614,7 +1484,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 8,
     createdAt: "2026-04-01T11:22:41",
-    isBookmarked: false,
   },
   {
     id: 132,
@@ -1628,7 +1497,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 0,
     createdAt: "2026-04-01T10:19:45",
-    isBookmarked: false,
   },
   {
     id: 133,
@@ -1640,7 +1508,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 1,
     createdAt: "2026-04-01T07:36:07",
-    isBookmarked: false,
   },
   {
     id: 134,
@@ -1653,7 +1520,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 4,
     createdAt: "2026-04-01T06:47:43",
-    isBookmarked: false,
   },
   {
     id: 135,
@@ -1662,7 +1528,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 15,
     createdAt: "2026-04-01T06:35:33",
-    isBookmarked: false,
   },
   {
     id: 136,
@@ -1677,7 +1542,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 5,
     createdAt: "2026-04-01T06:11:11",
-    isBookmarked: false,
   },
   {
     id: 137,
@@ -1691,7 +1555,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 7,
     createdAt: "2026-04-01T06:08:49",
-    isBookmarked: true,
   },
   {
     id: 138,
@@ -1704,7 +1567,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 5,
     createdAt: "2026-04-01T04:47:38",
-    isBookmarked: true,
   },
   {
     id: 139,
@@ -1716,7 +1578,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 7,
     createdAt: "2026-04-01T04:16:27",
-    isBookmarked: false,
   },
   {
     id: 140,
@@ -1730,7 +1591,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 8,
     createdAt: "2026-04-01T04:02:39",
-    isBookmarked: false,
   },
   {
     id: 141,
@@ -1742,7 +1602,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 2,
     createdAt: "2026-04-01T02:53:10",
-    isBookmarked: false,
   },
   {
     id: 142,
@@ -1756,7 +1615,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 2,
     createdAt: "2026-03-31T22:49:37",
-    isBookmarked: false,
   },
   {
     id: 143,
@@ -1768,7 +1626,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 8,
     createdAt: "2026-03-31T21:47:19",
-    isBookmarked: false,
   },
   {
     id: 144,
@@ -1780,7 +1637,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 3,
     createdAt: "2026-03-31T18:48:07",
-    isBookmarked: false,
   },
   {
     id: 145,
@@ -1793,7 +1649,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 0,
     createdAt: "2026-03-31T14:40:17",
-    isBookmarked: false,
   },
   {
     id: 146,
@@ -1805,7 +1660,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 6,
     createdAt: "2026-03-31T09:38:15",
-    isBookmarked: false,
   },
   {
     id: 147,
@@ -1817,7 +1671,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 8,
     createdAt: "2026-03-31T08:21:07",
-    isBookmarked: false,
   },
   {
     id: 148,
@@ -1830,7 +1683,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 11,
     createdAt: "2026-03-31T06:25:57",
-    isBookmarked: false,
   },
   {
     id: 149,
@@ -1839,7 +1691,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 6,
     createdAt: "2026-03-31T05:19:46",
-    isBookmarked: false,
   },
   {
     id: 150,
@@ -1854,7 +1705,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 7,
     createdAt: "2026-03-31T04:59:27",
-    isBookmarked: false,
   },
   {
     id: 151,
@@ -1869,7 +1719,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 5,
     createdAt: "2026-03-31T04:38:39",
-    isBookmarked: false,
   },
   {
     id: 152,
@@ -1883,7 +1732,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 3,
     createdAt: "2026-03-31T04:07:08",
-    isBookmarked: false,
   },
   {
     id: 153,
@@ -1892,7 +1740,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 7,
     createdAt: "2026-03-31T01:37:21",
-    isBookmarked: false,
   },
   {
     id: 154,
@@ -1904,7 +1751,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 7,
     createdAt: "2026-03-31T00:58:42",
-    isBookmarked: true,
   },
   {
     id: 155,
@@ -1918,7 +1764,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 8,
     createdAt: "2026-03-31T00:18:24",
-    isBookmarked: false,
   },
   {
     id: 156,
@@ -1927,7 +1772,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 2,
     createdAt: "2026-03-30T22:25:24",
-    isBookmarked: true,
   },
   {
     id: 157,
@@ -1941,7 +1785,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 4,
     createdAt: "2026-03-30T21:07:41",
-    isBookmarked: false,
   },
   {
     id: 158,
@@ -1956,7 +1799,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 2,
     createdAt: "2026-03-30T19:04:02",
-    isBookmarked: false,
   },
   {
     id: 159,
@@ -1971,7 +1813,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 7,
     createdAt: "2026-03-30T17:38:16",
-    isBookmarked: false,
   },
   {
     id: 160,
@@ -1983,7 +1824,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 8,
     createdAt: "2026-03-30T14:20:08",
-    isBookmarked: false,
   },
   {
     id: 161,
@@ -1996,7 +1836,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 5,
     createdAt: "2026-03-30T12:17:14",
-    isBookmarked: false,
   },
   {
     id: 162,
@@ -2011,7 +1850,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 3,
     createdAt: "2026-03-30T11:57:28",
-    isBookmarked: false,
   },
   {
     id: 163,
@@ -2026,7 +1864,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 0,
     createdAt: "2026-03-30T09:56:43",
-    isBookmarked: true,
   },
   {
     id: 164,
@@ -2039,7 +1876,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 3,
     createdAt: "2026-03-30T08:37:32",
-    isBookmarked: false,
   },
   {
     id: 165,
@@ -2051,7 +1887,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 3,
     createdAt: "2026-03-30T06:36:05",
-    isBookmarked: false,
   },
   {
     id: 166,
@@ -2063,7 +1898,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 12,
     createdAt: "2026-03-30T04:20:54",
-    isBookmarked: false,
   },
   {
     id: 167,
@@ -2078,7 +1912,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 0,
     createdAt: "2026-03-30T03:32:33",
-    isBookmarked: false,
   },
   {
     id: 168,
@@ -2093,7 +1926,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 4,
     createdAt: "2026-03-30T00:22:25",
-    isBookmarked: true,
   },
   {
     id: 169,
@@ -2105,7 +1937,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 4,
     createdAt: "2026-03-29T23:08:27",
-    isBookmarked: false,
   },
   {
     id: 170,
@@ -2120,7 +1951,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 4,
     createdAt: "2026-03-29T18:27:18",
-    isBookmarked: false,
   },
   {
     id: 171,
@@ -2134,7 +1964,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 7,
     createdAt: "2026-03-29T17:08:54",
-    isBookmarked: false,
   },
   {
     id: 172,
@@ -2146,7 +1975,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 6,
     createdAt: "2026-03-29T13:42:27",
-    isBookmarked: false,
   },
   {
     id: 173,
@@ -2155,7 +1983,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 1,
     createdAt: "2026-03-29T13:08:17",
-    isBookmarked: false,
   },
   {
     id: 174,
@@ -2170,7 +1997,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 11,
     createdAt: "2026-03-29T10:53:31",
-    isBookmarked: false,
   },
   {
     id: 175,
@@ -2183,7 +2009,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 6,
     createdAt: "2026-03-29T09:07:58",
-    isBookmarked: false,
   },
   {
     id: 176,
@@ -2196,7 +2021,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 7,
     createdAt: "2026-03-29T08:54:07",
-    isBookmarked: false,
   },
   {
     id: 177,
@@ -2208,7 +2032,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 1,
     createdAt: "2026-03-29T07:24:37",
-    isBookmarked: true,
   },
   {
     id: 178,
@@ -2217,7 +2040,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 6,
     createdAt: "2026-03-29T06:59:25",
-    isBookmarked: false,
   },
   {
     id: 179,
@@ -2230,7 +2052,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 1,
     createdAt: "2026-03-29T06:39:16",
-    isBookmarked: false,
   },
   {
     id: 180,
@@ -2244,7 +2065,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 3,
     createdAt: "2026-03-29T05:31:10",
-    isBookmarked: false,
   },
   {
     id: 181,
@@ -2253,7 +2073,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 2,
     createdAt: "2026-03-29T03:46:08",
-    isBookmarked: false,
   },
   {
     id: 182,
@@ -2267,7 +2086,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 6,
     createdAt: "2026-03-29T03:39:59",
-    isBookmarked: false,
   },
   {
     id: 183,
@@ -2279,7 +2097,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 15,
     createdAt: "2026-03-29T02:09:20",
-    isBookmarked: false,
   },
   {
     id: 184,
@@ -2292,7 +2109,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 7,
     createdAt: "2026-03-29T00:01:41",
-    isBookmarked: false,
   },
   {
     id: 185,
@@ -2304,7 +2120,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 4,
     createdAt: "2026-03-28T22:57:14",
-    isBookmarked: false,
   },
   {
     id: 186,
@@ -2319,7 +2134,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 1,
     createdAt: "2026-03-28T20:57:48",
-    isBookmarked: false,
   },
   {
     id: 187,
@@ -2331,7 +2145,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 2,
     createdAt: "2026-03-28T19:08:30",
-    isBookmarked: false,
   },
   {
     id: 188,
@@ -2344,7 +2157,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 5,
     createdAt: "2026-03-28T16:07:55",
-    isBookmarked: false,
   },
   {
     id: 189,
@@ -2359,7 +2171,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 2,
     createdAt: "2026-03-28T15:46:31",
-    isBookmarked: false,
   },
   {
     id: 190,
@@ -2374,7 +2185,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 0,
     createdAt: "2026-03-28T15:22:26",
-    isBookmarked: false,
   },
   {
     id: 191,
@@ -2389,7 +2199,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 2,
     createdAt: "2026-03-28T14:49:30",
-    isBookmarked: false,
   },
   {
     id: 192,
@@ -2398,7 +2207,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 4,
     createdAt: "2026-03-28T14:23:50",
-    isBookmarked: false,
   },
   {
     id: 193,
@@ -2410,7 +2218,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 1,
     createdAt: "2026-03-28T14:19:10",
-    isBookmarked: true,
   },
   {
     id: 194,
@@ -2423,7 +2230,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 6,
     createdAt: "2026-03-28T14:12:59",
-    isBookmarked: false,
   },
   {
     id: 195,
@@ -2436,7 +2242,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 5,
     createdAt: "2026-03-28T13:40:18",
-    isBookmarked: false,
   },
   {
     id: 196,
@@ -2449,7 +2254,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 0,
     createdAt: "2026-03-28T12:45:18",
-    isBookmarked: false,
   },
   {
     id: 197,
@@ -2464,7 +2268,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 8,
     createdAt: "2026-03-28T11:59:44",
-    isBookmarked: true,
   },
   {
     id: 198,
@@ -2478,7 +2281,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 6,
     createdAt: "2026-03-28T09:23:38",
-    isBookmarked: false,
   },
   {
     id: 199,
@@ -2492,7 +2294,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 0,
     createdAt: "2026-03-28T08:55:28",
-    isBookmarked: false,
   },
   {
     id: 200,
@@ -2501,7 +2302,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 2,
     createdAt: "2026-03-28T08:12:13",
-    isBookmarked: false,
   },
   {
     id: 201,
@@ -2514,7 +2314,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 7,
     createdAt: "2026-03-28T07:20:15",
-    isBookmarked: false,
   },
   {
     id: 202,
@@ -2527,7 +2326,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 6,
     createdAt: "2026-03-28T05:40:07",
-    isBookmarked: false,
   },
   {
     id: 203,
@@ -2542,7 +2340,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 1,
     createdAt: "2026-03-28T03:55:37",
-    isBookmarked: false,
   },
   {
     id: 204,
@@ -2551,7 +2348,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 4,
     createdAt: "2026-03-28T02:22:23",
-    isBookmarked: false,
   },
   {
     id: 205,
@@ -2560,7 +2356,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 7,
     createdAt: "2026-03-28T02:20:25",
-    isBookmarked: false,
   },
   {
     id: 206,
@@ -2573,7 +2368,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 1,
     createdAt: "2026-03-28T01:54:04",
-    isBookmarked: false,
   },
   {
     id: 207,
@@ -2582,7 +2376,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 0,
     createdAt: "2026-03-27T22:34:38",
-    isBookmarked: false,
   },
   {
     id: 208,
@@ -2591,7 +2384,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 5,
     createdAt: "2026-03-27T18:32:59",
-    isBookmarked: false,
   },
   {
     id: 209,
@@ -2606,7 +2398,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 1,
     createdAt: "2026-03-27T16:04:04",
-    isBookmarked: false,
   },
   {
     id: 210,
@@ -2618,7 +2409,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 8,
     createdAt: "2026-03-27T15:26:28",
-    isBookmarked: false,
   },
   {
     id: 211,
@@ -2627,7 +2417,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 4,
     createdAt: "2026-03-27T13:06:15",
-    isBookmarked: false,
   },
   {
     id: 212,
@@ -2636,7 +2425,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 5,
     createdAt: "2026-03-27T12:53:23",
-    isBookmarked: false,
   },
   {
     id: 213,
@@ -2650,7 +2438,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 2,
     createdAt: "2026-03-27T11:53:47",
-    isBookmarked: false,
   },
   {
     id: 214,
@@ -2663,7 +2450,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 5,
     createdAt: "2026-03-27T11:48:09",
-    isBookmarked: false,
   },
   {
     id: 215,
@@ -2672,7 +2458,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 2,
     createdAt: "2026-03-27T11:35:03",
-    isBookmarked: false,
   },
   {
     id: 216,
@@ -2684,7 +2469,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 2,
     createdAt: "2026-03-27T11:22:55",
-    isBookmarked: false,
   },
   {
     id: 217,
@@ -2698,7 +2482,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 7,
     createdAt: "2026-03-27T10:07:57",
-    isBookmarked: true,
   },
   {
     id: 218,
@@ -2710,7 +2493,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 1,
     createdAt: "2026-03-27T08:20:13",
-    isBookmarked: true,
   },
   {
     id: 219,
@@ -2719,7 +2501,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 4,
     createdAt: "2026-03-27T04:44:28",
-    isBookmarked: false,
   },
   {
     id: 220,
@@ -2734,7 +2515,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 1,
     createdAt: "2026-03-27T04:29:52",
-    isBookmarked: false,
   },
   {
     id: 221,
@@ -2749,7 +2529,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 14,
     createdAt: "2026-03-27T03:58:54",
-    isBookmarked: false,
   },
   {
     id: 222,
@@ -2764,7 +2543,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 1,
     createdAt: "2026-03-27T03:34:34",
-    isBookmarked: false,
   },
   {
     id: 223,
@@ -2773,7 +2551,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 0,
     createdAt: "2026-03-27T02:57:55",
-    isBookmarked: true,
   },
   {
     id: 224,
@@ -2787,7 +2564,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 6,
     createdAt: "2026-03-27T02:38:05",
-    isBookmarked: true,
   },
   {
     id: 225,
@@ -2800,7 +2576,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 3,
     createdAt: "2026-03-27T02:14:09",
-    isBookmarked: false,
   },
   {
     id: 226,
@@ -2809,7 +2584,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 0,
     createdAt: "2026-03-27T01:50:53",
-    isBookmarked: false,
   },
   {
     id: 227,
@@ -2824,7 +2598,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 2,
     createdAt: "2026-03-26T23:41:02",
-    isBookmarked: false,
   },
   {
     id: 228,
@@ -2837,7 +2610,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 0,
     createdAt: "2026-03-26T23:15:34",
-    isBookmarked: false,
   },
   {
     id: 229,
@@ -2846,7 +2618,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 6,
     createdAt: "2026-03-26T20:53:36",
-    isBookmarked: false,
   },
   {
     id: 230,
@@ -2861,7 +2632,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 8,
     createdAt: "2026-03-26T20:44:02",
-    isBookmarked: true,
   },
   {
     id: 231,
@@ -2874,7 +2644,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 6,
     createdAt: "2026-03-26T17:51:55",
-    isBookmarked: false,
   },
   {
     id: 232,
@@ -2886,7 +2655,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 0,
     createdAt: "2026-03-26T14:29:46",
-    isBookmarked: false,
   },
   {
     id: 233,
@@ -2899,7 +2667,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 8,
     createdAt: "2026-03-26T14:29:46",
-    isBookmarked: false,
   },
   {
     id: 234,
@@ -2908,7 +2675,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 3,
     createdAt: "2026-03-26T14:25:15",
-    isBookmarked: false,
   },
   {
     id: 235,
@@ -2920,7 +2686,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 4,
     createdAt: "2026-03-26T13:26:46",
-    isBookmarked: false,
   },
   {
     id: 236,
@@ -2935,7 +2700,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 6,
     createdAt: "2026-03-26T10:45:07",
-    isBookmarked: false,
   },
   {
     id: 237,
@@ -2948,7 +2712,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 8,
     createdAt: "2026-03-26T06:49:47",
-    isBookmarked: false,
   },
   {
     id: 238,
@@ -2957,7 +2720,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 6,
     createdAt: "2026-03-26T05:55:06",
-    isBookmarked: false,
   },
   {
     id: 239,
@@ -2969,7 +2731,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 7,
     createdAt: "2026-03-26T05:11:42",
-    isBookmarked: true,
   },
   {
     id: 240,
@@ -2984,7 +2745,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 4,
     createdAt: "2026-03-26T03:51:12",
-    isBookmarked: false,
   },
   {
     id: 241,
@@ -2993,7 +2753,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 5,
     createdAt: "2026-03-26T03:33:29",
-    isBookmarked: false,
   },
   {
     id: 242,
@@ -3002,7 +2761,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 9,
     createdAt: "2026-03-26T02:52:07",
-    isBookmarked: false,
   },
   {
     id: 243,
@@ -3011,7 +2769,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 3,
     createdAt: "2026-03-25T21:28:44",
-    isBookmarked: false,
   },
   {
     id: 244,
@@ -3026,7 +2783,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 4,
     createdAt: "2026-03-25T20:56:22",
-    isBookmarked: false,
   },
   {
     id: 245,
@@ -3041,7 +2797,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 4,
     createdAt: "2026-03-25T19:22:15",
-    isBookmarked: false,
   },
   {
     id: 246,
@@ -3053,7 +2808,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 2,
     createdAt: "2026-03-25T18:44:48",
-    isBookmarked: true,
   },
   {
     id: 247,
@@ -3068,7 +2822,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 7,
     createdAt: "2026-03-25T18:02:38",
-    isBookmarked: false,
   },
   {
     id: 248,
@@ -3080,7 +2833,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 3,
     createdAt: "2026-03-25T16:01:00",
-    isBookmarked: false,
   },
   {
     id: 249,
@@ -3094,7 +2846,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 5,
     createdAt: "2026-03-25T09:14:55",
-    isBookmarked: false,
   },
   {
     id: 250,
@@ -3109,7 +2860,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 7,
     createdAt: "2026-03-25T08:29:19",
-    isBookmarked: false,
   },
   {
     id: 251,
@@ -3118,7 +2868,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 6,
     createdAt: "2026-03-25T05:25:47",
-    isBookmarked: false,
   },
   {
     id: 252,
@@ -3130,7 +2879,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 7,
     createdAt: "2026-03-25T04:23:53",
-    isBookmarked: false,
   },
   {
     id: 253,
@@ -3143,7 +2891,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 3,
     createdAt: "2026-03-25T03:36:41",
-    isBookmarked: false,
   },
   {
     id: 254,
@@ -3156,7 +2903,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 4,
     createdAt: "2026-03-24T23:07:23",
-    isBookmarked: false,
   },
   {
     id: 255,
@@ -3165,7 +2911,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 6,
     createdAt: "2026-03-24T20:58:37",
-    isBookmarked: false,
   },
   {
     id: 256,
@@ -3179,7 +2924,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 2,
     createdAt: "2026-03-24T20:38:35",
-    isBookmarked: false,
   },
   {
     id: 257,
@@ -3192,7 +2936,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 4,
     createdAt: "2026-03-24T20:25:03",
-    isBookmarked: false,
   },
   {
     id: 258,
@@ -3201,7 +2944,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 6,
     createdAt: "2026-03-24T20:14:21",
-    isBookmarked: false,
   },
   {
     id: 259,
@@ -3215,7 +2957,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 6,
     createdAt: "2026-03-24T18:59:12",
-    isBookmarked: false,
   },
   {
     id: 260,
@@ -3224,7 +2965,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 4,
     createdAt: "2026-03-24T17:28:35",
-    isBookmarked: false,
   },
   {
     id: 261,
@@ -3237,7 +2977,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 6,
     createdAt: "2026-03-24T17:12:06",
-    isBookmarked: false,
   },
   {
     id: 262,
@@ -3252,7 +2991,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 1,
     createdAt: "2026-03-24T15:58:17",
-    isBookmarked: false,
   },
   {
     id: 263,
@@ -3266,7 +3004,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 0,
     createdAt: "2026-03-24T14:09:47",
-    isBookmarked: false,
   },
   {
     id: 264,
@@ -3275,7 +3012,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 2,
     createdAt: "2026-03-24T10:52:16",
-    isBookmarked: true,
   },
   {
     id: 265,
@@ -3284,7 +3020,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 2,
     createdAt: "2026-03-24T10:42:59",
-    isBookmarked: true,
   },
   {
     id: 266,
@@ -3293,7 +3028,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 1,
     createdAt: "2026-03-24T09:29:14",
-    isBookmarked: false,
   },
   {
     id: 267,
@@ -3302,7 +3036,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 5,
     createdAt: "2026-03-24T08:35:51",
-    isBookmarked: false,
   },
   {
     id: 268,
@@ -3311,7 +3044,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 3,
     createdAt: "2026-03-24T07:13:15",
-    isBookmarked: false,
   },
   {
     id: 269,
@@ -3326,7 +3058,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 6,
     createdAt: "2026-03-24T06:43:12",
-    isBookmarked: false,
   },
   {
     id: 270,
@@ -3335,7 +3066,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 6,
     createdAt: "2026-03-24T05:00:45",
-    isBookmarked: true,
   },
   {
     id: 271,
@@ -3347,7 +3077,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 6,
     createdAt: "2026-03-24T04:20:25",
-    isBookmarked: true,
   },
   {
     id: 272,
@@ -3362,7 +3091,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 3,
     createdAt: "2026-03-24T02:27:45",
-    isBookmarked: true,
   },
   {
     id: 273,
@@ -3377,7 +3105,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 2,
     createdAt: "2026-03-24T01:55:57",
-    isBookmarked: false,
   },
   {
     id: 274,
@@ -3389,7 +3116,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 6,
     createdAt: "2026-03-23T23:24:11",
-    isBookmarked: false,
   },
   {
     id: 275,
@@ -3402,7 +3128,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 7,
     createdAt: "2026-03-23T22:36:04",
-    isBookmarked: false,
   },
   {
     id: 276,
@@ -3414,7 +3139,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 4,
     createdAt: "2026-03-23T19:09:08",
-    isBookmarked: false,
   },
   {
     id: 277,
@@ -3426,7 +3150,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 0,
     createdAt: "2026-03-23T18:00:59",
-    isBookmarked: false,
   },
   {
     id: 278,
@@ -3435,7 +3158,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 8,
     createdAt: "2026-03-23T17:34:03",
-    isBookmarked: false,
   },
   {
     id: 279,
@@ -3450,7 +3172,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 8,
     createdAt: "2026-03-23T17:24:49",
-    isBookmarked: false,
   },
   {
     id: 280,
@@ -3462,7 +3183,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 7,
     createdAt: "2026-03-23T17:08:53",
-    isBookmarked: false,
   },
   {
     id: 281,
@@ -3474,7 +3194,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 3,
     createdAt: "2026-03-23T16:54:21",
-    isBookmarked: false,
   },
   {
     id: 282,
@@ -3488,7 +3207,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 3,
     createdAt: "2026-03-23T16:50:18",
-    isBookmarked: false,
   },
   {
     id: 283,
@@ -3502,7 +3220,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 6,
     createdAt: "2026-03-23T14:39:28",
-    isBookmarked: false,
   },
   {
     id: 284,
@@ -3517,7 +3234,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 5,
     createdAt: "2026-03-23T11:50:37",
-    isBookmarked: false,
   },
   {
     id: 285,
@@ -3526,7 +3242,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 2,
     createdAt: "2026-03-23T08:59:57",
-    isBookmarked: false,
   },
   {
     id: 286,
@@ -3541,7 +3256,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 8,
     createdAt: "2026-03-23T08:35:28",
-    isBookmarked: false,
   },
   {
     id: 287,
@@ -3553,7 +3267,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 8,
     createdAt: "2026-03-23T08:30:14",
-    isBookmarked: false,
   },
   {
     id: 288,
@@ -3567,7 +3280,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 0,
     createdAt: "2026-03-23T06:53:50",
-    isBookmarked: false,
   },
   {
     id: 289,
@@ -3582,7 +3294,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 8,
     createdAt: "2026-03-23T04:44:39",
-    isBookmarked: false,
   },
   {
     id: 290,
@@ -3594,7 +3305,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 3,
     createdAt: "2026-03-23T03:46:08",
-    isBookmarked: false,
   },
   {
     id: 291,
@@ -3606,7 +3316,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 1,
     createdAt: "2026-03-23T03:21:28",
-    isBookmarked: false,
   },
   {
     id: 292,
@@ -3615,7 +3324,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 5,
     createdAt: "2026-03-23T03:20:52",
-    isBookmarked: false,
   },
   {
     id: 293,
@@ -3630,7 +3338,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 7,
     createdAt: "2026-03-23T02:56:41",
-    isBookmarked: false,
   },
   {
     id: 294,
@@ -3643,7 +3350,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 10,
     createdAt: "2026-03-23T00:29:12",
-    isBookmarked: false,
   },
   {
     id: 295,
@@ -3658,7 +3364,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 2,
     createdAt: "2026-03-23T00:19:44",
-    isBookmarked: false,
   },
   {
     id: 296,
@@ -3670,7 +3375,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 1,
     createdAt: "2026-03-23T00:18:28",
-    isBookmarked: false,
   },
   {
     id: 297,
@@ -3684,7 +3388,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 1,
     createdAt: "2026-03-22T23:47:15",
-    isBookmarked: false,
   },
   {
     id: 298,
@@ -3693,7 +3396,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 8,
     createdAt: "2026-03-22T21:07:04",
-    isBookmarked: true,
   },
   {
     id: 299,
@@ -3707,7 +3409,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 1,
     createdAt: "2026-03-22T20:06:27",
-    isBookmarked: true,
   },
   {
     id: 300,
@@ -3719,7 +3420,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 7,
     createdAt: "2026-03-22T19:14:41",
-    isBookmarked: false,
   },
   {
     id: 301,
@@ -3734,7 +3434,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 12,
     createdAt: "2026-03-22T18:44:13",
-    isBookmarked: false,
   },
   {
     id: 302,
@@ -3748,7 +3447,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 0,
     createdAt: "2026-03-22T18:12:23",
-    isBookmarked: false,
   },
   {
     id: 303,
@@ -3760,7 +3458,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 8,
     createdAt: "2026-03-22T18:00:28",
-    isBookmarked: true,
   },
   {
     id: 304,
@@ -3773,7 +3470,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 0,
     createdAt: "2026-03-22T16:30:08",
-    isBookmarked: false,
   },
   {
     id: 305,
@@ -3786,7 +3482,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 0,
     createdAt: "2026-03-22T10:37:33",
-    isBookmarked: false,
   },
   {
     id: 306,
@@ -3799,7 +3494,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 12,
     createdAt: "2026-03-22T09:59:31",
-    isBookmarked: false,
   },
   {
     id: 307,
@@ -3811,7 +3505,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 4,
     createdAt: "2026-03-22T08:31:47",
-    isBookmarked: false,
   },
   {
     id: 308,
@@ -3824,7 +3517,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 1,
     createdAt: "2026-03-22T03:43:16",
-    isBookmarked: true,
   },
   {
     id: 309,
@@ -3836,7 +3528,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 8,
     createdAt: "2026-03-22T03:20:40",
-    isBookmarked: false,
   },
   {
     id: 310,
@@ -3845,7 +3536,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 5,
     createdAt: "2026-03-22T03:11:06",
-    isBookmarked: false,
   },
   {
     id: 311,
@@ -3860,7 +3550,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 4,
     createdAt: "2026-03-22T02:58:33",
-    isBookmarked: false,
   },
   {
     id: 312,
@@ -3873,7 +3562,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 5,
     createdAt: "2026-03-22T02:05:57",
-    isBookmarked: true,
   },
   {
     id: 313,
@@ -3887,7 +3575,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 0,
     createdAt: "2026-03-21T19:44:15",
-    isBookmarked: false,
   },
   {
     id: 314,
@@ -3902,7 +3589,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 0,
     createdAt: "2026-03-21T15:46:06",
-    isBookmarked: false,
   },
   {
     id: 315,
@@ -3915,7 +3601,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 7,
     createdAt: "2026-03-21T15:27:47",
-    isBookmarked: false,
   },
   {
     id: 316,
@@ -3927,7 +3612,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 8,
     createdAt: "2026-03-21T15:20:25",
-    isBookmarked: false,
   },
   {
     id: 317,
@@ -3939,7 +3623,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 6,
     createdAt: "2026-03-21T13:41:40",
-    isBookmarked: false,
   },
   {
     id: 318,
@@ -3954,7 +3637,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 2,
     createdAt: "2026-03-21T13:07:53",
-    isBookmarked: false,
   },
   {
     id: 319,
@@ -3963,7 +3645,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 3,
     createdAt: "2026-03-21T11:06:32",
-    isBookmarked: true,
   },
   {
     id: 320,
@@ -3972,7 +3653,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 2,
     createdAt: "2026-03-21T06:55:54",
-    isBookmarked: false,
   },
   {
     id: 321,
@@ -3987,7 +3667,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 6,
     createdAt: "2026-03-21T06:50:46",
-    isBookmarked: false,
   },
   {
     id: 322,
@@ -4001,7 +3680,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 8,
     createdAt: "2026-03-21T04:55:03",
-    isBookmarked: false,
   },
   {
     id: 323,
@@ -4014,7 +3692,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 7,
     createdAt: "2026-03-21T03:39:31",
-    isBookmarked: false,
   },
   {
     id: 324,
@@ -4027,7 +3704,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 2,
     createdAt: "2026-03-21T02:32:11",
-    isBookmarked: false,
   },
   {
     id: 325,
@@ -4042,7 +3718,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 4,
     createdAt: "2026-03-21T02:14:48",
-    isBookmarked: false,
   },
   {
     id: 326,
@@ -4051,7 +3726,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 10,
     createdAt: "2026-03-21T01:44:15",
-    isBookmarked: false,
   },
   {
     id: 327,
@@ -4066,7 +3740,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 5,
     createdAt: "2026-03-21T01:23:41",
-    isBookmarked: false,
   },
   {
     id: 328,
@@ -4078,7 +3751,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 0,
     createdAt: "2026-03-21T01:13:04",
-    isBookmarked: false,
   },
   {
     id: 329,
@@ -4091,7 +3763,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 2,
     createdAt: "2026-03-20T23:31:17",
-    isBookmarked: false,
   },
   {
     id: 330,
@@ -4104,7 +3775,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 5,
     createdAt: "2026-03-20T22:49:47",
-    isBookmarked: false,
   },
   {
     id: 331,
@@ -4113,7 +3783,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 5,
     createdAt: "2026-03-20T21:41:10",
-    isBookmarked: true,
   },
   {
     id: 332,
@@ -4126,7 +3795,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 5,
     createdAt: "2026-03-20T21:16:36",
-    isBookmarked: false,
   },
   {
     id: 333,
@@ -4139,7 +3807,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 5,
     createdAt: "2026-03-20T20:47:44",
-    isBookmarked: false,
   },
   {
     id: 334,
@@ -4154,7 +3821,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 0,
     createdAt: "2026-03-20T20:10:22",
-    isBookmarked: false,
   },
   {
     id: 335,
@@ -4169,7 +3835,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 7,
     createdAt: "2026-03-20T17:11:12",
-    isBookmarked: false,
   },
   {
     id: 336,
@@ -4178,7 +3843,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 5,
     createdAt: "2026-03-20T17:05:20",
-    isBookmarked: false,
   },
   {
     id: 337,
@@ -4193,7 +3857,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 5,
     createdAt: "2026-03-20T16:07:26",
-    isBookmarked: false,
   },
   {
     id: 338,
@@ -4205,7 +3868,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 3,
     createdAt: "2026-03-20T15:30:00",
-    isBookmarked: false,
   },
   {
     id: 339,
@@ -4220,7 +3882,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 0,
     createdAt: "2026-03-20T12:29:58",
-    isBookmarked: false,
   },
   {
     id: 340,
@@ -4233,7 +3894,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 0,
     createdAt: "2026-03-20T10:44:58",
-    isBookmarked: false,
   },
   {
     id: 341,
@@ -4242,7 +3902,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 5,
     createdAt: "2026-03-20T09:23:36",
-    isBookmarked: false,
   },
   {
     id: 342,
@@ -4257,7 +3916,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 6,
     createdAt: "2026-03-20T08:28:28",
-    isBookmarked: false,
   },
   {
     id: 343,
@@ -4266,7 +3924,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 3,
     createdAt: "2026-03-20T08:12:07",
-    isBookmarked: false,
   },
   {
     id: 344,
@@ -4280,7 +3937,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 1,
     createdAt: "2026-03-20T00:08:53",
-    isBookmarked: false,
   },
   {
     id: 345,
@@ -4292,7 +3948,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 0,
     createdAt: "2026-03-19T22:12:19",
-    isBookmarked: false,
   },
   {
     id: 346,
@@ -4306,7 +3961,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 0,
     createdAt: "2026-03-19T18:46:04",
-    isBookmarked: false,
   },
   {
     id: 347,
@@ -4321,7 +3975,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 9,
     createdAt: "2026-03-19T17:42:00",
-    isBookmarked: true,
   },
   {
     id: 348,
@@ -4336,7 +3989,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 6,
     createdAt: "2026-03-19T14:11:16",
-    isBookmarked: false,
   },
   {
     id: 349,
@@ -4345,7 +3997,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 2,
     createdAt: "2026-03-19T13:03:31",
-    isBookmarked: false,
   },
   {
     id: 350,
@@ -4360,7 +4011,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 4,
     createdAt: "2026-03-19T12:27:15",
-    isBookmarked: false,
   },
   {
     id: 351,
@@ -4374,7 +4024,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 2,
     createdAt: "2026-03-19T12:24:19",
-    isBookmarked: false,
   },
   {
     id: 352,
@@ -4383,7 +4032,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 8,
     createdAt: "2026-03-19T09:53:26",
-    isBookmarked: false,
   },
   {
     id: 353,
@@ -4392,7 +4040,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 6,
     createdAt: "2026-03-19T08:58:43",
-    isBookmarked: true,
   },
   {
     id: 354,
@@ -4406,7 +4053,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 8,
     createdAt: "2026-03-19T05:52:42",
-    isBookmarked: false,
   },
   {
     id: 355,
@@ -4415,7 +4061,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 0,
     createdAt: "2026-03-19T01:39:29",
-    isBookmarked: false,
   },
   {
     id: 356,
@@ -4424,7 +4069,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 3,
     createdAt: "2026-03-19T01:32:28",
-    isBookmarked: true,
   },
   {
     id: 357,
@@ -4436,7 +4080,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 7,
     createdAt: "2026-03-18T23:57:09",
-    isBookmarked: false,
   },
   {
     id: 358,
@@ -4445,7 +4088,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 13,
     createdAt: "2026-03-18T22:54:37",
-    isBookmarked: false,
   },
   {
     id: 359,
@@ -4454,7 +4096,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 6,
     createdAt: "2026-03-18T17:46:25",
-    isBookmarked: false,
   },
   {
     id: 360,
@@ -4466,7 +4107,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 8,
     createdAt: "2026-03-18T16:55:22",
-    isBookmarked: true,
   },
   {
     id: 361,
@@ -4478,7 +4118,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 5,
     createdAt: "2026-03-18T16:44:43",
-    isBookmarked: false,
   },
   {
     id: 362,
@@ -4487,7 +4126,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 7,
     createdAt: "2026-03-18T16:34:20",
-    isBookmarked: false,
   },
   {
     id: 363,
@@ -4500,7 +4138,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 10,
     createdAt: "2026-03-18T16:31:02",
-    isBookmarked: false,
   },
   {
     id: 364,
@@ -4514,7 +4151,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 2,
     createdAt: "2026-03-18T13:58:23",
-    isBookmarked: true,
   },
   {
     id: 365,
@@ -4527,7 +4163,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 4,
     createdAt: "2026-03-18T13:25:34",
-    isBookmarked: true,
   },
   {
     id: 366,
@@ -4542,7 +4177,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 6,
     createdAt: "2026-03-18T06:37:40",
-    isBookmarked: false,
   },
   {
     id: 367,
@@ -4557,7 +4191,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 1,
     createdAt: "2026-03-18T06:18:46",
-    isBookmarked: false,
   },
   {
     id: 368,
@@ -4570,7 +4203,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 5,
     createdAt: "2026-03-18T06:17:58",
-    isBookmarked: false,
   },
   {
     id: 369,
@@ -4583,7 +4215,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 4,
     createdAt: "2026-03-18T05:48:53",
-    isBookmarked: true,
   },
   {
     id: 370,
@@ -4595,7 +4226,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 7,
     createdAt: "2026-03-18T05:14:36",
-    isBookmarked: false,
   },
   {
     id: 371,
@@ -4609,7 +4239,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 8,
     createdAt: "2026-03-18T03:59:38",
-    isBookmarked: false,
   },
   {
     id: 372,
@@ -4622,7 +4251,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 3,
     createdAt: "2026-03-18T01:03:31",
-    isBookmarked: false,
   },
   {
     id: 373,
@@ -4634,7 +4262,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 2,
     createdAt: "2026-03-18T00:39:16",
-    isBookmarked: true,
   },
   {
     id: 374,
@@ -4643,7 +4270,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 8,
     createdAt: "2026-03-18T00:30:09",
-    isBookmarked: false,
   },
   {
     id: 375,
@@ -4658,7 +4284,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 8,
     createdAt: "2026-03-17T22:39:01",
-    isBookmarked: false,
   },
   {
     id: 376,
@@ -4667,7 +4292,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 7,
     createdAt: "2026-03-17T22:37:50",
-    isBookmarked: false,
   },
   {
     id: 377,
@@ -4676,7 +4300,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 2,
     createdAt: "2026-03-17T21:33:58",
-    isBookmarked: false,
   },
   {
     id: 378,
@@ -4689,7 +4312,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 12,
     createdAt: "2026-03-17T21:26:17",
-    isBookmarked: false,
   },
   {
     id: 379,
@@ -4703,7 +4325,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 1,
     createdAt: "2026-03-17T19:50:37",
-    isBookmarked: false,
   },
   {
     id: 380,
@@ -4716,7 +4337,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 7,
     createdAt: "2026-03-17T18:37:29",
-    isBookmarked: true,
   },
   {
     id: 381,
@@ -4729,7 +4349,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 5,
     createdAt: "2026-03-17T17:06:46",
-    isBookmarked: false,
   },
   {
     id: 382,
@@ -4741,7 +4360,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 4,
     createdAt: "2026-03-17T14:20:15",
-    isBookmarked: false,
   },
   {
     id: 383,
@@ -4755,7 +4373,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 11,
     createdAt: "2026-03-17T13:18:26",
-    isBookmarked: false,
   },
   {
     id: 384,
@@ -4769,7 +4386,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 2,
     createdAt: "2026-03-17T12:03:56",
-    isBookmarked: true,
   },
   {
     id: 385,
@@ -4782,7 +4398,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 7,
     createdAt: "2026-03-17T11:21:18",
-    isBookmarked: false,
   },
   {
     id: 386,
@@ -4795,7 +4410,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 4,
     createdAt: "2026-03-17T09:13:21",
-    isBookmarked: false,
   },
   {
     id: 387,
@@ -4807,7 +4421,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 4,
     createdAt: "2026-03-17T08:38:58",
-    isBookmarked: false,
   },
   {
     id: 388,
@@ -4820,7 +4433,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 1,
     createdAt: "2026-03-17T06:44:22",
-    isBookmarked: false,
   },
   {
     id: 389,
@@ -4835,7 +4447,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 5,
     createdAt: "2026-03-17T06:38:08",
-    isBookmarked: false,
   },
   {
     id: 390,
@@ -4850,7 +4461,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 1,
     createdAt: "2026-03-17T03:10:07",
-    isBookmarked: false,
   },
   {
     id: 391,
@@ -4864,7 +4474,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 14,
     createdAt: "2026-03-16T19:46:39",
-    isBookmarked: false,
   },
   {
     id: 392,
@@ -4873,7 +4482,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 1,
     createdAt: "2026-03-16T19:30:29",
-    isBookmarked: true,
   },
   {
     id: 393,
@@ -4882,7 +4490,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 0,
     createdAt: "2026-03-16T19:16:53",
-    isBookmarked: false,
   },
   {
     id: 394,
@@ -4891,7 +4498,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 4,
     createdAt: "2026-03-16T15:48:58",
-    isBookmarked: false,
   },
   {
     id: 395,
@@ -4904,7 +4510,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 2,
     createdAt: "2026-03-16T15:48:49",
-    isBookmarked: false,
   },
   {
     id: 396,
@@ -4918,7 +4523,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 12,
     createdAt: "2026-03-16T11:24:14",
-    isBookmarked: false,
   },
   {
     id: 397,
@@ -4933,7 +4537,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 7,
     createdAt: "2026-03-16T09:50:46",
-    isBookmarked: false,
   },
   {
     id: 398,
@@ -4946,7 +4549,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 0,
     createdAt: "2026-03-16T09:42:38",
-    isBookmarked: false,
   },
   {
     id: 399,
@@ -4958,7 +4560,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 3,
     createdAt: "2026-03-16T07:43:22",
-    isBookmarked: false,
   },
   {
     id: 400,
@@ -4967,7 +4568,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 16,
     createdAt: "2026-03-16T06:47:14",
-    isBookmarked: true,
   },
   {
     id: 401,
@@ -4980,7 +4580,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 6,
     createdAt: "2026-03-16T05:36:55",
-    isBookmarked: true,
   },
   {
     id: 402,
@@ -4993,7 +4592,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 7,
     createdAt: "2026-03-16T05:36:55",
-    isBookmarked: false,
   },
   {
     id: 403,
@@ -5006,7 +4604,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 7,
     createdAt: "2026-03-16T05:03:18",
-    isBookmarked: false,
   },
   {
     id: 404,
@@ -5018,7 +4615,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 8,
     createdAt: "2026-03-16T04:18:40",
-    isBookmarked: false,
   },
   {
     id: 405,
@@ -5032,7 +4628,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 14,
     createdAt: "2026-03-16T03:21:22",
-    isBookmarked: false,
   },
   {
     id: 406,
@@ -5046,7 +4641,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 11,
     createdAt: "2026-03-16T00:39:05",
-    isBookmarked: false,
   },
   {
     id: 407,
@@ -5058,7 +4652,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 2,
     createdAt: "2026-03-15T23:40:02",
-    isBookmarked: false,
   },
   {
     id: 408,
@@ -5073,7 +4666,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 3,
     createdAt: "2026-03-15T18:32:59",
-    isBookmarked: false,
   },
   {
     id: 409,
@@ -5082,7 +4674,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 6,
     createdAt: "2026-03-15T17:53:50",
-    isBookmarked: false,
   },
   {
     id: 410,
@@ -5091,7 +4682,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 6,
     createdAt: "2026-03-15T17:42:30",
-    isBookmarked: false,
   },
   {
     id: 411,
@@ -5103,7 +4693,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 1,
     createdAt: "2026-03-15T17:34:44",
-    isBookmarked: false,
   },
   {
     id: 412,
@@ -5116,7 +4705,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 0,
     createdAt: "2026-03-15T16:24:02",
-    isBookmarked: false,
   },
   {
     id: 413,
@@ -5130,7 +4718,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 5,
     createdAt: "2026-03-15T15:40:49",
-    isBookmarked: false,
   },
   {
     id: 414,
@@ -5139,7 +4726,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 7,
     createdAt: "2026-03-15T14:00:15",
-    isBookmarked: false,
   },
   {
     id: 415,
@@ -5152,7 +4738,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 7,
     createdAt: "2026-03-15T13:40:15",
-    isBookmarked: false,
   },
   {
     id: 416,
@@ -5161,7 +4746,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 4,
     createdAt: "2026-03-15T13:40:02",
-    isBookmarked: false,
   },
   {
     id: 417,
@@ -5175,7 +4759,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 4,
     createdAt: "2026-03-15T12:44:16",
-    isBookmarked: false,
   },
   {
     id: 418,
@@ -5188,7 +4771,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 6,
     createdAt: "2026-03-15T12:40:50",
-    isBookmarked: false,
   },
   {
     id: 419,
@@ -5203,7 +4785,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 1,
     createdAt: "2026-03-15T12:00:19",
-    isBookmarked: false,
   },
   {
     id: 420,
@@ -5212,7 +4793,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 6,
     createdAt: "2026-03-15T11:55:59",
-    isBookmarked: false,
   },
   {
     id: 421,
@@ -5227,7 +4807,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 0,
     createdAt: "2026-03-15T11:51:47",
-    isBookmarked: true,
   },
   {
     id: 422,
@@ -5239,7 +4818,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 1,
     createdAt: "2026-03-15T10:52:17",
-    isBookmarked: false,
   },
   {
     id: 423,
@@ -5248,7 +4826,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 6,
     createdAt: "2026-03-15T08:50:32",
-    isBookmarked: false,
   },
   {
     id: 424,
@@ -5263,7 +4840,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 8,
     createdAt: "2026-03-15T07:41:03",
-    isBookmarked: false,
   },
   {
     id: 425,
@@ -5276,7 +4852,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 1,
     createdAt: "2026-03-15T01:22:20",
-    isBookmarked: true,
   },
   {
     id: 426,
@@ -5291,7 +4866,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 12,
     createdAt: "2026-03-14T23:47:24",
-    isBookmarked: false,
   },
   {
     id: 427,
@@ -5304,7 +4878,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 3,
     createdAt: "2026-03-14T23:33:42",
-    isBookmarked: true,
   },
   {
     id: 428,
@@ -5318,7 +4891,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 7,
     createdAt: "2026-03-14T20:32:14",
-    isBookmarked: true,
   },
   {
     id: 429,
@@ -5333,7 +4905,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 6,
     createdAt: "2026-03-14T19:50:33",
-    isBookmarked: false,
   },
   {
     id: 430,
@@ -5346,7 +4917,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 7,
     createdAt: "2026-03-14T18:26:43",
-    isBookmarked: false,
   },
   {
     id: 431,
@@ -5358,7 +4928,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 4,
     createdAt: "2026-03-14T13:21:44",
-    isBookmarked: true,
   },
   {
     id: 432,
@@ -5370,7 +4939,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 0,
     createdAt: "2026-03-14T12:08:20",
-    isBookmarked: false,
   },
   {
     id: 433,
@@ -5385,7 +4953,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 0,
     createdAt: "2026-03-14T10:33:19",
-    isBookmarked: false,
   },
   {
     id: 434,
@@ -5397,7 +4964,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 3,
     createdAt: "2026-03-14T09:31:23",
-    isBookmarked: true,
   },
   {
     id: 435,
@@ -5411,7 +4977,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 2,
     createdAt: "2026-03-14T08:53:12",
-    isBookmarked: false,
   },
   {
     id: 436,
@@ -5425,7 +4990,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 5,
     createdAt: "2026-03-14T08:43:02",
-    isBookmarked: false,
   },
   {
     id: 437,
@@ -5438,7 +5002,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 3,
     createdAt: "2026-03-14T05:26:19",
-    isBookmarked: false,
   },
   {
     id: 438,
@@ -5451,7 +5014,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 4,
     createdAt: "2026-03-14T05:04:08",
-    isBookmarked: false,
   },
   {
     id: 439,
@@ -5463,7 +5025,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 2,
     createdAt: "2026-03-14T00:14:40",
-    isBookmarked: false,
   },
   {
     id: 440,
@@ -5472,7 +5033,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 0,
     createdAt: "2026-03-13T22:30:56",
-    isBookmarked: false,
   },
   {
     id: 441,
@@ -5484,7 +5044,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 0,
     createdAt: "2026-03-13T18:21:25",
-    isBookmarked: true,
   },
   {
     id: 442,
@@ -5498,7 +5057,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 7,
     createdAt: "2026-03-13T17:13:10",
-    isBookmarked: false,
   },
   {
     id: 443,
@@ -5510,7 +5068,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 2,
     createdAt: "2026-03-13T15:49:05",
-    isBookmarked: false,
   },
   {
     id: 444,
@@ -5522,7 +5079,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 4,
     createdAt: "2026-03-13T14:59:03",
-    isBookmarked: true,
   },
   {
     id: 445,
@@ -5537,7 +5093,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 13,
     createdAt: "2026-03-13T14:25:50",
-    isBookmarked: false,
   },
   {
     id: 446,
@@ -5549,7 +5104,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 2,
     createdAt: "2026-03-13T12:39:22",
-    isBookmarked: false,
   },
   {
     id: 447,
@@ -5564,7 +5118,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 3,
     createdAt: "2026-03-13T11:22:31",
-    isBookmarked: false,
   },
   {
     id: 448,
@@ -5573,7 +5126,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 1,
     createdAt: "2026-03-13T10:05:44",
-    isBookmarked: false,
   },
   {
     id: 449,
@@ -5588,7 +5140,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 8,
     createdAt: "2026-03-13T06:10:27",
-    isBookmarked: false,
   },
   {
     id: 450,
@@ -5602,7 +5153,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 2,
     createdAt: "2026-03-13T05:27:21",
-    isBookmarked: false,
   },
   {
     id: 451,
@@ -5616,7 +5166,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 3,
     createdAt: "2026-03-13T04:58:27",
-    isBookmarked: false,
   },
   {
     id: 452,
@@ -5625,7 +5174,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 4,
     createdAt: "2026-03-13T03:44:00",
-    isBookmarked: false,
   },
   {
     id: 453,
@@ -5637,7 +5185,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 8,
     createdAt: "2026-03-13T02:37:29",
-    isBookmarked: true,
   },
   {
     id: 454,
@@ -5650,7 +5197,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 3,
     createdAt: "2026-03-13T01:24:55",
-    isBookmarked: false,
   },
   {
     id: 455,
@@ -5662,7 +5208,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 1,
     createdAt: "2026-03-12T21:54:14",
-    isBookmarked: false,
   },
   {
     id: 456,
@@ -5674,7 +5219,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 7,
     createdAt: "2026-03-12T15:40:20",
-    isBookmarked: false,
   },
   {
     id: 457,
@@ -5687,7 +5231,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 8,
     createdAt: "2026-03-12T11:40:19",
-    isBookmarked: false,
   },
   {
     id: 458,
@@ -5700,7 +5243,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 8,
     createdAt: "2026-03-12T11:13:40",
-    isBookmarked: false,
   },
   {
     id: 459,
@@ -5713,7 +5255,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 7,
     createdAt: "2026-03-12T10:42:57",
-    isBookmarked: false,
   },
   {
     id: 460,
@@ -5722,7 +5263,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 1,
     createdAt: "2026-03-12T09:52:54",
-    isBookmarked: false,
   },
   {
     id: 461,
@@ -5737,7 +5277,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 8,
     createdAt: "2026-03-12T08:19:40",
-    isBookmarked: false,
   },
   {
     id: 462,
@@ -5750,7 +5289,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 2,
     createdAt: "2026-03-12T05:06:07",
-    isBookmarked: true,
   },
   {
     id: 463,
@@ -5759,7 +5297,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 8,
     createdAt: "2026-03-12T04:46:16",
-    isBookmarked: false,
   },
   {
     id: 464,
@@ -5774,7 +5311,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 3,
     createdAt: "2026-03-11T19:10:53",
-    isBookmarked: false,
   },
   {
     id: 465,
@@ -5787,7 +5323,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 5,
     createdAt: "2026-03-11T18:57:10",
-    isBookmarked: false,
   },
   {
     id: 466,
@@ -5799,7 +5334,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 5,
     createdAt: "2026-03-11T18:21:42",
-    isBookmarked: false,
   },
   {
     id: 467,
@@ -5808,7 +5342,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 3,
     createdAt: "2026-03-11T17:11:33",
-    isBookmarked: false,
   },
   {
     id: 468,
@@ -5821,7 +5354,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 1,
     createdAt: "2026-03-11T15:20:53",
-    isBookmarked: false,
   },
   {
     id: 469,
@@ -5836,7 +5368,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 7,
     createdAt: "2026-03-11T14:37:47",
-    isBookmarked: false,
   },
   {
     id: 470,
@@ -5848,7 +5379,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 7,
     createdAt: "2026-03-11T14:03:17",
-    isBookmarked: false,
   },
   {
     id: 471,
@@ -5862,7 +5392,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 8,
     createdAt: "2026-03-11T13:35:31",
-    isBookmarked: false,
   },
   {
     id: 472,
@@ -5875,7 +5404,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 3,
     createdAt: "2026-03-11T13:08:51",
-    isBookmarked: false,
   },
   {
     id: 473,
@@ -5887,7 +5415,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 7,
     createdAt: "2026-03-11T12:57:43",
-    isBookmarked: false,
   },
   {
     id: 474,
@@ -5899,7 +5426,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 5,
     createdAt: "2026-03-11T12:55:10",
-    isBookmarked: true,
   },
   {
     id: 475,
@@ -5912,7 +5438,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 4,
     createdAt: "2026-03-11T11:12:49",
-    isBookmarked: false,
   },
   {
     id: 476,
@@ -5924,7 +5449,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 2,
     createdAt: "2026-03-11T10:00:51",
-    isBookmarked: false,
   },
   {
     id: 477,
@@ -5933,7 +5457,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 3,
     createdAt: "2026-03-11T08:59:13",
-    isBookmarked: false,
   },
   {
     id: 478,
@@ -5946,7 +5469,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 0,
     createdAt: "2026-03-11T08:56:37",
-    isBookmarked: true,
   },
   {
     id: 479,
@@ -5959,7 +5481,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 6,
     createdAt: "2026-03-11T07:40:36",
-    isBookmarked: true,
   },
   {
     id: 480,
@@ -5973,7 +5494,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 4,
     createdAt: "2026-03-11T05:33:01",
-    isBookmarked: true,
   },
   {
     id: 481,
@@ -5988,7 +5508,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 8,
     createdAt: "2026-03-11T04:24:05",
-    isBookmarked: false,
   },
   {
     id: 482,
@@ -6001,7 +5520,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 6,
     createdAt: "2026-03-11T03:00:41",
-    isBookmarked: false,
   },
   {
     id: 483,
@@ -6016,7 +5534,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 2,
     createdAt: "2026-03-11T01:57:20",
-    isBookmarked: false,
   },
   {
     id: 484,
@@ -6029,7 +5546,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 4,
     createdAt: "2026-03-10T23:47:45",
-    isBookmarked: false,
   },
   {
     id: 485,
@@ -6042,7 +5558,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 8,
     createdAt: "2026-03-10T22:26:55",
-    isBookmarked: false,
   },
   {
     id: 486,
@@ -6057,7 +5572,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 4,
     createdAt: "2026-03-10T21:38:59",
-    isBookmarked: false,
   },
   {
     id: 487,
@@ -6070,7 +5584,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 8,
     createdAt: "2026-03-10T19:43:41",
-    isBookmarked: true,
   },
   {
     id: 488,
@@ -6085,7 +5598,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 4,
     createdAt: "2026-03-10T16:44:33",
-    isBookmarked: false,
   },
   {
     id: 489,
@@ -6098,7 +5610,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 15,
     createdAt: "2026-03-10T16:44:15",
-    isBookmarked: false,
   },
   {
     id: 490,
@@ -6113,7 +5624,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 6,
     createdAt: "2026-03-10T16:27:11",
-    isBookmarked: false,
   },
   {
     id: 491,
@@ -6126,7 +5636,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 2,
     createdAt: "2026-03-10T15:35:45",
-    isBookmarked: false,
   },
   {
     id: 492,
@@ -6138,7 +5647,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 13,
     createdAt: "2026-03-10T15:24:26",
-    isBookmarked: false,
   },
   {
     id: 493,
@@ -6152,7 +5660,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 4,
     createdAt: "2026-03-10T14:53:03",
-    isBookmarked: false,
   },
   {
     id: 494,
@@ -6164,7 +5671,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 0,
     createdAt: "2026-03-10T14:43:56",
-    isBookmarked: false,
   },
   {
     id: 495,
@@ -6179,7 +5685,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 7,
     createdAt: "2026-03-10T14:08:58",
-    isBookmarked: true,
   },
   {
     id: 496,
@@ -6188,7 +5693,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 6,
     createdAt: "2026-03-10T13:33:09",
-    isBookmarked: false,
   },
   {
     id: 497,
@@ -6203,7 +5707,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 3,
     createdAt: "2026-03-10T12:12:34",
-    isBookmarked: false,
   },
   {
     id: 498,
@@ -6212,7 +5715,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 2,
     createdAt: "2026-03-10T09:49:05",
-    isBookmarked: false,
   },
   {
     id: 499,
@@ -6226,7 +5728,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 4,
     createdAt: "2026-03-10T09:06:12",
-    isBookmarked: false,
   },
   {
     id: 500,
@@ -6239,7 +5740,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 8,
     createdAt: "2026-03-10T07:18:49",
-    isBookmarked: true,
   },
   {
     id: 501,
@@ -6254,7 +5754,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 7,
     createdAt: "2026-03-10T07:16:07",
-    isBookmarked: true,
   },
   {
     id: 502,
@@ -6268,7 +5767,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 3,
     createdAt: "2026-03-10T06:02:50",
-    isBookmarked: true,
   },
   {
     id: 503,
@@ -6280,7 +5778,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 16,
     createdAt: "2026-03-10T05:35:46",
-    isBookmarked: true,
   },
   {
     id: 504,
@@ -6293,7 +5790,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 3,
     createdAt: "2026-03-10T03:49:25",
-    isBookmarked: false,
   },
   {
     id: 505,
@@ -6308,7 +5804,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 0,
     createdAt: "2026-03-10T02:56:04",
-    isBookmarked: false,
   },
   {
     id: 506,
@@ -6317,7 +5812,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 6,
     createdAt: "2026-03-10T02:35:43",
-    isBookmarked: false,
   },
   {
     id: 507,
@@ -6331,7 +5825,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 5,
     createdAt: "2026-03-10T01:39:04",
-    isBookmarked: true,
   },
   {
     id: 508,
@@ -6346,7 +5839,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 1,
     createdAt: "2026-03-09T23:25:42",
-    isBookmarked: false,
   },
   {
     id: 509,
@@ -6360,7 +5852,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 6,
     createdAt: "2026-03-09T23:07:40",
-    isBookmarked: false,
   },
   {
     id: 510,
@@ -6369,7 +5860,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 7,
     createdAt: "2026-03-09T21:40:45",
-    isBookmarked: false,
   },
   {
     id: 511,
@@ -6383,7 +5873,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 3,
     createdAt: "2026-03-09T21:14:20",
-    isBookmarked: false,
   },
   {
     id: 512,
@@ -6396,7 +5885,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 1,
     createdAt: "2026-03-09T13:39:27",
-    isBookmarked: false,
   },
   {
     id: 513,
@@ -6411,7 +5899,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 0,
     createdAt: "2026-03-09T11:27:09",
-    isBookmarked: false,
   },
   {
     id: 514,
@@ -6423,7 +5910,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 1,
     createdAt: "2026-03-09T10:50:11",
-    isBookmarked: false,
   },
   {
     id: 515,
@@ -6436,7 +5922,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 6,
     createdAt: "2026-03-09T09:36:38",
-    isBookmarked: false,
   },
   {
     id: 516,
@@ -6448,7 +5933,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 14,
     createdAt: "2026-03-09T09:18:41",
-    isBookmarked: false,
   },
   {
     id: 517,
@@ -6457,7 +5941,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 5,
     createdAt: "2026-03-09T09:05:51",
-    isBookmarked: true,
   },
   {
     id: 518,
@@ -6471,7 +5954,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 1,
     createdAt: "2026-03-09T07:23:37",
-    isBookmarked: true,
   },
   {
     id: 519,
@@ -6480,7 +5962,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 3,
     createdAt: "2026-03-09T04:55:54",
-    isBookmarked: false,
   },
   {
     id: 520,
@@ -6494,7 +5975,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 7,
     createdAt: "2026-03-09T03:45:54",
-    isBookmarked: false,
   },
   {
     id: 521,
@@ -6509,7 +5989,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 2,
     createdAt: "2026-03-08T23:55:48",
-    isBookmarked: false,
   },
   {
     id: 522,
@@ -6521,7 +6000,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 2,
     createdAt: "2026-03-08T23:52:27",
-    isBookmarked: false,
   },
   {
     id: 523,
@@ -6533,7 +6011,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 5,
     createdAt: "2026-03-08T23:46:25",
-    isBookmarked: false,
   },
   {
     id: 524,
@@ -6546,7 +6023,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 2,
     createdAt: "2026-03-08T23:44:35",
-    isBookmarked: false,
   },
   {
     id: 525,
@@ -6559,7 +6035,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 8,
     createdAt: "2026-03-08T20:39:05",
-    isBookmarked: false,
   },
   {
     id: 526,
@@ -6568,7 +6043,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 3,
     createdAt: "2026-03-08T19:53:41",
-    isBookmarked: false,
   },
   {
     id: 527,
@@ -6582,7 +6056,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 5,
     createdAt: "2026-03-08T19:44:43",
-    isBookmarked: false,
   },
   {
     id: 528,
@@ -6594,7 +6067,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 7,
     createdAt: "2026-03-08T18:06:06",
-    isBookmarked: true,
   },
   {
     id: 529,
@@ -6608,7 +6080,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 6,
     createdAt: "2026-03-08T18:00:40",
-    isBookmarked: false,
   },
   {
     id: 530,
@@ -6617,7 +6088,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 3,
     createdAt: "2026-03-08T13:18:35",
-    isBookmarked: false,
   },
   {
     id: 531,
@@ -6631,7 +6101,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 6,
     createdAt: "2026-03-08T09:16:51",
-    isBookmarked: false,
   },
   {
     id: 532,
@@ -6645,7 +6114,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 7,
     createdAt: "2026-03-08T08:33:35",
-    isBookmarked: false,
   },
   {
     id: 533,
@@ -6657,7 +6125,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 4,
     createdAt: "2026-03-08T08:27:26",
-    isBookmarked: false,
   },
   {
     id: 534,
@@ -6671,7 +6138,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 5,
     createdAt: "2026-03-08T07:34:40",
-    isBookmarked: false,
   },
   {
     id: 535,
@@ -6684,7 +6150,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 5,
     createdAt: "2026-03-08T07:18:11",
-    isBookmarked: false,
   },
   {
     id: 536,
@@ -6699,7 +6164,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 3,
     createdAt: "2026-03-08T05:00:30",
-    isBookmarked: false,
   },
   {
     id: 537,
@@ -6712,7 +6176,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 6,
     createdAt: "2026-03-08T04:48:13",
-    isBookmarked: false,
   },
   {
     id: 538,
@@ -6726,7 +6189,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 3,
     createdAt: "2026-03-08T04:07:22",
-    isBookmarked: false,
   },
   {
     id: 539,
@@ -6741,7 +6203,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 6,
     createdAt: "2026-03-08T03:50:10",
-    isBookmarked: true,
   },
   {
     id: 540,
@@ -6753,7 +6214,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 2,
     createdAt: "2026-03-08T03:24:01",
-    isBookmarked: false,
   },
   {
     id: 541,
@@ -6768,7 +6228,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 7,
     createdAt: "2026-03-08T01:37:45",
-    isBookmarked: false,
   },
   {
     id: 542,
@@ -6780,7 +6239,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 3,
     createdAt: "2026-03-08T01:35:06",
-    isBookmarked: false,
   },
   {
     id: 543,
@@ -6795,7 +6253,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 7,
     createdAt: "2026-03-07T22:50:46",
-    isBookmarked: false,
   },
   {
     id: 544,
@@ -6810,7 +6267,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 4,
     createdAt: "2026-03-07T22:32:13",
-    isBookmarked: false,
   },
   {
     id: 545,
@@ -6823,7 +6279,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 15,
     createdAt: "2026-03-07T19:30:35",
-    isBookmarked: false,
   },
   {
     id: 546,
@@ -6837,7 +6292,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 8,
     createdAt: "2026-03-07T18:22:27",
-    isBookmarked: false,
   },
   {
     id: 547,
@@ -6846,7 +6300,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 4,
     createdAt: "2026-03-07T13:06:33",
-    isBookmarked: false,
   },
   {
     id: 548,
@@ -6861,7 +6314,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 0,
     createdAt: "2026-03-07T12:16:07",
-    isBookmarked: false,
   },
   {
     id: 549,
@@ -6875,7 +6327,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 1,
     createdAt: "2026-03-07T11:34:39",
-    isBookmarked: false,
   },
   {
     id: 550,
@@ -6888,7 +6339,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 0,
     createdAt: "2026-03-07T11:33:43",
-    isBookmarked: true,
   },
   {
     id: 551,
@@ -6900,7 +6350,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 0,
     createdAt: "2026-03-07T09:37:09",
-    isBookmarked: false,
   },
   {
     id: 552,
@@ -6913,7 +6362,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 7,
     createdAt: "2026-03-07T07:00:12",
-    isBookmarked: false,
   },
   {
     id: 553,
@@ -6928,7 +6376,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 8,
     createdAt: "2026-03-07T05:34:34",
-    isBookmarked: false,
   },
   {
     id: 554,
@@ -6937,7 +6384,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 0,
     createdAt: "2026-03-07T05:03:02",
-    isBookmarked: false,
   },
   {
     id: 555,
@@ -6949,7 +6395,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 6,
     createdAt: "2026-03-06T23:39:09",
-    isBookmarked: false,
   },
   {
     id: 556,
@@ -6964,7 +6409,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 0,
     createdAt: "2026-03-06T21:14:48",
-    isBookmarked: false,
   },
   {
     id: 557,
@@ -6979,7 +6423,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 4,
     createdAt: "2026-03-06T18:02:46",
-    isBookmarked: false,
   },
   {
     id: 558,
@@ -6991,7 +6434,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 7,
     createdAt: "2026-03-06T16:52:27",
-    isBookmarked: false,
   },
   {
     id: 559,
@@ -7004,7 +6446,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 2,
     createdAt: "2026-03-06T16:49:21",
-    isBookmarked: false,
   },
   {
     id: 560,
@@ -7016,7 +6457,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 8,
     createdAt: "2026-03-06T14:41:20",
-    isBookmarked: false,
   },
   {
     id: 561,
@@ -7029,7 +6469,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 3,
     createdAt: "2026-03-06T13:20:35",
-    isBookmarked: false,
   },
   {
     id: 562,
@@ -7044,7 +6483,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 5,
     createdAt: "2026-03-06T12:17:56",
-    isBookmarked: true,
   },
   {
     id: 563,
@@ -7056,7 +6494,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 4,
     createdAt: "2026-03-06T12:00:14",
-    isBookmarked: false,
   },
   {
     id: 564,
@@ -7065,7 +6502,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 5,
     createdAt: "2026-03-06T10:14:55",
-    isBookmarked: false,
   },
   {
     id: 565,
@@ -7079,7 +6515,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 7,
     createdAt: "2026-03-06T09:59:00",
-    isBookmarked: false,
   },
   {
     id: 566,
@@ -7092,7 +6527,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 8,
     createdAt: "2026-03-06T07:50:36",
-    isBookmarked: false,
   },
   {
     id: 567,
@@ -7106,7 +6540,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 6,
     createdAt: "2026-03-06T07:19:26",
-    isBookmarked: true,
   },
   {
     id: 568,
@@ -7115,7 +6548,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 0,
     createdAt: "2026-03-06T07:19:07",
-    isBookmarked: false,
   },
   {
     id: 569,
@@ -7124,7 +6556,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 0,
     createdAt: "2026-03-06T05:23:42",
-    isBookmarked: false,
   },
   {
     id: 570,
@@ -7136,7 +6567,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 1,
     createdAt: "2026-03-06T03:45:17",
-    isBookmarked: false,
   },
   {
     id: 571,
@@ -7151,7 +6581,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 4,
     createdAt: "2026-03-05T22:46:36",
-    isBookmarked: false,
   },
   {
     id: 572,
@@ -7164,7 +6593,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 2,
     createdAt: "2026-03-05T21:09:31",
-    isBookmarked: false,
   },
   {
     id: 573,
@@ -7176,7 +6604,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 0,
     createdAt: "2026-03-05T18:46:24",
-    isBookmarked: true,
   },
   {
     id: 574,
@@ -7185,7 +6612,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 0,
     createdAt: "2026-03-05T16:24:13",
-    isBookmarked: false,
   },
   {
     id: 575,
@@ -7194,7 +6620,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 2,
     createdAt: "2026-03-05T15:52:19",
-    isBookmarked: false,
   },
   {
     id: 576,
@@ -7209,7 +6634,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 15,
     createdAt: "2026-03-05T12:07:13",
-    isBookmarked: false,
   },
   {
     id: 577,
@@ -7221,7 +6645,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 8,
     createdAt: "2026-03-05T09:50:22",
-    isBookmarked: false,
   },
   {
     id: 578,
@@ -7235,7 +6658,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 3,
     createdAt: "2026-03-05T09:28:30",
-    isBookmarked: false,
   },
   {
     id: 579,
@@ -7244,7 +6666,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 3,
     createdAt: "2026-03-05T08:15:57",
-    isBookmarked: true,
   },
   {
     id: 580,
@@ -7253,7 +6674,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 3,
     createdAt: "2026-03-05T06:17:35",
-    isBookmarked: false,
   },
   {
     id: 581,
@@ -7262,7 +6682,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 8,
     createdAt: "2026-03-05T05:23:39",
-    isBookmarked: false,
   },
   {
     id: 582,
@@ -7276,7 +6695,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 7,
     createdAt: "2026-03-05T04:49:15",
-    isBookmarked: false,
   },
   {
     id: 583,
@@ -7285,7 +6703,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 5,
     createdAt: "2026-03-05T02:10:37",
-    isBookmarked: false,
   },
   {
     id: 584,
@@ -7298,7 +6715,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 3,
     createdAt: "2026-03-05T02:02:59",
-    isBookmarked: false,
   },
   {
     id: 585,
@@ -7312,7 +6728,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 11,
     createdAt: "2026-03-05T01:38:05",
-    isBookmarked: false,
   },
   {
     id: 586,
@@ -7326,7 +6741,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 7,
     createdAt: "2026-03-05T00:17:27",
-    isBookmarked: false,
   },
   {
     id: 587,
@@ -7335,7 +6749,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 5,
     createdAt: "2026-03-04T23:22:06",
-    isBookmarked: true,
   },
   {
     id: 588,
@@ -7344,7 +6757,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 1,
     createdAt: "2026-03-04T22:11:36",
-    isBookmarked: false,
   },
   {
     id: 589,
@@ -7359,7 +6771,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 8,
     createdAt: "2026-03-04T22:04:33",
-    isBookmarked: false,
   },
   {
     id: 590,
@@ -7368,7 +6779,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 0,
     createdAt: "2026-03-04T10:17:29",
-    isBookmarked: false,
   },
   {
     id: 591,
@@ -7381,7 +6791,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 6,
     createdAt: "2026-03-04T06:04:49",
-    isBookmarked: true,
   },
   {
     id: 592,
@@ -7396,7 +6805,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 1,
     createdAt: "2026-03-04T05:39:12",
-    isBookmarked: false,
   },
   {
     id: 593,
@@ -7410,7 +6818,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 0,
     createdAt: "2026-03-04T04:40:48",
-    isBookmarked: false,
   },
   {
     id: 594,
@@ -7419,7 +6826,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 2,
     createdAt: "2026-03-04T03:58:18",
-    isBookmarked: false,
   },
   {
     id: 595,
@@ -7428,7 +6834,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 3,
     createdAt: "2026-03-04T02:54:53",
-    isBookmarked: false,
   },
   {
     id: 596,
@@ -7443,7 +6848,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 0,
     createdAt: "2026-03-04T01:43:14",
-    isBookmarked: false,
   },
   {
     id: 597,
@@ -7457,7 +6861,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 8,
     createdAt: "2026-03-04T01:31:22",
-    isBookmarked: false,
   },
   {
     id: 598,
@@ -7469,7 +6872,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 11,
     createdAt: "2026-03-04T01:23:52",
-    isBookmarked: false,
   },
   {
     id: 599,
@@ -7482,7 +6884,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 5,
     createdAt: "2026-03-03T23:12:56",
-    isBookmarked: false,
   },
   {
     id: 600,
@@ -7494,7 +6895,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 0,
     createdAt: "2026-03-03T19:28:42",
-    isBookmarked: false,
   },
   {
     id: 601,
@@ -7508,7 +6908,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 6,
     createdAt: "2026-03-03T18:00:32",
-    isBookmarked: false,
   },
   {
     id: 602,
@@ -7517,7 +6916,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 5,
     createdAt: "2026-03-03T17:47:51",
-    isBookmarked: false,
   },
   {
     id: 603,
@@ -7526,7 +6924,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 6,
     createdAt: "2026-03-03T16:55:27",
-    isBookmarked: true,
   },
   {
     id: 604,
@@ -7541,7 +6938,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 16,
     createdAt: "2026-03-03T14:40:06",
-    isBookmarked: false,
   },
   {
     id: 605,
@@ -7553,7 +6949,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 3,
     createdAt: "2026-03-03T13:45:43",
-    isBookmarked: false,
   },
   {
     id: 606,
@@ -7565,7 +6960,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 5,
     createdAt: "2026-03-03T13:28:45",
-    isBookmarked: false,
   },
   {
     id: 607,
@@ -7578,7 +6972,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 8,
     createdAt: "2026-03-03T13:05:40",
-    isBookmarked: false,
   },
   {
     id: 608,
@@ -7592,7 +6985,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 2,
     createdAt: "2026-03-03T10:20:15",
-    isBookmarked: false,
   },
   {
     id: 609,
@@ -7606,7 +6998,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 6,
     createdAt: "2026-03-03T06:28:34",
-    isBookmarked: false,
   },
   {
     id: 610,
@@ -7620,7 +7011,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 7,
     createdAt: "2026-03-03T04:31:09",
-    isBookmarked: false,
   },
   {
     id: 611,
@@ -7629,7 +7019,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 4,
     createdAt: "2026-03-03T04:07:11",
-    isBookmarked: false,
   },
   {
     id: 612,
@@ -7641,7 +7030,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 4,
     createdAt: "2026-03-03T00:03:52",
-    isBookmarked: false,
   },
   {
     id: 613,
@@ -7653,7 +7041,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 3,
     createdAt: "2026-03-02T23:39:09",
-    isBookmarked: false,
   },
   {
     id: 614,
@@ -7668,7 +7055,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 15,
     createdAt: "2026-03-02T22:23:13",
-    isBookmarked: true,
   },
   {
     id: 615,
@@ -7680,7 +7066,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 4,
     createdAt: "2026-03-02T21:54:15",
-    isBookmarked: false,
   },
   {
     id: 616,
@@ -7689,7 +7074,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 1,
     createdAt: "2026-03-02T21:27:53",
-    isBookmarked: false,
   },
   {
     id: 617,
@@ -7702,7 +7086,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 2,
     createdAt: "2026-03-02T20:45:09",
-    isBookmarked: true,
   },
   {
     id: 618,
@@ -7715,7 +7098,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 7,
     createdAt: "2026-03-02T19:36:07",
-    isBookmarked: true,
   },
   {
     id: 619,
@@ -7727,7 +7109,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 4,
     createdAt: "2026-03-02T18:41:11",
-    isBookmarked: false,
   },
   {
     id: 620,
@@ -7739,7 +7120,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 6,
     createdAt: "2026-03-02T17:51:44",
-    isBookmarked: false,
   },
   {
     id: 621,
@@ -7753,7 +7133,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 3,
     createdAt: "2026-03-02T16:39:59",
-    isBookmarked: false,
   },
   {
     id: 622,
@@ -7762,7 +7141,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 7,
     createdAt: "2026-03-02T16:33:02",
-    isBookmarked: false,
   },
   {
     id: 623,
@@ -7774,7 +7152,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 7,
     createdAt: "2026-03-02T16:05:05",
-    isBookmarked: false,
   },
   {
     id: 624,
@@ -7788,7 +7165,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 8,
     createdAt: "2026-03-02T14:24:12",
-    isBookmarked: false,
   },
   {
     id: 625,
@@ -7800,7 +7176,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 7,
     createdAt: "2026-03-02T12:29:05",
-    isBookmarked: false,
   },
   {
     id: 626,
@@ -7812,7 +7187,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 6,
     createdAt: "2026-03-02T11:57:32",
-    isBookmarked: true,
   },
   {
     id: 627,
@@ -7827,7 +7201,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 1,
     createdAt: "2026-03-02T09:23:18",
-    isBookmarked: false,
   },
   {
     id: 628,
@@ -7836,7 +7209,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 1,
     createdAt: "2026-03-02T09:05:56",
-    isBookmarked: false,
   },
   {
     id: 629,
@@ -7850,7 +7222,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 4,
     createdAt: "2026-03-02T08:46:39",
-    isBookmarked: false,
   },
   {
     id: 630,
@@ -7863,7 +7234,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 6,
     createdAt: "2026-03-02T08:00:38",
-    isBookmarked: false,
   },
   {
     id: 631,
@@ -7878,7 +7248,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 2,
     createdAt: "2026-03-02T06:11:27",
-    isBookmarked: false,
   },
   {
     id: 632,
@@ -7891,7 +7260,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 8,
     createdAt: "2026-03-02T03:04:37",
-    isBookmarked: false,
   },
   {
     id: 633,
@@ -7906,7 +7274,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 1,
     createdAt: "2026-03-02T02:27:16",
-    isBookmarked: false,
   },
   {
     id: 634,
@@ -7921,7 +7288,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 7,
     createdAt: "2026-03-02T02:15:12",
-    isBookmarked: false,
   },
   {
     id: 635,
@@ -7930,7 +7296,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 13,
     createdAt: "2026-03-01T22:20:19",
-    isBookmarked: false,
   },
   {
     id: 636,
@@ -7943,7 +7308,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 2,
     createdAt: "2026-03-01T22:14:59",
-    isBookmarked: false,
   },
   {
     id: 637,
@@ -7952,7 +7316,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 3,
     createdAt: "2026-03-01T21:31:47",
-    isBookmarked: false,
   },
   {
     id: 638,
@@ -7966,7 +7329,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 4,
     createdAt: "2026-03-01T19:30:28",
-    isBookmarked: false,
   },
   {
     id: 639,
@@ -7980,7 +7342,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 5,
     createdAt: "2026-03-01T16:38:56",
-    isBookmarked: false,
   },
   {
     id: 640,
@@ -7994,7 +7355,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 6,
     createdAt: "2026-03-01T12:04:06",
-    isBookmarked: false,
   },
   {
     id: 641,
@@ -8008,7 +7368,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 2,
     createdAt: "2026-03-01T12:00:58",
-    isBookmarked: false,
   },
   {
     id: 642,
@@ -8020,7 +7379,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 1,
     createdAt: "2026-03-01T10:23:15",
-    isBookmarked: false,
   },
   {
     id: 643,
@@ -8034,7 +7392,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 2,
     createdAt: "2026-03-01T09:07:55",
-    isBookmarked: false,
   },
   {
     id: 644,
@@ -8043,7 +7400,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 2,
     createdAt: "2026-03-01T07:21:30",
-    isBookmarked: false,
   },
   {
     id: 645,
@@ -8058,7 +7414,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 5,
     createdAt: "2026-03-01T06:07:07",
-    isBookmarked: true,
   },
   {
     id: 646,
@@ -8073,7 +7428,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 2,
     createdAt: "2026-03-01T05:00:25",
-    isBookmarked: true,
   },
   {
     id: 647,
@@ -8086,7 +7440,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 8,
     createdAt: "2026-03-01T04:12:36",
-    isBookmarked: false,
   },
   {
     id: 648,
@@ -8101,7 +7454,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 1,
     createdAt: "2026-03-01T03:01:12",
-    isBookmarked: true,
   },
   {
     id: 649,
@@ -8115,7 +7467,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 8,
     createdAt: "2026-03-01T02:40:46",
-    isBookmarked: false,
   },
   {
     id: 650,
@@ -8124,7 +7475,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 4,
     createdAt: "2026-03-01T00:54:16",
-    isBookmarked: false,
   },
   {
     id: 651,
@@ -8139,7 +7489,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 2,
     createdAt: "2026-03-01T00:46:34",
-    isBookmarked: false,
   },
   {
     id: 652,
@@ -8153,7 +7502,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 8,
     createdAt: "2026-02-28T23:42:11",
-    isBookmarked: false,
   },
   {
     id: 653,
@@ -8166,7 +7514,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 4,
     createdAt: "2026-02-28T23:36:51",
-    isBookmarked: false,
   },
   {
     id: 654,
@@ -8180,7 +7527,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 4,
     createdAt: "2026-02-28T21:30:49",
-    isBookmarked: true,
   },
   {
     id: 655,
@@ -8194,7 +7540,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 7,
     createdAt: "2026-02-28T18:59:51",
-    isBookmarked: false,
   },
   {
     id: 656,
@@ -8208,7 +7553,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 3,
     createdAt: "2026-02-28T08:39:21",
-    isBookmarked: true,
   },
   {
     id: 657,
@@ -8222,7 +7566,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 2,
     createdAt: "2026-02-28T05:47:36",
-    isBookmarked: false,
   },
   {
     id: 658,
@@ -8234,7 +7577,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 7,
     createdAt: "2026-02-28T04:20:57",
-    isBookmarked: true,
   },
   {
     id: 659,
@@ -8247,7 +7589,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 2,
     createdAt: "2026-02-28T03:44:29",
-    isBookmarked: false,
   },
   {
     id: 660,
@@ -8262,7 +7603,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 8,
     createdAt: "2026-02-28T03:34:19",
-    isBookmarked: false,
   },
   {
     id: 661,
@@ -8276,7 +7616,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 5,
     createdAt: "2026-02-28T02:18:41",
-    isBookmarked: true,
   },
   {
     id: 662,
@@ -8285,7 +7624,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 4,
     createdAt: "2026-02-27T21:36:07",
-    isBookmarked: false,
   },
   {
     id: 663,
@@ -8294,7 +7632,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 2,
     createdAt: "2026-02-27T21:25:15",
-    isBookmarked: false,
   },
   {
     id: 664,
@@ -8308,7 +7645,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 0,
     createdAt: "2026-02-27T19:56:55",
-    isBookmarked: false,
   },
   {
     id: 665,
@@ -8320,7 +7656,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 2,
     createdAt: "2026-02-27T19:42:11",
-    isBookmarked: false,
   },
   {
     id: 666,
@@ -8332,7 +7667,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 8,
     createdAt: "2026-02-27T17:39:51",
-    isBookmarked: true,
   },
   {
     id: 667,
@@ -8347,7 +7681,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 4,
     createdAt: "2026-02-27T17:33:15",
-    isBookmarked: false,
   },
   {
     id: 668,
@@ -8360,7 +7693,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 5,
     createdAt: "2026-02-27T16:06:47",
-    isBookmarked: false,
   },
   {
     id: 669,
@@ -8369,7 +7701,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 7,
     createdAt: "2026-02-27T14:35:05",
-    isBookmarked: true,
   },
   {
     id: 670,
@@ -8378,7 +7709,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 6,
     createdAt: "2026-02-27T13:52:23",
-    isBookmarked: false,
   },
   {
     id: 671,
@@ -8391,7 +7721,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 14,
     createdAt: "2026-02-27T11:24:50",
-    isBookmarked: false,
   },
   {
     id: 672,
@@ -8403,7 +7732,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 4,
     createdAt: "2026-02-27T07:11:35",
-    isBookmarked: false,
   },
   {
     id: 673,
@@ -8412,7 +7740,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 15,
     createdAt: "2026-02-27T06:59:00",
-    isBookmarked: false,
   },
   {
     id: 674,
@@ -8424,7 +7751,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 4,
     createdAt: "2026-02-27T05:35:26",
-    isBookmarked: false,
   },
   {
     id: 675,
@@ -8437,7 +7763,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 4,
     createdAt: "2026-02-27T02:06:11",
-    isBookmarked: false,
   },
   {
     id: 676,
@@ -8449,7 +7774,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 3,
     createdAt: "2026-02-27T02:02:00",
-    isBookmarked: false,
   },
   {
     id: 677,
@@ -8464,7 +7788,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 8,
     createdAt: "2026-02-27T01:23:54",
-    isBookmarked: false,
   },
   {
     id: 678,
@@ -8477,7 +7800,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 6,
     createdAt: "2026-02-26T22:15:24",
-    isBookmarked: false,
   },
   {
     id: 679,
@@ -8490,7 +7812,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 0,
     createdAt: "2026-02-26T20:12:03",
-    isBookmarked: false,
   },
   {
     id: 680,
@@ -8499,7 +7820,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 7,
     createdAt: "2026-02-26T16:21:35",
-    isBookmarked: false,
   },
   {
     id: 681,
@@ -8512,7 +7832,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 4,
     createdAt: "2026-02-26T14:42:02",
-    isBookmarked: false,
   },
   {
     id: 682,
@@ -8521,7 +7840,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 0,
     createdAt: "2026-02-26T13:27:31",
-    isBookmarked: false,
   },
   {
     id: 683,
@@ -8535,7 +7853,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 5,
     createdAt: "2026-02-26T09:47:23",
-    isBookmarked: true,
   },
   {
     id: 684,
@@ -8550,7 +7867,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 7,
     createdAt: "2026-02-26T09:27:57",
-    isBookmarked: true,
   },
   {
     id: 685,
@@ -8559,7 +7875,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 2,
     createdAt: "2026-02-26T08:45:35",
-    isBookmarked: false,
   },
   {
     id: 686,
@@ -8571,7 +7886,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 6,
     createdAt: "2026-02-26T08:32:18",
-    isBookmarked: true,
   },
   {
     id: 687,
@@ -8584,7 +7898,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 8,
     createdAt: "2026-02-26T07:08:27",
-    isBookmarked: false,
   },
   {
     id: 688,
@@ -8599,7 +7912,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 2,
     createdAt: "2026-02-26T06:30:30",
-    isBookmarked: false,
   },
   {
     id: 689,
@@ -8614,7 +7926,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 3,
     createdAt: "2026-02-26T03:01:58",
-    isBookmarked: false,
   },
   {
     id: 690,
@@ -8628,7 +7939,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 4,
     createdAt: "2026-02-26T03:00:27",
-    isBookmarked: false,
   },
   {
     id: 691,
@@ -8640,7 +7950,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 0,
     createdAt: "2026-02-26T02:58:24",
-    isBookmarked: false,
   },
   {
     id: 692,
@@ -8655,7 +7964,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 2,
     createdAt: "2026-02-26T02:42:28",
-    isBookmarked: false,
   },
   {
     id: 693,
@@ -8667,7 +7975,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 8,
     createdAt: "2026-02-26T01:06:46",
-    isBookmarked: false,
   },
   {
     id: 694,
@@ -8682,7 +7989,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 8,
     createdAt: "2026-02-26T00:40:32",
-    isBookmarked: false,
   },
   {
     id: 695,
@@ -8694,7 +8000,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 0,
     createdAt: "2026-02-25T23:01:24",
-    isBookmarked: false,
   },
   {
     id: 696,
@@ -8707,7 +8012,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 5,
     createdAt: "2026-02-25T19:13:22",
-    isBookmarked: false,
   },
   {
     id: 697,
@@ -8720,7 +8024,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 4,
     createdAt: "2026-02-25T17:49:11",
-    isBookmarked: false,
   },
   {
     id: 698,
@@ -8729,7 +8032,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 11,
     createdAt: "2026-02-25T15:08:29",
-    isBookmarked: false,
   },
   {
     id: 699,
@@ -8738,7 +8040,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 6,
     createdAt: "2026-02-25T14:02:17",
-    isBookmarked: false,
   },
   {
     id: 700,
@@ -8753,7 +8054,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 7,
     createdAt: "2026-02-25T13:30:42",
-    isBookmarked: true,
   },
   {
     id: 701,
@@ -8766,7 +8066,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 5,
     createdAt: "2026-02-25T09:30:38",
-    isBookmarked: false,
   },
   {
     id: 702,
@@ -8775,7 +8074,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 6,
     createdAt: "2026-02-25T05:52:13",
-    isBookmarked: true,
   },
   {
     id: 703,
@@ -8790,7 +8088,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 0,
     createdAt: "2026-02-25T04:24:54",
-    isBookmarked: false,
   },
   {
     id: 704,
@@ -8799,7 +8096,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 5,
     createdAt: "2026-02-25T03:12:15",
-    isBookmarked: false,
   },
   {
     id: 705,
@@ -8811,7 +8107,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 2,
     createdAt: "2026-02-25T02:57:09",
-    isBookmarked: true,
   },
   {
     id: 706,
@@ -8825,7 +8120,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 7,
     createdAt: "2026-02-25T02:25:31",
-    isBookmarked: false,
   },
   {
     id: 707,
@@ -8839,7 +8133,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 6,
     createdAt: "2026-02-25T01:01:59",
-    isBookmarked: false,
   },
   {
     id: 708,
@@ -8852,7 +8145,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 6,
     createdAt: "2026-02-25T00:17:56",
-    isBookmarked: false,
   },
   {
     id: 709,
@@ -8867,7 +8159,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 4,
     createdAt: "2026-02-24T23:12:23",
-    isBookmarked: false,
   },
   {
     id: 710,
@@ -8880,7 +8171,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 7,
     createdAt: "2026-02-24T23:03:25",
-    isBookmarked: true,
   },
   {
     id: 711,
@@ -8895,7 +8185,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 7,
     createdAt: "2026-02-24T20:06:02",
-    isBookmarked: false,
   },
   {
     id: 712,
@@ -8904,7 +8193,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 13,
     createdAt: "2026-02-24T18:55:06",
-    isBookmarked: false,
   },
   {
     id: 713,
@@ -8916,7 +8204,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 3,
     createdAt: "2026-02-24T18:34:40",
-    isBookmarked: false,
   },
   {
     id: 714,
@@ -8931,7 +8218,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 5,
     createdAt: "2026-02-24T16:46:21",
-    isBookmarked: false,
   },
   {
     id: 715,
@@ -8943,7 +8229,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 3,
     createdAt: "2026-02-24T15:21:41",
-    isBookmarked: false,
   },
   {
     id: 716,
@@ -8955,7 +8240,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 4,
     createdAt: "2026-02-24T15:13:12",
-    isBookmarked: false,
   },
   {
     id: 717,
@@ -8969,7 +8253,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 7,
     createdAt: "2026-02-24T15:11:10",
-    isBookmarked: false,
   },
   {
     id: 718,
@@ -8983,7 +8266,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 7,
     createdAt: "2026-02-24T14:25:52",
-    isBookmarked: false,
   },
   {
     id: 719,
@@ -8998,7 +8280,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 8,
     createdAt: "2026-02-24T14:13:56",
-    isBookmarked: false,
   },
   {
     id: 720,
@@ -9013,7 +8294,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 3,
     createdAt: "2026-02-24T12:53:22",
-    isBookmarked: true,
   },
   {
     id: 721,
@@ -9025,7 +8305,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 8,
     createdAt: "2026-02-24T12:37:13",
-    isBookmarked: true,
   },
   {
     id: 722,
@@ -9039,7 +8318,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 5,
     createdAt: "2026-02-24T10:12:27",
-    isBookmarked: false,
   },
   {
     id: 723,
@@ -9051,7 +8329,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 5,
     createdAt: "2026-02-24T09:23:57",
-    isBookmarked: false,
   },
   {
     id: 724,
@@ -9060,7 +8337,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 3,
     createdAt: "2026-02-24T08:12:08",
-    isBookmarked: false,
   },
   {
     id: 725,
@@ -9069,7 +8345,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 8,
     createdAt: "2026-02-24T08:09:12",
-    isBookmarked: true,
   },
   {
     id: 726,
@@ -9083,7 +8358,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 4,
     createdAt: "2026-02-24T06:58:07",
-    isBookmarked: false,
   },
   {
     id: 727,
@@ -9092,7 +8366,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 15,
     createdAt: "2026-02-24T06:48:19",
-    isBookmarked: false,
   },
   {
     id: 728,
@@ -9106,7 +8379,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 8,
     createdAt: "2026-02-24T05:05:49",
-    isBookmarked: true,
   },
   {
     id: 729,
@@ -9119,7 +8391,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 1,
     createdAt: "2026-02-24T04:42:05",
-    isBookmarked: false,
   },
   {
     id: 730,
@@ -9134,7 +8405,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 8,
     createdAt: "2026-02-24T02:55:47",
-    isBookmarked: false,
   },
   {
     id: 731,
@@ -9146,7 +8416,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 6,
     createdAt: "2026-02-24T00:36:08",
-    isBookmarked: false,
   },
   {
     id: 732,
@@ -9161,7 +8430,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 7,
     createdAt: "2026-02-23T21:39:07",
-    isBookmarked: false,
   },
   {
     id: 733,
@@ -9173,7 +8441,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 1,
     createdAt: "2026-02-23T21:02:05",
-    isBookmarked: false,
   },
   {
     id: 734,
@@ -9187,7 +8454,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 10,
     createdAt: "2026-02-23T20:46:05",
-    isBookmarked: false,
   },
   {
     id: 735,
@@ -9200,7 +8466,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 6,
     createdAt: "2026-02-23T16:20:12",
-    isBookmarked: true,
   },
   {
     id: 736,
@@ -9209,7 +8474,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 8,
     createdAt: "2026-02-23T16:11:59",
-    isBookmarked: true,
   },
   {
     id: 737,
@@ -9223,7 +8487,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 7,
     createdAt: "2026-02-23T11:47:54",
-    isBookmarked: false,
   },
   {
     id: 738,
@@ -9238,7 +8501,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 4,
     createdAt: "2026-02-23T11:12:35",
-    isBookmarked: false,
   },
   {
     id: 739,
@@ -9251,7 +8513,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 4,
     createdAt: "2026-02-23T11:09:30",
-    isBookmarked: false,
   },
   {
     id: 740,
@@ -9260,7 +8521,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 2,
     createdAt: "2026-02-23T07:39:38",
-    isBookmarked: false,
   },
   {
     id: 741,
@@ -9274,7 +8534,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 2,
     createdAt: "2026-02-23T07:02:41",
-    isBookmarked: false,
   },
   {
     id: 742,
@@ -9283,7 +8542,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 0,
     createdAt: "2026-02-23T07:01:50",
-    isBookmarked: false,
   },
   {
     id: 743,
@@ -9297,7 +8555,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 4,
     createdAt: "2026-02-23T05:08:09",
-    isBookmarked: false,
   },
   {
     id: 744,
@@ -9310,7 +8567,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 2,
     createdAt: "2026-02-23T01:50:39",
-    isBookmarked: false,
   },
   {
     id: 745,
@@ -9323,7 +8579,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 2,
     createdAt: "2026-02-23T00:27:51",
-    isBookmarked: false,
   },
   {
     id: 746,
@@ -9336,7 +8591,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 6,
     createdAt: "2026-02-22T23:16:37",
-    isBookmarked: false,
   },
   {
     id: 747,
@@ -9345,7 +8599,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 4,
     createdAt: "2026-02-22T21:14:23",
-    isBookmarked: false,
   },
   {
     id: 748,
@@ -9360,7 +8613,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 5,
     createdAt: "2026-02-22T19:53:27",
-    isBookmarked: false,
   },
   {
     id: 749,
@@ -9375,7 +8627,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 16,
     createdAt: "2026-02-22T15:45:08",
-    isBookmarked: false,
   },
   {
     id: 750,
@@ -9387,7 +8638,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 0,
     createdAt: "2026-02-22T15:40:44",
-    isBookmarked: false,
   },
   {
     id: 751,
@@ -9399,7 +8649,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 0,
     createdAt: "2026-02-22T13:12:50",
-    isBookmarked: false,
   },
   {
     id: 752,
@@ -9412,7 +8661,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 5,
     createdAt: "2026-02-22T10:43:45",
-    isBookmarked: false,
   },
   {
     id: 753,
@@ -9424,7 +8672,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 4,
     createdAt: "2026-02-22T09:27:06",
-    isBookmarked: true,
   },
   {
     id: 754,
@@ -9436,7 +8683,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 2,
     createdAt: "2026-02-22T08:52:47",
-    isBookmarked: false,
   },
   {
     id: 755,
@@ -9451,7 +8697,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 0,
     createdAt: "2026-02-22T07:28:44",
-    isBookmarked: false,
   },
   {
     id: 756,
@@ -9465,7 +8710,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 6,
     createdAt: "2026-02-22T06:41:49",
-    isBookmarked: false,
   },
   {
     id: 757,
@@ -9479,7 +8723,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 0,
     createdAt: "2026-02-22T06:08:30",
-    isBookmarked: false,
   },
   {
     id: 758,
@@ -9492,7 +8735,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 1,
     createdAt: "2026-02-22T03:35:07",
-    isBookmarked: false,
   },
   {
     id: 759,
@@ -9504,7 +8746,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 7,
     createdAt: "2026-02-22T01:35:47",
-    isBookmarked: false,
   },
   {
     id: 760,
@@ -9513,7 +8754,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 0,
     createdAt: "2026-02-22T01:11:22",
-    isBookmarked: false,
   },
   {
     id: 761,
@@ -9525,7 +8765,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 5,
     createdAt: "2026-02-22T00:51:25",
-    isBookmarked: false,
   },
   {
     id: 762,
@@ -9534,7 +8773,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 6,
     createdAt: "2026-02-21T23:41:04",
-    isBookmarked: false,
   },
   {
     id: 763,
@@ -9547,7 +8785,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 0,
     createdAt: "2026-02-21T21:55:09",
-    isBookmarked: true,
   },
   {
     id: 764,
@@ -9559,7 +8796,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 4,
     createdAt: "2026-02-21T20:22:02",
-    isBookmarked: false,
   },
   {
     id: 765,
@@ -9572,7 +8808,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 8,
     createdAt: "2026-02-21T20:06:01",
-    isBookmarked: false,
   },
   {
     id: 766,
@@ -9586,7 +8821,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 4,
     createdAt: "2026-02-21T19:03:09",
-    isBookmarked: false,
   },
   {
     id: 767,
@@ -9595,7 +8829,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 5,
     createdAt: "2026-02-21T18:06:19",
-    isBookmarked: false,
   },
   {
     id: 768,
@@ -9610,7 +8843,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 9,
     createdAt: "2026-02-21T17:23:14",
-    isBookmarked: false,
   },
   {
     id: 769,
@@ -9623,7 +8855,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 5,
     createdAt: "2026-02-21T15:06:29",
-    isBookmarked: false,
   },
   {
     id: 770,
@@ -9637,7 +8868,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 6,
     createdAt: "2026-02-21T14:10:01",
-    isBookmarked: false,
   },
   {
     id: 771,
@@ -9652,7 +8882,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 7,
     createdAt: "2026-02-21T12:43:38",
-    isBookmarked: true,
   },
   {
     id: 772,
@@ -9664,7 +8893,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 8,
     createdAt: "2026-02-21T11:38:33",
-    isBookmarked: false,
   },
   {
     id: 773,
@@ -9676,7 +8904,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 4,
     createdAt: "2026-02-21T09:32:02",
-    isBookmarked: false,
   },
   {
     id: 774,
@@ -9691,7 +8918,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 8,
     createdAt: "2026-02-21T09:01:10",
-    isBookmarked: false,
   },
   {
     id: 775,
@@ -9705,7 +8931,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 4,
     createdAt: "2026-02-21T08:54:52",
-    isBookmarked: false,
   },
   {
     id: 776,
@@ -9719,7 +8944,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 0,
     createdAt: "2026-02-21T08:26:57",
-    isBookmarked: false,
   },
   {
     id: 777,
@@ -9734,7 +8958,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 7,
     createdAt: "2026-02-21T07:54:28",
-    isBookmarked: false,
   },
   {
     id: 778,
@@ -9743,7 +8966,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 6,
     createdAt: "2026-02-21T06:59:46",
-    isBookmarked: false,
   },
   {
     id: 779,
@@ -9752,7 +8974,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 6,
     createdAt: "2026-02-21T05:28:47",
-    isBookmarked: true,
   },
   {
     id: 780,
@@ -9761,7 +8982,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 8,
     createdAt: "2026-02-21T02:30:41",
-    isBookmarked: false,
   },
   {
     id: 781,
@@ -9770,7 +8990,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 8,
     createdAt: "2026-02-21T01:52:55",
-    isBookmarked: false,
   },
   {
     id: 782,
@@ -9783,7 +9002,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 7,
     createdAt: "2026-02-21T01:31:59",
-    isBookmarked: false,
   },
   {
     id: 783,
@@ -9797,7 +9015,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 4,
     createdAt: "2026-02-21T00:48:10",
-    isBookmarked: false,
   },
   {
     id: 784,
@@ -9810,7 +9027,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 5,
     createdAt: "2026-02-20T23:59:02",
-    isBookmarked: true,
   },
   {
     id: 785,
@@ -9825,7 +9041,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 5,
     createdAt: "2026-02-20T21:43:00",
-    isBookmarked: false,
   },
   {
     id: 786,
@@ -9839,7 +9054,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 1,
     createdAt: "2026-02-20T18:59:26",
-    isBookmarked: false,
   },
   {
     id: 787,
@@ -9848,7 +9062,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 8,
     createdAt: "2026-02-20T18:19:31",
-    isBookmarked: false,
   },
   {
     id: 788,
@@ -9860,7 +9073,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 7,
     createdAt: "2026-02-20T17:24:36",
-    isBookmarked: true,
   },
   {
     id: 789,
@@ -9872,7 +9084,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 0,
     createdAt: "2026-02-20T16:58:13",
-    isBookmarked: false,
   },
   {
     id: 790,
@@ -9884,7 +9095,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 6,
     createdAt: "2026-02-20T16:57:56",
-    isBookmarked: true,
   },
   {
     id: 791,
@@ -9899,7 +9109,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 1,
     createdAt: "2026-02-20T15:18:04",
-    isBookmarked: false,
   },
   {
     id: 792,
@@ -9914,7 +9123,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 2,
     createdAt: "2026-02-20T15:02:40",
-    isBookmarked: false,
   },
   {
     id: 793,
@@ -9927,7 +9135,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 8,
     createdAt: "2026-02-20T14:14:11",
-    isBookmarked: false,
   },
   {
     id: 794,
@@ -9941,7 +9148,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 9,
     createdAt: "2026-02-20T11:54:04",
-    isBookmarked: false,
   },
   {
     id: 795,
@@ -9955,7 +9161,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 6,
     createdAt: "2026-02-20T11:48:50",
-    isBookmarked: false,
   },
   {
     id: 796,
@@ -9968,7 +9173,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 5,
     createdAt: "2026-02-20T11:27:48",
-    isBookmarked: false,
   },
   {
     id: 797,
@@ -9983,7 +9187,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 0,
     createdAt: "2026-02-20T11:01:43",
-    isBookmarked: false,
   },
   {
     id: 798,
@@ -9998,7 +9201,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 2,
     createdAt: "2026-02-20T09:30:09",
-    isBookmarked: false,
   },
   {
     id: 799,
@@ -10010,7 +9212,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 5,
     createdAt: "2026-02-20T08:12:55",
-    isBookmarked: false,
   },
   {
     id: 800,
@@ -10023,7 +9224,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 1,
     createdAt: "2026-02-20T07:23:45",
-    isBookmarked: false,
   },
   {
     id: 801,
@@ -10037,7 +9237,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 5,
     createdAt: "2026-02-20T05:53:46",
-    isBookmarked: false,
   },
   {
     id: 802,
@@ -10051,7 +9250,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 7,
     createdAt: "2026-02-20T04:08:04",
-    isBookmarked: false,
   },
   {
     id: 803,
@@ -10064,7 +9262,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 7,
     createdAt: "2026-02-20T02:52:41",
-    isBookmarked: false,
   },
   {
     id: 804,
@@ -10078,7 +9275,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 4,
     createdAt: "2026-02-20T00:39:34",
-    isBookmarked: false,
   },
   {
     id: 805,
@@ -10091,7 +9287,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 4,
     createdAt: "2026-02-19T22:34:19",
-    isBookmarked: false,
   },
   {
     id: 806,
@@ -10104,7 +9299,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 2,
     createdAt: "2026-02-19T20:51:41",
-    isBookmarked: false,
   },
   {
     id: 807,
@@ -10117,7 +9311,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 2,
     createdAt: "2026-02-19T19:44:49",
-    isBookmarked: false,
   },
   {
     id: 808,
@@ -10130,7 +9323,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 3,
     createdAt: "2026-02-19T18:20:32",
-    isBookmarked: false,
   },
   {
     id: 809,
@@ -10144,7 +9336,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 6,
     createdAt: "2026-02-19T17:10:59",
-    isBookmarked: false,
   },
   {
     id: 810,
@@ -10153,7 +9344,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 6,
     createdAt: "2026-02-19T16:23:04",
-    isBookmarked: false,
   },
   {
     id: 811,
@@ -10166,7 +9356,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 8,
     createdAt: "2026-02-19T12:10:59",
-    isBookmarked: false,
   },
   {
     id: 812,
@@ -10178,7 +9367,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 8,
     createdAt: "2026-02-19T10:59:30",
-    isBookmarked: false,
   },
   {
     id: 813,
@@ -10193,7 +9381,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 0,
     createdAt: "2026-02-19T10:48:48",
-    isBookmarked: false,
   },
   {
     id: 814,
@@ -10208,7 +9395,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 12,
     createdAt: "2026-02-19T08:58:29",
-    isBookmarked: false,
   },
   {
     id: 815,
@@ -10221,7 +9407,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 16,
     createdAt: "2026-02-19T08:40:05",
-    isBookmarked: false,
   },
   {
     id: 816,
@@ -10234,7 +9419,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 10,
     createdAt: "2026-02-19T01:43:58",
-    isBookmarked: false,
   },
   {
     id: 817,
@@ -10249,7 +9433,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 3,
     createdAt: "2026-02-19T01:41:12",
-    isBookmarked: false,
   },
   {
     id: 818,
@@ -10263,7 +9446,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 0,
     createdAt: "2026-02-18T23:51:03",
-    isBookmarked: true,
   },
   {
     id: 819,
@@ -10276,7 +9458,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 4,
     createdAt: "2026-02-18T23:08:16",
-    isBookmarked: false,
   },
   {
     id: 820,
@@ -10289,7 +9470,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 3,
     createdAt: "2026-02-18T17:17:50",
-    isBookmarked: false,
   },
   {
     id: 821,
@@ -10302,7 +9482,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 6,
     createdAt: "2026-02-18T17:08:56",
-    isBookmarked: false,
   },
   {
     id: 822,
@@ -10311,7 +9490,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 4,
     createdAt: "2026-02-18T15:22:11",
-    isBookmarked: false,
   },
   {
     id: 823,
@@ -10326,7 +9504,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 5,
     createdAt: "2026-02-18T13:10:22",
-    isBookmarked: true,
   },
   {
     id: 824,
@@ -10339,7 +9516,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 4,
     createdAt: "2026-02-18T09:31:49",
-    isBookmarked: false,
   },
   {
     id: 825,
@@ -10354,7 +9530,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 1,
     createdAt: "2026-02-18T09:28:00",
-    isBookmarked: false,
   },
   {
     id: 826,
@@ -10368,7 +9543,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 3,
     createdAt: "2026-02-18T07:50:26",
-    isBookmarked: false,
   },
   {
     id: 827,
@@ -10381,7 +9555,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 4,
     createdAt: "2026-02-18T06:09:13",
-    isBookmarked: false,
   },
   {
     id: 828,
@@ -10390,7 +9563,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 11,
     createdAt: "2026-02-18T05:55:03",
-    isBookmarked: false,
   },
   {
     id: 829,
@@ -10404,7 +9576,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 1,
     createdAt: "2026-02-18T05:47:20",
-    isBookmarked: false,
   },
   {
     id: 830,
@@ -10418,7 +9589,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 6,
     createdAt: "2026-02-18T05:21:13",
-    isBookmarked: false,
   },
   {
     id: 831,
@@ -10431,7 +9601,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 5,
     createdAt: "2026-02-18T05:17:26",
-    isBookmarked: false,
   },
   {
     id: 832,
@@ -10445,7 +9614,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 0,
     createdAt: "2026-02-18T00:59:17",
-    isBookmarked: false,
   },
   {
     id: 833,
@@ -10459,7 +9627,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 16,
     createdAt: "2026-02-18T00:41:30",
-    isBookmarked: false,
   },
   {
     id: 834,
@@ -10472,7 +9639,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 6,
     createdAt: "2026-02-17T23:54:30",
-    isBookmarked: false,
   },
   {
     id: 835,
@@ -10481,7 +9647,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 7,
     createdAt: "2026-02-17T23:49:36",
-    isBookmarked: false,
   },
   {
     id: 836,
@@ -10493,7 +9658,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 1,
     createdAt: "2026-02-17T22:40:46",
-    isBookmarked: false,
   },
   {
     id: 837,
@@ -10506,7 +9670,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 1,
     createdAt: "2026-02-17T17:04:53",
-    isBookmarked: false,
   },
   {
     id: 838,
@@ -10518,7 +9681,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 0,
     createdAt: "2026-02-17T15:31:34",
-    isBookmarked: false,
   },
   {
     id: 839,
@@ -10527,7 +9689,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 4,
     createdAt: "2026-02-17T15:02:59",
-    isBookmarked: false,
   },
   {
     id: 840,
@@ -10536,7 +9697,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 3,
     createdAt: "2026-02-17T14:01:26",
-    isBookmarked: false,
   },
   {
     id: 841,
@@ -10551,7 +9711,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 6,
     createdAt: "2026-02-17T13:27:10",
-    isBookmarked: false,
   },
   {
     id: 842,
@@ -10566,7 +9725,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 3,
     createdAt: "2026-02-17T11:51:51",
-    isBookmarked: false,
   },
   {
     id: 843,
@@ -10579,7 +9737,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 2,
     createdAt: "2026-02-17T10:31:25",
-    isBookmarked: true,
   },
   {
     id: 844,
@@ -10588,7 +9745,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 2,
     createdAt: "2026-02-17T09:53:48",
-    isBookmarked: false,
   },
   {
     id: 845,
@@ -10601,7 +9757,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 4,
     createdAt: "2026-02-17T07:47:29",
-    isBookmarked: false,
   },
   {
     id: 846,
@@ -10613,7 +9768,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 5,
     createdAt: "2026-02-17T04:22:56",
-    isBookmarked: false,
   },
   {
     id: 847,
@@ -10628,7 +9782,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 6,
     createdAt: "2026-02-17T04:08:45",
-    isBookmarked: false,
   },
   {
     id: 848,
@@ -10637,7 +9790,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 0,
     createdAt: "2026-02-17T02:36:31",
-    isBookmarked: false,
   },
   {
     id: 849,
@@ -10652,7 +9804,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 0,
     createdAt: "2026-02-17T02:25:15",
-    isBookmarked: false,
   },
   {
     id: 850,
@@ -10664,7 +9815,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 2,
     createdAt: "2026-02-17T00:25:06",
-    isBookmarked: false,
   },
   {
     id: 851,
@@ -10679,7 +9829,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 13,
     createdAt: "2026-02-17T00:09:46",
-    isBookmarked: false,
   },
   {
     id: 852,
@@ -10692,7 +9841,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 4,
     createdAt: "2026-02-16T21:19:42",
-    isBookmarked: false,
   },
   {
     id: 853,
@@ -10707,7 +9855,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 8,
     createdAt: "2026-02-16T21:12:11",
-    isBookmarked: false,
   },
   {
     id: 854,
@@ -10721,7 +9868,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 7,
     createdAt: "2026-02-16T19:03:32",
-    isBookmarked: false,
   },
   {
     id: 855,
@@ -10733,7 +9879,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 8,
     createdAt: "2026-02-16T18:43:58",
-    isBookmarked: false,
   },
   {
     id: 856,
@@ -10742,7 +9887,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 5,
     createdAt: "2026-02-16T18:05:50",
-    isBookmarked: false,
   },
   {
     id: 857,
@@ -10751,7 +9895,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 2,
     createdAt: "2026-02-16T17:18:52",
-    isBookmarked: true,
   },
   {
     id: 858,
@@ -10763,7 +9906,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 4,
     createdAt: "2026-02-16T16:23:32",
-    isBookmarked: true,
   },
   {
     id: 859,
@@ -10772,7 +9914,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 6,
     createdAt: "2026-02-16T15:44:20",
-    isBookmarked: false,
   },
   {
     id: 860,
@@ -10786,7 +9927,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 2,
     createdAt: "2026-02-16T15:43:11",
-    isBookmarked: true,
   },
   {
     id: 861,
@@ -10800,7 +9940,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 7,
     createdAt: "2026-02-16T15:10:19",
-    isBookmarked: true,
   },
   {
     id: 862,
@@ -10814,7 +9953,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 14,
     createdAt: "2026-02-16T13:55:59",
-    isBookmarked: false,
   },
   {
     id: 863,
@@ -10828,7 +9966,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 10,
     createdAt: "2026-02-16T12:34:38",
-    isBookmarked: false,
   },
   {
     id: 864,
@@ -10843,7 +9980,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 3,
     createdAt: "2026-02-16T11:45:10",
-    isBookmarked: false,
   },
   {
     id: 865,
@@ -10855,7 +9991,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 1,
     createdAt: "2026-02-16T09:36:08",
-    isBookmarked: true,
   },
   {
     id: 866,
@@ -10869,7 +10004,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 3,
     createdAt: "2026-02-16T08:51:05",
-    isBookmarked: false,
   },
   {
     id: 867,
@@ -10878,7 +10012,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 4,
     createdAt: "2026-02-16T08:24:35",
-    isBookmarked: false,
   },
   {
     id: 868,
@@ -10890,7 +10023,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 1,
     createdAt: "2026-02-16T08:05:00",
-    isBookmarked: true,
   },
   {
     id: 869,
@@ -10899,7 +10031,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 4,
     createdAt: "2026-02-16T07:21:37",
-    isBookmarked: false,
   },
   {
     id: 870,
@@ -10912,7 +10043,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 5,
     createdAt: "2026-02-16T02:14:27",
-    isBookmarked: false,
   },
   {
     id: 871,
@@ -10924,7 +10054,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 0,
     createdAt: "2026-02-16T00:53:57",
-    isBookmarked: false,
   },
   {
     id: 872,
@@ -10939,7 +10068,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 2,
     createdAt: "2026-02-16T00:36:27",
-    isBookmarked: false,
   },
   {
     id: 873,
@@ -10952,7 +10080,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 8,
     createdAt: "2026-02-15T21:14:18",
-    isBookmarked: false,
   },
   {
     id: 874,
@@ -10965,7 +10092,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 1,
     createdAt: "2026-02-15T19:40:12",
-    isBookmarked: false,
   },
   {
     id: 875,
@@ -10977,7 +10103,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 3,
     createdAt: "2026-02-15T17:23:01",
-    isBookmarked: false,
   },
   {
     id: 876,
@@ -10992,7 +10117,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 7,
     createdAt: "2026-02-15T17:01:26",
-    isBookmarked: false,
   },
   {
     id: 877,
@@ -11001,7 +10125,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 1,
     createdAt: "2026-02-15T10:11:48",
-    isBookmarked: false,
   },
   {
     id: 878,
@@ -11010,7 +10133,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 5,
     createdAt: "2026-02-15T07:36:51",
-    isBookmarked: false,
   },
   {
     id: 879,
@@ -11019,7 +10141,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 1,
     createdAt: "2026-02-15T07:24:04",
-    isBookmarked: false,
   },
   {
     id: 880,
@@ -11031,7 +10152,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 2,
     createdAt: "2026-02-15T06:46:19",
-    isBookmarked: false,
   },
   {
     id: 881,
@@ -11043,7 +10163,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 2,
     createdAt: "2026-02-15T06:19:01",
-    isBookmarked: false,
   },
   {
     id: 882,
@@ -11058,7 +10177,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 6,
     createdAt: "2026-02-15T06:06:21",
-    isBookmarked: false,
   },
   {
     id: 883,
@@ -11071,7 +10189,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 6,
     createdAt: "2026-02-15T05:22:30",
-    isBookmarked: false,
   },
   {
     id: 884,
@@ -11084,7 +10201,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 5,
     createdAt: "2026-02-15T03:07:11",
-    isBookmarked: false,
   },
   {
     id: 885,
@@ -11096,7 +10212,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 4,
     createdAt: "2026-02-15T02:42:14",
-    isBookmarked: false,
   },
   {
     id: 886,
@@ -11105,7 +10220,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 3,
     createdAt: "2026-02-15T01:46:14",
-    isBookmarked: true,
   },
   {
     id: 887,
@@ -11114,7 +10228,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 8,
     createdAt: "2026-02-15T01:43:32",
-    isBookmarked: false,
   },
   {
     id: 888,
@@ -11128,7 +10241,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 4,
     createdAt: "2026-02-14T21:27:05",
-    isBookmarked: false,
   },
   {
     id: 889,
@@ -11137,7 +10249,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 3,
     createdAt: "2026-02-14T21:24:19",
-    isBookmarked: false,
   },
   {
     id: 890,
@@ -11151,7 +10262,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 7,
     createdAt: "2026-02-14T21:09:33",
-    isBookmarked: true,
   },
   {
     id: 891,
@@ -11166,7 +10276,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 4,
     createdAt: "2026-02-14T20:46:33",
-    isBookmarked: false,
   },
   {
     id: 892,
@@ -11178,7 +10287,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 6,
     createdAt: "2026-02-14T20:40:21",
-    isBookmarked: false,
   },
   {
     id: 893,
@@ -11190,7 +10298,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 1,
     createdAt: "2026-02-14T18:56:25",
-    isBookmarked: true,
   },
   {
     id: 894,
@@ -11199,7 +10306,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 0,
     createdAt: "2026-02-14T15:27:58",
-    isBookmarked: false,
   },
   {
     id: 895,
@@ -11214,7 +10320,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 3,
     createdAt: "2026-02-14T15:27:17",
-    isBookmarked: false,
   },
   {
     id: 896,
@@ -11223,7 +10328,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 7,
     createdAt: "2026-02-14T13:27:31",
-    isBookmarked: false,
   },
   {
     id: 897,
@@ -11238,7 +10342,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 10,
     createdAt: "2026-02-14T09:59:52",
-    isBookmarked: false,
   },
   {
     id: 898,
@@ -11250,7 +10353,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 0,
     createdAt: "2026-02-14T09:40:27",
-    isBookmarked: false,
   },
   {
     id: 899,
@@ -11265,7 +10367,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 7,
     createdAt: "2026-02-14T08:55:08",
-    isBookmarked: false,
   },
   {
     id: 900,
@@ -11280,7 +10381,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 2,
     createdAt: "2026-02-14T06:43:07",
-    isBookmarked: false,
   },
   {
     id: 901,
@@ -11292,7 +10392,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 8,
     createdAt: "2026-02-14T06:40:53",
-    isBookmarked: true,
   },
   {
     id: 902,
@@ -11307,7 +10406,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 7,
     createdAt: "2026-02-14T06:30:52",
-    isBookmarked: false,
   },
   {
     id: 903,
@@ -11319,7 +10417,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 2,
     createdAt: "2026-02-14T05:49:58",
-    isBookmarked: false,
   },
   {
     id: 904,
@@ -11331,7 +10428,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 7,
     createdAt: "2026-02-14T02:57:40",
-    isBookmarked: false,
   },
   {
     id: 905,
@@ -11345,7 +10441,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 6,
     createdAt: "2026-02-14T01:37:33",
-    isBookmarked: true,
   },
   {
     id: 906,
@@ -11358,7 +10453,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 8,
     createdAt: "2026-02-14T01:23:36",
-    isBookmarked: true,
   },
   {
     id: 907,
@@ -11370,7 +10464,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 2,
     createdAt: "2026-02-14T00:55:54",
-    isBookmarked: false,
   },
   {
     id: 908,
@@ -11379,7 +10472,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 2,
     createdAt: "2026-02-13T19:23:26",
-    isBookmarked: true,
   },
   {
     id: 909,
@@ -11391,7 +10483,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 3,
     createdAt: "2026-02-13T18:17:28",
-    isBookmarked: false,
   },
   {
     id: 910,
@@ -11404,7 +10495,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 6,
     createdAt: "2026-02-13T17:16:00",
-    isBookmarked: true,
   },
   {
     id: 911,
@@ -11419,7 +10509,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 0,
     createdAt: "2026-02-13T16:03:55",
-    isBookmarked: false,
   },
   {
     id: 912,
@@ -11428,7 +10517,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 6,
     createdAt: "2026-02-13T14:45:20",
-    isBookmarked: false,
   },
   {
     id: 913,
@@ -11440,7 +10528,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 4,
     createdAt: "2026-02-13T14:36:38",
-    isBookmarked: false,
   },
   {
     id: 914,
@@ -11453,7 +10540,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 0,
     createdAt: "2026-02-13T12:51:58",
-    isBookmarked: false,
   },
   {
     id: 915,
@@ -11462,7 +10548,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 7,
     createdAt: "2026-02-13T12:02:34",
-    isBookmarked: false,
   },
   {
     id: 916,
@@ -11475,7 +10560,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 7,
     createdAt: "2026-02-13T11:43:48",
-    isBookmarked: false,
   },
   {
     id: 917,
@@ -11489,7 +10573,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 8,
     createdAt: "2026-02-13T07:50:28",
-    isBookmarked: false,
   },
   {
     id: 918,
@@ -11501,7 +10584,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 12,
     createdAt: "2026-02-13T07:29:45",
-    isBookmarked: false,
   },
   {
     id: 919,
@@ -11513,7 +10595,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 7,
     createdAt: "2026-02-13T01:37:28",
-    isBookmarked: false,
   },
   {
     id: 920,
@@ -11528,7 +10609,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 3,
     createdAt: "2026-02-12T23:27:46",
-    isBookmarked: false,
   },
   {
     id: 921,
@@ -11541,7 +10621,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 1,
     createdAt: "2026-02-12T22:06:48",
-    isBookmarked: false,
   },
   {
     id: 922,
@@ -11556,7 +10635,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 3,
     createdAt: "2026-02-12T20:47:51",
-    isBookmarked: false,
   },
   {
     id: 923,
@@ -11570,7 +10648,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 7,
     createdAt: "2026-02-12T19:12:36",
-    isBookmarked: false,
   },
   {
     id: 924,
@@ -11585,7 +10662,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 3,
     createdAt: "2026-02-12T18:34:37",
-    isBookmarked: false,
   },
   {
     id: 925,
@@ -11598,7 +10674,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 7,
     createdAt: "2026-02-12T17:48:14",
-    isBookmarked: false,
   },
   {
     id: 926,
@@ -11613,7 +10688,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 6,
     createdAt: "2026-02-12T13:36:55",
-    isBookmarked: false,
   },
   {
     id: 927,
@@ -11627,7 +10701,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 8,
     createdAt: "2026-02-12T13:10:23",
-    isBookmarked: false,
   },
   {
     id: 928,
@@ -11640,7 +10713,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 2,
     createdAt: "2026-02-12T10:40:29",
-    isBookmarked: false,
   },
   {
     id: 929,
@@ -11655,7 +10727,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 5,
     createdAt: "2026-02-12T09:50:06",
-    isBookmarked: false,
   },
   {
     id: 930,
@@ -11670,7 +10741,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 3,
     createdAt: "2026-02-12T07:17:47",
-    isBookmarked: false,
   },
   {
     id: 931,
@@ -11685,7 +10755,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 0,
     createdAt: "2026-02-12T06:27:36",
-    isBookmarked: false,
   },
   {
     id: 932,
@@ -11699,7 +10768,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 8,
     createdAt: "2026-02-12T04:49:35",
-    isBookmarked: false,
   },
   {
     id: 933,
@@ -11712,7 +10780,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 1,
     createdAt: "2026-02-12T04:05:49",
-    isBookmarked: false,
   },
   {
     id: 934,
@@ -11724,7 +10791,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 6,
     createdAt: "2026-02-12T00:57:40",
-    isBookmarked: true,
   },
   {
     id: 935,
@@ -11738,7 +10804,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 6,
     createdAt: "2026-02-12T00:40:34",
-    isBookmarked: true,
   },
   {
     id: 936,
@@ -11752,7 +10817,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 3,
     createdAt: "2026-02-12T00:22:29",
-    isBookmarked: false,
   },
   {
     id: 937,
@@ -11766,7 +10830,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 5,
     createdAt: "2026-02-11T23:40:15",
-    isBookmarked: false,
   },
   {
     id: 938,
@@ -11779,7 +10842,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 4,
     createdAt: "2026-02-11T22:51:53",
-    isBookmarked: false,
   },
   {
     id: 939,
@@ -11792,7 +10854,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 0,
     createdAt: "2026-02-11T20:27:53",
-    isBookmarked: false,
   },
   {
     id: 940,
@@ -11806,7 +10867,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 3,
     createdAt: "2026-02-11T19:05:56",
-    isBookmarked: false,
   },
   {
     id: 941,
@@ -11820,7 +10880,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 7,
     createdAt: "2026-02-11T18:19:57",
-    isBookmarked: false,
   },
   {
     id: 942,
@@ -11834,7 +10893,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 15,
     createdAt: "2026-02-11T18:15:48",
-    isBookmarked: false,
   },
   {
     id: 943,
@@ -11849,7 +10907,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 6,
     createdAt: "2026-02-11T15:27:39",
-    isBookmarked: false,
   },
   {
     id: 944,
@@ -11863,7 +10920,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 2,
     createdAt: "2026-02-11T14:55:21",
-    isBookmarked: false,
   },
   {
     id: 945,
@@ -11877,7 +10933,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 0,
     createdAt: "2026-02-11T11:34:03",
-    isBookmarked: false,
   },
   {
     id: 946,
@@ -11886,7 +10941,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 6,
     createdAt: "2026-02-11T09:52:34",
-    isBookmarked: true,
   },
   {
     id: 947,
@@ -11899,7 +10953,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 8,
     createdAt: "2026-02-11T09:49:16",
-    isBookmarked: false,
   },
   {
     id: 948,
@@ -11912,7 +10965,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 8,
     createdAt: "2026-02-11T09:03:25",
-    isBookmarked: true,
   },
   {
     id: 949,
@@ -11926,7 +10978,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 6,
     createdAt: "2026-02-11T08:50:46",
-    isBookmarked: false,
   },
   {
     id: 950,
@@ -11940,7 +10991,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 2,
     createdAt: "2026-02-11T08:36:06",
-    isBookmarked: false,
   },
   {
     id: 951,
@@ -11954,7 +11004,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 13,
     createdAt: "2026-02-11T08:33:36",
-    isBookmarked: false,
   },
   {
     id: 952,
@@ -11969,7 +11018,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 1,
     createdAt: "2026-02-11T08:23:52",
-    isBookmarked: false,
   },
   {
     id: 953,
@@ -11982,7 +11030,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 8,
     createdAt: "2026-02-11T08:05:02",
-    isBookmarked: false,
   },
   {
     id: 954,
@@ -11997,7 +11044,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 8,
     createdAt: "2026-02-11T07:56:57",
-    isBookmarked: false,
   },
   {
     id: 955,
@@ -12009,7 +11055,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 1,
     createdAt: "2026-02-11T07:13:29",
-    isBookmarked: false,
   },
   {
     id: 956,
@@ -12024,7 +11069,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 0,
     createdAt: "2026-02-11T07:00:10",
-    isBookmarked: false,
   },
   {
     id: 957,
@@ -12039,7 +11083,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 8,
     createdAt: "2026-02-11T01:45:13",
-    isBookmarked: true,
   },
   {
     id: 958,
@@ -12051,7 +11094,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 5,
     createdAt: "2026-02-10T21:42:50",
-    isBookmarked: false,
   },
   {
     id: 959,
@@ -12065,7 +11107,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 1,
     createdAt: "2026-02-10T21:03:25",
-    isBookmarked: false,
   },
   {
     id: 960,
@@ -12077,7 +11118,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 2,
     createdAt: "2026-02-10T20:57:19",
-    isBookmarked: true,
   },
   {
     id: 961,
@@ -12092,7 +11132,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 1,
     createdAt: "2026-02-10T16:47:00",
-    isBookmarked: false,
   },
   {
     id: 962,
@@ -12105,7 +11144,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 13,
     createdAt: "2026-02-10T14:32:50",
-    isBookmarked: false,
   },
   {
     id: 963,
@@ -12119,7 +11157,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 4,
     createdAt: "2026-02-10T12:32:34",
-    isBookmarked: false,
   },
   {
     id: 964,
@@ -12128,7 +11165,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 4,
     createdAt: "2026-02-10T11:47:32",
-    isBookmarked: false,
   },
   {
     id: 965,
@@ -12141,7 +11177,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 0,
     createdAt: "2026-02-10T10:28:18",
-    isBookmarked: false,
   },
   {
     id: 966,
@@ -12150,7 +11185,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 0,
     createdAt: "2026-02-10T09:31:11",
-    isBookmarked: false,
   },
   {
     id: 967,
@@ -12164,7 +11198,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 1,
     createdAt: "2026-02-10T09:10:57",
-    isBookmarked: false,
   },
   {
     id: 968,
@@ -12177,7 +11210,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 2,
     createdAt: "2026-02-10T08:48:18",
-    isBookmarked: false,
   },
   {
     id: 969,
@@ -12192,7 +11224,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 6,
     createdAt: "2026-02-10T08:09:09",
-    isBookmarked: false,
   },
   {
     id: 970,
@@ -12205,7 +11236,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 2,
     createdAt: "2026-02-10T07:47:39",
-    isBookmarked: false,
   },
   {
     id: 971,
@@ -12218,7 +11248,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 5,
     createdAt: "2026-02-10T05:39:37",
-    isBookmarked: false,
   },
   {
     id: 972,
@@ -12230,7 +11259,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 2,
     createdAt: "2026-02-10T05:02:37",
-    isBookmarked: false,
   },
   {
     id: 973,
@@ -12245,7 +11273,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 4,
     createdAt: "2026-02-10T04:49:50",
-    isBookmarked: true,
   },
   {
     id: 974,
@@ -12258,7 +11285,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 5,
     createdAt: "2026-02-10T04:43:57",
-    isBookmarked: false,
   },
   {
     id: 975,
@@ -12271,7 +11297,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 11,
     createdAt: "2026-02-10T03:03:23",
-    isBookmarked: false,
   },
   {
     id: 976,
@@ -12280,7 +11305,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 6,
     createdAt: "2026-02-10T02:13:32",
-    isBookmarked: false,
   },
   {
     id: 977,
@@ -12293,7 +11317,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 7,
     createdAt: "2026-02-10T00:18:16",
-    isBookmarked: false,
   },
   {
     id: 978,
@@ -12307,7 +11330,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 1,
     createdAt: "2026-02-09T23:03:33",
-    isBookmarked: false,
   },
   {
     id: 979,
@@ -12319,7 +11341,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 1,
     createdAt: "2026-02-09T22:37:05",
-    isBookmarked: false,
   },
   {
     id: 980,
@@ -12334,7 +11355,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 6,
     createdAt: "2026-02-09T22:03:18",
-    isBookmarked: true,
   },
   {
     id: 981,
@@ -12346,7 +11366,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 4,
     createdAt: "2026-02-09T21:45:57",
-    isBookmarked: false,
   },
   {
     id: 982,
@@ -12359,7 +11378,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 7,
     createdAt: "2026-02-09T21:10:39",
-    isBookmarked: false,
   },
   {
     id: 983,
@@ -12373,7 +11391,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 7,
     createdAt: "2026-02-09T18:42:34",
-    isBookmarked: false,
   },
   {
     id: 984,
@@ -12386,7 +11403,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 6,
     createdAt: "2026-02-09T18:33:19",
-    isBookmarked: true,
   },
   {
     id: 985,
@@ -12399,7 +11415,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 6,
     createdAt: "2026-02-09T18:17:44",
-    isBookmarked: false,
   },
   {
     id: 986,
@@ -12414,7 +11429,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 5,
     createdAt: "2026-02-09T17:02:34",
-    isBookmarked: false,
   },
   {
     id: 987,
@@ -12428,7 +11442,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 5,
     createdAt: "2026-02-09T15:18:54",
-    isBookmarked: false,
   },
   {
     id: 988,
@@ -12441,7 +11454,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 1,
     createdAt: "2026-02-09T14:28:18",
-    isBookmarked: false,
   },
   {
     id: 989,
@@ -12454,7 +11466,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 1,
     createdAt: "2026-02-09T13:38:18",
-    isBookmarked: false,
   },
   {
     id: 990,
@@ -12467,7 +11478,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 7,
     createdAt: "2026-02-09T13:20:55",
-    isBookmarked: false,
   },
   {
     id: 991,
@@ -12481,7 +11491,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 4,
     createdAt: "2026-02-09T10:14:07",
-    isBookmarked: false,
   },
   {
     id: 992,
@@ -12496,7 +11505,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 8,
     createdAt: "2026-02-09T09:02:06",
-    isBookmarked: false,
   },
   {
     id: 993,
@@ -12511,7 +11519,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 5,
     createdAt: "2026-02-09T08:17:35",
-    isBookmarked: false,
   },
   {
     id: 994,
@@ -12526,7 +11533,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 0,
     createdAt: "2026-02-09T07:53:03",
-    isBookmarked: false,
   },
   {
     id: 995,
@@ -12539,7 +11545,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 3,
     createdAt: "2026-02-09T05:21:36",
-    isBookmarked: false,
   },
   {
     id: 996,
@@ -12552,7 +11557,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 6,
     createdAt: "2026-02-09T04:05:22",
-    isBookmarked: false,
   },
   {
     id: 997,
@@ -12565,7 +11569,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 7,
     createdAt: "2026-02-09T02:02:42",
-    isBookmarked: false,
   },
   {
     id: 998,
@@ -12578,7 +11581,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 1,
     createdAt: "2026-02-09T01:06:17",
-    isBookmarked: true,
   },
   {
     id: 999,
@@ -12593,7 +11595,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 8,
     createdAt: "2026-02-08T22:08:10",
-    isBookmarked: false,
   },
   {
     id: 1000,
@@ -12605,7 +11606,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 7,
     createdAt: "2026-02-08T20:48:46",
-    isBookmarked: false,
   },
   {
     id: 1001,
@@ -12620,7 +11620,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 8,
     createdAt: "2026-02-08T20:26:59",
-    isBookmarked: false,
   },
   {
     id: 1002,
@@ -12629,7 +11628,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 7,
     createdAt: "2026-02-08T19:12:38",
-    isBookmarked: false,
   },
   {
     id: 1003,
@@ -12644,7 +11642,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 8,
     createdAt: "2026-02-08T17:44:15",
-    isBookmarked: false,
   },
   {
     id: 1004,
@@ -12656,7 +11653,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 0,
     createdAt: "2026-02-08T17:12:25",
-    isBookmarked: false,
   },
   {
     id: 1005,
@@ -12671,7 +11667,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 3,
     createdAt: "2026-02-08T15:14:18",
-    isBookmarked: false,
   },
   {
     id: 1006,
@@ -12685,7 +11680,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 6,
     createdAt: "2026-02-08T14:05:05",
-    isBookmarked: false,
   },
   {
     id: 1007,
@@ -12697,7 +11691,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 5,
     createdAt: "2026-02-08T13:48:18",
-    isBookmarked: false,
   },
   {
     id: 1008,
@@ -12712,7 +11705,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 2,
     createdAt: "2026-02-08T13:41:35",
-    isBookmarked: false,
   },
   {
     id: 1009,
@@ -12721,7 +11713,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 0,
     createdAt: "2026-02-08T07:45:37",
-    isBookmarked: false,
   },
   {
     id: 1010,
@@ -12730,7 +11721,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 3,
     createdAt: "2026-02-08T04:15:27",
-    isBookmarked: true,
   },
   {
     id: 1011,
@@ -12739,7 +11729,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 2,
     createdAt: "2026-02-08T03:12:58",
-    isBookmarked: false,
   },
   {
     id: 1012,
@@ -12751,7 +11740,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 8,
     createdAt: "2026-02-08T02:26:16",
-    isBookmarked: true,
   },
   {
     id: 1013,
@@ -12764,7 +11752,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 1,
     createdAt: "2026-02-08T00:30:52",
-    isBookmarked: false,
   },
   {
     id: 1014,
@@ -12776,7 +11763,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 6,
     createdAt: "2026-02-07T23:29:55",
-    isBookmarked: false,
   },
   {
     id: 1015,
@@ -12788,7 +11774,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 2,
     createdAt: "2026-02-07T20:03:45",
-    isBookmarked: false,
   },
   {
     id: 1016,
@@ -12803,7 +11788,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 5,
     createdAt: "2026-02-07T19:57:47",
-    isBookmarked: false,
   },
   {
     id: 1017,
@@ -12812,7 +11796,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 8,
     createdAt: "2026-02-07T19:09:02",
-    isBookmarked: false,
   },
   {
     id: 1018,
@@ -12826,7 +11809,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 5,
     createdAt: "2026-02-07T15:35:30",
-    isBookmarked: false,
   },
   {
     id: 1019,
@@ -12835,7 +11817,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 5,
     createdAt: "2026-02-07T15:24:11",
-    isBookmarked: false,
   },
   {
     id: 1020,
@@ -12848,7 +11829,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 6,
     createdAt: "2026-02-07T15:16:40",
-    isBookmarked: false,
   },
   {
     id: 1021,
@@ -12862,7 +11842,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 2,
     createdAt: "2026-02-07T15:14:23",
-    isBookmarked: false,
   },
   {
     id: 1022,
@@ -12876,7 +11855,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 2,
     createdAt: "2026-02-07T14:41:26",
-    isBookmarked: false,
   },
   {
     id: 1023,
@@ -12885,7 +11863,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 0,
     createdAt: "2026-02-07T14:38:12",
-    isBookmarked: false,
   },
   {
     id: 1024,
@@ -12900,7 +11877,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 5,
     createdAt: "2026-02-07T14:00:37",
-    isBookmarked: false,
   },
   {
     id: 1025,
@@ -12909,7 +11885,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 2,
     createdAt: "2026-02-07T13:17:47",
-    isBookmarked: false,
   },
   {
     id: 1026,
@@ -12918,7 +11893,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 8,
     createdAt: "2026-02-07T12:32:52",
-    isBookmarked: false,
   },
   {
     id: 1027,
@@ -12933,7 +11907,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 6,
     createdAt: "2026-02-07T10:25:59",
-    isBookmarked: false,
   },
   {
     id: 1028,
@@ -12948,7 +11921,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 4,
     createdAt: "2026-02-07T05:33:38",
-    isBookmarked: false,
   },
   {
     id: 1029,
@@ -12961,7 +11933,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 1,
     createdAt: "2026-02-07T05:05:42",
-    isBookmarked: false,
   },
   {
     id: 1030,
@@ -12975,7 +11946,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 8,
     createdAt: "2026-02-07T01:35:34",
-    isBookmarked: false,
   },
   {
     id: 1031,
@@ -12988,7 +11958,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 2,
     createdAt: "2026-02-07T00:03:24",
-    isBookmarked: false,
   },
   {
     id: 1032,
@@ -12997,7 +11966,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 6,
     createdAt: "2026-02-06T23:59:52",
-    isBookmarked: true,
   },
   {
     id: 1033,
@@ -13010,7 +11978,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 7,
     createdAt: "2026-02-06T22:40:46",
-    isBookmarked: false,
   },
   {
     id: 1034,
@@ -13025,7 +11992,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 6,
     createdAt: "2026-02-06T22:21:37",
-    isBookmarked: false,
   },
   {
     id: 1035,
@@ -13040,7 +12006,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 7,
     createdAt: "2026-02-06T19:27:49",
-    isBookmarked: false,
   },
   {
     id: 1036,
@@ -13049,7 +12014,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 5,
     createdAt: "2026-02-06T19:19:22",
-    isBookmarked: false,
   },
   {
     id: 1037,
@@ -13062,7 +12026,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 14,
     createdAt: "2026-02-06T19:18:38",
-    isBookmarked: false,
   },
   {
     id: 1038,
@@ -13071,7 +12034,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 2,
     createdAt: "2026-02-06T19:04:29",
-    isBookmarked: false,
   },
   {
     id: 1039,
@@ -13085,7 +12047,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 13,
     createdAt: "2026-02-06T17:52:49",
-    isBookmarked: false,
   },
   {
     id: 1040,
@@ -13097,7 +12058,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 4,
     createdAt: "2026-02-06T16:51:11",
-    isBookmarked: true,
   },
   {
     id: 1041,
@@ -13111,7 +12071,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 1,
     createdAt: "2026-02-06T16:43:36",
-    isBookmarked: false,
   },
   {
     id: 1042,
@@ -13123,7 +12082,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 8,
     createdAt: "2026-02-06T15:19:27",
-    isBookmarked: true,
   },
   {
     id: 1043,
@@ -13135,7 +12093,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 10,
     createdAt: "2026-02-06T13:44:35",
-    isBookmarked: true,
   },
   {
     id: 1044,
@@ -13149,7 +12106,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 11,
     createdAt: "2026-02-06T12:53:02",
-    isBookmarked: true,
   },
   {
     id: 1045,
@@ -13163,7 +12119,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 1,
     createdAt: "2026-02-06T11:47:20",
-    isBookmarked: false,
   },
   {
     id: 1046,
@@ -13178,7 +12133,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 2,
     createdAt: "2026-02-06T11:05:49",
-    isBookmarked: false,
   },
   {
     id: 1047,
@@ -13191,7 +12145,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 6,
     createdAt: "2026-02-06T07:56:18",
-    isBookmarked: false,
   },
   {
     id: 1048,
@@ -13204,7 +12157,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 5,
     createdAt: "2026-02-06T06:41:03",
-    isBookmarked: false,
   },
   {
     id: 1049,
@@ -13218,7 +12170,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 0,
     createdAt: "2026-02-06T03:42:13",
-    isBookmarked: false,
   },
   {
     id: 1050,
@@ -13233,7 +12184,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 6,
     createdAt: "2026-02-06T01:36:39",
-    isBookmarked: false,
   },
   {
     id: 1051,
@@ -13242,7 +12192,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 2,
     createdAt: "2026-02-06T01:33:08",
-    isBookmarked: false,
   },
   {
     id: 1052,
@@ -13256,7 +12205,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 4,
     createdAt: "2026-02-05T22:57:17",
-    isBookmarked: false,
   },
   {
     id: 1053,
@@ -13268,7 +12216,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 8,
     createdAt: "2026-02-05T20:52:43",
-    isBookmarked: false,
   },
   {
     id: 1054,
@@ -13277,7 +12224,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 2,
     createdAt: "2026-02-05T20:49:45",
-    isBookmarked: false,
   },
   {
     id: 1055,
@@ -13289,7 +12235,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 5,
     createdAt: "2026-02-05T20:32:15",
-    isBookmarked: false,
   },
   {
     id: 1056,
@@ -13298,7 +12243,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 4,
     createdAt: "2026-02-05T20:13:23",
-    isBookmarked: false,
   },
   {
     id: 1057,
@@ -13313,7 +12257,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 6,
     createdAt: "2026-02-05T18:48:19",
-    isBookmarked: false,
   },
   {
     id: 1058,
@@ -13322,7 +12265,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 8,
     createdAt: "2026-02-05T18:47:37",
-    isBookmarked: false,
   },
   {
     id: 1059,
@@ -13331,7 +12273,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 2,
     createdAt: "2026-02-05T17:42:09",
-    isBookmarked: false,
   },
   {
     id: 1060,
@@ -13346,7 +12287,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 4,
     createdAt: "2026-02-05T16:55:16",
-    isBookmarked: false,
   },
   {
     id: 1061,
@@ -13360,7 +12300,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 1,
     createdAt: "2026-02-05T14:37:16",
-    isBookmarked: true,
   },
   {
     id: 1062,
@@ -13374,7 +12313,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 4,
     createdAt: "2026-02-05T14:18:38",
-    isBookmarked: false,
   },
   {
     id: 1063,
@@ -13387,7 +12325,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 4,
     createdAt: "2026-02-05T14:00:50",
-    isBookmarked: false,
   },
   {
     id: 1064,
@@ -13401,7 +12338,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 2,
     createdAt: "2026-02-05T09:53:37",
-    isBookmarked: true,
   },
   {
     id: 1065,
@@ -13414,7 +12350,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 7,
     createdAt: "2026-02-05T08:45:07",
-    isBookmarked: false,
   },
   {
     id: 1066,
@@ -13423,7 +12358,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 4,
     createdAt: "2026-02-05T07:56:21",
-    isBookmarked: false,
   },
   {
     id: 1067,
@@ -13435,7 +12369,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 4,
     createdAt: "2026-02-05T07:26:02",
-    isBookmarked: false,
   },
   {
     id: 1068,
@@ -13448,7 +12381,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 1,
     createdAt: "2026-02-05T07:24:43",
-    isBookmarked: false,
   },
   {
     id: 1069,
@@ -13460,7 +12392,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 2,
     createdAt: "2026-02-05T00:14:58",
-    isBookmarked: true,
   },
   {
     id: 1070,
@@ -13472,7 +12403,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 4,
     createdAt: "2026-02-04T20:54:52",
-    isBookmarked: false,
   },
   {
     id: 1071,
@@ -13486,7 +12416,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 0,
     createdAt: "2026-02-04T20:14:24",
-    isBookmarked: true,
   },
   {
     id: 1072,
@@ -13501,7 +12430,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 6,
     createdAt: "2026-02-04T20:13:30",
-    isBookmarked: true,
   },
   {
     id: 1073,
@@ -13516,7 +12444,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 0,
     createdAt: "2026-02-04T19:07:31",
-    isBookmarked: false,
   },
   {
     id: 1074,
@@ -13530,7 +12457,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 13,
     createdAt: "2026-02-04T18:29:29",
-    isBookmarked: false,
   },
   {
     id: 1075,
@@ -13539,7 +12465,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 2,
     createdAt: "2026-02-04T17:54:53",
-    isBookmarked: false,
   },
   {
     id: 1076,
@@ -13554,7 +12479,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 0,
     createdAt: "2026-02-04T17:41:08",
-    isBookmarked: false,
   },
   {
     id: 1077,
@@ -13567,7 +12491,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 5,
     createdAt: "2026-02-04T17:04:31",
-    isBookmarked: true,
   },
   {
     id: 1078,
@@ -13579,7 +12502,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 4,
     createdAt: "2026-02-04T10:53:41",
-    isBookmarked: false,
   },
   {
     id: 1079,
@@ -13593,7 +12515,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 6,
     createdAt: "2026-02-04T08:13:29",
-    isBookmarked: false,
   },
   {
     id: 1080,
@@ -13608,7 +12529,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 12,
     createdAt: "2026-02-04T07:49:17",
-    isBookmarked: false,
   },
   {
     id: 1081,
@@ -13622,7 +12542,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 9,
     createdAt: "2026-02-04T06:10:17",
-    isBookmarked: false,
   },
   {
     id: 1082,
@@ -13634,7 +12553,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 1,
     createdAt: "2026-02-04T05:44:39",
-    isBookmarked: false,
   },
   {
     id: 1083,
@@ -13648,7 +12566,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 2,
     createdAt: "2026-02-04T03:59:43",
-    isBookmarked: false,
   },
   {
     id: 1084,
@@ -13662,7 +12579,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 4,
     createdAt: "2026-02-04T02:46:41",
-    isBookmarked: false,
   },
   {
     id: 1085,
@@ -13675,7 +12591,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 2,
     createdAt: "2026-02-03T23:27:50",
-    isBookmarked: false,
   },
   {
     id: 1086,
@@ -13688,7 +12603,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 3,
     createdAt: "2026-02-03T23:07:28",
-    isBookmarked: false,
   },
   {
     id: 1087,
@@ -13700,7 +12614,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 8,
     createdAt: "2026-02-03T23:02:53",
-    isBookmarked: false,
   },
   {
     id: 1088,
@@ -13714,7 +12627,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 7,
     createdAt: "2026-02-03T22:26:11",
-    isBookmarked: false,
   },
   {
     id: 1089,
@@ -13728,7 +12640,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 4,
     createdAt: "2026-02-03T22:02:04",
-    isBookmarked: false,
   },
   {
     id: 1090,
@@ -13743,7 +12654,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 1,
     createdAt: "2026-02-03T20:47:48",
-    isBookmarked: false,
   },
   {
     id: 1091,
@@ -13757,7 +12667,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 7,
     createdAt: "2026-02-03T18:36:03",
-    isBookmarked: false,
   },
   {
     id: 1092,
@@ -13770,7 +12679,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 6,
     createdAt: "2026-02-03T16:03:53",
-    isBookmarked: false,
   },
   {
     id: 1093,
@@ -13779,7 +12687,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 1,
     createdAt: "2026-02-03T12:23:14",
-    isBookmarked: false,
   },
   {
     id: 1094,
@@ -13793,7 +12700,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 7,
     createdAt: "2026-02-03T10:12:20",
-    isBookmarked: false,
   },
   {
     id: 1095,
@@ -13806,7 +12712,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 4,
     createdAt: "2026-02-03T09:12:47",
-    isBookmarked: false,
   },
   {
     id: 1096,
@@ -13821,7 +12726,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 1,
     createdAt: "2026-02-03T09:00:35",
-    isBookmarked: false,
   },
   {
     id: 1097,
@@ -13830,7 +12734,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 4,
     createdAt: "2026-02-03T07:21:21",
-    isBookmarked: true,
   },
   {
     id: 1098,
@@ -13844,7 +12747,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 8,
     createdAt: "2026-02-03T05:04:38",
-    isBookmarked: false,
   },
   {
     id: 1099,
@@ -13856,7 +12758,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 6,
     createdAt: "2026-02-03T02:17:37",
-    isBookmarked: false,
   },
   {
     id: 1100,
@@ -13871,7 +12772,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 5,
     createdAt: "2026-02-03T02:10:21",
-    isBookmarked: false,
   },
   {
     id: 1101,
@@ -13886,7 +12786,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 5,
     createdAt: "2026-02-03T01:54:29",
-    isBookmarked: false,
   },
   {
     id: 1102,
@@ -13901,7 +12800,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 16,
     createdAt: "2026-02-03T01:25:02",
-    isBookmarked: false,
   },
   {
     id: 1103,
@@ -13915,7 +12813,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 2,
     createdAt: "2026-02-02T23:32:08",
-    isBookmarked: false,
   },
   {
     id: 1104,
@@ -13927,7 +12824,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 6,
     createdAt: "2026-02-02T23:06:24",
-    isBookmarked: false,
   },
   {
     id: 1105,
@@ -13941,7 +12837,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 5,
     createdAt: "2026-02-02T22:07:10",
-    isBookmarked: true,
   },
   {
     id: 1106,
@@ -13954,7 +12849,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 6,
     createdAt: "2026-02-02T21:41:22",
-    isBookmarked: false,
   },
   {
     id: 1107,
@@ -13967,7 +12861,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 6,
     createdAt: "2026-02-02T20:40:17",
-    isBookmarked: false,
   },
   {
     id: 1108,
@@ -13981,7 +12874,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 5,
     createdAt: "2026-02-02T20:04:27",
-    isBookmarked: false,
   },
   {
     id: 1109,
@@ -13994,7 +12886,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 1,
     createdAt: "2026-02-02T18:09:29",
-    isBookmarked: true,
   },
   {
     id: 1110,
@@ -14003,7 +12894,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 1,
     createdAt: "2026-02-02T14:58:47",
-    isBookmarked: true,
   },
   {
     id: 1111,
@@ -14018,7 +12908,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 2,
     createdAt: "2026-02-02T14:07:49",
-    isBookmarked: false,
   },
   {
     id: 1112,
@@ -14033,7 +12922,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 8,
     createdAt: "2026-02-02T14:01:46",
-    isBookmarked: false,
   },
   {
     id: 1113,
@@ -14045,7 +12933,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 8,
     createdAt: "2026-02-02T12:58:32",
-    isBookmarked: false,
   },
   {
     id: 1114,
@@ -14060,7 +12947,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 1,
     createdAt: "2026-02-02T11:46:51",
-    isBookmarked: false,
   },
   {
     id: 1115,
@@ -14073,7 +12959,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 8,
     createdAt: "2026-02-02T10:47:34",
-    isBookmarked: false,
   },
   {
     id: 1116,
@@ -14085,7 +12970,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 6,
     createdAt: "2026-02-02T09:55:27",
-    isBookmarked: false,
   },
   {
     id: 1117,
@@ -14100,7 +12984,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 0,
     createdAt: "2026-02-02T06:46:48",
-    isBookmarked: false,
   },
   {
     id: 1118,
@@ -14114,7 +12997,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 4,
     createdAt: "2026-02-02T05:04:18",
-    isBookmarked: false,
   },
   {
     id: 1119,
@@ -14129,7 +13011,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 6,
     createdAt: "2026-02-02T01:07:33",
-    isBookmarked: false,
   },
   {
     id: 1120,
@@ -14144,7 +13025,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 6,
     createdAt: "2026-02-01T21:29:33",
-    isBookmarked: false,
   },
   {
     id: 1121,
@@ -14153,7 +13033,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 2,
     createdAt: "2026-02-01T18:42:17",
-    isBookmarked: false,
   },
   {
     id: 1122,
@@ -14165,7 +13044,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 0,
     createdAt: "2026-02-01T16:23:04",
-    isBookmarked: false,
   },
   {
     id: 1123,
@@ -14177,7 +13055,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 7,
     createdAt: "2026-02-01T14:28:17",
-    isBookmarked: false,
   },
   {
     id: 1124,
@@ -14189,7 +13066,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 0,
     createdAt: "2026-02-01T08:18:56",
-    isBookmarked: false,
   },
   {
     id: 1125,
@@ -14198,7 +13074,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 6,
     createdAt: "2026-02-01T05:09:36",
-    isBookmarked: false,
   },
   {
     id: 1126,
@@ -14212,7 +13087,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 6,
     createdAt: "2026-02-01T02:52:06",
-    isBookmarked: false,
   },
   {
     id: 1127,
@@ -14221,7 +13095,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 4,
     createdAt: "2026-02-01T01:45:39",
-    isBookmarked: false,
   },
   {
     id: 1128,
@@ -14235,7 +13108,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 8,
     createdAt: "2026-02-01T01:36:11",
-    isBookmarked: false,
   },
   {
     id: 1129,
@@ -14244,7 +13116,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 0,
     createdAt: "2026-02-01T01:27:11",
-    isBookmarked: false,
   },
   {
     id: 1130,
@@ -14257,7 +13128,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 16,
     createdAt: "2026-01-31T22:56:09",
-    isBookmarked: false,
   },
   {
     id: 1131,
@@ -14270,7 +13140,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 7,
     createdAt: "2026-01-31T21:45:12",
-    isBookmarked: false,
   },
   {
     id: 1132,
@@ -14282,7 +13151,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 5,
     createdAt: "2026-01-31T20:02:39",
-    isBookmarked: false,
   },
   {
     id: 1133,
@@ -14291,7 +13159,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 6,
     createdAt: "2026-01-31T19:57:28",
-    isBookmarked: false,
   },
   {
     id: 1134,
@@ -14304,7 +13171,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 3,
     createdAt: "2026-01-31T19:48:43",
-    isBookmarked: false,
   },
   {
     id: 1135,
@@ -14316,7 +13182,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 1,
     createdAt: "2026-01-31T15:59:56",
-    isBookmarked: true,
   },
   {
     id: 1136,
@@ -14329,7 +13194,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 3,
     createdAt: "2026-01-31T14:01:33",
-    isBookmarked: false,
   },
   {
     id: 1137,
@@ -14338,7 +13202,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 4,
     createdAt: "2026-01-31T10:35:38",
-    isBookmarked: false,
   },
   {
     id: 1138,
@@ -14351,7 +13214,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 7,
     createdAt: "2026-01-31T10:08:09",
-    isBookmarked: false,
   },
   {
     id: 1139,
@@ -14366,7 +13228,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 6,
     createdAt: "2026-01-31T08:02:44",
-    isBookmarked: false,
   },
   {
     id: 1140,
@@ -14379,7 +13240,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 4,
     createdAt: "2026-01-31T06:14:06",
-    isBookmarked: false,
   },
   {
     id: 1141,
@@ -14394,7 +13254,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 5,
     createdAt: "2026-01-30T23:33:48",
-    isBookmarked: false,
   },
   {
     id: 1142,
@@ -14408,7 +13267,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 3,
     createdAt: "2026-01-30T23:08:17",
-    isBookmarked: false,
   },
   {
     id: 1143,
@@ -14422,7 +13280,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 2,
     createdAt: "2026-01-30T21:56:49",
-    isBookmarked: false,
   },
   {
     id: 1144,
@@ -14434,7 +13291,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 3,
     createdAt: "2026-01-30T20:42:31",
-    isBookmarked: false,
   },
   {
     id: 1145,
@@ -14449,7 +13305,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 8,
     createdAt: "2026-01-30T19:50:19",
-    isBookmarked: false,
   },
   {
     id: 1146,
@@ -14461,7 +13316,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 2,
     createdAt: "2026-01-30T17:12:39",
-    isBookmarked: false,
   },
   {
     id: 1147,
@@ -14473,7 +13327,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 11,
     createdAt: "2026-01-30T15:39:14",
-    isBookmarked: false,
   },
   {
     id: 1148,
@@ -14482,7 +13335,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 1,
     createdAt: "2026-01-30T15:32:22",
-    isBookmarked: false,
   },
   {
     id: 1149,
@@ -14497,7 +13349,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 1,
     createdAt: "2026-01-30T13:40:49",
-    isBookmarked: false,
   },
   {
     id: 1150,
@@ -14510,7 +13361,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 16,
     createdAt: "2026-01-30T13:24:10",
-    isBookmarked: false,
   },
   {
     id: 1151,
@@ -14519,7 +13369,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 14,
     createdAt: "2026-01-30T12:26:17",
-    isBookmarked: false,
   },
   {
     id: 1152,
@@ -14532,7 +13381,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 0,
     createdAt: "2026-01-30T07:31:34",
-    isBookmarked: false,
   },
   {
     id: 1153,
@@ -14544,7 +13392,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 4,
     createdAt: "2026-01-30T06:12:48",
-    isBookmarked: false,
   },
   {
     id: 1154,
@@ -14557,7 +13404,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 6,
     createdAt: "2026-01-30T01:33:41",
-    isBookmarked: false,
   },
   {
     id: 1155,
@@ -14569,7 +13415,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 0,
     createdAt: "2026-01-30T01:31:53",
-    isBookmarked: false,
   },
   {
     id: 1156,
@@ -14581,7 +13426,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 3,
     createdAt: "2026-01-30T00:35:50",
-    isBookmarked: true,
   },
   {
     id: 1157,
@@ -14590,7 +13434,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 8,
     createdAt: "2026-01-29T20:39:37",
-    isBookmarked: false,
   },
   {
     id: 1158,
@@ -14599,7 +13442,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 3,
     createdAt: "2026-01-29T18:13:27",
-    isBookmarked: true,
   },
   {
     id: 1159,
@@ -14613,7 +13455,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 6,
     createdAt: "2026-01-29T16:36:40",
-    isBookmarked: false,
   },
   {
     id: 1160,
@@ -14628,7 +13469,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 7,
     createdAt: "2026-01-29T14:45:10",
-    isBookmarked: false,
   },
   {
     id: 1161,
@@ -14642,7 +13482,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 8,
     createdAt: "2026-01-29T13:17:21",
-    isBookmarked: false,
   },
   {
     id: 1162,
@@ -14656,7 +13495,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 5,
     createdAt: "2026-01-29T11:57:40",
-    isBookmarked: false,
   },
   {
     id: 1163,
@@ -14670,7 +13508,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 7,
     createdAt: "2026-01-29T08:56:53",
-    isBookmarked: false,
   },
   {
     id: 1164,
@@ -14685,7 +13522,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 0,
     createdAt: "2026-01-29T08:21:16",
-    isBookmarked: false,
   },
   {
     id: 1165,
@@ -14700,7 +13536,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 3,
     createdAt: "2026-01-29T08:12:43",
-    isBookmarked: false,
   },
   {
     id: 1166,
@@ -14714,7 +13549,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 0,
     createdAt: "2026-01-29T06:50:09",
-    isBookmarked: false,
   },
   {
     id: 1167,
@@ -14728,7 +13562,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 12,
     createdAt: "2026-01-29T06:21:08",
-    isBookmarked: false,
   },
   {
     id: 1168,
@@ -14737,7 +13570,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 8,
     createdAt: "2026-01-29T05:37:15",
-    isBookmarked: false,
   },
   {
     id: 1169,
@@ -14749,7 +13581,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 2,
     createdAt: "2026-01-29T03:09:01",
-    isBookmarked: false,
   },
   {
     id: 1170,
@@ -14762,7 +13593,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 2,
     createdAt: "2026-01-29T01:47:59",
-    isBookmarked: false,
   },
   {
     id: 1171,
@@ -14776,7 +13606,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 1,
     createdAt: "2026-01-28T21:53:49",
-    isBookmarked: false,
   },
   {
     id: 1172,
@@ -14785,7 +13614,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 8,
     createdAt: "2026-01-28T20:01:09",
-    isBookmarked: false,
   },
   {
     id: 1173,
@@ -14799,7 +13627,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 8,
     createdAt: "2026-01-28T17:00:46",
-    isBookmarked: false,
   },
   {
     id: 1174,
@@ -14811,7 +13638,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 7,
     createdAt: "2026-01-28T12:41:50",
-    isBookmarked: false,
   },
   {
     id: 1175,
@@ -14820,7 +13646,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 3,
     createdAt: "2026-01-28T12:38:26",
-    isBookmarked: true,
   },
   {
     id: 1176,
@@ -14833,7 +13658,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 2,
     createdAt: "2026-01-28T12:00:53",
-    isBookmarked: false,
   },
   {
     id: 1177,
@@ -14845,7 +13669,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 0,
     createdAt: "2026-01-28T11:43:53",
-    isBookmarked: false,
   },
   {
     id: 1178,
@@ -14859,7 +13682,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 15,
     createdAt: "2026-01-28T10:28:13",
-    isBookmarked: true,
   },
   {
     id: 1179,
@@ -14871,7 +13693,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 6,
     createdAt: "2026-01-28T08:28:56",
-    isBookmarked: false,
   },
   {
     id: 1180,
@@ -14884,7 +13705,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 1,
     createdAt: "2026-01-28T06:54:19",
-    isBookmarked: true,
   },
   {
     id: 1181,
@@ -14896,7 +13716,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 3,
     createdAt: "2026-01-28T04:24:24",
-    isBookmarked: false,
   },
   {
     id: 1182,
@@ -14911,7 +13730,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 2,
     createdAt: "2026-01-28T04:01:34",
-    isBookmarked: false,
   },
   {
     id: 1183,
@@ -14926,7 +13744,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 6,
     createdAt: "2026-01-28T03:02:56",
-    isBookmarked: false,
   },
   {
     id: 1184,
@@ -14935,7 +13752,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 0,
     createdAt: "2026-01-28T03:02:18",
-    isBookmarked: false,
   },
   {
     id: 1185,
@@ -14949,7 +13765,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 0,
     createdAt: "2026-01-28T00:25:31",
-    isBookmarked: false,
   },
   {
     id: 1186,
@@ -14962,7 +13777,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 2,
     createdAt: "2026-01-27T22:33:10",
-    isBookmarked: true,
   },
   {
     id: 1187,
@@ -14975,7 +13789,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 8,
     createdAt: "2026-01-27T22:20:26",
-    isBookmarked: false,
   },
   {
     id: 1188,
@@ -14988,7 +13801,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 15,
     createdAt: "2026-01-27T21:57:41",
-    isBookmarked: false,
   },
   {
     id: 1189,
@@ -15003,7 +13815,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 1,
     createdAt: "2026-01-27T21:25:53",
-    isBookmarked: false,
   },
   {
     id: 1190,
@@ -15016,7 +13827,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 0,
     createdAt: "2026-01-27T19:40:17",
-    isBookmarked: false,
   },
   {
     id: 1191,
@@ -15028,7 +13838,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 6,
     createdAt: "2026-01-27T18:44:32",
-    isBookmarked: false,
   },
   {
     id: 1192,
@@ -15040,7 +13849,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 5,
     createdAt: "2026-01-27T17:08:17",
-    isBookmarked: false,
   },
   {
     id: 1193,
@@ -15054,7 +13862,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 1,
     createdAt: "2026-01-27T16:59:28",
-    isBookmarked: false,
   },
   {
     id: 1194,
@@ -15066,7 +13873,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 3,
     createdAt: "2026-01-27T14:42:42",
-    isBookmarked: true,
   },
   {
     id: 1195,
@@ -15080,7 +13886,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 5,
     createdAt: "2026-01-27T11:07:05",
-    isBookmarked: true,
   },
   {
     id: 1196,
@@ -15093,7 +13898,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 1,
     createdAt: "2026-01-27T09:35:46",
-    isBookmarked: false,
   },
   {
     id: 1197,
@@ -15108,7 +13912,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 4,
     createdAt: "2026-01-27T09:08:58",
-    isBookmarked: false,
   },
   {
     id: 1198,
@@ -15120,7 +13923,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 5,
     createdAt: "2026-01-27T08:56:28",
-    isBookmarked: false,
   },
   {
     id: 1199,
@@ -15134,7 +13936,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 13,
     createdAt: "2026-01-27T08:03:39",
-    isBookmarked: false,
   },
   {
     id: 1200,
@@ -15148,7 +13949,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 5,
     createdAt: "2026-01-27T07:20:08",
-    isBookmarked: false,
   },
   {
     id: 1201,
@@ -15161,7 +13961,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 5,
     createdAt: "2026-01-27T05:06:28",
-    isBookmarked: true,
   },
   {
     id: 1202,
@@ -15174,7 +13973,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 8,
     createdAt: "2026-01-27T03:53:43",
-    isBookmarked: false,
   },
   {
     id: 1203,
@@ -15186,7 +13984,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 6,
     createdAt: "2026-01-27T03:39:38",
-    isBookmarked: true,
   },
   {
     id: 1204,
@@ -15198,7 +13995,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 2,
     createdAt: "2026-01-26T22:27:53",
-    isBookmarked: false,
   },
   {
     id: 1205,
@@ -15213,7 +14009,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 1,
     createdAt: "2026-01-26T21:25:33",
-    isBookmarked: false,
   },
   {
     id: 1206,
@@ -15226,7 +14021,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 4,
     createdAt: "2026-01-26T21:18:49",
-    isBookmarked: false,
   },
   {
     id: 1207,
@@ -15238,7 +14032,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 8,
     createdAt: "2026-01-26T21:17:24",
-    isBookmarked: false,
   },
   {
     id: 1208,
@@ -15247,7 +14040,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 6,
     createdAt: "2026-01-26T20:21:59",
-    isBookmarked: false,
   },
   {
     id: 1209,
@@ -15256,7 +14048,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 2,
     createdAt: "2026-01-26T19:57:06",
-    isBookmarked: false,
   },
   {
     id: 1210,
@@ -15265,7 +14056,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 3,
     createdAt: "2026-01-26T19:55:24",
-    isBookmarked: false,
   },
   {
     id: 1211,
@@ -15274,7 +14064,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 6,
     createdAt: "2026-01-26T14:32:46",
-    isBookmarked: true,
   },
   {
     id: 1212,
@@ -15288,7 +14077,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 3,
     createdAt: "2026-01-26T11:33:41",
-    isBookmarked: false,
   },
   {
     id: 1213,
@@ -15303,7 +14091,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 8,
     createdAt: "2026-01-26T07:22:07",
-    isBookmarked: false,
   },
   {
     id: 1214,
@@ -15317,7 +14104,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 8,
     createdAt: "2026-01-26T07:07:00",
-    isBookmarked: false,
   },
   {
     id: 1215,
@@ -15332,7 +14118,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 3,
     createdAt: "2026-01-25T19:13:00",
-    isBookmarked: false,
   },
   {
     id: 1216,
@@ -15341,7 +14126,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 0,
     createdAt: "2026-01-25T17:19:34",
-    isBookmarked: false,
   },
   {
     id: 1217,
@@ -15356,7 +14140,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 5,
     createdAt: "2026-01-25T16:07:53",
-    isBookmarked: false,
   },
   {
     id: 1218,
@@ -15370,7 +14153,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 4,
     createdAt: "2026-01-25T15:14:23",
-    isBookmarked: false,
   },
   {
     id: 1219,
@@ -15382,7 +14164,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 6,
     createdAt: "2026-01-25T14:47:50",
-    isBookmarked: false,
   },
   {
     id: 1220,
@@ -15395,7 +14176,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 7,
     createdAt: "2026-01-25T11:59:26",
-    isBookmarked: false,
   },
   {
     id: 1221,
@@ -15408,7 +14188,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 3,
     createdAt: "2026-01-25T07:08:31",
-    isBookmarked: false,
   },
   {
     id: 1222,
@@ -15423,7 +14202,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 9,
     createdAt: "2026-01-25T06:44:06",
-    isBookmarked: false,
   },
   {
     id: 1223,
@@ -15438,7 +14216,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 0,
     createdAt: "2026-01-25T05:01:18",
-    isBookmarked: false,
   },
   {
     id: 1224,
@@ -15447,7 +14224,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 6,
     createdAt: "2026-01-25T03:12:22",
-    isBookmarked: false,
   },
   {
     id: 1225,
@@ -15462,7 +14238,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 7,
     createdAt: "2026-01-24T23:24:17",
-    isBookmarked: false,
   },
   {
     id: 1226,
@@ -15475,7 +14250,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 6,
     createdAt: "2026-01-24T21:31:07",
-    isBookmarked: false,
   },
   {
     id: 1227,
@@ -15490,7 +14264,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 4,
     createdAt: "2026-01-24T19:39:27",
-    isBookmarked: false,
   },
   {
     id: 1228,
@@ -15502,7 +14275,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 0,
     createdAt: "2026-01-24T18:40:50",
-    isBookmarked: false,
   },
   {
     id: 1229,
@@ -15511,7 +14283,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 5,
     createdAt: "2026-01-24T18:12:21",
-    isBookmarked: false,
   },
   {
     id: 1230,
@@ -15520,7 +14291,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 2,
     createdAt: "2026-01-24T13:00:28",
-    isBookmarked: true,
   },
   {
     id: 1231,
@@ -15534,7 +14304,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 7,
     createdAt: "2026-01-24T12:18:38",
-    isBookmarked: false,
   },
   {
     id: 1232,
@@ -15543,7 +14312,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 0,
     createdAt: "2026-01-24T09:00:50",
-    isBookmarked: false,
   },
   {
     id: 1233,
@@ -15552,7 +14320,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 7,
     createdAt: "2026-01-24T08:22:26",
-    isBookmarked: true,
   },
   {
     id: 1234,
@@ -15567,7 +14334,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 8,
     createdAt: "2026-01-24T07:10:25",
-    isBookmarked: true,
   },
   {
     id: 1235,
@@ -15580,7 +14346,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 0,
     createdAt: "2026-01-24T06:35:24",
-    isBookmarked: true,
   },
   {
     id: 1236,
@@ -15592,7 +14357,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 7,
     createdAt: "2026-01-24T03:19:43",
-    isBookmarked: true,
   },
   {
     id: 1237,
@@ -15605,7 +14369,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 6,
     createdAt: "2026-01-24T02:40:24",
-    isBookmarked: true,
   },
   {
     id: 1238,
@@ -15619,7 +14382,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 0,
     createdAt: "2026-01-24T02:39:59",
-    isBookmarked: false,
   },
   {
     id: 1239,
@@ -15633,7 +14395,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 5,
     createdAt: "2026-01-24T02:32:11",
-    isBookmarked: false,
   },
   {
     id: 1240,
@@ -15642,7 +14403,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 0,
     createdAt: "2026-01-24T02:17:04",
-    isBookmarked: false,
   },
   {
     id: 1241,
@@ -15654,7 +14414,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 7,
     createdAt: "2026-01-24T01:42:09",
-    isBookmarked: false,
   },
   {
     id: 1242,
@@ -15667,7 +14426,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 0,
     createdAt: "2026-01-24T01:15:03",
-    isBookmarked: false,
   },
   {
     id: 1243,
@@ -15682,7 +14440,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 0,
     createdAt: "2026-01-23T23:49:23",
-    isBookmarked: true,
   },
   {
     id: 1244,
@@ -15691,7 +14448,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 8,
     createdAt: "2026-01-23T22:11:40",
-    isBookmarked: false,
   },
   {
     id: 1245,
@@ -15700,7 +14456,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 7,
     createdAt: "2026-01-23T21:19:46",
-    isBookmarked: false,
   },
   {
     id: 1246,
@@ -15712,7 +14467,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 3,
     createdAt: "2026-01-23T20:10:36",
-    isBookmarked: true,
   },
   {
     id: 1247,
@@ -15727,7 +14481,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 3,
     createdAt: "2026-01-23T15:29:48",
-    isBookmarked: false,
   },
   {
     id: 1248,
@@ -15736,7 +14489,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 1,
     createdAt: "2026-01-23T15:10:50",
-    isBookmarked: true,
   },
   {
     id: 1249,
@@ -15748,7 +14500,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 2,
     createdAt: "2026-01-23T14:27:27",
-    isBookmarked: false,
   },
   {
     id: 1250,
@@ -15761,7 +14512,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 3,
     createdAt: "2026-01-23T14:03:06",
-    isBookmarked: true,
   },
   {
     id: 1251,
@@ -15774,7 +14524,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 6,
     createdAt: "2026-01-23T13:21:30",
-    isBookmarked: false,
   },
   {
     id: 1252,
@@ -15788,7 +14537,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 8,
     createdAt: "2026-01-23T09:46:08",
-    isBookmarked: false,
   },
   {
     id: 1253,
@@ -15801,7 +14549,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 7,
     createdAt: "2026-01-23T08:56:25",
-    isBookmarked: false,
   },
   {
     id: 1254,
@@ -15814,7 +14561,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 0,
     createdAt: "2026-01-23T08:16:18",
-    isBookmarked: false,
   },
   {
     id: 1255,
@@ -15828,7 +14574,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 6,
     createdAt: "2026-01-23T06:31:23",
-    isBookmarked: false,
   },
   {
     id: 1256,
@@ -15842,7 +14587,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 2,
     createdAt: "2026-01-23T05:52:57",
-    isBookmarked: false,
   },
   {
     id: 1257,
@@ -15855,7 +14599,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 1,
     createdAt: "2026-01-23T04:23:56",
-    isBookmarked: false,
   },
   {
     id: 1258,
@@ -15867,7 +14610,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 5,
     createdAt: "2026-01-23T04:07:49",
-    isBookmarked: false,
   },
   {
     id: 1259,
@@ -15881,7 +14623,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 8,
     createdAt: "2026-01-23T04:07:18",
-    isBookmarked: false,
   },
   {
     id: 1260,
@@ -15894,7 +14635,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 4,
     createdAt: "2026-01-23T03:13:43",
-    isBookmarked: false,
   },
   {
     id: 1261,
@@ -15906,7 +14646,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 7,
     createdAt: "2026-01-23T02:45:49",
-    isBookmarked: false,
   },
   {
     id: 1262,
@@ -15919,7 +14658,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 7,
     createdAt: "2026-01-22T23:02:10",
-    isBookmarked: false,
   },
   {
     id: 1263,
@@ -15933,7 +14671,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 4,
     createdAt: "2026-01-22T21:51:41",
-    isBookmarked: false,
   },
   {
     id: 1264,
@@ -15946,7 +14683,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 3,
     createdAt: "2026-01-22T20:20:53",
-    isBookmarked: true,
   },
   {
     id: 1265,
@@ -15955,7 +14691,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 2,
     createdAt: "2026-01-22T19:53:33",
-    isBookmarked: false,
   },
   {
     id: 1266,
@@ -15970,7 +14705,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 8,
     createdAt: "2026-01-22T17:01:43",
-    isBookmarked: false,
   },
   {
     id: 1267,
@@ -15979,7 +14713,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 3,
     createdAt: "2026-01-22T16:53:38",
-    isBookmarked: true,
   },
   {
     id: 1268,
@@ -15992,7 +14725,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 3,
     createdAt: "2026-01-22T14:55:33",
-    isBookmarked: false,
   },
   {
     id: 1269,
@@ -16004,7 +14736,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 8,
     createdAt: "2026-01-22T14:45:23",
-    isBookmarked: true,
   },
   {
     id: 1270,
@@ -16013,7 +14744,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 8,
     createdAt: "2026-01-22T13:08:56",
-    isBookmarked: false,
   },
   {
     id: 1271,
@@ -16026,7 +14756,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 4,
     createdAt: "2026-01-22T12:54:19",
-    isBookmarked: false,
   },
   {
     id: 1272,
@@ -16038,7 +14767,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 3,
     createdAt: "2026-01-22T10:36:07",
-    isBookmarked: false,
   },
   {
     id: 1273,
@@ -16052,7 +14780,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 12,
     createdAt: "2026-01-22T09:25:58",
-    isBookmarked: true,
   },
   {
     id: 1274,
@@ -16064,7 +14791,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 6,
     createdAt: "2026-01-22T09:01:51",
-    isBookmarked: false,
   },
   {
     id: 1275,
@@ -16077,7 +14803,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 3,
     createdAt: "2026-01-22T08:15:24",
-    isBookmarked: false,
   },
   {
     id: 1276,
@@ -16089,7 +14814,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 2,
     createdAt: "2026-01-22T05:24:35",
-    isBookmarked: false,
   },
   {
     id: 1277,
@@ -16098,7 +14822,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 5,
     createdAt: "2026-01-22T03:59:40",
-    isBookmarked: false,
   },
   {
     id: 1278,
@@ -16110,7 +14833,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 5,
     createdAt: "2026-01-22T02:01:03",
-    isBookmarked: false,
   },
   {
     id: 1279,
@@ -16123,7 +14845,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 4,
     createdAt: "2026-01-22T00:47:14",
-    isBookmarked: true,
   },
   {
     id: 1280,
@@ -16132,7 +14853,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 2,
     createdAt: "2026-01-21T22:29:03",
-    isBookmarked: false,
   },
   {
     id: 1281,
@@ -16146,7 +14866,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 7,
     createdAt: "2026-01-21T17:05:04",
-    isBookmarked: true,
   },
   {
     id: 1282,
@@ -16155,7 +14874,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 3,
     createdAt: "2026-01-21T15:42:20",
-    isBookmarked: false,
   },
   {
     id: 1283,
@@ -16164,7 +14882,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 4,
     createdAt: "2026-01-21T14:30:29",
-    isBookmarked: false,
   },
   {
     id: 1284,
@@ -16178,7 +14895,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 4,
     createdAt: "2026-01-21T13:44:26",
-    isBookmarked: false,
   },
   {
     id: 1285,
@@ -16192,7 +14908,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 5,
     createdAt: "2026-01-21T09:46:08",
-    isBookmarked: false,
   },
   {
     id: 1286,
@@ -16206,7 +14921,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 4,
     createdAt: "2026-01-21T07:30:10",
-    isBookmarked: false,
   },
   {
     id: 1287,
@@ -16221,7 +14935,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 2,
     createdAt: "2026-01-21T07:24:28",
-    isBookmarked: false,
   },
   {
     id: 1288,
@@ -16230,7 +14943,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 5,
     createdAt: "2026-01-21T07:22:25",
-    isBookmarked: false,
   },
   {
     id: 1289,
@@ -16242,7 +14954,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 2,
     createdAt: "2026-01-21T04:05:11",
-    isBookmarked: false,
   },
   {
     id: 1290,
@@ -16256,7 +14967,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 1,
     createdAt: "2026-01-21T03:38:48",
-    isBookmarked: false,
   },
   {
     id: 1291,
@@ -16265,7 +14975,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 2,
     createdAt: "2026-01-21T01:00:18",
-    isBookmarked: false,
   },
   {
     id: 1292,
@@ -16274,7 +14983,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 2,
     createdAt: "2026-01-21T00:35:42",
-    isBookmarked: false,
   },
   {
     id: 1293,
@@ -16289,7 +14997,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 4,
     createdAt: "2026-01-21T00:35:15",
-    isBookmarked: false,
   },
   {
     id: 1294,
@@ -16303,7 +15010,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 1,
     createdAt: "2026-01-20T23:03:43",
-    isBookmarked: false,
   },
   {
     id: 1295,
@@ -16312,7 +15018,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 6,
     createdAt: "2026-01-20T22:56:19",
-    isBookmarked: false,
   },
   {
     id: 1296,
@@ -16325,7 +15030,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 1,
     createdAt: "2026-01-20T20:02:38",
-    isBookmarked: false,
   },
   {
     id: 1297,
@@ -16338,7 +15042,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 3,
     createdAt: "2026-01-20T19:36:29",
-    isBookmarked: true,
   },
   {
     id: 1298,
@@ -16351,7 +15054,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 4,
     createdAt: "2026-01-20T19:07:39",
-    isBookmarked: true,
   },
   {
     id: 1299,
@@ -16363,7 +15065,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 6,
     createdAt: "2026-01-20T19:02:28",
-    isBookmarked: false,
   },
   {
     id: 1300,
@@ -16378,7 +15079,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 6,
     createdAt: "2026-01-20T18:07:10",
-    isBookmarked: true,
   },
   {
     id: 1301,
@@ -16390,7 +15090,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 4,
     createdAt: "2026-01-20T16:29:05",
-    isBookmarked: true,
   },
   {
     id: 1302,
@@ -16405,7 +15104,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 3,
     createdAt: "2026-01-20T16:07:53",
-    isBookmarked: false,
   },
   {
     id: 1303,
@@ -16419,7 +15117,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 2,
     createdAt: "2026-01-20T09:37:12",
-    isBookmarked: false,
   },
   {
     id: 1304,
@@ -16431,7 +15128,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 1,
     createdAt: "2026-01-20T09:00:06",
-    isBookmarked: false,
   },
   {
     id: 1305,
@@ -16440,7 +15136,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 2,
     createdAt: "2026-01-20T06:48:57",
-    isBookmarked: false,
   },
   {
     id: 1306,
@@ -16449,7 +15144,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 2,
     createdAt: "2026-01-20T06:22:51",
-    isBookmarked: false,
   },
   {
     id: 1307,
@@ -16464,7 +15158,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 8,
     createdAt: "2026-01-20T05:46:54",
-    isBookmarked: true,
   },
   {
     id: 1308,
@@ -16476,7 +15169,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 0,
     createdAt: "2026-01-20T05:19:56",
-    isBookmarked: false,
   },
   {
     id: 1309,
@@ -16489,7 +15181,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 1,
     createdAt: "2026-01-20T03:23:10",
-    isBookmarked: false,
   },
   {
     id: 1310,
@@ -16504,7 +15195,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 1,
     createdAt: "2026-01-20T02:13:42",
-    isBookmarked: false,
   },
   {
     id: 1311,
@@ -16518,7 +15208,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 2,
     createdAt: "2026-01-19T23:23:47",
-    isBookmarked: false,
   },
   {
     id: 1312,
@@ -16527,7 +15216,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 4,
     createdAt: "2026-01-19T22:02:42",
-    isBookmarked: false,
   },
   {
     id: 1313,
@@ -16542,7 +15230,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 3,
     createdAt: "2026-01-19T20:14:00",
-    isBookmarked: false,
   },
   {
     id: 1314,
@@ -16551,7 +15238,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 12,
     createdAt: "2026-01-19T16:24:50",
-    isBookmarked: false,
   },
   {
     id: 1315,
@@ -16566,7 +15252,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 7,
     createdAt: "2026-01-19T12:16:48",
-    isBookmarked: false,
   },
   {
     id: 1316,
@@ -16579,7 +15264,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 2,
     createdAt: "2026-01-19T12:02:57",
-    isBookmarked: false,
   },
   {
     id: 1317,
@@ -16594,7 +15278,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 0,
     createdAt: "2026-01-19T09:53:30",
-    isBookmarked: true,
   },
   {
     id: 1318,
@@ -16608,7 +15291,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 8,
     createdAt: "2026-01-19T09:49:17",
-    isBookmarked: false,
   },
   {
     id: 1319,
@@ -16623,7 +15305,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 7,
     createdAt: "2026-01-19T08:54:34",
-    isBookmarked: true,
   },
   {
     id: 1320,
@@ -16632,7 +15313,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 15,
     createdAt: "2026-01-19T04:08:45",
-    isBookmarked: false,
   },
   {
     id: 1321,
@@ -16645,7 +15325,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 1,
     createdAt: "2026-01-19T02:24:25",
-    isBookmarked: true,
   },
   {
     id: 1322,
@@ -16654,7 +15333,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 4,
     createdAt: "2026-01-19T01:17:18",
-    isBookmarked: false,
   },
   {
     id: 1323,
@@ -16666,7 +15344,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 0,
     createdAt: "2026-01-19T00:17:38",
-    isBookmarked: false,
   },
   {
     id: 1324,
@@ -16675,7 +15352,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 11,
     createdAt: "2026-01-19T00:12:14",
-    isBookmarked: false,
   },
   {
     id: 1325,
@@ -16688,7 +15364,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 3,
     createdAt: "2026-01-18T23:27:17",
-    isBookmarked: false,
   },
   {
     id: 1326,
@@ -16697,7 +15372,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 2,
     createdAt: "2026-01-18T21:27:21",
-    isBookmarked: false,
   },
   {
     id: 1327,
@@ -16712,7 +15386,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 2,
     createdAt: "2026-01-18T20:53:41",
-    isBookmarked: false,
   },
   {
     id: 1328,
@@ -16721,7 +15394,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 1,
     createdAt: "2026-01-18T20:31:06",
-    isBookmarked: true,
   },
   {
     id: 1329,
@@ -16734,7 +15406,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 5,
     createdAt: "2026-01-18T20:24:38",
-    isBookmarked: false,
   },
   {
     id: 1330,
@@ -16748,7 +15419,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 0,
     createdAt: "2026-01-18T19:23:56",
-    isBookmarked: false,
   },
   {
     id: 1331,
@@ -16760,7 +15430,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 1,
     createdAt: "2026-01-18T15:01:16",
-    isBookmarked: false,
   },
   {
     id: 1332,
@@ -16773,7 +15442,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 2,
     createdAt: "2026-01-18T14:09:00",
-    isBookmarked: true,
   },
   {
     id: 1333,
@@ -16788,7 +15456,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 7,
     createdAt: "2026-01-18T13:20:07",
-    isBookmarked: false,
   },
   {
     id: 1334,
@@ -16797,7 +15464,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 0,
     createdAt: "2026-01-18T12:27:25",
-    isBookmarked: false,
   },
   {
     id: 1335,
@@ -16812,7 +15478,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 3,
     createdAt: "2026-01-18T12:17:07",
-    isBookmarked: false,
   },
   {
     id: 1336,
@@ -16827,7 +15492,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 0,
     createdAt: "2026-01-18T10:02:46",
-    isBookmarked: false,
   },
   {
     id: 1337,
@@ -16842,7 +15506,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 6,
     createdAt: "2026-01-18T07:23:37",
-    isBookmarked: false,
   },
   {
     id: 1338,
@@ -16855,7 +15518,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 1,
     createdAt: "2026-01-18T07:09:27",
-    isBookmarked: false,
   },
   {
     id: 1339,
@@ -16868,7 +15530,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 6,
     createdAt: "2026-01-18T06:24:41",
-    isBookmarked: false,
   },
   {
     id: 1340,
@@ -16880,7 +15541,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 15,
     createdAt: "2026-01-18T01:24:13",
-    isBookmarked: false,
   },
   {
     id: 1341,
@@ -16893,7 +15553,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 8,
     createdAt: "2026-01-17T23:27:39",
-    isBookmarked: false,
   },
   {
     id: 1342,
@@ -16906,7 +15565,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 1,
     createdAt: "2026-01-17T23:21:55",
-    isBookmarked: false,
   },
   {
     id: 1343,
@@ -16921,7 +15579,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 6,
     createdAt: "2026-01-17T21:19:41",
-    isBookmarked: false,
   },
   {
     id: 1344,
@@ -16936,7 +15593,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 1,
     createdAt: "2026-01-17T20:08:01",
-    isBookmarked: false,
   },
   {
     id: 1345,
@@ -16945,7 +15601,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 3,
     createdAt: "2026-01-17T15:28:31",
-    isBookmarked: false,
   },
   {
     id: 1346,
@@ -16958,7 +15613,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 4,
     createdAt: "2026-01-17T14:21:40",
-    isBookmarked: true,
   },
   {
     id: 1347,
@@ -16971,7 +15625,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 2,
     createdAt: "2026-01-17T12:09:49",
-    isBookmarked: false,
   },
   {
     id: 1348,
@@ -16984,7 +15637,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 4,
     createdAt: "2026-01-17T10:16:03",
-    isBookmarked: false,
   },
   {
     id: 1349,
@@ -16993,7 +15645,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 4,
     createdAt: "2026-01-17T10:01:22",
-    isBookmarked: false,
   },
   {
     id: 1350,
@@ -17008,7 +15659,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 8,
     createdAt: "2026-01-17T08:14:01",
-    isBookmarked: false,
   },
   {
     id: 1351,
@@ -17020,7 +15670,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 7,
     createdAt: "2026-01-17T07:56:37",
-    isBookmarked: false,
   },
   {
     id: 1352,
@@ -17035,7 +15684,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 4,
     createdAt: "2026-01-17T06:12:00",
-    isBookmarked: false,
   },
   {
     id: 1353,
@@ -17048,7 +15696,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 4,
     createdAt: "2026-01-17T05:57:53",
-    isBookmarked: true,
   },
   {
     id: 1354,
@@ -17063,7 +15710,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 7,
     createdAt: "2026-01-17T04:01:56",
-    isBookmarked: true,
   },
   {
     id: 1355,
@@ -17078,7 +15724,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 3,
     createdAt: "2026-01-17T02:22:00",
-    isBookmarked: false,
   },
   {
     id: 1356,
@@ -17093,7 +15738,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 7,
     createdAt: "2026-01-17T00:59:38",
-    isBookmarked: false,
   },
   {
     id: 1357,
@@ -17102,7 +15746,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 3,
     createdAt: "2026-01-16T22:22:53",
-    isBookmarked: false,
   },
   {
     id: 1358,
@@ -17115,7 +15758,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 3,
     createdAt: "2026-01-16T21:22:59",
-    isBookmarked: false,
   },
   {
     id: 1359,
@@ -17130,7 +15772,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 5,
     createdAt: "2026-01-16T21:18:46",
-    isBookmarked: false,
   },
   {
     id: 1360,
@@ -17139,7 +15780,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 14,
     createdAt: "2026-01-16T20:32:20",
-    isBookmarked: false,
   },
   {
     id: 1361,
@@ -17154,7 +15794,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 10,
     createdAt: "2026-01-16T19:35:09",
-    isBookmarked: false,
   },
   {
     id: 1362,
@@ -17167,7 +15806,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 8,
     createdAt: "2026-01-16T18:11:37",
-    isBookmarked: false,
   },
   {
     id: 1363,
@@ -17181,7 +15819,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 10,
     createdAt: "2026-01-16T17:27:57",
-    isBookmarked: false,
   },
   {
     id: 1364,
@@ -17190,7 +15827,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 7,
     createdAt: "2026-01-16T14:10:08",
-    isBookmarked: true,
   },
   {
     id: 1365,
@@ -17199,7 +15835,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 0,
     createdAt: "2026-01-16T12:30:22",
-    isBookmarked: false,
   },
   {
     id: 1366,
@@ -17212,7 +15847,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 8,
     createdAt: "2026-01-16T10:53:12",
-    isBookmarked: false,
   },
   {
     id: 1367,
@@ -17221,7 +15855,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 4,
     createdAt: "2026-01-16T10:33:13",
-    isBookmarked: false,
   },
   {
     id: 1368,
@@ -17233,7 +15866,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 7,
     createdAt: "2026-01-16T09:34:24",
-    isBookmarked: true,
   },
   {
     id: 1369,
@@ -17245,7 +15877,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 0,
     createdAt: "2026-01-16T08:54:12",
-    isBookmarked: false,
   },
   {
     id: 1370,
@@ -17259,7 +15890,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 9,
     createdAt: "2026-01-16T07:58:46",
-    isBookmarked: false,
   },
   {
     id: 1371,
@@ -17271,7 +15901,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 6,
     createdAt: "2026-01-16T07:44:42",
-    isBookmarked: false,
   },
   {
     id: 1372,
@@ -17280,7 +15909,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 1,
     createdAt: "2026-01-16T06:57:36",
-    isBookmarked: false,
   },
   {
     id: 1373,
@@ -17295,7 +15923,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 10,
     createdAt: "2026-01-16T00:02:12",
-    isBookmarked: false,
   },
   {
     id: 1374,
@@ -17307,7 +15934,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 16,
     createdAt: "2026-01-15T22:47:24",
-    isBookmarked: false,
   },
   {
     id: 1375,
@@ -17321,7 +15947,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 3,
     createdAt: "2026-01-15T17:25:38",
-    isBookmarked: false,
   },
   {
     id: 1376,
@@ -17336,7 +15961,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 8,
     createdAt: "2026-01-15T17:15:12",
-    isBookmarked: false,
   },
   {
     id: 1377,
@@ -17348,7 +15972,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 5,
     createdAt: "2026-01-15T15:55:36",
-    isBookmarked: true,
   },
   {
     id: 1378,
@@ -17357,7 +15980,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 7,
     createdAt: "2026-01-15T15:55:02",
-    isBookmarked: false,
   },
   {
     id: 1379,
@@ -17372,7 +15994,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 4,
     createdAt: "2026-01-15T15:28:38",
-    isBookmarked: false,
   },
   {
     id: 1380,
@@ -17386,7 +16007,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 0,
     createdAt: "2026-01-15T15:18:36",
-    isBookmarked: false,
   },
   {
     id: 1381,
@@ -17395,7 +16015,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 2,
     createdAt: "2026-01-15T15:07:50",
-    isBookmarked: false,
   },
   {
     id: 1382,
@@ -17407,7 +16026,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 3,
     createdAt: "2026-01-15T13:10:57",
-    isBookmarked: false,
   },
   {
     id: 1383,
@@ -17420,7 +16038,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 6,
     createdAt: "2026-01-15T11:56:23",
-    isBookmarked: false,
   },
   {
     id: 1384,
@@ -17432,7 +16049,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 7,
     createdAt: "2026-01-15T09:55:15",
-    isBookmarked: false,
   },
   {
     id: 1385,
@@ -17447,7 +16063,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 5,
     createdAt: "2026-01-15T09:38:51",
-    isBookmarked: false,
   },
   {
     id: 1386,
@@ -17460,7 +16075,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 8,
     createdAt: "2026-01-15T08:27:14",
-    isBookmarked: false,
   },
   {
     id: 1387,
@@ -17475,7 +16089,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 3,
     createdAt: "2026-01-15T06:42:46",
-    isBookmarked: false,
   },
   {
     id: 1388,
@@ -17490,7 +16103,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 5,
     createdAt: "2026-01-15T06:16:38",
-    isBookmarked: false,
   },
   {
     id: 1389,
@@ -17504,7 +16116,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 8,
     createdAt: "2026-01-15T04:46:16",
-    isBookmarked: false,
   },
   {
     id: 1390,
@@ -17516,7 +16127,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 2,
     createdAt: "2026-01-15T03:54:50",
-    isBookmarked: false,
   },
   {
     id: 1391,
@@ -17529,7 +16139,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 0,
     createdAt: "2026-01-15T02:10:52",
-    isBookmarked: false,
   },
   {
     id: 1392,
@@ -17543,7 +16152,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 8,
     createdAt: "2026-01-15T01:07:30",
-    isBookmarked: true,
   },
   {
     id: 1393,
@@ -17552,7 +16160,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 7,
     createdAt: "2026-01-14T23:00:57",
-    isBookmarked: false,
   },
   {
     id: 1394,
@@ -17566,7 +16173,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 3,
     createdAt: "2026-01-14T21:53:27",
-    isBookmarked: false,
   },
   {
     id: 1395,
@@ -17575,7 +16181,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 2,
     createdAt: "2026-01-14T18:55:49",
-    isBookmarked: false,
   },
   {
     id: 1396,
@@ -17584,7 +16189,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 4,
     createdAt: "2026-01-14T18:00:27",
-    isBookmarked: false,
   },
   {
     id: 1397,
@@ -17599,7 +16203,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 3,
     createdAt: "2026-01-14T17:57:07",
-    isBookmarked: false,
   },
   {
     id: 1398,
@@ -17611,7 +16214,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 5,
     createdAt: "2026-01-14T15:00:27",
-    isBookmarked: false,
   },
   {
     id: 1399,
@@ -17624,7 +16226,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 6,
     createdAt: "2026-01-14T13:02:41",
-    isBookmarked: false,
   },
   {
     id: 1400,
@@ -17633,7 +16234,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 0,
     createdAt: "2026-01-14T12:45:35",
-    isBookmarked: false,
   },
   {
     id: 1401,
@@ -17648,7 +16248,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 0,
     createdAt: "2026-01-14T11:13:59",
-    isBookmarked: false,
   },
   {
     id: 1402,
@@ -17661,7 +16260,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 0,
     createdAt: "2026-01-14T10:37:54",
-    isBookmarked: false,
   },
   {
     id: 1403,
@@ -17673,7 +16271,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 3,
     createdAt: "2026-01-14T10:28:11",
-    isBookmarked: false,
   },
   {
     id: 1404,
@@ -17686,7 +16283,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 7,
     createdAt: "2026-01-14T10:12:00",
-    isBookmarked: false,
   },
   {
     id: 1405,
@@ -17699,7 +16295,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 0,
     createdAt: "2026-01-14T08:34:07",
-    isBookmarked: false,
   },
   {
     id: 1406,
@@ -17713,7 +16308,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 1,
     createdAt: "2026-01-14T07:22:56",
-    isBookmarked: false,
   },
   {
     id: 1407,
@@ -17722,7 +16316,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 7,
     createdAt: "2026-01-14T06:29:02",
-    isBookmarked: false,
   },
   {
     id: 1408,
@@ -17731,7 +16324,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 8,
     createdAt: "2026-01-14T04:17:15",
-    isBookmarked: true,
   },
   {
     id: 1409,
@@ -17740,7 +16332,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 1,
     createdAt: "2026-01-14T01:49:27",
-    isBookmarked: false,
   },
   {
     id: 1410,
@@ -17754,7 +16345,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 3,
     createdAt: "2026-01-13T22:02:38",
-    isBookmarked: false,
   },
   {
     id: 1411,
@@ -17769,7 +16359,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 2,
     createdAt: "2026-01-13T20:32:59",
-    isBookmarked: false,
   },
   {
     id: 1412,
@@ -17782,7 +16371,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 4,
     createdAt: "2026-01-13T19:44:01",
-    isBookmarked: false,
   },
   {
     id: 1413,
@@ -17794,7 +16382,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 6,
     createdAt: "2026-01-13T19:32:22",
-    isBookmarked: false,
   },
   {
     id: 1414,
@@ -17809,7 +16396,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 15,
     createdAt: "2026-01-13T18:18:31",
-    isBookmarked: false,
   },
   {
     id: 1415,
@@ -17822,7 +16408,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 6,
     createdAt: "2026-01-13T18:00:02",
-    isBookmarked: false,
   },
   {
     id: 1416,
@@ -17837,7 +16422,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 1,
     createdAt: "2026-01-13T17:23:30",
-    isBookmarked: true,
   },
   {
     id: 1417,
@@ -17846,7 +16430,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 0,
     createdAt: "2026-01-13T16:13:38",
-    isBookmarked: false,
   },
   {
     id: 1418,
@@ -17859,7 +16442,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 3,
     createdAt: "2026-01-13T15:56:07",
-    isBookmarked: false,
   },
   {
     id: 1419,
@@ -17874,7 +16456,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 5,
     createdAt: "2026-01-13T15:11:45",
-    isBookmarked: false,
   },
   {
     id: 1420,
@@ -17883,7 +16464,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 3,
     createdAt: "2026-01-13T14:54:59",
-    isBookmarked: false,
   },
   {
     id: 1421,
@@ -17895,7 +16475,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 3,
     createdAt: "2026-01-13T12:50:07",
-    isBookmarked: false,
   },
   {
     id: 1422,
@@ -17904,7 +16483,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 4,
     createdAt: "2026-01-13T11:36:43",
-    isBookmarked: false,
   },
   {
     id: 1423,
@@ -17913,7 +16491,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 5,
     createdAt: "2026-01-13T11:00:18",
-    isBookmarked: false,
   },
   {
     id: 1424,
@@ -17925,7 +16502,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 2,
     createdAt: "2026-01-13T07:39:18",
-    isBookmarked: false,
   },
   {
     id: 1425,
@@ -17934,7 +16510,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 4,
     createdAt: "2026-01-13T06:17:40",
-    isBookmarked: false,
   },
   {
     id: 1426,
@@ -17949,7 +16524,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 8,
     createdAt: "2026-01-13T06:03:43",
-    isBookmarked: false,
   },
   {
     id: 1427,
@@ -17958,7 +16532,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 0,
     createdAt: "2026-01-13T05:35:46",
-    isBookmarked: false,
   },
   {
     id: 1428,
@@ -17970,7 +16543,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 1,
     createdAt: "2026-01-13T04:26:09",
-    isBookmarked: false,
   },
   {
     id: 1429,
@@ -17979,7 +16551,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 6,
     createdAt: "2026-01-13T03:27:06",
-    isBookmarked: false,
   },
   {
     id: 1430,
@@ -17994,7 +16565,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 3,
     createdAt: "2026-01-13T01:13:07",
-    isBookmarked: false,
   },
   {
     id: 1431,
@@ -18007,7 +16577,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 1,
     createdAt: "2026-01-12T23:57:07",
-    isBookmarked: false,
   },
   {
     id: 1432,
@@ -18019,7 +16588,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 3,
     createdAt: "2026-01-12T23:29:27",
-    isBookmarked: true,
   },
   {
     id: 1433,
@@ -18028,7 +16596,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 6,
     createdAt: "2026-01-12T22:14:36",
-    isBookmarked: true,
   },
   {
     id: 1434,
@@ -18042,7 +16609,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 8,
     createdAt: "2026-01-12T19:49:49",
-    isBookmarked: false,
   },
   {
     id: 1435,
@@ -18057,7 +16623,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 7,
     createdAt: "2026-01-12T19:17:32",
-    isBookmarked: true,
   },
   {
     id: 1436,
@@ -18070,7 +16635,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 5,
     createdAt: "2026-01-12T17:47:51",
-    isBookmarked: false,
   },
   {
     id: 1437,
@@ -18082,7 +16646,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 11,
     createdAt: "2026-01-12T17:31:01",
-    isBookmarked: false,
   },
   {
     id: 1438,
@@ -18094,7 +16657,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 7,
     createdAt: "2026-01-12T16:51:27",
-    isBookmarked: true,
   },
   {
     id: 1439,
@@ -18108,7 +16670,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 3,
     createdAt: "2026-01-12T16:31:07",
-    isBookmarked: false,
   },
   {
     id: 1440,
@@ -18117,7 +16678,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 5,
     createdAt: "2026-01-12T14:53:42",
-    isBookmarked: false,
   },
   {
     id: 1441,
@@ -18126,7 +16686,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 6,
     createdAt: "2026-01-12T14:34:28",
-    isBookmarked: false,
   },
   {
     id: 1442,
@@ -18135,7 +16694,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 6,
     createdAt: "2026-01-12T14:16:23",
-    isBookmarked: false,
   },
   {
     id: 1443,
@@ -18149,7 +16707,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 4,
     createdAt: "2026-01-12T12:04:19",
-    isBookmarked: false,
   },
   {
     id: 1444,
@@ -18164,7 +16721,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 1,
     createdAt: "2026-01-12T04:16:34",
-    isBookmarked: false,
   },
   {
     id: 1445,
@@ -18178,7 +16734,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 0,
     createdAt: "2026-01-12T02:59:40",
-    isBookmarked: false,
   },
   {
     id: 1446,
@@ -18190,7 +16745,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 12,
     createdAt: "2026-01-12T02:03:01",
-    isBookmarked: false,
   },
   {
     id: 1447,
@@ -18199,7 +16753,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 7,
     createdAt: "2026-01-12T01:43:53",
-    isBookmarked: false,
   },
   {
     id: 1448,
@@ -18213,7 +16766,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 3,
     createdAt: "2026-01-11T23:05:18",
-    isBookmarked: false,
   },
   {
     id: 1449,
@@ -18222,7 +16774,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 2,
     createdAt: "2026-01-11T22:25:28",
-    isBookmarked: false,
   },
   {
     id: 1450,
@@ -18231,7 +16782,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 8,
     createdAt: "2026-01-11T20:00:59",
-    isBookmarked: false,
   },
   {
     id: 1451,
@@ -18240,7 +16790,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 4,
     createdAt: "2026-01-11T16:46:33",
-    isBookmarked: false,
   },
   {
     id: 1452,
@@ -18253,7 +16802,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 6,
     createdAt: "2026-01-11T11:35:33",
-    isBookmarked: false,
   },
   {
     id: 1453,
@@ -18262,7 +16810,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 7,
     createdAt: "2026-01-11T08:15:06",
-    isBookmarked: false,
   },
   {
     id: 1454,
@@ -18275,7 +16822,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 1,
     createdAt: "2026-01-11T07:23:54",
-    isBookmarked: false,
   },
   {
     id: 1455,
@@ -18287,7 +16833,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 6,
     createdAt: "2026-01-11T06:22:05",
-    isBookmarked: false,
   },
   {
     id: 1456,
@@ -18302,7 +16847,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 2,
     createdAt: "2026-01-11T05:58:52",
-    isBookmarked: false,
   },
   {
     id: 1457,
@@ -18317,7 +16861,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 5,
     createdAt: "2026-01-11T05:37:09",
-    isBookmarked: true,
   },
   {
     id: 1458,
@@ -18331,7 +16874,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 6,
     createdAt: "2026-01-11T05:27:48",
-    isBookmarked: false,
   },
   {
     id: 1459,
@@ -18346,7 +16888,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 4,
     createdAt: "2026-01-11T01:03:42",
-    isBookmarked: false,
   },
   {
     id: 1460,
@@ -18355,7 +16896,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 0,
     createdAt: "2026-01-11T00:46:42",
-    isBookmarked: false,
   },
   {
     id: 1461,
@@ -18364,7 +16904,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 0,
     createdAt: "2026-01-11T00:20:34",
-    isBookmarked: true,
   },
   {
     id: 1462,
@@ -18378,7 +16917,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 0,
     createdAt: "2026-01-10T23:24:02",
-    isBookmarked: false,
   },
   {
     id: 1463,
@@ -18387,7 +16925,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 5,
     createdAt: "2026-01-10T22:35:10",
-    isBookmarked: false,
   },
   {
     id: 1464,
@@ -18402,7 +16939,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 0,
     createdAt: "2026-01-10T20:21:39",
-    isBookmarked: false,
   },
   {
     id: 1465,
@@ -18417,7 +16953,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 2,
     createdAt: "2026-01-10T20:00:13",
-    isBookmarked: true,
   },
   {
     id: 1466,
@@ -18430,7 +16965,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 4,
     createdAt: "2026-01-10T19:55:52",
-    isBookmarked: false,
   },
   {
     id: 1467,
@@ -18443,7 +16977,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 8,
     createdAt: "2026-01-10T19:46:12",
-    isBookmarked: false,
   },
   {
     id: 1468,
@@ -18456,7 +16989,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 5,
     createdAt: "2026-01-10T16:14:33",
-    isBookmarked: false,
   },
   {
     id: 1469,
@@ -18469,7 +17001,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 6,
     createdAt: "2026-01-10T15:52:47",
-    isBookmarked: true,
   },
   {
     id: 1470,
@@ -18482,7 +17013,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 1,
     createdAt: "2026-01-10T15:31:48",
-    isBookmarked: false,
   },
   {
     id: 1471,
@@ -18494,7 +17024,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 5,
     createdAt: "2026-01-10T14:28:05",
-    isBookmarked: false,
   },
   {
     id: 1472,
@@ -18506,7 +17035,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 0,
     createdAt: "2026-01-10T13:28:53",
-    isBookmarked: false,
   },
   {
     id: 1473,
@@ -18519,7 +17047,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 6,
     createdAt: "2026-01-10T13:02:30",
-    isBookmarked: false,
   },
   {
     id: 1474,
@@ -18533,7 +17060,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 1,
     createdAt: "2026-01-10T12:53:25",
-    isBookmarked: false,
   },
   {
     id: 1475,
@@ -18547,7 +17073,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 4,
     createdAt: "2026-01-10T11:57:26",
-    isBookmarked: false,
   },
   {
     id: 1476,
@@ -18562,7 +17087,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 6,
     createdAt: "2026-01-10T11:28:04",
-    isBookmarked: false,
   },
   {
     id: 1477,
@@ -18574,7 +17098,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 5,
     createdAt: "2026-01-10T10:35:01",
-    isBookmarked: false,
   },
   {
     id: 1478,
@@ -18587,7 +17110,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 1,
     createdAt: "2026-01-10T08:01:23",
-    isBookmarked: false,
   },
   {
     id: 1479,
@@ -18601,7 +17123,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 5,
     createdAt: "2026-01-10T05:38:43",
-    isBookmarked: false,
   },
   {
     id: 1480,
@@ -18610,7 +17131,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 2,
     createdAt: "2026-01-10T01:13:52",
-    isBookmarked: true,
   },
   {
     id: 1481,
@@ -18622,7 +17142,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 4,
     createdAt: "2026-01-09T23:10:33",
-    isBookmarked: false,
   },
   {
     id: 1482,
@@ -18631,7 +17150,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 1,
     createdAt: "2026-01-09T22:04:34",
-    isBookmarked: true,
   },
   {
     id: 1483,
@@ -18644,7 +17162,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 6,
     createdAt: "2026-01-09T21:46:26",
-    isBookmarked: false,
   },
   {
     id: 1484,
@@ -18657,7 +17174,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 4,
     createdAt: "2026-01-09T21:41:15",
-    isBookmarked: false,
   },
   {
     id: 1485,
@@ -18666,7 +17182,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 3,
     createdAt: "2026-01-09T21:08:30",
-    isBookmarked: false,
   },
   {
     id: 1486,
@@ -18679,7 +17194,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 5,
     createdAt: "2026-01-09T21:07:11",
-    isBookmarked: true,
   },
   {
     id: 1487,
@@ -18694,7 +17208,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 2,
     createdAt: "2026-01-09T19:34:51",
-    isBookmarked: false,
   },
   {
     id: 1488,
@@ -18703,7 +17216,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 2,
     createdAt: "2026-01-09T16:59:20",
-    isBookmarked: true,
   },
   {
     id: 1489,
@@ -18712,7 +17224,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 6,
     createdAt: "2026-01-09T16:40:30",
-    isBookmarked: false,
   },
   {
     id: 1490,
@@ -18725,7 +17236,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 4,
     createdAt: "2026-01-09T16:32:51",
-    isBookmarked: true,
   },
   {
     id: 1491,
@@ -18737,7 +17247,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 5,
     createdAt: "2026-01-09T14:50:23",
-    isBookmarked: false,
   },
   {
     id: 1492,
@@ -18751,7 +17260,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 1,
     createdAt: "2026-01-09T14:47:26",
-    isBookmarked: false,
   },
   {
     id: 1493,
@@ -18760,7 +17268,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 8,
     createdAt: "2026-01-09T14:26:00",
-    isBookmarked: false,
   },
   {
     id: 1494,
@@ -18772,7 +17279,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 0,
     createdAt: "2026-01-09T14:17:25",
-    isBookmarked: false,
   },
   {
     id: 1495,
@@ -18787,7 +17293,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 0,
     createdAt: "2026-01-09T13:07:26",
-    isBookmarked: false,
   },
   {
     id: 1496,
@@ -18799,7 +17304,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 7,
     createdAt: "2026-01-09T12:43:07",
-    isBookmarked: false,
   },
   {
     id: 1497,
@@ -18812,7 +17316,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 14,
     createdAt: "2026-01-09T11:23:37",
-    isBookmarked: false,
   },
   {
     id: 1498,
@@ -18826,7 +17329,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 5,
     createdAt: "2026-01-09T09:39:37",
-    isBookmarked: false,
   },
   {
     id: 1499,
@@ -18839,7 +17341,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 2,
     createdAt: "2026-01-09T09:31:30",
-    isBookmarked: false,
   },
   {
     id: 1500,
@@ -18854,7 +17355,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 6,
     createdAt: "2026-01-09T07:28:45",
-    isBookmarked: true,
   },
   {
     id: 1501,
@@ -18869,7 +17369,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 5,
     createdAt: "2026-01-09T04:03:39",
-    isBookmarked: false,
   },
   {
     id: 1502,
@@ -18878,7 +17377,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 6,
     createdAt: "2026-01-09T03:41:08",
-    isBookmarked: false,
   },
   {
     id: 1503,
@@ -18890,7 +17388,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 2,
     createdAt: "2026-01-09T01:40:57",
-    isBookmarked: false,
   },
   {
     id: 1504,
@@ -18902,7 +17399,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 6,
     createdAt: "2026-01-08T23:21:02",
-    isBookmarked: true,
   },
   {
     id: 1505,
@@ -18917,7 +17413,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 2,
     createdAt: "2026-01-08T21:51:15",
-    isBookmarked: false,
   },
   {
     id: 1506,
@@ -18932,7 +17427,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 5,
     createdAt: "2026-01-08T17:40:19",
-    isBookmarked: false,
   },
   {
     id: 1507,
@@ -18947,7 +17441,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 7,
     createdAt: "2026-01-08T17:01:36",
-    isBookmarked: false,
   },
   {
     id: 1508,
@@ -18960,7 +17453,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 6,
     createdAt: "2026-01-08T15:35:30",
-    isBookmarked: false,
   },
   {
     id: 1509,
@@ -18973,7 +17465,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 5,
     createdAt: "2026-01-08T12:57:12",
-    isBookmarked: true,
   },
   {
     id: 1510,
@@ -18985,7 +17476,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 15,
     createdAt: "2026-01-08T11:55:13",
-    isBookmarked: true,
   },
   {
     id: 1511,
@@ -18999,7 +17489,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 12,
     createdAt: "2026-01-08T11:49:28",
-    isBookmarked: false,
   },
   {
     id: 1512,
@@ -19008,7 +17497,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 1,
     createdAt: "2026-01-08T11:01:43",
-    isBookmarked: false,
   },
   {
     id: 1513,
@@ -19017,7 +17505,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 13,
     createdAt: "2026-01-08T10:45:54",
-    isBookmarked: false,
   },
   {
     id: 1514,
@@ -19029,7 +17516,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 1,
     createdAt: "2026-01-08T08:37:11",
-    isBookmarked: false,
   },
   {
     id: 1515,
@@ -19044,7 +17530,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 2,
     createdAt: "2026-01-08T06:27:21",
-    isBookmarked: true,
   },
   {
     id: 1516,
@@ -19058,7 +17543,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 7,
     createdAt: "2026-01-08T04:50:55",
-    isBookmarked: true,
   },
   {
     id: 1517,
@@ -19073,7 +17557,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 4,
     createdAt: "2026-01-08T03:55:39",
-    isBookmarked: false,
   },
   {
     id: 1518,
@@ -19082,7 +17565,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 0,
     createdAt: "2026-01-08T02:18:50",
-    isBookmarked: false,
   },
   {
     id: 1519,
@@ -19094,7 +17576,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 5,
     createdAt: "2026-01-08T00:53:07",
-    isBookmarked: false,
   },
   {
     id: 1520,
@@ -19106,7 +17587,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 7,
     createdAt: "2026-01-08T00:50:33",
-    isBookmarked: false,
   },
   {
     id: 1521,
@@ -19118,7 +17598,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 6,
     createdAt: "2026-01-07T23:55:39",
-    isBookmarked: false,
   },
   {
     id: 1522,
@@ -19132,7 +17611,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 3,
     createdAt: "2026-01-07T23:03:11",
-    isBookmarked: false,
   },
   {
     id: 1523,
@@ -19141,7 +17619,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 3,
     createdAt: "2026-01-07T22:36:01",
-    isBookmarked: false,
   },
   {
     id: 1524,
@@ -19153,7 +17630,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 3,
     createdAt: "2026-01-07T22:15:16",
-    isBookmarked: false,
   },
   {
     id: 1525,
@@ -19165,7 +17641,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 4,
     createdAt: "2026-01-07T21:32:13",
-    isBookmarked: true,
   },
   {
     id: 1526,
@@ -19177,7 +17652,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 12,
     createdAt: "2026-01-07T20:37:31",
-    isBookmarked: false,
   },
   {
     id: 1527,
@@ -19192,7 +17666,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 8,
     createdAt: "2026-01-07T20:11:01",
-    isBookmarked: false,
   },
   {
     id: 1528,
@@ -19201,7 +17674,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 6,
     createdAt: "2026-01-07T19:25:04",
-    isBookmarked: false,
   },
   {
     id: 1529,
@@ -19215,7 +17687,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 7,
     createdAt: "2026-01-07T15:17:55",
-    isBookmarked: false,
   },
   {
     id: 1530,
@@ -19227,7 +17698,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 6,
     createdAt: "2026-01-07T15:10:54",
-    isBookmarked: false,
   },
   {
     id: 1531,
@@ -19240,7 +17710,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 4,
     createdAt: "2026-01-07T12:20:25",
-    isBookmarked: false,
   },
   {
     id: 1532,
@@ -19254,7 +17723,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 5,
     createdAt: "2026-01-07T10:07:47",
-    isBookmarked: false,
   },
   {
     id: 1533,
@@ -19268,7 +17736,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 7,
     createdAt: "2026-01-07T09:22:24",
-    isBookmarked: false,
   },
   {
     id: 1534,
@@ -19281,7 +17748,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 6,
     createdAt: "2026-01-07T09:17:35",
-    isBookmarked: false,
   },
   {
     id: 1535,
@@ -19295,7 +17761,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 2,
     createdAt: "2026-01-07T08:32:20",
-    isBookmarked: false,
   },
   {
     id: 1536,
@@ -19309,7 +17774,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 3,
     createdAt: "2026-01-07T07:42:15",
-    isBookmarked: false,
   },
   {
     id: 1537,
@@ -19322,7 +17786,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 8,
     createdAt: "2026-01-07T06:58:28",
-    isBookmarked: false,
   },
   {
     id: 1538,
@@ -19331,7 +17794,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 2,
     createdAt: "2026-01-07T05:21:13",
-    isBookmarked: false,
   },
   {
     id: 1539,
@@ -19345,7 +17807,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 6,
     createdAt: "2026-01-07T04:58:43",
-    isBookmarked: false,
   },
   {
     id: 1540,
@@ -19359,7 +17820,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 4,
     createdAt: "2026-01-07T03:47:23",
-    isBookmarked: true,
   },
   {
     id: 1541,
@@ -19368,7 +17828,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 6,
     createdAt: "2026-01-06T21:04:23",
-    isBookmarked: false,
   },
   {
     id: 1542,
@@ -19382,7 +17841,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 6,
     createdAt: "2026-01-06T20:45:49",
-    isBookmarked: false,
   },
   {
     id: 1543,
@@ -19396,7 +17854,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 7,
     createdAt: "2026-01-06T17:37:13",
-    isBookmarked: false,
   },
   {
     id: 1544,
@@ -19410,7 +17867,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 8,
     createdAt: "2026-01-06T15:14:11",
-    isBookmarked: true,
   },
   {
     id: 1545,
@@ -19419,7 +17875,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 8,
     createdAt: "2026-01-06T14:54:12",
-    isBookmarked: false,
   },
   {
     id: 1546,
@@ -19433,7 +17888,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 0,
     createdAt: "2026-01-06T14:28:21",
-    isBookmarked: false,
   },
   {
     id: 1547,
@@ -19448,7 +17902,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 8,
     createdAt: "2026-01-06T12:43:10",
-    isBookmarked: false,
   },
   {
     id: 1548,
@@ -19461,7 +17914,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 6,
     createdAt: "2026-01-06T09:33:48",
-    isBookmarked: true,
   },
   {
     id: 1549,
@@ -19476,7 +17928,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 5,
     createdAt: "2026-01-06T09:09:02",
-    isBookmarked: false,
   },
   {
     id: 1550,
@@ -19489,7 +17940,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 0,
     createdAt: "2026-01-06T05:33:18",
-    isBookmarked: false,
   },
   {
     id: 1551,
@@ -19498,7 +17948,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 0,
     createdAt: "2026-01-06T04:53:32",
-    isBookmarked: false,
   },
   {
     id: 1552,
@@ -19510,7 +17959,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 6,
     createdAt: "2026-01-06T04:33:10",
-    isBookmarked: false,
   },
   {
     id: 1553,
@@ -19522,7 +17970,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 5,
     createdAt: "2026-01-06T04:01:04",
-    isBookmarked: false,
   },
   {
     id: 1554,
@@ -19535,7 +17982,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 7,
     createdAt: "2026-01-06T03:31:53",
-    isBookmarked: false,
   },
   {
     id: 1555,
@@ -19544,7 +17990,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 4,
     createdAt: "2026-01-06T03:20:45",
-    isBookmarked: false,
   },
   {
     id: 1556,
@@ -19553,7 +17998,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 0,
     createdAt: "2026-01-06T01:16:54",
-    isBookmarked: false,
   },
   {
     id: 1557,
@@ -19565,7 +18009,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 8,
     createdAt: "2026-01-06T00:53:00",
-    isBookmarked: false,
   },
   {
     id: 1558,
@@ -19580,7 +18023,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 6,
     createdAt: "2026-01-06T00:30:00",
-    isBookmarked: true,
   },
   {
     id: 1559,
@@ -19595,7 +18037,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 6,
     createdAt: "2026-01-05T23:53:35",
-    isBookmarked: false,
   },
   {
     id: 1560,
@@ -19609,7 +18050,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 9,
     createdAt: "2026-01-05T22:25:46",
-    isBookmarked: false,
   },
   {
     id: 1561,
@@ -19624,7 +18064,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 12,
     createdAt: "2026-01-05T20:53:31",
-    isBookmarked: false,
   },
   {
     id: 1562,
@@ -19637,7 +18076,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 11,
     createdAt: "2026-01-05T18:55:21",
-    isBookmarked: false,
   },
   {
     id: 1563,
@@ -19652,7 +18090,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 3,
     createdAt: "2026-01-05T15:33:57",
-    isBookmarked: false,
   },
   {
     id: 1564,
@@ -19666,7 +18103,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 7,
     createdAt: "2026-01-05T13:59:39",
-    isBookmarked: false,
   },
   {
     id: 1565,
@@ -19679,7 +18115,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 1,
     createdAt: "2026-01-05T12:22:10",
-    isBookmarked: false,
   },
   {
     id: 1566,
@@ -19691,7 +18126,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 1,
     createdAt: "2026-01-05T11:15:32",
-    isBookmarked: false,
   },
   {
     id: 1567,
@@ -19706,7 +18140,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 3,
     createdAt: "2026-01-05T08:12:10",
-    isBookmarked: false,
   },
   {
     id: 1568,
@@ -19715,7 +18148,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 7,
     createdAt: "2026-01-05T05:05:57",
-    isBookmarked: false,
   },
   {
     id: 1569,
@@ -19729,7 +18161,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 7,
     createdAt: "2026-01-05T03:46:34",
-    isBookmarked: false,
   },
   {
     id: 1570,
@@ -19742,7 +18173,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 5,
     createdAt: "2026-01-05T03:37:18",
-    isBookmarked: false,
   },
   {
     id: 1571,
@@ -19757,7 +18187,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 7,
     createdAt: "2026-01-05T03:35:06",
-    isBookmarked: false,
   },
   {
     id: 1572,
@@ -19766,7 +18195,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 2,
     createdAt: "2026-01-05T02:30:52",
-    isBookmarked: false,
   },
   {
     id: 1573,
@@ -19779,7 +18207,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 7,
     createdAt: "2026-01-05T01:08:25",
-    isBookmarked: false,
   },
   {
     id: 1574,
@@ -19791,7 +18218,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 8,
     createdAt: "2026-01-04T22:54:16",
-    isBookmarked: true,
   },
   {
     id: 1575,
@@ -19806,7 +18232,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 4,
     createdAt: "2026-01-04T21:26:02",
-    isBookmarked: false,
   },
   {
     id: 1576,
@@ -19818,7 +18243,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 0,
     createdAt: "2026-01-04T21:09:20",
-    isBookmarked: false,
   },
   {
     id: 1577,
@@ -19827,7 +18251,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 4,
     createdAt: "2026-01-04T17:45:33",
-    isBookmarked: false,
   },
   {
     id: 1578,
@@ -19836,7 +18259,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 6,
     createdAt: "2026-01-04T15:38:22",
-    isBookmarked: false,
   },
   {
     id: 1579,
@@ -19851,7 +18273,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 8,
     createdAt: "2026-01-04T15:34:06",
-    isBookmarked: false,
   },
   {
     id: 1580,
@@ -19860,7 +18281,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 3,
     createdAt: "2026-01-04T13:31:40",
-    isBookmarked: false,
   },
   {
     id: 1581,
@@ -19873,7 +18293,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 4,
     createdAt: "2026-01-04T13:02:17",
-    isBookmarked: false,
   },
   {
     id: 1582,
@@ -19888,7 +18307,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 1,
     createdAt: "2026-01-04T12:10:53",
-    isBookmarked: false,
   },
   {
     id: 1583,
@@ -19902,7 +18320,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 1,
     createdAt: "2026-01-04T11:40:31",
-    isBookmarked: false,
   },
   {
     id: 1584,
@@ -19916,7 +18333,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 2,
     createdAt: "2026-01-04T09:33:02",
-    isBookmarked: true,
   },
   {
     id: 1585,
@@ -19929,7 +18345,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 8,
     createdAt: "2026-01-04T06:14:25",
-    isBookmarked: false,
   },
   {
     id: 1586,
@@ -19943,7 +18358,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 0,
     createdAt: "2026-01-04T05:02:26",
-    isBookmarked: false,
   },
   {
     id: 1587,
@@ -19958,7 +18372,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 0,
     createdAt: "2026-01-04T00:27:44",
-    isBookmarked: false,
   },
   {
     id: 1588,
@@ -19972,7 +18385,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 7,
     createdAt: "2026-01-03T18:41:06",
-    isBookmarked: false,
   },
   {
     id: 1589,
@@ -19984,7 +18396,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 3,
     createdAt: "2026-01-03T17:58:04",
-    isBookmarked: false,
   },
   {
     id: 1590,
@@ -19999,7 +18410,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 7,
     createdAt: "2026-01-03T17:09:57",
-    isBookmarked: false,
   },
   {
     id: 1591,
@@ -20014,7 +18424,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 7,
     createdAt: "2026-01-03T14:35:55",
-    isBookmarked: false,
   },
   {
     id: 1592,
@@ -20026,7 +18435,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 8,
     createdAt: "2026-01-03T12:49:54",
-    isBookmarked: false,
   },
   {
     id: 1593,
@@ -20041,7 +18449,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 1,
     createdAt: "2026-01-03T12:44:01",
-    isBookmarked: false,
   },
   {
     id: 1594,
@@ -20054,7 +18461,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 2,
     createdAt: "2026-01-03T10:58:18",
-    isBookmarked: false,
   },
   {
     id: 1595,
@@ -20069,7 +18475,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 8,
     createdAt: "2026-01-03T10:54:33",
-    isBookmarked: false,
   },
   {
     id: 1596,
@@ -20082,7 +18487,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 1,
     createdAt: "2026-01-03T09:43:05",
-    isBookmarked: false,
   },
   {
     id: 1597,
@@ -20094,7 +18498,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 7,
     createdAt: "2026-01-03T07:42:26",
-    isBookmarked: false,
   },
   {
     id: 1598,
@@ -20109,7 +18512,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 2,
     createdAt: "2026-01-03T07:34:47",
-    isBookmarked: false,
   },
   {
     id: 1599,
@@ -20124,7 +18526,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 0,
     createdAt: "2026-01-03T06:19:19",
-    isBookmarked: false,
   },
   {
     id: 1600,
@@ -20139,7 +18540,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 4,
     createdAt: "2026-01-03T03:27:36",
-    isBookmarked: false,
   },
   {
     id: 1601,
@@ -20152,7 +18552,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 7,
     createdAt: "2026-01-02T22:56:28",
-    isBookmarked: false,
   },
   {
     id: 1602,
@@ -20165,7 +18564,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 2,
     createdAt: "2026-01-02T22:47:40",
-    isBookmarked: false,
   },
   {
     id: 1603,
@@ -20180,7 +18578,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 4,
     createdAt: "2026-01-02T22:45:34",
-    isBookmarked: false,
   },
   {
     id: 1604,
@@ -20189,7 +18586,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 2,
     createdAt: "2026-01-02T21:20:58",
-    isBookmarked: false,
   },
   {
     id: 1605,
@@ -20201,7 +18597,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 8,
     createdAt: "2026-01-02T21:13:55",
-    isBookmarked: false,
   },
   {
     id: 1606,
@@ -20216,7 +18611,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 4,
     createdAt: "2026-01-02T20:21:46",
-    isBookmarked: true,
   },
   {
     id: 1607,
@@ -20229,7 +18623,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 1,
     createdAt: "2026-01-02T19:56:07",
-    isBookmarked: false,
   },
   {
     id: 1608,
@@ -20243,7 +18636,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 0,
     createdAt: "2026-01-02T19:38:21",
-    isBookmarked: false,
   },
   {
     id: 1609,
@@ -20252,7 +18644,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 3,
     createdAt: "2026-01-02T17:45:12",
-    isBookmarked: false,
   },
   {
     id: 1610,
@@ -20261,7 +18652,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 16,
     createdAt: "2026-01-02T17:44:34",
-    isBookmarked: false,
   },
   {
     id: 1611,
@@ -20274,7 +18664,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 6,
     createdAt: "2026-01-02T15:00:48",
-    isBookmarked: false,
   },
   {
     id: 1612,
@@ -20283,7 +18672,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 0,
     createdAt: "2026-01-02T14:24:03",
-    isBookmarked: true,
   },
   {
     id: 1613,
@@ -20296,7 +18684,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 16,
     createdAt: "2026-01-02T13:56:13",
-    isBookmarked: false,
   },
   {
     id: 1614,
@@ -20308,7 +18695,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 6,
     createdAt: "2026-01-02T09:55:17",
-    isBookmarked: false,
   },
   {
     id: 1615,
@@ -20322,7 +18708,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 4,
     createdAt: "2026-01-02T09:28:17",
-    isBookmarked: false,
   },
   {
     id: 1616,
@@ -20331,7 +18716,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 10,
     createdAt: "2026-01-02T09:01:18",
-    isBookmarked: false,
   },
   {
     id: 1617,
@@ -20345,7 +18729,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 0,
     createdAt: "2026-01-02T02:44:49",
-    isBookmarked: false,
   },
   {
     id: 1618,
@@ -20358,7 +18741,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 15,
     createdAt: "2026-01-02T01:33:07",
-    isBookmarked: false,
   },
   {
     id: 1619,
@@ -20370,7 +18752,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 7,
     createdAt: "2026-01-01T23:15:37",
-    isBookmarked: true,
   },
   {
     id: 1620,
@@ -20379,7 +18760,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 3,
     createdAt: "2026-01-01T21:54:22",
-    isBookmarked: false,
   },
   {
     id: 1621,
@@ -20391,7 +18771,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 4,
     createdAt: "2026-01-01T16:03:11",
-    isBookmarked: false,
   },
   {
     id: 1622,
@@ -20404,7 +18783,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 6,
     createdAt: "2026-01-01T15:49:19",
-    isBookmarked: false,
   },
   {
     id: 1623,
@@ -20417,7 +18795,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 1,
     createdAt: "2026-01-01T14:52:25",
-    isBookmarked: false,
   },
   {
     id: 1624,
@@ -20429,7 +18806,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 8,
     createdAt: "2026-01-01T14:47:15",
-    isBookmarked: false,
   },
   {
     id: 1625,
@@ -20443,7 +18819,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 2,
     createdAt: "2026-01-01T14:21:38",
-    isBookmarked: false,
   },
   {
     id: 1626,
@@ -20452,7 +18827,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 3,
     createdAt: "2026-01-01T11:40:39",
-    isBookmarked: false,
   },
   {
     id: 1627,
@@ -20466,7 +18840,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 15,
     createdAt: "2026-01-01T10:30:38",
-    isBookmarked: false,
   },
   {
     id: 1628,
@@ -20478,7 +18851,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 1,
     createdAt: "2026-01-01T09:19:53",
-    isBookmarked: false,
   },
   {
     id: 1629,
@@ -20492,7 +18864,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 2,
     createdAt: "2026-01-01T08:13:42",
-    isBookmarked: false,
   },
   {
     id: 1630,
@@ -20504,7 +18875,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 8,
     createdAt: "2026-01-01T06:44:56",
-    isBookmarked: false,
   },
   {
     id: 1631,
@@ -20517,7 +18887,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 8,
     createdAt: "2026-01-01T05:58:18",
-    isBookmarked: false,
   },
   {
     id: 1632,
@@ -20532,7 +18901,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 8,
     createdAt: "2026-01-01T04:11:28",
-    isBookmarked: false,
   },
   {
     id: 1633,
@@ -20544,7 +18912,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 4,
     createdAt: "2026-01-01T01:34:52",
-    isBookmarked: false,
   },
   {
     id: 1634,
@@ -20556,7 +18923,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 1,
     createdAt: "2026-01-01T00:49:07",
-    isBookmarked: false,
   },
   {
     id: 1635,
@@ -20569,7 +18935,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 5,
     createdAt: "2025-12-31T23:07:11",
-    isBookmarked: true,
   },
   {
     id: 1636,
@@ -20578,7 +18943,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 0,
     createdAt: "2025-12-31T20:36:33",
-    isBookmarked: false,
   },
   {
     id: 1637,
@@ -20592,7 +18956,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 0,
     createdAt: "2025-12-31T19:30:41",
-    isBookmarked: true,
   },
   {
     id: 1638,
@@ -20601,7 +18964,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 13,
     createdAt: "2025-12-31T19:01:46",
-    isBookmarked: false,
   },
   {
     id: 1639,
@@ -20613,7 +18975,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 3,
     createdAt: "2025-12-31T17:21:46",
-    isBookmarked: false,
   },
   {
     id: 1640,
@@ -20628,7 +18989,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 4,
     createdAt: "2025-12-31T15:18:06",
-    isBookmarked: false,
   },
   {
     id: 1641,
@@ -20640,7 +19000,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 2,
     createdAt: "2025-12-31T14:07:59",
-    isBookmarked: false,
   },
   {
     id: 1642,
@@ -20653,7 +19012,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 0,
     createdAt: "2025-12-31T14:02:30",
-    isBookmarked: true,
   },
   {
     id: 1643,
@@ -20667,7 +19025,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 5,
     createdAt: "2025-12-31T13:11:40",
-    isBookmarked: false,
   },
   {
     id: 1644,
@@ -20681,7 +19038,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 6,
     createdAt: "2025-12-31T03:33:11",
-    isBookmarked: true,
   },
   {
     id: 1645,
@@ -20694,7 +19050,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 4,
     createdAt: "2025-12-30T22:37:34",
-    isBookmarked: false,
   },
   {
     id: 1646,
@@ -20708,7 +19063,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 4,
     createdAt: "2025-12-30T22:27:49",
-    isBookmarked: false,
   },
   {
     id: 1647,
@@ -20721,7 +19075,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 5,
     createdAt: "2025-12-30T21:08:52",
-    isBookmarked: false,
   },
   {
     id: 1648,
@@ -20736,7 +19089,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 7,
     createdAt: "2025-12-30T21:05:58",
-    isBookmarked: false,
   },
   {
     id: 1649,
@@ -20750,7 +19102,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 0,
     createdAt: "2025-12-30T18:59:10",
-    isBookmarked: false,
   },
   {
     id: 1650,
@@ -20765,7 +19116,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 2,
     createdAt: "2025-12-30T17:42:09",
-    isBookmarked: false,
   },
   {
     id: 1651,
@@ -20780,7 +19130,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 2,
     createdAt: "2025-12-30T17:21:49",
-    isBookmarked: false,
   },
   {
     id: 1652,
@@ -20792,7 +19141,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 4,
     createdAt: "2025-12-30T17:08:29",
-    isBookmarked: false,
   },
   {
     id: 1653,
@@ -20806,7 +19154,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 3,
     createdAt: "2025-12-30T16:27:21",
-    isBookmarked: false,
   },
   {
     id: 1654,
@@ -20815,7 +19162,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 8,
     createdAt: "2025-12-30T16:06:49",
-    isBookmarked: false,
   },
   {
     id: 1655,
@@ -20824,7 +19170,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 8,
     createdAt: "2025-12-30T15:26:58",
-    isBookmarked: false,
   },
   {
     id: 1656,
@@ -20837,7 +19182,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 1,
     createdAt: "2025-12-30T12:55:44",
-    isBookmarked: true,
   },
   {
     id: 1657,
@@ -20846,7 +19190,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 4,
     createdAt: "2025-12-30T11:35:08",
-    isBookmarked: true,
   },
   {
     id: 1658,
@@ -20858,7 +19201,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 13,
     createdAt: "2025-12-30T04:24:52",
-    isBookmarked: false,
   },
   {
     id: 1659,
@@ -20872,7 +19214,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 3,
     createdAt: "2025-12-30T04:14:44",
-    isBookmarked: false,
   },
   {
     id: 1660,
@@ -20886,7 +19227,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 1,
     createdAt: "2025-12-30T04:09:17",
-    isBookmarked: false,
   },
   {
     id: 1661,
@@ -20895,7 +19235,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 2,
     createdAt: "2025-12-30T03:21:38",
-    isBookmarked: false,
   },
   {
     id: 1662,
@@ -20904,7 +19243,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 16,
     createdAt: "2025-12-30T03:18:38",
-    isBookmarked: false,
   },
   {
     id: 1663,
@@ -20918,7 +19256,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 3,
     createdAt: "2025-12-30T01:36:04",
-    isBookmarked: false,
   },
   {
     id: 1664,
@@ -20930,7 +19267,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 8,
     createdAt: "2025-12-30T00:32:16",
-    isBookmarked: false,
   },
   {
     id: 1665,
@@ -20943,7 +19279,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 5,
     createdAt: "2025-12-29T21:43:33",
-    isBookmarked: false,
   },
   {
     id: 1666,
@@ -20956,7 +19291,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 3,
     createdAt: "2025-12-29T19:54:59",
-    isBookmarked: false,
   },
   {
     id: 1667,
@@ -20969,7 +19303,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 3,
     createdAt: "2025-12-29T19:50:07",
-    isBookmarked: false,
   },
   {
     id: 1668,
@@ -20984,7 +19317,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 6,
     createdAt: "2025-12-29T19:10:07",
-    isBookmarked: false,
   },
   {
     id: 1669,
@@ -20998,7 +19330,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 4,
     createdAt: "2025-12-29T17:03:15",
-    isBookmarked: false,
   },
   {
     id: 1670,
@@ -21012,7 +19343,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 4,
     createdAt: "2025-12-29T11:27:36",
-    isBookmarked: true,
   },
   {
     id: 1671,
@@ -21021,7 +19351,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 6,
     createdAt: "2025-12-29T10:01:03",
-    isBookmarked: true,
   },
   {
     id: 1672,
@@ -21030,7 +19359,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 5,
     createdAt: "2025-12-29T09:35:15",
-    isBookmarked: false,
   },
   {
     id: 1673,
@@ -21042,7 +19370,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 7,
     createdAt: "2025-12-29T07:17:15",
-    isBookmarked: false,
   },
   {
     id: 1674,
@@ -21057,7 +19384,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 7,
     createdAt: "2025-12-29T07:13:35",
-    isBookmarked: false,
   },
   {
     id: 1675,
@@ -21070,7 +19396,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 5,
     createdAt: "2025-12-29T06:44:31",
-    isBookmarked: false,
   },
   {
     id: 1676,
@@ -21082,7 +19407,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 2,
     createdAt: "2025-12-29T03:50:56",
-    isBookmarked: false,
   },
   {
     id: 1677,
@@ -21095,7 +19419,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 0,
     createdAt: "2025-12-29T00:17:01",
-    isBookmarked: false,
   },
   {
     id: 1678,
@@ -21110,7 +19433,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 7,
     createdAt: "2025-12-28T22:25:14",
-    isBookmarked: false,
   },
   {
     id: 1679,
@@ -21119,7 +19441,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 2,
     createdAt: "2025-12-28T21:41:35",
-    isBookmarked: true,
   },
   {
     id: 1680,
@@ -21133,7 +19454,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 0,
     createdAt: "2025-12-28T20:01:56",
-    isBookmarked: false,
   },
   {
     id: 1681,
@@ -21145,7 +19465,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 5,
     createdAt: "2025-12-28T18:00:45",
-    isBookmarked: true,
   },
   {
     id: 1682,
@@ -21158,7 +19477,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 4,
     createdAt: "2025-12-28T16:48:29",
-    isBookmarked: false,
   },
   {
     id: 1683,
@@ -21170,7 +19488,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 6,
     createdAt: "2025-12-28T15:09:19",
-    isBookmarked: false,
   },
   {
     id: 1684,
@@ -21179,7 +19496,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 3,
     createdAt: "2025-12-28T14:50:07",
-    isBookmarked: false,
   },
   {
     id: 1685,
@@ -21192,7 +19508,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 3,
     createdAt: "2025-12-28T14:32:59",
-    isBookmarked: true,
   },
   {
     id: 1686,
@@ -21206,7 +19521,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 5,
     createdAt: "2025-12-28T12:53:07",
-    isBookmarked: false,
   },
   {
     id: 1687,
@@ -21218,7 +19532,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 4,
     createdAt: "2025-12-28T11:45:46",
-    isBookmarked: false,
   },
   {
     id: 1688,
@@ -21227,7 +19540,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 6,
     createdAt: "2025-12-28T10:53:25",
-    isBookmarked: false,
   },
   {
     id: 1689,
@@ -21239,7 +19551,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 8,
     createdAt: "2025-12-28T09:07:14",
-    isBookmarked: false,
   },
   {
     id: 1690,
@@ -21252,7 +19563,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 7,
     createdAt: "2025-12-28T07:45:42",
-    isBookmarked: false,
   },
   {
     id: 1691,
@@ -21264,7 +19574,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 4,
     createdAt: "2025-12-28T03:17:42",
-    isBookmarked: true,
   },
   {
     id: 1692,
@@ -21278,7 +19587,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 7,
     createdAt: "2025-12-28T02:49:07",
-    isBookmarked: false,
   },
   {
     id: 1693,
@@ -21293,7 +19601,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 7,
     createdAt: "2025-12-28T00:05:08",
-    isBookmarked: false,
   },
   {
     id: 1694,
@@ -21306,7 +19613,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 5,
     createdAt: "2025-12-27T23:26:29",
-    isBookmarked: false,
   },
   {
     id: 1695,
@@ -21315,7 +19621,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 0,
     createdAt: "2025-12-27T21:55:01",
-    isBookmarked: false,
   },
   {
     id: 1696,
@@ -21327,7 +19632,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 2,
     createdAt: "2025-12-27T14:46:59",
-    isBookmarked: false,
   },
   {
     id: 1697,
@@ -21341,7 +19645,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 10,
     createdAt: "2025-12-27T14:39:25",
-    isBookmarked: false,
   },
   {
     id: 1698,
@@ -21350,7 +19653,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 3,
     createdAt: "2025-12-27T13:36:19",
-    isBookmarked: true,
   },
   {
     id: 1699,
@@ -21364,7 +19666,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 4,
     createdAt: "2025-12-27T10:35:50",
-    isBookmarked: false,
   },
   {
     id: 1700,
@@ -21379,7 +19680,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 0,
     createdAt: "2025-12-27T10:27:26",
-    isBookmarked: false,
   },
   {
     id: 1701,
@@ -21388,7 +19688,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 5,
     createdAt: "2025-12-27T08:41:47",
-    isBookmarked: false,
   },
   {
     id: 1702,
@@ -21402,7 +19701,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 1,
     createdAt: "2025-12-27T06:49:59",
-    isBookmarked: false,
   },
   {
     id: 1703,
@@ -21416,7 +19714,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 4,
     createdAt: "2025-12-27T06:29:58",
-    isBookmarked: false,
   },
   {
     id: 1704,
@@ -21430,7 +19727,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 4,
     createdAt: "2025-12-27T04:05:33",
-    isBookmarked: false,
   },
   {
     id: 1705,
@@ -21442,7 +19738,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 5,
     createdAt: "2025-12-27T02:29:10",
-    isBookmarked: false,
   },
   {
     id: 1706,
@@ -21456,7 +19751,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 6,
     createdAt: "2025-12-27T02:21:34",
-    isBookmarked: false,
   },
   {
     id: 1707,
@@ -21465,7 +19759,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 7,
     createdAt: "2025-12-27T01:38:07",
-    isBookmarked: false,
   },
   {
     id: 1708,
@@ -21480,7 +19773,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 6,
     createdAt: "2025-12-27T01:37:51",
-    isBookmarked: false,
   },
   {
     id: 1709,
@@ -21493,7 +19785,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 1,
     createdAt: "2025-12-26T23:57:01",
-    isBookmarked: false,
   },
   {
     id: 1710,
@@ -21506,7 +19797,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 3,
     createdAt: "2025-12-26T23:22:34",
-    isBookmarked: false,
   },
   {
     id: 1711,
@@ -21520,7 +19810,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 5,
     createdAt: "2025-12-26T22:56:27",
-    isBookmarked: false,
   },
   {
     id: 1712,
@@ -21533,7 +19822,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 1,
     createdAt: "2025-12-26T19:02:19",
-    isBookmarked: false,
   },
   {
     id: 1713,
@@ -21547,7 +19835,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 0,
     createdAt: "2025-12-26T18:42:19",
-    isBookmarked: false,
   },
   {
     id: 1714,
@@ -21561,7 +19848,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 0,
     createdAt: "2025-12-26T18:02:19",
-    isBookmarked: false,
   },
   {
     id: 1715,
@@ -21576,7 +19862,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 11,
     createdAt: "2025-12-26T17:34:02",
-    isBookmarked: false,
   },
   {
     id: 1716,
@@ -21585,7 +19870,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 1,
     createdAt: "2025-12-26T16:52:53",
-    isBookmarked: true,
   },
   {
     id: 1717,
@@ -21597,7 +19881,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 6,
     createdAt: "2025-12-26T15:41:21",
-    isBookmarked: false,
   },
   {
     id: 1718,
@@ -21612,7 +19895,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 8,
     createdAt: "2025-12-26T15:40:03",
-    isBookmarked: false,
   },
   {
     id: 1719,
@@ -21627,7 +19909,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 6,
     createdAt: "2025-12-26T15:39:57",
-    isBookmarked: false,
   },
   {
     id: 1720,
@@ -21640,7 +19921,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 2,
     createdAt: "2025-12-26T14:34:30",
-    isBookmarked: false,
   },
   {
     id: 1721,
@@ -21649,7 +19929,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 4,
     createdAt: "2025-12-26T13:47:18",
-    isBookmarked: false,
   },
   {
     id: 1722,
@@ -21661,7 +19940,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 4,
     createdAt: "2025-12-26T11:19:29",
-    isBookmarked: false,
   },
   {
     id: 1723,
@@ -21676,7 +19954,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 2,
     createdAt: "2025-12-26T10:36:53",
-    isBookmarked: true,
   },
   {
     id: 1724,
@@ -21688,7 +19965,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 5,
     createdAt: "2025-12-26T10:06:15",
-    isBookmarked: false,
   },
   {
     id: 1725,
@@ -21702,7 +19978,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 3,
     createdAt: "2025-12-26T08:55:20",
-    isBookmarked: false,
   },
   {
     id: 1726,
@@ -21715,7 +19990,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 6,
     createdAt: "2025-12-26T05:41:43",
-    isBookmarked: false,
   },
   {
     id: 1727,
@@ -21729,7 +20003,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 2,
     createdAt: "2025-12-26T05:35:41",
-    isBookmarked: false,
   },
   {
     id: 1728,
@@ -21742,7 +20015,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 9,
     createdAt: "2025-12-26T04:11:36",
-    isBookmarked: false,
   },
   {
     id: 1729,
@@ -21755,7 +20027,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 6,
     createdAt: "2025-12-26T02:08:48",
-    isBookmarked: false,
   },
   {
     id: 1730,
@@ -21770,7 +20041,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 6,
     createdAt: "2025-12-26T00:28:10",
-    isBookmarked: false,
   },
   {
     id: 1731,
@@ -21782,7 +20052,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 14,
     createdAt: "2025-12-26T00:06:39",
-    isBookmarked: false,
   },
   {
     id: 1732,
@@ -21797,7 +20066,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 0,
     createdAt: "2025-12-25T23:38:11",
-    isBookmarked: true,
   },
   {
     id: 1733,
@@ -21811,7 +20079,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 3,
     createdAt: "2025-12-25T23:34:35",
-    isBookmarked: true,
   },
   {
     id: 1734,
@@ -21820,7 +20087,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 15,
     createdAt: "2025-12-25T20:58:07",
-    isBookmarked: false,
   },
   {
     id: 1735,
@@ -21834,7 +20100,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 3,
     createdAt: "2025-12-25T19:48:51",
-    isBookmarked: false,
   },
   {
     id: 1736,
@@ -21847,7 +20112,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 5,
     createdAt: "2025-12-25T17:33:28",
-    isBookmarked: false,
   },
   {
     id: 1737,
@@ -21861,7 +20125,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 2,
     createdAt: "2025-12-25T11:50:49",
-    isBookmarked: true,
   },
   {
     id: 1738,
@@ -21875,7 +20138,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 5,
     createdAt: "2025-12-25T11:34:30",
-    isBookmarked: false,
   },
   {
     id: 1739,
@@ -21888,7 +20150,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 6,
     createdAt: "2025-12-25T10:48:42",
-    isBookmarked: false,
   },
   {
     id: 1740,
@@ -21902,7 +20163,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 2,
     createdAt: "2025-12-25T09:35:22",
-    isBookmarked: true,
   },
   {
     id: 1741,
@@ -21914,7 +20174,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 4,
     createdAt: "2025-12-25T08:33:25",
-    isBookmarked: false,
   },
   {
     id: 1742,
@@ -21927,7 +20186,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 2,
     createdAt: "2025-12-25T06:20:50",
-    isBookmarked: false,
   },
   {
     id: 1743,
@@ -21940,7 +20198,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 1,
     createdAt: "2025-12-25T05:57:08",
-    isBookmarked: false,
   },
   {
     id: 1744,
@@ -21954,7 +20211,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 7,
     createdAt: "2025-12-25T05:56:36",
-    isBookmarked: false,
   },
   {
     id: 1745,
@@ -21967,7 +20223,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 2,
     createdAt: "2025-12-25T05:51:11",
-    isBookmarked: false,
   },
   {
     id: 1746,
@@ -21980,7 +20235,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 4,
     createdAt: "2025-12-25T05:48:10",
-    isBookmarked: false,
   },
   {
     id: 1747,
@@ -21995,7 +20249,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 1,
     createdAt: "2025-12-25T05:19:15",
-    isBookmarked: false,
   },
   {
     id: 1748,
@@ -22008,7 +20261,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 1,
     createdAt: "2025-12-25T04:55:22",
-    isBookmarked: false,
   },
   {
     id: 1749,
@@ -22020,7 +20272,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 7,
     createdAt: "2025-12-25T04:34:34",
-    isBookmarked: false,
   },
   {
     id: 1750,
@@ -22033,7 +20284,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 3,
     createdAt: "2025-12-25T03:55:25",
-    isBookmarked: false,
   },
   {
     id: 1751,
@@ -22048,7 +20298,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 0,
     createdAt: "2025-12-25T03:33:12",
-    isBookmarked: false,
   },
   {
     id: 1752,
@@ -22062,7 +20311,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 5,
     createdAt: "2025-12-25T02:31:05",
-    isBookmarked: false,
   },
   {
     id: 1753,
@@ -22074,7 +20322,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 0,
     createdAt: "2025-12-24T23:29:55",
-    isBookmarked: false,
   },
   {
     id: 1754,
@@ -22087,7 +20334,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 3,
     createdAt: "2025-12-24T23:04:11",
-    isBookmarked: false,
   },
   {
     id: 1755,
@@ -22100,7 +20346,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 6,
     createdAt: "2025-12-24T21:55:05",
-    isBookmarked: false,
   },
   {
     id: 1756,
@@ -22113,7 +20358,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 5,
     createdAt: "2025-12-24T20:05:23",
-    isBookmarked: false,
   },
   {
     id: 1757,
@@ -22128,7 +20372,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 5,
     createdAt: "2025-12-24T19:38:44",
-    isBookmarked: false,
   },
   {
     id: 1758,
@@ -22141,7 +20384,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 5,
     createdAt: "2025-12-24T17:00:53",
-    isBookmarked: false,
   },
   {
     id: 1759,
@@ -22150,7 +20392,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 7,
     createdAt: "2025-12-24T14:38:35",
-    isBookmarked: false,
   },
   {
     id: 1760,
@@ -22164,7 +20405,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 8,
     createdAt: "2025-12-24T13:14:21",
-    isBookmarked: true,
   },
   {
     id: 1761,
@@ -22173,7 +20413,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 1,
     createdAt: "2025-12-24T10:52:11",
-    isBookmarked: false,
   },
   {
     id: 1762,
@@ -22182,7 +20421,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 1,
     createdAt: "2025-12-24T07:52:03",
-    isBookmarked: false,
   },
   {
     id: 1763,
@@ -22196,7 +20434,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 0,
     createdAt: "2025-12-24T06:16:29",
-    isBookmarked: false,
   },
   {
     id: 1764,
@@ -22209,7 +20446,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 13,
     createdAt: "2025-12-24T02:54:05",
-    isBookmarked: false,
   },
   {
     id: 1765,
@@ -22221,7 +20457,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 6,
     createdAt: "2025-12-24T00:36:16",
-    isBookmarked: false,
   },
   {
     id: 1766,
@@ -22236,7 +20471,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 0,
     createdAt: "2025-12-23T23:43:55",
-    isBookmarked: false,
   },
   {
     id: 1767,
@@ -22245,7 +20479,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 0,
     createdAt: "2025-12-23T22:34:41",
-    isBookmarked: false,
   },
   {
     id: 1768,
@@ -22259,7 +20492,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 2,
     createdAt: "2025-12-23T22:29:07",
-    isBookmarked: false,
   },
   {
     id: 1769,
@@ -22274,7 +20506,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 8,
     createdAt: "2025-12-23T19:07:06",
-    isBookmarked: false,
   },
   {
     id: 1770,
@@ -22283,7 +20514,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 2,
     createdAt: "2025-12-23T16:34:00",
-    isBookmarked: true,
   },
   {
     id: 1771,
@@ -22295,7 +20525,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 8,
     createdAt: "2025-12-23T15:40:11",
-    isBookmarked: false,
   },
   {
     id: 1772,
@@ -22310,7 +20539,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 6,
     createdAt: "2025-12-23T15:10:48",
-    isBookmarked: true,
   },
   {
     id: 1773,
@@ -22324,7 +20552,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 1,
     createdAt: "2025-12-23T15:00:46",
-    isBookmarked: true,
   },
   {
     id: 1774,
@@ -22338,7 +20565,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 0,
     createdAt: "2025-12-23T14:53:44",
-    isBookmarked: false,
   },
   {
     id: 1775,
@@ -22351,7 +20577,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 8,
     createdAt: "2025-12-23T12:17:37",
-    isBookmarked: false,
   },
   {
     id: 1776,
@@ -22364,7 +20589,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 3,
     createdAt: "2025-12-23T11:36:11",
-    isBookmarked: true,
   },
   {
     id: 1777,
@@ -22376,7 +20600,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 13,
     createdAt: "2025-12-23T08:16:23",
-    isBookmarked: false,
   },
   {
     id: 1778,
@@ -22391,7 +20614,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 4,
     createdAt: "2025-12-23T08:06:05",
-    isBookmarked: false,
   },
   {
     id: 1779,
@@ -22404,7 +20626,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 1,
     createdAt: "2025-12-23T05:54:04",
-    isBookmarked: true,
   },
   {
     id: 1780,
@@ -22418,7 +20639,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 1,
     createdAt: "2025-12-23T05:04:46",
-    isBookmarked: false,
   },
   {
     id: 1781,
@@ -22431,7 +20651,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 4,
     createdAt: "2025-12-23T04:35:43",
-    isBookmarked: true,
   },
   {
     id: 1782,
@@ -22443,7 +20662,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 13,
     createdAt: "2025-12-23T03:01:24",
-    isBookmarked: false,
   },
   {
     id: 1783,
@@ -22457,7 +20675,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 3,
     createdAt: "2025-12-23T01:49:43",
-    isBookmarked: false,
   },
   {
     id: 1784,
@@ -22470,7 +20687,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 8,
     createdAt: "2025-12-23T01:48:38",
-    isBookmarked: false,
   },
   {
     id: 1785,
@@ -22482,7 +20698,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 4,
     createdAt: "2025-12-23T01:33:41",
-    isBookmarked: false,
   },
   {
     id: 1786,
@@ -22496,7 +20711,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 7,
     createdAt: "2025-12-23T01:33:31",
-    isBookmarked: true,
   },
   {
     id: 1787,
@@ -22510,7 +20724,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 2,
     createdAt: "2025-12-23T00:16:26",
-    isBookmarked: true,
   },
   {
     id: 1788,
@@ -22525,7 +20738,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 3,
     createdAt: "2025-12-22T23:56:11",
-    isBookmarked: false,
   },
   {
     id: 1789,
@@ -22534,7 +20746,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 6,
     createdAt: "2025-12-22T21:43:51",
-    isBookmarked: true,
   },
   {
     id: 1790,
@@ -22543,7 +20754,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 1,
     createdAt: "2025-12-22T20:20:59",
-    isBookmarked: false,
   },
   {
     id: 1791,
@@ -22557,7 +20767,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 0,
     createdAt: "2025-12-22T16:52:50",
-    isBookmarked: false,
   },
   {
     id: 1792,
@@ -22566,7 +20775,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 4,
     createdAt: "2025-12-22T16:43:33",
-    isBookmarked: false,
   },
   {
     id: 1793,
@@ -22575,7 +20783,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 5,
     createdAt: "2025-12-22T16:39:13",
-    isBookmarked: false,
   },
   {
     id: 1794,
@@ -22587,7 +20794,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 0,
     createdAt: "2025-12-22T12:34:48",
-    isBookmarked: true,
   },
   {
     id: 1795,
@@ -22601,7 +20807,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 2,
     createdAt: "2025-12-22T11:45:34",
-    isBookmarked: true,
   },
   {
     id: 1796,
@@ -22614,7 +20819,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 15,
     createdAt: "2025-12-22T09:49:22",
-    isBookmarked: true,
   },
   {
     id: 1797,
@@ -22623,7 +20827,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 6,
     createdAt: "2025-12-22T09:18:32",
-    isBookmarked: false,
   },
   {
     id: 1798,
@@ -22636,7 +20839,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 5,
     createdAt: "2025-12-22T06:47:26",
-    isBookmarked: false,
   },
   {
     id: 1799,
@@ -22649,7 +20851,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 2,
     createdAt: "2025-12-22T06:42:45",
-    isBookmarked: true,
   },
   {
     id: 1800,
@@ -22663,7 +20864,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 0,
     createdAt: "2025-12-22T05:57:28",
-    isBookmarked: false,
   },
   {
     id: 1801,
@@ -22675,7 +20875,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 7,
     createdAt: "2025-12-22T05:18:48",
-    isBookmarked: false,
   },
   {
     id: 1802,
@@ -22688,7 +20887,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 4,
     createdAt: "2025-12-22T04:55:39",
-    isBookmarked: false,
   },
   {
     id: 1803,
@@ -22701,7 +20899,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 2,
     createdAt: "2025-12-22T04:22:54",
-    isBookmarked: false,
   },
   {
     id: 1804,
@@ -22715,7 +20912,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 2,
     createdAt: "2025-12-22T04:22:12",
-    isBookmarked: false,
   },
   {
     id: 1805,
@@ -22730,7 +20926,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 0,
     createdAt: "2025-12-22T03:29:30",
-    isBookmarked: false,
   },
   {
     id: 1806,
@@ -22745,7 +20940,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 4,
     createdAt: "2025-12-22T02:29:50",
-    isBookmarked: false,
   },
   {
     id: 1807,
@@ -22759,7 +20953,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 3,
     createdAt: "2025-12-21T22:42:33",
-    isBookmarked: false,
   },
   {
     id: 1808,
@@ -22773,7 +20966,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 7,
     createdAt: "2025-12-21T21:03:21",
-    isBookmarked: false,
   },
   {
     id: 1809,
@@ -22786,7 +20978,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 11,
     createdAt: "2025-12-21T20:29:48",
-    isBookmarked: false,
   },
   {
     id: 1810,
@@ -22801,7 +20992,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 6,
     createdAt: "2025-12-21T20:13:53",
-    isBookmarked: false,
   },
   {
     id: 1811,
@@ -22814,7 +21004,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 8,
     createdAt: "2025-12-21T20:03:32",
-    isBookmarked: true,
   },
   {
     id: 1812,
@@ -22829,7 +21018,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 4,
     createdAt: "2025-12-21T19:42:44",
-    isBookmarked: false,
   },
   {
     id: 1813,
@@ -22838,7 +21026,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 0,
     createdAt: "2025-12-21T19:42:17",
-    isBookmarked: false,
   },
   {
     id: 1814,
@@ -22852,7 +21039,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 4,
     createdAt: "2025-12-21T19:29:45",
-    isBookmarked: false,
   },
   {
     id: 1815,
@@ -22861,7 +21047,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 1,
     createdAt: "2025-12-21T19:17:13",
-    isBookmarked: false,
   },
   {
     id: 1816,
@@ -22876,7 +21061,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 6,
     createdAt: "2025-12-21T18:01:23",
-    isBookmarked: false,
   },
   {
     id: 1817,
@@ -22891,7 +21075,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 4,
     createdAt: "2025-12-21T16:43:55",
-    isBookmarked: false,
   },
   {
     id: 1818,
@@ -22904,7 +21087,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 3,
     createdAt: "2025-12-21T16:10:07",
-    isBookmarked: false,
   },
   {
     id: 1819,
@@ -22916,7 +21098,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 5,
     createdAt: "2025-12-21T15:38:03",
-    isBookmarked: false,
   },
   {
     id: 1820,
@@ -22925,7 +21106,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 0,
     createdAt: "2025-12-21T12:32:46",
-    isBookmarked: false,
   },
   {
     id: 1821,
@@ -22939,7 +21119,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 0,
     createdAt: "2025-12-21T12:19:15",
-    isBookmarked: false,
   },
   {
     id: 1822,
@@ -22951,7 +21130,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 3,
     createdAt: "2025-12-21T11:44:28",
-    isBookmarked: false,
   },
   {
     id: 1823,
@@ -22963,7 +21141,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 0,
     createdAt: "2025-12-21T11:22:03",
-    isBookmarked: false,
   },
   {
     id: 1824,
@@ -22978,7 +21155,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 7,
     createdAt: "2025-12-21T10:26:58",
-    isBookmarked: false,
   },
   {
     id: 1825,
@@ -22987,7 +21163,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 5,
     createdAt: "2025-12-21T09:59:04",
-    isBookmarked: false,
   },
   {
     id: 1826,
@@ -22999,7 +21174,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 5,
     createdAt: "2025-12-21T07:02:35",
-    isBookmarked: false,
   },
   {
     id: 1827,
@@ -23013,7 +21187,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 12,
     createdAt: "2025-12-21T03:36:23",
-    isBookmarked: false,
   },
   {
     id: 1828,
@@ -23026,7 +21199,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 4,
     createdAt: "2025-12-21T02:15:17",
-    isBookmarked: true,
   },
   {
     id: 1829,
@@ -23038,7 +21210,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 6,
     createdAt: "2025-12-21T01:42:25",
-    isBookmarked: true,
   },
   {
     id: 1830,
@@ -23052,7 +21223,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 0,
     createdAt: "2025-12-21T01:37:30",
-    isBookmarked: false,
   },
   {
     id: 1831,
@@ -23065,7 +21235,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 8,
     createdAt: "2025-12-20T19:53:55",
-    isBookmarked: false,
   },
   {
     id: 1832,
@@ -23078,7 +21247,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 4,
     createdAt: "2025-12-20T19:51:23",
-    isBookmarked: true,
   },
   {
     id: 1833,
@@ -23092,7 +21260,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 4,
     createdAt: "2025-12-20T18:43:48",
-    isBookmarked: false,
   },
   {
     id: 1834,
@@ -23104,7 +21271,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 5,
     createdAt: "2025-12-20T17:30:23",
-    isBookmarked: false,
   },
   {
     id: 1835,
@@ -23119,7 +21285,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 5,
     createdAt: "2025-12-20T16:47:31",
-    isBookmarked: false,
   },
   {
     id: 1836,
@@ -23133,7 +21298,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 1,
     createdAt: "2025-12-20T16:38:14",
-    isBookmarked: true,
   },
   {
     id: 1837,
@@ -23147,7 +21311,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 4,
     createdAt: "2025-12-20T16:37:48",
-    isBookmarked: false,
   },
   {
     id: 1838,
@@ -23160,7 +21323,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 6,
     createdAt: "2025-12-20T15:12:06",
-    isBookmarked: false,
   },
   {
     id: 1839,
@@ -23174,7 +21336,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 4,
     createdAt: "2025-12-20T13:38:05",
-    isBookmarked: false,
   },
   {
     id: 1840,
@@ -23187,7 +21348,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 3,
     createdAt: "2025-12-20T10:27:58",
-    isBookmarked: true,
   },
   {
     id: 1841,
@@ -23202,7 +21362,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 0,
     createdAt: "2025-12-20T09:55:10",
-    isBookmarked: false,
   },
   {
     id: 1842,
@@ -23211,7 +21370,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 6,
     createdAt: "2025-12-20T08:17:28",
-    isBookmarked: false,
   },
   {
     id: 1843,
@@ -23226,7 +21384,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 5,
     createdAt: "2025-12-20T06:45:06",
-    isBookmarked: false,
   },
   {
     id: 1844,
@@ -23235,7 +21392,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 13,
     createdAt: "2025-12-20T06:02:58",
-    isBookmarked: false,
   },
   {
     id: 1845,
@@ -23247,7 +21403,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 5,
     createdAt: "2025-12-20T05:05:46",
-    isBookmarked: true,
   },
   {
     id: 1846,
@@ -23256,7 +21411,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 0,
     createdAt: "2025-12-20T03:21:46",
-    isBookmarked: false,
   },
   {
     id: 1847,
@@ -23270,7 +21424,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 2,
     createdAt: "2025-12-20T00:12:39",
-    isBookmarked: false,
   },
   {
     id: 1848,
@@ -23283,7 +21436,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 0,
     createdAt: "2025-12-19T23:50:36",
-    isBookmarked: false,
   },
   {
     id: 1849,
@@ -23292,7 +21444,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 7,
     createdAt: "2025-12-19T22:10:28",
-    isBookmarked: false,
   },
   {
     id: 1850,
@@ -23307,7 +21458,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 7,
     createdAt: "2025-12-19T18:15:11",
-    isBookmarked: false,
   },
   {
     id: 1851,
@@ -23319,7 +21469,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 3,
     createdAt: "2025-12-19T17:30:26",
-    isBookmarked: false,
   },
   {
     id: 1852,
@@ -23334,7 +21483,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 5,
     createdAt: "2025-12-19T16:52:40",
-    isBookmarked: true,
   },
   {
     id: 1853,
@@ -23349,7 +21497,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 5,
     createdAt: "2025-12-19T16:04:18",
-    isBookmarked: false,
   },
   {
     id: 1854,
@@ -23362,7 +21509,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 1,
     createdAt: "2025-12-19T15:32:15",
-    isBookmarked: false,
   },
   {
     id: 1855,
@@ -23376,7 +21522,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 8,
     createdAt: "2025-12-19T12:08:36",
-    isBookmarked: false,
   },
   {
     id: 1856,
@@ -23390,7 +21535,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 4,
     createdAt: "2025-12-19T11:46:58",
-    isBookmarked: false,
   },
   {
     id: 1857,
@@ -23405,7 +21549,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 2,
     createdAt: "2025-12-19T09:32:44",
-    isBookmarked: false,
   },
   {
     id: 1858,
@@ -23419,7 +21562,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 8,
     createdAt: "2025-12-19T09:12:19",
-    isBookmarked: true,
   },
   {
     id: 1859,
@@ -23431,7 +21573,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 8,
     createdAt: "2025-12-19T09:06:19",
-    isBookmarked: false,
   },
   {
     id: 1860,
@@ -23446,7 +21587,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 7,
     createdAt: "2025-12-19T03:29:37",
-    isBookmarked: false,
   },
   {
     id: 1861,
@@ -23458,7 +21598,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 0,
     createdAt: "2025-12-19T02:59:46",
-    isBookmarked: true,
   },
   {
     id: 1862,
@@ -23471,7 +21610,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 1,
     createdAt: "2025-12-19T02:36:24",
-    isBookmarked: false,
   },
   {
     id: 1863,
@@ -23486,7 +21624,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 7,
     createdAt: "2025-12-18T21:11:19",
-    isBookmarked: false,
   },
   {
     id: 1864,
@@ -23501,7 +21638,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 6,
     createdAt: "2025-12-18T20:45:57",
-    isBookmarked: false,
   },
   {
     id: 1865,
@@ -23515,7 +21651,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 1,
     createdAt: "2025-12-18T19:44:47",
-    isBookmarked: false,
   },
   {
     id: 1866,
@@ -23529,7 +21664,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 2,
     createdAt: "2025-12-18T17:35:55",
-    isBookmarked: false,
   },
   {
     id: 1867,
@@ -23541,7 +21675,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 0,
     createdAt: "2025-12-18T16:58:16",
-    isBookmarked: true,
   },
   {
     id: 1868,
@@ -23554,7 +21687,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 0,
     createdAt: "2025-12-18T15:35:12",
-    isBookmarked: false,
   },
   {
     id: 1869,
@@ -23563,7 +21695,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 4,
     createdAt: "2025-12-18T12:47:13",
-    isBookmarked: false,
   },
   {
     id: 1870,
@@ -23577,7 +21708,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 8,
     createdAt: "2025-12-18T12:31:08",
-    isBookmarked: false,
   },
   {
     id: 1871,
@@ -23586,7 +21716,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 9,
     createdAt: "2025-12-18T12:18:32",
-    isBookmarked: false,
   },
   {
     id: 1872,
@@ -23598,7 +21727,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 8,
     createdAt: "2025-12-18T11:37:40",
-    isBookmarked: true,
   },
   {
     id: 1873,
@@ -23613,7 +21741,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 5,
     createdAt: "2025-12-18T08:39:16",
-    isBookmarked: false,
   },
   {
     id: 1874,
@@ -23626,7 +21753,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 3,
     createdAt: "2025-12-18T04:03:30",
-    isBookmarked: false,
   },
   {
     id: 1875,
@@ -23635,7 +21761,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 0,
     createdAt: "2025-12-18T01:14:05",
-    isBookmarked: false,
   },
   {
     id: 1876,
@@ -23647,7 +21772,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 3,
     createdAt: "2025-12-18T01:10:28",
-    isBookmarked: false,
   },
   {
     id: 1877,
@@ -23659,7 +21783,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 1,
     createdAt: "2025-12-17T23:54:52",
-    isBookmarked: false,
   },
   {
     id: 1878,
@@ -23672,7 +21795,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 7,
     createdAt: "2025-12-17T22:57:56",
-    isBookmarked: false,
   },
   {
     id: 1879,
@@ -23681,7 +21803,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 6,
     createdAt: "2025-12-17T18:25:42",
-    isBookmarked: false,
   },
   {
     id: 1880,
@@ -23694,7 +21815,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 7,
     createdAt: "2025-12-17T18:09:52",
-    isBookmarked: false,
   },
   {
     id: 1881,
@@ -23706,7 +21826,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 1,
     createdAt: "2025-12-17T16:40:31",
-    isBookmarked: false,
   },
   {
     id: 1882,
@@ -23718,7 +21837,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 3,
     createdAt: "2025-12-17T15:41:33",
-    isBookmarked: false,
   },
   {
     id: 1883,
@@ -23730,7 +21848,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 5,
     createdAt: "2025-12-17T14:03:28",
-    isBookmarked: true,
   },
   {
     id: 1884,
@@ -23744,7 +21861,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 4,
     createdAt: "2025-12-17T12:24:09",
-    isBookmarked: false,
   },
   {
     id: 1885,
@@ -23758,7 +21874,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 0,
     createdAt: "2025-12-17T10:45:38",
-    isBookmarked: false,
   },
   {
     id: 1886,
@@ -23772,7 +21887,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 8,
     createdAt: "2025-12-17T08:59:14",
-    isBookmarked: true,
   },
   {
     id: 1887,
@@ -23787,7 +21901,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 7,
     createdAt: "2025-12-17T08:57:28",
-    isBookmarked: false,
   },
   {
     id: 1888,
@@ -23802,7 +21915,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 3,
     createdAt: "2025-12-17T05:17:30",
-    isBookmarked: false,
   },
   {
     id: 1889,
@@ -23816,7 +21928,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 3,
     createdAt: "2025-12-17T02:41:35",
-    isBookmarked: false,
   },
   {
     id: 1890,
@@ -23830,7 +21941,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 1,
     createdAt: "2025-12-17T01:23:02",
-    isBookmarked: false,
   },
   {
     id: 1891,
@@ -23842,7 +21952,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 5,
     createdAt: "2025-12-17T01:01:15",
-    isBookmarked: false,
   },
   {
     id: 1892,
@@ -23851,7 +21960,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 2,
     createdAt: "2025-12-17T00:17:28",
-    isBookmarked: false,
   },
   {
     id: 1893,
@@ -23864,7 +21972,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 0,
     createdAt: "2025-12-16T22:44:45",
-    isBookmarked: false,
   },
   {
     id: 1894,
@@ -23878,7 +21985,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 8,
     createdAt: "2025-12-16T22:20:34",
-    isBookmarked: false,
   },
   {
     id: 1895,
@@ -23890,7 +21996,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 3,
     createdAt: "2025-12-16T20:56:49",
-    isBookmarked: true,
   },
   {
     id: 1896,
@@ -23905,7 +22010,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 5,
     createdAt: "2025-12-16T20:01:55",
-    isBookmarked: false,
   },
   {
     id: 1897,
@@ -23914,7 +22018,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 7,
     createdAt: "2025-12-16T17:13:58",
-    isBookmarked: false,
   },
   {
     id: 1898,
@@ -23927,7 +22030,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 6,
     createdAt: "2025-12-16T15:55:12",
-    isBookmarked: false,
   },
   {
     id: 1899,
@@ -23940,7 +22042,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 8,
     createdAt: "2025-12-16T12:03:01",
-    isBookmarked: false,
   },
   {
     id: 1900,
@@ -23954,7 +22055,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 7,
     createdAt: "2025-12-16T09:35:01",
-    isBookmarked: false,
   },
   {
     id: 1901,
@@ -23963,7 +22063,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 2,
     createdAt: "2025-12-16T08:18:03",
-    isBookmarked: false,
   },
   {
     id: 1902,
@@ -23976,7 +22075,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 4,
     createdAt: "2025-12-16T06:50:40",
-    isBookmarked: false,
   },
   {
     id: 1903,
@@ -23990,7 +22088,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 0,
     createdAt: "2025-12-16T02:48:03",
-    isBookmarked: false,
   },
   {
     id: 1904,
@@ -24003,7 +22100,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 0,
     createdAt: "2025-12-16T02:36:59",
-    isBookmarked: false,
   },
   {
     id: 1905,
@@ -24018,7 +22114,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 2,
     createdAt: "2025-12-15T23:17:11",
-    isBookmarked: false,
   },
   {
     id: 1906,
@@ -24033,7 +22128,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 8,
     createdAt: "2025-12-15T23:07:40",
-    isBookmarked: false,
   },
   {
     id: 1907,
@@ -24048,7 +22142,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 8,
     createdAt: "2025-12-15T22:56:49",
-    isBookmarked: false,
   },
   {
     id: 1908,
@@ -24063,7 +22156,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 0,
     createdAt: "2025-12-15T21:51:03",
-    isBookmarked: false,
   },
   {
     id: 1909,
@@ -24075,7 +22167,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 1,
     createdAt: "2025-12-15T20:08:23",
-    isBookmarked: false,
   },
   {
     id: 1910,
@@ -24090,7 +22181,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 8,
     createdAt: "2025-12-15T19:19:42",
-    isBookmarked: false,
   },
   {
     id: 1911,
@@ -24103,7 +22193,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 0,
     createdAt: "2025-12-15T16:54:38",
-    isBookmarked: false,
   },
   {
     id: 1912,
@@ -24118,7 +22207,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 2,
     createdAt: "2025-12-15T15:33:42",
-    isBookmarked: false,
   },
   {
     id: 1913,
@@ -24131,7 +22219,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 3,
     createdAt: "2025-12-15T15:13:14",
-    isBookmarked: true,
   },
   {
     id: 1914,
@@ -24146,7 +22233,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 1,
     createdAt: "2025-12-15T14:37:40",
-    isBookmarked: true,
   },
   {
     id: 1915,
@@ -24161,7 +22247,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 0,
     createdAt: "2025-12-15T13:52:42",
-    isBookmarked: false,
   },
   {
     id: 1916,
@@ -24174,7 +22259,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 0,
     createdAt: "2025-12-15T13:49:24",
-    isBookmarked: false,
   },
   {
     id: 1917,
@@ -24186,7 +22270,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 3,
     createdAt: "2025-12-15T12:56:45",
-    isBookmarked: false,
   },
   {
     id: 1918,
@@ -24195,7 +22278,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 3,
     createdAt: "2025-12-15T12:29:33",
-    isBookmarked: false,
   },
   {
     id: 1919,
@@ -24204,7 +22286,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 5,
     createdAt: "2025-12-15T08:19:26",
-    isBookmarked: false,
   },
   {
     id: 1920,
@@ -24219,7 +22300,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 6,
     createdAt: "2025-12-15T08:16:33",
-    isBookmarked: true,
   },
   {
     id: 1921,
@@ -24234,7 +22314,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 1,
     createdAt: "2025-12-15T02:16:21",
-    isBookmarked: false,
   },
   {
     id: 1922,
@@ -24246,7 +22325,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 7,
     createdAt: "2025-12-15T00:45:18",
-    isBookmarked: true,
   },
   {
     id: 1923,
@@ -24260,7 +22338,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 2,
     createdAt: "2025-12-15T00:23:17",
-    isBookmarked: false,
   },
   {
     id: 1924,
@@ -24273,7 +22350,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 4,
     createdAt: "2025-12-15T00:20:35",
-    isBookmarked: true,
   },
   {
     id: 1925,
@@ -24286,7 +22362,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 0,
     createdAt: "2025-12-15T00:17:28",
-    isBookmarked: false,
   },
   {
     id: 1926,
@@ -24298,7 +22373,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 7,
     createdAt: "2025-12-14T22:31:30",
-    isBookmarked: false,
   },
   {
     id: 1927,
@@ -24307,7 +22381,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 6,
     createdAt: "2025-12-14T20:51:33",
-    isBookmarked: false,
   },
   {
     id: 1928,
@@ -24316,7 +22389,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 6,
     createdAt: "2025-12-14T18:56:27",
-    isBookmarked: false,
   },
   {
     id: 1929,
@@ -24325,7 +22397,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 3,
     createdAt: "2025-12-14T17:54:12",
-    isBookmarked: false,
   },
   {
     id: 1930,
@@ -24340,7 +22411,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 7,
     createdAt: "2025-12-14T17:38:17",
-    isBookmarked: false,
   },
   {
     id: 1931,
@@ -24354,7 +22424,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 8,
     createdAt: "2025-12-14T16:00:59",
-    isBookmarked: false,
   },
   {
     id: 1932,
@@ -24367,7 +22436,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 4,
     createdAt: "2025-12-14T11:55:03",
-    isBookmarked: false,
   },
   {
     id: 1933,
@@ -24376,7 +22444,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 6,
     createdAt: "2025-12-14T10:46:54",
-    isBookmarked: false,
   },
   {
     id: 1934,
@@ -24388,7 +22455,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 1,
     createdAt: "2025-12-14T09:17:35",
-    isBookmarked: false,
   },
   {
     id: 1935,
@@ -24401,7 +22467,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 8,
     createdAt: "2025-12-14T08:34:00",
-    isBookmarked: true,
   },
   {
     id: 1936,
@@ -24414,7 +22479,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 6,
     createdAt: "2025-12-14T07:46:04",
-    isBookmarked: false,
   },
   {
     id: 1937,
@@ -24427,7 +22491,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 4,
     createdAt: "2025-12-14T07:41:16",
-    isBookmarked: false,
   },
   {
     id: 1938,
@@ -24442,7 +22505,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 3,
     createdAt: "2025-12-14T07:01:09",
-    isBookmarked: true,
   },
   {
     id: 1939,
@@ -24457,7 +22519,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 3,
     createdAt: "2025-12-14T05:58:28",
-    isBookmarked: false,
   },
   {
     id: 1940,
@@ -24471,7 +22532,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 5,
     createdAt: "2025-12-14T01:29:53",
-    isBookmarked: false,
   },
   {
     id: 1941,
@@ -24485,7 +22545,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 8,
     createdAt: "2025-12-14T00:57:51",
-    isBookmarked: false,
   },
   {
     id: 1942,
@@ -24499,7 +22558,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 12,
     createdAt: "2025-12-13T21:30:10",
-    isBookmarked: false,
   },
   {
     id: 1943,
@@ -24514,7 +22572,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 1,
     createdAt: "2025-12-13T21:00:10",
-    isBookmarked: false,
   },
   {
     id: 1944,
@@ -24528,7 +22585,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 4,
     createdAt: "2025-12-13T19:36:25",
-    isBookmarked: false,
   },
   {
     id: 1945,
@@ -24541,7 +22597,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 7,
     createdAt: "2025-12-13T19:03:35",
-    isBookmarked: false,
   },
   {
     id: 1946,
@@ -24556,7 +22611,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 7,
     createdAt: "2025-12-13T18:54:23",
-    isBookmarked: false,
   },
   {
     id: 1947,
@@ -24569,7 +22623,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 6,
     createdAt: "2025-12-13T18:18:59",
-    isBookmarked: false,
   },
   {
     id: 1948,
@@ -24583,7 +22636,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 2,
     createdAt: "2025-12-13T18:06:20",
-    isBookmarked: false,
   },
   {
     id: 1949,
@@ -24598,7 +22650,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 5,
     createdAt: "2025-12-13T15:07:41",
-    isBookmarked: false,
   },
   {
     id: 1950,
@@ -24611,7 +22662,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 5,
     createdAt: "2025-12-13T13:55:52",
-    isBookmarked: false,
   },
   {
     id: 1951,
@@ -24624,7 +22674,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 14,
     createdAt: "2025-12-13T09:18:57",
-    isBookmarked: false,
   },
   {
     id: 1952,
@@ -24636,7 +22685,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 0,
     createdAt: "2025-12-13T07:00:03",
-    isBookmarked: true,
   },
   {
     id: 1953,
@@ -24651,7 +22699,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 1,
     createdAt: "2025-12-13T06:39:57",
-    isBookmarked: true,
   },
   {
     id: 1954,
@@ -24664,7 +22711,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 3,
     createdAt: "2025-12-13T05:55:21",
-    isBookmarked: false,
   },
   {
     id: 1955,
@@ -24676,7 +22722,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 1,
     createdAt: "2025-12-13T05:54:45",
-    isBookmarked: false,
   },
   {
     id: 1956,
@@ -24685,7 +22730,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 5,
     createdAt: "2025-12-13T05:53:12",
-    isBookmarked: true,
   },
   {
     id: 1957,
@@ -24697,7 +22741,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 0,
     createdAt: "2025-12-13T05:41:58",
-    isBookmarked: false,
   },
   {
     id: 1958,
@@ -24709,7 +22752,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 6,
     createdAt: "2025-12-13T05:41:13",
-    isBookmarked: false,
   },
   {
     id: 1959,
@@ -24721,7 +22763,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 8,
     createdAt: "2025-12-13T05:28:10",
-    isBookmarked: true,
   },
   {
     id: 1960,
@@ -24730,7 +22771,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 4,
     createdAt: "2025-12-13T03:33:04",
-    isBookmarked: false,
   },
   {
     id: 1961,
@@ -24739,7 +22779,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 7,
     createdAt: "2025-12-13T00:56:05",
-    isBookmarked: true,
   },
   {
     id: 1962,
@@ -24754,7 +22793,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 7,
     createdAt: "2025-12-13T00:31:15",
-    isBookmarked: false,
   },
   {
     id: 1963,
@@ -24766,7 +22804,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 6,
     createdAt: "2025-12-13T00:24:19",
-    isBookmarked: false,
   },
   {
     id: 1964,
@@ -24781,7 +22818,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 11,
     createdAt: "2025-12-12T23:38:38",
-    isBookmarked: false,
   },
   {
     id: 1965,
@@ -24793,7 +22829,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 9,
     createdAt: "2025-12-12T22:44:39",
-    isBookmarked: false,
   },
   {
     id: 1966,
@@ -24808,7 +22843,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 4,
     createdAt: "2025-12-12T21:17:37",
-    isBookmarked: false,
   },
   {
     id: 1967,
@@ -24823,7 +22857,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 5,
     createdAt: "2025-12-12T20:12:30",
-    isBookmarked: false,
   },
   {
     id: 1968,
@@ -24836,7 +22869,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 7,
     createdAt: "2025-12-12T19:46:42",
-    isBookmarked: false,
   },
   {
     id: 1969,
@@ -24850,7 +22882,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 0,
     createdAt: "2025-12-12T18:33:22",
-    isBookmarked: false,
   },
   {
     id: 1970,
@@ -24864,7 +22895,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 3,
     createdAt: "2025-12-12T14:57:42",
-    isBookmarked: false,
   },
   {
     id: 1971,
@@ -24873,7 +22903,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 4,
     createdAt: "2025-12-12T14:02:38",
-    isBookmarked: true,
   },
   {
     id: 1972,
@@ -24886,7 +22915,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 1,
     createdAt: "2025-12-12T13:08:27",
-    isBookmarked: false,
   },
   {
     id: 1973,
@@ -24895,7 +22923,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 2,
     createdAt: "2025-12-12T12:55:30",
-    isBookmarked: false,
   },
   {
     id: 1974,
@@ -24904,7 +22931,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 1,
     createdAt: "2025-12-12T12:24:24",
-    isBookmarked: true,
   },
   {
     id: 1975,
@@ -24917,7 +22943,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 6,
     createdAt: "2025-12-12T10:16:38",
-    isBookmarked: false,
   },
   {
     id: 1976,
@@ -24929,7 +22954,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 4,
     createdAt: "2025-12-12T08:46:56",
-    isBookmarked: true,
   },
   {
     id: 1977,
@@ -24941,7 +22965,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 8,
     createdAt: "2025-12-12T07:55:43",
-    isBookmarked: true,
   },
   {
     id: 1978,
@@ -24954,7 +22977,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 6,
     createdAt: "2025-12-12T07:44:46",
-    isBookmarked: false,
   },
   {
     id: 1979,
@@ -24967,7 +22989,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 1,
     createdAt: "2025-12-12T06:18:50",
-    isBookmarked: false,
   },
   {
     id: 1980,
@@ -24979,7 +23000,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 5,
     createdAt: "2025-12-12T05:02:57",
-    isBookmarked: false,
   },
   {
     id: 1981,
@@ -24994,7 +23014,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 3,
     createdAt: "2025-12-12T00:33:01",
-    isBookmarked: false,
   },
   {
     id: 1982,
@@ -25006,7 +23025,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 2,
     createdAt: "2025-12-11T23:47:18",
-    isBookmarked: false,
   },
   {
     id: 1983,
@@ -25020,7 +23038,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 3,
     createdAt: "2025-12-11T23:43:38",
-    isBookmarked: false,
   },
   {
     id: 1984,
@@ -25034,7 +23051,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 1,
     createdAt: "2025-12-11T21:37:03",
-    isBookmarked: false,
   },
   {
     id: 1985,
@@ -25047,7 +23063,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 4,
     createdAt: "2025-12-11T20:52:55",
-    isBookmarked: false,
   },
   {
     id: 1986,
@@ -25062,7 +23077,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 1,
     createdAt: "2025-12-11T20:07:13",
-    isBookmarked: false,
   },
   {
     id: 1987,
@@ -25077,7 +23091,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 1,
     createdAt: "2025-12-11T19:54:34",
-    isBookmarked: false,
   },
   {
     id: 1988,
@@ -25092,7 +23105,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 3,
     createdAt: "2025-12-11T19:37:40",
-    isBookmarked: false,
   },
   {
     id: 1989,
@@ -25101,7 +23113,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 3,
     createdAt: "2025-12-11T17:35:34",
-    isBookmarked: false,
   },
   {
     id: 1990,
@@ -25113,7 +23124,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 6,
     createdAt: "2025-12-11T17:23:31",
-    isBookmarked: false,
   },
   {
     id: 1991,
@@ -25128,7 +23138,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 2,
     createdAt: "2025-12-11T15:51:12",
-    isBookmarked: false,
   },
   {
     id: 1992,
@@ -25140,7 +23149,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 5,
     createdAt: "2025-12-11T15:29:42",
-    isBookmarked: true,
   },
   {
     id: 1993,
@@ -25153,7 +23161,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 5,
     createdAt: "2025-12-11T14:26:10",
-    isBookmarked: false,
   },
   {
     id: 1994,
@@ -25162,7 +23169,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 3,
     createdAt: "2025-12-11T10:43:05",
-    isBookmarked: false,
   },
   {
     id: 1995,
@@ -25175,7 +23181,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 3,
     createdAt: "2025-12-11T10:28:51",
-    isBookmarked: false,
   },
   {
     id: 1996,
@@ -25187,7 +23192,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 0,
     createdAt: "2025-12-11T10:19:55",
-    isBookmarked: false,
   },
   {
     id: 1997,
@@ -25199,7 +23203,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 7,
     createdAt: "2025-12-11T09:32:46",
-    isBookmarked: false,
   },
   {
     id: 1998,
@@ -25213,7 +23216,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 8,
     createdAt: "2025-12-11T09:27:23",
-    isBookmarked: true,
   },
   {
     id: 1999,
@@ -25226,7 +23228,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 6,
     createdAt: "2025-12-11T08:17:24",
-    isBookmarked: true,
   },
   {
     id: 2000,
@@ -25239,7 +23240,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 8,
     createdAt: "2025-12-11T07:36:50",
-    isBookmarked: false,
   },
   {
     id: 2001,
@@ -25254,7 +23254,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 6,
     createdAt: "2025-12-11T07:00:14",
-    isBookmarked: false,
   },
   {
     id: 2002,
@@ -25263,7 +23262,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 6,
     createdAt: "2025-12-11T06:53:07",
-    isBookmarked: true,
   },
   {
     id: 2003,
@@ -25272,7 +23270,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 0,
     createdAt: "2025-12-11T06:18:04",
-    isBookmarked: false,
   },
   {
     id: 2004,
@@ -25286,7 +23283,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 13,
     createdAt: "2025-12-11T01:43:03",
-    isBookmarked: false,
   },
   {
     id: 2005,
@@ -25299,7 +23295,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 7,
     createdAt: "2025-12-11T01:29:35",
-    isBookmarked: false,
   },
   {
     id: 2006,
@@ -25312,7 +23307,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 0,
     createdAt: "2025-12-11T01:15:28",
-    isBookmarked: false,
   },
   {
     id: 2007,
@@ -25327,7 +23321,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 1,
     createdAt: "2025-12-10T19:46:25",
-    isBookmarked: true,
   },
   {
     id: 2008,
@@ -25339,7 +23332,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 3,
     createdAt: "2025-12-10T18:33:43",
-    isBookmarked: false,
   },
   {
     id: 2009,
@@ -25353,7 +23345,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 7,
     createdAt: "2025-12-10T16:58:46",
-    isBookmarked: false,
   },
   {
     id: 2010,
@@ -25368,7 +23359,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 3,
     createdAt: "2025-12-10T14:53:36",
-    isBookmarked: false,
   },
   {
     id: 2011,
@@ -25383,7 +23373,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 13,
     createdAt: "2025-12-10T13:43:06",
-    isBookmarked: false,
   },
   {
     id: 2012,
@@ -25398,7 +23387,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 7,
     createdAt: "2025-12-10T13:09:47",
-    isBookmarked: false,
   },
   {
     id: 2013,
@@ -25410,7 +23398,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 6,
     createdAt: "2025-12-10T12:05:02",
-    isBookmarked: false,
   },
   {
     id: 2014,
@@ -25424,7 +23411,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 5,
     createdAt: "2025-12-10T09:21:22",
-    isBookmarked: false,
   },
   {
     id: 2015,
@@ -25438,7 +23424,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 5,
     createdAt: "2025-12-10T08:51:14",
-    isBookmarked: false,
   },
   {
     id: 2016,
@@ -25447,7 +23432,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 5,
     createdAt: "2025-12-10T08:48:33",
-    isBookmarked: false,
   },
   {
     id: 2017,
@@ -25456,7 +23440,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 8,
     createdAt: "2025-12-10T08:44:28",
-    isBookmarked: false,
   },
   {
     id: 2018,
@@ -25471,7 +23454,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 6,
     createdAt: "2025-12-10T07:53:25",
-    isBookmarked: false,
   },
   {
     id: 2019,
@@ -25483,7 +23465,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 1,
     createdAt: "2025-12-10T06:56:00",
-    isBookmarked: true,
   },
   {
     id: 2020,
@@ -25492,7 +23473,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 4,
     createdAt: "2025-12-10T05:58:04",
-    isBookmarked: false,
   },
   {
     id: 2021,
@@ -25505,7 +23485,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 5,
     createdAt: "2025-12-10T03:13:29",
-    isBookmarked: false,
   },
   {
     id: 2022,
@@ -25517,7 +23496,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 8,
     createdAt: "2025-12-09T23:37:40",
-    isBookmarked: false,
   },
   {
     id: 2023,
@@ -25529,7 +23507,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 5,
     createdAt: "2025-12-09T18:21:08",
-    isBookmarked: false,
   },
   {
     id: 2024,
@@ -25542,7 +23519,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 11,
     createdAt: "2025-12-09T15:59:49",
-    isBookmarked: false,
   },
   {
     id: 2025,
@@ -25551,7 +23527,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 10,
     createdAt: "2025-12-09T14:52:49",
-    isBookmarked: false,
   },
   {
     id: 2026,
@@ -25565,7 +23540,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 2,
     createdAt: "2025-12-09T12:10:47",
-    isBookmarked: true,
   },
   {
     id: 2027,
@@ -25574,7 +23548,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 3,
     createdAt: "2025-12-09T10:58:57",
-    isBookmarked: true,
   },
   {
     id: 2028,
@@ -25586,7 +23559,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 10,
     createdAt: "2025-12-09T10:56:24",
-    isBookmarked: false,
   },
   {
     id: 2029,
@@ -25598,7 +23570,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 6,
     createdAt: "2025-12-09T10:30:14",
-    isBookmarked: false,
   },
   {
     id: 2030,
@@ -25613,7 +23584,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 3,
     createdAt: "2025-12-09T05:34:25",
-    isBookmarked: true,
   },
   {
     id: 2031,
@@ -25626,7 +23596,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 0,
     createdAt: "2025-12-09T04:04:24",
-    isBookmarked: true,
   },
   {
     id: 2032,
@@ -25639,7 +23608,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 1,
     createdAt: "2025-12-09T03:44:46",
-    isBookmarked: false,
   },
   {
     id: 2033,
@@ -25653,7 +23621,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 8,
     createdAt: "2025-12-09T02:55:58",
-    isBookmarked: false,
   },
   {
     id: 2034,
@@ -25667,7 +23634,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 7,
     createdAt: "2025-12-08T23:49:39",
-    isBookmarked: false,
   },
   {
     id: 2035,
@@ -25682,7 +23648,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 6,
     createdAt: "2025-12-08T22:04:22",
-    isBookmarked: false,
   },
   {
     id: 2036,
@@ -25691,7 +23656,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 8,
     createdAt: "2025-12-08T21:30:57",
-    isBookmarked: false,
   },
   {
     id: 2037,
@@ -25703,7 +23667,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 7,
     createdAt: "2025-12-08T20:30:01",
-    isBookmarked: false,
   },
   {
     id: 2038,
@@ -25718,7 +23681,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 6,
     createdAt: "2025-12-08T18:59:08",
-    isBookmarked: false,
   },
   {
     id: 2039,
@@ -25733,7 +23695,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 2,
     createdAt: "2025-12-08T16:08:36",
-    isBookmarked: true,
   },
   {
     id: 2040,
@@ -25748,7 +23709,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 2,
     createdAt: "2025-12-08T14:37:20",
-    isBookmarked: false,
   },
   {
     id: 2041,
@@ -25762,7 +23722,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 2,
     createdAt: "2025-12-08T13:32:39",
-    isBookmarked: false,
   },
   {
     id: 2042,
@@ -25776,7 +23735,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 4,
     createdAt: "2025-12-08T13:10:06",
-    isBookmarked: false,
   },
   {
     id: 2043,
@@ -25788,7 +23746,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 5,
     createdAt: "2025-12-08T12:08:02",
-    isBookmarked: true,
   },
   {
     id: 2044,
@@ -25800,7 +23757,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 6,
     createdAt: "2025-12-08T11:17:56",
-    isBookmarked: false,
   },
   {
     id: 2045,
@@ -25809,7 +23765,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 10,
     createdAt: "2025-12-08T11:06:20",
-    isBookmarked: false,
   },
   {
     id: 2046,
@@ -25821,7 +23776,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 4,
     createdAt: "2025-12-08T08:46:57",
-    isBookmarked: false,
   },
   {
     id: 2047,
@@ -25830,7 +23784,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 6,
     createdAt: "2025-12-08T06:48:12",
-    isBookmarked: false,
   },
   {
     id: 2048,
@@ -25839,7 +23792,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 4,
     createdAt: "2025-12-08T04:15:49",
-    isBookmarked: false,
   },
   {
     id: 2049,
@@ -25854,7 +23806,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 6,
     createdAt: "2025-12-08T02:23:04",
-    isBookmarked: false,
   },
   {
     id: 2050,
@@ -25867,7 +23818,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 5,
     createdAt: "2025-12-07T23:51:00",
-    isBookmarked: false,
   },
   {
     id: 2051,
@@ -25880,7 +23830,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 3,
     createdAt: "2025-12-07T23:31:42",
-    isBookmarked: true,
   },
   {
     id: 2052,
@@ -25894,7 +23843,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 5,
     createdAt: "2025-12-07T21:28:47",
-    isBookmarked: false,
   },
   {
     id: 2053,
@@ -25908,7 +23856,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 3,
     createdAt: "2025-12-07T15:57:00",
-    isBookmarked: false,
   },
   {
     id: 2054,
@@ -25917,7 +23864,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 6,
     createdAt: "2025-12-07T14:25:55",
-    isBookmarked: false,
   },
   {
     id: 2055,
@@ -25929,7 +23875,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 1,
     createdAt: "2025-12-07T12:33:40",
-    isBookmarked: false,
   },
   {
     id: 2056,
@@ -25942,7 +23887,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 0,
     createdAt: "2025-12-07T08:48:53",
-    isBookmarked: false,
   },
   {
     id: 2057,
@@ -25951,7 +23895,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 6,
     createdAt: "2025-12-07T07:24:10",
-    isBookmarked: false,
   },
   {
     id: 2058,
@@ -25960,7 +23903,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 7,
     createdAt: "2025-12-07T06:59:24",
-    isBookmarked: false,
   },
   {
     id: 2059,
@@ -25975,7 +23917,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 7,
     createdAt: "2025-12-07T06:36:43",
-    isBookmarked: false,
   },
   {
     id: 2060,
@@ -25984,7 +23925,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 3,
     createdAt: "2025-12-07T06:22:47",
-    isBookmarked: false,
   },
   {
     id: 2061,
@@ -25997,7 +23937,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 6,
     createdAt: "2025-12-07T03:46:46",
-    isBookmarked: false,
   },
   {
     id: 2062,
@@ -26009,7 +23948,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 1,
     createdAt: "2025-12-07T01:49:27",
-    isBookmarked: true,
   },
   {
     id: 2063,
@@ -26023,7 +23961,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 2,
     createdAt: "2025-12-07T00:42:00",
-    isBookmarked: true,
   },
   {
     id: 2064,
@@ -26036,7 +23973,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 6,
     createdAt: "2025-12-06T22:57:25",
-    isBookmarked: false,
   },
   {
     id: 2065,
@@ -26050,7 +23986,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 3,
     createdAt: "2025-12-06T22:46:28",
-    isBookmarked: true,
   },
   {
     id: 2066,
@@ -26059,7 +23994,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 11,
     createdAt: "2025-12-06T21:47:19",
-    isBookmarked: false,
   },
   {
     id: 2067,
@@ -26068,7 +24002,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 0,
     createdAt: "2025-12-06T18:18:14",
-    isBookmarked: false,
   },
   {
     id: 2068,
@@ -26080,7 +24013,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 2,
     createdAt: "2025-12-06T16:16:37",
-    isBookmarked: false,
   },
   {
     id: 2069,
@@ -26095,7 +24027,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 7,
     createdAt: "2025-12-06T16:00:07",
-    isBookmarked: false,
   },
   {
     id: 2070,
@@ -26109,7 +24040,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 3,
     createdAt: "2025-12-06T13:09:07",
-    isBookmarked: false,
   },
   {
     id: 2071,
@@ -26124,7 +24054,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 6,
     createdAt: "2025-12-06T12:33:22",
-    isBookmarked: false,
   },
   {
     id: 2072,
@@ -26138,7 +24067,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 3,
     createdAt: "2025-12-06T12:15:00",
-    isBookmarked: true,
   },
   {
     id: 2073,
@@ -26153,7 +24081,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 7,
     createdAt: "2025-12-06T07:03:12",
-    isBookmarked: false,
   },
   {
     id: 2074,
@@ -26166,7 +24093,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 6,
     createdAt: "2025-12-06T04:31:54",
-    isBookmarked: false,
   },
   {
     id: 2075,
@@ -26181,7 +24107,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 5,
     createdAt: "2025-12-06T02:38:33",
-    isBookmarked: false,
   },
   {
     id: 2076,
@@ -26195,7 +24120,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 11,
     createdAt: "2025-12-05T23:32:58",
-    isBookmarked: false,
   },
   {
     id: 2077,
@@ -26207,7 +24131,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 12,
     createdAt: "2025-12-05T22:33:36",
-    isBookmarked: false,
   },
   {
     id: 2078,
@@ -26222,7 +24145,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 4,
     createdAt: "2025-12-05T22:28:48",
-    isBookmarked: false,
   },
   {
     id: 2079,
@@ -26236,7 +24158,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 1,
     createdAt: "2025-12-05T21:08:48",
-    isBookmarked: false,
   },
   {
     id: 2080,
@@ -26248,7 +24169,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 4,
     createdAt: "2025-12-05T21:00:15",
-    isBookmarked: true,
   },
   {
     id: 2081,
@@ -26260,7 +24180,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 4,
     createdAt: "2025-12-05T19:48:40",
-    isBookmarked: true,
   },
   {
     id: 2082,
@@ -26269,7 +24188,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 7,
     createdAt: "2025-12-05T15:13:42",
-    isBookmarked: false,
   },
   {
     id: 2083,
@@ -26281,7 +24199,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 8,
     createdAt: "2025-12-05T14:06:53",
-    isBookmarked: false,
   },
   {
     id: 2084,
@@ -26290,7 +24207,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 5,
     createdAt: "2025-12-05T13:05:02",
-    isBookmarked: false,
   },
   {
     id: 2085,
@@ -26303,7 +24219,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 2,
     createdAt: "2025-12-05T12:48:11",
-    isBookmarked: false,
   },
   {
     id: 2086,
@@ -26315,7 +24230,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 6,
     createdAt: "2025-12-05T11:12:16",
-    isBookmarked: false,
   },
   {
     id: 2087,
@@ -26328,7 +24242,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 2,
     createdAt: "2025-12-05T09:25:33",
-    isBookmarked: false,
   },
   {
     id: 2088,
@@ -26342,7 +24255,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 4,
     createdAt: "2025-12-05T09:13:10",
-    isBookmarked: false,
   },
   {
     id: 2089,
@@ -26356,7 +24268,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 8,
     createdAt: "2025-12-05T08:45:56",
-    isBookmarked: false,
   },
   {
     id: 2090,
@@ -26369,7 +24280,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 2,
     createdAt: "2025-12-05T07:29:14",
-    isBookmarked: true,
   },
   {
     id: 2091,
@@ -26382,7 +24292,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 4,
     createdAt: "2025-12-05T07:08:58",
-    isBookmarked: false,
   },
   {
     id: 2092,
@@ -26397,7 +24306,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 2,
     createdAt: "2025-12-05T04:33:02",
-    isBookmarked: false,
   },
   {
     id: 2093,
@@ -26410,7 +24318,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 0,
     createdAt: "2025-12-05T04:28:27",
-    isBookmarked: false,
   },
   {
     id: 2094,
@@ -26425,7 +24332,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 3,
     createdAt: "2025-12-05T04:05:16",
-    isBookmarked: true,
   },
   {
     id: 2095,
@@ -26439,7 +24345,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 3,
     createdAt: "2025-12-05T00:06:24",
-    isBookmarked: false,
   },
   {
     id: 2096,
@@ -26448,7 +24353,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 0,
     createdAt: "2025-12-04T23:02:33",
-    isBookmarked: false,
   },
   {
     id: 2097,
@@ -26460,7 +24364,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 5,
     createdAt: "2025-12-04T22:34:11",
-    isBookmarked: false,
   },
   {
     id: 2098,
@@ -26469,7 +24372,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 6,
     createdAt: "2025-12-04T22:34:07",
-    isBookmarked: false,
   },
   {
     id: 2099,
@@ -26484,7 +24386,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 0,
     createdAt: "2025-12-04T17:26:37",
-    isBookmarked: false,
   },
   {
     id: 2100,
@@ -26497,7 +24398,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 6,
     createdAt: "2025-12-04T16:17:47",
-    isBookmarked: false,
   },
   {
     id: 2101,
@@ -26511,7 +24411,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 14,
     createdAt: "2025-12-04T15:51:55",
-    isBookmarked: false,
   },
   {
     id: 2102,
@@ -26520,7 +24419,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 8,
     createdAt: "2025-12-04T15:47:36",
-    isBookmarked: false,
   },
   {
     id: 2103,
@@ -26532,7 +24430,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 3,
     createdAt: "2025-12-04T12:40:50",
-    isBookmarked: false,
   },
   {
     id: 2104,
@@ -26547,7 +24444,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 0,
     createdAt: "2025-12-04T12:00:11",
-    isBookmarked: true,
   },
   {
     id: 2105,
@@ -26556,7 +24452,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 2,
     createdAt: "2025-12-04T11:08:28",
-    isBookmarked: false,
   },
   {
     id: 2106,
@@ -26569,7 +24464,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 6,
     createdAt: "2025-12-04T08:50:03",
-    isBookmarked: false,
   },
   {
     id: 2107,
@@ -26582,7 +24476,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 6,
     createdAt: "2025-12-04T07:15:31",
-    isBookmarked: false,
   },
   {
     id: 2108,
@@ -26594,7 +24487,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 0,
     createdAt: "2025-12-04T07:01:08",
-    isBookmarked: false,
   },
   {
     id: 2109,
@@ -26606,7 +24498,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 1,
     createdAt: "2025-12-04T06:21:11",
-    isBookmarked: false,
   },
   {
     id: 2110,
@@ -26621,7 +24512,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 6,
     createdAt: "2025-12-04T03:01:37",
-    isBookmarked: false,
   },
   {
     id: 2111,
@@ -26633,7 +24523,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 0,
     createdAt: "2025-12-04T01:29:17",
-    isBookmarked: false,
   },
   {
     id: 2112,
@@ -26645,7 +24534,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 8,
     createdAt: "2025-12-03T23:41:33",
-    isBookmarked: true,
   },
   {
     id: 2113,
@@ -26658,7 +24546,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 2,
     createdAt: "2025-12-03T22:32:06",
-    isBookmarked: false,
   },
   {
     id: 2114,
@@ -26671,7 +24558,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 5,
     createdAt: "2025-12-03T21:27:51",
-    isBookmarked: false,
   },
   {
     id: 2115,
@@ -26683,7 +24569,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 13,
     createdAt: "2025-12-03T19:27:13",
-    isBookmarked: false,
   },
   {
     id: 2116,
@@ -26697,7 +24582,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 8,
     createdAt: "2025-12-03T18:51:06",
-    isBookmarked: false,
   },
   {
     id: 2117,
@@ -26710,7 +24594,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 8,
     createdAt: "2025-12-03T15:50:33",
-    isBookmarked: false,
   },
   {
     id: 2118,
@@ -26724,7 +24607,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 7,
     createdAt: "2025-12-03T15:13:00",
-    isBookmarked: false,
   },
   {
     id: 2119,
@@ -26738,7 +24620,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 8,
     createdAt: "2025-12-03T15:01:23",
-    isBookmarked: false,
   },
   {
     id: 2120,
@@ -26751,7 +24632,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 1,
     createdAt: "2025-12-03T13:15:05",
-    isBookmarked: true,
   },
   {
     id: 2121,
@@ -26763,7 +24643,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 7,
     createdAt: "2025-12-03T12:06:09",
-    isBookmarked: false,
   },
   {
     id: 2122,
@@ -26775,7 +24654,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 2,
     createdAt: "2025-12-03T11:12:35",
-    isBookmarked: false,
   },
   {
     id: 2123,
@@ -26788,7 +24666,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 0,
     createdAt: "2025-12-03T09:03:35",
-    isBookmarked: false,
   },
   {
     id: 2124,
@@ -26803,7 +24680,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 5,
     createdAt: "2025-12-03T07:12:17",
-    isBookmarked: true,
   },
   {
     id: 2125,
@@ -26816,7 +24692,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 8,
     createdAt: "2025-12-03T07:12:04",
-    isBookmarked: true,
   },
   {
     id: 2126,
@@ -26825,7 +24700,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 7,
     createdAt: "2025-12-03T06:17:33",
-    isBookmarked: true,
   },
   {
     id: 2127,
@@ -26837,7 +24711,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 6,
     createdAt: "2025-12-03T05:49:53",
-    isBookmarked: true,
   },
   {
     id: 2128,
@@ -26850,7 +24723,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 5,
     createdAt: "2025-12-03T05:38:05",
-    isBookmarked: false,
   },
   {
     id: 2129,
@@ -26864,7 +24736,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 12,
     createdAt: "2025-12-03T04:29:38",
-    isBookmarked: false,
   },
   {
     id: 2130,
@@ -26878,7 +24749,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 2,
     createdAt: "2025-12-03T03:30:37",
-    isBookmarked: true,
   },
   {
     id: 2131,
@@ -26890,7 +24760,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 3,
     createdAt: "2025-12-02T23:22:18",
-    isBookmarked: false,
   },
   {
     id: 2132,
@@ -26903,7 +24772,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 7,
     createdAt: "2025-12-02T20:21:11",
-    isBookmarked: false,
   },
   {
     id: 2133,
@@ -26915,7 +24783,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 4,
     createdAt: "2025-12-02T20:21:04",
-    isBookmarked: false,
   },
   {
     id: 2134,
@@ -26928,7 +24795,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 6,
     createdAt: "2025-12-02T20:13:14",
-    isBookmarked: false,
   },
   {
     id: 2135,
@@ -26937,7 +24803,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 7,
     createdAt: "2025-12-02T19:22:16",
-    isBookmarked: false,
   },
   {
     id: 2136,
@@ -26951,7 +24816,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 6,
     createdAt: "2025-12-02T18:52:39",
-    isBookmarked: false,
   },
   {
     id: 2137,
@@ -26966,7 +24830,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 2,
     createdAt: "2025-12-02T18:11:01",
-    isBookmarked: true,
   },
   {
     id: 2138,
@@ -26975,7 +24838,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 4,
     createdAt: "2025-12-02T17:12:23",
-    isBookmarked: false,
   },
   {
     id: 2139,
@@ -26984,7 +24846,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 5,
     createdAt: "2025-12-02T14:48:48",
-    isBookmarked: false,
   },
   {
     id: 2140,
@@ -26996,7 +24857,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 0,
     createdAt: "2025-12-02T12:46:20",
-    isBookmarked: false,
   },
   {
     id: 2141,
@@ -27010,7 +24870,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 8,
     createdAt: "2025-12-02T11:58:59",
-    isBookmarked: false,
   },
   {
     id: 2142,
@@ -27023,7 +24882,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 2,
     createdAt: "2025-12-02T11:14:33",
-    isBookmarked: false,
   },
   {
     id: 2143,
@@ -27032,7 +24890,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 7,
     createdAt: "2025-12-02T09:18:21",
-    isBookmarked: false,
   },
   {
     id: 2144,
@@ -27045,7 +24902,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 5,
     createdAt: "2025-12-02T03:56:40",
-    isBookmarked: false,
   },
   {
     id: 2145,
@@ -27057,7 +24913,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 13,
     createdAt: "2025-12-01T23:42:33",
-    isBookmarked: false,
   },
   {
     id: 2146,
@@ -27069,7 +24924,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 4,
     createdAt: "2025-12-01T21:54:32",
-    isBookmarked: false,
   },
   {
     id: 2147,
@@ -27078,7 +24932,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 0,
     createdAt: "2025-12-01T21:37:18",
-    isBookmarked: false,
   },
   {
     id: 2148,
@@ -27087,7 +24940,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 10,
     createdAt: "2025-12-01T21:14:11",
-    isBookmarked: false,
   },
   {
     id: 2149,
@@ -27100,7 +24952,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 2,
     createdAt: "2025-12-01T15:44:18",
-    isBookmarked: false,
   },
   {
     id: 2150,
@@ -27112,7 +24963,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 0,
     createdAt: "2025-12-01T14:37:40",
-    isBookmarked: false,
   },
   {
     id: 2151,
@@ -27121,7 +24971,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 5,
     createdAt: "2025-12-01T14:30:45",
-    isBookmarked: false,
   },
   {
     id: 2152,
@@ -27136,7 +24985,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 6,
     createdAt: "2025-12-01T12:59:54",
-    isBookmarked: false,
   },
   {
     id: 2153,
@@ -27151,7 +24999,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 1,
     createdAt: "2025-12-01T10:40:09",
-    isBookmarked: false,
   },
   {
     id: 2154,
@@ -27163,7 +25010,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 8,
     createdAt: "2025-12-01T10:35:54",
-    isBookmarked: false,
   },
   {
     id: 2155,
@@ -27177,7 +25023,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 6,
     createdAt: "2025-12-01T09:48:36",
-    isBookmarked: false,
   },
   {
     id: 2156,
@@ -27189,7 +25034,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 0,
     createdAt: "2025-12-01T08:50:37",
-    isBookmarked: false,
   },
   {
     id: 2157,
@@ -27204,7 +25048,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 1,
     createdAt: "2025-12-01T07:27:13",
-    isBookmarked: false,
   },
   {
     id: 2158,
@@ -27216,7 +25059,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 7,
     createdAt: "2025-12-01T06:23:09",
-    isBookmarked: true,
   },
   {
     id: 2159,
@@ -27228,7 +25070,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 1,
     createdAt: "2025-12-01T04:46:48",
-    isBookmarked: false,
   },
   {
     id: 2160,
@@ -27241,7 +25082,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 4,
     createdAt: "2025-12-01T04:31:50",
-    isBookmarked: true,
   },
   {
     id: 2161,
@@ -27256,7 +25096,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 4,
     createdAt: "2025-12-01T04:31:20",
-    isBookmarked: false,
   },
   {
     id: 2162,
@@ -27269,7 +25108,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 2,
     createdAt: "2025-12-01T02:20:36",
-    isBookmarked: false,
   },
   {
     id: 2163,
@@ -27281,7 +25119,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 6,
     createdAt: "2025-11-30T23:46:04",
-    isBookmarked: false,
   },
   {
     id: 2164,
@@ -27295,7 +25132,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 3,
     createdAt: "2025-11-30T22:41:32",
-    isBookmarked: false,
   },
   {
     id: 2165,
@@ -27310,7 +25146,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 10,
     createdAt: "2025-11-30T22:10:14",
-    isBookmarked: false,
   },
   {
     id: 2166,
@@ -27319,7 +25154,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 8,
     createdAt: "2025-11-30T19:08:41",
-    isBookmarked: false,
   },
   {
     id: 2167,
@@ -27331,7 +25165,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 3,
     createdAt: "2025-11-30T13:07:44",
-    isBookmarked: false,
   },
   {
     id: 2168,
@@ -27346,7 +25179,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 3,
     createdAt: "2025-11-30T10:45:51",
-    isBookmarked: true,
   },
   {
     id: 2169,
@@ -27360,7 +25192,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 1,
     createdAt: "2025-11-30T06:48:28",
-    isBookmarked: true,
   },
   {
     id: 2170,
@@ -27374,7 +25205,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 4,
     createdAt: "2025-11-30T05:23:26",
-    isBookmarked: false,
   },
   {
     id: 2171,
@@ -27383,7 +25213,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 4,
     createdAt: "2025-11-30T04:26:11",
-    isBookmarked: false,
   },
   {
     id: 2172,
@@ -27398,7 +25227,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 8,
     createdAt: "2025-11-30T03:45:30",
-    isBookmarked: false,
   },
   {
     id: 2173,
@@ -27412,7 +25240,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 6,
     createdAt: "2025-11-30T03:32:10",
-    isBookmarked: false,
   },
   {
     id: 2174,
@@ -27424,7 +25251,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 5,
     createdAt: "2025-11-30T02:29:17",
-    isBookmarked: false,
   },
   {
     id: 2175,
@@ -27433,7 +25259,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 6,
     createdAt: "2025-11-30T02:27:15",
-    isBookmarked: false,
   },
   {
     id: 2176,
@@ -27448,7 +25273,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 3,
     createdAt: "2025-11-29T23:32:52",
-    isBookmarked: false,
   },
   {
     id: 2177,
@@ -27461,7 +25285,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 2,
     createdAt: "2025-11-29T22:54:21",
-    isBookmarked: false,
   },
   {
     id: 2178,
@@ -27474,7 +25297,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 0,
     createdAt: "2025-11-29T19:59:28",
-    isBookmarked: false,
   },
   {
     id: 2179,
@@ -27486,7 +25308,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 8,
     createdAt: "2025-11-29T18:11:28",
-    isBookmarked: false,
   },
   {
     id: 2180,
@@ -27501,7 +25322,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 0,
     createdAt: "2025-11-29T17:46:37",
-    isBookmarked: false,
   },
   {
     id: 2181,
@@ -27510,7 +25330,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 4,
     createdAt: "2025-11-29T17:34:47",
-    isBookmarked: false,
   },
   {
     id: 2182,
@@ -27525,7 +25344,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 3,
     createdAt: "2025-11-29T17:14:12",
-    isBookmarked: false,
   },
   {
     id: 2183,
@@ -27537,7 +25355,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 1,
     createdAt: "2025-11-29T17:01:17",
-    isBookmarked: false,
   },
   {
     id: 2184,
@@ -27549,7 +25366,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 2,
     createdAt: "2025-11-29T16:20:02",
-    isBookmarked: false,
   },
   {
     id: 2185,
@@ -27564,7 +25380,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 8,
     createdAt: "2025-11-29T15:51:57",
-    isBookmarked: false,
   },
   {
     id: 2186,
@@ -27577,7 +25392,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 7,
     createdAt: "2025-11-29T14:22:35",
-    isBookmarked: false,
   },
   {
     id: 2187,
@@ -27589,7 +25403,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 6,
     createdAt: "2025-11-29T13:35:19",
-    isBookmarked: false,
   },
   {
     id: 2188,
@@ -27602,7 +25415,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 6,
     createdAt: "2025-11-29T13:32:33",
-    isBookmarked: false,
   },
   {
     id: 2189,
@@ -27617,7 +25429,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 7,
     createdAt: "2025-11-29T13:01:05",
-    isBookmarked: false,
   },
   {
     id: 2190,
@@ -27629,7 +25440,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 3,
     createdAt: "2025-11-29T11:46:22",
-    isBookmarked: false,
   },
   {
     id: 2191,
@@ -27642,7 +25452,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 8,
     createdAt: "2025-11-29T10:26:09",
-    isBookmarked: false,
   },
   {
     id: 2192,
@@ -27651,7 +25460,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 3,
     createdAt: "2025-11-29T10:06:42",
-    isBookmarked: false,
   },
   {
     id: 2193,
@@ -27664,7 +25472,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 0,
     createdAt: "2025-11-29T07:58:21",
-    isBookmarked: false,
   },
   {
     id: 2194,
@@ -27673,7 +25480,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 3,
     createdAt: "2025-11-29T06:27:09",
-    isBookmarked: false,
   },
   {
     id: 2195,
@@ -27686,7 +25492,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 8,
     createdAt: "2025-11-29T01:19:55",
-    isBookmarked: true,
   },
   {
     id: 2196,
@@ -27701,7 +25506,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 8,
     createdAt: "2025-11-29T00:43:15",
-    isBookmarked: false,
   },
   {
     id: 2197,
@@ -27710,7 +25514,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 2,
     createdAt: "2025-11-28T21:52:18",
-    isBookmarked: false,
   },
   {
     id: 2198,
@@ -27725,7 +25528,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 6,
     createdAt: "2025-11-28T21:50:33",
-    isBookmarked: false,
   },
   {
     id: 2199,
@@ -27738,7 +25540,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 1,
     createdAt: "2025-11-28T20:58:28",
-    isBookmarked: false,
   },
   {
     id: 2200,
@@ -27750,7 +25551,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 0,
     createdAt: "2025-11-28T19:25:10",
-    isBookmarked: false,
   },
   {
     id: 2201,
@@ -27765,7 +25565,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 6,
     createdAt: "2025-11-28T18:28:55",
-    isBookmarked: false,
   },
   {
     id: 2202,
@@ -27778,7 +25577,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 7,
     createdAt: "2025-11-28T17:56:39",
-    isBookmarked: false,
   },
   {
     id: 2203,
@@ -27793,7 +25591,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 5,
     createdAt: "2025-11-28T16:25:55",
-    isBookmarked: false,
   },
   {
     id: 2204,
@@ -27807,7 +25604,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 0,
     createdAt: "2025-11-28T14:52:52",
-    isBookmarked: false,
   },
   {
     id: 2205,
@@ -27819,7 +25615,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 0,
     createdAt: "2025-11-28T12:06:13",
-    isBookmarked: false,
   },
   {
     id: 2206,
@@ -27828,7 +25623,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 3,
     createdAt: "2025-11-28T10:23:01",
-    isBookmarked: false,
   },
   {
     id: 2207,
@@ -27843,7 +25637,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 0,
     createdAt: "2025-11-28T09:09:12",
-    isBookmarked: false,
   },
   {
     id: 2208,
@@ -27858,7 +25651,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 6,
     createdAt: "2025-11-28T07:12:51",
-    isBookmarked: false,
   },
   {
     id: 2209,
@@ -27870,7 +25662,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 1,
     createdAt: "2025-11-28T07:00:50",
-    isBookmarked: false,
   },
   {
     id: 2210,
@@ -27882,7 +25673,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 5,
     createdAt: "2025-11-28T06:06:24",
-    isBookmarked: false,
   },
   {
     id: 2211,
@@ -27896,7 +25686,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 6,
     createdAt: "2025-11-28T02:56:22",
-    isBookmarked: false,
   },
   {
     id: 2212,
@@ -27905,7 +25694,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 4,
     createdAt: "2025-11-28T00:43:54",
-    isBookmarked: false,
   },
   {
     id: 2213,
@@ -27920,7 +25708,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 3,
     createdAt: "2025-11-28T00:09:26",
-    isBookmarked: false,
   },
   {
     id: 2214,
@@ -27932,7 +25719,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 3,
     createdAt: "2025-11-27T21:29:25",
-    isBookmarked: false,
   },
   {
     id: 2215,
@@ -27941,7 +25727,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 2,
     createdAt: "2025-11-27T20:18:57",
-    isBookmarked: true,
   },
   {
     id: 2216,
@@ -27956,7 +25741,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 2,
     createdAt: "2025-11-27T19:48:15",
-    isBookmarked: true,
   },
   {
     id: 2217,
@@ -27965,7 +25749,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 4,
     createdAt: "2025-11-27T18:57:03",
-    isBookmarked: false,
   },
   {
     id: 2218,
@@ -27977,7 +25760,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 1,
     createdAt: "2025-11-27T16:07:48",
-    isBookmarked: false,
   },
   {
     id: 2219,
@@ -27992,7 +25774,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 8,
     createdAt: "2025-11-27T15:23:52",
-    isBookmarked: false,
   },
   {
     id: 2220,
@@ -28001,7 +25782,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 4,
     createdAt: "2025-11-27T13:47:59",
-    isBookmarked: false,
   },
   {
     id: 2221,
@@ -28014,7 +25794,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 8,
     createdAt: "2025-11-27T13:40:08",
-    isBookmarked: false,
   },
   {
     id: 2222,
@@ -28026,7 +25805,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 0,
     createdAt: "2025-11-27T11:20:53",
-    isBookmarked: false,
   },
   {
     id: 2223,
@@ -28040,7 +25818,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 1,
     createdAt: "2025-11-27T05:48:14",
-    isBookmarked: false,
   },
   {
     id: 2224,
@@ -28055,7 +25832,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 3,
     createdAt: "2025-11-27T02:06:18",
-    isBookmarked: true,
   },
   {
     id: 2225,
@@ -28068,7 +25844,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 4,
     createdAt: "2025-11-27T02:00:48",
-    isBookmarked: false,
   },
   {
     id: 2226,
@@ -28083,7 +25858,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 7,
     createdAt: "2025-11-27T01:05:55",
-    isBookmarked: false,
   },
   {
     id: 2227,
@@ -28097,7 +25871,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 5,
     createdAt: "2025-11-27T00:58:21",
-    isBookmarked: true,
   },
   {
     id: 2228,
@@ -28106,7 +25879,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 2,
     createdAt: "2025-11-26T20:44:41",
-    isBookmarked: false,
   },
   {
     id: 2229,
@@ -28120,7 +25892,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 6,
     createdAt: "2025-11-26T20:28:04",
-    isBookmarked: false,
   },
   {
     id: 2230,
@@ -28133,7 +25904,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 7,
     createdAt: "2025-11-26T19:35:04",
-    isBookmarked: true,
   },
   {
     id: 2231,
@@ -28146,7 +25916,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 8,
     createdAt: "2025-11-26T17:47:44",
-    isBookmarked: false,
   },
   {
     id: 2232,
@@ -28158,7 +25927,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 0,
     createdAt: "2025-11-26T17:01:55",
-    isBookmarked: false,
   },
   {
     id: 2233,
@@ -28173,7 +25941,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 5,
     createdAt: "2025-11-26T16:50:30",
-    isBookmarked: false,
   },
   {
     id: 2234,
@@ -28187,7 +25954,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 2,
     createdAt: "2025-11-26T16:16:39",
-    isBookmarked: true,
   },
   {
     id: 2235,
@@ -28200,7 +25966,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 4,
     createdAt: "2025-11-26T16:11:40",
-    isBookmarked: false,
   },
   {
     id: 2236,
@@ -28209,7 +25974,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 8,
     createdAt: "2025-11-26T15:53:17",
-    isBookmarked: false,
   },
   {
     id: 2237,
@@ -28221,7 +25985,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 7,
     createdAt: "2025-11-26T15:50:46",
-    isBookmarked: false,
   },
   {
     id: 2238,
@@ -28234,7 +25997,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 8,
     createdAt: "2025-11-26T15:28:14",
-    isBookmarked: true,
   },
   {
     id: 2239,
@@ -28248,7 +26010,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 8,
     createdAt: "2025-11-26T15:12:03",
-    isBookmarked: false,
   },
   {
     id: 2240,
@@ -28261,7 +26022,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 5,
     createdAt: "2025-11-26T10:54:30",
-    isBookmarked: false,
   },
   {
     id: 2241,
@@ -28273,7 +26033,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 8,
     createdAt: "2025-11-26T10:46:46",
-    isBookmarked: true,
   },
   {
     id: 2242,
@@ -28285,7 +26044,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 8,
     createdAt: "2025-11-26T10:38:56",
-    isBookmarked: false,
   },
   {
     id: 2243,
@@ -28300,7 +26058,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 8,
     createdAt: "2025-11-26T03:57:16",
-    isBookmarked: false,
   },
   {
     id: 2244,
@@ -28312,7 +26069,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 3,
     createdAt: "2025-11-26T01:18:40",
-    isBookmarked: true,
   },
   {
     id: 2245,
@@ -28325,7 +26081,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 6,
     createdAt: "2025-11-25T23:39:04",
-    isBookmarked: false,
   },
   {
     id: 2246,
@@ -28338,7 +26093,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 4,
     createdAt: "2025-11-25T22:44:34",
-    isBookmarked: false,
   },
   {
     id: 2247,
@@ -28352,7 +26106,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 4,
     createdAt: "2025-11-25T22:10:09",
-    isBookmarked: false,
   },
   {
     id: 2248,
@@ -28366,7 +26119,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 7,
     createdAt: "2025-11-25T21:11:57",
-    isBookmarked: false,
   },
   {
     id: 2249,
@@ -28381,7 +26133,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 2,
     createdAt: "2025-11-25T17:48:19",
-    isBookmarked: false,
   },
   {
     id: 2250,
@@ -28395,7 +26146,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 7,
     createdAt: "2025-11-25T17:35:25",
-    isBookmarked: false,
   },
   {
     id: 2251,
@@ -28408,7 +26158,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 0,
     createdAt: "2025-11-25T17:08:10",
-    isBookmarked: true,
   },
   {
     id: 2252,
@@ -28421,7 +26170,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 6,
     createdAt: "2025-11-25T16:16:06",
-    isBookmarked: false,
   },
   {
     id: 2253,
@@ -28435,7 +26183,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 4,
     createdAt: "2025-11-25T14:21:22",
-    isBookmarked: true,
   },
   {
     id: 2254,
@@ -28449,7 +26196,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 3,
     createdAt: "2025-11-25T12:45:28",
-    isBookmarked: false,
   },
   {
     id: 2255,
@@ -28462,7 +26208,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 4,
     createdAt: "2025-11-25T10:46:58",
-    isBookmarked: false,
   },
   {
     id: 2256,
@@ -28474,7 +26219,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 14,
     createdAt: "2025-11-25T10:05:37",
-    isBookmarked: false,
   },
   {
     id: 2257,
@@ -28487,7 +26231,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 0,
     createdAt: "2025-11-25T09:55:05",
-    isBookmarked: false,
   },
   {
     id: 2258,
@@ -28502,7 +26245,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 1,
     createdAt: "2025-11-25T09:47:29",
-    isBookmarked: false,
   },
   {
     id: 2259,
@@ -28516,7 +26258,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 0,
     createdAt: "2025-11-25T08:58:32",
-    isBookmarked: false,
   },
   {
     id: 2260,
@@ -28531,7 +26272,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 7,
     createdAt: "2025-11-25T06:18:00",
-    isBookmarked: false,
   },
   {
     id: 2261,
@@ -28545,7 +26285,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 1,
     createdAt: "2025-11-25T05:46:53",
-    isBookmarked: false,
   },
   {
     id: 2262,
@@ -28557,7 +26296,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 0,
     createdAt: "2025-11-25T03:44:56",
-    isBookmarked: false,
   },
   {
     id: 2263,
@@ -28566,7 +26304,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 6,
     createdAt: "2025-11-25T02:16:05",
-    isBookmarked: false,
   },
   {
     id: 2264,
@@ -28578,7 +26315,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 2,
     createdAt: "2025-11-25T00:04:12",
-    isBookmarked: false,
   },
   {
     id: 2265,
@@ -28591,7 +26327,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 3,
     createdAt: "2025-11-24T22:13:41",
-    isBookmarked: false,
   },
   {
     id: 2266,
@@ -28605,7 +26340,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 6,
     createdAt: "2025-11-24T21:46:56",
-    isBookmarked: false,
   },
   {
     id: 2267,
@@ -28617,7 +26351,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 3,
     createdAt: "2025-11-24T21:38:53",
-    isBookmarked: true,
   },
   {
     id: 2268,
@@ -28630,7 +26363,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 1,
     createdAt: "2025-11-24T19:03:13",
-    isBookmarked: false,
   },
   {
     id: 2269,
@@ -28644,7 +26376,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 0,
     createdAt: "2025-11-24T14:46:19",
-    isBookmarked: false,
   },
   {
     id: 2270,
@@ -28658,7 +26389,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 7,
     createdAt: "2025-11-24T13:16:40",
-    isBookmarked: false,
   },
   {
     id: 2271,
@@ -28672,7 +26402,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 5,
     createdAt: "2025-11-24T11:14:10",
-    isBookmarked: false,
   },
   {
     id: 2272,
@@ -28685,7 +26414,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 3,
     createdAt: "2025-11-24T09:32:08",
-    isBookmarked: false,
   },
   {
     id: 2273,
@@ -28694,7 +26422,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 3,
     createdAt: "2025-11-24T08:08:28",
-    isBookmarked: true,
   },
   {
     id: 2274,
@@ -28709,7 +26436,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 5,
     createdAt: "2025-11-24T07:26:27",
-    isBookmarked: false,
   },
   {
     id: 2275,
@@ -28722,7 +26448,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 0,
     createdAt: "2025-11-24T04:51:36",
-    isBookmarked: false,
   },
   {
     id: 2276,
@@ -28731,7 +26456,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 2,
     createdAt: "2025-11-24T04:34:38",
-    isBookmarked: false,
   },
   {
     id: 2277,
@@ -28745,7 +26469,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 6,
     createdAt: "2025-11-24T03:13:55",
-    isBookmarked: false,
   },
   {
     id: 2278,
@@ -28758,7 +26481,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 5,
     createdAt: "2025-11-24T02:56:55",
-    isBookmarked: false,
   },
   {
     id: 2279,
@@ -28773,7 +26495,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 1,
     createdAt: "2025-11-24T01:53:13",
-    isBookmarked: false,
   },
   {
     id: 2280,
@@ -28785,7 +26506,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 1,
     createdAt: "2025-11-24T01:27:56",
-    isBookmarked: false,
   },
   {
     id: 2281,
@@ -28794,7 +26514,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 2,
     createdAt: "2025-11-24T01:07:45",
-    isBookmarked: false,
   },
   {
     id: 2282,
@@ -28808,7 +26527,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 4,
     createdAt: "2025-11-23T23:09:39",
-    isBookmarked: false,
   },
   {
     id: 2283,
@@ -28822,7 +26540,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 4,
     createdAt: "2025-11-23T21:08:24",
-    isBookmarked: false,
   },
   {
     id: 2284,
@@ -28835,7 +26552,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 8,
     createdAt: "2025-11-23T19:54:20",
-    isBookmarked: false,
   },
   {
     id: 2285,
@@ -28850,7 +26566,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 11,
     createdAt: "2025-11-23T19:26:53",
-    isBookmarked: false,
   },
   {
     id: 2286,
@@ -28863,7 +26578,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 16,
     createdAt: "2025-11-23T19:25:55",
-    isBookmarked: true,
   },
   {
     id: 2287,
@@ -28877,7 +26591,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 3,
     createdAt: "2025-11-23T19:11:28",
-    isBookmarked: false,
   },
   {
     id: 2288,
@@ -28890,7 +26603,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 6,
     createdAt: "2025-11-23T19:06:00",
-    isBookmarked: false,
   },
   {
     id: 2289,
@@ -28902,7 +26614,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 6,
     createdAt: "2025-11-23T16:41:09",
-    isBookmarked: false,
   },
   {
     id: 2290,
@@ -28911,7 +26622,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 1,
     createdAt: "2025-11-23T16:23:28",
-    isBookmarked: false,
   },
   {
     id: 2291,
@@ -28925,7 +26635,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 14,
     createdAt: "2025-11-23T13:35:40",
-    isBookmarked: false,
   },
   {
     id: 2292,
@@ -28937,7 +26646,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 16,
     createdAt: "2025-11-23T12:44:06",
-    isBookmarked: false,
   },
   {
     id: 2293,
@@ -28949,7 +26657,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 2,
     createdAt: "2025-11-23T10:15:07",
-    isBookmarked: false,
   },
   {
     id: 2294,
@@ -28958,7 +26665,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 8,
     createdAt: "2025-11-23T08:43:08",
-    isBookmarked: false,
   },
   {
     id: 2295,
@@ -28970,7 +26676,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 8,
     createdAt: "2025-11-23T08:08:18",
-    isBookmarked: false,
   },
   {
     id: 2296,
@@ -28984,7 +26689,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 0,
     createdAt: "2025-11-23T06:49:49",
-    isBookmarked: false,
   },
   {
     id: 2297,
@@ -28993,7 +26697,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 8,
     createdAt: "2025-11-23T06:19:35",
-    isBookmarked: false,
   },
   {
     id: 2298,
@@ -29002,7 +26705,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 4,
     createdAt: "2025-11-23T06:19:21",
-    isBookmarked: false,
   },
   {
     id: 2299,
@@ -29015,7 +26717,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 0,
     createdAt: "2025-11-23T06:07:38",
-    isBookmarked: false,
   },
   {
     id: 2300,
@@ -29030,7 +26731,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 7,
     createdAt: "2025-11-23T05:39:13",
-    isBookmarked: false,
   },
   {
     id: 2301,
@@ -29044,7 +26744,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 7,
     createdAt: "2025-11-23T01:27:09",
-    isBookmarked: false,
   },
   {
     id: 2302,
@@ -29057,7 +26756,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 8,
     createdAt: "2025-11-23T01:00:35",
-    isBookmarked: false,
   },
   {
     id: 2303,
@@ -29070,7 +26768,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 14,
     createdAt: "2025-11-23T00:34:56",
-    isBookmarked: false,
   },
   {
     id: 2304,
@@ -29084,7 +26781,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 8,
     createdAt: "2025-11-23T00:33:50",
-    isBookmarked: false,
   },
   {
     id: 2305,
@@ -29097,7 +26793,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 7,
     createdAt: "2025-11-22T23:26:29",
-    isBookmarked: true,
   },
   {
     id: 2306,
@@ -29110,7 +26805,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 7,
     createdAt: "2025-11-22T22:59:03",
-    isBookmarked: false,
   },
   {
     id: 2307,
@@ -29119,7 +26813,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 2,
     createdAt: "2025-11-22T21:45:27",
-    isBookmarked: false,
   },
   {
     id: 2308,
@@ -29132,7 +26825,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 7,
     createdAt: "2025-11-22T18:47:50",
-    isBookmarked: false,
   },
   {
     id: 2309,
@@ -29146,7 +26838,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 2,
     createdAt: "2025-11-22T18:31:58",
-    isBookmarked: false,
   },
   {
     id: 2310,
@@ -29158,7 +26849,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 3,
     createdAt: "2025-11-22T15:01:09",
-    isBookmarked: false,
   },
   {
     id: 2311,
@@ -29171,7 +26861,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 3,
     createdAt: "2025-11-22T11:22:03",
-    isBookmarked: false,
   },
   {
     id: 2312,
@@ -29186,7 +26875,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 6,
     createdAt: "2025-11-22T10:47:23",
-    isBookmarked: false,
   },
   {
     id: 2313,
@@ -29201,7 +26889,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 8,
     createdAt: "2025-11-22T10:46:35",
-    isBookmarked: false,
   },
   {
     id: 2314,
@@ -29215,7 +26902,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 1,
     createdAt: "2025-11-22T10:36:06",
-    isBookmarked: false,
   },
   {
     id: 2315,
@@ -29230,7 +26916,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 0,
     createdAt: "2025-11-22T08:50:37",
-    isBookmarked: false,
   },
   {
     id: 2316,
@@ -29242,7 +26927,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 6,
     createdAt: "2025-11-22T08:12:08",
-    isBookmarked: false,
   },
   {
     id: 2317,
@@ -29251,7 +26935,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 2,
     createdAt: "2025-11-22T05:31:34",
-    isBookmarked: false,
   },
   {
     id: 2318,
@@ -29264,7 +26947,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 5,
     createdAt: "2025-11-22T05:05:15",
-    isBookmarked: false,
   },
   {
     id: 2319,
@@ -29279,7 +26961,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 2,
     createdAt: "2025-11-22T03:51:49",
-    isBookmarked: false,
   },
   {
     id: 2320,
@@ -29294,7 +26975,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 1,
     createdAt: "2025-11-21T20:34:59",
-    isBookmarked: true,
   },
   {
     id: 2321,
@@ -29308,7 +26988,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 3,
     createdAt: "2025-11-21T17:03:32",
-    isBookmarked: true,
   },
   {
     id: 2322,
@@ -29317,7 +26996,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 5,
     createdAt: "2025-11-21T16:22:56",
-    isBookmarked: false,
   },
   {
     id: 2323,
@@ -29326,7 +27004,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 8,
     createdAt: "2025-11-21T16:19:05",
-    isBookmarked: true,
   },
   {
     id: 2324,
@@ -29341,7 +27018,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 0,
     createdAt: "2025-11-21T13:46:32",
-    isBookmarked: true,
   },
   {
     id: 2325,
@@ -29356,7 +27032,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 8,
     createdAt: "2025-11-21T12:37:50",
-    isBookmarked: true,
   },
   {
     id: 2326,
@@ -29365,7 +27040,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 0,
     createdAt: "2025-11-21T11:49:58",
-    isBookmarked: false,
   },
   {
     id: 2327,
@@ -29379,7 +27053,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 1,
     createdAt: "2025-11-21T11:18:49",
-    isBookmarked: true,
   },
   {
     id: 2328,
@@ -29391,7 +27064,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 2,
     createdAt: "2025-11-21T09:24:27",
-    isBookmarked: false,
   },
   {
     id: 2329,
@@ -29404,7 +27076,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 8,
     createdAt: "2025-11-21T06:42:17",
-    isBookmarked: false,
   },
   {
     id: 2330,
@@ -29417,7 +27088,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 8,
     createdAt: "2025-11-21T06:33:20",
-    isBookmarked: false,
   },
   {
     id: 2331,
@@ -29430,7 +27100,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 3,
     createdAt: "2025-11-21T04:30:51",
-    isBookmarked: true,
   },
   {
     id: 2332,
@@ -29443,7 +27112,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 0,
     createdAt: "2025-11-21T03:55:22",
-    isBookmarked: false,
   },
   {
     id: 2333,
@@ -29452,7 +27120,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 2,
     createdAt: "2025-11-21T01:02:15",
-    isBookmarked: false,
   },
   {
     id: 2334,
@@ -29465,7 +27132,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 5,
     createdAt: "2025-11-21T00:38:05",
-    isBookmarked: false,
   },
   {
     id: 2335,
@@ -29480,7 +27146,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 5,
     createdAt: "2025-11-20T23:01:31",
-    isBookmarked: false,
   },
   {
     id: 2336,
@@ -29495,7 +27160,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 4,
     createdAt: "2025-11-20T22:51:47",
-    isBookmarked: false,
   },
   {
     id: 2337,
@@ -29508,7 +27172,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 7,
     createdAt: "2025-11-20T22:36:10",
-    isBookmarked: false,
   },
   {
     id: 2338,
@@ -29523,7 +27186,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 11,
     createdAt: "2025-11-20T21:01:42",
-    isBookmarked: true,
   },
   {
     id: 2339,
@@ -29537,7 +27199,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 1,
     createdAt: "2025-11-20T20:20:43",
-    isBookmarked: false,
   },
   {
     id: 2340,
@@ -29552,7 +27213,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 8,
     createdAt: "2025-11-20T19:41:18",
-    isBookmarked: false,
   },
   {
     id: 2341,
@@ -29567,7 +27227,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 1,
     createdAt: "2025-11-20T19:18:16",
-    isBookmarked: false,
   },
   {
     id: 2342,
@@ -29580,7 +27239,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 0,
     createdAt: "2025-11-20T18:17:34",
-    isBookmarked: true,
   },
   {
     id: 2343,
@@ -29595,7 +27253,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 8,
     createdAt: "2025-11-20T17:52:41",
-    isBookmarked: false,
   },
   {
     id: 2344,
@@ -29607,7 +27264,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 4,
     createdAt: "2025-11-20T16:06:17",
-    isBookmarked: false,
   },
   {
     id: 2345,
@@ -29616,7 +27272,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 5,
     createdAt: "2025-11-20T15:44:10",
-    isBookmarked: false,
   },
   {
     id: 2346,
@@ -29630,7 +27285,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 2,
     createdAt: "2025-11-20T15:42:13",
-    isBookmarked: true,
   },
   {
     id: 2347,
@@ -29642,7 +27296,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 2,
     createdAt: "2025-11-20T14:34:11",
-    isBookmarked: false,
   },
   {
     id: 2348,
@@ -29657,7 +27310,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 4,
     createdAt: "2025-11-20T05:52:37",
-    isBookmarked: false,
   },
   {
     id: 2349,
@@ -29670,7 +27322,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 2,
     createdAt: "2025-11-20T05:34:22",
-    isBookmarked: true,
   },
   {
     id: 2350,
@@ -29679,7 +27330,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 0,
     createdAt: "2025-11-20T05:32:38",
-    isBookmarked: false,
   },
   {
     id: 2351,
@@ -29688,7 +27338,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 6,
     createdAt: "2025-11-20T04:37:56",
-    isBookmarked: true,
   },
   {
     id: 2352,
@@ -29701,7 +27350,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 0,
     createdAt: "2025-11-20T01:18:01",
-    isBookmarked: false,
   },
   {
     id: 2353,
@@ -29714,7 +27362,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 5,
     createdAt: "2025-11-20T00:10:00",
-    isBookmarked: false,
   },
   {
     id: 2354,
@@ -29726,7 +27373,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 3,
     createdAt: "2025-11-19T23:57:39",
-    isBookmarked: false,
   },
   {
     id: 2355,
@@ -29735,7 +27381,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 3,
     createdAt: "2025-11-19T22:45:46",
-    isBookmarked: false,
   },
   {
     id: 2356,
@@ -29747,7 +27392,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 3,
     createdAt: "2025-11-19T21:58:27",
-    isBookmarked: true,
   },
   {
     id: 2357,
@@ -29760,7 +27404,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 5,
     createdAt: "2025-11-19T21:57:21",
-    isBookmarked: false,
   },
   {
     id: 2358,
@@ -29769,7 +27412,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 5,
     createdAt: "2025-11-19T20:47:00",
-    isBookmarked: true,
   },
   {
     id: 2359,
@@ -29778,7 +27420,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 2,
     createdAt: "2025-11-19T20:03:47",
-    isBookmarked: true,
   },
   {
     id: 2360,
@@ -29793,7 +27434,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 0,
     createdAt: "2025-11-19T17:59:26",
-    isBookmarked: false,
   },
   {
     id: 2361,
@@ -29805,7 +27445,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 7,
     createdAt: "2025-11-19T12:32:32",
-    isBookmarked: false,
   },
   {
     id: 2362,
@@ -29817,7 +27456,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 9,
     createdAt: "2025-11-19T12:00:28",
-    isBookmarked: true,
   },
   {
     id: 2363,
@@ -29831,7 +27469,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 8,
     createdAt: "2025-11-19T11:49:03",
-    isBookmarked: false,
   },
   {
     id: 2364,
@@ -29845,7 +27482,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 2,
     createdAt: "2025-11-19T10:44:41",
-    isBookmarked: false,
   },
   {
     id: 2365,
@@ -29854,7 +27490,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 3,
     createdAt: "2025-11-19T09:39:04",
-    isBookmarked: false,
   },
   {
     id: 2366,
@@ -29868,7 +27503,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 3,
     createdAt: "2025-11-19T09:18:08",
-    isBookmarked: false,
   },
   {
     id: 2367,
@@ -29882,7 +27516,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 13,
     createdAt: "2025-11-19T07:04:28",
-    isBookmarked: false,
   },
   {
     id: 2368,
@@ -29896,7 +27529,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 8,
     createdAt: "2025-11-19T04:19:43",
-    isBookmarked: true,
   },
   {
     id: 2369,
@@ -29908,7 +27540,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 11,
     createdAt: "2025-11-19T03:57:43",
-    isBookmarked: false,
   },
   {
     id: 2370,
@@ -29921,7 +27552,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 1,
     createdAt: "2025-11-19T01:03:53",
-    isBookmarked: false,
   },
   {
     id: 2371,
@@ -29936,7 +27566,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 5,
     createdAt: "2025-11-19T00:32:02",
-    isBookmarked: false,
   },
   {
     id: 2372,
@@ -29945,7 +27574,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 7,
     createdAt: "2025-11-18T23:59:30",
-    isBookmarked: false,
   },
   {
     id: 2373,
@@ -29954,7 +27582,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 7,
     createdAt: "2025-11-18T19:26:17",
-    isBookmarked: false,
   },
   {
     id: 2374,
@@ -29968,7 +27595,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 0,
     createdAt: "2025-11-18T19:02:59",
-    isBookmarked: false,
   },
   {
     id: 2375,
@@ -29977,7 +27603,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 1,
     createdAt: "2025-11-18T17:40:49",
-    isBookmarked: false,
   },
   {
     id: 2376,
@@ -29989,7 +27614,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 6,
     createdAt: "2025-11-18T17:32:40",
-    isBookmarked: false,
   },
   {
     id: 2377,
@@ -30004,7 +27628,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 4,
     createdAt: "2025-11-18T17:17:13",
-    isBookmarked: true,
   },
   {
     id: 2378,
@@ -30017,7 +27640,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 1,
     createdAt: "2025-11-18T09:31:06",
-    isBookmarked: false,
   },
   {
     id: 2379,
@@ -30030,7 +27652,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 6,
     createdAt: "2025-11-18T08:06:57",
-    isBookmarked: true,
   },
   {
     id: 2380,
@@ -30045,7 +27666,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 2,
     createdAt: "2025-11-18T07:47:31",
-    isBookmarked: false,
   },
   {
     id: 2381,
@@ -30059,7 +27679,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 8,
     createdAt: "2025-11-18T06:52:06",
-    isBookmarked: false,
   },
   {
     id: 2382,
@@ -30072,7 +27691,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 15,
     createdAt: "2025-11-18T05:58:26",
-    isBookmarked: true,
   },
   {
     id: 2383,
@@ -30081,7 +27699,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 0,
     createdAt: "2025-11-18T05:39:50",
-    isBookmarked: false,
   },
   {
     id: 2384,
@@ -30094,7 +27711,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 0,
     createdAt: "2025-11-18T02:25:06",
-    isBookmarked: true,
   },
   {
     id: 2385,
@@ -30107,7 +27723,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 7,
     createdAt: "2025-11-18T01:59:47",
-    isBookmarked: true,
   },
   {
     id: 2386,
@@ -30116,7 +27731,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 6,
     createdAt: "2025-11-18T01:03:31",
-    isBookmarked: false,
   },
   {
     id: 2387,
@@ -30125,7 +27739,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 2,
     createdAt: "2025-11-18T00:33:04",
-    isBookmarked: false,
   },
   {
     id: 2388,
@@ -30138,7 +27751,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 1,
     createdAt: "2025-11-17T21:42:45",
-    isBookmarked: true,
   },
   {
     id: 2389,
@@ -30147,7 +27759,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 0,
     createdAt: "2025-11-17T20:29:04",
-    isBookmarked: false,
   },
   {
     id: 2390,
@@ -30161,7 +27772,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 8,
     createdAt: "2025-11-17T19:21:19",
-    isBookmarked: false,
   },
   {
     id: 2391,
@@ -30170,7 +27780,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 11,
     createdAt: "2025-11-17T18:28:26",
-    isBookmarked: false,
   },
   {
     id: 2392,
@@ -30179,7 +27788,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 16,
     createdAt: "2025-11-17T17:57:05",
-    isBookmarked: false,
   },
   {
     id: 2393,
@@ -30192,7 +27800,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 8,
     createdAt: "2025-11-17T14:11:47",
-    isBookmarked: false,
   },
   {
     id: 2394,
@@ -30204,7 +27811,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 4,
     createdAt: "2025-11-17T13:48:14",
-    isBookmarked: true,
   },
   {
     id: 2395,
@@ -30217,7 +27823,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 0,
     createdAt: "2025-11-17T13:41:31",
-    isBookmarked: false,
   },
   {
     id: 2396,
@@ -30230,7 +27835,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 0,
     createdAt: "2025-11-17T12:47:15",
-    isBookmarked: false,
   },
   {
     id: 2397,
@@ -30244,7 +27848,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 6,
     createdAt: "2025-11-17T08:05:27",
-    isBookmarked: true,
   },
   {
     id: 2398,
@@ -30259,7 +27862,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 2,
     createdAt: "2025-11-17T07:47:36",
-    isBookmarked: true,
   },
   {
     id: 2399,
@@ -30271,7 +27873,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 1,
     createdAt: "2025-11-17T07:05:26",
-    isBookmarked: false,
   },
   {
     id: 2400,
@@ -30286,7 +27887,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 2,
     createdAt: "2025-11-17T02:34:23",
-    isBookmarked: false,
   },
   {
     id: 2401,
@@ -30298,7 +27898,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 7,
     createdAt: "2025-11-17T01:01:14",
-    isBookmarked: false,
   },
   {
     id: 2402,
@@ -30307,7 +27906,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 5,
     createdAt: "2025-11-17T00:19:31",
-    isBookmarked: false,
   },
   {
     id: 2403,
@@ -30322,7 +27920,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 1,
     createdAt: "2025-11-16T21:54:30",
-    isBookmarked: true,
   },
   {
     id: 2404,
@@ -30334,7 +27931,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 6,
     createdAt: "2025-11-16T18:47:32",
-    isBookmarked: false,
   },
   {
     id: 2405,
@@ -30349,7 +27945,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 3,
     createdAt: "2025-11-16T18:34:00",
-    isBookmarked: false,
   },
   {
     id: 2406,
@@ -30364,7 +27959,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 8,
     createdAt: "2025-11-16T16:54:10",
-    isBookmarked: false,
   },
   {
     id: 2407,
@@ -30373,7 +27967,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 2,
     createdAt: "2025-11-16T15:37:50",
-    isBookmarked: true,
   },
   {
     id: 2408,
@@ -30388,7 +27981,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 1,
     createdAt: "2025-11-16T15:33:43",
-    isBookmarked: false,
   },
   {
     id: 2409,
@@ -30401,7 +27993,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 5,
     createdAt: "2025-11-16T15:05:09",
-    isBookmarked: false,
   },
   {
     id: 2410,
@@ -30415,7 +28006,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 1,
     createdAt: "2025-11-16T14:14:04",
-    isBookmarked: false,
   },
   {
     id: 2411,
@@ -30430,7 +28020,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 8,
     createdAt: "2025-11-16T14:01:29",
-    isBookmarked: false,
   },
   {
     id: 2412,
@@ -30439,7 +28028,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 3,
     createdAt: "2025-11-16T13:42:21",
-    isBookmarked: false,
   },
   {
     id: 2413,
@@ -30453,7 +28041,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 2,
     createdAt: "2025-11-16T12:19:48",
-    isBookmarked: false,
   },
   {
     id: 2414,
@@ -30466,7 +28053,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 10,
     createdAt: "2025-11-16T12:02:11",
-    isBookmarked: true,
   },
   {
     id: 2415,
@@ -30480,7 +28066,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 8,
     createdAt: "2025-11-16T10:43:42",
-    isBookmarked: false,
   },
   {
     id: 2416,
@@ -30492,7 +28077,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 6,
     createdAt: "2025-11-16T10:17:55",
-    isBookmarked: false,
   },
   {
     id: 2417,
@@ -30501,7 +28085,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 2,
     createdAt: "2025-11-16T09:17:03",
-    isBookmarked: false,
   },
   {
     id: 2418,
@@ -30515,7 +28098,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 3,
     createdAt: "2025-11-16T06:08:13",
-    isBookmarked: false,
   },
   {
     id: 2419,
@@ -30524,7 +28106,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 3,
     createdAt: "2025-11-16T05:58:21",
-    isBookmarked: false,
   },
   {
     id: 2420,
@@ -30537,7 +28118,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 0,
     createdAt: "2025-11-16T05:35:08",
-    isBookmarked: false,
   },
   {
     id: 2421,
@@ -30552,7 +28132,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 8,
     createdAt: "2025-11-16T03:46:48",
-    isBookmarked: false,
   },
   {
     id: 2422,
@@ -30565,7 +28144,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 7,
     createdAt: "2025-11-16T03:20:57",
-    isBookmarked: false,
   },
   {
     id: 2423,
@@ -30579,7 +28157,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 7,
     createdAt: "2025-11-16T03:00:04",
-    isBookmarked: false,
   },
   {
     id: 2424,
@@ -30593,7 +28170,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 4,
     createdAt: "2025-11-16T02:27:03",
-    isBookmarked: true,
   },
   {
     id: 2425,
@@ -30602,7 +28178,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 8,
     createdAt: "2025-11-16T02:26:59",
-    isBookmarked: false,
   },
   {
     id: 2426,
@@ -30611,7 +28186,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 6,
     createdAt: "2025-11-16T01:25:35",
-    isBookmarked: true,
   },
   {
     id: 2427,
@@ -30626,7 +28200,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 1,
     createdAt: "2025-11-15T23:34:22",
-    isBookmarked: false,
   },
   {
     id: 2428,
@@ -30640,7 +28213,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 6,
     createdAt: "2025-11-15T22:49:41",
-    isBookmarked: false,
   },
   {
     id: 2429,
@@ -30653,7 +28225,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 3,
     createdAt: "2025-11-15T21:31:58",
-    isBookmarked: false,
   },
   {
     id: 2430,
@@ -30662,7 +28233,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 13,
     createdAt: "2025-11-15T18:43:57",
-    isBookmarked: false,
   },
   {
     id: 2431,
@@ -30676,7 +28246,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 5,
     createdAt: "2025-11-15T15:29:32",
-    isBookmarked: false,
   },
   {
     id: 2432,
@@ -30691,7 +28260,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 2,
     createdAt: "2025-11-15T14:05:57",
-    isBookmarked: false,
   },
   {
     id: 2433,
@@ -30700,7 +28268,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 2,
     createdAt: "2025-11-15T13:32:34",
-    isBookmarked: false,
   },
   {
     id: 2434,
@@ -30715,7 +28282,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 4,
     createdAt: "2025-11-15T13:11:14",
-    isBookmarked: false,
   },
   {
     id: 2435,
@@ -30729,7 +28295,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 0,
     createdAt: "2025-11-15T12:47:40",
-    isBookmarked: true,
   },
   {
     id: 2436,
@@ -30741,7 +28306,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 1,
     createdAt: "2025-11-15T12:42:45",
-    isBookmarked: false,
   },
   {
     id: 2437,
@@ -30750,7 +28314,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 6,
     createdAt: "2025-11-15T06:59:12",
-    isBookmarked: false,
   },
   {
     id: 2438,
@@ -30759,7 +28322,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 5,
     createdAt: "2025-11-15T02:38:33",
-    isBookmarked: false,
   },
   {
     id: 2439,
@@ -30768,7 +28330,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 8,
     createdAt: "2025-11-15T02:10:26",
-    isBookmarked: false,
   },
   {
     id: 2440,
@@ -30783,7 +28344,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 2,
     createdAt: "2025-11-15T00:24:10",
-    isBookmarked: false,
   },
   {
     id: 2441,
@@ -30796,7 +28356,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 8,
     createdAt: "2025-11-14T22:52:49",
-    isBookmarked: false,
   },
   {
     id: 2442,
@@ -30809,7 +28368,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 4,
     createdAt: "2025-11-14T19:26:54",
-    isBookmarked: false,
   },
   {
     id: 2443,
@@ -30818,7 +28376,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 0,
     createdAt: "2025-11-14T18:29:16",
-    isBookmarked: false,
   },
   {
     id: 2444,
@@ -30832,7 +28389,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 12,
     createdAt: "2025-11-14T17:54:39",
-    isBookmarked: false,
   },
   {
     id: 2445,
@@ -30845,7 +28401,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 5,
     createdAt: "2025-11-14T17:42:28",
-    isBookmarked: false,
   },
   {
     id: 2446,
@@ -30860,7 +28415,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 4,
     createdAt: "2025-11-14T15:14:52",
-    isBookmarked: false,
   },
   {
     id: 2447,
@@ -30869,7 +28423,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 3,
     createdAt: "2025-11-14T15:08:10",
-    isBookmarked: false,
   },
   {
     id: 2448,
@@ -30882,7 +28435,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 6,
     createdAt: "2025-11-14T13:23:06",
-    isBookmarked: false,
   },
   {
     id: 2449,
@@ -30896,7 +28448,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 2,
     createdAt: "2025-11-14T12:28:43",
-    isBookmarked: false,
   },
   {
     id: 2450,
@@ -30905,7 +28456,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 2,
     createdAt: "2025-11-14T07:30:46",
-    isBookmarked: true,
   },
   {
     id: 2451,
@@ -30919,7 +28469,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 4,
     createdAt: "2025-11-14T06:42:17",
-    isBookmarked: false,
   },
   {
     id: 2452,
@@ -30933,7 +28482,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 1,
     createdAt: "2025-11-14T02:05:37",
-    isBookmarked: false,
   },
   {
     id: 2453,
@@ -30948,7 +28496,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 2,
     createdAt: "2025-11-14T01:45:51",
-    isBookmarked: false,
   },
   {
     id: 2454,
@@ -30961,7 +28508,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 7,
     createdAt: "2025-11-14T00:25:29",
-    isBookmarked: false,
   },
   {
     id: 2455,
@@ -30975,7 +28521,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 4,
     createdAt: "2025-11-13T23:48:04",
-    isBookmarked: false,
   },
   {
     id: 2456,
@@ -30990,7 +28535,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 3,
     createdAt: "2025-11-13T23:42:05",
-    isBookmarked: false,
   },
   {
     id: 2457,
@@ -30999,7 +28543,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 8,
     createdAt: "2025-11-13T22:26:18",
-    isBookmarked: false,
   },
   {
     id: 2458,
@@ -31011,7 +28554,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 0,
     createdAt: "2025-11-13T21:58:01",
-    isBookmarked: false,
   },
   {
     id: 2459,
@@ -31020,7 +28562,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 4,
     createdAt: "2025-11-13T20:38:43",
-    isBookmarked: false,
   },
   {
     id: 2460,
@@ -31035,7 +28576,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 0,
     createdAt: "2025-11-13T19:19:22",
-    isBookmarked: false,
   },
   {
     id: 2461,
@@ -31047,7 +28587,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 8,
     createdAt: "2025-11-13T16:35:51",
-    isBookmarked: false,
   },
   {
     id: 2462,
@@ -31062,7 +28601,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 0,
     createdAt: "2025-11-13T15:37:46",
-    isBookmarked: false,
   },
   {
     id: 2463,
@@ -31076,7 +28614,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 5,
     createdAt: "2025-11-13T15:19:34",
-    isBookmarked: false,
   },
   {
     id: 2464,
@@ -31091,7 +28628,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 3,
     createdAt: "2025-11-13T15:11:35",
-    isBookmarked: false,
   },
   {
     id: 2465,
@@ -31103,7 +28639,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 8,
     createdAt: "2025-11-13T14:11:24",
-    isBookmarked: false,
   },
   {
     id: 2466,
@@ -31117,7 +28652,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 5,
     createdAt: "2025-11-13T13:42:50",
-    isBookmarked: false,
   },
   {
     id: 2467,
@@ -31132,7 +28666,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 1,
     createdAt: "2025-11-13T12:36:34",
-    isBookmarked: false,
   },
   {
     id: 2468,
@@ -31145,7 +28678,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 4,
     createdAt: "2025-11-13T12:01:00",
-    isBookmarked: false,
   },
   {
     id: 2469,
@@ -31160,7 +28692,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 5,
     createdAt: "2025-11-13T11:21:33",
-    isBookmarked: true,
   },
   {
     id: 2470,
@@ -31175,7 +28706,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 2,
     createdAt: "2025-11-13T11:21:30",
-    isBookmarked: false,
   },
   {
     id: 2471,
@@ -31189,7 +28719,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 5,
     createdAt: "2025-11-13T09:17:45",
-    isBookmarked: false,
   },
   {
     id: 2472,
@@ -31203,7 +28732,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 3,
     createdAt: "2025-11-13T06:32:25",
-    isBookmarked: true,
   },
   {
     id: 2473,
@@ -31218,7 +28746,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 8,
     createdAt: "2025-11-13T03:44:49",
-    isBookmarked: false,
   },
   {
     id: 2474,
@@ -31232,7 +28759,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 4,
     createdAt: "2025-11-13T01:52:00",
-    isBookmarked: false,
   },
   {
     id: 2475,
@@ -31247,7 +28773,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 3,
     createdAt: "2025-11-12T19:42:37",
-    isBookmarked: false,
   },
   {
     id: 2476,
@@ -31262,7 +28787,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 3,
     createdAt: "2025-11-12T19:19:30",
-    isBookmarked: false,
   },
   {
     id: 2477,
@@ -31277,7 +28801,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 7,
     createdAt: "2025-11-12T19:02:46",
-    isBookmarked: false,
   },
   {
     id: 2478,
@@ -31289,7 +28812,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 2,
     createdAt: "2025-11-12T15:09:25",
-    isBookmarked: false,
   },
   {
     id: 2479,
@@ -31302,7 +28824,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 1,
     createdAt: "2025-11-12T14:27:57",
-    isBookmarked: false,
   },
   {
     id: 2480,
@@ -31314,7 +28835,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 7,
     createdAt: "2025-11-12T13:26:10",
-    isBookmarked: false,
   },
   {
     id: 2481,
@@ -31328,7 +28848,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 6,
     createdAt: "2025-11-12T13:25:14",
-    isBookmarked: true,
   },
   {
     id: 2482,
@@ -31343,7 +28862,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 7,
     createdAt: "2025-11-12T11:06:16",
-    isBookmarked: false,
   },
   {
     id: 2483,
@@ -31357,7 +28875,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 4,
     createdAt: "2025-11-12T09:12:37",
-    isBookmarked: false,
   },
   {
     id: 2484,
@@ -31370,7 +28887,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 8,
     createdAt: "2025-11-12T05:57:02",
-    isBookmarked: false,
   },
   {
     id: 2485,
@@ -31384,7 +28900,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 3,
     createdAt: "2025-11-12T05:39:53",
-    isBookmarked: false,
   },
   {
     id: 2486,
@@ -31397,7 +28912,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 5,
     createdAt: "2025-11-12T03:56:39",
-    isBookmarked: false,
   },
   {
     id: 2487,
@@ -31411,7 +28925,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 5,
     createdAt: "2025-11-12T03:39:25",
-    isBookmarked: false,
   },
   {
     id: 2488,
@@ -31424,7 +28937,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 2,
     createdAt: "2025-11-12T03:07:10",
-    isBookmarked: false,
   },
   {
     id: 2489,
@@ -31438,7 +28950,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 6,
     createdAt: "2025-11-12T03:06:23",
-    isBookmarked: false,
   },
   {
     id: 2490,
@@ -31453,7 +28964,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 5,
     createdAt: "2025-11-12T02:47:14",
-    isBookmarked: false,
   },
   {
     id: 2491,
@@ -31468,7 +28978,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 8,
     createdAt: "2025-11-12T02:32:34",
-    isBookmarked: false,
   },
   {
     id: 2492,
@@ -31483,7 +28992,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 6,
     createdAt: "2025-11-12T01:55:09",
-    isBookmarked: true,
   },
   {
     id: 2493,
@@ -31496,7 +29004,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 8,
     createdAt: "2025-11-12T01:35:00",
-    isBookmarked: false,
   },
   {
     id: 2494,
@@ -31508,7 +29015,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 8,
     createdAt: "2025-11-11T21:31:37",
-    isBookmarked: true,
   },
   {
     id: 2495,
@@ -31520,7 +29026,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 4,
     createdAt: "2025-11-11T19:58:06",
-    isBookmarked: false,
   },
   {
     id: 2496,
@@ -31529,7 +29034,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 4,
     createdAt: "2025-11-11T16:30:01",
-    isBookmarked: false,
   },
   {
     id: 2497,
@@ -31542,7 +29046,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 5,
     createdAt: "2025-11-11T14:39:37",
-    isBookmarked: false,
   },
   {
     id: 2498,
@@ -31556,7 +29059,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 5,
     createdAt: "2025-11-11T12:47:12",
-    isBookmarked: false,
   },
   {
     id: 2499,
@@ -31568,7 +29070,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 0,
     createdAt: "2025-11-11T11:58:41",
-    isBookmarked: true,
   },
   {
     id: 2500,
@@ -31580,7 +29081,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 6,
     createdAt: "2025-11-11T09:03:06",
-    isBookmarked: false,
   },
   {
     id: 2501,
@@ -31595,7 +29095,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 11,
     createdAt: "2025-11-11T08:24:34",
-    isBookmarked: false,
   },
   {
     id: 2502,
@@ -31610,7 +29109,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 6,
     createdAt: "2025-11-11T07:11:23",
-    isBookmarked: false,
   },
   {
     id: 2503,
@@ -31623,7 +29121,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 6,
     createdAt: "2025-11-11T04:56:49",
-    isBookmarked: false,
   },
   {
     id: 2504,
@@ -31638,7 +29135,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 0,
     createdAt: "2025-11-11T04:47:09",
-    isBookmarked: false,
   },
   {
     id: 2505,
@@ -31652,7 +29148,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 1,
     createdAt: "2025-11-11T04:23:49",
-    isBookmarked: false,
   },
   {
     id: 2506,
@@ -31664,7 +29159,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 3,
     createdAt: "2025-11-11T03:52:05",
-    isBookmarked: false,
   },
   {
     id: 2507,
@@ -31673,7 +29167,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 8,
     createdAt: "2025-11-11T03:18:26",
-    isBookmarked: false,
   },
   {
     id: 2508,
@@ -31686,7 +29179,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 8,
     createdAt: "2025-11-10T23:56:34",
-    isBookmarked: false,
   },
   {
     id: 2509,
@@ -31700,7 +29192,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 6,
     createdAt: "2025-11-10T23:47:46",
-    isBookmarked: false,
   },
   {
     id: 2510,
@@ -31713,7 +29204,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 6,
     createdAt: "2025-11-10T22:30:40",
-    isBookmarked: false,
   },
   {
     id: 2511,
@@ -31722,7 +29212,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 3,
     createdAt: "2025-11-10T22:30:20",
-    isBookmarked: false,
   },
   {
     id: 2512,
@@ -31734,7 +29223,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 8,
     createdAt: "2025-11-10T20:44:25",
-    isBookmarked: false,
   },
   {
     id: 2513,
@@ -31748,7 +29236,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 7,
     createdAt: "2025-11-10T19:36:03",
-    isBookmarked: false,
   },
   {
     id: 2514,
@@ -31762,7 +29249,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 6,
     createdAt: "2025-11-10T19:32:57",
-    isBookmarked: true,
   },
   {
     id: 2515,
@@ -31775,7 +29261,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 7,
     createdAt: "2025-11-10T18:32:38",
-    isBookmarked: false,
   },
   {
     id: 2516,
@@ -31787,7 +29272,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 6,
     createdAt: "2025-11-10T18:08:59",
-    isBookmarked: false,
   },
   {
     id: 2517,
@@ -31801,7 +29285,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 0,
     createdAt: "2025-11-10T17:33:07",
-    isBookmarked: false,
   },
   {
     id: 2518,
@@ -31814,7 +29297,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 4,
     createdAt: "2025-11-10T17:30:48",
-    isBookmarked: false,
   },
   {
     id: 2519,
@@ -31823,7 +29305,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 4,
     createdAt: "2025-11-10T15:29:01",
-    isBookmarked: false,
   },
   {
     id: 2520,
@@ -31836,7 +29317,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 3,
     createdAt: "2025-11-10T14:31:25",
-    isBookmarked: false,
   },
   {
     id: 2521,
@@ -31849,7 +29329,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 5,
     createdAt: "2025-11-10T14:01:22",
-    isBookmarked: false,
   },
   {
     id: 2522,
@@ -31858,7 +29337,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 7,
     createdAt: "2025-11-10T13:51:30",
-    isBookmarked: false,
   },
   {
     id: 2523,
@@ -31870,7 +29348,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 5,
     createdAt: "2025-11-10T12:19:40",
-    isBookmarked: false,
   },
   {
     id: 2524,
@@ -31882,7 +29359,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 3,
     createdAt: "2025-11-10T10:40:54",
-    isBookmarked: false,
   },
   {
     id: 2525,
@@ -31894,7 +29370,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 2,
     createdAt: "2025-11-10T10:12:14",
-    isBookmarked: false,
   },
   {
     id: 2526,
@@ -31909,7 +29384,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 2,
     createdAt: "2025-11-10T05:38:01",
-    isBookmarked: true,
   },
   {
     id: 2527,
@@ -31923,7 +29397,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 2,
     createdAt: "2025-11-10T05:23:46",
-    isBookmarked: true,
   },
   {
     id: 2528,
@@ -31932,7 +29405,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 3,
     createdAt: "2025-11-10T03:06:36",
-    isBookmarked: true,
   },
   {
     id: 2529,
@@ -31941,7 +29413,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 5,
     createdAt: "2025-11-10T02:44:25",
-    isBookmarked: false,
   },
   {
     id: 2530,
@@ -31953,7 +29424,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 8,
     createdAt: "2025-11-10T00:41:17",
-    isBookmarked: false,
   },
   {
     id: 2531,
@@ -31968,7 +29438,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 4,
     createdAt: "2025-11-10T00:15:40",
-    isBookmarked: true,
   },
   {
     id: 2532,
@@ -31977,7 +29446,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 0,
     createdAt: "2025-11-09T22:50:24",
-    isBookmarked: false,
   },
   {
     id: 2533,
@@ -31991,7 +29459,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 6,
     createdAt: "2025-11-09T20:43:59",
-    isBookmarked: false,
   },
   {
     id: 2534,
@@ -32003,7 +29470,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 16,
     createdAt: "2025-11-09T20:01:51",
-    isBookmarked: true,
   },
   {
     id: 2535,
@@ -32015,7 +29481,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 5,
     createdAt: "2025-11-09T18:23:22",
-    isBookmarked: false,
   },
   {
     id: 2536,
@@ -32028,7 +29493,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 1,
     createdAt: "2025-11-09T17:37:04",
-    isBookmarked: false,
   },
   {
     id: 2537,
@@ -32043,7 +29507,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 4,
     createdAt: "2025-11-09T15:51:20",
-    isBookmarked: false,
   },
   {
     id: 2538,
@@ -32056,7 +29519,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 4,
     createdAt: "2025-11-09T15:26:35",
-    isBookmarked: false,
   },
   {
     id: 2539,
@@ -32071,7 +29533,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 3,
     createdAt: "2025-11-09T15:03:39",
-    isBookmarked: true,
   },
   {
     id: 2540,
@@ -32085,7 +29546,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 2,
     createdAt: "2025-11-09T14:56:38",
-    isBookmarked: false,
   },
   {
     id: 2541,
@@ -32098,7 +29558,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 4,
     createdAt: "2025-11-09T14:33:35",
-    isBookmarked: false,
   },
   {
     id: 2542,
@@ -32113,7 +29572,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 5,
     createdAt: "2025-11-09T09:57:29",
-    isBookmarked: true,
   },
   {
     id: 2543,
@@ -32126,7 +29584,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 3,
     createdAt: "2025-11-09T09:19:20",
-    isBookmarked: false,
   },
   {
     id: 2544,
@@ -32139,7 +29596,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 8,
     createdAt: "2025-11-09T08:58:34",
-    isBookmarked: false,
   },
   {
     id: 2545,
@@ -32152,7 +29608,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 1,
     createdAt: "2025-11-09T07:13:08",
-    isBookmarked: false,
   },
   {
     id: 2546,
@@ -32165,7 +29620,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 4,
     createdAt: "2025-11-09T04:52:25",
-    isBookmarked: false,
   },
   {
     id: 2547,
@@ -32177,7 +29631,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 7,
     createdAt: "2025-11-09T04:22:59",
-    isBookmarked: false,
   },
   {
     id: 2548,
@@ -32189,7 +29642,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 2,
     createdAt: "2025-11-09T03:17:34",
-    isBookmarked: false,
   },
   {
     id: 2549,
@@ -32201,7 +29653,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 8,
     createdAt: "2025-11-08T23:49:34",
-    isBookmarked: false,
   },
   {
     id: 2550,
@@ -32210,7 +29661,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 11,
     createdAt: "2025-11-08T21:22:04",
-    isBookmarked: false,
   },
   {
     id: 2551,
@@ -32223,7 +29673,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 6,
     createdAt: "2025-11-08T21:03:54",
-    isBookmarked: false,
   },
   {
     id: 2552,
@@ -32238,7 +29687,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 2,
     createdAt: "2025-11-08T18:55:34",
-    isBookmarked: false,
   },
   {
     id: 2553,
@@ -32251,7 +29699,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 2,
     createdAt: "2025-11-08T17:53:09",
-    isBookmarked: false,
   },
   {
     id: 2554,
@@ -32263,7 +29710,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 2,
     createdAt: "2025-11-08T17:37:40",
-    isBookmarked: false,
   },
   {
     id: 2555,
@@ -32275,7 +29721,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 7,
     createdAt: "2025-11-08T17:29:44",
-    isBookmarked: false,
   },
   {
     id: 2556,
@@ -32287,7 +29732,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 3,
     createdAt: "2025-11-08T12:00:05",
-    isBookmarked: false,
   },
   {
     id: 2557,
@@ -32296,7 +29740,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 6,
     createdAt: "2025-11-08T08:23:00",
-    isBookmarked: false,
   },
   {
     id: 2558,
@@ -32305,7 +29748,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 8,
     createdAt: "2025-11-08T03:58:54",
-    isBookmarked: false,
   },
   {
     id: 2559,
@@ -32318,7 +29760,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 6,
     createdAt: "2025-11-08T03:49:56",
-    isBookmarked: false,
   },
   {
     id: 2560,
@@ -32327,7 +29768,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 3,
     createdAt: "2025-11-08T02:49:07",
-    isBookmarked: false,
   },
   {
     id: 2561,
@@ -32342,7 +29782,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 6,
     createdAt: "2025-11-08T02:40:45",
-    isBookmarked: false,
   },
   {
     id: 2562,
@@ -32357,7 +29796,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 4,
     createdAt: "2025-11-07T23:10:10",
-    isBookmarked: false,
   },
   {
     id: 2563,
@@ -32369,7 +29807,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 1,
     createdAt: "2025-11-07T22:25:39",
-    isBookmarked: false,
   },
   {
     id: 2564,
@@ -32378,7 +29815,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 8,
     createdAt: "2025-11-07T18:23:16",
-    isBookmarked: false,
   },
   {
     id: 2565,
@@ -32391,7 +29827,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 7,
     createdAt: "2025-11-07T17:33:02",
-    isBookmarked: false,
   },
   {
     id: 2566,
@@ -32405,7 +29840,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 2,
     createdAt: "2025-11-07T14:00:09",
-    isBookmarked: false,
   },
   {
     id: 2567,
@@ -32417,7 +29851,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 5,
     createdAt: "2025-11-07T13:48:41",
-    isBookmarked: false,
   },
   {
     id: 2568,
@@ -32426,7 +29859,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 1,
     createdAt: "2025-11-07T13:46:08",
-    isBookmarked: true,
   },
   {
     id: 2569,
@@ -32439,7 +29871,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 8,
     createdAt: "2025-11-07T12:45:53",
-    isBookmarked: false,
   },
   {
     id: 2570,
@@ -32453,7 +29884,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 4,
     createdAt: "2025-11-07T11:47:56",
-    isBookmarked: false,
   },
   {
     id: 2571,
@@ -32462,7 +29892,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 8,
     createdAt: "2025-11-07T11:14:32",
-    isBookmarked: false,
   },
   {
     id: 2572,
@@ -32474,7 +29903,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 8,
     createdAt: "2025-11-07T09:58:38",
-    isBookmarked: false,
   },
   {
     id: 2573,
@@ -32488,7 +29916,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 7,
     createdAt: "2025-11-07T06:49:58",
-    isBookmarked: false,
   },
   {
     id: 2574,
@@ -32502,7 +29929,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 3,
     createdAt: "2025-11-07T06:36:22",
-    isBookmarked: false,
   },
   {
     id: 2575,
@@ -32511,7 +29937,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 7,
     createdAt: "2025-11-07T06:28:46",
-    isBookmarked: false,
   },
   {
     id: 2576,
@@ -32523,7 +29948,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 8,
     createdAt: "2025-11-07T05:29:26",
-    isBookmarked: false,
   },
   {
     id: 2577,
@@ -32538,7 +29962,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 1,
     createdAt: "2025-11-07T05:22:00",
-    isBookmarked: true,
   },
   {
     id: 2578,
@@ -32552,7 +29975,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 1,
     createdAt: "2025-11-07T04:41:54",
-    isBookmarked: false,
   },
   {
     id: 2579,
@@ -32561,7 +29983,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 7,
     createdAt: "2025-11-07T04:04:35",
-    isBookmarked: false,
   },
   {
     id: 2580,
@@ -32575,7 +29996,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 1,
     createdAt: "2025-11-07T02:46:21",
-    isBookmarked: true,
   },
   {
     id: 2581,
@@ -32584,7 +30004,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 1,
     createdAt: "2025-11-07T02:37:36",
-    isBookmarked: false,
   },
   {
     id: 2582,
@@ -32598,7 +30017,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 2,
     createdAt: "2025-11-07T02:11:49",
-    isBookmarked: false,
   },
   {
     id: 2583,
@@ -32612,7 +30030,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 1,
     createdAt: "2025-11-07T01:44:11",
-    isBookmarked: false,
   },
   {
     id: 2584,
@@ -32626,7 +30043,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 3,
     createdAt: "2025-11-06T21:07:24",
-    isBookmarked: false,
   },
   {
     id: 2585,
@@ -32641,7 +30057,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 0,
     createdAt: "2025-11-06T17:29:27",
-    isBookmarked: false,
   },
   {
     id: 2586,
@@ -32655,7 +30070,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 5,
     createdAt: "2025-11-06T17:26:33",
-    isBookmarked: false,
   },
   {
     id: 2587,
@@ -32667,7 +30081,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 1,
     createdAt: "2025-11-06T14:49:05",
-    isBookmarked: false,
   },
   {
     id: 2588,
@@ -32682,7 +30095,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 7,
     createdAt: "2025-11-06T14:40:30",
-    isBookmarked: false,
   },
   {
     id: 2589,
@@ -32691,7 +30103,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 1,
     createdAt: "2025-11-06T12:47:57",
-    isBookmarked: false,
   },
   {
     id: 2590,
@@ -32705,7 +30116,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 1,
     createdAt: "2025-11-06T12:09:27",
-    isBookmarked: false,
   },
   {
     id: 2591,
@@ -32718,7 +30128,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 6,
     createdAt: "2025-11-06T10:54:40",
-    isBookmarked: false,
   },
   {
     id: 2592,
@@ -32732,7 +30141,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 6,
     createdAt: "2025-11-06T08:56:08",
-    isBookmarked: false,
   },
   {
     id: 2593,
@@ -32744,7 +30152,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 2,
     createdAt: "2025-11-06T08:45:57",
-    isBookmarked: false,
   },
   {
     id: 2594,
@@ -32753,7 +30160,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 1,
     createdAt: "2025-11-06T07:21:25",
-    isBookmarked: false,
   },
   {
     id: 2595,
@@ -32767,7 +30173,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 1,
     createdAt: "2025-11-06T02:52:54",
-    isBookmarked: false,
   },
   {
     id: 2596,
@@ -32781,7 +30186,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 2,
     createdAt: "2025-11-06T02:29:40",
-    isBookmarked: false,
   },
   {
     id: 2597,
@@ -32794,7 +30198,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 7,
     createdAt: "2025-11-06T01:04:25",
-    isBookmarked: false,
   },
   {
     id: 2598,
@@ -32808,7 +30211,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 5,
     createdAt: "2025-11-06T00:13:43",
-    isBookmarked: true,
   },
   {
     id: 2599,
@@ -32821,7 +30223,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 8,
     createdAt: "2025-11-05T22:32:31",
-    isBookmarked: false,
   },
   {
     id: 2600,
@@ -32835,7 +30236,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 10,
     createdAt: "2025-11-05T21:11:59",
-    isBookmarked: true,
   },
   {
     id: 2601,
@@ -32847,7 +30247,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 3,
     createdAt: "2025-11-05T20:49:07",
-    isBookmarked: false,
   },
   {
     id: 2602,
@@ -32859,7 +30258,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 5,
     createdAt: "2025-11-05T20:27:32",
-    isBookmarked: false,
   },
   {
     id: 2603,
@@ -32868,7 +30266,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 3,
     createdAt: "2025-11-05T19:16:40",
-    isBookmarked: false,
   },
   {
     id: 2604,
@@ -32883,7 +30280,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 0,
     createdAt: "2025-11-05T18:25:41",
-    isBookmarked: false,
   },
   {
     id: 2605,
@@ -32897,7 +30293,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 1,
     createdAt: "2025-11-05T18:07:01",
-    isBookmarked: false,
   },
   {
     id: 2606,
@@ -32910,7 +30305,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 0,
     createdAt: "2025-11-05T16:09:02",
-    isBookmarked: false,
   },
   {
     id: 2607,
@@ -32925,7 +30319,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 7,
     createdAt: "2025-11-05T14:35:33",
-    isBookmarked: false,
   },
   {
     id: 2608,
@@ -32934,7 +30327,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 7,
     createdAt: "2025-11-05T13:29:24",
-    isBookmarked: true,
   },
   {
     id: 2609,
@@ -32943,7 +30335,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 5,
     createdAt: "2025-11-05T12:58:47",
-    isBookmarked: false,
   },
   {
     id: 2610,
@@ -32952,7 +30343,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 5,
     createdAt: "2025-11-05T12:18:23",
-    isBookmarked: false,
   },
   {
     id: 2611,
@@ -32961,7 +30351,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 1,
     createdAt: "2025-11-05T11:35:25",
-    isBookmarked: false,
   },
   {
     id: 2612,
@@ -32973,7 +30362,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 5,
     createdAt: "2025-11-05T11:12:55",
-    isBookmarked: false,
   },
   {
     id: 2613,
@@ -32987,7 +30375,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 5,
     createdAt: "2025-11-05T10:24:01",
-    isBookmarked: false,
   },
   {
     id: 2614,
@@ -33002,7 +30389,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 1,
     createdAt: "2025-11-05T09:27:50",
-    isBookmarked: false,
   },
   {
     id: 2615,
@@ -33014,7 +30400,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 1,
     createdAt: "2025-11-05T02:01:48",
-    isBookmarked: false,
   },
   {
     id: 2616,
@@ -33026,7 +30411,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 3,
     createdAt: "2025-11-04T23:17:32",
-    isBookmarked: false,
   },
   {
     id: 2617,
@@ -33035,7 +30419,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 1,
     createdAt: "2025-11-04T19:25:31",
-    isBookmarked: false,
   },
   {
     id: 2618,
@@ -33047,7 +30430,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 3,
     createdAt: "2025-11-04T19:16:35",
-    isBookmarked: false,
   },
   {
     id: 2619,
@@ -33056,7 +30438,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 1,
     createdAt: "2025-11-04T17:18:15",
-    isBookmarked: false,
   },
   {
     id: 2620,
@@ -33071,7 +30452,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 1,
     createdAt: "2025-11-04T16:53:43",
-    isBookmarked: false,
   },
   {
     id: 2621,
@@ -33083,7 +30463,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 7,
     createdAt: "2025-11-04T16:26:37",
-    isBookmarked: true,
   },
   {
     id: 2622,
@@ -33092,7 +30471,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 1,
     createdAt: "2025-11-04T14:42:26",
-    isBookmarked: false,
   },
   {
     id: 2623,
@@ -33106,7 +30484,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 7,
     createdAt: "2025-11-04T13:31:38",
-    isBookmarked: false,
   },
   {
     id: 2624,
@@ -33115,7 +30492,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 5,
     createdAt: "2025-11-04T12:50:36",
-    isBookmarked: false,
   },
   {
     id: 2625,
@@ -33128,7 +30504,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 11,
     createdAt: "2025-11-04T11:47:33",
-    isBookmarked: false,
   },
   {
     id: 2626,
@@ -33143,7 +30518,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 1,
     createdAt: "2025-11-04T09:38:16",
-    isBookmarked: false,
   },
   {
     id: 2627,
@@ -33152,7 +30526,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 7,
     createdAt: "2025-11-04T05:28:04",
-    isBookmarked: false,
   },
   {
     id: 2628,
@@ -33165,7 +30538,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 6,
     createdAt: "2025-11-04T04:05:33",
-    isBookmarked: false,
   },
   {
     id: 2629,
@@ -33179,7 +30551,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 14,
     createdAt: "2025-11-04T03:39:59",
-    isBookmarked: true,
   },
   {
     id: 2630,
@@ -33192,7 +30563,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 4,
     createdAt: "2025-11-04T02:47:06",
-    isBookmarked: false,
   },
   {
     id: 2631,
@@ -33207,7 +30577,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 2,
     createdAt: "2025-11-04T02:23:02",
-    isBookmarked: false,
   },
   {
     id: 2632,
@@ -33216,7 +30585,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 4,
     createdAt: "2025-11-04T02:08:49",
-    isBookmarked: false,
   },
   {
     id: 2633,
@@ -33230,7 +30598,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 2,
     createdAt: "2025-11-04T00:17:12",
-    isBookmarked: false,
   },
   {
     id: 2634,
@@ -33242,7 +30609,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 2,
     createdAt: "2025-11-03T20:30:14",
-    isBookmarked: false,
   },
   {
     id: 2635,
@@ -33257,7 +30623,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 2,
     createdAt: "2025-11-03T20:12:17",
-    isBookmarked: false,
   },
   {
     id: 2636,
@@ -33266,7 +30631,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 5,
     createdAt: "2025-11-03T20:06:10",
-    isBookmarked: false,
   },
   {
     id: 2637,
@@ -33281,7 +30645,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 5,
     createdAt: "2025-11-03T18:42:29",
-    isBookmarked: false,
   },
   {
     id: 2638,
@@ -33293,7 +30656,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 5,
     createdAt: "2025-11-03T18:42:19",
-    isBookmarked: false,
   },
   {
     id: 2639,
@@ -33306,7 +30668,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 16,
     createdAt: "2025-11-03T18:24:03",
-    isBookmarked: false,
   },
   {
     id: 2640,
@@ -33315,7 +30676,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 7,
     createdAt: "2025-11-03T13:37:25",
-    isBookmarked: false,
   },
   {
     id: 2641,
@@ -33324,7 +30684,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 3,
     createdAt: "2025-11-03T10:11:31",
-    isBookmarked: false,
   },
   {
     id: 2642,
@@ -33338,7 +30697,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 0,
     createdAt: "2025-11-03T07:36:45",
-    isBookmarked: false,
   },
   {
     id: 2643,
@@ -33353,7 +30711,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 8,
     createdAt: "2025-11-03T07:28:44",
-    isBookmarked: false,
   },
   {
     id: 2644,
@@ -33367,7 +30724,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 3,
     createdAt: "2025-11-03T03:46:04",
-    isBookmarked: false,
   },
   {
     id: 2645,
@@ -33379,7 +30735,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 8,
     createdAt: "2025-11-03T01:35:15",
-    isBookmarked: false,
   },
   {
     id: 2646,
@@ -33394,7 +30749,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 0,
     createdAt: "2025-11-02T20:04:52",
-    isBookmarked: false,
   },
   {
     id: 2647,
@@ -33407,7 +30761,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 3,
     createdAt: "2025-11-02T19:42:47",
-    isBookmarked: false,
   },
   {
     id: 2648,
@@ -33419,7 +30772,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 2,
     createdAt: "2025-11-02T16:30:36",
-    isBookmarked: false,
   },
   {
     id: 2649,
@@ -33434,7 +30786,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 7,
     createdAt: "2025-11-02T14:46:36",
-    isBookmarked: false,
   },
   {
     id: 2650,
@@ -33447,7 +30798,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 4,
     createdAt: "2025-11-02T13:31:21",
-    isBookmarked: true,
   },
   {
     id: 2651,
@@ -33459,7 +30809,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 0,
     createdAt: "2025-11-02T13:22:34",
-    isBookmarked: false,
   },
   {
     id: 2652,
@@ -33471,7 +30820,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 4,
     createdAt: "2025-11-02T05:11:23",
-    isBookmarked: false,
   },
   {
     id: 2653,
@@ -33484,7 +30832,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 7,
     createdAt: "2025-11-02T01:45:17",
-    isBookmarked: false,
   },
   {
     id: 2654,
@@ -33499,7 +30846,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 1,
     createdAt: "2025-11-01T23:22:36",
-    isBookmarked: false,
   },
   {
     id: 2655,
@@ -33512,7 +30858,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 3,
     createdAt: "2025-11-01T18:56:40",
-    isBookmarked: false,
   },
   {
     id: 2656,
@@ -33525,7 +30870,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 8,
     createdAt: "2025-11-01T18:33:49",
-    isBookmarked: false,
   },
   {
     id: 2657,
@@ -33538,7 +30882,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 3,
     createdAt: "2025-11-01T13:26:31",
-    isBookmarked: false,
   },
   {
     id: 2658,
@@ -33547,7 +30890,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 0,
     createdAt: "2025-11-01T13:05:03",
-    isBookmarked: false,
   },
   {
     id: 2659,
@@ -33559,7 +30901,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 7,
     createdAt: "2025-11-01T10:10:33",
-    isBookmarked: false,
   },
   {
     id: 2660,
@@ -33573,7 +30914,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 7,
     createdAt: "2025-11-01T08:42:19",
-    isBookmarked: false,
   },
   {
     id: 2661,
@@ -33585,7 +30925,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 4,
     createdAt: "2025-11-01T08:21:11",
-    isBookmarked: true,
   },
   {
     id: 2662,
@@ -33598,7 +30937,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 8,
     createdAt: "2025-11-01T08:20:19",
-    isBookmarked: false,
   },
   {
     id: 2663,
@@ -33607,7 +30945,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 6,
     createdAt: "2025-11-01T07:45:42",
-    isBookmarked: false,
   },
   {
     id: 2664,
@@ -33622,7 +30959,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 3,
     createdAt: "2025-11-01T06:04:02",
-    isBookmarked: false,
   },
   {
     id: 2665,
@@ -33636,7 +30972,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 2,
     createdAt: "2025-11-01T05:42:21",
-    isBookmarked: false,
   },
   {
     id: 2666,
@@ -33645,7 +30980,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 3,
     createdAt: "2025-11-01T05:30:45",
-    isBookmarked: false,
   },
   {
     id: 2667,
@@ -33657,7 +30991,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 5,
     createdAt: "2025-11-01T03:49:57",
-    isBookmarked: true,
   },
   {
     id: 2668,
@@ -33672,7 +31005,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 2,
     createdAt: "2025-11-01T02:06:03",
-    isBookmarked: true,
   },
   {
     id: 2669,
@@ -33686,7 +31018,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 1,
     createdAt: "2025-11-01T01:58:14",
-    isBookmarked: false,
   },
   {
     id: 2670,
@@ -33701,7 +31032,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 8,
     createdAt: "2025-10-31T23:38:23",
-    isBookmarked: true,
   },
   {
     id: 2671,
@@ -33713,7 +31043,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 6,
     createdAt: "2025-10-31T20:28:57",
-    isBookmarked: true,
   },
   {
     id: 2672,
@@ -33725,7 +31054,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 8,
     createdAt: "2025-10-31T19:48:38",
-    isBookmarked: false,
   },
   {
     id: 2673,
@@ -33737,7 +31065,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 1,
     createdAt: "2025-10-31T19:00:30",
-    isBookmarked: true,
   },
   {
     id: 2674,
@@ -33749,7 +31076,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 7,
     createdAt: "2025-10-31T18:27:46",
-    isBookmarked: false,
   },
   {
     id: 2675,
@@ -33763,7 +31089,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 8,
     createdAt: "2025-10-31T17:39:29",
-    isBookmarked: false,
   },
   {
     id: 2676,
@@ -33776,7 +31101,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 4,
     createdAt: "2025-10-31T11:27:43",
-    isBookmarked: false,
   },
   {
     id: 2677,
@@ -33789,7 +31113,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 8,
     createdAt: "2025-10-31T05:59:14",
-    isBookmarked: false,
   },
   {
     id: 2678,
@@ -33798,7 +31121,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 3,
     createdAt: "2025-10-31T04:13:41",
-    isBookmarked: false,
   },
   {
     id: 2679,
@@ -33811,7 +31133,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 6,
     createdAt: "2025-10-31T03:54:48",
-    isBookmarked: true,
   },
   {
     id: 2680,
@@ -33824,7 +31145,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 4,
     createdAt: "2025-10-31T02:52:47",
-    isBookmarked: false,
   },
   {
     id: 2681,
@@ -33838,7 +31158,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 1,
     createdAt: "2025-10-31T02:38:40",
-    isBookmarked: false,
   },
   {
     id: 2682,
@@ -33850,7 +31169,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 6,
     createdAt: "2025-10-31T02:22:52",
-    isBookmarked: false,
   },
   {
     id: 2683,
@@ -33864,7 +31182,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 7,
     createdAt: "2025-10-30T23:53:54",
-    isBookmarked: false,
   },
   {
     id: 2684,
@@ -33878,7 +31195,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 7,
     createdAt: "2025-10-30T22:55:30",
-    isBookmarked: true,
   },
   {
     id: 2685,
@@ -33892,7 +31208,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 5,
     createdAt: "2025-10-30T20:04:13",
-    isBookmarked: true,
   },
   {
     id: 2686,
@@ -33906,7 +31221,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 1,
     createdAt: "2025-10-30T18:25:34",
-    isBookmarked: false,
   },
   {
     id: 2687,
@@ -33915,7 +31229,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 2,
     createdAt: "2025-10-30T15:35:21",
-    isBookmarked: false,
   },
   {
     id: 2688,
@@ -33928,7 +31241,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 4,
     createdAt: "2025-10-30T13:35:36",
-    isBookmarked: false,
   },
   {
     id: 2689,
@@ -33942,7 +31254,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 5,
     createdAt: "2025-10-30T13:05:50",
-    isBookmarked: false,
   },
   {
     id: 2690,
@@ -33957,7 +31268,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 2,
     createdAt: "2025-10-30T12:56:52",
-    isBookmarked: false,
   },
   {
     id: 2691,
@@ -33972,7 +31282,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 5,
     createdAt: "2025-10-30T09:53:46",
-    isBookmarked: false,
   },
   {
     id: 2692,
@@ -33981,7 +31290,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 6,
     createdAt: "2025-10-30T09:42:13",
-    isBookmarked: false,
   },
   {
     id: 2693,
@@ -33993,7 +31301,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 8,
     createdAt: "2025-10-30T06:47:58",
-    isBookmarked: false,
   },
   {
     id: 2694,
@@ -34008,7 +31315,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 3,
     createdAt: "2025-10-30T05:49:57",
-    isBookmarked: false,
   },
   {
     id: 2695,
@@ -34020,7 +31326,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 2,
     createdAt: "2025-10-30T01:03:19",
-    isBookmarked: false,
   },
   {
     id: 2696,
@@ -34033,7 +31338,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 1,
     createdAt: "2025-10-30T01:02:01",
-    isBookmarked: false,
   },
   {
     id: 2697,
@@ -34048,7 +31352,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 8,
     createdAt: "2025-10-30T00:02:38",
-    isBookmarked: false,
   },
   {
     id: 2698,
@@ -34063,7 +31366,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 5,
     createdAt: "2025-10-29T23:49:50",
-    isBookmarked: false,
   },
   {
     id: 2699,
@@ -34075,7 +31377,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 4,
     createdAt: "2025-10-29T23:00:47",
-    isBookmarked: false,
   },
   {
     id: 2700,
@@ -34089,7 +31390,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 0,
     createdAt: "2025-10-29T22:34:17",
-    isBookmarked: false,
   },
   {
     id: 2701,
@@ -34102,7 +31402,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 8,
     createdAt: "2025-10-29T20:57:11",
-    isBookmarked: false,
   },
   {
     id: 2702,
@@ -34111,7 +31410,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 8,
     createdAt: "2025-10-29T20:41:48",
-    isBookmarked: false,
   },
   {
     id: 2703,
@@ -34125,7 +31423,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 6,
     createdAt: "2025-10-29T20:23:42",
-    isBookmarked: false,
   },
   {
     id: 2704,
@@ -34134,7 +31431,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 3,
     createdAt: "2025-10-29T19:18:01",
-    isBookmarked: false,
   },
   {
     id: 2705,
@@ -34143,7 +31439,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 7,
     createdAt: "2025-10-29T18:24:59",
-    isBookmarked: false,
   },
   {
     id: 2706,
@@ -34158,7 +31453,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 4,
     createdAt: "2025-10-29T16:28:37",
-    isBookmarked: false,
   },
   {
     id: 2707,
@@ -34171,7 +31465,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 8,
     createdAt: "2025-10-29T15:15:34",
-    isBookmarked: false,
   },
   {
     id: 2708,
@@ -34183,7 +31476,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 5,
     createdAt: "2025-10-29T11:23:45",
-    isBookmarked: false,
   },
   {
     id: 2709,
@@ -34196,7 +31488,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 1,
     createdAt: "2025-10-29T10:44:12",
-    isBookmarked: false,
   },
   {
     id: 2710,
@@ -34205,7 +31496,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 4,
     createdAt: "2025-10-29T10:19:51",
-    isBookmarked: false,
   },
   {
     id: 2711,
@@ -34220,7 +31510,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 14,
     createdAt: "2025-10-29T09:47:36",
-    isBookmarked: false,
   },
   {
     id: 2712,
@@ -34232,7 +31521,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 2,
     createdAt: "2025-10-29T09:03:44",
-    isBookmarked: false,
   },
   {
     id: 2713,
@@ -34244,7 +31532,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 8,
     createdAt: "2025-10-29T05:40:21",
-    isBookmarked: false,
   },
   {
     id: 2714,
@@ -34259,7 +31546,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 5,
     createdAt: "2025-10-29T04:31:19",
-    isBookmarked: false,
   },
   {
     id: 2715,
@@ -34273,7 +31559,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 6,
     createdAt: "2025-10-29T04:22:18",
-    isBookmarked: false,
   },
   {
     id: 2716,
@@ -34287,7 +31572,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 1,
     createdAt: "2025-10-29T04:11:03",
-    isBookmarked: false,
   },
   {
     id: 2717,
@@ -34299,7 +31583,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 4,
     createdAt: "2025-10-29T03:38:18",
-    isBookmarked: false,
   },
   {
     id: 2718,
@@ -34313,7 +31596,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 1,
     createdAt: "2025-10-29T01:32:16",
-    isBookmarked: false,
   },
   {
     id: 2719,
@@ -34325,7 +31607,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 7,
     createdAt: "2025-10-29T00:14:41",
-    isBookmarked: false,
   },
   {
     id: 2720,
@@ -34338,7 +31619,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 4,
     createdAt: "2025-10-28T23:10:29",
-    isBookmarked: false,
   },
   {
     id: 2721,
@@ -34351,7 +31631,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 3,
     createdAt: "2025-10-28T19:18:50",
-    isBookmarked: false,
   },
   {
     id: 2722,
@@ -34366,7 +31645,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 4,
     createdAt: "2025-10-28T17:35:18",
-    isBookmarked: true,
   },
   {
     id: 2723,
@@ -34378,7 +31656,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 1,
     createdAt: "2025-10-28T14:00:52",
-    isBookmarked: false,
   },
   {
     id: 2724,
@@ -34392,7 +31669,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 5,
     createdAt: "2025-10-28T11:26:01",
-    isBookmarked: false,
   },
   {
     id: 2725,
@@ -34405,7 +31681,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 13,
     createdAt: "2025-10-28T11:16:05",
-    isBookmarked: false,
   },
   {
     id: 2726,
@@ -34420,7 +31695,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 2,
     createdAt: "2025-10-28T10:49:32",
-    isBookmarked: false,
   },
   {
     id: 2727,
@@ -34435,7 +31709,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 4,
     createdAt: "2025-10-28T10:48:45",
-    isBookmarked: false,
   },
   {
     id: 2728,
@@ -34444,7 +31717,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 14,
     createdAt: "2025-10-28T06:59:10",
-    isBookmarked: false,
   },
   {
     id: 2729,
@@ -34456,7 +31728,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 2,
     createdAt: "2025-10-28T06:35:57",
-    isBookmarked: false,
   },
   {
     id: 2730,
@@ -34468,7 +31739,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 10,
     createdAt: "2025-10-28T06:20:16",
-    isBookmarked: true,
   },
   {
     id: 2731,
@@ -34483,7 +31753,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 3,
     createdAt: "2025-10-28T05:24:37",
-    isBookmarked: false,
   },
   {
     id: 2732,
@@ -34492,7 +31761,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 5,
     createdAt: "2025-10-28T03:20:54",
-    isBookmarked: false,
   },
   {
     id: 2733,
@@ -34504,7 +31772,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 1,
     createdAt: "2025-10-28T00:20:53",
-    isBookmarked: false,
   },
   {
     id: 2734,
@@ -34516,7 +31783,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 0,
     createdAt: "2025-10-28T00:00:24",
-    isBookmarked: false,
   },
   {
     id: 2735,
@@ -34530,7 +31796,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 1,
     createdAt: "2025-10-27T18:31:16",
-    isBookmarked: true,
   },
   {
     id: 2736,
@@ -34539,7 +31804,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 2,
     createdAt: "2025-10-27T16:24:28",
-    isBookmarked: false,
   },
   {
     id: 2737,
@@ -34548,7 +31812,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 6,
     createdAt: "2025-10-27T16:17:21",
-    isBookmarked: false,
   },
   {
     id: 2738,
@@ -34560,7 +31823,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 5,
     createdAt: "2025-10-27T16:00:00",
-    isBookmarked: false,
   },
   {
     id: 2739,
@@ -34572,7 +31834,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 3,
     createdAt: "2025-10-27T14:30:08",
-    isBookmarked: false,
   },
   {
     id: 2740,
@@ -34585,7 +31846,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 4,
     createdAt: "2025-10-27T14:11:39",
-    isBookmarked: false,
   },
   {
     id: 2741,
@@ -34594,7 +31854,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 6,
     createdAt: "2025-10-27T14:04:16",
-    isBookmarked: false,
   },
   {
     id: 2742,
@@ -34608,7 +31867,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 6,
     createdAt: "2025-10-27T13:59:55",
-    isBookmarked: true,
   },
   {
     id: 2743,
@@ -34617,7 +31875,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 4,
     createdAt: "2025-10-27T11:40:46",
-    isBookmarked: false,
   },
   {
     id: 2744,
@@ -34631,7 +31888,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 6,
     createdAt: "2025-10-27T11:35:53",
-    isBookmarked: false,
   },
   {
     id: 2745,
@@ -34643,7 +31899,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 0,
     createdAt: "2025-10-27T09:15:51",
-    isBookmarked: false,
   },
   {
     id: 2746,
@@ -34652,7 +31907,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 9,
     createdAt: "2025-10-27T08:41:16",
-    isBookmarked: true,
   },
   {
     id: 2747,
@@ -34667,7 +31921,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 7,
     createdAt: "2025-10-27T04:29:51",
-    isBookmarked: false,
   },
   {
     id: 2748,
@@ -34680,7 +31933,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 7,
     createdAt: "2025-10-27T04:28:01",
-    isBookmarked: false,
   },
   {
     id: 2749,
@@ -34689,7 +31941,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 8,
     createdAt: "2025-10-27T00:07:41",
-    isBookmarked: true,
   },
   {
     id: 2750,
@@ -34704,7 +31955,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 3,
     createdAt: "2025-10-27T00:06:15",
-    isBookmarked: false,
   },
   {
     id: 2751,
@@ -34718,7 +31968,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 3,
     createdAt: "2025-10-26T20:00:35",
-    isBookmarked: false,
   },
   {
     id: 2752,
@@ -34732,7 +31981,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 7,
     createdAt: "2025-10-26T19:57:05",
-    isBookmarked: true,
   },
   {
     id: 2753,
@@ -34746,7 +31994,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 8,
     createdAt: "2025-10-26T17:41:52",
-    isBookmarked: false,
   },
   {
     id: 2754,
@@ -34761,7 +32008,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 6,
     createdAt: "2025-10-26T15:36:39",
-    isBookmarked: false,
   },
   {
     id: 2755,
@@ -34775,7 +32021,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 0,
     createdAt: "2025-10-26T15:14:12",
-    isBookmarked: false,
   },
   {
     id: 2756,
@@ -34790,7 +32035,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 8,
     createdAt: "2025-10-26T15:01:21",
-    isBookmarked: false,
   },
   {
     id: 2757,
@@ -34804,7 +32048,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 9,
     createdAt: "2025-10-26T14:27:04",
-    isBookmarked: true,
   },
   {
     id: 2758,
@@ -34818,7 +32061,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 8,
     createdAt: "2025-10-26T14:11:23",
-    isBookmarked: false,
   },
   {
     id: 2759,
@@ -34831,7 +32073,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 5,
     createdAt: "2025-10-26T13:49:55",
-    isBookmarked: true,
   },
   {
     id: 2760,
@@ -34840,7 +32081,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 1,
     createdAt: "2025-10-26T13:44:04",
-    isBookmarked: true,
   },
   {
     id: 2761,
@@ -34855,7 +32095,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 8,
     createdAt: "2025-10-26T12:52:45",
-    isBookmarked: false,
   },
   {
     id: 2762,
@@ -34869,7 +32108,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 8,
     createdAt: "2025-10-26T11:03:36",
-    isBookmarked: false,
   },
   {
     id: 2763,
@@ -34882,7 +32120,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 6,
     createdAt: "2025-10-26T10:36:03",
-    isBookmarked: false,
   },
   {
     id: 2764,
@@ -34895,7 +32132,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 1,
     createdAt: "2025-10-26T07:21:48",
-    isBookmarked: false,
   },
   {
     id: 2765,
@@ -34907,7 +32143,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 2,
     createdAt: "2025-10-26T04:18:14",
-    isBookmarked: false,
   },
   {
     id: 2766,
@@ -34920,7 +32155,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 6,
     createdAt: "2025-10-26T03:53:20",
-    isBookmarked: false,
   },
   {
     id: 2767,
@@ -34934,7 +32168,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 5,
     createdAt: "2025-10-26T03:11:09",
-    isBookmarked: false,
   },
   {
     id: 2768,
@@ -34949,7 +32182,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 2,
     createdAt: "2025-10-26T01:22:10",
-    isBookmarked: false,
   },
   {
     id: 2769,
@@ -34961,7 +32193,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 3,
     createdAt: "2025-10-25T23:47:23",
-    isBookmarked: false,
   },
   {
     id: 2770,
@@ -34973,7 +32204,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 8,
     createdAt: "2025-10-25T23:00:44",
-    isBookmarked: false,
   },
   {
     id: 2771,
@@ -34986,7 +32216,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 8,
     createdAt: "2025-10-25T22:37:59",
-    isBookmarked: true,
   },
   {
     id: 2772,
@@ -35000,7 +32229,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 0,
     createdAt: "2025-10-25T22:30:52",
-    isBookmarked: false,
   },
   {
     id: 2773,
@@ -35013,7 +32241,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 4,
     createdAt: "2025-10-25T20:02:53",
-    isBookmarked: false,
   },
   {
     id: 2774,
@@ -35027,7 +32254,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 7,
     createdAt: "2025-10-25T19:03:34",
-    isBookmarked: false,
   },
   {
     id: 2775,
@@ -35042,7 +32268,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 5,
     createdAt: "2025-10-25T17:55:49",
-    isBookmarked: false,
   },
   {
     id: 2776,
@@ -35056,7 +32281,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 14,
     createdAt: "2025-10-25T16:06:16",
-    isBookmarked: false,
   },
   {
     id: 2777,
@@ -35070,7 +32294,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 5,
     createdAt: "2025-10-25T14:14:13",
-    isBookmarked: false,
   },
   {
     id: 2778,
@@ -35082,7 +32305,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 13,
     createdAt: "2025-10-25T13:29:15",
-    isBookmarked: false,
   },
   {
     id: 2779,
@@ -35091,7 +32313,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 6,
     createdAt: "2025-10-25T12:10:19",
-    isBookmarked: false,
   },
   {
     id: 2780,
@@ -35100,7 +32321,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 8,
     createdAt: "2025-10-25T10:41:47",
-    isBookmarked: true,
   },
   {
     id: 2781,
@@ -35109,7 +32329,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 6,
     createdAt: "2025-10-25T10:31:40",
-    isBookmarked: false,
   },
   {
     id: 2782,
@@ -35122,7 +32341,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 0,
     createdAt: "2025-10-25T10:31:15",
-    isBookmarked: false,
   },
   {
     id: 2783,
@@ -35137,7 +32355,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 7,
     createdAt: "2025-10-25T08:29:00",
-    isBookmarked: false,
   },
   {
     id: 2784,
@@ -35151,7 +32368,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 4,
     createdAt: "2025-10-25T05:15:39",
-    isBookmarked: false,
   },
   {
     id: 2785,
@@ -35163,7 +32379,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 1,
     createdAt: "2025-10-25T05:07:53",
-    isBookmarked: false,
   },
   {
     id: 2786,
@@ -35175,7 +32390,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 4,
     createdAt: "2025-10-25T04:55:37",
-    isBookmarked: false,
   },
   {
     id: 2787,
@@ -35190,7 +32404,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 7,
     createdAt: "2025-10-25T04:35:40",
-    isBookmarked: false,
   },
   {
     id: 2788,
@@ -35199,7 +32412,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 10,
     createdAt: "2025-10-24T23:03:31",
-    isBookmarked: true,
   },
   {
     id: 2789,
@@ -35213,7 +32425,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 4,
     createdAt: "2025-10-24T21:53:02",
-    isBookmarked: false,
   },
   {
     id: 2790,
@@ -35226,7 +32437,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 2,
     createdAt: "2025-10-24T18:40:10",
-    isBookmarked: false,
   },
   {
     id: 2791,
@@ -35239,7 +32449,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 7,
     createdAt: "2025-10-24T17:20:18",
-    isBookmarked: false,
   },
   {
     id: 2792,
@@ -35253,7 +32462,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 4,
     createdAt: "2025-10-24T14:21:36",
-    isBookmarked: false,
   },
   {
     id: 2793,
@@ -35262,7 +32470,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 8,
     createdAt: "2025-10-24T12:08:24",
-    isBookmarked: false,
   },
   {
     id: 2794,
@@ -35274,7 +32481,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 7,
     createdAt: "2025-10-24T09:22:04",
-    isBookmarked: true,
   },
   {
     id: 2795,
@@ -35286,7 +32492,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 7,
     createdAt: "2025-10-24T06:24:17",
-    isBookmarked: false,
   },
   {
     id: 2796,
@@ -35300,7 +32505,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 5,
     createdAt: "2025-10-24T03:00:09",
-    isBookmarked: false,
   },
   {
     id: 2797,
@@ -35315,7 +32519,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 8,
     createdAt: "2025-10-24T01:25:21",
-    isBookmarked: false,
   },
   {
     id: 2798,
@@ -35328,7 +32531,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 7,
     createdAt: "2025-10-23T23:20:30",
-    isBookmarked: false,
   },
   {
     id: 2799,
@@ -35340,7 +32542,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 7,
     createdAt: "2025-10-23T23:18:36",
-    isBookmarked: false,
   },
   {
     id: 2800,
@@ -35355,7 +32556,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 2,
     createdAt: "2025-10-23T22:04:25",
-    isBookmarked: false,
   },
   {
     id: 2801,
@@ -35367,7 +32567,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 0,
     createdAt: "2025-10-23T19:51:53",
-    isBookmarked: false,
   },
   {
     id: 2802,
@@ -35381,7 +32580,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 6,
     createdAt: "2025-10-23T19:14:25",
-    isBookmarked: false,
   },
   {
     id: 2803,
@@ -35393,7 +32591,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 1,
     createdAt: "2025-10-23T18:14:54",
-    isBookmarked: false,
   },
   {
     id: 2804,
@@ -35405,7 +32602,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 2,
     createdAt: "2025-10-23T17:23:02",
-    isBookmarked: false,
   },
   {
     id: 2805,
@@ -35418,7 +32614,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 5,
     createdAt: "2025-10-23T14:02:15",
-    isBookmarked: true,
   },
   {
     id: 2806,
@@ -35430,7 +32625,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 5,
     createdAt: "2025-10-23T13:37:03",
-    isBookmarked: false,
   },
   {
     id: 2807,
@@ -35439,7 +32633,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 14,
     createdAt: "2025-10-23T12:24:24",
-    isBookmarked: false,
   },
   {
     id: 2808,
@@ -35453,7 +32646,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 4,
     createdAt: "2025-10-23T11:50:56",
-    isBookmarked: false,
   },
   {
     id: 2809,
@@ -35465,7 +32657,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 8,
     createdAt: "2025-10-23T08:52:41",
-    isBookmarked: false,
   },
   {
     id: 2810,
@@ -35478,7 +32669,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 0,
     createdAt: "2025-10-23T08:14:25",
-    isBookmarked: false,
   },
   {
     id: 2811,
@@ -35493,7 +32683,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 5,
     createdAt: "2025-10-23T07:58:25",
-    isBookmarked: false,
   },
   {
     id: 2812,
@@ -35506,7 +32695,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 16,
     createdAt: "2025-10-23T06:21:18",
-    isBookmarked: false,
   },
   {
     id: 2813,
@@ -35521,7 +32709,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 2,
     createdAt: "2025-10-23T05:10:07",
-    isBookmarked: false,
   },
   {
     id: 2814,
@@ -35533,7 +32720,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 5,
     createdAt: "2025-10-23T03:16:33",
-    isBookmarked: false,
   },
   {
     id: 2815,
@@ -35547,7 +32733,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 4,
     createdAt: "2025-10-23T02:24:14",
-    isBookmarked: true,
   },
   {
     id: 2816,
@@ -35559,7 +32744,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 0,
     createdAt: "2025-10-23T00:28:40",
-    isBookmarked: false,
   },
   {
     id: 2817,
@@ -35572,7 +32756,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 4,
     createdAt: "2025-10-22T23:19:47",
-    isBookmarked: true,
   },
   {
     id: 2818,
@@ -35584,7 +32767,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 4,
     createdAt: "2025-10-22T22:29:27",
-    isBookmarked: true,
   },
   {
     id: 2819,
@@ -35596,7 +32778,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 3,
     createdAt: "2025-10-22T19:44:38",
-    isBookmarked: false,
   },
   {
     id: 2820,
@@ -35605,7 +32786,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 0,
     createdAt: "2025-10-22T17:10:05",
-    isBookmarked: false,
   },
   {
     id: 2821,
@@ -35619,7 +32799,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 1,
     createdAt: "2025-10-22T14:43:18",
-    isBookmarked: false,
   },
   {
     id: 2822,
@@ -35628,7 +32807,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 6,
     createdAt: "2025-10-22T12:45:19",
-    isBookmarked: false,
   },
   {
     id: 2823,
@@ -35643,7 +32821,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 1,
     createdAt: "2025-10-22T08:23:21",
-    isBookmarked: false,
   },
   {
     id: 2824,
@@ -35652,7 +32829,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 4,
     createdAt: "2025-10-22T07:44:51",
-    isBookmarked: false,
   },
   {
     id: 2825,
@@ -35667,7 +32843,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 4,
     createdAt: "2025-10-22T07:29:10",
-    isBookmarked: false,
   },
   {
     id: 2826,
@@ -35682,7 +32857,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 3,
     createdAt: "2025-10-22T06:25:17",
-    isBookmarked: false,
   },
   {
     id: 2827,
@@ -35696,7 +32870,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 0,
     createdAt: "2025-10-22T04:43:06",
-    isBookmarked: false,
   },
   {
     id: 2828,
@@ -35708,7 +32881,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 1,
     createdAt: "2025-10-22T02:21:39",
-    isBookmarked: true,
   },
   {
     id: 2829,
@@ -35721,7 +32893,6 @@ export const posts = [
     caption: "작은 성취가 쌓이는 중",
     commentCount: 2,
     createdAt: "2025-10-22T01:21:51",
-    isBookmarked: false,
   },
   {
     id: 2830,
@@ -35736,7 +32907,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 1,
     createdAt: "2025-10-22T00:56:42",
-    isBookmarked: false,
   },
   {
     id: 2831,
@@ -35751,7 +32921,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 7,
     createdAt: "2025-10-22T00:46:51",
-    isBookmarked: false,
   },
   {
     id: 2832,
@@ -35766,7 +32935,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 2,
     createdAt: "2025-10-21T23:03:31",
-    isBookmarked: false,
   },
   {
     id: 2833,
@@ -35779,7 +32947,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 7,
     createdAt: "2025-10-21T22:20:34",
-    isBookmarked: false,
   },
   {
     id: 2834,
@@ -35791,7 +32958,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 7,
     createdAt: "2025-10-21T20:08:50",
-    isBookmarked: true,
   },
   {
     id: 2835,
@@ -35803,7 +32969,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 7,
     createdAt: "2025-10-21T17:53:02",
-    isBookmarked: false,
   },
   {
     id: 2836,
@@ -35816,7 +32981,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 0,
     createdAt: "2025-10-21T17:36:47",
-    isBookmarked: false,
   },
   {
     id: 2837,
@@ -35830,7 +32994,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 4,
     createdAt: "2025-10-21T17:16:51",
-    isBookmarked: false,
   },
   {
     id: 2838,
@@ -35842,7 +33005,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 7,
     createdAt: "2025-10-21T12:48:09",
-    isBookmarked: false,
   },
   {
     id: 2839,
@@ -35855,7 +33017,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 5,
     createdAt: "2025-10-21T11:04:13",
-    isBookmarked: false,
   },
   {
     id: 2840,
@@ -35868,7 +33029,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 6,
     createdAt: "2025-10-21T10:13:35",
-    isBookmarked: true,
   },
   {
     id: 2841,
@@ -35880,7 +33040,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 8,
     createdAt: "2025-10-21T10:01:47",
-    isBookmarked: false,
   },
   {
     id: 2842,
@@ -35889,7 +33048,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 4,
     createdAt: "2025-10-21T09:23:40",
-    isBookmarked: false,
   },
   {
     id: 2843,
@@ -35898,7 +33056,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 11,
     createdAt: "2025-10-21T07:34:57",
-    isBookmarked: false,
   },
   {
     id: 2844,
@@ -35907,7 +33064,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 2,
     createdAt: "2025-10-21T07:33:00",
-    isBookmarked: true,
   },
   {
     id: 2845,
@@ -35922,7 +33078,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 13,
     createdAt: "2025-10-21T07:08:06",
-    isBookmarked: false,
   },
   {
     id: 2846,
@@ -35935,7 +33090,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 2,
     createdAt: "2025-10-21T05:56:43",
-    isBookmarked: false,
   },
   {
     id: 2847,
@@ -35950,7 +33104,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 4,
     createdAt: "2025-10-21T02:52:24",
-    isBookmarked: false,
   },
   {
     id: 2848,
@@ -35959,7 +33112,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 1,
     createdAt: "2025-10-20T23:43:21",
-    isBookmarked: false,
   },
   {
     id: 2849,
@@ -35972,7 +33124,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 8,
     createdAt: "2025-10-20T22:19:09",
-    isBookmarked: false,
   },
   {
     id: 2850,
@@ -35981,7 +33132,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 5,
     createdAt: "2025-10-20T19:05:29",
-    isBookmarked: false,
   },
   {
     id: 2851,
@@ -35993,7 +33143,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 8,
     createdAt: "2025-10-20T17:22:51",
-    isBookmarked: false,
   },
   {
     id: 2852,
@@ -36007,7 +33156,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 3,
     createdAt: "2025-10-20T16:06:51",
-    isBookmarked: false,
   },
   {
     id: 2853,
@@ -36019,7 +33167,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 2,
     createdAt: "2025-10-20T14:47:08",
-    isBookmarked: false,
   },
   {
     id: 2854,
@@ -36028,7 +33175,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 2,
     createdAt: "2025-10-20T14:13:47",
-    isBookmarked: false,
   },
   {
     id: 2855,
@@ -36040,7 +33186,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 3,
     createdAt: "2025-10-20T13:37:36",
-    isBookmarked: false,
   },
   {
     id: 2856,
@@ -36052,7 +33197,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 6,
     createdAt: "2025-10-20T12:17:22",
-    isBookmarked: false,
   },
   {
     id: 2857,
@@ -36061,7 +33205,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 1,
     createdAt: "2025-10-20T07:05:15",
-    isBookmarked: false,
   },
   {
     id: 2858,
@@ -36074,7 +33217,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 14,
     createdAt: "2025-10-20T06:50:48",
-    isBookmarked: false,
   },
   {
     id: 2859,
@@ -36086,7 +33228,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 2,
     createdAt: "2025-10-20T05:26:02",
-    isBookmarked: false,
   },
   {
     id: 2860,
@@ -36099,7 +33240,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 0,
     createdAt: "2025-10-20T02:15:39",
-    isBookmarked: false,
   },
   {
     id: 2861,
@@ -36113,7 +33253,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 2,
     createdAt: "2025-10-19T20:15:36",
-    isBookmarked: false,
   },
   {
     id: 2862,
@@ -36127,7 +33266,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 8,
     createdAt: "2025-10-19T17:14:41",
-    isBookmarked: false,
   },
   {
     id: 2863,
@@ -36140,7 +33278,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 4,
     createdAt: "2025-10-19T16:46:42",
-    isBookmarked: false,
   },
   {
     id: 2864,
@@ -36152,7 +33289,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 6,
     createdAt: "2025-10-19T16:19:11",
-    isBookmarked: false,
   },
   {
     id: 2865,
@@ -36166,7 +33302,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 0,
     createdAt: "2025-10-19T13:07:15",
-    isBookmarked: false,
   },
   {
     id: 2866,
@@ -36175,7 +33310,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 6,
     createdAt: "2025-10-19T08:52:01",
-    isBookmarked: false,
   },
   {
     id: 2867,
@@ -36187,7 +33321,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 1,
     createdAt: "2025-10-19T08:41:29",
-    isBookmarked: false,
   },
   {
     id: 2868,
@@ -36202,7 +33335,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 1,
     createdAt: "2025-10-19T08:20:59",
-    isBookmarked: false,
   },
   {
     id: 2869,
@@ -36214,7 +33346,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 4,
     createdAt: "2025-10-19T06:42:21",
-    isBookmarked: false,
   },
   {
     id: 2870,
@@ -36226,7 +33357,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 2,
     createdAt: "2025-10-19T06:31:51",
-    isBookmarked: false,
   },
   {
     id: 2871,
@@ -36240,7 +33370,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 2,
     createdAt: "2025-10-19T00:23:10",
-    isBookmarked: false,
   },
   {
     id: 2872,
@@ -36249,7 +33378,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 3,
     createdAt: "2025-10-19T00:08:01",
-    isBookmarked: false,
   },
   {
     id: 2873,
@@ -36262,7 +33390,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 7,
     createdAt: "2025-10-18T22:57:15",
-    isBookmarked: false,
   },
   {
     id: 2874,
@@ -36274,7 +33401,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 3,
     createdAt: "2025-10-18T22:43:57",
-    isBookmarked: true,
   },
   {
     id: 2875,
@@ -36286,7 +33412,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 7,
     createdAt: "2025-10-18T21:22:57",
-    isBookmarked: false,
   },
   {
     id: 2876,
@@ -36295,7 +33420,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 5,
     createdAt: "2025-10-18T21:11:55",
-    isBookmarked: false,
   },
   {
     id: 2877,
@@ -36307,7 +33431,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 5,
     createdAt: "2025-10-18T20:52:47",
-    isBookmarked: false,
   },
   {
     id: 2878,
@@ -36316,7 +33439,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 5,
     createdAt: "2025-10-18T20:26:25",
-    isBookmarked: false,
   },
   {
     id: 2879,
@@ -36330,7 +33452,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 3,
     createdAt: "2025-10-18T20:04:47",
-    isBookmarked: false,
   },
   {
     id: 2880,
@@ -36342,7 +33463,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 5,
     createdAt: "2025-10-18T18:24:19",
-    isBookmarked: false,
   },
   {
     id: 2881,
@@ -36351,7 +33471,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 6,
     createdAt: "2025-10-18T18:01:52",
-    isBookmarked: false,
   },
   {
     id: 2882,
@@ -36365,7 +33484,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 4,
     createdAt: "2025-10-18T17:27:42",
-    isBookmarked: false,
   },
   {
     id: 2883,
@@ -36379,7 +33497,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 8,
     createdAt: "2025-10-18T15:47:55",
-    isBookmarked: false,
   },
   {
     id: 2884,
@@ -36391,7 +33508,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 6,
     createdAt: "2025-10-18T13:55:17",
-    isBookmarked: false,
   },
   {
     id: 2885,
@@ -36400,7 +33516,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 7,
     createdAt: "2025-10-18T13:09:36",
-    isBookmarked: true,
   },
   {
     id: 2886,
@@ -36412,7 +33527,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 0,
     createdAt: "2025-10-18T10:17:51",
-    isBookmarked: false,
   },
   {
     id: 2887,
@@ -36421,7 +33535,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 2,
     createdAt: "2025-10-18T07:50:47",
-    isBookmarked: false,
   },
   {
     id: 2888,
@@ -36433,7 +33546,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 7,
     createdAt: "2025-10-18T07:44:59",
-    isBookmarked: false,
   },
   {
     id: 2889,
@@ -36445,7 +33557,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 4,
     createdAt: "2025-10-18T02:34:16",
-    isBookmarked: false,
   },
   {
     id: 2890,
@@ -36458,7 +33569,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 3,
     createdAt: "2025-10-17T23:48:08",
-    isBookmarked: true,
   },
   {
     id: 2891,
@@ -36470,7 +33580,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 4,
     createdAt: "2025-10-17T23:16:06",
-    isBookmarked: false,
   },
   {
     id: 2892,
@@ -36482,7 +33591,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 4,
     createdAt: "2025-10-17T21:39:29",
-    isBookmarked: false,
   },
   {
     id: 2893,
@@ -36497,7 +33605,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 7,
     createdAt: "2025-10-17T20:09:00",
-    isBookmarked: false,
   },
   {
     id: 2894,
@@ -36511,7 +33618,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 8,
     createdAt: "2025-10-17T19:53:36",
-    isBookmarked: false,
   },
   {
     id: 2895,
@@ -36520,7 +33626,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 5,
     createdAt: "2025-10-17T17:58:34",
-    isBookmarked: false,
   },
   {
     id: 2896,
@@ -36535,7 +33640,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 3,
     createdAt: "2025-10-17T16:51:31",
-    isBookmarked: false,
   },
   {
     id: 2897,
@@ -36544,7 +33648,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 8,
     createdAt: "2025-10-17T16:20:51",
-    isBookmarked: true,
   },
   {
     id: 2898,
@@ -36559,7 +33662,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 5,
     createdAt: "2025-10-17T11:20:28",
-    isBookmarked: false,
   },
   {
     id: 2899,
@@ -36573,7 +33675,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 7,
     createdAt: "2025-10-17T11:20:11",
-    isBookmarked: true,
   },
   {
     id: 2900,
@@ -36582,7 +33683,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 4,
     createdAt: "2025-10-17T08:55:17",
-    isBookmarked: false,
   },
   {
     id: 2901,
@@ -36595,7 +33695,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 4,
     createdAt: "2025-10-17T06:46:21",
-    isBookmarked: true,
   },
   {
     id: 2902,
@@ -36610,7 +33709,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 4,
     createdAt: "2025-10-17T05:56:12",
-    isBookmarked: false,
   },
   {
     id: 2903,
@@ -36624,7 +33722,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 5,
     createdAt: "2025-10-17T05:01:22",
-    isBookmarked: false,
   },
   {
     id: 2904,
@@ -36637,7 +33734,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 3,
     createdAt: "2025-10-17T02:05:08",
-    isBookmarked: false,
   },
   {
     id: 2905,
@@ -36651,7 +33747,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 13,
     createdAt: "2025-10-17T02:04:11",
-    isBookmarked: false,
   },
   {
     id: 2906,
@@ -36664,7 +33759,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 2,
     createdAt: "2025-10-17T00:23:01",
-    isBookmarked: false,
   },
   {
     id: 2907,
@@ -36673,7 +33767,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 4,
     createdAt: "2025-10-16T21:19:03",
-    isBookmarked: false,
   },
   {
     id: 2908,
@@ -36685,7 +33778,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 7,
     createdAt: "2025-10-16T21:09:09",
-    isBookmarked: false,
   },
   {
     id: 2909,
@@ -36694,7 +33786,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 7,
     createdAt: "2025-10-16T18:37:30",
-    isBookmarked: false,
   },
   {
     id: 2910,
@@ -36709,7 +33800,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 7,
     createdAt: "2025-10-16T17:00:17",
-    isBookmarked: false,
   },
   {
     id: 2911,
@@ -36721,7 +33811,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 3,
     createdAt: "2025-10-16T13:38:42",
-    isBookmarked: true,
   },
   {
     id: 2912,
@@ -36734,7 +33823,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 6,
     createdAt: "2025-10-16T11:35:15",
-    isBookmarked: false,
   },
   {
     id: 2913,
@@ -36746,7 +33834,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 15,
     createdAt: "2025-10-16T10:49:43",
-    isBookmarked: true,
   },
   {
     id: 2914,
@@ -36759,7 +33846,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 8,
     createdAt: "2025-10-16T07:06:58",
-    isBookmarked: false,
   },
   {
     id: 2915,
@@ -36774,7 +33860,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 0,
     createdAt: "2025-10-16T07:04:43",
-    isBookmarked: false,
   },
   {
     id: 2916,
@@ -36789,7 +33874,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 4,
     createdAt: "2025-10-16T02:05:51",
-    isBookmarked: true,
   },
   {
     id: 2917,
@@ -36801,7 +33885,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 2,
     createdAt: "2025-10-16T00:20:12",
-    isBookmarked: true,
   },
   {
     id: 2918,
@@ -36810,7 +33893,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 3,
     createdAt: "2025-10-15T22:59:36",
-    isBookmarked: false,
   },
   {
     id: 2919,
@@ -36824,7 +33906,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 1,
     createdAt: "2025-10-15T20:56:03",
-    isBookmarked: false,
   },
   {
     id: 2920,
@@ -36839,7 +33920,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 8,
     createdAt: "2025-10-15T20:55:16",
-    isBookmarked: false,
   },
   {
     id: 2921,
@@ -36851,7 +33931,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 4,
     createdAt: "2025-10-15T20:42:24",
-    isBookmarked: false,
   },
   {
     id: 2922,
@@ -36863,7 +33942,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 6,
     createdAt: "2025-10-15T20:12:44",
-    isBookmarked: false,
   },
   {
     id: 2923,
@@ -36872,7 +33950,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 4,
     createdAt: "2025-10-15T20:00:41",
-    isBookmarked: false,
   },
   {
     id: 2924,
@@ -36886,7 +33963,6 @@ export const posts = [
     caption: "오늘은 조금 바빴지만 뿌듯",
     commentCount: 2,
     createdAt: "2025-10-15T19:53:45",
-    isBookmarked: false,
   },
   {
     id: 2925,
@@ -36898,7 +33974,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 3,
     createdAt: "2025-10-15T18:17:20",
-    isBookmarked: true,
   },
   {
     id: 2926,
@@ -36910,7 +33985,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 3,
     createdAt: "2025-10-15T17:53:10",
-    isBookmarked: false,
   },
   {
     id: 2927,
@@ -36923,7 +33997,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 1,
     createdAt: "2025-10-15T16:34:58",
-    isBookmarked: false,
   },
   {
     id: 2928,
@@ -36935,7 +34008,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 6,
     createdAt: "2025-10-15T16:20:49",
-    isBookmarked: true,
   },
   {
     id: 2929,
@@ -36947,7 +34019,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 0,
     createdAt: "2025-10-15T15:34:09",
-    isBookmarked: false,
   },
   {
     id: 2930,
@@ -36956,7 +34027,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 6,
     createdAt: "2025-10-15T14:50:40",
-    isBookmarked: false,
   },
   {
     id: 2931,
@@ -36970,7 +34040,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 4,
     createdAt: "2025-10-15T14:40:56",
-    isBookmarked: false,
   },
   {
     id: 2932,
@@ -36983,7 +34052,6 @@ export const posts = [
     caption: "일찍 일어나니 하루가 길다",
     commentCount: 6,
     createdAt: "2025-10-15T13:42:13",
-    isBookmarked: false,
   },
   {
     id: 2933,
@@ -36995,7 +34063,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 8,
     createdAt: "2025-10-15T12:27:47",
-    isBookmarked: false,
   },
   {
     id: 2934,
@@ -37010,7 +34077,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 5,
     createdAt: "2025-10-15T09:19:23",
-    isBookmarked: false,
   },
   {
     id: 2935,
@@ -37019,7 +34085,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 1,
     createdAt: "2025-10-15T08:23:14",
-    isBookmarked: false,
   },
   {
     id: 2936,
@@ -37033,7 +34098,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 7,
     createdAt: "2025-10-15T07:42:19",
-    isBookmarked: false,
   },
   {
     id: 2937,
@@ -37046,7 +34110,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 7,
     createdAt: "2025-10-15T07:35:48",
-    isBookmarked: false,
   },
   {
     id: 2938,
@@ -37059,7 +34122,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 6,
     createdAt: "2025-10-15T06:21:06",
-    isBookmarked: false,
   },
   {
     id: 2939,
@@ -37073,7 +34135,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 2,
     createdAt: "2025-10-15T05:32:18",
-    isBookmarked: false,
   },
   {
     id: 2940,
@@ -37082,7 +34143,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 2,
     createdAt: "2025-10-15T04:55:17",
-    isBookmarked: false,
   },
   {
     id: 2941,
@@ -37094,7 +34154,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 1,
     createdAt: "2025-10-15T04:45:40",
-    isBookmarked: false,
   },
   {
     id: 2942,
@@ -37106,7 +34165,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 6,
     createdAt: "2025-10-15T00:59:58",
-    isBookmarked: false,
   },
   {
     id: 2943,
@@ -37120,7 +34178,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 0,
     createdAt: "2025-10-14T23:54:36",
-    isBookmarked: false,
   },
   {
     id: 2944,
@@ -37133,7 +34190,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 7,
     createdAt: "2025-10-14T23:28:00",
-    isBookmarked: false,
   },
   {
     id: 2945,
@@ -37145,7 +34201,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 10,
     createdAt: "2025-10-14T20:46:27",
-    isBookmarked: false,
   },
   {
     id: 2946,
@@ -37158,7 +34213,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 9,
     createdAt: "2025-10-14T19:42:41",
-    isBookmarked: false,
   },
   {
     id: 2947,
@@ -37170,7 +34224,6 @@ export const posts = [
     caption: "운동 끝나고 단백질 보충 💪",
     commentCount: 11,
     createdAt: "2025-10-14T18:36:25",
-    isBookmarked: false,
   },
   {
     id: 2948,
@@ -37185,7 +34238,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 0,
     createdAt: "2025-10-14T16:31:20",
-    isBookmarked: true,
   },
   {
     id: 2949,
@@ -37199,7 +34251,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 2,
     createdAt: "2025-10-14T13:41:38",
-    isBookmarked: false,
   },
   {
     id: 2950,
@@ -37211,7 +34262,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 0,
     createdAt: "2025-10-14T11:32:14",
-    isBookmarked: false,
   },
   {
     id: 2951,
@@ -37225,7 +34275,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 5,
     createdAt: "2025-10-14T10:52:57",
-    isBookmarked: false,
   },
   {
     id: 2952,
@@ -37240,7 +34289,6 @@ export const posts = [
     caption: "배달보다 역시 집밥이네요",
     commentCount: 0,
     createdAt: "2025-10-14T10:14:27",
-    isBookmarked: false,
   },
   {
     id: 2953,
@@ -37254,7 +34302,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 2,
     createdAt: "2025-10-14T08:20:06",
-    isBookmarked: false,
   },
   {
     id: 2954,
@@ -37269,7 +34316,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 2,
     createdAt: "2025-10-14T08:01:20",
-    isBookmarked: true,
   },
   {
     id: 2955,
@@ -37282,7 +34328,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 7,
     createdAt: "2025-10-14T07:20:00",
-    isBookmarked: true,
   },
   {
     id: 2956,
@@ -37291,7 +34336,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 3,
     createdAt: "2025-10-14T02:35:12",
-    isBookmarked: false,
   },
   {
     id: 2957,
@@ -37305,7 +34349,6 @@ export const posts = [
     caption: "벚꽃 시즌은 늘 짧아서 아쉽다",
     commentCount: 3,
     createdAt: "2025-10-14T02:28:33",
-    isBookmarked: false,
   },
   {
     id: 2958,
@@ -37314,7 +34357,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 3,
     createdAt: "2025-10-14T02:15:20",
-    isBookmarked: false,
   },
   {
     id: 2959,
@@ -37323,7 +34365,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 3,
     createdAt: "2025-10-13T22:39:36",
-    isBookmarked: false,
   },
   {
     id: 2960,
@@ -37335,7 +34376,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 0,
     createdAt: "2025-10-13T22:37:36",
-    isBookmarked: false,
   },
   {
     id: 2961,
@@ -37350,7 +34390,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 7,
     createdAt: "2025-10-13T20:04:59",
-    isBookmarked: false,
   },
   {
     id: 2962,
@@ -37362,7 +34401,6 @@ export const posts = [
     caption: "간단한 점심인데 만족도 최고",
     commentCount: 14,
     createdAt: "2025-10-13T16:15:30",
-    isBookmarked: false,
   },
   {
     id: 2963,
@@ -37377,7 +34415,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 8,
     createdAt: "2025-10-13T15:58:24",
-    isBookmarked: false,
   },
   {
     id: 2964,
@@ -37389,7 +34426,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 4,
     createdAt: "2025-10-13T13:22:41",
-    isBookmarked: false,
   },
   {
     id: 2965,
@@ -37402,7 +34438,6 @@ export const posts = [
     caption: "가볍게 드라이브 다녀왔어요 🚗",
     commentCount: 3,
     createdAt: "2025-10-13T13:20:48",
-    isBookmarked: false,
   },
   {
     id: 2966,
@@ -37416,7 +34451,6 @@ export const posts = [
     caption: "친구랑 수다 떨다 하루 순삭",
     commentCount: 4,
     createdAt: "2025-10-13T13:01:11",
-    isBookmarked: true,
   },
   {
     id: 2967,
@@ -37428,7 +34462,6 @@ export const posts = [
     caption: "오늘은 조금 느리게 가는 하루",
     commentCount: 0,
     createdAt: "2025-10-13T09:50:23",
-    isBookmarked: false,
   },
   {
     id: 2968,
@@ -37437,7 +34470,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 15,
     createdAt: "2025-10-13T09:07:15",
-    isBookmarked: false,
   },
   {
     id: 2969,
@@ -37452,7 +34484,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 0,
     createdAt: "2025-10-13T08:21:47",
-    isBookmarked: false,
   },
   {
     id: 2970,
@@ -37466,7 +34497,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 2,
     createdAt: "2025-10-13T08:01:18",
-    isBookmarked: true,
   },
   {
     id: 2971,
@@ -37481,7 +34511,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 3,
     createdAt: "2025-10-13T06:09:13",
-    isBookmarked: false,
   },
   {
     id: 2972,
@@ -37493,7 +34522,6 @@ export const posts = [
     caption: "이 메뉴 또 먹고 싶다 🍜",
     commentCount: 4,
     createdAt: "2025-10-13T05:39:09",
-    isBookmarked: true,
   },
   {
     id: 2973,
@@ -37507,7 +34535,6 @@ export const posts = [
     caption: "다음엔 더 길게 여행 가고 싶다",
     commentCount: 6,
     createdAt: "2025-10-13T00:52:00",
-    isBookmarked: true,
   },
   {
     id: 2974,
@@ -37521,7 +34548,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 6,
     createdAt: "2025-10-12T20:24:44",
-    isBookmarked: true,
   },
   {
     id: 2975,
@@ -37536,7 +34562,6 @@ export const posts = [
     caption: "오늘 날씨 좋다 ☀️",
     commentCount: 2,
     createdAt: "2025-10-12T18:50:18",
-    isBookmarked: false,
   },
   {
     id: 2976,
@@ -37551,7 +34576,6 @@ export const posts = [
     caption: "집중 잘 되는 하루였습니다",
     commentCount: 3,
     createdAt: "2025-10-12T17:27:30",
-    isBookmarked: true,
   },
   {
     id: 2977,
@@ -37563,7 +34587,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 0,
     createdAt: "2025-10-12T16:16:25",
-    isBookmarked: false,
   },
   {
     id: 2978,
@@ -37577,7 +34600,6 @@ export const posts = [
     caption: "커피 한 잔의 여유 ☕",
     commentCount: 4,
     createdAt: "2025-10-12T15:59:33",
-    isBookmarked: true,
   },
   {
     id: 2979,
@@ -37591,7 +34613,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 8,
     createdAt: "2025-10-12T15:27:59",
-    isBookmarked: false,
   },
   {
     id: 2980,
@@ -37600,7 +34621,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 4,
     createdAt: "2025-10-12T14:36:19",
-    isBookmarked: false,
   },
   {
     id: 2981,
@@ -37609,7 +34629,6 @@ export const posts = [
     caption: "요즘은 이런 색감이 좋더라고요",
     commentCount: 5,
     createdAt: "2025-10-12T13:26:53",
-    isBookmarked: false,
   },
   {
     id: 2982,
@@ -37624,7 +34643,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 15,
     createdAt: "2025-10-12T11:39:24",
-    isBookmarked: false,
   },
   {
     id: 2983,
@@ -37639,7 +34657,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 2,
     createdAt: "2025-10-12T10:51:24",
-    isBookmarked: false,
   },
   {
     id: 2984,
@@ -37651,7 +34668,6 @@ export const posts = [
     caption: "음악 들으면서 작업 중 🎧",
     commentCount: 9,
     createdAt: "2025-10-12T07:27:59",
-    isBookmarked: true,
   },
   {
     id: 2985,
@@ -37666,7 +34682,6 @@ export const posts = [
     caption: "오랜만에 책 읽는 시간 📚",
     commentCount: 6,
     createdAt: "2025-10-12T06:37:56",
-    isBookmarked: false,
   },
   {
     id: 2986,
@@ -37681,7 +34696,6 @@ export const posts = [
     caption: "좋아하는 플레이리스트 반복 재생",
     commentCount: 2,
     createdAt: "2025-10-12T05:58:33",
-    isBookmarked: true,
   },
   {
     id: 2987,
@@ -37694,7 +34708,6 @@ export const posts = [
     caption: "운동 가기 전까진 늘 귀찮은데 하고 나면 개운",
     commentCount: 5,
     createdAt: "2025-10-12T01:49:19",
-    isBookmarked: false,
   },
   {
     id: 2988,
@@ -37706,7 +34719,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 0,
     createdAt: "2025-10-12T01:36:46",
-    isBookmarked: true,
   },
   {
     id: 2989,
@@ -37721,7 +34733,6 @@ export const posts = [
     caption: "야경이 너무 예쁘다 🌃",
     commentCount: 7,
     createdAt: "2025-10-11T22:57:19",
-    isBookmarked: false,
   },
   {
     id: 2990,
@@ -37736,7 +34747,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 8,
     createdAt: "2025-10-11T21:51:20",
-    isBookmarked: false,
   },
   {
     id: 2991,
@@ -37751,7 +34761,6 @@ export const posts = [
     caption: "새로운 카페 발견 ☕",
     commentCount: 1,
     createdAt: "2025-10-11T21:08:31",
-    isBookmarked: false,
   },
   {
     id: 2992,
@@ -37765,7 +34774,6 @@ export const posts = [
     caption: "기분 전환 겸 동네 한 바퀴",
     commentCount: 1,
     createdAt: "2025-10-11T20:43:51",
-    isBookmarked: false,
   },
   {
     id: 2993,
@@ -37778,7 +34786,6 @@ export const posts = [
     caption: "퇴근 후 산책이 최고네요",
     commentCount: 4,
     createdAt: "2025-10-11T19:55:35",
-    isBookmarked: false,
   },
   {
     id: 2994,
@@ -37793,7 +34800,6 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 2,
     createdAt: "2025-10-11T16:56:15",
-    isBookmarked: false,
   },
   {
     id: 2995,
@@ -37807,7 +34813,6 @@ export const posts = [
     caption: "사진첩 정리하다가 추억 소환",
     commentCount: 0,
     createdAt: "2025-10-11T15:21:44",
-    isBookmarked: false,
   },
   {
     id: 2996,
@@ -37819,7 +34824,6 @@ export const posts = [
     caption: "사진 정리하다가 발견한 컷 📸",
     commentCount: 3,
     createdAt: "2025-10-11T14:19:34",
-    isBookmarked: false,
   },
   {
     id: 2997,
@@ -37833,7 +34837,6 @@ export const posts = [
     caption: "하늘 색이 유난히 예쁜 저녁",
     commentCount: 4,
     createdAt: "2025-10-11T13:27:53",
-    isBookmarked: false,
   },
   {
     id: 2998,
@@ -37848,7 +34851,6 @@ export const posts = [
     caption: "계획대로 흘러간 하루라 좋다",
     commentCount: 8,
     createdAt: "2025-10-11T12:35:43",
-    isBookmarked: false,
   },
   {
     id: 2999,
@@ -37863,7 +34865,6 @@ export const posts = [
     caption: "주말 브런치 성공 🍽️",
     commentCount: 0,
     createdAt: "2025-10-11T12:35:32",
-    isBookmarked: false,
   },
   {
     id: 3000,
@@ -37876,6 +34877,5 @@ export const posts = [
     caption: "비 오기 전 공기 느낌 좋네요",
     commentCount: 10,
     createdAt: "2025-10-11T12:33:24",
-    isBookmarked: false,
   },
 ];
