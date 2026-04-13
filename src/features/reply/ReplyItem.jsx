@@ -13,7 +13,7 @@ import {
   Meta,
   Like,
   Right,
-} from "../../styles/ReplyItem.styles";
+} from "../../styles/features/reply.styles";
 
 const ReplyItem = ({ postId, comment }) => {
   const { user: currentUser } = useAuth();

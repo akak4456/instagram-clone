@@ -35,8 +35,8 @@ import {
   ActionLeft,
   ActionItem,
   LikeCount,
-  Meta,
-} from "../../styles/ReplyModal.styles";
+  ReplyModalMeta,
+} from "../../styles/features/reply.styles";
 
 const ReplyModal = ({ open, onClose, post }) => {
   const postId = post.id;
@@ -117,9 +117,9 @@ const ReplyModal = ({ open, onClose, post }) => {
               </ActionItem>
             </Actions>
             <LikeCount>좋아요 {post.likes.length}개</LikeCount>
-            <Meta>
+            <ReplyModalMeta>
               <span>{formatDate(post.createdAt)}</span>
-            </Meta>
+            </ReplyModalMeta>
             <CommentInput postId={post.id} />
           </ReplyBottomDiv>
         </ReplyWrapper>
