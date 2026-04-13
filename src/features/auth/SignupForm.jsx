@@ -13,7 +13,7 @@ import Input from "../../components/Input";
 import Dropdown from "../../components/Drodown";
 import errorMark from "../../assets/error-mark.png";
 import Button from "../../components/Button";
-import Modal from "../../components/modal/Modal";
+import Modal from "../../components/Modal";
 
 const SignupWrapper = styled.div`
   display: flex;
