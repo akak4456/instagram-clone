@@ -1,4 +1,4 @@
-import { MAX_RECENT_USERS } from "./constants";
+const MAX_RECENT_USERS = 10;
 
 export const loadRecentUsers = (storageKey) => {
   try {

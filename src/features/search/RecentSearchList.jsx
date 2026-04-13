@@ -1,5 +1,9 @@
 import SearchUserItem from "./SearchUserItem";
-import { ResultArea, EmptyBox, SearchResultList } from "./search.styles";
+import {
+  ResultArea,
+  EmptyBox,
+  SearchResultList,
+} from "../../styles/search.styles";
 
 const RecentSearchList = ({ users, onClickUser, onRemoveUser }) => {
   return (

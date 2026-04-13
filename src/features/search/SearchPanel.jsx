@@ -1,9 +1,13 @@
 import { useEffect, useState } from "react";
 import { useUser } from "../../hooks/useUser";
 import useDebounce from "../../hooks/useDebounce";
-import { Panel, TopBar, CloseButton, Title } from "./search.styles";
+import { Panel, TopBar, CloseButton, Title } from "../../styles/search.styles";
 import { RECENT_SEARCH_USERS_KEY } from "./constants";
-import { loadRecentUsers, saveRecentUsers, upsertRecentUser } from "./utils";
+import {
+  loadRecentUsers,
+  saveRecentUsers,
+  upsertRecentUser,
+} from "../../utils/searchUtils";
 import SearchInputBar from "./SearchInputBar";
 import SearchSectionHeader from "./SearchSectionHeader";
 import RecentSearchList from "./RecentSearchList";

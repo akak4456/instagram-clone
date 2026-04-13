@@ -2,7 +2,7 @@ import {
   SearchInputWrapper,
   SearchInput,
   InputClearButton,
-} from "./search.styles";
+} from "../../styles/search.styles";
 
 const SearchInputBar = ({ keyword, onChange, onClear }) => {
   return (

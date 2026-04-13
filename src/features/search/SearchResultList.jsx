@@ -3,7 +3,7 @@ import {
   ResultArea,
   EmptyBox,
   SearchResultList as List,
-} from "./search.styles";
+} from "../../styles/search.styles";
 
 const SearchResultList = ({ users, onClickUser }) => {
   return (

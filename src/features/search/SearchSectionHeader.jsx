@@ -1,4 +1,8 @@
-import { SectionHeader, SectionTitle, ClearAllButton } from "./search.styles";
+import {
+  SectionHeader,
+  SectionTitle,
+  ClearAllButton,
+} from "../../styles/search.styles";
 
 const SearchSectionHeader = ({ title, showClearAll, onClearAll }) => {
   return (
