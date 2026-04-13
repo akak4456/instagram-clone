@@ -1,17 +1,17 @@
 import { useState } from "react";
-import { useUser } from "../../../hooks/useUser";
+import { useUser } from "../../hooks/useUser";
 import { useNavigate } from "react-router-dom";
 import {
   validateUserId,
   validatePassword,
   validateBirthday,
   validateUsername,
-} from "../../../utils/validation";
-import Input from "../../../components/Input";
-import Dropdown from "../../../components/Drodown";
-import errorMark from "../../../assets/error-mark.png";
-import Button from "../../../components/Button";
-import Modal from "../../../components/Modal";
+} from "../../utils/validation";
+import Input from "../../components/Input";
+import Dropdown from "../../components/Drodown";
+import errorMark from "../../assets/error-mark.png";
+import Button from "../../components/Button";
+import Modal from "../../components/Modal";
 import {
   SignupWrapper,
   SignupFormLabel,
@@ -19,7 +19,7 @@ import {
   DescriptionDiv,
   BirthWrapper,
   ButtonWrapper,
-} from "../../../styles/SignupForm.styles";
+} from "../../styles/SignupForm.styles";
 
 const getDays = (year, month) => {
   if (!year || !month) return Array.from({ length: 31 }, (_, i) => i + 1);

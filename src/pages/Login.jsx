@@ -2,7 +2,7 @@ import { useState } from "react";
 import styled from "styled-components";
 import { useAuth } from "../hooks/useAuth";
 import { useNavigate } from "react-router-dom";
-import LoginForm from "../features/auth/login/LoginForm";
+import LoginForm from "../features/login/LoginForm";
 import arrowLeft from "../assets/arrow-left.png";
 import Button from "../components/Button";
 

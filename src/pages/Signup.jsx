@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import arrowLeft from "../assets/arrow-left.png";
 import metaLogo from "../assets/meta-logo.png";
-import SignupForm from "../features/auth/signup/SignupForm";
+import SignupForm from "../features/signup/SignupForm";
 
 const SignupWrapper = styled.div`
   width: 600px;

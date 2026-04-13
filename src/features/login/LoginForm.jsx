@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { useAuth } from "../../../hooks/useAuth";
-import Input from "../../../components/Input";
-import Button from "../../../components/Button";
+import { useAuth } from "../../hooks/useAuth";
+import Input from "../../components/Input";
+import Button from "../../components/Button";
 const LoginForm = ({ handleLogin }) => {
   const { authLoading } = useAuth();
   const [form, setForm] = useState({
