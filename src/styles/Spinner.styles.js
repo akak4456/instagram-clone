@@ -5,13 +5,13 @@ const fade = keyframes`
   50% { opacity: 1; }
 `;
 
-const SpinnerWrapper = styled.div`
+export const SpinnerWrapper = styled.div`
   width: 24px;
   height: 24px;
   position: relative;
 `;
 
-const Bar = styled.div`
+export const Bar = styled.div`
   position: absolute;
   top: 50%;
   left: 50%;
@@ -27,15 +27,3 @@ const Bar = styled.div`
     animation-delay: ${index * 0.08}s;
   `}
 `;
-
-const Spinner = () => {
-  return (
-    <SpinnerWrapper>
-      {Array.from({ length: 12 }).map((_, i) => (
-        <Bar key={i} index={i} />
-      ))}
-    </SpinnerWrapper>
-  );
-};
-
-export default Spinner;

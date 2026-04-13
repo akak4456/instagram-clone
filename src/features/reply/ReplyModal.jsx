@@ -6,7 +6,7 @@ import PostImage from "../../components/PostImage";
 import { useReply } from "../../hooks/useReply";
 import ReplyItem from "./ReplyItem";
 import replyModalPlus from "../../assets/reply-modal-plus.png";
-import Spinner from "../../components/spinner/Spinner";
+import Spinner from "../../components/Spinner";
 import postComment from "../../assets/post-comment.png";
 import postRepost from "../../assets/post-repost.png";
 import postBookmark from "../../assets/post-bookmark.png";
