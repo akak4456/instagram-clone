@@ -4,7 +4,7 @@ import {
   PreviewItem,
   RemoveBtn,
   AddMoreBox,
-} from "./UploadModal.styles";
+} from "../../styles/features/upload.styles";
 
 const UploadPreviewGrid = ({ files, maxFiles, onRemove, onAddMore }) => {
   return (

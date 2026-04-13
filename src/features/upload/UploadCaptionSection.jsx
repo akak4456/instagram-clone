@@ -1,5 +1,10 @@
 import ProfileImage from "../../components/ProfileImage";
-import { Right, RightTitle, Username, Caption } from "./UploadModal.styles";
+import {
+  Right,
+  RightTitle,
+  Username,
+  Caption,
+} from "../../styles/features/upload.styles";
 
 const UploadCaptionSection = ({ user, caption, onChangeCaption }) => {
   return (

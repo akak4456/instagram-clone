@@ -1,5 +1,10 @@
 import uploadImages from "../../assets/upload-images.png";
-import { DropZone, Icon, Text, SelectButton } from "./UploadModal.styles";
+import {
+  DropZone,
+  Icon,
+  Text,
+  SelectButton,
+} from "../../styles/features/upload.styles";
 
 const UploadEmptyState = ({ onSelectClick }) => {
   return (

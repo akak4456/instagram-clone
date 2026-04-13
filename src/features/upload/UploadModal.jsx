@@ -12,7 +12,7 @@ import {
   Header,
   ShareBtn,
   Content,
-} from "./UploadModal.styles";
+} from "../../styles/features/upload.styles";
 
 const MAX_FILES = 10;
 

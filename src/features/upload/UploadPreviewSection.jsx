@@ -1,4 +1,4 @@
-import { Left } from "./UploadModal.styles";
+import { Left } from "../../styles/features/upload.styles";
 import UploadPreviewGrid from "./UploadPreviewGrid";
 import UploadCaptionSection from "./UploadCaptionSection";
 
