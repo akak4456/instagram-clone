@@ -1,11 +1,5 @@
 import styled, { keyframes, css } from "styled-components";
 
-const rotate = keyframes`
-  100% {
-    transform: rotate(360deg);
-  }
-`;
-
 const fade = keyframes`
   0%, 100% { opacity: 0.2; }
   50% { opacity: 1; }
