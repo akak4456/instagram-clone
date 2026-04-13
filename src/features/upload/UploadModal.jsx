@@ -40,13 +40,6 @@ const Header = styled.div`
   position: relative;
 `;
 
-const CloseBtn = styled.img`
-  position: absolute;
-  right: 16px;
-  width: 18px;
-  cursor: pointer;
-`;
-
 const Content = styled.div`
   flex: 1;
   display: flex;
@@ -54,7 +47,6 @@ const Content = styled.div`
   justify-content: center;
 `;
 
-/* 🔥 드롭존 */
 const DropZone = styled.div`
   display: flex;
   flex-direction: column;
@@ -82,7 +74,6 @@ const Button = styled.button`
   cursor: pointer;
 `;
 
-/* 🔥 preview grid */
 const PreviewGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -144,7 +135,7 @@ const Right = styled.div`
 
 const ShareBtn = styled.div`
   position: absolute;
-  right: 24px; /* X 버튼보다 왼쪽 */
+  right: 24px;
   color: #3752e5;
   font-weight: 600;
   cursor: pointer;
@@ -172,14 +163,25 @@ const Caption = styled.textarea`
   border: none;
   outline: none;
   resize: none;
-
   font-size: 14px;
   line-height: 1.5;
-
-  /* 🔥 핵심 */
-  height: 120px; /* 5줄 고정 */
-  overflow-y: auto; /* 넘치면 스크롤 */
+  height: 120px;
+  overflow-y: auto;
 `;
+
+/**
+ * File -> Data URL(base64) 변환
+ * localStorage 에 저장 가능한 문자열로 만들기 위해 사용
+ */
+const fileToDataUrl = (file) =>
+  new Promise((resolve, reject) => {
+    const reader = new FileReader();
+
+    reader.onload = () => resolve(reader.result);
+    reader.onerror = reject;
+
+    reader.readAsDataURL(file);
+  });
 
 const UploadModal = ({ open, onClose }) => {
   const { user } = useAuth();
@@ -188,53 +190,55 @@ const UploadModal = ({ open, onClose }) => {
   const [files, setFiles] = useState([]);
   const [caption, setCaption] = useState("");
   const inputRef = useRef();
+
   useEffect(() => {
     if (!open) {
       files.forEach((f) => URL.revokeObjectURL(f.preview));
       setFiles([]);
+      setCaption("");
     }
   }, [open]);
 
   if (!open) return null;
 
-  // 🔥 파일 처리
-  const handleFiles = (fileList) => {
+  const handleFiles = async (fileList) => {
     let newFiles = Array.from(fileList);
 
-    // 타입 필터
-    newFiles = newFiles.filter(
-      (file) =>
-        file.type.startsWith("image/") || file.type.startsWith("video/"),
-    );
+    newFiles = newFiles.filter((file) => file.type.startsWith("image/"));
 
-    // 최대 개수 제한
     if (files.length + newFiles.length > MAX_FILES) {
       alert(`최대 ${MAX_FILES}개까지 업로드 가능합니다.`);
       return;
     }
 
-    const mapped = newFiles.map((file) => ({
-      file,
-      preview: URL.createObjectURL(file),
-    }));
+    const mapped = await Promise.all(
+      newFiles.map(async (file) => {
+        const preview = URL.createObjectURL(file); // 현재 세션 미리보기용
+        const dataUrl = await fileToDataUrl(file); // localStorage 저장용
+
+        return {
+          file,
+          preview,
+          dataUrl,
+        };
+      }),
+    );
 
     setFiles((prev) => [...prev, ...mapped]);
   };
 
-  const handleChange = (e) => {
-    handleFiles(e.target.files);
-
+  const handleChange = async (e) => {
+    await handleFiles(e.target.files);
     e.target.value = "";
   };
 
-  const handleDrop = (e) => {
+  const handleDrop = async (e) => {
     e.preventDefault();
-    handleFiles(e.dataTransfer.files);
+    await handleFiles(e.dataTransfer.files);
   };
 
   const handleDragOver = (e) => e.preventDefault();
 
-  // 🔥 삭제
   const removeFile = (index) => {
     setFiles((prev) => {
       URL.revokeObjectURL(prev[index].preview);
@@ -244,9 +248,13 @@ const UploadModal = ({ open, onClose }) => {
 
   const handleShare = async () => {
     if (files.length === 0) return;
-    const images = files.map((f) => f.preview); // 실제 업로드 대신 preview 사용
+
+    // preview(blob:)가 아니라 dataUrl(base64)을 저장해야
+    // 새로고침/재로그인 후에도 이미지가 유지됨
+    const images = files.map((f) => f.dataUrl);
+
     await addPost({ user, images, caption });
-    onClose(); // 모달 닫기
+    onClose();
   };
 
   return createPortal(
@@ -278,14 +286,16 @@ const UploadModal = ({ open, onClose }) => {
                   <PreviewGrid>
                     {files.map((item, index) => (
                       <PreviewItemWrapper key={index}>
-                        <PreviewItem src={item.preview} />
+                        <PreviewItem
+                          src={item.preview}
+                          alt={`preview-${index}`}
+                        />
                         <RemoveBtn onClick={() => removeFile(index)}>
                           ✕
                         </RemoveBtn>
                       </PreviewItemWrapper>
                     ))}
 
-                    {/* 추가 버튼 */}
                     {files.length < MAX_FILES && (
                       <AddMoreBox onClick={() => inputRef.current.click()}>
                         +
@@ -293,11 +303,13 @@ const UploadModal = ({ open, onClose }) => {
                     )}
                   </PreviewGrid>
                 </Left>
+
                 <Right>
                   <RightTitle>
                     <ProfileImage user={user} />
                     <Username>{user.username}</Username>
                   </RightTitle>
+
                   <Caption
                     value={caption}
                     onChange={(e) => setCaption(e.target.value)}
@@ -310,7 +322,7 @@ const UploadModal = ({ open, onClose }) => {
                 <Icon>
                   <img src={uploadImages} alt="upload-images" />
                 </Icon>
-                <Text>사진과 동영상을 여기에 끌어다 놓으세요</Text>
+                <Text>사진을 여기에 끌어다 놓으세요</Text>
                 <Button>컴퓨터에서 선택</Button>
               </DropZone>
             )}
@@ -318,17 +330,15 @@ const UploadModal = ({ open, onClose }) => {
         </ModalBox>
       </Overlay>
 
-      {/* input */}
       <input
         type="file"
         ref={inputRef}
         hidden
         multiple
-        accept="image/*,video/*"
+        accept="image/*"
         onChange={handleChange}
       />
 
-      {/* Confirm */}
       {confirmOpen && (
         <ConfirmModal
           open={confirmOpen}
