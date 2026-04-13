@@ -255,7 +255,7 @@ export const fetchUsersApi = () => {
     setTimeout(async () => {
       const users = await getUsers();
       resolve(users);
-    }, 300);
+    }, 0);
   });
 };
 
@@ -281,7 +281,7 @@ export const loginApi = ({ userId, password }) => {
           username: foundUser.username,
         },
       });
-    }, 500);
+    }, 0);
   });
 };
 
@@ -321,7 +321,7 @@ export const addUserApi = (newUser) => {
         success: true,
         user: newUserData,
       });
-    }, 2000);
+    }, 0);
   });
 };
 
@@ -349,7 +349,7 @@ export const fetchFollowingUsersApi = (userId) => {
         success: true,
         users: followingUsers,
       });
-    }, 300);
+    }, 0);
   });
 };
 
@@ -399,7 +399,7 @@ export const fetchFeed = (currentUserId, page = 1, limit = 10) => {
         posts: pagedPosts,
         hasMore: end < sortedPosts.length,
       });
-    }, 500);
+    }, 0);
   });
 };
 
@@ -425,7 +425,7 @@ export const toggleLikeApi = ({ postId, userId }) => {
       resolve({
         success: true,
       });
-    }, 200);
+    }, 0);
   });
 };
 
@@ -465,7 +465,7 @@ export const fetchCommentsApi = (postId, page = 1, limit = 10) => {
         comments: pagedComments,
         hasMore: end < sorted.length,
       });
-    }, 300);
+    }, 0);
   });
 };
 
@@ -491,7 +491,7 @@ export const toggleCommentLikeApi = ({ commentId, userId }) => {
       resolve({
         success: true,
       });
-    }, 200);
+    }, 0);
   });
 };
 
@@ -512,7 +512,7 @@ export const addCommentApi = ({ postId, userId, content }) => {
         success: true,
         comment: newComment,
       });
-    }, 200);
+    }, 0);
   });
 };
 
@@ -538,7 +538,7 @@ export const toggleBookmarkApi = ({ postId, userId }) => {
       resolve({
         success: true,
       });
-    }, 200);
+    }, 0);
   });
 };
 
@@ -559,7 +559,7 @@ export const addPostApi = ({ userId, images, caption }) => {
         success: true,
         post: newPost,
       });
-    }, 500);
+    }, 0);
   });
 };
 
@@ -692,7 +692,7 @@ export const fetchStoryWindowApi = ({
         hasPrev: currentIndex > 0,
         hasNext: currentIndex < allStories.length - 1,
       });
-    }, 300);
+    }, 0);
   });
 };
 
@@ -754,7 +754,7 @@ export const fetchStoryWindowByIndexApi = ({
         hasPrev: safeCurrentIndex > 0,
         hasNext: safeCurrentIndex < allStories.length - 1,
       });
-    }, 300);
+    }, 0);
   });
 };
 
@@ -813,7 +813,7 @@ export const fetchStoriesPaginationApi = ({
         startIndex: start,
         baseIndex,
       });
-    }, 300);
+    }, 0);
   });
 };
 
@@ -836,6 +836,6 @@ export const searchUsersApi = (keyword) => {
       });
 
       resolve(filtered);
-    }, 300);
+    }, 0);
   });
 };
