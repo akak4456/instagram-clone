@@ -5,255 +5,107 @@ import { comments as initialComments } from "./comments";
 import { commentsLikes as initialCommentsLikes } from "./commentsLikes";
 import { bookmarks as initialBookmarks } from "./bookmarks";
 
-const DB_NAME = "instagram_clone_db";
-const DB_VERSION = 1;
-
-const STORE_NAMES = {
-  users: "users",
-  posts: "posts",
-  likes: "likes",
-  comments: "comments",
-  commentsLikes: "commentsLikes",
-  bookmarks: "bookmarks",
-};
-
-let dbPromise = null;
-
-/**
- * IndexedDB 연결
- */
-const openDB = () => {
-  if (dbPromise) return dbPromise;
-
-  dbPromise = new Promise((resolve, reject) => {
-    const request = indexedDB.open(DB_NAME, DB_VERSION);
-
-    request.onupgradeneeded = (event) => {
-      const db = event.target.result;
-
-      if (!db.objectStoreNames.contains(STORE_NAMES.users)) {
-        db.createObjectStore(STORE_NAMES.users, { keyPath: "userId" });
-      }
-
-      if (!db.objectStoreNames.contains(STORE_NAMES.posts)) {
-        db.createObjectStore(STORE_NAMES.posts, { keyPath: "id" });
-      }
-
-      if (!db.objectStoreNames.contains(STORE_NAMES.likes)) {
-        db.createObjectStore(STORE_NAMES.likes, { keyPath: "id" });
-      }
-
-      if (!db.objectStoreNames.contains(STORE_NAMES.comments)) {
-        db.createObjectStore(STORE_NAMES.comments, { keyPath: "id" });
-      }
-
-      if (!db.objectStoreNames.contains(STORE_NAMES.commentsLikes)) {
-        db.createObjectStore(STORE_NAMES.commentsLikes, { keyPath: "id" });
-      }
-
-      if (!db.objectStoreNames.contains(STORE_NAMES.bookmarks)) {
-        db.createObjectStore(STORE_NAMES.bookmarks, { keyPath: "id" });
-      }
-    };
-
-    request.onsuccess = () => {
-      resolve(request.result);
-    };
-
-    request.onerror = () => {
-      reject(request.error);
-    };
-  });
-
-  return dbPromise;
+const STORAGE_KEYS = {
+  users: "mock_users",
+  posts: "mock_posts",
+  likes: "mock_likes",
+  comments: "mock_comments",
+  commentsLikes: "mock_comments_likes",
+  bookmarks: "mock_bookmarks",
 };
 
 /**
- * store 전체 조회
+ * localStorage 에서 데이터 읽기
  */
-const getAllFromStore = async (storeName) => {
-  const db = await openDB();
-
-  return new Promise((resolve, reject) => {
-    const tx = db.transaction(storeName, "readonly");
-    const store = tx.objectStore(storeName);
-    const request = store.getAll();
-
-    request.onsuccess = () => resolve(request.result || []);
-    request.onerror = () => reject(request.error);
-  });
+const getStorageData = (key, initialValue) => {
+  try {
+    const stored = localStorage.getItem(key);
+    if (!stored) return [...initialValue];
+    return JSON.parse(stored);
+  } catch (error) {
+    console.error(`${key} 읽기 실패`, error);
+    return [...initialValue];
+  }
 };
 
 /**
- * 단일 데이터 저장 / 수정
+ * localStorage 에 데이터 저장
  */
-const putToStore = async (storeName, value) => {
-  const db = await openDB();
-
-  return new Promise((resolve, reject) => {
-    const tx = db.transaction(storeName, "readwrite");
-    const store = tx.objectStore(storeName);
-    const request = store.put(value);
-
-    request.onsuccess = () => resolve(value);
-    request.onerror = () => reject(request.error);
-  });
+const setStorageData = (key, value) => {
+  try {
+    localStorage.setItem(key, JSON.stringify(value));
+    return true;
+  } catch (error) {
+    console.error(`${key} 저장 실패`, error);
+    return false;
+  }
 };
 
 /**
- * 여러 데이터 일괄 저장
+ * 현재 메모리 데이터
  */
-const bulkPutToStore = async (storeName, values) => {
-  const db = await openDB();
+let users = getStorageData(STORAGE_KEYS.users, initialUsers);
+let posts = getStorageData(STORAGE_KEYS.posts, initialPosts);
+let likes = getStorageData(STORAGE_KEYS.likes, initialLikes);
+let comments = getStorageData(STORAGE_KEYS.comments, initialComments);
+let commentsLikes = getStorageData(
+  STORAGE_KEYS.commentsLikes,
+  initialCommentsLikes,
+);
+let bookmarks = getStorageData(STORAGE_KEYS.bookmarks, initialBookmarks);
 
-  return new Promise((resolve, reject) => {
-    const tx = db.transaction(storeName, "readwrite");
-    const store = tx.objectStore(storeName);
+/**
+ * 각 데이터 변경 후 localStorage 동기화
+ */
+const syncUsers = () => setStorageData(STORAGE_KEYS.users, users);
+const syncPosts = () => setStorageData(STORAGE_KEYS.posts, posts);
+const syncLikes = () => setStorageData(STORAGE_KEYS.likes, likes);
+const syncComments = () => setStorageData(STORAGE_KEYS.comments, comments);
+const syncCommentsLikes = () =>
+  setStorageData(STORAGE_KEYS.commentsLikes, commentsLikes);
+const syncBookmarks = () => setStorageData(STORAGE_KEYS.bookmarks, bookmarks);
 
-    values.forEach((value) => {
-      store.put(value);
-    });
+/**
+ * 개발용: mock 데이터 전체 초기화
+ */
+export const resetMockData = () => {
+  users = [...initialUsers];
+  posts = [...initialPosts];
+  likes = [...initialLikes];
+  comments = [...initialComments];
+  commentsLikes = [...initialCommentsLikes];
+  bookmarks = [...initialBookmarks];
 
-    tx.oncomplete = () => resolve(values);
-    tx.onerror = () => reject(tx.error);
-  });
+  syncUsers();
+  syncPosts();
+  syncLikes();
+  syncComments();
+  syncCommentsLikes();
+  syncBookmarks();
 };
 
 /**
- * 단일 데이터 삭제
+ * 개발용: localStorage 전체 mock 데이터 삭제
  */
-const deleteFromStore = async (storeName, key) => {
-  const db = await openDB();
+export const clearMockStorage = () => {
+  localStorage.removeItem(STORAGE_KEYS.users);
+  localStorage.removeItem(STORAGE_KEYS.posts);
+  localStorage.removeItem(STORAGE_KEYS.likes);
+  localStorage.removeItem(STORAGE_KEYS.comments);
+  localStorage.removeItem(STORAGE_KEYS.commentsLikes);
+  localStorage.removeItem(STORAGE_KEYS.bookmarks);
 
-  return new Promise((resolve, reject) => {
-    const tx = db.transaction(storeName, "readwrite");
-    const store = tx.objectStore(storeName);
-    const request = store.delete(key);
-
-    request.onsuccess = () => resolve(true);
-    request.onerror = () => reject(request.error);
-  });
-};
-
-/**
- * store 전체 비우기
- */
-const clearStore = async (storeName) => {
-  const db = await openDB();
-
-  return new Promise((resolve, reject) => {
-    const tx = db.transaction(storeName, "readwrite");
-    const store = tx.objectStore(storeName);
-    const request = store.clear();
-
-    request.onsuccess = () => resolve(true);
-    request.onerror = () => reject(request.error);
-  });
-};
-
-/**
- * DB 삭제
- * 스키마 바뀌었을 때 개발 중 필요
- */
-export const deleteMockDB = () => {
-  dbPromise = null;
-
-  return new Promise((resolve, reject) => {
-    const request = indexedDB.deleteDatabase(DB_NAME);
-
-    request.onsuccess = () => resolve(true);
-    request.onerror = () => reject(request.error);
-    request.onblocked = () =>
-      reject(
-        new Error("DB 삭제가 차단되었습니다. 열린 탭을 닫고 다시 시도하세요."),
-      );
-  });
-};
-
-/**
- * 초기 데이터 주입
- * store가 비어 있을 때만 initial data를 넣음
- */
-const ensureStoreInitialized = async (storeName, initialData) => {
-  const current = await getAllFromStore(storeName);
-  if (current.length > 0) return current;
-
-  await bulkPutToStore(storeName, initialData);
-  return initialData;
-};
-
-/**
- * DB 전체 초기화
- */
-const ensureDBInitialized = async () => {
-  await openDB();
-
-  await ensureStoreInitialized(STORE_NAMES.users, initialUsers);
-  await ensureStoreInitialized(STORE_NAMES.posts, initialPosts);
-  await ensureStoreInitialized(STORE_NAMES.likes, initialLikes);
-  await ensureStoreInitialized(STORE_NAMES.comments, initialComments);
-  await ensureStoreInitialized(STORE_NAMES.commentsLikes, initialCommentsLikes);
-  await ensureStoreInitialized(STORE_NAMES.bookmarks, initialBookmarks);
-};
-
-/**
- * 개발용 mock 데이터 리셋
- */
-export const resetMockData = async () => {
-  await openDB();
-
-  await clearStore(STORE_NAMES.users);
-  await clearStore(STORE_NAMES.posts);
-  await clearStore(STORE_NAMES.likes);
-  await clearStore(STORE_NAMES.comments);
-  await clearStore(STORE_NAMES.commentsLikes);
-  await clearStore(STORE_NAMES.bookmarks);
-
-  await bulkPutToStore(STORE_NAMES.users, initialUsers);
-  await bulkPutToStore(STORE_NAMES.posts, initialPosts);
-  await bulkPutToStore(STORE_NAMES.likes, initialLikes);
-  await bulkPutToStore(STORE_NAMES.comments, initialComments);
-  await bulkPutToStore(STORE_NAMES.commentsLikes, initialCommentsLikes);
-  await bulkPutToStore(STORE_NAMES.bookmarks, initialBookmarks);
-};
-
-/**
- * store 조회 helper
- */
-const getUsers = async () => {
-  await ensureDBInitialized();
-  return getAllFromStore(STORE_NAMES.users);
-};
-
-const getPosts = async () => {
-  await ensureDBInitialized();
-  return getAllFromStore(STORE_NAMES.posts);
-};
-
-const getLikes = async () => {
-  await ensureDBInitialized();
-  return getAllFromStore(STORE_NAMES.likes);
-};
-
-const getComments = async () => {
-  await ensureDBInitialized();
-  return getAllFromStore(STORE_NAMES.comments);
-};
-
-const getCommentsLikes = async () => {
-  await ensureDBInitialized();
-  return getAllFromStore(STORE_NAMES.commentsLikes);
-};
-
-const getBookmarks = async () => {
-  await ensureDBInitialized();
-  return getAllFromStore(STORE_NAMES.bookmarks);
+  users = [...initialUsers];
+  posts = [...initialPosts];
+  likes = [...initialLikes];
+  comments = [...initialComments];
+  commentsLikes = [...initialCommentsLikes];
+  bookmarks = [...initialBookmarks];
 };
 
 export const fetchUsersApi = () => {
   return new Promise((resolve) => {
-    setTimeout(async () => {
-      const users = await getUsers();
+    setTimeout(() => {
       resolve(users);
     }, 0);
   });
@@ -261,8 +113,7 @@ export const fetchUsersApi = () => {
 
 export const loginApi = ({ userId, password }) => {
   return new Promise((resolve) => {
-    setTimeout(async () => {
-      const users = await getUsers();
+    setTimeout(() => {
       const foundUser = users.find((u) => u.userId === userId);
 
       if (!foundUser || foundUser.password !== password) {
@@ -287,9 +138,7 @@ export const loginApi = ({ userId, password }) => {
 
 export const addUserApi = (newUser) => {
   return new Promise((resolve) => {
-    setTimeout(async () => {
-      const users = await getUsers();
-
+    setTimeout(() => {
       const existsUserId = users.some((u) => u.userId === newUser.userId);
       if (existsUserId) {
         resolve({
@@ -315,7 +164,8 @@ export const addUserApi = (newUser) => {
         following: [],
       };
 
-      await putToStore(STORE_NAMES.users, newUserData);
+      users.push(newUserData);
+      syncUsers();
 
       resolve({
         success: true,
@@ -327,8 +177,7 @@ export const addUserApi = (newUser) => {
 
 export const fetchFollowingUsersApi = (userId) => {
   return new Promise((resolve) => {
-    setTimeout(async () => {
-      const users = await getUsers();
+    setTimeout(() => {
       const currentUser = users.find((u) => u.userId === userId);
 
       if (!currentUser) {
@@ -353,15 +202,7 @@ export const fetchFollowingUsersApi = (userId) => {
   });
 };
 
-const getFeedPosts = async (currentUserId) => {
-  const [posts, users, likes, comments, bookmarks] = await Promise.all([
-    getPosts(),
-    getUsers(),
-    getLikes(),
-    getComments(),
-    getBookmarks(),
-  ]);
-
+const getFeedPosts = (currentUserId) => {
   return posts.map((post) => {
     const user = users.find((u) => u.userId === post.userId);
     const likesFiltered = likes.filter((l) => l.postId === post.id);
@@ -383,8 +224,8 @@ const getFeedPosts = async (currentUserId) => {
 
 export const fetchFeed = (currentUserId, page = 1, limit = 10) => {
   return new Promise((resolve) => {
-    setTimeout(async () => {
-      const allPosts = await getFeedPosts(currentUserId);
+    setTimeout(() => {
+      const allPosts = getFeedPosts(currentUserId);
 
       const sortedPosts = [...allPosts].sort(
         (a, b) => new Date(b.createdAt) - new Date(a.createdAt),
@@ -405,22 +246,24 @@ export const fetchFeed = (currentUserId, page = 1, limit = 10) => {
 
 export const toggleLikeApi = ({ postId, userId }) => {
   return new Promise((resolve) => {
-    setTimeout(async () => {
-      const likes = await getLikes();
-
+    setTimeout(() => {
       const existing = likes.find(
         (l) => l.postId === postId && l.userId === userId,
       );
 
       if (existing) {
-        await deleteFromStore(STORE_NAMES.likes, existing.id);
+        likes = likes.filter(
+          (l) => !(l.postId === postId && l.userId === userId),
+        );
       } else {
-        await putToStore(STORE_NAMES.likes, {
+        likes.push({
           id: Date.now(),
           postId,
           userId,
         });
       }
+
+      syncLikes();
 
       resolve({
         success: true,
@@ -431,13 +274,7 @@ export const toggleLikeApi = ({ postId, userId }) => {
 
 export const fetchCommentsApi = (postId, page = 1, limit = 10) => {
   return new Promise((resolve) => {
-    setTimeout(async () => {
-      const [comments, commentsLikes, users] = await Promise.all([
-        getComments(),
-        getCommentsLikes(),
-        getUsers(),
-      ]);
-
+    setTimeout(() => {
       const filtered = comments.filter((c) => c.postId === postId);
 
       const sorted = [...filtered].sort(
@@ -471,22 +308,24 @@ export const fetchCommentsApi = (postId, page = 1, limit = 10) => {
 
 export const toggleCommentLikeApi = ({ commentId, userId }) => {
   return new Promise((resolve) => {
-    setTimeout(async () => {
-      const commentsLikes = await getCommentsLikes();
-
+    setTimeout(() => {
       const existing = commentsLikes.find(
         (cl) => cl.commentId === commentId && cl.userId === userId,
       );
 
       if (existing) {
-        await deleteFromStore(STORE_NAMES.commentsLikes, existing.id);
+        commentsLikes = commentsLikes.filter(
+          (cl) => !(cl.commentId === commentId && cl.userId === userId),
+        );
       } else {
-        await putToStore(STORE_NAMES.commentsLikes, {
+        commentsLikes.push({
           id: Date.now(),
           commentId,
           userId,
         });
       }
+
+      syncCommentsLikes();
 
       resolve({
         success: true,
@@ -497,7 +336,7 @@ export const toggleCommentLikeApi = ({ commentId, userId }) => {
 
 export const addCommentApi = ({ postId, userId, content }) => {
   return new Promise((resolve) => {
-    setTimeout(async () => {
+    setTimeout(() => {
       const newComment = {
         id: Date.now(),
         postId,
@@ -506,7 +345,8 @@ export const addCommentApi = ({ postId, userId, content }) => {
         createdAt: new Date().toISOString(),
       };
 
-      await putToStore(STORE_NAMES.comments, newComment);
+      comments.unshift(newComment);
+      syncComments();
 
       resolve({
         success: true,
@@ -518,22 +358,25 @@ export const addCommentApi = ({ postId, userId, content }) => {
 
 export const toggleBookmarkApi = ({ postId, userId }) => {
   return new Promise((resolve) => {
-    setTimeout(async () => {
-      const bookmarks = await getBookmarks();
-
+    setTimeout(() => {
       const existing = bookmarks.find(
         (bookmark) => bookmark.postId === postId && bookmark.userId === userId,
       );
 
       if (existing) {
-        await deleteFromStore(STORE_NAMES.bookmarks, existing.id);
+        bookmarks = bookmarks.filter(
+          (bookmark) =>
+            !(bookmark.postId === postId && bookmark.userId === userId),
+        );
       } else {
-        await putToStore(STORE_NAMES.bookmarks, {
+        bookmarks.push({
           id: Date.now(),
           postId,
           userId,
         });
       }
+
+      syncBookmarks();
 
       resolve({
         success: true,
@@ -544,16 +387,27 @@ export const toggleBookmarkApi = ({ postId, userId }) => {
 
 export const addPostApi = ({ userId, images, caption }) => {
   return new Promise((resolve) => {
-    setTimeout(async () => {
+    setTimeout(() => {
       const newPost = {
         id: Date.now(),
         userId,
         images,
         caption,
+        commentCount: 0,
         createdAt: new Date().toISOString(),
       };
 
-      await putToStore(STORE_NAMES.posts, newPost);
+      posts.unshift(newPost);
+      const saved = syncPosts();
+
+      if (!saved) {
+        resolve({
+          success: false,
+          message:
+            "게시글 저장에 실패했습니다. 이미지 용량이 너무 클 수 있습니다.",
+        });
+        return;
+      }
 
       resolve({
         success: true,
@@ -563,8 +417,7 @@ export const addPostApi = ({ userId, images, caption }) => {
   });
 };
 
-const getFollowingUsersInOrder = async (currentUserId) => {
-  const users = await getUsers();
+const getFollowingUsersInOrder = (currentUserId) => {
   const currentUser = users.find((u) => u.userId === currentUserId);
 
   if (!currentUser) return [];
@@ -574,9 +427,7 @@ const getFollowingUsersInOrder = async (currentUserId) => {
     .filter(Boolean);
 };
 
-const getLatestPostByUserId = async (userId) => {
-  const posts = await getPosts();
-
+const getLatestPostByUserId = (userId) => {
   const userPosts = posts
     .filter((post) => post.userId === userId)
     .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
@@ -584,12 +435,12 @@ const getLatestPostByUserId = async (userId) => {
   return userPosts[0] || null;
 };
 
-const getStoriesByFollowing = async (currentUserId) => {
-  const followingUsers = await getFollowingUsersInOrder(currentUserId);
+const getStoriesByFollowing = (currentUserId) => {
+  const followingUsers = getFollowingUsersInOrder(currentUserId);
 
-  const stories = await Promise.all(
-    followingUsers.map(async (user) => {
-      const latestPost = await getLatestPostByUserId(user.userId);
+  return followingUsers
+    .map((user) => {
+      const latestPost = getLatestPostByUserId(user.userId);
 
       if (!latestPost) return null;
 
@@ -601,10 +452,8 @@ const getStoriesByFollowing = async (currentUserId) => {
         },
         post: latestPost,
       };
-    }),
-  );
-
-  return stories.filter(Boolean);
+    })
+    .filter(Boolean);
 };
 
 const getStoryWindowRange = (totalCount, centerIndex, windowSize = 5) => {
@@ -639,8 +488,7 @@ export const fetchStoryWindowApi = ({
   windowSize = 5,
 }) => {
   return new Promise((resolve) => {
-    setTimeout(async () => {
-      const users = await getUsers();
+    setTimeout(() => {
       const currentUser = users.find((u) => u.userId === currentUserId);
 
       if (!currentUser) {
@@ -652,7 +500,7 @@ export const fetchStoryWindowApi = ({
         return;
       }
 
-      const allStories = await getStoriesByFollowing(currentUserId);
+      const allStories = getStoriesByFollowing(currentUserId);
 
       if (!allStories.length) {
         resolve({
@@ -702,8 +550,7 @@ export const fetchStoryWindowByIndexApi = ({
   windowSize = 5,
 }) => {
   return new Promise((resolve) => {
-    setTimeout(async () => {
-      const users = await getUsers();
+    setTimeout(() => {
       const currentUser = users.find((u) => u.userId === currentUserId);
 
       if (!currentUser) {
@@ -715,7 +562,7 @@ export const fetchStoryWindowByIndexApi = ({
         return;
       }
 
-      const allStories = await getStoriesByFollowing(currentUserId);
+      const allStories = getStoriesByFollowing(currentUserId);
 
       if (!allStories.length) {
         resolve({
@@ -765,8 +612,7 @@ export const fetchStoriesPaginationApi = ({
   clickedUserId = null,
 }) => {
   return new Promise((resolve) => {
-    setTimeout(async () => {
-      const users = await getUsers();
+    setTimeout(() => {
       const currentUser = users.find((u) => u.userId === currentUserId);
 
       if (!currentUser) {
@@ -779,7 +625,7 @@ export const fetchStoriesPaginationApi = ({
         return;
       }
 
-      const allStories = await getStoriesByFollowing(currentUserId);
+      const allStories = getStoriesByFollowing(currentUserId);
 
       if (!allStories.length) {
         resolve({
@@ -819,8 +665,7 @@ export const fetchStoriesPaginationApi = ({
 
 export const searchUsersApi = (keyword) => {
   return new Promise((resolve) => {
-    setTimeout(async () => {
-      const users = await getUsers();
+    setTimeout(() => {
       const trimmed = keyword.trim().toLowerCase();
 
       if (!trimmed) {
