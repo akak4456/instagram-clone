@@ -1,62 +1,19 @@
-import styled from "styled-components";
 import { getTimeDiff } from "../../utils/timeUtils";
 import { useAuth } from "../../hooks/useAuth";
 import { useReply } from "../../hooks/useReply";
 import ProfileImage from "../../components/ProfileImage";
 import LikeIcon from "../../components/LikeIcon";
-
-const Wrapper = styled.div`
-  display: flex;
-  padding: 12px;
-  gap: 10px;
-`;
-
-const Left = styled.div`
-  flex-shrink: 0;
-`;
-
-const Center = styled.div`
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-`;
-
-const TopRow = styled.div`
-  display: flex;
-  align-items: center; /* 🔥 핵심: 프로필과 세로 중앙 정렬 */
-  gap: 6px;
-  line-height: 1.4;
-`;
-
-const Username = styled.span`
-  font-weight: 600;
-  font-size: 14px;
-`;
-
-const Caption = styled.span`
-  font-size: 14px;
-  word-break: break-word;
-  white-space: pre-wrap;
-`;
-
-const Right = styled.div`
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-`;
-
-const Meta = styled.div`
-  margin-top: 4px;
-  font-size: 12px;
-  color: #8e8e8e;
-  display: flex;
-  gap: 12px;
-`;
-
-const Like = styled.span`
-  cursor: pointer;
-  font-weight: 500;
-`;
+import {
+  Wrapper,
+  Left,
+  Center,
+  TopRow,
+  Username,
+  Caption,
+  Meta,
+  Like,
+  Right,
+} from "../../styles/ReplyItem.styles";
 
 const ReplyItem = ({ postId, comment }) => {
   const { user: currentUser } = useAuth();
