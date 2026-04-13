@@ -17,7 +17,7 @@ import { formatDate } from "../../utils/timeUtils";
 import CommentInput from "../../components/CommentInput";
 import postBookmarkFill from "../../assets/post-bookmark-fill.png";
 import ProfileImage from "../../components/profileImage/ProfileImage";
-import LikeIcon from "../../components/likeIcon/LikeIcon";
+import LikeIcon from "../../components/LikeIcon";
 
 const Overlay = styled.div`
   position: fixed;

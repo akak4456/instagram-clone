@@ -12,7 +12,7 @@ import { useAuth } from "../../hooks/useAuth";
 import postBookmarkFill from "../../assets/post-bookmark-fill.png";
 import useScrollLock from "../../hooks/useScrollLock";
 import ProfileImage from "../../components/profileImage/ProfileImage";
-import LikeIcon from "../../components/likeIcon/LikeIcon";
+import LikeIcon from "../../components/LikeIcon";
 
 const Wrapper = styled.div`
   width: 470px;

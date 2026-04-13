@@ -1,36 +1,7 @@
 import { useState, useRef, useEffect } from "react";
-import styled, { keyframes, css } from "styled-components";
-import postLikeFill from "../../assets/post-like-fill.png";
-import postLike from "../../assets/post-like.png";
-
-const likeAnimation = keyframes`
-  0% {
-    transform: scale(1);
-  }
-  30% {
-    transform: scale(1.4);
-  }
-  60% {
-    transform: scale(0.9);
-  }
-  100% {
-    transform: scale(1);
-  }
-`;
-
-const LikeIconImg = styled.img`
-  ${({ animate }) =>
-    animate &&
-    css`
-      animation: ${likeAnimation} 0.3s ease;
-    `}
-
-  ${({ $width }) =>
-    $width &&
-    css`
-      width: ${$width};
-    `}
-`;
+import postLikeFill from "../assets/post-like-fill.png";
+import postLike from "../assets/post-like.png";
+import { LikeIconImg } from "../styles/LikeIcon.styles";
 
 const LikeIcon = ({ isLiked, onClick, width }) => {
   const [animateLike, setAnimateLike] = useState(false);

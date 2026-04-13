@@ -3,7 +3,7 @@ import { getTimeDiff } from "../../utils/timeUtils";
 import { useAuth } from "../../hooks/useAuth";
 import { useReply } from "../../hooks/useReply";
 import ProfileImage from "../../components/profileImage/ProfileImage";
-import LikeIcon from "../../components/likeIcon/LikeIcon";
+import LikeIcon from "../../components/LikeIcon";
 
 const Wrapper = styled.div`
   display: flex;
