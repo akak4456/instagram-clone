@@ -699,19 +699,25 @@ export const getUserApi = (userId) => {
         return;
       }
 
-      const followersCount = users.filter((user) =>
+      // ✅ followers: 나를 팔로우하는 유저들의 정보
+      const followers = users.filter((user) =>
         user.following?.includes(userId),
-      ).length;
+      );
 
-      const followingCount = foundUser.following?.length || 0;
+      // ✅ following: 내가 팔로우하는 유저들의 정보
+      const following = users.filter((user) =>
+        foundUser.following?.includes(user.userId),
+      );
+
+      // ✅ 게시글 수
       const postsCount = posts.filter((post) => post.userId === userId).length;
 
       resolve({
         success: true,
         user: {
           ...foundUser,
-          followersCount,
-          followingCount,
+          followers,
+          following,
           postsCount,
         },
       });

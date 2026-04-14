@@ -41,10 +41,10 @@ const ProfileTop = ({ user }) => {
                 게시물 <strong>{user.postsCount}</strong>
               </ProfileStatItem>
               <ProfileStatItem>
-                팔로워 <strong>{user.followersCount}</strong>
+                팔로워 <strong>{user.followers.length}</strong>
               </ProfileStatItem>
               <ProfileStatItem>
-                팔로우 <strong>{user.followingCount}</strong>
+                팔로우 <strong>{user.following.length}</strong>
               </ProfileStatItem>
             </ProfileStatsRow>
 
