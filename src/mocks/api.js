@@ -879,3 +879,61 @@ export const unfollowUserApi = ({ profileUserId, targetUserId }) => {
     }, 0);
   });
 };
+
+export const followUserApi = ({ currentUserId, targetUserId }) => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      if (!currentUserId || !targetUserId) {
+        return resolve({
+          success: false,
+          message: "잘못된 요청입니다.",
+        });
+      }
+
+      if (currentUserId === targetUserId) {
+        return resolve({
+          success: false,
+          message: "자기 자신을 팔로우할 수 없습니다.",
+        });
+      }
+
+      const currentUser = users.find((user) => user.userId === currentUserId);
+      const targetUser = users.find((user) => user.userId === targetUserId);
+
+      if (!currentUser || !targetUser) {
+        return resolve({
+          success: false,
+          message: "사용자를 찾을 수 없습니다.",
+        });
+      }
+
+      const isFollowing = currentUser.following.includes(targetUserId);
+
+      if (isFollowing) {
+        // 🔹 언팔로우
+        currentUser.following = currentUser.following.filter(
+          (id) => id !== targetUserId,
+        );
+
+        syncUsers();
+
+        return resolve({
+          success: true,
+          following: false,
+          message: "언팔로우 되었습니다.",
+        });
+      } else {
+        // 🔹 팔로우
+        currentUser.following.push(targetUserId);
+
+        syncUsers();
+
+        return resolve({
+          success: true,
+          following: true,
+          message: "팔로우 되었습니다.",
+        });
+      }
+    }, 300); // 기존 코드 스타일에 맞춘 지연 시간
+  });
+};

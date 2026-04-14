@@ -6,11 +6,23 @@ import {
   UserTextSection,
   UsernameRow,
   Username,
+  FollowBadge,
   UserIdText,
   RemoveButton,
+  FollowButton,
+  FollowingButton,
 } from "../../styles/features/follower.styles";
 
-const FollowerListItem = ({ user, onRemoveClick }) => {
+const FollowerListItem = ({
+  user,
+  isMyProfile,
+  showFollowBadge,
+  isFollowing,
+  onRemoveClick,
+  onFollowClick,
+  onFollowingClick,
+  followLoading,
+}) => {
   return (
     <ItemContainer>
       <LeftSection>
@@ -23,14 +35,35 @@ const FollowerListItem = ({ user, onRemoveClick }) => {
         <UserTextSection>
           <UsernameRow>
             <Username>{user.username}</Username>
+            {isMyProfile && showFollowBadge && (
+              <FollowBadge onClick={onFollowClick}>· 팔로우</FollowBadge>
+            )}
           </UsernameRow>
           <UserIdText>{user.userId}</UserIdText>
         </UserTextSection>
       </LeftSection>
 
-      <RemoveButton type="button" onClick={onRemoveClick}>
-        삭제
-      </RemoveButton>
+      {isMyProfile ? (
+        <RemoveButton type="button" onClick={onRemoveClick}>
+          삭제
+        </RemoveButton>
+      ) : isFollowing ? (
+        <RemoveButton
+          type="button"
+          onClick={onFollowingClick}
+          disabled={followLoading}
+        >
+          {followLoading ? "처리중" : "팔로잉"}
+        </RemoveButton>
+      ) : (
+        <FollowButton
+          type="button"
+          onClick={onFollowClick}
+          disabled={followLoading}
+        >
+          {followLoading ? "처리중" : "팔로우"}
+        </FollowButton>
+      )}
     </ItemContainer>
   );
 };

@@ -10,6 +10,7 @@ import {
   fetchUserTaggedPostsApi,
   removeFollowerApi,
   unfollowUserApi,
+  followUserApi,
 } from "../mocks/api";
 
 export const UserContext = createContext();
@@ -104,6 +105,20 @@ export const UserProvider = ({ children }) => {
     return result;
   };
 
+  const followUser = async ({ currentUserId, targetUserId }) => {
+    const result = await followUserApi({
+      currentUserId,
+      targetUserId,
+    });
+
+    if (result.success) {
+      const refreshedUsers = await fetchUsersApi();
+      setUsers(refreshedUsers);
+    }
+
+    return result;
+  };
+
   useEffect(() => {
     fetchUsers();
   }, []);
@@ -123,6 +138,7 @@ export const UserProvider = ({ children }) => {
         getUserTaggedPosts,
         removeFollower,
         unfollowUser,
+        followUser,
       }}
     >
       {children}

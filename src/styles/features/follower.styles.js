@@ -139,6 +139,7 @@ export const FollowBadge = styled.span`
   font-size: 13px;
   font-weight: 600;
   color: #4a57ff;
+  cursor: pointer;
 `;
 
 export const UserIdText = styled.span`
@@ -157,7 +158,7 @@ export const RemoveButton = styled.button`
   font-size: 14px;
   font-weight: 600;
   border-radius: 8px;
-  padding: 8px 14px;
+  padding: 8px 18px;
   cursor: pointer;
   flex-shrink: 0;
 
@@ -261,6 +262,27 @@ export const ConfirmCancelButton = styled.button`
   font-size: 16px;
   font-weight: 400;
   cursor: pointer;
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+`;
+
+export const FollowButton = styled.button`
+  border: none;
+  background: #4a57ff;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 8px;
+  padding: 8px 18px;
+  cursor: pointer;
+  flex-shrink: 0;
+
+  &:hover {
+    background: #3f4cf0;
+  }
 
   &:disabled {
     opacity: 0.6;

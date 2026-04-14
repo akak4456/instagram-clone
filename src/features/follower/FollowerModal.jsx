@@ -4,6 +4,7 @@ import { useUser } from "../../hooks/useUser";
 import useDebounce from "../../hooks/useDebounce";
 import FollowerListItem from "./FollowerListItem";
 import ConfirmRemoveFollowerModal from "./ConfirmRemoveFollowerModal";
+import ConfirmUnfollowModal from "../following/ConfirmUnfollowModal";
 import {
   Overlay,
   ModalBox,
@@ -23,15 +24,20 @@ const FollowerModal = ({
   followers = [],
   profileUserId,
   currentUserId,
+  currentUserFollowingIds = [],
   onRemoved,
 }) => {
-  const { removeFollower } = useUser();
+  const { removeFollower, followUser } = useUser();
 
   const [keyword, setKeyword] = useState("");
   const [selectedFollower, setSelectedFollower] = useState(null);
+  const [selectedUnfollowUser, setSelectedUnfollowUser] = useState(null);
   const [removeLoading, setRemoveLoading] = useState(false);
+  const [followLoadingUserId, setFollowLoadingUserId] = useState(null);
+  const [unfollowLoading, setUnfollowLoading] = useState(false);
 
   const debouncedKeyword = useDebounce(keyword, 300);
+  const isMyProfile = profileUserId === currentUserId;
 
   const filteredFollowers = useMemo(() => {
     const trimmed = debouncedKeyword.trim().toLowerCase();
@@ -75,6 +81,60 @@ const FollowerModal = ({
     setRemoveLoading(false);
   };
 
+  const handleFollow = async (targetUser) => {
+    if (!targetUser || followLoadingUserId) return;
+
+    setFollowLoadingUserId(targetUser.userId);
+
+    try {
+      const result = await followUser({
+        currentUserId,
+        targetUserId: targetUser.userId,
+      });
+
+      if (!result?.success) {
+        alert(result?.message || "팔로우에 실패했습니다.");
+        return;
+      }
+
+      await onRemoved?.();
+    } finally {
+      setFollowLoadingUserId(null);
+    }
+  };
+
+  const handleOpenUnfollowModal = (targetUser) => {
+    setSelectedUnfollowUser(targetUser);
+  };
+
+  const handleCloseUnfollowModal = () => {
+    if (unfollowLoading) return;
+    setSelectedUnfollowUser(null);
+  };
+
+  const handleConfirmUnfollow = async () => {
+    if (!selectedUnfollowUser || unfollowLoading) return;
+
+    setUnfollowLoading(true);
+
+    try {
+      const result = await followUser({
+        currentUserId,
+        targetUserId: selectedUnfollowUser.userId,
+      });
+
+      if (!result?.success) {
+        alert(result?.message || "팔로우 취소에 실패했습니다.");
+        return;
+      }
+
+      await onRemoved?.();
+      setSelectedUnfollowUser(null);
+    } finally {
+      setUnfollowLoading(false);
+    }
+  };
+
   if (!open) return null;
 
   const modalRoot = document.getElementById("modal-root");
@@ -105,13 +165,28 @@ const FollowerModal = ({
 
             <FollowerList>
               {filteredFollowers.length > 0 ? (
-                filteredFollowers.map((follower) => (
-                  <FollowerListItem
-                    key={follower.userId}
-                    user={follower}
-                    onRemoveClick={() => handleOpenConfirmModal(follower)}
-                  />
-                ))
+                filteredFollowers.map((follower) => {
+                  const isFollowing = currentUserFollowingIds.includes(
+                    follower.userId,
+                  );
+
+                  return (
+                    <FollowerListItem
+                      key={follower.userId}
+                      user={follower}
+                      isMyProfile={isMyProfile}
+                      showFollowBadge={!isFollowing}
+                      isFollowing={isFollowing}
+                      onRemoveClick={() => handleOpenConfirmModal(follower)}
+                      onFollowClick={() => handleFollow(follower)}
+                      onFollowingClick={() => handleOpenUnfollowModal(follower)}
+                      followLoading={
+                        followLoadingUserId === follower.userId ||
+                        unfollowLoading
+                      }
+                    />
+                  );
+                })
               ) : (
                 <EmptyText>검색 결과가 없습니다.</EmptyText>
               )}
@@ -127,6 +202,14 @@ const FollowerModal = ({
         onClose={handleCloseConfirmModal}
         onConfirm={handleConfirmRemove}
         loading={removeLoading}
+      />
+
+      <ConfirmUnfollowModal
+        open={!!selectedUnfollowUser}
+        user={selectedUnfollowUser}
+        onClose={handleCloseUnfollowModal}
+        onConfirm={handleConfirmUnfollow}
+        loading={unfollowLoading}
       />
     </>
   );

@@ -20,13 +20,20 @@ import FollowerModal from "../follower/FollowerModal";
 import FollowingModal from "../following/FollowingModal";
 import useScrollLock from "../../hooks/useScrollLock";
 import { useAuth } from "../../hooks/useAuth";
+import { useUser } from "../../hooks/useUser";
 
 const ProfileTop = ({ user, refreshProfileUser }) => {
   const { user: currentUser } = useAuth();
+  const { users } = useUser();
   const [followerModalOpen, setFollowerModalOpen] = useState(false);
   const [followingModalOpen, setFollowingModalOpen] = useState(false);
 
   useScrollLock(followerModalOpen || followingModalOpen);
+
+  const isMyProfile = user.userId === currentUser.userId;
+
+  const currentUserData =
+    users.find((item) => item.userId === currentUser.userId) || currentUser;
 
   return (
     <ProfileTopContainer>
@@ -72,10 +79,12 @@ const ProfileTop = ({ user, refreshProfileUser }) => {
         </ProfileInfoSection>
       </ProfileHeader>
 
-      <ProfileActionButtonRow>
-        <ProfileActionButton>프로필 편집</ProfileActionButton>
-        <ProfileActionButton>보관된 스토리 보기</ProfileActionButton>
-      </ProfileActionButtonRow>
+      {isMyProfile && (
+        <ProfileActionButtonRow>
+          <ProfileActionButton>프로필 편집</ProfileActionButton>
+          <ProfileActionButton>보관된 스토리 보기</ProfileActionButton>
+        </ProfileActionButtonRow>
+      )}
 
       {followerModalOpen && (
         <FollowerModal
@@ -84,6 +93,7 @@ const ProfileTop = ({ user, refreshProfileUser }) => {
           followers={user.followers}
           profileUserId={user.userId}
           currentUserId={currentUser.userId}
+          currentUserFollowingIds={currentUserData.following || []}
           onRemoved={refreshProfileUser}
         />
       )}
