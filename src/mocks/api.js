@@ -704,10 +704,12 @@ export const getUserApi = (userId) => {
         user.following?.includes(userId),
       );
 
-      // ✅ following: 내가 팔로우하는 유저들의 정보
-      const following = users.filter((user) =>
-        foundUser.following?.includes(user.userId),
-      );
+      // ✅ following: 내가 팔로우하는 유저들의 정보 (순서 유지)
+      const following = (foundUser.following || [])
+        .map((followingUserId) =>
+          users.find((user) => user.userId === followingUserId),
+        )
+        .filter(Boolean); // 존재하지 않는 유저 제거
 
       // ✅ 게시글 수
       const postsCount = posts.filter((post) => post.userId === userId).length;
@@ -827,6 +829,52 @@ export const removeFollowerApi = ({ profileUserId, followerUserId }) => {
       resolve({
         success: true,
         message: "팔로워를 삭제했습니다.",
+      });
+    }, 0);
+  });
+};
+
+export const unfollowUserApi = ({ profileUserId, targetUserId }) => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      const profileUser = users.find((u) => u.userId === profileUserId);
+      const targetUser = users.find((u) => u.userId === targetUserId);
+
+      if (!profileUser) {
+        resolve({
+          success: false,
+          message: "프로필 유저를 찾을 수 없습니다.",
+        });
+        return;
+      }
+
+      if (!targetUser) {
+        resolve({
+          success: false,
+          message: "대상 유저를 찾을 수 없습니다.",
+        });
+        return;
+      }
+
+      const isFollowing = profileUser.following?.includes(targetUserId);
+
+      if (!isFollowing) {
+        resolve({
+          success: false,
+          message: "현재 팔로우 중인 유저가 아닙니다.",
+        });
+        return;
+      }
+
+      profileUser.following = profileUser.following.filter(
+        (followingUserId) => followingUserId !== targetUserId,
+      );
+
+      syncUsers();
+
+      resolve({
+        success: true,
+        message: "팔로잉을 취소했습니다.",
       });
     }, 0);
   });
