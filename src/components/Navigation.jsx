@@ -8,6 +8,8 @@ import storyOff from "../assets/story-off.png";
 import search from "../assets/search.png";
 import upload from "../assets/upload.png";
 import hamburger from "../assets/hamburger.png";
+import findOff from "../assets/find-off.png";
+import findOn from "../assets/find-on.png";
 import UploadModal from "../features/upload/UploadModal";
 import SearchPanel from "../features/search/SearchPanel";
 import useScrollLock from "../hooks/useScrollLock";
@@ -108,7 +110,18 @@ const Navigation = () => {
                 검색
               </Label>
             </NavItem>
-
+            <NavItem
+              as={Link}
+              to="/find"
+              onClick={() => {
+                setIsMoreOpen(false);
+              }}
+            >
+              <img src={pathname === "/find" ? findOn : findOff} alt="find" />
+              <Label $expanded={isExpanded} $active={pathname === "/find"}>
+                탐색 탭
+              </Label>
+            </NavItem>
             <NavItem
               onClick={() => {
                 setUploadModalOpen(true);
@@ -118,6 +131,7 @@ const Navigation = () => {
               <img src={upload} alt="upload" />
               <Label $expanded={isExpanded}>만들기</Label>
             </NavItem>
+
             <NavItem
               as={Link}
               to={`/profile/${user.userId}`}

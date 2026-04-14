@@ -8,6 +8,7 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Profile from "./pages/Profile";
 import Reels from "./pages/Reels";
+import Find from "./pages/Find.jsx";
 
 const App = () => {
   return (
@@ -41,6 +42,16 @@ const App = () => {
               <PrivateRoute>
                 <Layout>
                   <Reels />
+                </Layout>
+              </PrivateRoute>
+            }
+          />
+          <Route
+            path="/find"
+            element={
+              <PrivateRoute>
+                <Layout>
+                  <Find />
                 </Layout>
               </PrivateRoute>
             }
