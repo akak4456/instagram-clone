@@ -10,20 +10,23 @@ export const ProfileLoadingText = styled.div`
 `;
 
 export const ProfileTopContainer = styled.div`
-  max-width: 935px;
+  max-width: 700px;
   margin: 0 auto;
   padding: 30px 20px 40px;
 `;
 
 export const ProfileHeader = styled.div`
-  display: flex;
-  align-items: flex-start;
-  gap: 80px;
+  display: grid;
+  grid-template-columns: 180px minmax(0, 1fr);
+  align-items: start;
+  column-gap: 28px;
+  margin-bottom: 24px;
 `;
 
 export const ProfileImageWrapper = styled.div`
   width: 150px;
   height: 150px;
+  justify-self: center;
   flex-shrink: 0;
 `;
 
@@ -42,50 +45,52 @@ export const ProfileImageFallback = styled.div`
 `;
 
 export const ProfileInfoSection = styled.div`
-  flex: 1;
+  width: 100%;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+`;
+
+export const ProfileTextSection = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 `;
 
 export const ProfileTopRow = styled.div`
   display: flex;
   align-items: center;
-  gap: 12px;
-  margin-bottom: 20px;
+  margin-bottom: 6px;
 `;
 
 export const ProfileUsername = styled.h2`
-  font-size: 20px;
-  font-weight: 400;
   margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
 `;
 
-export const ProfileActionButton = styled.button`
-  border: none;
-  background: #efefef;
-  border-radius: 8px;
-  padding: 8px 16px;
-  font-size: 14px;
-  font-weight: 600;
-  cursor: pointer;
+export const ProfileName = styled.div`
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 18px;
 `;
 
 export const ProfileStatsRow = styled.div`
   display: flex;
-  gap: 36px;
-  margin-bottom: 20px;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
 `;
 
 export const ProfileStatItem = styled.div`
-  font-size: 16px;
+  font-size: 14px;
+  line-height: 1.4;
 
   strong {
-    margin-right: 4px;
+    margin-left: 4px;
   }
-`;
-
-export const ProfileName = styled.div`
-  font-size: 14px;
-  font-weight: 600;
-  margin-bottom: 8px;
 `;
 
 export const ProfileBio = styled.div`
@@ -94,8 +99,31 @@ export const ProfileBio = styled.div`
   white-space: pre-line;
 `;
 
+export const ProfileActionButtonRow = styled.div`
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+`;
+
+export const ProfileActionButton = styled.button`
+  width: 100%;
+  min-width: 0;
+  height: 42px;
+  border: none;
+  background: #efefef;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+
+  &:hover {
+    background: #e7eaee;
+  }
+`;
+
 export const ProfileBottomContainer = styled.div`
-  max-width: 935px;
+  max-width: 980px;
   margin: 0 auto;
 `;
 

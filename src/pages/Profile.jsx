@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useAuth } from "../hooks/useAuth";
+import { useParams } from "react-router-dom";
 import { useUser } from "../hooks/useUser";
 import ProfileTop from "../features/profile/ProfileTop";
 import ProfileBottom from "../features/profile/ProfileBottom";
@@ -9,7 +9,7 @@ import {
 } from "../styles/features/profile.styles";
 
 const Profile = () => {
-  const { user: authUser } = useAuth();
+  const { userId } = useParams(); // ✅ URL에서 userId 추출
   const {
     userLoading,
     getUser,
@@ -28,49 +28,53 @@ const Profile = () => {
     tagged: [],
   });
 
+  // ✅ 유저 정보 조회
   useEffect(() => {
     const fetchProfileUser = async () => {
-      if (!authUser?.userId) return;
+      if (!userId) return;
 
-      const result = await getUser(authUser.userId);
-
+      const result = await getUser(userId);
       if (result.success) {
         setProfileUser(result.user);
+      } else {
+        setProfileUser(null);
       }
     };
 
     fetchProfileUser();
-  }, [authUser]);
+  }, [userId]);
 
+  // ✅ 탭 데이터 조회 (필요할 때만)
   useEffect(() => {
     const fetchTabData = async () => {
-      if (!authUser?.userId) return;
+      if (!userId) return;
 
       let result;
 
-      if (activeTab === "posts") {
-        result = await getUserPosts(authUser.userId);
+      // 이미 데이터가 있으면 다시 호출하지 않도록 캐싱
+      if (activeTab === "posts" && tabData.posts.length === 0) {
+        result = await getUserPosts(userId);
         if (result.success) {
           setTabData((prev) => ({ ...prev, posts: result.posts }));
         }
       }
 
-      if (activeTab === "reels") {
-        result = await getUserReels(authUser.userId);
+      if (activeTab === "reels" && tabData.reels.length === 0) {
+        result = await getUserReels(userId);
         if (result.success) {
           setTabData((prev) => ({ ...prev, reels: result.reels }));
         }
       }
 
-      if (activeTab === "saved") {
-        result = await getUserSavedPosts(authUser.userId);
+      if (activeTab === "saved" && tabData.saved.length === 0) {
+        result = await getUserSavedPosts(userId);
         if (result.success) {
           setTabData((prev) => ({ ...prev, saved: result.posts }));
         }
       }
 
-      if (activeTab === "tagged") {
-        result = await getUserTaggedPosts(authUser.userId);
+      if (activeTab === "tagged" && tabData.tagged.length === 0) {
+        result = await getUserTaggedPosts(userId);
         if (result.success) {
           setTabData((prev) => ({ ...prev, tagged: result.posts }));
         }
@@ -78,16 +82,10 @@ const Profile = () => {
     };
 
     fetchTabData();
-  }, [authUser, activeTab]);
-
-  if (userLoading && !profileUser) {
-    return <ProfileLoadingText>로딩중...</ProfileLoadingText>;
-  }
+  }, [userId, activeTab]);
 
   if (!profileUser) {
-    return (
-      <ProfileLoadingText>유저 정보를 찾을 수 없습니다.</ProfileLoadingText>
-    );
+    return <ProfileLoadingText>로딩중...</ProfileLoadingText>;
   }
 
   return (

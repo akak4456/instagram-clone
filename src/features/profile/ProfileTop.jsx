@@ -7,11 +7,13 @@ import {
   ProfileInfoSection,
   ProfileTopRow,
   ProfileUsername,
+  ProfileActionButtonRow,
   ProfileActionButton,
   ProfileStatsRow,
   ProfileStatItem,
   ProfileName,
   ProfileBio,
+  ProfileTextSection,
 } from "../../styles/features/profile.styles";
 
 const ProfileTop = ({ user }) => {
@@ -27,28 +29,33 @@ const ProfileTop = ({ user }) => {
         </ProfileImageWrapper>
 
         <ProfileInfoSection>
-          <ProfileTopRow>
-            <ProfileUsername>{user.username}</ProfileUsername>
-            <ProfileActionButton>프로필 편집</ProfileActionButton>
-            <ProfileActionButton>보관된 스토리 보기</ProfileActionButton>
-          </ProfileTopRow>
+          <ProfileTextSection>
+            <ProfileTopRow>
+              <ProfileUsername>{user.username}</ProfileUsername>
+            </ProfileTopRow>
 
-          <ProfileStatsRow>
-            <ProfileStatItem>
-              <strong>{user.postsCount}</strong> 게시물
-            </ProfileStatItem>
-            <ProfileStatItem>
-              <strong>{user.followersCount}</strong> 팔로워
-            </ProfileStatItem>
-            <ProfileStatItem>
-              <strong>{user.followingCount}</strong> 팔로우
-            </ProfileStatItem>
-          </ProfileStatsRow>
+            <ProfileName>{user.name || user.username}</ProfileName>
 
-          <ProfileName>{user.name || user.username}</ProfileName>
-          <ProfileBio>{user.bio || ""}</ProfileBio>
+            <ProfileStatsRow>
+              <ProfileStatItem>
+                게시물 <strong>{user.postsCount}</strong>
+              </ProfileStatItem>
+              <ProfileStatItem>
+                팔로워 <strong>{user.followersCount}</strong>
+              </ProfileStatItem>
+              <ProfileStatItem>
+                팔로우 <strong>{user.followingCount}</strong>
+              </ProfileStatItem>
+            </ProfileStatsRow>
+
+            <ProfileBio>{user.bio || ""}</ProfileBio>
+          </ProfileTextSection>
         </ProfileInfoSection>
       </ProfileHeader>
+      <ProfileActionButtonRow>
+        <ProfileActionButton>프로필 편집</ProfileActionButton>
+        <ProfileActionButton>보관된 스토리 보기</ProfileActionButton>
+      </ProfileActionButtonRow>
     </ProfileTopContainer>
   );
 };
