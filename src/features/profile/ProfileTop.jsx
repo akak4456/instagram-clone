@@ -12,7 +12,7 @@ import {
   ProfileStatItem,
   ProfileName,
   ProfileBio,
-} from "./profile.styles";
+} from "../../styles/features/profile.styles";
 
 const ProfileTop = ({ user }) => {
   return (

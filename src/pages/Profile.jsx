@@ -6,7 +6,7 @@ import ProfileBottom from "../features/profile/ProfileBottom";
 import {
   ProfilePageContainer,
   ProfileLoadingText,
-} from "../features/profile/profile.styles";
+} from "../styles/features/profile.styles";
 
 const Profile = () => {
   const { user: authUser } = useAuth();

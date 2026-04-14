@@ -1,6 +1,9 @@
 import ProfileTabs from "./ProfileTabs";
 import ProfilePostGrid from "./ProfilePostGrid";
-import { ProfileBottomContainer, ProfileEmptyText } from "./profile.styles";
+import {
+  ProfileBottomContainer,
+  ProfileEmptyText,
+} from "../../styles/features/profile.styles";
 
 const ProfileBottom = ({ activeTab, setActiveTab, tabData }) => {
   const getCurrentPosts = () => {

@@ -1,4 +1,7 @@
-import { ProfileTabBar, ProfileTabButton } from "./profile.styles";
+import {
+  ProfileTabBar,
+  ProfileTabButton,
+} from "../../styles/features/profile.styles";
 
 const ProfileTabs = ({ activeTab, setActiveTab }) => {
   return (

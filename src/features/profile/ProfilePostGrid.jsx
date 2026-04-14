@@ -2,7 +2,7 @@ import {
   ProfileGrid,
   ProfileGridItem,
   ProfileGridImage,
-} from "./profile.styles";
+} from "../../styles/features/profile.styles";
 
 const ProfilePostGrid = ({ posts }) => {
   return (
