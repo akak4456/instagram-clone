@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import logo from "../assets/instagram-logo.png";
 import homeOn from "../assets/home-on.png";
 import homeOff from "../assets/home-off.png";
@@ -12,6 +12,7 @@ import UploadModal from "../features/upload/UploadModal";
 import SearchPanel from "../features/search/SearchPanel";
 import useScrollLock from "../hooks/useScrollLock";
 import { useAuth } from "../hooks/useAuth";
+import Modal from "./Modal";
 import {
   NavWrapper,
   NavContainer,
@@ -30,14 +31,16 @@ import {
 } from "../styles/components/Navigation.styles";
 
 const Navigation = () => {
-  const { user } = useAuth();
+  const { user, logout } = useAuth();
   const location = useLocation();
   const pathname = location.pathname;
+  const navigate = useNavigate();
 
   const [isHovered, setIsHovered] = useState(false);
   const [isMoreOpen, setIsMoreOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [uploadModalOpen, setUploadModalOpen] = useState(false);
+  const [logoutModalOpen, setLogoutModalOpen] = useState(false);
 
   useEffect(() => {
     const handleClick = () => setIsMoreOpen(false);
@@ -144,7 +147,9 @@ const Navigation = () => {
                 <PopupItem>문제 신고</PopupItem>
                 <Divider />
                 <PopupItem>계정 전환</PopupItem>
-                <PopupItem>로그아웃</PopupItem>
+                <PopupItem onClick={() => setLogoutModalOpen(true)}>
+                  로그아웃
+                </PopupItem>
               </MorePopup>
             )}
 
@@ -165,6 +170,19 @@ const Navigation = () => {
             <UploadModal
               open={uploadModalOpen}
               onClose={() => setUploadModalOpen(false)}
+            />
+          )}
+          {logoutModalOpen && (
+            <Modal
+              open={logoutModalOpen}
+              onClose={() => {
+                setLogoutModalOpen(false);
+                logout();
+                navigate("/login");
+              }}
+              title="로그아웃중"
+              subtext="다시 로그인해야 합니다."
+              buttontext="로그인"
             />
           )}
         </NavContainer>
