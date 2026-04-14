@@ -82,6 +82,7 @@ const ProfileTop = ({ user, refreshProfileUser }) => {
           open={followerModalOpen}
           onClose={() => setFollowerModalOpen(false)}
           followers={user.followers}
+          profileUserId={user.userId}
           currentUserId={currentUser.userId}
           onRemoved={refreshProfileUser}
         />
@@ -92,6 +93,7 @@ const ProfileTop = ({ user, refreshProfileUser }) => {
           open={followingModalOpen}
           onClose={() => setFollowingModalOpen(false)}
           following={user.following}
+          profileUserId={user.userId}
           currentUserId={currentUser.userId}
           onRemoved={refreshProfileUser}
         />

@@ -21,6 +21,7 @@ const FollowerModal = ({
   open,
   onClose,
   followers = [],
+  profileUserId,
   currentUserId,
   onRemoved,
 }) => {

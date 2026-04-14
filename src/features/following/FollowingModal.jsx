@@ -21,6 +21,7 @@ const FollowingModal = ({
   open,
   onClose,
   following = [],
+  profileUserId,
   currentUserId,
   onRemoved,
 }) => {
