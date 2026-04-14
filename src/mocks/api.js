@@ -684,3 +684,98 @@ export const searchUsersApi = (keyword) => {
     }, 0);
   });
 };
+
+export const getUserApi = (userId) => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      const foundUser = users.find((user) => user.userId === userId);
+
+      if (!foundUser) {
+        resolve({
+          success: false,
+          message: "유저를 찾을 수 없습니다.",
+          user: null,
+        });
+        return;
+      }
+
+      const followersCount = users.filter((user) =>
+        user.following?.includes(userId),
+      ).length;
+
+      const followingCount = foundUser.following?.length || 0;
+      const postsCount = posts.filter((post) => post.userId === userId).length;
+
+      resolve({
+        success: true,
+        user: {
+          ...foundUser,
+          followersCount,
+          followingCount,
+          postsCount,
+        },
+      });
+    }, 0);
+  });
+};
+
+export const fetchUserPostsApi = (userId) => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      const userPosts = posts
+        .filter((post) => post.userId === userId)
+        .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
+
+      resolve({
+        success: true,
+        posts: userPosts,
+      });
+    }, 0);
+  });
+};
+
+export const fetchUserReelsApi = (userId) => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      const reels = posts
+        .filter((post) => post.userId === userId)
+        .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
+
+      resolve({
+        success: true,
+        reels,
+      });
+    }, 0);
+  });
+};
+
+export const fetchUserSavedPostsApi = (userId) => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      const savedPostIds = bookmarks
+        .filter((bookmark) => bookmark.userId === userId)
+        .map((bookmark) => bookmark.postId);
+
+      const savedPosts = posts
+        .filter((post) => savedPostIds.includes(post.id))
+        .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
+
+      resolve({
+        success: true,
+        posts: savedPosts,
+      });
+    }, 0);
+  });
+};
+
+export const fetchUserTaggedPostsApi = (userId) => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      // 아직 태그 데이터 구조가 없어서 비워둠
+      resolve({
+        success: true,
+        posts: [],
+      });
+    }, 0);
+  });
+};

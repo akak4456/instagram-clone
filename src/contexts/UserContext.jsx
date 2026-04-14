@@ -1,6 +1,14 @@
-// contexts/UserContext.js
 import { createContext, useEffect, useState } from "react";
-import { fetchUsersApi, addUserApi, searchUsersApi } from "../mocks/api";
+import {
+  fetchUsersApi,
+  addUserApi,
+  searchUsersApi,
+  getUserApi,
+  fetchUserPostsApi,
+  fetchUserReelsApi,
+  fetchUserSavedPostsApi,
+  fetchUserTaggedPostsApi,
+} from "../mocks/api";
 
 export const UserContext = createContext();
 
@@ -33,6 +41,41 @@ export const UserProvider = ({ children }) => {
     return result;
   };
 
+  const getUser = async (userId) => {
+    setUserLoading(true);
+    const result = await getUserApi(userId);
+    setUserLoading(false);
+    return result;
+  };
+
+  const getUserPosts = async (userId) => {
+    setUserLoading(true);
+    const result = await fetchUserPostsApi(userId);
+    setUserLoading(false);
+    return result;
+  };
+
+  const getUserReels = async (userId) => {
+    setUserLoading(true);
+    const result = await fetchUserReelsApi(userId);
+    setUserLoading(false);
+    return result;
+  };
+
+  const getUserSavedPosts = async (userId) => {
+    setUserLoading(true);
+    const result = await fetchUserSavedPostsApi(userId);
+    setUserLoading(false);
+    return result;
+  };
+
+  const getUserTaggedPosts = async (userId) => {
+    setUserLoading(true);
+    const result = await fetchUserTaggedPostsApi(userId);
+    setUserLoading(false);
+    return result;
+  };
+
   useEffect(() => {
     fetchUsers();
   }, []);
@@ -40,11 +83,16 @@ export const UserProvider = ({ children }) => {
   return (
     <UserContext.Provider
       value={{
-        users: users,
+        users,
         userLoading,
         addUser,
         fetchUsers,
         searchUsers,
+        getUser,
+        getUserPosts,
+        getUserReels,
+        getUserSavedPosts,
+        getUserTaggedPosts,
       }}
     >
       {children}
