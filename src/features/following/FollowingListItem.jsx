@@ -7,10 +7,17 @@ import {
   UsernameRow,
   Username,
   UserIdText,
+  FollowButton,
   RemoveButton,
 } from "../../styles/features/follower.styles";
 
-const FollowingListItem = ({ user, onFollowingClick }) => {
+const FollowingListItem = ({
+  user,
+  isFollowing,
+  onFollowClick,
+  onFollowingClick,
+  followLoading,
+}) => {
   return (
     <ItemContainer>
       <LeftSection>
@@ -28,9 +35,23 @@ const FollowingListItem = ({ user, onFollowingClick }) => {
         </UserTextSection>
       </LeftSection>
 
-      <RemoveButton type="button" onClick={onFollowingClick}>
-        팔로잉
-      </RemoveButton>
+      {isFollowing ? (
+        <RemoveButton
+          type="button"
+          onClick={onFollowingClick}
+          disabled={followLoading}
+        >
+          {followLoading ? "처리중" : "팔로잉"}
+        </RemoveButton>
+      ) : (
+        <FollowButton
+          type="button"
+          onClick={onFollowClick}
+          disabled={followLoading}
+        >
+          {followLoading ? "처리중" : "팔로우"}
+        </FollowButton>
+      )}
     </ItemContainer>
   );
 };

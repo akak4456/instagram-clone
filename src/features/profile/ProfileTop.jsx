@@ -105,6 +105,7 @@ const ProfileTop = ({ user, refreshProfileUser }) => {
           following={user.following}
           profileUserId={user.userId}
           currentUserId={currentUser.userId}
+          currentUserFollowingIds={currentUserData.following || []}
           onRemoved={refreshProfileUser}
         />
       )}

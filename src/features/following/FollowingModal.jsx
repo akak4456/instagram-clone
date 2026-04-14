@@ -23,13 +23,15 @@ const FollowingModal = ({
   following = [],
   profileUserId,
   currentUserId,
+  currentUserFollowingIds = [],
   onRemoved,
 }) => {
-  const { unfollowUser } = useUser();
+  const { followUser, unfollowUser } = useUser();
 
   const [keyword, setKeyword] = useState("");
   const [selectedFollowingUser, setSelectedFollowingUser] = useState(null);
   const [removeLoading, setRemoveLoading] = useState(false);
+  const [followLoadingUserId, setFollowLoadingUserId] = useState(null);
 
   const debouncedKeyword = useDebounce(keyword, 300);
 
@@ -61,7 +63,7 @@ const FollowingModal = ({
     setRemoveLoading(true);
 
     const result = await unfollowUser({
-      currentUserId,
+      profileUserId: currentUserId,
       targetUserId: selectedFollowingUser.userId,
     });
 
@@ -73,6 +75,28 @@ const FollowingModal = ({
     }
 
     setRemoveLoading(false);
+  };
+
+  const handleFollow = async (targetUser) => {
+    if (!targetUser || followLoadingUserId) return;
+
+    setFollowLoadingUserId(targetUser.userId);
+
+    try {
+      const result = await followUser({
+        currentUserId,
+        targetUserId: targetUser.userId,
+      });
+
+      if (!result?.success) {
+        alert(result?.message || "팔로우에 실패했습니다.");
+        return;
+      }
+
+      await onRemoved?.();
+    } finally {
+      setFollowLoadingUserId(null);
+    }
   };
 
   if (!open) return null;
@@ -105,15 +129,27 @@ const FollowingModal = ({
 
             <FollowerList>
               {filteredFollowing.length > 0 ? (
-                filteredFollowing.map((followingUser) => (
-                  <FollowingListItem
-                    key={followingUser.userId}
-                    user={followingUser}
-                    onFollowingClick={() =>
-                      handleOpenConfirmModal(followingUser)
-                    }
-                  />
-                ))
+                filteredFollowing.map((followingUser) => {
+                  const isFollowing = currentUserFollowingIds.includes(
+                    followingUser.userId,
+                  );
+
+                  return (
+                    <FollowingListItem
+                      key={followingUser.userId}
+                      user={followingUser}
+                      isFollowing={isFollowing}
+                      onFollowClick={() => handleFollow(followingUser)}
+                      onFollowingClick={() =>
+                        handleOpenConfirmModal(followingUser)
+                      }
+                      followLoading={
+                        followLoadingUserId === followingUser.userId ||
+                        removeLoading
+                      }
+                    />
+                  );
+                })
               ) : (
                 <EmptyText>검색 결과가 없습니다.</EmptyText>
               )}
