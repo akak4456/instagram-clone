@@ -17,10 +17,11 @@ import {
   ProfileTextSection,
 } from "../../styles/features/profile.styles";
 import FollowerModal from "../follower/FollowerModal";
+import useScrollLock from "../../hooks/useScrollLock";
 
 const ProfileTop = ({ user }) => {
   const [followerModalOpen, setFollowerModalOpen] = useState(false);
-  console.log(followerModalOpen);
+  useScrollLock(followerModalOpen);
   return (
     <ProfileTopContainer>
       <ProfileHeader>
@@ -67,6 +68,7 @@ const ProfileTop = ({ user }) => {
         <FollowerModal
           open={followerModalOpen}
           onClose={() => setFollowerModalOpen(false)}
+          followers={user.followers}
         />
       )}
     </ProfileTopContainer>
