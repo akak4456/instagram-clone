@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { useUser } from "../../hooks/useUser";
 import useDebounce from "../../hooks/useDebounce";
 import {
@@ -26,6 +27,8 @@ const SearchPanel = ({ open, onClose }) => {
   const [recentUsers, setRecentUsers] = useState([]);
 
   const debouncedKeyword = useDebounce(keyword, 300);
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     setRecentUsers(loadRecentUsers(RECENT_SEARCH_USERS_KEY));
@@ -62,12 +65,12 @@ const SearchPanel = ({ open, onClose }) => {
 
   const handleClickSearchUser = (user) => {
     handleSaveRecentUser(user);
-    console.log("선택한 유저:", user);
+    navigate("/profile/" + user.userId);
   };
 
   const handleClickRecentUser = (user) => {
     handleSaveRecentUser(user);
-    console.log("최근 검색 유저 클릭:", user);
+    navigate("/profile/" + user.userId);
   };
 
   const handleRemoveRecentUser = (userId) => {
