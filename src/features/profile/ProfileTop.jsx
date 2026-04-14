@@ -17,12 +17,14 @@ import {
   ProfileTextSection,
 } from "../../styles/features/profile.styles";
 import FollowerModal from "../follower/FollowerModal";
+import FollowingModal from "../following/FollowingModal";
 import useScrollLock from "../../hooks/useScrollLock";
 
 const ProfileTop = ({ user, refreshProfileUser }) => {
   const [followerModalOpen, setFollowerModalOpen] = useState(false);
+  const [followingModalOpen, setFollowingModalOpen] = useState(false);
 
-  useScrollLock(followerModalOpen);
+  useScrollLock(followerModalOpen || followingModalOpen);
 
   return (
     <ProfileTopContainer>
@@ -55,7 +57,10 @@ const ProfileTop = ({ user, refreshProfileUser }) => {
                 팔로워 <strong>{user.followers.length}</strong>
               </ProfileStatItem>
 
-              <ProfileStatItem clickable>
+              <ProfileStatItem
+                clickable
+                onClick={() => setFollowingModalOpen(true)}
+              >
                 팔로우 <strong>{user.following.length}</strong>
               </ProfileStatItem>
             </ProfileStatsRow>
@@ -75,6 +80,16 @@ const ProfileTop = ({ user, refreshProfileUser }) => {
           open={followerModalOpen}
           onClose={() => setFollowerModalOpen(false)}
           followers={user.followers}
+          profileUserId={user.userId}
+          onRemoved={refreshProfileUser}
+        />
+      )}
+
+      {followingModalOpen && (
+        <FollowingModal
+          open={followingModalOpen}
+          onClose={() => setFollowingModalOpen(false)}
+          following={user.following}
           profileUserId={user.userId}
           onRemoved={refreshProfileUser}
         />
