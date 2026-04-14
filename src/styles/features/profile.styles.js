@@ -87,6 +87,7 @@ export const ProfileStatsRow = styled.div`
 export const ProfileStatItem = styled.div`
   font-size: 14px;
   line-height: 1.4;
+  cursor: ${({ clickable }) => (clickable ? "pointer" : "default")};
 
   strong {
     margin-left: 4px;
