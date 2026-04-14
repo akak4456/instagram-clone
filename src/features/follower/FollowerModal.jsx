@@ -21,7 +21,7 @@ const FollowerModal = ({
   open,
   onClose,
   followers = [],
-  profileUserId,
+  currentUserId,
   onRemoved,
 }) => {
   const { removeFollower } = useUser();
@@ -60,7 +60,7 @@ const FollowerModal = ({
     setRemoveLoading(true);
 
     const result = await removeFollower({
-      profileUserId,
+      currentUserId,
       followerUserId: selectedFollower.userId,
     });
 

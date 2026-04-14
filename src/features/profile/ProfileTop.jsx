@@ -19,8 +19,10 @@ import {
 import FollowerModal from "../follower/FollowerModal";
 import FollowingModal from "../following/FollowingModal";
 import useScrollLock from "../../hooks/useScrollLock";
+import { useAuth } from "../../hooks/useAuth";
 
 const ProfileTop = ({ user, refreshProfileUser }) => {
+  const { user: currentUser } = useAuth();
   const [followerModalOpen, setFollowerModalOpen] = useState(false);
   const [followingModalOpen, setFollowingModalOpen] = useState(false);
 
@@ -80,7 +82,7 @@ const ProfileTop = ({ user, refreshProfileUser }) => {
           open={followerModalOpen}
           onClose={() => setFollowerModalOpen(false)}
           followers={user.followers}
-          profileUserId={user.userId}
+          currentUserId={currentUser.userId}
           onRemoved={refreshProfileUser}
         />
       )}
@@ -90,7 +92,7 @@ const ProfileTop = ({ user, refreshProfileUser }) => {
           open={followingModalOpen}
           onClose={() => setFollowingModalOpen(false)}
           following={user.following}
-          profileUserId={user.userId}
+          currentUserId={currentUser.userId}
           onRemoved={refreshProfileUser}
         />
       )}
