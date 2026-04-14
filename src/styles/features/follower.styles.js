@@ -174,3 +174,96 @@ export const EmptyText = styled.div`
   color: #8e8e8e;
   font-size: 14px;
 `;
+
+export const ConfirmOverlay = styled.div`
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+`;
+
+export const ConfirmModalBox = styled.div`
+  width: 580px;
+  max-width: 92vw;
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 28px;
+`;
+
+export const ConfirmProfileImage = styled.img`
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 24px;
+`;
+
+export const ConfirmProfileImageFallback = styled.div`
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: #dbdbdb;
+  margin-bottom: 24px;
+`;
+
+export const ConfirmTitle = styled.h3`
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: #111;
+  text-align: center;
+`;
+
+export const ConfirmDescription = styled.p`
+  margin: 16px 24px 28px;
+  font-size: 14px;
+  color: #737373;
+  text-align: center;
+  line-height: 1.5;
+
+  strong {
+    color: #262626;
+    font-weight: 500;
+  }
+`;
+
+export const ConfirmActionButton = styled.button`
+  width: 100%;
+  height: 46px;
+  border: none;
+  border-top: 1px solid #dbdbdb;
+  background: white;
+  color: #ed4956;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+`;
+
+export const ConfirmCancelButton = styled.button`
+  width: 100%;
+  height: 46px;
+  border: none;
+  border-top: 1px solid #dbdbdb;
+  background: white;
+  color: #262626;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+`;

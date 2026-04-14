@@ -8,6 +8,7 @@ import {
   fetchUserReelsApi,
   fetchUserSavedPostsApi,
   fetchUserTaggedPostsApi,
+  removeFollowerApi,
 } from "../mocks/api";
 
 export const UserContext = createContext();
@@ -76,6 +77,19 @@ export const UserProvider = ({ children }) => {
     return result;
   };
 
+  const removeFollower = async ({ profileUserId, followerUserId }) => {
+    setUserLoading(true);
+    const result = await removeFollowerApi({ profileUserId, followerUserId });
+
+    if (result.success) {
+      const refreshedUsers = await fetchUsersApi();
+      setUsers(refreshedUsers);
+    }
+
+    setUserLoading(false);
+    return result;
+  };
+
   useEffect(() => {
     fetchUsers();
   }, []);
@@ -93,6 +107,7 @@ export const UserProvider = ({ children }) => {
         getUserReels,
         getUserSavedPosts,
         getUserTaggedPosts,
+        removeFollower,
       }}
     >
       {children}

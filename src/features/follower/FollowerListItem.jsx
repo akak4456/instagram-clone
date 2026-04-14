@@ -7,11 +7,10 @@ import {
   UsernameRow,
   Username,
   UserIdText,
-  FollowBadge,
   RemoveButton,
 } from "../../styles/features/follower.styles";
 
-const FollowerListItem = ({ user }) => {
+const FollowerListItem = ({ user, onRemoveClick }) => {
   return (
     <ItemContainer>
       <LeftSection>
@@ -24,13 +23,14 @@ const FollowerListItem = ({ user }) => {
         <UserTextSection>
           <UsernameRow>
             <Username>{user.username}</Username>
-            <FollowBadge>· 팔로우</FollowBadge>
           </UsernameRow>
           <UserIdText>{user.userId}</UserIdText>
         </UserTextSection>
       </LeftSection>
 
-      <RemoveButton type="button">삭제</RemoveButton>
+      <RemoveButton type="button" onClick={onRemoveClick}>
+        삭제
+      </RemoveButton>
     </ItemContainer>
   );
 };

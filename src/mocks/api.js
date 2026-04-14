@@ -785,3 +785,49 @@ export const fetchUserTaggedPostsApi = (userId) => {
     }, 0);
   });
 };
+
+export const removeFollowerApi = ({ profileUserId, followerUserId }) => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      const profileUser = users.find((u) => u.userId === profileUserId);
+      const followerUser = users.find((u) => u.userId === followerUserId);
+
+      if (!profileUser) {
+        resolve({
+          success: false,
+          message: "프로필 유저를 찾을 수 없습니다.",
+        });
+        return;
+      }
+
+      if (!followerUser) {
+        resolve({
+          success: false,
+          message: "삭제할 팔로워 유저를 찾을 수 없습니다.",
+        });
+        return;
+      }
+
+      const isFollowing = followerUser.following?.includes(profileUserId);
+
+      if (!isFollowing) {
+        resolve({
+          success: false,
+          message: "해당 유저는 현재 이 프로필을 팔로우하고 있지 않습니다.",
+        });
+        return;
+      }
+
+      followerUser.following = followerUser.following.filter(
+        (followingUserId) => followingUserId !== profileUserId,
+      );
+
+      syncUsers();
+
+      resolve({
+        success: true,
+        message: "팔로워를 삭제했습니다.",
+      });
+    }, 0);
+  });
+};

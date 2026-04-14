@@ -19,9 +19,11 @@ import {
 import FollowerModal from "../follower/FollowerModal";
 import useScrollLock from "../../hooks/useScrollLock";
 
-const ProfileTop = ({ user }) => {
+const ProfileTop = ({ user, refreshProfileUser }) => {
   const [followerModalOpen, setFollowerModalOpen] = useState(false);
+
   useScrollLock(followerModalOpen);
+
   return (
     <ProfileTopContainer>
       <ProfileHeader>
@@ -45,12 +47,14 @@ const ProfileTop = ({ user }) => {
               <ProfileStatItem clickable={false}>
                 게시물 <strong>{user.postsCount}</strong>
               </ProfileStatItem>
+
               <ProfileStatItem
                 clickable
                 onClick={() => setFollowerModalOpen(true)}
               >
                 팔로워 <strong>{user.followers.length}</strong>
               </ProfileStatItem>
+
               <ProfileStatItem clickable>
                 팔로우 <strong>{user.following.length}</strong>
               </ProfileStatItem>
@@ -60,15 +64,19 @@ const ProfileTop = ({ user }) => {
           </ProfileTextSection>
         </ProfileInfoSection>
       </ProfileHeader>
+
       <ProfileActionButtonRow>
         <ProfileActionButton>프로필 편집</ProfileActionButton>
         <ProfileActionButton>보관된 스토리 보기</ProfileActionButton>
       </ProfileActionButtonRow>
+
       {followerModalOpen && (
         <FollowerModal
           open={followerModalOpen}
           onClose={() => setFollowerModalOpen(false)}
           followers={user.followers}
+          profileUserId={user.userId}
+          onRemoved={refreshProfileUser}
         />
       )}
     </ProfileTopContainer>

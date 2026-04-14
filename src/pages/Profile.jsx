@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import { useParams } from "react-router-dom";
 import { useUser } from "../hooks/useUser";
 import ProfileTop from "../features/profile/ProfileTop";
@@ -9,7 +9,7 @@ import {
 } from "../styles/features/profile.styles";
 
 const Profile = () => {
-  const { userId } = useParams(); // ✅ URL에서 userId 추출
+  const { userId } = useParams();
   const {
     getUser,
     getUserPosts,
@@ -27,30 +27,27 @@ const Profile = () => {
     tagged: [],
   });
 
-  // ✅ 유저 정보 조회
+  const fetchProfileUser = useCallback(async () => {
+    if (!userId) return;
+
+    const result = await getUser(userId);
+    if (result.success) {
+      setProfileUser(result.user);
+    } else {
+      setProfileUser(null);
+    }
+  }, [userId, getUser]);
+
   useEffect(() => {
-    const fetchProfileUser = async () => {
-      if (!userId) return;
-
-      const result = await getUser(userId);
-      if (result.success) {
-        setProfileUser(result.user);
-      } else {
-        setProfileUser(null);
-      }
-    };
-
     fetchProfileUser();
-  }, [userId]);
+  }, [fetchProfileUser]);
 
-  // ✅ 탭 데이터 조회 (필요할 때만)
   useEffect(() => {
     const fetchTabData = async () => {
       if (!userId) return;
 
       let result;
 
-      // 이미 데이터가 있으면 다시 호출하지 않도록 캐싱
       if (activeTab === "posts" && tabData.posts.length === 0) {
         result = await getUserPosts(userId);
         if (result.success) {
@@ -89,7 +86,7 @@ const Profile = () => {
 
   return (
     <ProfilePageContainer>
-      <ProfileTop user={profileUser} />
+      <ProfileTop user={profileUser} refreshProfileUser={fetchProfileUser} />
       <ProfileBottom
         activeTab={activeTab}
         setActiveTab={setActiveTab}
