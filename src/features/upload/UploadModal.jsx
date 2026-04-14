@@ -3,9 +3,9 @@ import { createPortal } from "react-dom";
 import ConfirmModal from "../../components/ConfirmModal";
 import { useAuth } from "../../hooks/useAuth";
 import { usePost } from "../../hooks/usePost";
-import { fileToDataUrl } from "../../utils/fileUtils";
 import UploadEmptyState from "./UploadEmptyState";
 import UploadPreviewSection from "./UploadPreviewSection";
+import { uploadPostImagesToFirebase } from "../../utils/uploadPostImages";
 import {
   Overlay,
   ModalBox,
@@ -23,6 +23,7 @@ const UploadModal = ({ open, onClose }) => {
   const [confirmOpen, setConfirmOpen] = useState(false);
   const [files, setFiles] = useState([]);
   const [caption, setCaption] = useState("");
+  const [uploading, setUploading] = useState(false);
 
   const inputRef = useRef(null);
 
@@ -31,12 +32,14 @@ const UploadModal = ({ open, onClose }) => {
       files.forEach((f) => URL.revokeObjectURL(f.preview));
       setFiles([]);
       setCaption("");
+      setUploading(false);
     }
   }, [open]);
 
   if (!open) return null;
 
   const openFileSelector = () => {
+    if (uploading) return;
     inputRef.current?.click();
   };
 
@@ -49,18 +52,10 @@ const UploadModal = ({ open, onClose }) => {
       return;
     }
 
-    const mappedFiles = await Promise.all(
-      newFiles.map(async (file) => {
-        const preview = URL.createObjectURL(file);
-        const dataUrl = await fileToDataUrl(file);
-
-        return {
-          file,
-          preview,
-          dataUrl,
-        };
-      }),
-    );
+    const mappedFiles = newFiles.map((file) => ({
+      file,
+      preview: URL.createObjectURL(file),
+    }));
 
     setFiles((prev) => [...prev, ...mappedFiles]);
   };
@@ -72,6 +67,7 @@ const UploadModal = ({ open, onClose }) => {
 
   const handleDrop = async (e) => {
     e.preventDefault();
+    if (uploading) return;
     await handleFiles(e.dataTransfer.files);
   };
 
@@ -80,6 +76,8 @@ const UploadModal = ({ open, onClose }) => {
   };
 
   const handleRemoveFile = (index) => {
+    if (uploading) return;
+
     setFiles((prev) => {
       URL.revokeObjectURL(prev[index].preview);
       return prev.filter((_, i) => i !== index);
@@ -87,20 +85,36 @@ const UploadModal = ({ open, onClose }) => {
   };
 
   const handleShare = async () => {
-    if (files.length === 0) return;
+    if (files.length === 0 || uploading) return;
 
-    const images = files.map((fileItem) => fileItem.dataUrl);
+    try {
+      setUploading(true);
 
-    await addPost({
-      user,
-      images,
-      caption,
-    });
+      const imageUrls = await uploadPostImagesToFirebase({
+        userId: user.userId,
+        files: files.map((item) => item.file),
+      });
 
-    onClose();
+      console.log(imageUrls);
+
+      await addPost({
+        user,
+        images: imageUrls,
+        caption,
+      });
+
+      onClose();
+    } catch (error) {
+      console.error("이미지 업로드 실패:", error);
+      alert("이미지 업로드 중 오류가 발생했습니다.");
+    } finally {
+      setUploading(false);
+    }
   };
 
   const handleOverlayClick = () => {
+    if (uploading) return;
+
     if (files.length > 0) {
       setConfirmOpen(true);
       return;
@@ -119,8 +133,12 @@ const UploadModal = ({ open, onClose }) => {
           <Header>
             새 게시물 만들기
             {files.length > 0 && (
-              <ShareBtn type="button" onClick={handleShare}>
-                공유하기
+              <ShareBtn
+                type="button"
+                onClick={handleShare}
+                disabled={uploading}
+              >
+                {uploading ? "업로드 중..." : "공유하기"}
               </ShareBtn>
             )}
           </Header>
