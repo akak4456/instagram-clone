@@ -123,14 +123,14 @@ export const ProfileActionButton = styled.button`
 `;
 
 export const ProfileBottomContainer = styled.div`
-  max-width: 980px;
+  width: 1200px;
   margin: 0 auto;
 `;
 
 export const ProfileTabBar = styled.div`
   display: flex;
   justify-content: center;
-  border-top: 1px solid #dbdbdb;
+  gap: 120px;
 `;
 
 export const ProfileTabButton = styled.button`
@@ -143,19 +143,19 @@ export const ProfileTabButton = styled.button`
   background: transparent;
   cursor: pointer;
   color: ${({ $active }) => ($active ? "#000" : "#8e8e8e")};
-  border-top: ${({ $active }) =>
-    $active ? "1px solid #000" : "1px solid transparent"};
+  border-bottom: ${({ $active }) =>
+    $active ? "2px solid #000" : "2px solid transparent"};
   margin-top: -1px;
 `;
 
 export const ProfileGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 4px;
 `;
 
 export const ProfileGridItem = styled.div`
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 9 / 16;
   background: #efefef;
   overflow: hidden;
   cursor: pointer;

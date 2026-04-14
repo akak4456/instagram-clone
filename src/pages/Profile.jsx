@@ -11,7 +11,6 @@ import {
 const Profile = () => {
   const { userId } = useParams(); // ✅ URL에서 userId 추출
   const {
-    userLoading,
     getUser,
     getUserPosts,
     getUserReels,
