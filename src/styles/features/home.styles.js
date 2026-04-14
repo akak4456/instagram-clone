@@ -18,6 +18,7 @@ export const Left = styled.div`
   display: flex;
   align-items: center;
   gap: 8px;
+  cursor: pointer;
 `;
 
 export const Username = styled.div`

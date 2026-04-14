@@ -1,4 +1,5 @@
-import { useState, useEffect, useRef } from "react";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { usePost } from "../../hooks/usePost";
 import postComment from "../../assets/post-comment.png";
 import postRepost from "../../assets/post-repost.png";
@@ -28,6 +29,7 @@ import {
 const FeedItem = ({ post }) => {
   const { toggleLike, toggleBookmark } = usePost();
   const { user } = useAuth();
+  const navigate = useNavigate();
 
   const userId = user.userId;
   const isLiked = post.likes.some((l) => l.userId === userId);
@@ -42,7 +44,7 @@ const FeedItem = ({ post }) => {
     <Wrapper>
       {/* Header */}
       <Header>
-        <Left>
+        <Left onClick={() => navigate("/profile/" + post.user.userId)}>
           <ProfileImage user={post.user} />
           <Username>{post.user.username}</Username>
           <Time>• {getTimeDiff(post.createdAt)}</Time>
