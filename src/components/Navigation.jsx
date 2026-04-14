@@ -11,6 +11,7 @@ import hamburger from "../assets/hamburger.png";
 import UploadModal from "../features/upload/UploadModal";
 import SearchPanel from "../features/search/SearchPanel";
 import useScrollLock from "../hooks/useScrollLock";
+import { useAuth } from "../hooks/useAuth";
 import {
   NavWrapper,
   NavContainer,
@@ -24,9 +25,12 @@ import {
   PopupItem,
   Divider,
   SearchPanelContainer,
+  NavigationProfileWrapper,
+  NavigationProfile,
 } from "../styles/components/Navigation.styles";
 
 const Navigation = () => {
+  const { user } = useAuth();
   const location = useLocation();
   const pathname = location.pathname;
 
@@ -110,6 +114,23 @@ const Navigation = () => {
             >
               <img src={upload} alt="upload" />
               <Label $expanded={isExpanded}>만들기</Label>
+            </NavItem>
+            <NavItem
+              as={Link}
+              to={`/profile/${user.userId}`}
+              onClick={() => {
+                setIsMoreOpen(false);
+              }}
+            >
+              <NavigationProfileWrapper>
+                <NavigationProfile src={user.profileImage} alt="profile" />
+              </NavigationProfileWrapper>
+              <Label
+                $expanded={isExpanded}
+                $active={pathname.startsWith("/profile/")}
+              >
+                프로필
+              </Label>
             </NavItem>
           </Middle>
 

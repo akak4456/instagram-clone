@@ -116,3 +116,19 @@ export const Label = styled.span`
   transition: all 0.3s ease;
   font-weight: ${({ $active }) => ($active ? "700" : "400")};
 `;
+
+export const NavigationProfileWrapper = styled.div`
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+`;
+
+export const NavigationProfile = styled.img`
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center 70%;
+`;
