@@ -1,29 +1,30 @@
-import { useState, useRef, useEffect } from "react";
+import { useState } from "react";
 import postLikeFill from "../assets/post-like-fill.png";
 import postLike from "../assets/post-like.png";
 import { LikeIconImg } from "../styles/components/LikeIcon.styles";
 
 const LikeIcon = ({ isLiked, onClick, width }) => {
   const [animateLike, setAnimateLike] = useState(false);
-  const firstRender = useRef(true);
 
-  useEffect(() => {
-    if (firstRender.current) {
-      // 첫 렌더링일 때는 애니메이션 실행하지 않음
-      firstRender.current = false;
-      return;
-    }
+  const handleClick = (e) => {
+    // 애니메이션 실행
     setAnimateLike(true);
-    const timer = setTimeout(() => setAnimateLike(false), 300);
 
-    return () => clearTimeout(timer);
-  }, [isLiked]);
+    // 부모 컴포넌트의 클릭 이벤트 실행
+    if (onClick) {
+      onClick(e);
+    }
+
+    // 애니메이션 종료 (300ms 후)
+    setTimeout(() => setAnimateLike(false), 300);
+  };
+
   return (
     <LikeIconImg
       src={isLiked ? postLikeFill : postLike}
       alt="post-like"
       animate={animateLike}
-      onClick={onClick}
+      onClick={handleClick}
       $width={width}
     />
   );
