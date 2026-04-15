@@ -1,24 +1,52 @@
 import styled, { keyframes, css } from "styled-components";
 
-const slideUpIn = keyframes`
+const CARD_GAP = "2vh";
+const CARD_WIDTH = "480px";
+const CARD_HEIGHT = "96vh";
+const SIDE_WIDTH = "72px";
+const SCENE_WIDTH = `calc(${CARD_WIDTH} + 24px + ${SIDE_WIDTH})`;
+
+const currentToUp = keyframes`
   from {
-    opacity: 0;
-    transform: translateY(80px);
+    transform: translateY(0) scale(1);
+    opacity: 1;
   }
   to {
-    opacity: 1;
-    transform: translateY(0);
+    transform: translateY(calc(-100% - ${CARD_GAP})) scale(0.985);
+    opacity: 0.92;
   }
 `;
 
-const slideDownIn = keyframes`
+const nextFromDown = keyframes`
   from {
-    opacity: 0;
-    transform: translateY(-80px);
+    transform: translateY(calc(100% + ${CARD_GAP})) scale(1.015);
+    opacity: 0.92;
   }
   to {
+    transform: translateY(0) scale(1);
     opacity: 1;
-    transform: translateY(0);
+  }
+`;
+
+const currentToDown = keyframes`
+  from {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(calc(100% + ${CARD_GAP})) scale(0.985);
+    opacity: 0.92;
+  }
+`;
+
+const nextFromUp = keyframes`
+  from {
+    transform: translateY(calc(-100% - ${CARD_GAP})) scale(1.015);
+    opacity: 0.92;
+  }
+  to {
+    transform: translateY(0) scale(1);
+    opacity: 1;
   }
 `;
 
@@ -39,27 +67,74 @@ export const ReelsCenterArea = styled.div`
   align-items: center;
 `;
 
-export const ReelViewerWrapper = styled.div`
+export const ReelsStage = styled.div`
+  width: ${SCENE_WIDTH};
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   gap: 24px;
+`;
+
+export const ReelScene = styled.div`
+  position: relative;
+  width: ${CARD_WIDTH};
+  height: ${CARD_HEIGHT};
+  overflow: hidden;
+  border-radius: 8px;
+  flex-shrink: 0;
+`;
+
+export const AnimatedReelLayer = styled.div`
+  position: absolute;
+  inset: 0;
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+
+  ${({ $role, $direction, $isAnimating }) => {
+    if (!$isAnimating) return "";
+
+    if ($direction === "down") {
+      if ($role === "current") {
+        return css`
+          animation: ${currentToUp} 0.45s cubic-bezier(0.22, 1, 0.36, 1)
+            forwards;
+        `;
+      }
+
+      if ($role === "next") {
+        return css`
+          animation: ${nextFromDown} 0.45s cubic-bezier(0.22, 1, 0.36, 1)
+            forwards;
+        `;
+      }
+    }
+
+    if ($direction === "up") {
+      if ($role === "current") {
+        return css`
+          animation: ${currentToDown} 0.45s cubic-bezier(0.22, 1, 0.36, 1)
+            forwards;
+        `;
+      }
+
+      if ($role === "next") {
+        return css`
+          animation: ${nextFromUp} 0.45s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+        `;
+      }
+    }
+
+    return "";
+  }}
 `;
 
 export const ReelCard = styled.div`
   position: relative;
-  width: 480px;
-  height: 95vh;
+  width: 100%;
+  height: 100%;
   border-radius: 8px;
   overflow: hidden;
-
-  ${({ $direction }) =>
-    $direction === "down"
-      ? css`
-          animation: ${slideUpIn} 0.45s ease;
-        `
-      : css`
-          animation: ${slideDownIn} 0.45s ease;
-        `}
+  background: #111;
 `;
 
 export const ReelMediaArea = styled.div`
@@ -74,6 +149,15 @@ export const ReelMediaArea = styled.div`
   color: white;
   font-size: 20px;
   font-weight: 600;
+`;
+
+export const ReelMediaImage = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  user-select: none;
+  -webkit-user-drag: none;
 `;
 
 export const ReelMediaText = styled.div`
@@ -126,11 +210,13 @@ export const ReelCaption = styled.div`
 `;
 
 export const SideActionsContainer = styled.div`
+  width: ${SIDE_WIDTH};
+  height: ${CARD_HEIGHT};
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   gap: 18px;
-  height: 760px;
+  flex-shrink: 0;
 `;
 
 export const SideActionItem = styled.button`
@@ -198,11 +284,4 @@ export const EmptyState = styled.div`
   font-size: 18px;
   font-weight: 600;
   color: #555;
-`;
-
-export const ReelMediaImage = styled.img`
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* 릴스처럼 화면을 꽉 채움 */
-  display: block;
 `;
