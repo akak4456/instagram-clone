@@ -106,7 +106,11 @@ export const ReelProfileCircle = styled.div`
   width: 34px;
   height: 34px;
   border-radius: 50%;
-  background: #d9d9d9;
+  background-color: #d9d9d9;
+  background-image: ${({ $image }) => ($image ? `url(${$image})` : "none")};
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   flex-shrink: 0;
 `;
 

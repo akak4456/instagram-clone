@@ -20,6 +20,8 @@ const ReelsViewer = ({ post, direction }) => {
 
   const imageUrl = post?.images?.[0];
 
+  const profileImage = post?.user?.profileImage;
+
   return (
     <ReelViewerWrapper>
       <ReelCard $direction={direction}>
@@ -36,7 +38,7 @@ const ReelsViewer = ({ post, direction }) => {
 
         <ReelBottomOverlay>
           <ReelUserRow>
-            <ReelProfileCircle />
+            <ReelProfileCircle $image={profileImage} />
             <ReelUsername>@{username}</ReelUsername>
           </ReelUserRow>
 
