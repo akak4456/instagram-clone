@@ -58,8 +58,8 @@ const FeedItem = ({ post }) => {
       {/* Actions */}
       <Actions>
         <ActionLeft>
-          <ActionItem onClick={handleLike}>
-            <LikeIcon isLiked={isLiked} />
+          <ActionItem>
+            <LikeIcon isLiked={isLiked} onClick={handleLike} />
             <span>{post.likes.length}</span>
           </ActionItem>
           <ActionItem onClick={() => setReplyModalOpen(true)}>

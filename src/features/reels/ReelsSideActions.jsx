@@ -4,17 +4,30 @@ import {
   SideActionIcon,
   SideActionCount,
 } from "../../styles/features/reels.styles";
+import LikeIcon from "../../components/LikeIcon";
+import { useAuth } from "../../hooks/useAuth";
+import { usePost } from "../../hooks/usePost";
 
 const ReelsSideActions = ({
+  post,
   likeCount = 0,
   commentCount = 0,
   shareCount = 0,
   isBookmarked = false,
 }) => {
+  const { user } = useAuth();
+  const { toggleLike, toggleBookmark } = usePost();
+
+  const userId = user.userId;
+  const isLiked = post.likes.some((l) => l.userId === userId);
+
+  const handleLike = () => {
+    toggleLike(post.id, userId);
+  };
   return (
     <SideActionsContainer>
       <SideActionItem type="button">
-        <SideActionIcon>좋아요</SideActionIcon>
+        <LikeIcon isLiked={isLiked} onClick={handleLike} />
         <SideActionCount>{likeCount}</SideActionCount>
       </SideActionItem>
 

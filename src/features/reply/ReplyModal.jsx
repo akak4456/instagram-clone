@@ -96,8 +96,8 @@ const ReplyModal = ({ open, onClose, post }) => {
           <ReplyBottomDiv>
             <Actions>
               <ActionLeft>
-                <ActionItem onClick={handleLike}>
-                  <LikeIcon isLiked={isLiked} />
+                <ActionItem>
+                  <LikeIcon isLiked={isLiked} onClick={handleLike} />
                 </ActionItem>
                 <ActionItem>
                   <img src={postComment} alt="post-comment" />

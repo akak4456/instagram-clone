@@ -180,6 +180,7 @@ const Reels = () => {
           </ReelScene>
 
           <ReelsSideActions
+            post={currentPost}
             likeCount={likeCount}
             commentCount={commentCount}
             shareCount={shareCount}
