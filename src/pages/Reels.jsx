@@ -12,12 +12,15 @@ import {
   ReelScene,
   AnimatedReelLayer,
 } from "../styles/features/reels.styles";
+import reelsArrowUp from "../assets/reels-arrow-up.png";
+import reelsArrowDown from "../assets/reels-arrow-down.png";
 
 const ANIMATION_DURATION = 450;
 const WHEEL_COOLDOWN = 700;
+const PREFETCH_THRESHOLD = 2; // 마지막 2장 남았을 때 미리 로드
 
 const Reels = () => {
-  const { posts } = usePost();
+  const { posts, loadPosts, hasMore, postLoading } = usePost();
 
   const reelsPosts = posts ?? [];
 
@@ -29,6 +32,9 @@ const Reels = () => {
   const isCoolingRef = useRef(false);
   const animationTimeoutRef = useRef(null);
   const cooldownTimeoutRef = useRef(null);
+
+  // 같은 길이의 리스트에 대해 중복 prefetch 방지
+  const prefetchedLengthRef = useRef(null);
 
   const currentPost = reelsPosts[currentIndex];
   const incomingPost = nextIndex !== null ? reelsPosts[nextIndex] : null;
@@ -67,7 +73,7 @@ const Reels = () => {
     if (!reelsPosts.length) return;
 
     if (currentIndex > reelsPosts.length - 1) {
-      setCurrentIndex(0);
+      setCurrentIndex(Math.max(reelsPosts.length - 1, 0));
       setNextIndex(null);
       setIsAnimating(false);
     }
@@ -90,6 +96,39 @@ const Reels = () => {
       window.removeEventListener("wheel", handleWheel);
     };
   }, [isAnimating, currentIndex, reelsPosts.length]);
+
+  useEffect(() => {
+    if (!reelsPosts.length) return;
+    if (!hasMore) return;
+    if (postLoading) return;
+    if (isAnimating) return;
+
+    const triggerIndex = Math.max(reelsPosts.length - PREFETCH_THRESHOLD, 0);
+    const shouldPrefetch = currentIndex >= triggerIndex;
+
+    if (!shouldPrefetch) return;
+
+    // 현재 posts 길이에 대해 이미 prefetch 했으면 재호출 방지
+    if (prefetchedLengthRef.current === reelsPosts.length) return;
+
+    prefetchedLengthRef.current = reelsPosts.length;
+    loadPosts();
+  }, [
+    currentIndex,
+    reelsPosts.length,
+    hasMore,
+    postLoading,
+    isAnimating,
+    loadPosts,
+  ]);
+
+  // posts 길이가 실제로 늘어나면 다음 길이에 대해 다시 prefetch 가능하도록 유지
+  // 별도 초기화 없이 "현재 길이 기준 1회" 방식으로 동작
+  useEffect(() => {
+    if (!reelsPosts.length) {
+      prefetchedLengthRef.current = null;
+    }
+  }, [reelsPosts.length]);
 
   useEffect(() => {
     return () => {
@@ -155,7 +194,7 @@ const Reels = () => {
           disabled={currentIndex === 0 || isAnimating}
           aria-label="이전 릴스"
         >
-          ↑
+          <img src={reelsArrowUp} alt="reels-arrow-up" />
         </ReelsNavButton>
 
         <ReelsNavButton
@@ -163,7 +202,7 @@ const Reels = () => {
           disabled={currentIndex === reelsPosts.length - 1 || isAnimating}
           aria-label="다음 릴스"
         >
-          ↓
+          <img src={reelsArrowDown} alt="reels-arrow-down" />
         </ReelsNavButton>
       </ReelsNavButtons>
     </ReelsPageContainer>
