@@ -70,6 +70,7 @@ export const HomeTopProfileWrapper = styled.div`
   align-items: center;
   justify-content: center;
   margin: 0 auto; /* 🔥 이게 핵심 */
+  margin-top: 30px;
 `;
 
 export const Viewport = styled.div`

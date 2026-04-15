@@ -1,5 +1,7 @@
+import ReelsContainer from "../features/reels/ReelsContainer";
+
 const Reels = () => {
-  return <div>릴스</div>;
+  return <ReelsContainer />;
 };
 
 export default Reels;

@@ -8,6 +8,4 @@ export const Main = styled.main`
   position: absolute;
   left: 80px; /* Navigation width */
   width: calc(100% - 80px);
-  padding-top: 30px;
-  padding-bottom: 60px;
 `;
