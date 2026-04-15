@@ -77,7 +77,7 @@ export const ReelsStage = styled.div`
 export const ReelScene = styled.div`
   position: relative;
   width: ${CARD_WIDTH};
-  height: ${CARD_HEIGHT};
+  height: 100vh;
   overflow: hidden;
   border-radius: 8px;
   flex-shrink: 0;
@@ -85,6 +85,8 @@ export const ReelScene = styled.div`
 
 export const AnimatedReelLayer = styled.div`
   position: absolute;
+  height: ${CARD_HEIGHT};
+  margin-top: ${CARD_GAP};
   inset: 0;
   will-change: transform, opacity;
   backface-visibility: hidden;
