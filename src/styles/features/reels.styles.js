@@ -1,7 +1,200 @@
-import styled from "styled-components";
+import styled, { keyframes, css } from "styled-components";
 
-export const ReelsContainerDiv = styled.div`
+const slideUpIn = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(80px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`;
+
+const slideDownIn = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`;
+
+export const ReelsPageContainer = styled.div`
+  position: relative;
   width: 100%;
-  height: 100vh;
-  background-color: red;
+  min-height: 100vh;
+  background: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+`;
+
+export const ReelsCenterArea = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const ReelViewerWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 24px;
+`;
+
+export const ReelCard = styled.div`
+  position: relative;
+  width: 420px;
+  height: 760px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #222;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.16);
+
+  ${({ $direction }) =>
+    $direction === "down"
+      ? css`
+          animation: ${slideUpIn} 0.45s ease;
+        `
+      : css`
+          animation: ${slideDownIn} 0.45s ease;
+        `}
+`;
+
+export const ReelMediaArea = styled.div`
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, #4a4a4a 0%, #1f1f1f 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+`;
+
+export const ReelMediaText = styled.div`
+  text-align: center;
+`;
+
+export const ReelBottomOverlay = styled.div`
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 20px 18px 24px;
+  color: white;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.72) 100%
+  );
+  box-sizing: border-box;
+`;
+
+export const ReelUserRow = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+`;
+
+export const ReelProfileCircle = styled.div`
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #d9d9d9;
+  flex-shrink: 0;
+`;
+
+export const ReelUsername = styled.div`
+  font-size: 15px;
+  font-weight: 700;
+`;
+
+export const ReelCaption = styled.div`
+  font-size: 14px;
+  line-height: 1.45;
+  word-break: break-word;
+`;
+
+export const SideActionsContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 18px;
+  height: 760px;
+`;
+
+export const SideActionItem = styled.button`
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 0;
+`;
+
+export const SideActionIcon = styled.div`
+  min-width: 58px;
+  padding: 10px 8px;
+  border-radius: 999px;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  font-size: 13px;
+  font-weight: 700;
+  text-align: center;
+`;
+
+export const SideActionCount = styled.div`
+  font-size: 13px;
+  color: #222;
+  font-weight: 600;
+`;
+
+export const ReelsNavButtons = styled.div`
+  position: fixed;
+  right: 28px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+`;
+
+export const ReelsNavButton = styled.button`
+  width: 52px;
+  height: 52px;
+  border: none;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  font-size: 24px;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+
+  &:hover:not(:disabled) {
+    transform: scale(1.06);
+  }
+
+  &:disabled {
+    opacity: 0.45;
+    cursor: default;
+  }
+`;
+
+export const EmptyState = styled.div`
+  font-size: 18px;
+  font-weight: 600;
+  color: #555;
 `;
