@@ -220,6 +220,7 @@ export const SideActionsContainer = styled.div`
   justify-content: flex-end;
   gap: 18px;
   flex-shrink: 0;
+  margin-bottom: ${CARD_GAP};
 `;
 
 export const SideActionItem = styled.button`

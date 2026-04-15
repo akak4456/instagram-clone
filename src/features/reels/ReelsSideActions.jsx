@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   SideActionsContainer,
   SideActionItem,
@@ -7,16 +8,22 @@ import {
 import LikeIcon from "../../components/LikeIcon";
 import { useAuth } from "../../hooks/useAuth";
 import { usePost } from "../../hooks/usePost";
+import postComment from "../../assets/post-comment.png";
+import ReplyModal from "../reply/ReplyModal";
+import postRepost from "../../assets/post-repost.png";
+import postBookmark from "../../assets/post-bookmark.png";
+import postBookmarkFill from "../../assets/post-bookmark-fill.png";
 
 const ReelsSideActions = ({
   post,
   likeCount = 0,
   commentCount = 0,
-  shareCount = 0,
   isBookmarked = false,
 }) => {
   const { user } = useAuth();
   const { toggleLike, toggleBookmark } = usePost();
+
+  const [replyModalOpen, setReplyModalOpen] = useState(false);
 
   const userId = user.userId;
   const isLiked = post.likes.some((l) => l.userId === userId);
@@ -31,19 +38,32 @@ const ReelsSideActions = ({
         <SideActionCount>{likeCount}</SideActionCount>
       </SideActionItem>
 
-      <SideActionItem type="button">
-        <SideActionIcon>댓글</SideActionIcon>
+      <SideActionItem type="button" onClick={() => setReplyModalOpen(true)}>
+        <img src={postComment} alt="post-comment" />
         <SideActionCount>{commentCount}</SideActionCount>
       </SideActionItem>
 
       <SideActionItem type="button">
-        <SideActionIcon>공유</SideActionIcon>
-        <SideActionCount>{shareCount}</SideActionCount>
+        <img src={postRepost} alt="post-repost" />
+        <SideActionCount>100</SideActionCount>
       </SideActionItem>
 
-      <SideActionItem type="button">
-        <SideActionIcon>{isBookmarked ? "저장됨" : "저장"}</SideActionIcon>
+      <SideActionItem type="button" onClick={() => toggleBookmark(post.id)}>
+        <img
+          src={isBookmarked ? postBookmarkFill : postBookmark}
+          alt="post-bookmark"
+        />
       </SideActionItem>
+      {replyModalOpen && (
+        <ReplyModal
+          key={post.id}
+          open={replyModalOpen}
+          onClose={() => {
+            setReplyModalOpen(false);
+          }}
+          post={post}
+        />
+      )}
     </SideActionsContainer>
   );
 };
