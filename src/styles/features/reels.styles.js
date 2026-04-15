@@ -186,6 +186,7 @@ export const ReelUserRow = styled.div`
   align-items: center;
   gap: 10px;
   margin-bottom: 10px;
+  cursor: pointer;
 `;
 
 export const ReelProfileCircle = styled.div`
