@@ -48,12 +48,10 @@ export const ReelViewerWrapper = styled.div`
 
 export const ReelCard = styled.div`
   position: relative;
-  width: 420px;
-  height: 760px;
-  border-radius: 20px;
+  width: 480px;
+  height: 95vh;
+  border-radius: 8px;
   overflow: hidden;
-  background: #222;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.16);
 
   ${({ $direction }) =>
     $direction === "down"
@@ -197,4 +195,11 @@ export const EmptyState = styled.div`
   font-size: 18px;
   font-weight: 600;
   color: #555;
+`;
+
+export const ReelMediaImage = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 릴스처럼 화면을 꽉 채움 */
+  display: block;
 `;

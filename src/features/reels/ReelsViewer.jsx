@@ -3,6 +3,7 @@ import {
   ReelViewerWrapper,
   ReelCard,
   ReelMediaArea,
+  ReelMediaImage,
   ReelMediaText,
   ReelBottomOverlay,
   ReelUserRow,
@@ -17,13 +18,20 @@ const ReelsViewer = ({ post, direction }) => {
   const likeCount = post?.likes?.length || 0;
   const commentCount = post?.commentCount || 0;
 
+  const imageUrl = post?.images?.[0];
+
   return (
     <ReelViewerWrapper>
       <ReelCard $direction={direction}>
         <ReelMediaArea>
-          <ReelMediaText>Reel #{post.id}</ReelMediaText>
-          <ReelMediaText>이미지/영상 영역</ReelMediaText>
-          <ReelMediaText>지금은 텍스트로만 구현</ReelMediaText>
+          {imageUrl ? (
+            <ReelMediaImage src={imageUrl} alt={`Reel ${post.id}`} />
+          ) : (
+            <>
+              <ReelMediaText>Reel #{post.id}</ReelMediaText>
+              <ReelMediaText>이미지가 없습니다.</ReelMediaText>
+            </>
+          )}
         </ReelMediaArea>
 
         <ReelBottomOverlay>
