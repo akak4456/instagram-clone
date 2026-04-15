@@ -26,7 +26,6 @@ export const ReelsPageContainer = styled.div`
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background: #f7f7f7;
   display: flex;
   justify-content: center;
   align-items: center;
