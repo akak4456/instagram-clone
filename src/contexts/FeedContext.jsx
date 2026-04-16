@@ -1,4 +1,4 @@
-import { createContext, useCallback, useState, useRef } from "react";
+import { createContext, useCallback, useState, useRef, useMemo } from "react";
 import {
   getFeedPosts,
   likePost,
@@ -144,20 +144,28 @@ export const FeedProvider = ({ children }) => {
     }
   }, []);
 
-  return (
-    <FeedContext.Provider
-      value={{
-        posts,
-        postLoading,
-        loadPosts,
-        toggleLike,
-        hasMore,
-        increaseCommentCount,
-        toggleBookmark,
-        addPost,
-      }}
-    >
-      {children}
-    </FeedContext.Provider>
+  const value = useMemo(
+    () => ({
+      posts,
+      postLoading,
+      loadPosts,
+      toggleLike,
+      hasMore,
+      increaseCommentCount,
+      toggleBookmark,
+      addPost,
+    }),
+    [
+      posts,
+      postLoading,
+      loadPosts,
+      toggleLike,
+      hasMore,
+      increaseCommentCount,
+      toggleBookmark,
+      addPost,
+    ],
   );
+
+  return <FeedContext.Provider value={value}>{children}</FeedContext.Provider>;
 };
