@@ -1,137 +1,219 @@
-import { createContext, useContext, useState } from "react";
-import { fetchStoryWindowApi, fetchStoryWindowByIndexApi } from "../mocks/api";
+import { createContext, useCallback, useMemo, useState } from "react";
+import {
+  getStoryWindow,
+  getStoryWindowByIndex,
+} from "../services/storyService";
 
-export const StoryContext = createContext();
+export const StoryContext = createContext(null);
+
+const INITIAL_STORY_STATE = {
+  stories: [],
+  storyLoading: false,
+  isStoryOpen: false,
+  currentUserId: null,
+  currentIndex: 0,
+  windowStartIndex: 0,
+  totalCount: 0,
+  hasPrev: false,
+  hasNext: false,
+};
 
 export const StoryProvider = ({ children }) => {
-  const [stories, setStories] = useState([]);
-  const [storyLoading, setStoryLoading] = useState(false);
+  const [stories, setStories] = useState(INITIAL_STORY_STATE.stories);
+  const [storyLoading, setStoryLoading] = useState(
+    INITIAL_STORY_STATE.storyLoading,
+  );
+  const [isStoryOpen, setIsStoryOpen] = useState(
+    INITIAL_STORY_STATE.isStoryOpen,
+  );
+  const [currentUserId, setCurrentUserId] = useState(
+    INITIAL_STORY_STATE.currentUserId,
+  );
+  const [currentIndex, setCurrentIndex] = useState(
+    INITIAL_STORY_STATE.currentIndex,
+  );
+  const [windowStartIndex, setWindowStartIndex] = useState(
+    INITIAL_STORY_STATE.windowStartIndex,
+  );
+  const [totalCount, setTotalCount] = useState(INITIAL_STORY_STATE.totalCount);
+  const [hasPrev, setHasPrev] = useState(INITIAL_STORY_STATE.hasPrev);
+  const [hasNext, setHasNext] = useState(INITIAL_STORY_STATE.hasNext);
 
-  const [isStoryOpen, setIsStoryOpen] = useState(false);
+  const resetStoryState = useCallback(() => {
+    setStories(INITIAL_STORY_STATE.stories);
+    setStoryLoading(INITIAL_STORY_STATE.storyLoading);
+    setIsStoryOpen(INITIAL_STORY_STATE.isStoryOpen);
+    setCurrentUserId(INITIAL_STORY_STATE.currentUserId);
+    setCurrentIndex(INITIAL_STORY_STATE.currentIndex);
+    setWindowStartIndex(INITIAL_STORY_STATE.windowStartIndex);
+    setTotalCount(INITIAL_STORY_STATE.totalCount);
+    setHasPrev(INITIAL_STORY_STATE.hasPrev);
+    setHasNext(INITIAL_STORY_STATE.hasNext);
+  }, []);
 
-  // 현재 로그인 유저
-  const [currentUserId, setCurrentUserId] = useState(null);
+  const applyStoryWindowState = useCallback((data, viewerUserId = null) => {
+    if (viewerUserId) {
+      setCurrentUserId(viewerUserId);
+    }
 
-  // 전체 story 기준 현재 활성 index
-  const [currentIndex, setCurrentIndex] = useState(0);
+    setStories(data.stories ?? []);
+    setCurrentIndex(data.currentIndex ?? 0);
+    setWindowStartIndex(data.windowStartIndex ?? 0);
+    setTotalCount(data.totalCount ?? 0);
+    setHasPrev(data.hasPrev ?? false);
+    setHasNext(data.hasNext ?? false);
+  }, []);
 
-  // 현재 window 시작 index
-  const [windowStartIndex, setWindowStartIndex] = useState(0);
+  const openStory = useCallback(
+    async ({ currentUserId: viewerUserId, clickedUserId, windowSize = 5 }) => {
+      if (!viewerUserId || !clickedUserId) {
+        return {
+          success: false,
+          message: "스토리를 열기 위한 정보가 부족합니다.",
+        };
+      }
 
-  // 전체 story 수
-  const [totalCount, setTotalCount] = useState(0);
+      setStoryLoading(true);
 
-  // 이전/다음 존재 여부
-  const [hasPrev, setHasPrev] = useState(false);
-  const [hasNext, setHasNext] = useState(false);
+      try {
+        const data = await getStoryWindow({
+          currentUserId: viewerUserId,
+          clickedUserId,
+          windowSize,
+        });
 
-  // 특정 유저 story 열기
-  const openStory = async ({
-    currentUserId: viewerUserId,
-    clickedUserId,
-    windowSize = 5,
-  }) => {
-    if (!viewerUserId || !clickedUserId) return;
+        if (!data.success) {
+          return data;
+        }
 
-    setStoryLoading(true);
-
-    try {
-      const data = await fetchStoryWindowApi({
-        currentUserId: viewerUserId,
-        clickedUserId,
-        windowSize,
-      });
-
-      if (data.success) {
-        setCurrentUserId(viewerUserId);
-        setStories(data.stories);
-        setCurrentIndex(data.currentIndex);
-        setWindowStartIndex(data.windowStartIndex);
-        setTotalCount(data.totalCount);
-        setHasPrev(data.hasPrev);
-        setHasNext(data.hasNext);
+        applyStoryWindowState(data, viewerUserId);
         setIsStoryOpen(true);
+
+        return {
+          success: true,
+        };
+      } catch (error) {
+        console.error("스토리 열기 실패:", error);
+
+        return {
+          success: false,
+          message: "스토리를 여는 중 오류가 발생했습니다.",
+        };
+      } finally {
+        setStoryLoading(false);
       }
-    } catch (error) {
-      console.error("스토리 열기 실패:", error);
-    } finally {
-      setStoryLoading(false);
-    }
-  };
+    },
+    [applyStoryWindowState],
+  );
 
-  // 특정 index로 이동
-  const moveStoryTo = async (nextIndex, windowSize = 5) => {
-    if (!currentUserId) return;
-    if (nextIndex < 0 || nextIndex >= totalCount) return;
-
-    setStoryLoading(true);
-
-    try {
-      const data = await fetchStoryWindowByIndexApi({
-        currentUserId,
-        currentIndex: nextIndex,
-        windowSize,
-      });
-
-      if (data.success) {
-        setStories(data.stories);
-        setCurrentIndex(data.currentIndex);
-        setWindowStartIndex(data.windowStartIndex);
-        setTotalCount(data.totalCount);
-        setHasPrev(data.hasPrev);
-        setHasNext(data.hasNext);
+  const moveStoryTo = useCallback(
+    async (nextIndex, windowSize = 5) => {
+      if (!currentUserId) {
+        return {
+          success: false,
+          message: "현재 사용자 정보가 없습니다.",
+        };
       }
-    } catch (error) {
-      console.error("스토리 이동 실패:", error);
-    } finally {
-      setStoryLoading(false);
-    }
-  };
 
-  const nextStory = async (windowSize = 5) => {
-    if (!hasNext) return;
-    await moveStoryTo(currentIndex + 1, windowSize);
-  };
+      if (nextIndex < 0 || nextIndex >= totalCount) {
+        return {
+          success: false,
+          message: "유효하지 않은 스토리 인덱스입니다.",
+        };
+      }
 
-  const prevStory = async (windowSize = 5) => {
-    if (!hasPrev) return;
-    await moveStoryTo(currentIndex - 1, windowSize);
-  };
+      setStoryLoading(true);
 
-  const closeStory = () => {
-    setStories([]);
-    setIsStoryOpen(false);
-    setCurrentUserId(null);
-    setCurrentIndex(0);
-    setWindowStartIndex(0);
-    setTotalCount(0);
-    setHasPrev(false);
-    setHasNext(false);
-  };
+      try {
+        const data = await getStoryWindowByIndex({
+          currentUserId,
+          currentIndex: nextIndex,
+          windowSize,
+        });
 
-  // 현재 window 안에서 활성 story의 local index
+        if (!data.success) {
+          return data;
+        }
+
+        applyStoryWindowState(data);
+
+        return {
+          success: true,
+        };
+      } catch (error) {
+        console.error("스토리 이동 실패:", error);
+
+        return {
+          success: false,
+          message: "스토리 이동 중 오류가 발생했습니다.",
+        };
+      } finally {
+        setStoryLoading(false);
+      }
+    },
+    [currentUserId, totalCount, applyStoryWindowState],
+  );
+
+  const nextStory = useCallback(
+    async (windowSize = 5) => {
+      if (!hasNext) return;
+      return await moveStoryTo(currentIndex + 1, windowSize);
+    },
+    [hasNext, currentIndex, moveStoryTo],
+  );
+
+  const prevStory = useCallback(
+    async (windowSize = 5) => {
+      if (!hasPrev) return;
+      return await moveStoryTo(currentIndex - 1, windowSize);
+    },
+    [hasPrev, currentIndex, moveStoryTo],
+  );
+
+  const closeStory = useCallback(() => {
+    resetStoryState();
+  }, [resetStoryState]);
+
   const activeLocalIndex =
     currentIndex >= 0 ? currentIndex - windowStartIndex : 0;
 
-  const value = {
-    // modal story
-    stories,
-    storyLoading,
-    isStoryOpen,
-    currentIndex,
-    windowStartIndex,
-    totalCount,
-    hasPrev,
-    hasNext,
-    activeLocalIndex,
+  const value = useMemo(
+    () => ({
+      stories,
+      storyLoading,
+      isStoryOpen,
+      currentIndex,
+      windowStartIndex,
+      totalCount,
+      hasPrev,
+      hasNext,
+      activeLocalIndex,
 
-    // actions
-    openStory,
-    closeStory,
-    nextStory,
-    prevStory,
-    moveStoryTo,
-  };
+      openStory,
+      closeStory,
+      nextStory,
+      prevStory,
+      moveStoryTo,
+      resetStoryState,
+    }),
+    [
+      stories,
+      storyLoading,
+      isStoryOpen,
+      currentIndex,
+      windowStartIndex,
+      totalCount,
+      hasPrev,
+      hasNext,
+      activeLocalIndex,
+      openStory,
+      closeStory,
+      nextStory,
+      prevStory,
+      moveStoryTo,
+      resetStoryState,
+    ],
+  );
 
   return (
     <StoryContext.Provider value={value}>{children}</StoryContext.Provider>
