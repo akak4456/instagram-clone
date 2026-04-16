@@ -1,7 +1,7 @@
 import { createContext, useContext, useState } from "react";
 import { fetchStoryWindowApi, fetchStoryWindowByIndexApi } from "../mocks/api";
 
-const StoryContext = createContext();
+export const StoryContext = createContext();
 
 export const StoryProvider = ({ children }) => {
   const [stories, setStories] = useState([]);
@@ -137,5 +137,3 @@ export const StoryProvider = ({ children }) => {
     <StoryContext.Provider value={value}>{children}</StoryContext.Provider>
   );
 };
-
-export const useStory = () => useContext(StoryContext);

@@ -4,7 +4,7 @@ import profileArrowLeft from "../../assets/profile-arrow-left.png";
 import profileArrowRight from "../../assets/profile-arrow-right.png";
 import StoryModal from "../story/StoryModal";
 import useScrollLock from "../../hooks/useScrollLock";
-import { useStory } from "../../contexts/StoryContext";
+import { useStory } from "../../hooks/useStory";
 import { useAuth } from "../../hooks/useAuth";
 import ProfileImage from "../../components/ProfileImage";
 import {

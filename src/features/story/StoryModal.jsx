@@ -1,6 +1,6 @@
 import { createPortal } from "react-dom";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { useStory } from "../../contexts/StoryContext";
+import { useStory } from "../../hooks/useStory";
 import storyModalX from "../../assets/story-modal-x.png";
 import storyInstagramLogo from "../../assets/story-instagram-logo.png";
 import {
