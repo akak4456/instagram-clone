@@ -79,7 +79,7 @@ export const FeedProvider = ({ children }) => {
     }
   }, []);
 
-  const increaseCommentCount = (postId) => {
+  const increaseCommentCount = useCallback((postId) => {
     setPosts((prev) =>
       prev.map((post) =>
         post.id === postId
@@ -87,7 +87,7 @@ export const FeedProvider = ({ children }) => {
           : post,
       ),
     );
-  };
+  }, []);
 
   const toggleBookmark = useCallback(async (postId, userId) => {
     if (!postId || !userId) return;
