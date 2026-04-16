@@ -1,4 +1,5 @@
+import FindContainer from "../features/find/FindContainer";
 const Find = () => {
-  return <div>탐색 탭</div>;
+  return <FindContainer />;
 };
 export default Find;
