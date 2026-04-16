@@ -8,7 +8,7 @@ import {
   validateUsername,
 } from "../../utils/validation";
 import Input from "../../components/Input";
-import Dropdown from "../../components/Drodown";
+import Dropdown from "../../components/Dropdown";
 import errorMark from "../../assets/error-mark.png";
 import Button from "../../components/Button";
 import Modal from "../../components/Modal";
