@@ -1,70 +1,141 @@
-# Getting Started with Create React App
+# 📸 Instagram Clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+React를 기반으로 Instagram의 주요 기능을 구현한 클론 프로젝트입니다.  
+사용자 인증, 피드, 좋아요, 댓글, 스토리, 팔로우 등 SNS의 핵심 기능을 포함하며, Firebase를 활용한 이미지 업로드 및 데이터 저장 기능을 제공합니다.
 
-## Available Scripts
+## 🚀 Demo
 
-In the project directory, you can run:
+> 배포된 서비스가 있다면 아래 링크를 추가하세요.
 
-### `npm start`
+- 🔗 Live Demo: (배포 링크 입력)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 📁 Repository
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- 🔗 GitHub: https://github.com/akak4456/instagram-clone
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🛠️ Tech Stack
 
-### `npm run build`
+### Frontend
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **React** (Vite)
+- **JavaScript (ES6+)**
+- **Styled-components**
+- **React Router**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Backend & Services
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Firebase Authentication**
+- **Firebase Realtime Database / Firestore**
+- **Firebase Storage**
 
-### `npm run eject`
+### State Management
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **React Context API**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 기타
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **LocalStorage / IndexedDB** (Mock 데이터 관리)
+- **Intersection Observer** (무한 스크롤)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## ✨ 주요 기능
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 👤 인증 (Authentication)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- 회원가입 및 로그인
+- 사용자 정보 관리
+- 간단한 인증 상태 유지
 
-### Code Splitting
+### 📰 피드 (Feed)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- 팔로우한 사용자의 게시물 조회
+- 무한 스크롤을 통한 게시물 로딩
+- 게시물 생성 및 이미지 업로드
 
-### Analyzing the Bundle Size
+### ❤️ 좋아요 & 🔖 북마크
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- 게시물 좋아요 및 취소
+- 북마크 추가 및 제거
 
-### Making a Progressive Web App
+### 💬 댓글 (Comments)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- 댓글 작성 및 조회
+- 댓글 좋아요 기능
 
-### Advanced Configuration
+### 👥 팔로우 (Follow)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- 사용자 팔로우 및 언팔로우
+- 팔로워/팔로잉 목록 조회 및 관리
 
-### Deployment
+### 📚 스토리 (Stories)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- 팔로우한 사용자의 최신 게시물을 스토리 형태로 표시
+- 자동 재생 및 진행 바
+- 일시정지/재생 기능
 
-### `npm run build` fails to minify
+### 🔍 검색 (Search)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- 사용자 ID 및 Username 기반 검색
+- 최근 검색 기록 관리
+
+### 👤 프로필 (Profile)
+
+- 사용자 정보 표시
+- 게시물, 저장된 게시물, 태그된 게시물 조회
+
+---
+
+## 📂 프로젝트 구조
+
+instagram-clone/
+├── public/
+├── src/
+│ ├── assets/ # 이미지 및 정적 파일
+│ ├── components/ # 재사용 가능한 컴포넌트
+│ ├── contexts/ # 전역 상태 관리 (Context API)
+│ ├── hooks/ # 커스텀 훅
+│ ├── pages/ # 페이지 컴포넌트
+│ ├── services/ # API 및 Firebase 로직
+│ ├── styles/ # styled-components 스타일
+│ ├── utils/ # 유틸리티 함수
+│ ├── App.jsx
+│ └── main.jsx
+└── package.json
+
+---
+
+## ⚙️ 시작하기 (Getting Started)
+
+### 1️⃣ 저장소 클론
+
+```bash
+git clone https://github.com/akak4456/instagram-clone.git
+cd instagram-clone
+```
+
+### 2️⃣ 의존성 설치
+
+```bash
+npm install
+```
+
+### 3️⃣ 개발 서버 실행
+
+```bash
+npm run dev
+```
+
+### 4️⃣ 빌드
+
+```bash
+npm run build
+```
+
+## 주요 화면
+
+![Feed](./screenshots/feed.png)
+![Profile](./screenshots/profile.png)
+![Stories](./screenshots/stories.png)
