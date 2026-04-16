@@ -16,11 +16,9 @@ export const PostProvider = ({ children }) => {
   const pageRef = useRef(1);
 
   const resetPosts = useCallback(() => {
-    setPostLoading(true);
     setPosts([]);
     setHasMore(true);
     pageRef.current = 1;
-    setPostLoading(false);
   }, []);
 
   const loadPosts = useCallback(
