@@ -1,9 +1,11 @@
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import { usePost } from "../../hooks/usePost";
 import FeedItem from "./FeedItem";
+import { useAuth } from "../../hooks/useAuth";
 
 const Feed = () => {
-  const { posts, loadPosts, hasMore } = usePost();
+  const { user } = useAuth();
+  const { posts, loadPosts, hasMore } = usePost(user.userId);
   const observerRef = useRef();
 
   const lastPostRef = (node) => {
@@ -11,7 +13,7 @@ const Feed = () => {
 
     observerRef.current = new IntersectionObserver((entries) => {
       if (entries[0].isIntersecting && hasMore) {
-        loadPosts(); // 🔥 다음 페이지 로드
+        loadPosts(user.userId); // 🔥 다음 페이지 로드
       }
     });
 

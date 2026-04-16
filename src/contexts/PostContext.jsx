@@ -1,16 +1,15 @@
-import { createContext, useEffect, useState, useRef } from "react";
+import { createContext, useCallback, useEffect, useState, useRef } from "react";
 import {
-  fetchFeed,
-  toggleLikeApi,
-  toggleBookmarkApi,
-  addPostApi,
-} from "../mocks/api";
+  getFeedPosts,
+  likePost,
+  bookmarkPost,
+  createPost,
+} from "../services/postService";
 import { useAuth } from "../hooks/useAuth";
 
 export const PostContext = createContext();
 
 export const PostProvider = ({ children }) => {
-  const { user } = useAuth();
   const [posts, setPosts] = useState([]);
   const [postLoading, setPostLoading] = useState(false);
   const [hasMore, setHasMore] = useState(true);
@@ -22,46 +21,64 @@ export const PostProvider = ({ children }) => {
   // 3. page 값은 UI에 직접 사용되지 않으므로 리렌더링이 필요하지 않음
   const pageRef = useRef(1);
 
-  const loadPosts = async () => {
-    // 🔥 현재 페이지를 즉시 참조 가능
-    const currentPage = pageRef.current;
+  const loadPosts = useCallback(
+    async (currentUserId) => {
+      if (postLoading || !hasMore) return;
 
-    if (!hasMore || postLoading || !user) return;
+      setPostLoading(true);
 
-    setPostLoading(true);
+      try {
+        const data = await getFeedPosts({
+          currentUserId,
+          page: pageRef.current,
+          limit: 10,
+        });
 
-    const data = await fetchFeed(user.userId, currentPage, 10);
+        setPosts((prev) => [...prev, ...data.posts]);
+        setHasMore(data.hasMore);
+        pageRef.current += 1;
+      } catch (error) {
+        console.error("게시물 로드 실패:", error);
+      } finally {
+        setPostLoading(false);
+      }
+    },
+    [postLoading, hasMore],
+  );
 
-    setPosts((prev) =>
-      currentPage === 1 ? data.posts : [...prev, ...data.posts],
-    );
-    setHasMore(data.hasMore);
+  const toggleLike = useCallback(async (postId, userId) => {
+    if (!postId || !userId) return;
 
-    // 🔥 다음 페이지로 증가 (즉시 반영됨)
-    pageRef.current += 1;
+    let rollbackPosts = null;
 
-    setPostLoading(false);
-  };
+    setPosts((prev) => {
+      rollbackPosts = prev;
 
-  const toggleLike = async (postId, userId) => {
-    await toggleLikeApi({ postId, userId });
-
-    // 🔥 UI 즉시 반영 (optimistic update)
-    setPosts((prev) =>
-      prev.map((post) => {
+      return prev.map((post) => {
         if (post.id !== postId) return post;
 
-        const isLiked = post.likes.some((l) => l.userId === userId);
+        const likes = post.likes || [];
+        const isLiked = likes.some((like) => like.userId === userId);
 
         return {
           ...post,
           likes: isLiked
-            ? post.likes.filter((l) => l.userId !== userId)
-            : [...post.likes, { userId }],
+            ? likes.filter((like) => like.userId !== userId)
+            : [...likes, { postId, userId }],
         };
-      }),
-    );
-  };
+      });
+    });
+
+    try {
+      await likePost({ postId, userId });
+    } catch (error) {
+      console.error("좋아요 실패:", error);
+
+      if (rollbackPosts) {
+        setPosts(rollbackPosts);
+      }
+    }
+  }, []);
 
   const increaseCommentCount = (postId) => {
     setPosts((prev) =>
@@ -73,53 +90,60 @@ export const PostProvider = ({ children }) => {
     );
   };
 
-  const toggleBookmark = async (postId) => {
-    // 🔥 optimistic update
-    setPosts((prev) =>
-      prev.map((post) =>
-        post.id === postId
-          ? { ...post, isBookmarked: !post.isBookmarked }
-          : post,
-      ),
-    );
+  const toggleBookmark = useCallback(async (postId, userId) => {
+    if (!postId || !userId) return;
 
-    // 🔥 서버 반영
-    await toggleBookmarkApi({ postId, userId: user.userId });
-  };
+    let rollbackPosts = null;
 
-  const addPost = async ({ user, images, caption }) => {
-    const userId = user.userId;
+    setPosts((prev) => {
+      rollbackPosts = prev;
 
-    // 🔥 UI에 즉시 반영할 임시 post
-    const tempPost = {
-      id: Date.now(),
-      userId,
-      images,
-      caption,
-      commentCount: 0,
-      createdAt: new Date().toISOString(),
-      user,
-      likes: [],
-      isBookmarked: false,
-    };
+      return prev.map((post) => {
+        if (post.id !== postId) return post;
 
-    setPosts((prev) => [tempPost, ...prev]);
+        const isBookmarked = !post.isBookmarked;
 
-    // 🔥 서버 호출
-    await addPostApi({ userId, images, caption });
-  };
+        return {
+          ...post,
+          isBookmarked,
+        };
+      });
+    });
 
-  useEffect(() => {
-    if (!user) return;
+    try {
+      await bookmarkPost({ postId, userId });
+    } catch (error) {
+      console.error("북마크 실패:", error);
 
-    // 🔥 유저가 변경될 때 pagination 초기화
-    // useRef는 즉시 값이 반영되므로 loadPosts에서 올바른 페이지를 사용함
-    pageRef.current = 1;
-    setPosts([]);
-    setHasMore(true);
+      if (rollbackPosts) {
+        setPosts(rollbackPosts);
+      }
+    }
+  }, []);
 
-    loadPosts(); // 첫 페이지 로드
-  }, [user]);
+  const addPost = useCallback(async ({ userId, images, caption }) => {
+    try {
+      const newPost = await createPost({
+        userId,
+        images,
+        caption,
+      });
+
+      setPosts((prev) => [newPost, ...prev]);
+
+      return {
+        success: true,
+        post: newPost,
+      };
+    } catch (error) {
+      console.error("게시물 업로드 실패:", error);
+
+      return {
+        success: false,
+        message: error.message || "게시물 업로드에 실패했습니다.",
+      };
+    }
+  }, []);
 
   return (
     <PostContext.Provider

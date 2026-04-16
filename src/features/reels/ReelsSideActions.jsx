@@ -48,7 +48,10 @@ const ReelsSideActions = ({
         <SideActionCount>100</SideActionCount>
       </SideActionItem>
 
-      <SideActionItem type="button" onClick={() => toggleBookmark(post.id)}>
+      <SideActionItem
+        type="button"
+        onClick={() => toggleBookmark(post.id, userId)}
+      >
         <img
           src={isBookmarked ? postBookmarkFill : postBookmark}
           alt="post-bookmark"

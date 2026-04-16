@@ -74,7 +74,7 @@ const FeedItem = ({ post }) => {
             <img src={postSend} alt="post-send" />
           </ActionItem>
         </ActionLeft>
-        <ActionItem onClick={() => toggleBookmark(post.id)}>
+        <ActionItem onClick={() => toggleBookmark(post.id, userId)}>
           <img
             src={post.isBookmarked ? postBookmarkFill : postBookmark}
             alt="post-bookmark"
