@@ -67,7 +67,7 @@ const FollowerModal = ({
     setRemoveLoading(true);
 
     const result = await removeFollower({
-      currentUserId,
+      profileUserId: currentUserId,
       followerUserId: selectedFollower.userId,
     });
 
