@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { usePost } from "../../hooks/usePost";
+import { useFeed } from "../../hooks/useFeed";
 import postComment from "../../assets/post-comment.png";
 import postRepost from "../../assets/post-repost.png";
 import postSend from "../../assets/post-send.png";
@@ -27,8 +27,8 @@ import {
 } from "../../styles/features/home.styles";
 
 const FeedItem = ({ post }) => {
-  const { toggleLike, toggleBookmark } = usePost();
   const { user } = useAuth();
+  const { toggleLike, toggleBookmark } = useFeed(user.userId);
   const navigate = useNavigate();
 
   const userId = user.userId;

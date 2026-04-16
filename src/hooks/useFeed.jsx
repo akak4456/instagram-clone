@@ -1,8 +1,8 @@
 import { useEffect, useContext } from "react";
-import { PostContext } from "../contexts/PostContext";
+import { FeedContext } from "../contexts/FeedContext";
 
-export const usePost = (userId) => {
-  const context = useContext(PostContext);
+export const useFeed = (userId) => {
+  const context = useContext(FeedContext);
   const { posts, loadPosts } = context;
   useEffect(() => {
     if (posts.length === 0) {

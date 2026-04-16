@@ -1,5 +1,6 @@
 import { useState, useRef } from "react";
-import { usePost } from "../../hooks/usePost";
+import { useFeed } from "../../hooks/useFeed";
+import { useAuth } from "../../hooks/useAuth";
 import {
   FindGrid,
   FindGridItem,
@@ -9,7 +10,8 @@ import ReplyModal from "../reply/ReplyModal";
 import useScrollLock from "../../hooks/useScrollLock";
 
 const FindContainer = () => {
-  const { posts, loadPosts, hasMore } = usePost();
+  const { user } = useAuth();
+  const { posts, loadPosts, hasMore } = useFeed(user.userId);
   const [selectedPost, setSelectedPost] = useState(null);
   const observerRef = useRef();
 

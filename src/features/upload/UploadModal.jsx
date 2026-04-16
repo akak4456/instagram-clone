@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import { createPortal } from "react-dom";
 import ConfirmModal from "../../components/ConfirmModal";
 import { useAuth } from "../../hooks/useAuth";
-import { usePost } from "../../hooks/usePost";
+import { useFeed } from "../../hooks/useFeed";
 import UploadEmptyState from "./UploadEmptyState";
 import UploadPreviewSection from "./UploadPreviewSection";
 import { uploadPostImagesToFirebase } from "../../utils/uploadPostImages";
@@ -18,7 +18,7 @@ const MAX_FILES = 10;
 
 const UploadModal = ({ open, onClose }) => {
   const { user } = useAuth();
-  const { addPost } = usePost();
+  const { addPost } = useFeed();
 
   const [confirmOpen, setConfirmOpen] = useState(false);
   const [files, setFiles] = useState([]);

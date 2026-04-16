@@ -1,15 +1,14 @@
-import { createContext, useCallback, useEffect, useState, useRef } from "react";
+import { createContext, useCallback, useState, useRef } from "react";
 import {
   getFeedPosts,
   likePost,
   bookmarkPost,
   createPost,
 } from "../services/postService";
-import { useAuth } from "../hooks/useAuth";
 
-export const PostContext = createContext();
+export const FeedContext = createContext();
 
-export const PostProvider = ({ children }) => {
+export const FeedProvider = ({ children }) => {
   const [posts, setPosts] = useState([]);
   const [postLoading, setPostLoading] = useState(false);
   const [hasMore, setHasMore] = useState(true);
@@ -146,7 +145,7 @@ export const PostProvider = ({ children }) => {
   }, []);
 
   return (
-    <PostContext.Provider
+    <FeedContext.Provider
       value={{
         posts,
         postLoading,
@@ -159,6 +158,6 @@ export const PostProvider = ({ children }) => {
       }}
     >
       {children}
-    </PostContext.Provider>
+    </FeedContext.Provider>
   );
 };

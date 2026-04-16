@@ -10,7 +10,7 @@ import postComment from "../../assets/post-comment.png";
 import postRepost from "../../assets/post-repost.png";
 import postBookmark from "../../assets/post-bookmark.png";
 import postSend from "../../assets/post-send.png";
-import { usePost } from "../../hooks/usePost";
+import { useFeed } from "../../hooks/useFeed";
 import { useAuth } from "../../hooks/useAuth";
 import { formatDate } from "../../utils/timeUtils";
 import CommentInput from "../../components/CommentInput";
@@ -43,7 +43,7 @@ const ReplyModal = ({ open, onClose, post }) => {
   const { user } = useAuth();
   const userId = user.userId;
   const isLiked = post.likes.some((l) => l.userId === userId);
-  const { toggleLike, toggleBookmark } = usePost();
+  const { toggleLike, toggleBookmark } = useFeed(userId);
   const { comments, initComments, loadComments, replyLoading } =
     useReply(postId);
 

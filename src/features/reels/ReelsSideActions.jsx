@@ -7,7 +7,7 @@ import {
 } from "../../styles/features/reels.styles";
 import LikeIcon from "../../components/LikeIcon";
 import { useAuth } from "../../hooks/useAuth";
-import { usePost } from "../../hooks/usePost";
+import { useFeed } from "../../hooks/useFeed";
 import postComment from "../../assets/post-comment.png";
 import ReplyModal from "../reply/ReplyModal";
 import postRepost from "../../assets/post-repost.png";
@@ -21,7 +21,7 @@ const ReelsSideActions = ({
   isBookmarked = false,
 }) => {
   const { user } = useAuth();
-  const { toggleLike, toggleBookmark } = usePost();
+  const { toggleLike, toggleBookmark } = useFeed(user.userId);
 
   const [replyModalOpen, setReplyModalOpen] = useState(false);
 

@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
-import { usePost } from "../hooks/usePost";
+import { useAuth } from "../hooks/useAuth";
+import { useFeed } from "../hooks/useFeed";
 import ReelsViewer from "../features/reels/ReelsViewer";
 import ReelsSideActions from "../features/reels/ReelsSideActions";
 import {
@@ -20,7 +21,8 @@ const WHEEL_COOLDOWN = 700;
 const PREFETCH_THRESHOLD = 2; // 마지막 2장 남았을 때 미리 로드
 
 const Reels = () => {
-  const { posts, loadPosts, hasMore, postLoading } = usePost();
+  const { user } = useAuth();
+  const { posts, loadPosts, hasMore, postLoading } = useFeed(user.userId);
 
   const reelsPosts = posts ?? [];
 
