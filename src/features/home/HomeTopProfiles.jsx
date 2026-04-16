@@ -33,7 +33,7 @@ const HomeTopProfiles = () => {
   const { user: currentUser } = useAuth();
 
   useEffect(() => {
-    fetchFollowingUsers();
+    fetchFollowingUsers(currentUser.userId);
   }, []);
 
   useScrollLock(isStoryOpen);
