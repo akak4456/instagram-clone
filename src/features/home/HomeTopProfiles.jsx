@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import { useFollow } from "../../hooks/useFollow";
 import profileArrowLeft from "../../assets/profile-arrow-left.png";
 import profileArrowRight from "../../assets/profile-arrow-right.png";
