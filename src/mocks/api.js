@@ -107,7 +107,7 @@ export const fetchUsersApi = () => {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve(users);
-    }, 0);
+    }, 300);
   });
 };
 
@@ -132,7 +132,7 @@ export const loginApi = ({ userId, password }) => {
           username: foundUser.username,
         },
       });
-    }, 0);
+    }, 300);
   });
 };
 
@@ -171,7 +171,7 @@ export const addUserApi = (newUser) => {
         success: true,
         user: newUserData,
       });
-    }, 0);
+    }, 300);
   });
 };
 
@@ -198,7 +198,7 @@ export const fetchFollowingUsersApi = (userId) => {
         success: true,
         users: followingUsers,
       });
-    }, 0);
+    }, 300);
   });
 };
 
@@ -240,7 +240,7 @@ export const fetchFeed = (currentUserId, page = 1, limit = 10) => {
         posts: pagedPosts,
         hasMore: end < sortedPosts.length,
       });
-    }, 0);
+    }, 300);
   });
 };
 
@@ -268,7 +268,7 @@ export const toggleLikeApi = ({ postId, userId }) => {
       resolve({
         success: true,
       });
-    }, 0);
+    }, 300);
   });
 };
 
@@ -302,7 +302,7 @@ export const fetchCommentsApi = (postId, page = 1, limit = 10) => {
         comments: pagedComments,
         hasMore: end < sorted.length,
       });
-    }, 0);
+    }, 300);
   });
 };
 
@@ -330,7 +330,7 @@ export const toggleCommentLikeApi = ({ commentId, userId }) => {
       resolve({
         success: true,
       });
-    }, 0);
+    }, 300);
   });
 };
 
@@ -352,7 +352,7 @@ export const addCommentApi = ({ postId, userId, content }) => {
         success: true,
         comment: newComment,
       });
-    }, 0);
+    }, 300);
   });
 };
 
@@ -381,7 +381,7 @@ export const toggleBookmarkApi = ({ postId, userId }) => {
       resolve({
         success: true,
       });
-    }, 0);
+    }, 300);
   });
 };
 
@@ -413,7 +413,7 @@ export const addPostApi = ({ userId, images, caption }) => {
         success: true,
         post: newPost,
       });
-    }, 0);
+    }, 300);
   });
 };
 
@@ -540,7 +540,7 @@ export const fetchStoryWindowApi = ({
         hasPrev: currentIndex > 0,
         hasNext: currentIndex < allStories.length - 1,
       });
-    }, 0);
+    }, 300);
   });
 };
 
@@ -601,7 +601,7 @@ export const fetchStoryWindowByIndexApi = ({
         hasPrev: safeCurrentIndex > 0,
         hasNext: safeCurrentIndex < allStories.length - 1,
       });
-    }, 0);
+    }, 300);
   });
 };
 
@@ -659,7 +659,7 @@ export const fetchStoriesPaginationApi = ({
         startIndex: start,
         baseIndex,
       });
-    }, 0);
+    }, 300);
   });
 };
 
@@ -681,7 +681,7 @@ export const searchUsersApi = (keyword) => {
       });
 
       resolve(filtered);
-    }, 0);
+    }, 300);
   });
 };
 
@@ -723,7 +723,7 @@ export const getUserApi = (userId) => {
           postsCount,
         },
       });
-    }, 0);
+    }, 300);
   });
 };
 
@@ -738,7 +738,7 @@ export const fetchUserPostsApi = (userId) => {
         success: true,
         posts: userPosts,
       });
-    }, 0);
+    }, 300);
   });
 };
 
@@ -753,7 +753,7 @@ export const fetchUserReelsApi = (userId) => {
         success: true,
         reels,
       });
-    }, 0);
+    }, 300);
   });
 };
 
@@ -772,7 +772,7 @@ export const fetchUserSavedPostsApi = (userId) => {
         success: true,
         posts: savedPosts,
       });
-    }, 0);
+    }, 300);
   });
 };
 
@@ -784,7 +784,7 @@ export const fetchUserTaggedPostsApi = (userId) => {
         success: true,
         posts: [],
       });
-    }, 0);
+    }, 300);
   });
 };
 
@@ -830,7 +830,7 @@ export const removeFollowerApi = ({ profileUserId, followerUserId }) => {
         success: true,
         message: "팔로워를 삭제했습니다.",
       });
-    }, 0);
+    }, 300);
   });
 };
 
@@ -876,7 +876,7 @@ export const unfollowUserApi = ({ profileUserId, targetUserId }) => {
         success: true,
         message: "팔로잉을 취소했습니다.",
       });
-    }, 0);
+    }, 300);
   });
 };
 

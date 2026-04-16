@@ -29,7 +29,7 @@ const getDays = (year, month) => {
 };
 const SignupForm = () => {
   const [open, setOpen] = useState(false);
-  const { users, addUser, userLoading } = useUser();
+  const { users, addUser, loading } = useUser();
   const navigate = useNavigate();
   const [form, setForm] = useState({
     userId: "",
@@ -172,7 +172,7 @@ const SignupForm = () => {
         <b>더 알아보기</b>
       </DescriptionDiv>
       <ButtonWrapper>
-        <Button onClick={handleSubmit} loading={userLoading}>
+        <Button onClick={handleSubmit} loading={loading.addUser}>
           제출
         </Button>
       </ButtonWrapper>
