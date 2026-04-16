@@ -27,7 +27,7 @@ const CommentInput = ({ postId }) => {
 
   const handleSubmit = () => {
     if (!text.trim()) return;
-    addComment(postId, user.userId, text);
+    addComment({ postId, user, content: text });
     increaseCommentCount(postId);
     setText("");
 

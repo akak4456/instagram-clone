@@ -1,46 +1,69 @@
-import { createContext, useState } from "react";
+import { createContext, useCallback, useMemo, useState } from "react";
 import {
-  fetchCommentsApi,
-  toggleCommentLikeApi,
-  addCommentApi,
-} from "../mocks/api";
-import { useUser } from "../hooks/useUser";
-export const ReplyContext = createContext();
+  getComments,
+  likeComment,
+  createComment,
+} from "../services/replyService";
+
+export const ReplyContext = createContext(null);
 
 export const ReplyProvider = ({ children }) => {
-  const { users } = useUser();
   const [commentsMap, setCommentsMap] = useState({});
   const [pageMap, setPageMap] = useState({});
   const [hasMoreMap, setHasMoreMap] = useState({});
   const [loadingMap, setLoadingMap] = useState({});
 
-  // 🔥 댓글 초기화 (postId 기준)
-  const initComments = async (postId) => {
-    const page = pageMap[postId] || 1;
-    if (page === 1) {
-      // 상태 초기화
-      setCommentsMap((prev) => ({
-        ...prev,
-        [postId]: [],
-      }));
+  const resetComments = useCallback((postId) => {
+    setCommentsMap((prev) => ({
+      ...prev,
+      [postId]: [],
+    }));
 
-      setPageMap((prev) => ({
-        ...prev,
-        [postId]: 1,
-      }));
+    setPageMap((prev) => ({
+      ...prev,
+      [postId]: 1,
+    }));
 
-      setHasMoreMap((prev) => ({
-        ...prev,
-        [postId]: true,
-      }));
+    setHasMoreMap((prev) => ({
+      ...prev,
+      [postId]: true,
+    }));
 
-      setLoadingMap((prev) => ({
-        ...prev,
-        [postId]: true,
-      }));
+    setLoadingMap((prev) => ({
+      ...prev,
+      [postId]: false,
+    }));
+  }, []);
 
-      // 🔥 바로 첫 페이지 로딩
-      const data = await fetchCommentsApi(postId, 1, 10);
+  const initComments = useCallback(async (postId) => {
+    if (!postId) return;
+
+    setCommentsMap((prev) => ({
+      ...prev,
+      [postId]: [],
+    }));
+
+    setPageMap((prev) => ({
+      ...prev,
+      [postId]: 1,
+    }));
+
+    setHasMoreMap((prev) => ({
+      ...prev,
+      [postId]: true,
+    }));
+
+    setLoadingMap((prev) => ({
+      ...prev,
+      [postId]: true,
+    }));
+
+    try {
+      const data = await getComments({
+        postId,
+        page: 1,
+        limit: 10,
+      });
 
       setCommentsMap((prev) => ({
         ...prev,
@@ -56,132 +79,203 @@ export const ReplyProvider = ({ children }) => {
         ...prev,
         [postId]: 2,
       }));
+    } catch (error) {
+      console.error("댓글 초기 로드 실패:", error);
 
+      setCommentsMap((prev) => ({
+        ...prev,
+        [postId]: [],
+      }));
+    } finally {
       setLoadingMap((prev) => ({
         ...prev,
         [postId]: false,
       }));
     }
-  };
+  }, []);
 
-  const loadComments = async (postId) => {
-    const page = pageMap[postId] || 1;
-    const hasMore = hasMoreMap[postId] ?? true;
-    const loading = loadingMap[postId] ?? false;
+  const loadComments = useCallback(
+    async (postId) => {
+      if (!postId) return;
 
-    if (loading || !hasMore) return;
+      const page = pageMap[postId] || 1;
+      const hasMore = hasMoreMap[postId] ?? true;
+      const loading = loadingMap[postId] ?? false;
 
-    // 🔥 로딩 상태 설정
-    setLoadingMap((prev) => ({
-      ...prev,
-      [postId]: true,
-    }));
+      if (loading || !hasMore) return;
 
-    const data = await fetchCommentsApi(postId, page, 10);
+      setLoadingMap((prev) => ({
+        ...prev,
+        [postId]: true,
+      }));
 
-    // 🔥 댓글 추가
-    setCommentsMap((prev) => ({
-      ...prev,
-      [postId]: [...(prev[postId] || []), ...data.comments],
-    }));
+      try {
+        const data = await getComments({
+          postId,
+          page,
+          limit: 10,
+        });
 
-    // 🔥 hasMore 갱신
-    setHasMoreMap((prev) => ({
-      ...prev,
-      [postId]: data.hasMore,
-    }));
+        setCommentsMap((prev) => ({
+          ...prev,
+          [postId]: [...(prev[postId] || []), ...data.comments],
+        }));
 
-    // 🔥 page 증가
-    setPageMap((prev) => ({
-      ...prev,
-      [postId]: page + 1,
-    }));
+        setHasMoreMap((prev) => ({
+          ...prev,
+          [postId]: data.hasMore,
+        }));
 
-    // 🔥 로딩 해제
-    setLoadingMap((prev) => ({
-      ...prev,
-      [postId]: false,
-    }));
-  };
+        setPageMap((prev) => ({
+          ...prev,
+          [postId]: page + 1,
+        }));
+      } catch (error) {
+        console.error("댓글 추가 로드 실패:", error);
+      } finally {
+        setLoadingMap((prev) => ({
+          ...prev,
+          [postId]: false,
+        }));
+      }
+    },
+    [pageMap, hasMoreMap, loadingMap],
+  );
 
-  const toggleReplyLike = async (postId, commentId, userId) => {
-    // 🔥 optimistic update
+  const toggleReplyLike = useCallback(async (postId, commentId, userId) => {
+    if (!postId || !commentId || !userId) return;
+
+    let rollbackComments = null;
+
     setCommentsMap((prev) => {
-      const updated = prev[postId].map((comment) => {
+      rollbackComments = prev[postId] || [];
+
+      const updatedComments = (prev[postId] || []).map((comment) => {
         if (comment.id !== commentId) return comment;
 
-        const alreadyLiked = comment.likes.some((l) => l.userId === userId);
+        const likes = comment.likes || [];
+        const alreadyLiked = likes.some((like) => like.userId === userId);
 
         return {
           ...comment,
           likes: alreadyLiked
-            ? comment.likes.filter((l) => l.userId !== userId)
-            : [...comment.likes, { userId }],
+            ? likes.filter((like) => like.userId !== userId)
+            : [...likes, { commentId, userId }],
         };
       });
 
       return {
         ...prev,
-        [postId]: updated,
+        [postId]: updatedComments,
       };
     });
 
-    // 🔥 서버 반영
-    await toggleCommentLikeApi({ commentId, userId });
-  };
+    try {
+      await likeComment({ commentId, userId });
+    } catch (error) {
+      console.error("댓글 좋아요 실패:", error);
 
-  const addComment = async (postId, userId, content) => {
+      setCommentsMap((prev) => ({
+        ...prev,
+        [postId]: rollbackComments || [],
+      }));
+    }
+  }, []);
+
+  const addComment = useCallback(async ({ postId, user, content }) => {
+    if (!postId || !user?.userId || !content?.trim()) {
+      return {
+        success: false,
+        message: "댓글 작성에 필요한 값이 부족합니다.",
+      };
+    }
+
     const tempComment = {
       id: Date.now(),
       postId,
-      userId,
-      content,
+      userId: user.userId,
+      content: content.trim(),
       createdAt: new Date().toISOString(),
-      user: users.find((u) => u.userId === userId), // ⚠️ 필요 시
+      user,
       likes: [],
     };
 
-    // 🔥 optimistic update (UI 먼저 반영)
     setCommentsMap((prev) => ({
       ...prev,
       [postId]: [tempComment, ...(prev[postId] || [])],
     }));
 
     try {
-      const res = await addCommentApi({ postId, userId, content });
+      const response = await createComment({
+        postId,
+        userId: user.userId,
+        content,
+      });
 
-      // 🔥 서버 응답으로 교체 (선택)
+      const savedComment = response?.comment ?? response;
+
+      console.log(savedComment);
+
       setCommentsMap((prev) => ({
         ...prev,
-        [postId]: prev[postId].map((c) =>
-          c.id === tempComment.id
-            ? { ...res.comment, user: tempComment.user, likes: [] }
-            : c,
+        [postId]: (prev[postId] || []).map((comment) =>
+          comment.id === tempComment.id
+            ? {
+                ...savedComment,
+                user,
+                likes: [],
+              }
+            : comment,
         ),
       }));
-    } catch (e) {
-      // 🔥 실패 시 롤백
+
+      return {
+        success: true,
+        comment: savedComment,
+      };
+    } catch (error) {
+      console.error("댓글 작성 실패:", error);
+
       setCommentsMap((prev) => ({
         ...prev,
-        [postId]: prev[postId].filter((c) => c.id !== tempComment.id),
+        [postId]: (prev[postId] || []).filter(
+          (comment) => comment.id !== tempComment.id,
+        ),
       }));
+
+      return {
+        success: false,
+        message: error.message || "댓글 작성에 실패했습니다.",
+      };
     }
-  };
+  }, []);
+
+  const value = useMemo(
+    () => ({
+      commentsMap,
+      pageMap,
+      hasMoreMap,
+      loadingMap,
+      initComments,
+      loadComments,
+      resetComments,
+      toggleReplyLike,
+      addComment,
+    }),
+    [
+      commentsMap,
+      pageMap,
+      hasMoreMap,
+      loadingMap,
+      initComments,
+      loadComments,
+      resetComments,
+      toggleReplyLike,
+      addComment,
+    ],
+  );
 
   return (
-    <ReplyContext.Provider
-      value={{
-        commentsMap,
-        pageMap,
-        hasMoreMap,
-        loadingMap,
-        loadComments,
-        initComments,
-        toggleReplyLike,
-        addComment,
-      }}
-    >
-      {children}
-    </ReplyContext.Provider>
+    <ReplyContext.Provider value={value}>{children}</ReplyContext.Provider>
   );
 };
