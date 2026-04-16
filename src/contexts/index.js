@@ -1,4 +1,4 @@
-import { FeedProvider } from "./FeedContext";
+import { PostProvider } from "./PostContext";
 import { AuthProvider } from "./AuthContext";
 import { FollowProvider } from "./FollowContext";
 import { UserProvider } from "./UserContext";
@@ -10,11 +10,11 @@ export const AppProvider = ({ children }) => {
     <AuthProvider>
       <FollowProvider>
         <UserProvider>
-          <FeedProvider>
+          <PostProvider>
             <ReplyProvider>
               <StoryProvider>{children}</StoryProvider>
             </ReplyProvider>
-          </FeedProvider>
+          </PostProvider>
         </UserProvider>
       </FollowProvider>
     </AuthProvider>

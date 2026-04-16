@@ -1,8 +1,8 @@
 import { useEffect, useContext } from "react";
-import { FeedContext } from "../contexts/FeedContext";
+import { PostContext } from "../contexts/PostContext";
 
-export const useFeed = (userId) => {
-  const context = useContext(FeedContext);
+export const usePost = (userId) => {
+  const context = useContext(PostContext);
   if (!context) {
     throw new Error("useFeed는 FeedProvider 내부에서 사용해야 합니다.");
   }

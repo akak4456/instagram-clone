@@ -8,14 +8,14 @@ import {
 import emoji from "../assets/emoji.png";
 import { useReply } from "../hooks/useReply";
 import { useAuth } from "../hooks/useAuth";
-import { useFeed } from "../hooks/useFeed";
+import { usePost } from "../hooks/usePost";
 
 const CommentInput = ({ postId }) => {
   const [text, setText] = useState("");
   const textareaRef = useRef(null);
   const { user } = useAuth();
   const { addComment } = useReply(postId);
-  const { increaseCommentCount } = useFeed(user.userId);
+  const { increaseCommentCount } = usePost(user.userId);
 
   const handleInput = (e) => {
     setText(e.target.value);

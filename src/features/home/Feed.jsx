@@ -1,11 +1,11 @@
 import { useRef, useEffect } from "react";
-import { useFeed } from "../../hooks/useFeed";
+import { usePost } from "../../hooks/usePost";
 import FeedItem from "./FeedItem";
 import { useAuth } from "../../hooks/useAuth";
 
 const Feed = () => {
   const { user } = useAuth();
-  const { posts, loadPosts, hasMore } = useFeed(user.userId);
+  const { posts, loadPosts, hasMore } = usePost(user.userId);
   const observerRef = useRef();
 
   const lastPostRef = (node) => {

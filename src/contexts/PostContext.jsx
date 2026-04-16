@@ -6,9 +6,9 @@ import {
   createPost,
 } from "../services/postService";
 
-export const FeedContext = createContext();
+export const PostContext = createContext();
 
-export const FeedProvider = ({ children }) => {
+export const PostProvider = ({ children }) => {
   const [posts, setPosts] = useState([]);
   const [postLoading, setPostLoading] = useState(false);
   const [hasMore, setHasMore] = useState(true);
@@ -175,5 +175,5 @@ export const FeedProvider = ({ children }) => {
     ],
   );
 
-  return <FeedContext.Provider value={value}>{children}</FeedContext.Provider>;
+  return <PostContext.Provider value={value}>{children}</PostContext.Provider>;
 };
