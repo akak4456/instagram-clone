@@ -1,69 +1,33 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { AppProvider } from "./contexts";
-import PrivateRoute from "./routes/PrivateRoute.jsx";
-import Layout from "./components/Layout.jsx";
-
 import Home from "./pages/Home";
-import Login from "./pages/Login";
-import Signup from "./pages/Signup";
 import Profile from "./pages/Profile";
 import Reels from "./pages/Reels";
-import Find from "./pages/Find.jsx";
+import Find from "./pages/Find";
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
+import PrivateLayout from "./PrivateLayout";
 
-const App = () => {
+function App() {
   return (
     <AppProvider>
       <BrowserRouter>
         <Routes>
-          {/* Layout이 필요한 페이지 */}
-          <Route
-            path="/"
-            element={
-              <PrivateRoute>
-                <Layout>
-                  <Home />
-                </Layout>
-              </PrivateRoute>
-            }
-          />
-          <Route
-            path="/profile/:userId"
-            element={
-              <PrivateRoute>
-                <Layout>
-                  <Profile />
-                </Layout>
-              </PrivateRoute>
-            }
-          />
-          <Route
-            path="/reels"
-            element={
-              <PrivateRoute>
-                <Layout>
-                  <Reels />
-                </Layout>
-              </PrivateRoute>
-            }
-          />
-          <Route
-            path="/find"
-            element={
-              <PrivateRoute>
-                <Layout>
-                  <Find />
-                </Layout>
-              </PrivateRoute>
-            }
-          />
-
-          {/* Layout이 필요 없는 페이지 */}
+          {/* 공개 라우트 */}
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
+
+          {/* 보호 + 공통 레이아웃 라우트 */}
+          <Route element={<PrivateLayout />}>
+            <Route path="/" element={<Home />} />
+            <Route path="/profile/:userId" element={<Profile />} />
+            <Route path="/reels" element={<Reels />} />
+            <Route path="/find" element={<Find />} />
+          </Route>
         </Routes>
       </BrowserRouter>
     </AppProvider>
   );
-};
+}
 
 export default App;
