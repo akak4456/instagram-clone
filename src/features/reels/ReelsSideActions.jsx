@@ -21,7 +21,7 @@ const ReelsSideActions = ({
   isBookmarked = false,
 }) => {
   const { user } = useAuth();
-  const { toggleLike, toggleBookmark } = usePost(user.userId);
+  const { toggleLike, toggleBookmark } = usePost();
 
   const [replyModalOpen, setReplyModalOpen] = useState(false);
 

@@ -15,7 +15,7 @@ const CommentInput = ({ postId }) => {
   const textareaRef = useRef(null);
   const { user } = useAuth();
   const { addComment } = useReply(postId);
-  const { increaseCommentCount } = usePost(user.userId);
+  const { increaseCommentCount } = usePost();
 
   const handleInput = (e) => {
     setText(e.target.value);

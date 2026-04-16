@@ -18,7 +18,7 @@ const MAX_FILES = 10;
 
 const UploadModal = ({ open, onClose }) => {
   const { user } = useAuth();
-  const { addPost } = usePost(user.userId);
+  const { addPost } = usePost();
 
   const [confirmOpen, setConfirmOpen] = useState(false);
   const [files, setFiles] = useState([]);

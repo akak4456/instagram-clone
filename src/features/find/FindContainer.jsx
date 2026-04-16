@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { usePost } from "../../hooks/usePost";
 import { useAuth } from "../../hooks/useAuth";
 import {
@@ -11,9 +11,16 @@ import useScrollLock from "../../hooks/useScrollLock";
 
 const FindContainer = () => {
   const { user } = useAuth();
-  const { posts, loadPosts, hasMore } = usePost(user.userId);
+  const { posts, loadPosts, hasMore, resetPosts } = usePost();
   const [selectedPost, setSelectedPost] = useState(null);
   const observerRef = useRef();
+
+  const userId = user.userId;
+
+  useEffect(() => {
+    resetPosts();
+    loadPosts(userId);
+  }, [userId]);
 
   useScrollLock(!!selectedPost);
 
@@ -22,7 +29,7 @@ const FindContainer = () => {
 
     observerRef.current = new IntersectionObserver((entries) => {
       if (entries[0].isIntersecting && hasMore) {
-        loadPosts(); // 🔥 다음 페이지 로드
+        loadPosts(userId); // 🔥 다음 페이지 로드
       }
     });
 

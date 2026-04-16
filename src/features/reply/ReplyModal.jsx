@@ -43,7 +43,7 @@ const ReplyModal = ({ open, onClose, post }) => {
   const { user } = useAuth();
   const userId = user.userId;
   const isLiked = post.likes.some((l) => l.userId === userId);
-  const { toggleLike, toggleBookmark } = usePost(userId);
+  const { toggleLike, toggleBookmark } = usePost();
   const { comments, initComments, loadComments, replyLoading } =
     useReply(postId);
 

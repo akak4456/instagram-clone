@@ -5,8 +5,15 @@ import { useAuth } from "../../hooks/useAuth";
 
 const Feed = () => {
   const { user } = useAuth();
-  const { posts, loadPosts, hasMore } = usePost(user.userId);
+  const { posts, loadPosts, hasMore, resetPosts } = usePost();
   const observerRef = useRef();
+
+  const userId = user.userId;
+
+  useEffect(() => {
+    resetPosts();
+    loadPosts(userId);
+  }, [userId]);
 
   const lastPostRef = (node) => {
     if (observerRef.current) observerRef.current.disconnect();

@@ -13,16 +13,19 @@ export const PostProvider = ({ children }) => {
   const [postLoading, setPostLoading] = useState(false);
   const [hasMore, setHasMore] = useState(true);
 
-  // 🔥 page를 useRef로 관리
-  // 이유:
-  // 1. useState는 비동기적으로 업데이트되기 때문에 setPage 후 즉시 값을 사용할 수 없음
-  // 2. useRef는 current 값이 동기적으로 즉시 변경되어 pagination 로직에 적합함
-  // 3. page 값은 UI에 직접 사용되지 않으므로 리렌더링이 필요하지 않음
   const pageRef = useRef(1);
+
+  const resetPosts = useCallback(() => {
+    setPostLoading(true);
+    setPosts([]);
+    setHasMore(true);
+    pageRef.current = 1;
+    setPostLoading(false);
+  }, []);
 
   const loadPosts = useCallback(
     async (currentUserId) => {
-      if (postLoading || !hasMore) return;
+      if (postLoading || !hasMore || !currentUserId) return;
 
       setPostLoading(true);
 
@@ -100,11 +103,9 @@ export const PostProvider = ({ children }) => {
       return prev.map((post) => {
         if (post.id !== postId) return post;
 
-        const isBookmarked = !post.isBookmarked;
-
         return {
           ...post,
-          isBookmarked,
+          isBookmarked: !post.isBookmarked,
         };
       });
     });
@@ -127,6 +128,7 @@ export const PostProvider = ({ children }) => {
         images,
         caption,
       });
+
       const newPost = {
         ...addedPost.post,
         likes: [],
@@ -134,7 +136,6 @@ export const PostProvider = ({ children }) => {
         isBookmarked: false,
         user,
       };
-      console.log(newPost);
 
       setPosts((prev) => [newPost, ...prev]);
 
@@ -156,9 +157,10 @@ export const PostProvider = ({ children }) => {
     () => ({
       posts,
       postLoading,
-      loadPosts,
-      toggleLike,
       hasMore,
+      loadPosts,
+      resetPosts,
+      toggleLike,
       increaseCommentCount,
       toggleBookmark,
       addPost,
@@ -166,9 +168,10 @@ export const PostProvider = ({ children }) => {
     [
       posts,
       postLoading,
-      loadPosts,
-      toggleLike,
       hasMore,
+      loadPosts,
+      resetPosts,
+      toggleLike,
       increaseCommentCount,
       toggleBookmark,
       addPost,

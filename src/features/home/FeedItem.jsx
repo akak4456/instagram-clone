@@ -28,7 +28,7 @@ import {
 
 const FeedItem = ({ post }) => {
   const { user } = useAuth();
-  const { toggleLike, toggleBookmark } = usePost(user.userId);
+  const { toggleLike, toggleBookmark } = usePost();
   const navigate = useNavigate();
 
   const userId = user.userId;

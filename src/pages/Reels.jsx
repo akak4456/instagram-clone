@@ -22,7 +22,16 @@ const PREFETCH_THRESHOLD = 2; // 마지막 2장 남았을 때 미리 로드
 
 const Reels = () => {
   const { user } = useAuth();
-  const { posts, loadPosts, hasMore, postLoading } = usePost(user.userId);
+  const { posts, loadPosts, hasMore, postLoading, resetPosts } = usePost(
+    user.userId,
+  );
+
+  const userId = user.userId;
+
+  useEffect(() => {
+    resetPosts();
+    loadPosts(userId);
+  }, [userId]);
 
   const reelsPosts = posts ?? [];
 
