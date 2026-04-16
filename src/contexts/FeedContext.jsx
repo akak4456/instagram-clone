@@ -120,13 +120,21 @@ export const FeedProvider = ({ children }) => {
     }
   }, []);
 
-  const addPost = useCallback(async ({ userId, images, caption }) => {
+  const addPost = useCallback(async ({ user, images, caption }) => {
     try {
-      const newPost = await createPost({
-        userId,
+      const addedPost = await createPost({
+        userId: user.userId,
         images,
         caption,
       });
+      const newPost = {
+        ...addedPost.post,
+        likes: [],
+        commentCount: 0,
+        isBookmarked: false,
+        user,
+      };
+      console.log(newPost);
 
       setPosts((prev) => [newPost, ...prev]);
 
