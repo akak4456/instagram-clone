@@ -123,7 +123,7 @@ const Reels = () => {
     if (prefetchedLengthRef.current === reelsPosts.length) return;
 
     prefetchedLengthRef.current = reelsPosts.length;
-    loadPosts();
+    loadPosts(userId);
   }, [
     currentIndex,
     reelsPosts.length,
