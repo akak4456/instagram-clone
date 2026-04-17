@@ -101,7 +101,6 @@ instagram-clone/ <br>
 │ ├── utils/ # 유틸리티 함수 <br>
 │ ├── App.jsx # 애플리케이션 라우팅 및 최상위 컴포넌트 <br>
 │ └── main.jsx # 애플리케이션 진입점 <br>
-├── .env # 환경 변수 (Firebase 설정 등) <br>
 ├── .gitignore # Git 추적 제외 파일 <br>
 ├── index.html # HTML 템플릿 <br>
 ├── package.json # 프로젝트 의존성 및 스크립트 <br>
