@@ -153,6 +153,10 @@ const Reels = () => {
     };
   }, []);
 
+  if (postLoading) {
+    return <></>;
+  }
+
   if (!reelsPosts.length) {
     return (
       <ReelsPageContainer>

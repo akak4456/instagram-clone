@@ -43,9 +43,11 @@ const HomeTopProfiles = () => {
   useScrollLock(isStoryOpen);
   return (
     <HomeTopProfileWrapper>
-      <Arrow visible={page > 0} onClick={prevPage}>
-        <img src={profileArrowLeft} alt="profile-arrow-left" />
-      </Arrow>
+      {!followingLoading && (
+        <Arrow visible={page > 0} onClick={prevPage}>
+          <img src={profileArrowLeft} alt="profile-arrow-left" />
+        </Arrow>
+      )}
 
       {!followingLoading && (
         <Viewport>
@@ -75,9 +77,11 @@ const HomeTopProfiles = () => {
         </Viewport>
       )}
 
-      <Arrow visible={page + 1 < maxPage} onClick={nextPage}>
-        <img src={profileArrowRight} alt="profile-arrow-right" />
-      </Arrow>
+      {!followingLoading && (
+        <Arrow visible={page + 1 < maxPage} onClick={nextPage}>
+          <img src={profileArrowRight} alt="profile-arrow-right" />
+        </Arrow>
+      )}
       {isStoryOpen && <StoryModal />}
     </HomeTopProfileWrapper>
   );
