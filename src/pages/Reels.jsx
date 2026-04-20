@@ -153,14 +153,10 @@ const Reels = () => {
     };
   }, []);
 
-  if (postLoading) {
-    return <></>;
-  }
-
   if (!reelsPosts.length) {
     return (
       <ReelsPageContainer>
-        <EmptyState>표시할 릴스가 없습니다.</EmptyState>
+        {!postLoading && <EmptyState>표시할 릴스가 없습니다.</EmptyState>}
       </ReelsPageContainer>
     );
   }
