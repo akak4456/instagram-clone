@@ -29,6 +29,7 @@ const HomeTopProfiles = () => {
     prevPage,
     page,
     maxPage,
+    followingLoading,
   } = useFollow();
   const offset = (ITEM_WIDTH + GAP) * PAGE_SIZE * page;
 
@@ -46,31 +47,33 @@ const HomeTopProfiles = () => {
         <img src={profileArrowLeft} alt="profile-arrow-left" />
       </Arrow>
 
-      <Viewport>
-        {allFollowingUsers.length === 0 ? (
-          <EmptyState>
-            <EmptyText>팔로잉한 유저가 없습니다.</EmptyText>
-            <EmptySubText>다른 유저를 팔로우해보세요 👀</EmptySubText>
-          </EmptyState>
-        ) : (
-          <Track page={page} offset={offset}>
-            {allFollowingUsers.map((user, index) => (
-              <StoryItem
-                key={`${user.userId}-${index}`}
-                onClick={() =>
-                  openStory({
-                    currentUserId: currentUser.userId,
-                    clickedUserId: user.userId,
-                  })
-                }
-              >
-                <ProfileImage user={user} type="big" />
-                <div>{user.username}</div>
-              </StoryItem>
-            ))}
-          </Track>
-        )}
-      </Viewport>
+      {!followingLoading && (
+        <Viewport>
+          {allFollowingUsers.length === 0 ? (
+            <EmptyState>
+              <EmptyText>팔로잉한 유저가 없습니다.</EmptyText>
+              <EmptySubText>다른 유저를 팔로우해보세요 👀</EmptySubText>
+            </EmptyState>
+          ) : (
+            <Track page={page} offset={offset}>
+              {allFollowingUsers.map((user, index) => (
+                <StoryItem
+                  key={`${user.userId}-${index}`}
+                  onClick={() =>
+                    openStory({
+                      currentUserId: currentUser.userId,
+                      clickedUserId: user.userId,
+                    })
+                  }
+                >
+                  <ProfileImage user={user} type="big" />
+                  <div>{user.username}</div>
+                </StoryItem>
+              ))}
+            </Track>
+          )}
+        </Viewport>
+      )}
 
       <Arrow visible={page + 1 < maxPage} onClick={nextPage}>
         <img src={profileArrowRight} alt="profile-arrow-right" />
