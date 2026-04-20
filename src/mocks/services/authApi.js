@@ -33,16 +33,6 @@ export const addUserApi = (newUser) => {
       };
     }
 
-    const existsUsername = state.users.some(
-      (u) => u.username === newUser.username,
-    );
-    if (existsUsername) {
-      return {
-        success: false,
-        message: "이미 사용 중인 사용자 이름입니다.",
-      };
-    }
-
     const newUserData = {
       ...newUser,
       profileImage: "",
