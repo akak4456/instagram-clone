@@ -132,3 +132,9 @@ export const NavigationProfile = styled.img`
   object-fit: cover;
   object-position: center 70%;
 `;
+
+export const NavigationProfileEmpty = styled.div`
+  width: 100%;
+  height: 100%;
+  background-color: #ccc;
+`;

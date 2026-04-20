@@ -110,3 +110,27 @@ export const Arrow = styled.button`
     cursor: pointer;
   }
 `;
+
+export const EmptyState = styled.div`
+  width: 100%;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background: #fafafa;
+  border-radius: 12px;
+`;
+
+export const EmptyText = styled.div`
+  font-size: 14px;
+  font-weight: 600;
+  color: #262626;
+`;
+
+export const EmptySubText = styled.div`
+  font-size: 12px;
+  color: #8e8e8e;
+  margin-top: 6px;
+`;

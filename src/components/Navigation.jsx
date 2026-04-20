@@ -30,6 +30,7 @@ import {
   SearchPanelContainer,
   NavigationProfileWrapper,
   NavigationProfile,
+  NavigationProfileEmpty,
 } from "../styles/components/Navigation.styles";
 
 const Navigation = () => {
@@ -140,7 +141,11 @@ const Navigation = () => {
               }}
             >
               <NavigationProfileWrapper>
-                <NavigationProfile src={user.profileImage} alt="profile" />
+                {user.profileImage ? (
+                  <NavigationProfile src={user.profileImage} alt="profile" />
+                ) : (
+                  <NavigationProfileEmpty />
+                )}
               </NavigationProfileWrapper>
               <Label
                 $expanded={isExpanded}

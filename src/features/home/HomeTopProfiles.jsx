@@ -13,6 +13,9 @@ import {
   Viewport,
   Track,
   StoryItem,
+  EmptyState,
+  EmptyText,
+  EmptySubText,
 } from "../../styles/features/home.styles";
 
 const HomeTopProfiles = () => {
@@ -44,22 +47,29 @@ const HomeTopProfiles = () => {
       </Arrow>
 
       <Viewport>
-        <Track page={page} offset={offset}>
-          {allFollowingUsers.map((user, index) => (
-            <StoryItem
-              key={`${user.userId}-${index}`}
-              onClick={() =>
-                openStory({
-                  currentUserId: currentUser.userId,
-                  clickedUserId: user.userId,
-                })
-              }
-            >
-              <ProfileImage user={user} type="big" />
-              <div>{user.username}</div>
-            </StoryItem>
-          ))}
-        </Track>
+        {allFollowingUsers.length === 0 ? (
+          <EmptyState>
+            <EmptyText>팔로잉한 유저가 없습니다.</EmptyText>
+            <EmptySubText>다른 유저를 팔로우해보세요 👀</EmptySubText>
+          </EmptyState>
+        ) : (
+          <Track page={page} offset={offset}>
+            {allFollowingUsers.map((user, index) => (
+              <StoryItem
+                key={`${user.userId}-${index}`}
+                onClick={() =>
+                  openStory({
+                    currentUserId: currentUser.userId,
+                    clickedUserId: user.userId,
+                  })
+                }
+              >
+                <ProfileImage user={user} type="big" />
+                <div>{user.username}</div>
+              </StoryItem>
+            ))}
+          </Track>
+        )}
       </Viewport>
 
       <Arrow visible={page + 1 < maxPage} onClick={nextPage}>

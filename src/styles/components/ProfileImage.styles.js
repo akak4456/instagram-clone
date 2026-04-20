@@ -32,5 +32,7 @@ export const Profile = styled.div`
   height: ${({ type }) =>
     type === "big" ? "calc(100% - 6px)" : "calc(100% - 4px)"};
   border-radius: 50%;
-  background: url(${(p) => p.src}) center/cover;
+
+  background: ${({ src }) =>
+    src ? `url(${src}) center/cover no-repeat` : "#ccc"};
 `;
