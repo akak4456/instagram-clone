@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 // FeedItem
 export const Wrapper = styled.div`
   width: 470px;
@@ -133,4 +133,45 @@ export const EmptySubText = styled.div`
   font-size: 12px;
   color: #8e8e8e;
   margin-top: 6px;
+`;
+
+/* Skeleton */
+const shimmer = keyframes`
+  0% {
+    background-position: -200px 0;
+  }
+  100% {
+    background-position: calc(200px + 100%) 0;
+  }
+`;
+
+const SkeletonBase = styled.div`
+  background: linear-gradient(90deg, #f0f0f0 25%, #e6e6e6 37%, #f0f0f0 63%);
+  background-size: 400px 100%;
+  animation: ${shimmer} 1.4s ease infinite;
+`;
+
+export const SkeletonTrack = styled.div`
+  display: flex;
+  gap: 20px;
+`;
+
+export const SkeletonItem = styled.div`
+  width: 80px;
+  flex-shrink: 0;
+  text-align: center;
+`;
+
+export const SkeletonCircle = styled(SkeletonBase)`
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0 auto 8px;
+`;
+
+export const SkeletonText = styled(SkeletonBase)`
+  width: 56px;
+  height: 12px;
+  border-radius: 6px;
+  margin: 0 auto;
 `;
