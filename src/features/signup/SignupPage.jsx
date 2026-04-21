@@ -10,12 +10,18 @@ import {
   SignupTopContent,
   SignupMiddleDiv,
 } from "../../styles/features/signup.styles";
+import { useNavigate } from "react-router-dom";
 
 const SignupPage = () => {
+  const navigate = useNavigate();
   return (
     <SignupPageWrapper>
       <SignupTopDiv>
-        <SignupTopArrowBack src={arrowLeft} alt="arrow-left" />
+        <SignupTopArrowBack
+          src={arrowLeft}
+          alt="arrow-left"
+          onClick={() => navigate("/login")}
+        />
         <SignupTopMetaLogo src={metaLogo} alt="meta-logo" />
         <SignupTopTitle>Instagram에서 시작하기</SignupTopTitle>
         <SignupTopContent>

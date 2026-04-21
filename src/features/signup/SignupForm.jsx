@@ -177,7 +177,9 @@ const SignupForm = () => {
         </Button>
       </ButtonWrapper>
       <ButtonWrapper>
-        <Button variant="secondary-default">이미 계정이 있습니다</Button>
+        <Button variant="secondary-default" onClick={() => navigate("/login")}>
+          이미 계정이 있습니다
+        </Button>
       </ButtonWrapper>
       <Modal
         open={open}
