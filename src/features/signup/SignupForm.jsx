@@ -67,7 +67,7 @@ const SignupForm = () => {
     const hasError = Object.values(newErrors).some((e) => e);
     if (hasError) return;
 
-    const result = await addUser(form);
+    await addUser(form);
 
     setOpen(true);
   };

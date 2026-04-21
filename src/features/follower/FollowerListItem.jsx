@@ -10,7 +10,6 @@ import {
   UserIdText,
   RemoveButton,
   FollowButton,
-  FollowingButton,
 } from "../../styles/features/follower.styles";
 
 const FollowerListItem = ({

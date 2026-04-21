@@ -4,7 +4,6 @@ import {
   ConfirmModalBox,
   ConfirmProfileImage,
   ConfirmProfileImageFallback,
-  ConfirmTitle,
   ConfirmDescription,
   ConfirmActionButton,
   ConfirmCancelButton,

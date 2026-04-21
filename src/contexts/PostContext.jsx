@@ -21,30 +21,25 @@ export const PostProvider = ({ children }) => {
     pageRef.current = 1;
   }, []);
 
-  const loadPosts = useCallback(
-    async (currentUserId) => {
-      if (postLoading || !hasMore || !currentUserId) return;
+  const loadPosts = useCallback(async (currentUserId) => {
+    setPostLoading(true);
 
-      setPostLoading(true);
+    try {
+      const data = await getFeedPosts({
+        currentUserId,
+        page: pageRef.current,
+        limit: 10,
+      });
 
-      try {
-        const data = await getFeedPosts({
-          currentUserId,
-          page: pageRef.current,
-          limit: 10,
-        });
-
-        setPosts((prev) => [...prev, ...data.posts]);
-        setHasMore(data.hasMore);
-        pageRef.current += 1;
-      } catch (error) {
-        console.error("게시물 로드 실패:", error);
-      } finally {
-        setPostLoading(false);
-      }
-    },
-    [postLoading, hasMore],
-  );
+      setPosts((prev) => [...prev, ...data.posts]);
+      setHasMore(data.hasMore);
+      pageRef.current += 1;
+    } catch (error) {
+      console.error("게시물 로드 실패:", error);
+    } finally {
+      setPostLoading(false);
+    }
+  }, []);
 
   const toggleLike = useCallback(async (postId, userId) => {
     if (!postId || !userId) return;

@@ -32,7 +32,7 @@ const FindContainer = () => {
     };
 
     init();
-  }, [userId]);
+  }, [userId, loadPosts, resetPosts]);
 
   useScrollLock(!!selectedPost);
 

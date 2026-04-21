@@ -45,7 +45,10 @@ const StoryModal = () => {
     return stories[activeLocalIndex];
   }, [stories, activeLocalIndex]);
 
-  const activeImages = activeStory?.post?.images ?? [];
+  const activeImages = useMemo(
+    () => activeStory?.post?.images ?? [],
+    [activeStory],
+  );
   const activeImageSrc =
     activeImages[currentImageIndex] ?? activeImages[0] ?? "";
 

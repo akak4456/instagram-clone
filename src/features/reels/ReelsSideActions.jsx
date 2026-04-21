@@ -2,7 +2,6 @@ import { useState } from "react";
 import {
   SideActionsContainer,
   SideActionItem,
-  SideActionIcon,
   SideActionCount,
 } from "../../styles/features/reels.styles";
 import LikeIcon from "../../components/LikeIcon";

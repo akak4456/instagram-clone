@@ -8,7 +8,6 @@ import {
   ProfileStatsRow,
   ProfileActionButtonRow,
   ProfileBottomContainer,
-  ProfileTabBar,
   SkeletonBlock,
   SkeletonCircle,
   ProfileGrid,

@@ -17,7 +17,7 @@ const Login = () => {
   useEffect(() => {
     resetPosts();
     resetFollowingUsers();
-  }, []);
+  }, [resetFollowingUsers, resetPosts]);
 
   const handleLogin = async (form) => {
     const res = await login(form);

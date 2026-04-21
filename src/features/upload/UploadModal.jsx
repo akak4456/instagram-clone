@@ -34,7 +34,7 @@ const UploadModal = ({ open, onClose }) => {
       setCaption("");
       setUploading(false);
     }
-  }, [open]);
+  }, [open, files]);
 
   if (!open) return null;
 

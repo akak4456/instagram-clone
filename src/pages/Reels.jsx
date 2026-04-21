@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useCallback } from "react";
 import { useAuth } from "../hooks/useAuth";
 import { usePost } from "../hooks/usePost";
 import ReelsViewer from "../features/reels/ReelsViewer";
@@ -31,7 +31,7 @@ const Reels = () => {
   useEffect(() => {
     resetPosts();
     loadPosts(userId);
-  }, [userId]);
+  }, [userId, loadPosts, resetPosts]);
 
   const reelsPosts = posts ?? [];
 
@@ -50,35 +50,38 @@ const Reels = () => {
   const currentPost = reelsPosts[currentIndex];
   const incomingPost = nextIndex !== null ? reelsPosts[nextIndex] : null;
 
-  const startTransition = (targetIndex, moveDirection) => {
-    if (isAnimating || isCoolingRef.current) return;
-    if (targetIndex < 0 || targetIndex >= reelsPosts.length) return;
+  const startTransition = useCallback(
+    (targetIndex, moveDirection) => {
+      if (isAnimating || isCoolingRef.current) return;
+      if (targetIndex < 0 || targetIndex >= reelsPosts.length) return;
 
-    isCoolingRef.current = true;
-    setDirection(moveDirection);
-    setNextIndex(targetIndex);
-    setIsAnimating(true);
+      isCoolingRef.current = true;
+      setDirection(moveDirection);
+      setNextIndex(targetIndex);
+      setIsAnimating(true);
 
-    animationTimeoutRef.current = setTimeout(() => {
-      setCurrentIndex(targetIndex);
-      setNextIndex(null);
-      setIsAnimating(false);
-    }, ANIMATION_DURATION);
+      animationTimeoutRef.current = setTimeout(() => {
+        setCurrentIndex(targetIndex);
+        setNextIndex(null);
+        setIsAnimating(false);
+      }, ANIMATION_DURATION);
 
-    cooldownTimeoutRef.current = setTimeout(() => {
-      isCoolingRef.current = false;
-    }, WHEEL_COOLDOWN);
-  };
+      cooldownTimeoutRef.current = setTimeout(() => {
+        isCoolingRef.current = false;
+      }, WHEEL_COOLDOWN);
+    },
+    [isAnimating, reelsPosts.length],
+  );
 
-  const moveToNext = () => {
+  const moveToNext = useCallback(() => {
     if (currentIndex >= reelsPosts.length - 1) return;
     startTransition(currentIndex + 1, "down");
-  };
+  }, [currentIndex, reelsPosts.length, startTransition]);
 
-  const moveToPrev = () => {
+  const moveToPrev = useCallback(() => {
     if (currentIndex <= 0) return;
     startTransition(currentIndex - 1, "up");
-  };
+  }, [currentIndex, startTransition]);
 
   useEffect(() => {
     if (!reelsPosts.length) return;
@@ -106,7 +109,7 @@ const Reels = () => {
     return () => {
       window.removeEventListener("wheel", handleWheel);
     };
-  }, [isAnimating, currentIndex, reelsPosts.length]);
+  }, [isAnimating, currentIndex, reelsPosts.length, moveToNext, moveToPrev]);
 
   useEffect(() => {
     if (!reelsPosts.length) return;
@@ -125,6 +128,7 @@ const Reels = () => {
     prefetchedLengthRef.current = reelsPosts.length;
     loadPosts(userId);
   }, [
+    userId,
     currentIndex,
     reelsPosts.length,
     hasMore,

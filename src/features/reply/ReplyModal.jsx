@@ -50,7 +50,7 @@ const ReplyModal = ({ open, onClose, post }) => {
   useEffect(() => {
     if (!postId) return;
     initComments(postId);
-  }, [postId]);
+  }, [postId, initComments]);
 
   if (!open) return null;
 

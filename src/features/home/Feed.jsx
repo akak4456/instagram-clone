@@ -1,31 +1,46 @@
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useCallback } from "react";
 import { usePost } from "../../hooks/usePost";
 import FeedItem from "./FeedItem";
 import { useAuth } from "../../hooks/useAuth";
 
 const Feed = () => {
   const { user } = useAuth();
-  const { posts, loadPosts, hasMore, resetPosts } = usePost();
-  const observerRef = useRef();
+  const { posts, loadPosts, hasMore, resetPosts, postLoading } = usePost();
+  const observerRef = useRef(null);
 
   const userId = user.userId;
 
   useEffect(() => {
     resetPosts();
     loadPosts(userId);
-  }, [userId]);
+  }, [userId, loadPosts, resetPosts]);
 
-  const lastPostRef = (node) => {
-    if (observerRef.current) observerRef.current.disconnect();
+  const lastPostRef = useCallback(
+    (node) => {
+      if (postLoading) return;
 
-    observerRef.current = new IntersectionObserver((entries) => {
-      if (entries[0].isIntersecting && hasMore) {
-        loadPosts(user.userId); // 🔥 다음 페이지 로드
+      if (observerRef.current) {
+        observerRef.current.disconnect();
       }
-    });
 
-    if (node) observerRef.current.observe(node);
-  };
+      observerRef.current = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting && hasMore && !postLoading) {
+          loadPosts(userId);
+        }
+      });
+
+      if (node) {
+        observerRef.current.observe(node);
+      }
+    },
+    [hasMore, postLoading, loadPosts, userId],
+  );
+
+  useEffect(() => {
+    return () => {
+      if (observerRef.current) observerRef.current.disconnect();
+    };
+  }, []);
 
   return (
     <>
@@ -42,4 +57,5 @@ const Feed = () => {
     </>
   );
 };
+
 export default Feed;
