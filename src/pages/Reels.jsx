@@ -156,7 +156,17 @@ const Reels = () => {
   if (!reelsPosts.length) {
     return (
       <ReelsPageContainer>
-        {!postLoading && <EmptyState>표시할 릴스가 없습니다.</EmptyState>}
+        <ReelsCenterArea>
+          <ReelsStage>
+            <ReelScene>
+              {postLoading ? (
+                <ReelsViewer loading />
+              ) : (
+                <EmptyState>표시할 릴스가 없습니다.</EmptyState>
+              )}
+            </ReelScene>
+          </ReelsStage>
+        </ReelsCenterArea>
       </ReelsPageContainer>
     );
   }

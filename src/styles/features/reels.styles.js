@@ -136,13 +136,11 @@ export const ReelCard = styled.div`
   height: 100%;
   border-radius: 8px;
   overflow: hidden;
-  background: #111;
 `;
 
 export const ReelMediaArea = styled.div`
   width: 100%;
   height: 100%;
-  background: linear-gradient(180deg, #4a4a4a 0%, #1f1f1f 100%);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -288,4 +286,61 @@ export const EmptyState = styled.div`
   font-size: 18px;
   font-weight: 600;
   color: #555;
+`;
+
+const shimmer = keyframes`
+  0% {
+    background-position: -240px 0;
+  }
+  100% {
+    background-position: calc(240px + 100%) 0;
+  }
+`;
+
+const SkeletonBase = styled.div`
+  background: linear-gradient(90deg, #f0f0f0 25%, #e6e6e6 37%, #f0f0f0 63%);
+  background-size: 400px 100%;
+  animation: ${shimmer} 1.4s ease infinite;
+  margin-top: ${CARD_GAP};
+  margin-bottom: ${CARD_GAP};
+`;
+
+export const SkeletonBlock = styled(SkeletonBase)`
+  ${({ $variant }) =>
+    $variant === "media" &&
+    css`
+      width: 100%;
+      height: 100%;
+      border-radius: 8px;
+    `}
+`;
+
+export const ReelSkeletonBottomOverlay = styled.div`
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 20px 18px 24px;
+  color: white;
+  box-sizing: border-box;
+`;
+
+export const SkeletonCircle = styled(SkeletonBase)`
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  flex-shrink: 0;
+`;
+
+export const SkeletonUsername = styled(SkeletonBase)`
+  width: 92px;
+  height: 14px;
+  border-radius: 6px;
+`;
+
+export const SkeletonCaption = styled(SkeletonBase)`
+  width: ${({ $short }) => ($short ? "52%" : "78%")};
+  height: 12px;
+  border-radius: 6px;
+  margin-top: ${({ $short }) => ($short ? "8px" : "0")};
 `;
