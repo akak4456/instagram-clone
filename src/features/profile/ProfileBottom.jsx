@@ -1,11 +1,12 @@
 import ProfileTabs from "./ProfileTabs";
 import ProfilePostGrid from "./ProfilePostGrid";
+import ProfileGridSkeleton from "./ProfileGridSkeleton";
 import {
   ProfileBottomContainer,
   ProfileEmptyText,
 } from "../../styles/features/profile.styles";
 
-const ProfileBottom = ({ activeTab, setActiveTab, tabData }) => {
+const ProfileBottom = ({ activeTab, setActiveTab, tabData, isLoading }) => {
   const getCurrentPosts = () => {
     if (activeTab === "posts") return tabData.posts;
     if (activeTab === "reels") return tabData.reels;
@@ -28,7 +29,9 @@ const ProfileBottom = ({ activeTab, setActiveTab, tabData }) => {
     <ProfileBottomContainer>
       <ProfileTabs activeTab={activeTab} setActiveTab={setActiveTab} />
 
-      {currentPosts.length > 0 ? (
+      {isLoading ? (
+        <ProfileGridSkeleton count={10} />
+      ) : currentPosts.length > 0 ? (
         <ProfilePostGrid posts={currentPosts} />
       ) : (
         <ProfileEmptyText>{getEmptyText()}</ProfileEmptyText>

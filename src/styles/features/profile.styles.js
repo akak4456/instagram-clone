@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 export const ProfilePageContainer = styled.div`
   width: 100%;
@@ -174,4 +174,29 @@ export const ProfileEmptyText = styled.div`
   text-align: center;
   color: #8e8e8e;
   font-size: 14px;
+`;
+
+const skeletonShimmer = keyframes`
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+`;
+
+export const SkeletonBlock = styled.div`
+  width: ${({ width = "100%" }) => width};
+  height: ${({ height = "16px" }) => height};
+  margin: ${({ margin = "0" }) => margin};
+  border-radius: ${({ radius = "8px" }) => radius};
+  background: linear-gradient(90deg, #f2f2f2 25%, #e8e8e8 37%, #f2f2f2 63%);
+  background-size: 400% 100%;
+  animation: ${skeletonShimmer} 1.4s ease infinite;
+`;
+
+export const SkeletonCircle = styled(SkeletonBlock)`
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
 `;

@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { useUser } from "../hooks/useUser";
 import ProfileTop from "../features/profile/ProfileTop";
 import ProfileBottom from "../features/profile/ProfileBottom";
+import ProfileSkeleton from "../features/profile/ProfileSkeleton";
 import {
   ProfilePageContainer,
   ProfileLoadingText,
@@ -16,6 +17,7 @@ const Profile = () => {
     getUserReels,
     getUserSavedPosts,
     getUserTaggedPosts,
+    loading,
   } = useUser();
 
   const [profileUser, setProfileUser] = useState(null);
@@ -78,10 +80,37 @@ const Profile = () => {
     };
 
     fetchTabData();
-  }, [userId, activeTab]);
+  }, [
+    userId,
+    activeTab,
+    tabData.posts.length,
+    tabData.reels.length,
+    tabData.saved.length,
+    tabData.tagged.length,
+    getUserPosts,
+    getUserReels,
+    getUserSavedPosts,
+    getUserTaggedPosts,
+  ]);
+
+  const isProfileLoading = loading.getUser && !profileUser;
+
+  const isTabLoading =
+    (activeTab === "posts" && loading.getUserPosts) ||
+    (activeTab === "reels" && loading.getUserReels) ||
+    (activeTab === "saved" && loading.getUserSavedPosts) ||
+    (activeTab === "tagged" && loading.getUserTaggedPosts);
+
+  if (isProfileLoading) {
+    return (
+      <ProfilePageContainer>
+        <ProfileSkeleton />
+      </ProfilePageContainer>
+    );
+  }
 
   if (!profileUser) {
-    return <ProfileLoadingText>로딩중...</ProfileLoadingText>;
+    return <ProfileLoadingText>사용자를 찾을 수 없습니다.</ProfileLoadingText>;
   }
 
   return (
@@ -91,6 +120,7 @@ const Profile = () => {
         activeTab={activeTab}
         setActiveTab={setActiveTab}
         tabData={tabData}
+        isLoading={isTabLoading}
       />
     </ProfilePageContainer>
   );
