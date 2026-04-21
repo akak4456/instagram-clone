@@ -1,58 +1,96 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useCallback } from "react";
 import { usePost } from "../../hooks/usePost";
 import { useAuth } from "../../hooks/useAuth";
 import {
   FindGrid,
   FindGridItem,
   FindGridImage,
+  FindSkeletonItem,
 } from "../../styles/features/find.styles";
 import ReplyModal from "../reply/ReplyModal";
 import useScrollLock from "../../hooks/useScrollLock";
 
+const SKELETON_COUNT = 10;
+
 const FindContainer = () => {
   const { user } = useAuth();
-  const { posts, loadPosts, hasMore, resetPosts } = usePost();
+  const { posts, loadPosts, hasMore, postLoading, resetPosts } = usePost();
   const [selectedPost, setSelectedPost] = useState(null);
-  const observerRef = useRef();
+  const [isInitialLoading, setIsInitialLoading] = useState(true);
+  const observerRef = useRef(null);
 
-  const userId = user.userId;
+  const userId = user?.userId;
 
   useEffect(() => {
-    resetPosts();
-    loadPosts(userId);
+    if (!userId) return;
+
+    const init = async () => {
+      setIsInitialLoading(true);
+      resetPosts();
+      await loadPosts(userId);
+      setIsInitialLoading(false);
+    };
+
+    init();
   }, [userId]);
 
   useScrollLock(!!selectedPost);
 
-  const lastPostRef = (node) => {
-    if (observerRef.current) observerRef.current.disconnect();
+  const lastPostRef = useCallback(
+    (node) => {
+      if (observerRef.current) observerRef.current.disconnect();
+      if (!node) return;
+      if (postLoading || !hasMore) return;
 
-    observerRef.current = new IntersectionObserver((entries) => {
-      if (entries[0].isIntersecting && hasMore) {
-        loadPosts(userId); // 🔥 다음 페이지 로드
-      }
-    });
+      observerRef.current = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting && hasMore && !postLoading) {
+          loadPosts(userId);
+        }
+      });
 
-    if (node) observerRef.current.observe(node);
-  };
+      observerRef.current.observe(node);
+    },
+    [hasMore, postLoading, loadPosts, userId],
+  );
+
+  if (isInitialLoading) {
+    return (
+      <FindGrid>
+        {Array.from({ length: SKELETON_COUNT }).map((_, index) => (
+          <FindSkeletonItem key={index} />
+        ))}
+      </FindGrid>
+    );
+  }
+
   return (
     <FindGrid>
       {posts.map((post, idx) => {
-        if (idx === posts.length - 1) {
+        const isLast = idx === posts.length - 1;
+
+        if (isLast) {
           return (
             <div ref={lastPostRef} key={post.id}>
-              <FindGridItem key={post.id} onClick={() => setSelectedPost(post)}>
+              <FindGridItem onClick={() => setSelectedPost(post)}>
                 <FindGridImage src={post.images?.[0]} alt={`post-${post.id}`} />
               </FindGridItem>
             </div>
           );
         }
+
         return (
           <FindGridItem key={post.id} onClick={() => setSelectedPost(post)}>
             <FindGridImage src={post.images?.[0]} alt={`post-${post.id}`} />
           </FindGridItem>
         );
       })}
+
+      {postLoading &&
+        posts.length > 0 &&
+        Array.from({ length: 5 }).map((_, index) => (
+          <FindSkeletonItem key={`loading-${index}`} />
+        ))}
+
       {selectedPost && (
         <ReplyModal
           open={selectedPost}

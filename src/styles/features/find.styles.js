@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 export const FindGrid = styled.div`
   width: 1360px;
@@ -22,4 +22,22 @@ export const FindGridImage = styled.img`
   object-fit: cover;
   display: block;
   border-radius: 8px;
+`;
+
+const shimmer = keyframes`
+  0% {
+    background-position: -240px 0;
+  }
+  100% {
+    background-position: calc(240px + 100%) 0;
+  }
+`;
+
+export const FindSkeletonItem = styled.div`
+  aspect-ratio: 9 / 16;
+  border-radius: 8px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #f1f1f1 25%, #e7e7e7 37%, #f1f1f1 63%);
+  background-size: 400px 100%;
+  animation: ${shimmer} 1.4s ease infinite;
 `;
